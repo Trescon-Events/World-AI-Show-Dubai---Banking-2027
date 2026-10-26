@@ -1,0 +1,497 @@
+
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  		
+
+  		<title>World AI Show – Dubai | Conference for The Future</title>
+	  	<meta name="description" content="Join some of the finest minds from the emerging tech space as they discuss scaling AI adoption and its potential in powering UAE's economy." />
+  		<meta name="keywords" content="" />
+	  	<!-- OG Graph code start here -->
+		<meta property="og:title" content="World AI Show – Dubai | Conference for The Future"/>
+		<meta property="og:site_name" content="World AI Show – Dubai | Conference for The Future">
+		<meta property="og:url" content=""/>
+		<meta property="og:description" content="Join some of the finest minds from the emerging tech space as they discuss scaling AI adoption and its potential in powering UAE's economy.">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="assets/img/banner/wais-23-dubai-featured-image.jpg">
+		<meta property="og:image:alt" content=""/>
+		<!-- OG Graph code start here -->
+		<link rel="canonical" href="https://tresconglobal.com/conferences/ai/dubai/">
+		<link rel="icon" href="assets/img/fevicon.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha512-J6lfzvaWkmuRpFY1mCzmz8lAm3dHKdmtlHF4pkiwGIceWUTDBHc4pDjxAgEfk+VMRTqNQx2lF20qo4+0SJSUKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- <link rel="stylesheet" href="assets/css/stylearrow.css"> -->
+		<link rel="stylesheet" href="assets/css/form.css">
+		<!-- <link rel="stylesheet" href="assets/css/mediastyle.css">
+		<link rel="stylesheet" href="assets/css/glimpsestyle-2019.css">
+		 -->
+		
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css3?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet"> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha512-pgGHFWjBtbKHTTDW5buGZ9mU0nGfxNavf5kWK/Od2ugA//9FuMHAunkAiMe5jeL/5WW1r0UxwKi6D5LpMOJD3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+		<!-- Custom script starts  -->
+		
+				
+					<!-- Custom script ends  -->
+		<!-- Global site tag (gtag.js) - Google Ads: 876618589 --> 
+		
+		<!-- The Pop-up Modal style Begins -->
+		
+		<!-- The Pop-up Modal style Ends -->
+
+
+
+<!-- Google Tag Manager -->
+				
+<!-- End Google Tag Manager -->
+
+
+<!-- End Google Tag Manager (noscript) -->
+		<!-- Social media scripts -->
+		
+		<!-- Social media scripts ends -->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-T9MZSW4');</script>
+	<!-- End Google Tag Manager -->
+
+	
+
+
+		
+	</head>
+	<body id="home">
+		
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9MZSW4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<div class="Main-Header"> 
+			<div class="T-Menu">
+				<header>
+					<div class="container-fluid">
+						<nav class="navbar navbar-expand-md navbar-dark">
+						  	<a class="navbar-brand" href=""><img src="assets/img/banner/by-invitation.svg" alt=" World Ai Show Dubai Banner by Invitation"></a>
+						  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+								<span class="navbar-toggler-icon"></span>
+						  	</button>
+					  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+								<ul class="navbar-nav ml-auto E-head">
+									<li class="nav-item E-effect">
+										<a class="nav-link scrollitem Sclick" href="">HOME</a>
+				  					</li>
+				  					<li class="nav-item E-effect">
+										<a class="nav-link scrollitem Sclick" href="#speakers">SPEAKERS</a>
+								  	</li>
+								  	<li class="nav-item E-effect">
+										<a class="nav-link scrollitem Sclick" href="#sponsors">SPONSORS</a>
+								  	</li>
+								  	<li class="nav-item E-effect">
+										<a class="nav-link scrollitem Sclick" href="#happenings-at-event">HAPPENINGS</a>
+				  					</li>
+								  	
+									
+								  	
+								  	<li class="nav-item E-effect">
+										<a class="nav-link scrollitem Sclick" href="agenda">AGENDA</a>
+								  	</li>
+								  	
+								  	<!-- <li class="nav-item E-effect">
+										<a class="nav-link scrollitem Sclick" href="photo-gallery-day1" target="_blank" >photo gallery</a>
+								  	</li> -->
+								  	<li class="nav-item BkT">
+										<a class="nav-link scrollitem Sclick" href="" target="_blank">Awards</a>
+				  					</li>
+								  	<li class="nav-item BkT">
+										<a class="nav-link scrollitem Sclick" href="">TICKETS</a>
+				  					</li>
+								  	<!-- <li class="nav-item BkT">
+										<a class="nav-link scrollitem Sclick" href="#reserve-exhibition-space">EXHIBIT</a>
+				  					</li> -->
+				  					<!-- <li class="nav-item BkT">
+										<a class="nav-link scrollitem Sclick" href="delegate-registration">ATTEND AS DELEGATE</a>
+				  					</li> -->
+				  					<li class="nav-item BkT">
+										<a class="nav-link scrollitem Sclick" href="">ENQUIRE</a>
+				  					</li>
+								  	
+				  					
+								</ul>
+				    		</div> 
+						</nav>
+					</div>
+				</header>
+			</div>
+		</div>
+			
+
+		<script>
+			$(window).scroll(function(){
+			  	if ($(window).width() > 100) 
+		  	{
+
+			if ($(window).scrollTop() >= 70) {
+			 	$('.T-Menu').addClass('fixed-header');
+			}
+			else {
+			   	$('.T-Menu').removeClass('fixed-header');
+			}
+			  }
+			});
+		</script>
+		<script>
+			$(window).scroll(function() {
+			    if ($(this).scrollTop() > 50 ) {
+			        $('.scrolltop:hidden').stop(true, true).fadeIn();
+			    } else {
+			        $('.scrolltop').stop(true, true).fadeOut();
+		    	}
+			});
+			$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$("body").offset().top},"7000");return false})})
+		</script>
+
+		<script>
+			$(document).ready(function () {
+				$(".navbar-nav li a").click(function(event) {
+					$(".navbar-collapse").collapse('hide');
+				});
+			});
+	 	</script>
+
+
+	 	
+
+<style>
+#notfound {
+  position: relative;
+  height: 100vh;
+  background-image: url(assets/img/banner/innovx-20-banner.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#notfound .notfound-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#notfound .notfound-bg:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -60%);
+      -ms-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+
+.notfound {
+  max-width: 910px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 200px;
+}
+
+.notfound .notfound-404 h1 {
+      font-family: 'Khand', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 220px;
+  font-weight: 900;
+  margin: 0px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.notfound h2 {
+      font-family: 'Khand', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.notfound .home-btn, .notfound .contact-btn {
+      font-family: 'Khand', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  padding: 13px 25px;
+  font-size: 18px;
+  border-radius: 40px;
+  margin: 7px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound .home-btn:hover, .notfound .contact-btn:hover {
+  opacity: 0.9;
+}
+
+.notfound .home-btn {
+  color: #fff;
+  background: #000;
+}
+
+.notfound .contact-btn {
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.notfound-social {
+  margin-top: 25px;
+}
+
+.notfound-social>a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  font-size: 25px;
+  color: #000;
+  margin: 0px 6px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.notfound-social>a:hover {
+  color: rgba(255, 0, 36, 0.7);
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 h1 {
+    font-size: 182px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 {
+    height: 146px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 146px;
+  }
+  .notfound h2 {
+    font-size: 24px;
+    padding: 0px 30px;
+    line-height: 1.3;
+  }
+  .notfound .home-btn, .notfound .contact-btn {
+    font-size: 14px;
+  }
+}
+</style>
+	<div id="notfound">
+		<div class="notfound-bg"></div>
+		<div class="notfound">
+			<div class="notfound-404">
+				<h1>404</h1>
+			</div>
+			<h2>we are sorry, but the page you requested was not found</h2>
+			<a href="" class="home-btn">Go Home</a>
+			<!-- <a href="general-enquiry" class="contact-btn">Contact us</a> -->
+			<div class="notfound-social">
+				
+				<a href="https://twitter.com/tresconglobal" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/company/tresconglobal/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.youtube.com/channel/UC3ItPPc9UdFxo0-zx2oNOfQ" target="_blank"><i class="fa fa-youtube"></i></a>
+				<!-- <a href="https://www.facebook.com/tresconglobal/" target="_blank"><i class="fa fa-facebook"></i></a> -->
+			</div>
+		</div>
+	</div>
+
+		<footer>
+		    <div class="container-fluid">
+		        <div class="row">
+		        	<div class="col-md-2 Tresc">
+		        		<p class="Heading">Managed by</p>
+		        		<a href="https://tresconglobal.com/" target="_blank">
+		        			<img src="assets/img/trescon-logo.svg" class="img-fluid">
+		        		</a>
+		        		
+		        	</div>
+		            <div class="col-md-2 One">
+		                <p class="Heading">ABOUT TRESCON</p>
+		                <ul>
+		                    <li>
+		                        <a href="https://www.tresconglobal.com/" target="_blank">About Us</a>
+		                    </li>
+		                    <li>
+		                        <a href="https://blog.tresconglobal.com/" target="_blank">Blog</a>
+		                    </li>
+		                    <li>
+		                        <a href="https://blog.tresconglobal.com/" target="_blank">News</a>
+		                    </li>
+		                    <li>
+		                        <a class="scrollitem" href="general-enquiry" target="_blank">Contact Us</a>
+		                    </li>
+		                </ul>
+		                
+		            </div>
+		            <div class="col-md-2 Two">
+		                <p class="Heading">USEFUL LINKS</p>
+		                <ul>
+		                    <li>
+		                        <a class="scrollitem" href="https://www.tresconglobal.com/media-partner" target="_blank">Media Enquiries</a>
+		                    </li>
+		                    <li>
+		                        <a class="scrollitem" href="general-enquiry" target="_blank">Sponsorship</a>
+		                    </li>
+		                    <li>
+		                        <a href="https://www.tresconglobal.com/affiliates" target="_blank">Affiliate Program</a>
+		                    </li>
+		                    <li>
+		                        <a class="scrollitem" href="#sponsors">Sponsors</a>
+		                    </li>
+		                </ul>
+		            </div>
+		            <div class="col-md-3 Three">
+		                <p class="Heading">Connect with us</p>
+		                <ul class="Social-Links">
+		                    <li><a href="https://twitter.com/WorldAIShow" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		                    <li><a href="https://www.linkedin.com/showcase/world-ai-show/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		                    <li><a href="https://www.youtube.com/channel/UCrJB-EsWzCNPk34FO_N8Qew/videos" target="_blank"><i class="fa fa-youtube"></i></a></li>
+		                    
+		                </ul>
+		                <div class="Updates" id="Subscribe-Sec">
+		                    <!-- <div class="container"> -->
+		                        <div class="row">
+		                            <div class="col-md-12">
+		                                <p class="Heading">Get Updates - Subscribe to our newsletter</p>
+		                            </div>
+		                        </div>
+		                        <div class="row">
+		                            <div class="col-md-9">
+		                                <form id="Subscribers-Form">
+		                                    <div class="input-group mb-3">
+		                                      <input type="text" class="form-control" placeholder="Your Email" id="Subscriber_Email" name="Subscriber_Email" required>
+		                                      <div class="input-group-append">
+		                                        <button type="submit" class="btn btn-primary">Subscribe</button>
+		                                      </div>
+		                                    </div>
+		                                </form>
+		                            </div>
+		                        </div>
+		                    <!-- </div> -->
+		                </div>
+		            </div>
+		            <div class="col-md-3 Four">
+		                <p class="Heading">Terms & Conditions</p>
+		                <ul>
+		                  <li><a href="https://tresconglobal.com/cookie-policy.php" target="_blank">Cookie Policy</a></li>
+		                  <li><a href="https://tresconglobal.com/privacy-policy.php" target="_blank">Privacy Policy</a></li>
+		                  <li><a href="https://tresconglobal.com/general-terms-and-conditions.php" target="_blank">General Terms & Conditions</a></li>
+		                </ul>
+		                <p class="Terms">Disclaimer: No part of this document/website may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means,
+mechanical, electronic, photocopying, recording, or otherwise, without prior written permission of Trescon.</p>
+		                <p class="Terms">© 2026 <a href="https://www.tresconglobal.com/" target="_blank">Trescon</a>. All rights reserved.</p>
+		            </div>
+		        </div>
+		    </div>
+		</footer>
+		<!-- Telegram -->
+		<div class="T-Gram">
+			<div id="bannerTelegramSticky" class="banner-sticky banner-sticky-asia banner-sticky--active banner-tg-sm banner-tg--collapsed">
+				<a href="https://wa.me/918105975937" target="_blank" class="banner-sm">
+					<div class="banner-sm__right">
+						<span class="tg-icon whatsapp"></span>
+					</div>
+					<div class="banner-sm__left">
+						<a href="https://wa.me/918105975937" target="_blank">
+							<span class="Text1">Questions?</span><br /> 
+							<span class="Text2">Chat With Us On Whatsapp</span>
+						</a>
+					</div>
+					
+				</a>
+			</div>
+		</div>
+		<!-- Telegram code ends -->
+		<div class="scrolltop" style="display: none;">
+	    	<div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+		</div>
+
+		<script>
+			$(window).on('load', function() { // makes sure the whole site is loaded 
+			  	$('#status').fadeOut(); // will first fade out the loading animation 
+			  	$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+			  	$('body').delay(350).css({'overflow':'visible'});
+			});
+		</script>
+
+
+		<script>
+			$('#Subscribers-Form').submit(function(e) {
+		   		e.preventDefault(); 
+		  		var Event_Name = "World AI Show -23 - Dubai";
+	    		var Subscriber_Email = $("#Subscriber_Email").val();
+		  		$.ajax({
+			    	type: "POST",
+			    	url: "submit-subscribers.php",
+			    	data: {'Event_Name': Event_Name, 'Subscriber_Email': Subscriber_Email},
+			    	cache: false,
+			    	beforeSend: function () { 
+			      		$('#Subscribe-Sec').html('<center><img src="media/Spinner-1s-200px.gif" alt="" width="" height=""></center>');
+			    	},
+			    	success: function(html) {    
+			      		$("#Subscribe-Sec").html(html);
+			    	}
+		  		});
+			});
+		</script>
+
+			
+
+		
+		
+		<script>
+			$(function() {
+	  			AOS.init();
+			});
+		</script>
+
+		<script type="text/javascript"> _linkedin_partner_id = "5531265"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(l) { if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])}; window.lintrk.q=[]} var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(window.lintrk); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5531265&fmt=gif" /> </noscript>
+
+	<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a42903f6df9ce274',t:'MTc5MDY2NDIyNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"668bb2f6d010413485ef56e2ace8a8ae","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

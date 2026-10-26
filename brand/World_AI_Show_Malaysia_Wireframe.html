@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World AI Show Malaysia 2027 — Complete Architectural Site Wireframe & Layout Specification</title>
+  <meta name="description" content="Complete structural blueprints, UX wireframes, information architecture, component specifications, and responsive layout guide for World AI Show Malaysia 2027.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+
+  <style>
+    :root {
+      --bg-dark: #020814;
+      --bg-card: #040D1F;
+      --border-wire: #1E2D4A;
+      --wire-line: #263859;
+      --wire-accent: #00CEFF;
+      --lime-primary: #C0F43C;
+      --cyan-accent: #18D4FF;
+      --text-main: #FFFFFF;
+      --text-muted: #8E9BAE;
+      --wire-box-bg: rgba(14, 26, 49, 0.6);
+      --wire-box-border: #2D4268;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .font-sans-body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* Grid blueprint effect */
+    .blueprint-grid {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    .blueprint-grid-dense {
+      background-size: 12px 12px;
+      background-image: 
+        linear-gradient(to right, rgba(0, 206, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 206, 255, 0.04) 1px, transparent 1px);
+    }
+
+    /* Wireframe Box Styles */
+    .wire-box {
+      background: var(--wire-box-bg);
+      border: 1.5px dashed var(--wire-box-border);
+      position: relative;
+      transition: all 0.2s ease;
+    }
+    .wire-box:hover {
+      border-color: var(--cyan-accent);
+      background: rgba(24, 212, 255, 0.06);
+    }
+
+    .wire-box-solid {
+      background: #081429;
+      border: 1px solid #1E2D4A;
+      position: relative;
+    }
+
+    .wire-label {
+      position: absolute;
+      top: -10px;
+      left: 12px;
+      background: #040D1F;
+      border: 1px solid #2D4268;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 4px;
+      color: #00CEFF;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      z-index: 10;
+    }
+
+    .wire-dim {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: #64748B;
+    }
+
+    /* Gradient Text */
+    .gradient-text {
+      background: linear-gradient(90deg, #00CEFF 0%, #C0F43C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #020814;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1B2B48;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00CEFF;
+    }
+
+    /* Device frame simulation */
+    .preview-canvas {
+      transition: max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+<body class="bg-[#020814] text-white antialiased selection:bg-[#C0F43C] selection:text-black">
+
+  <!-- Top Sticky Header -->
+  <header class="sticky top-0 z-50 bg-[#020814]/90 backdrop-blur-md border-b border-[#1B2B48]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-[#00CEFF] to-[#C0F43C] flex items-center justify-center text-black font-extrabold text-lg shadow-lg">
+          W
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold tracking-wider text-sm sm:text-base">WORLD AI SHOW</span>
+            <span class="text-[10px] font-mono-code font-bold px-2 py-0.5 rounded bg-[#C0F43C]/20 text-[#C0F43C] border border-[#C0F43C]/30">MALAYSIA 2027</span>
+          </div>
+          <span class="text-xs text-[#8E9BAE] hidden sm:inline">Complete Architectural Wireframe & UX Blueprint</span>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="flex items-center gap-3">
+        <span class="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono-code">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Next.js 16 Static Export
+        </span>
+        <a href="#sitemap" class="text-xs text-[#8E9BAE] hover:text-white px-2 py-1 transition-colors">Site Map</a>
+        <a href="#wireframes" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-[#C0F43C] text-black hover:bg-[#d4ff63] transition-colors">Explore Templates</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 border-b border-[#1B2B48] blueprint-grid overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#00CEFF]/5 via-transparent to-[#020814] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono-code text-[#00CEFF] mb-4">
+        <span>ARCHITECTURAL SPECIFICATION</span>
+        <span class="text-white/30">•</span>
+        <span>VERSION 2.0 (2027 PRODUCTION)</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">
+        Complete Website <span class="gradient-text">Wireframe & Blueprint</span>
+      </h1>
+      <p class="text-base sm:text-lg text-[#8E9BAE] max-w-3xl font-sans-body mb-6">
+        High-fidelity structural wireframes, layout grids, visual component inventories, responsive breakpoints, and conversion pathways for the <strong class="text-white">World AI Show — Malaysia 2027</strong> web ecosystem (<code class="text-[#00CEFF] font-mono-code text-xs bg-black/40 px-1.5 py-0.5 rounded">https://worldaishow.com/malaysia/</code>).
+      </p>
+
+      <!-- Meta Pill Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl text-xs font-mono-code">
+        <div class="bg-[#040D1F] border border-[#1B2B48] p-3 rounded-xl">
+          <div class="text-[#8E9BAE] text-[10px]">EVENT DATE</div>
+          <div class="text-[#C0F43C] font-bold mt-0.5">12 - 13 October 2027</div>
+        </div>
+        <div class="bg-[#040D1F] border border-[#1B2B48] p-3 rounded-xl">
+          <div class="text-[#8E9BAE] text-[10px]">LOCATION</div>
+          <div class="text-white font-bold mt-0.5">Kuala Lumpur, Malaysia</div>
+        </div>
+        <div class="bg-[#040D1F] border border-[#1B2B48] p-3 rounded-xl">
+          <div class="text-[#8E9BAE] text-[10px]">BASE PATH</div>
+          <div class="text-[#00CEFF] font-bold mt-0.5">/malaysia</div>
+        </div>
+        <div class="bg-[#040D1F] border border-[#1B2B48] p-3 rounded-xl">
+          <div class="text-[#8E9BAE] text-[10px]">TOTAL ROUTES</div>
+          <div class="text-emerald-400 font-bold mt-0.5">18 Active Templates</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Viewport Switcher Control Bar -->
+  <div class="sticky top-16 z-40 bg-[#040D1F]/95 backdrop-blur-md border-b border-[#1B2B48] py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2 overflow-x-auto py-1">
+        <span class="text-xs text-[#8E9BAE] font-mono-code uppercase font-semibold mr-1">View Template:</span>
+        <button onclick="switchTemplate('home')" id="tab-home" class="template-tab px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-[#00CEFF] text-black">
+          Homepage (/)
+        </button>
+        <button onclick="switchTemplate('agenda')" id="tab-agenda" class="template-tab px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-[#081429] text-[#8E9BAE] hover:text-white hover:bg-[#1E2D4A]">
+          Agenda Suite
+        </button>
+        <button onclick="switchTemplate('attend')" id="tab-attend" class="template-tab px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-[#081429] text-[#8E9BAE] hover:text-white hover:bg-[#1E2D4A]">
+          Attend Suite
+        </button>
+        <button onclick="switchTemplate('speakers')" id="tab-speakers" class="template-tab px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-[#081429] text-[#8E9BAE] hover:text-white hover:bg-[#1E2D4A]">
+          Speakers Hub
+        </button>
+        <button onclick="switchTemplate('partners')" id="tab-partners" class="template-tab px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-[#081429] text-[#8E9BAE] hover:text-white hover:bg-[#1E2D4A]">
+          Partners Hub
+        </button>
+        <button onclick="switchTemplate('exhibition')" id="tab-exhibition" class="template-tab px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-[#081429] text-[#8E9BAE] hover:text-white hover:bg-[#1E2D4A]">
+          Exhibition & 3D Tour
+        </button>
+        <button onclick="switchTemplate('networking')" id="tab-networking" class="template-tab px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-[#081429] text-[#8E9BAE] hover:text-white hover:bg-[#1E2D4A]">
+          Networking Suite
+        </button>
+        <button onclick="switchTemplate('enquiry')" id="tab-enquiry" class="template-tab px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-[#081429] text-[#8E9BAE] hover:text-white hover:bg-[#1E2D4A]">
+          Enquiry & Lead Forms
+        </button>
+      </div>
+
+      <!-- Viewport Simulation -->
+      <div class="hidden sm:flex items-center gap-1.5 bg-[#020814] p-1 rounded-lg border border-[#1B2B48]">
+        <button onclick="setViewport('desktop')" id="vp-desktop" class="vp-btn px-2.5 py-1 rounded text-[11px] font-mono-code font-bold bg-[#1B2B48] text-[#00CEFF]" title="Desktop 1280px+">
+          🖥️ Desktop (100%)
+        </button>
+        <button onclick="setViewport('tablet')" id="vp-tablet" class="vp-btn px-2.5 py-1 rounded text-[11px] font-mono-code font-bold text-[#8E9BAE] hover:text-white" title="Tablet 768px">
+          📱 Tablet (768px)
+        </button>
+        <button onclick="setViewport('mobile')" id="vp-mobile" class="vp-btn px-2.5 py-1 rounded text-[11px] font-mono-code font-bold text-[#8E9BAE] hover:text-white" title="Mobile 390px">
+          📲 Mobile (390px)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Wireframe Canvas Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="wireframes">
+    <div id="preview-wrapper" class="preview-canvas mx-auto transition-all duration-300">
+
+      <!-- ========================================== -->
+      <!-- TEMPLATE 1: HOMEPAGE (/) WIREFRAME -->
+      <!-- ========================================== -->
+      <div id="view-home" class="template-view space-y-6">
+        <!-- Template Header Info -->
+        <div class="bg-[#040D1F] border border-[#1B2B48] rounded-2xl p-6">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#00CEFF]/10 text-[#00CEFF] border border-[#00CEFF]/20 text-xs font-mono-code mb-2">
+                ROUTE: / (src/app/page.tsx)
+              </div>
+              <h2 class="text-2xl font-extrabold text-white">Homepage Architectural Wireframe</h2>
+              <p class="text-sm text-[#8E9BAE] font-sans-body mt-1">
+                Primary conversion funnel. Communicates event prestige, executive audience scale, 2027 date/venue anchor, verified past speakers, strategic themes, and lead capture.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs font-mono-code">
+              <span class="px-2.5 py-1 bg-white/5 border border-white/10 rounded-lg text-emerald-400">11 Page Sections</span>
+              <span class="px-2.5 py-1 bg-white/5 border border-white/10 rounded-lg text-[#00CEFF]">Single CTA: Enquire Now</span>
+              <span class="px-2.5 py-1 bg-white/5 border border-white/10 rounded-lg text-[#C0F43C]">Zero Pass Buttons</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wireframe Visual Blueprint Container -->
+        <div class="border border-[#1E2D4A] rounded-2xl bg-[#020814] p-4 sm:p-6 blueprint-grid-dense space-y-4">
+
+          <!-- 1. GLOBAL HEADER WIREFRAME -->
+          <div class="wire-box rounded-xl p-4">
+            <span class="wire-label">COMP: Header.tsx (Sticky Glass)</span>
+            <div class="flex items-center justify-between">
+              <!-- Logo Wire -->
+              <div class="flex items-center gap-3">
+                <div class="w-36 h-8 bg-[#0B1E3B] border border-[#00CEFF]/40 rounded flex items-center justify-center font-mono-code text-[11px] text-[#00CEFF] font-bold">
+                  [SVG: wais-27-header]
+                </div>
+              </div>
+              <!-- Desktop Nav Links -->
+              <div class="hidden lg:flex items-center gap-5 text-xs font-mono-code text-[#8E9BAE]">
+                <span class="hover:text-white cursor-pointer">Agenda ▾</span>
+                <span class="hover:text-white cursor-pointer">Speakers</span>
+                <span class="hover:text-white cursor-pointer">Attend ▾</span>
+                <span class="hover:text-white cursor-pointer">Partners</span>
+                <span class="hover:text-white cursor-pointer">Exhibition</span>
+                <span class="hover:text-white cursor-pointer">Networking ▾</span>
+              </div>
+              <!-- CTA Button -->
+              <div class="flex items-center gap-3">
+                <div class="px-4 py-2 bg-[#C0F43C] text-black font-extrabold text-xs rounded-lg flex items-center gap-1.5 shadow-md">
+                  <span>Enquire Now</span>
+                  <span class="text-[10px]">↗</span>
+                </div>
+                <!-- Mobile hamburger indicator -->
+                <div class="lg:hidden w-8 h-8 rounded border border-white/20 flex flex-col items-center justify-center gap-1">
+                  <span class="w-4 h-0.5 bg-white"></span>
+                  <span class="w-4 h-0.5 bg-white"></span>
+                  <span class="w-4 h-0.5 bg-white"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. HERO SECTION WIREFRAME -->
+          <div class="wire-box rounded-xl p-6 sm:p-10 text-center relative overflow-hidden bg-gradient-to-b from-[#08162E]/70 to-[#030B1B]/90">
+            <span class="wire-label">SECTION 1: HeroSection.tsx (Above The Fold)</span>
+            
+            <!-- Date & Venue Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-[#00CEFF]/30 font-mono-code text-xs text-[#00CEFF] mb-5">
+              <span>📅 12 - 13 OCTOBER 2027</span>
+              <span>•</span>
+              <span>📍 KUALA LUMPUR, MALAYSIA</span>
+            </div>
+
+            <!-- Main Headline -->
+            <div class="max-w-3xl mx-auto space-y-2 mb-4">
+              <h3 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
+                MALAYSIA'S PREMIER GATHERING OF
+              </h3>
+              <div class="text-3xl sm:text-5xl font-extrabold gradient-text">
+                ENTERPRISE AI LEADERS & GOV TECH INNOVATORS
+              </div>
+            </div>
+
+            <!-- Subtitle -->
+            <p class="max-w-2xl mx-auto text-xs sm:text-sm text-[#8E9BAE] font-sans-body mb-6">
+              Accelerating Malaysia's National AI Roadmap through enterprise adoption, sovereign computing, ethical governance, and next-generation agentic workflows.
+            </p>
+
+            <!-- Hero Action Area -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-6">
+              <div class="px-6 py-3 bg-[#C0F43C] text-black font-extrabold text-sm rounded-xl shadow-lg border border-[#C0F43C]/80">
+                Enquire Now (Sponsorship & Attendance) ↗
+              </div>
+            </div>
+
+            <!-- Fast Spec Note -->
+            <div class="text-[11px] font-mono-code text-amber-400/80 bg-amber-500/10 border border-amber-500/20 max-w-md mx-auto py-1 px-3 rounded">
+              ✓ 2027 Production: "Enter 3D Experience" and "Buy Pass" buttons purged.
+            </div>
+          </div>
+
+          <!-- 3. ECOSYSTEM / MARQUEE WIREFRAME -->
+          <div class="wire-box rounded-xl p-4">
+            <span class="wire-label">SECTION 2: EcosystemSection.tsx (Marquee)</span>
+            <div class="text-[11px] font-mono-code text-center text-[#8E9BAE] mb-3 uppercase tracking-wider">
+              PARTICIPATING ENTERPRISES & GOVERNMENT ECOSYSTEM
+            </div>
+            <div class="grid grid-cols-3 sm:grid-cols-6 gap-3">
+              <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center font-mono-code text-[10px] text-white/50">MDEC / Gov</div>
+              <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center font-mono-code text-[10px] text-white/50">Petronas</div>
+              <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center font-mono-code text-[10px] text-white/50">Maybank</div>
+              <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center font-mono-code text-[10px] text-white/50">CelcomDigi</div>
+              <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center font-mono-code text-[10px] text-white/50">TNB</div>
+              <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center font-mono-code text-[10px] text-white/50">Google Cloud</div>
+            </div>
+          </div>
+
+          <!-- 4. STATS SECTION WIREFRAME -->
+          <div class="wire-box rounded-xl p-6">
+            <span class="wire-label">SECTION 3: StatsSection.tsx (Impact Metrics)</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              <div class="p-3 bg-[#081429] rounded-xl border border-[#1E2D4A]">
+                <div class="text-3xl font-extrabold text-[#C0F43C] font-mono-code">700+</div>
+                <div class="text-xs text-[#8E9BAE] mt-1 font-sans-body">Decision-Makers</div>
+              </div>
+              <div class="p-3 bg-[#081429] rounded-xl border border-[#1E2D4A]">
+                <div class="text-3xl font-extrabold text-[#00CEFF] font-mono-code">50+</div>
+                <div class="text-xs text-[#8E9BAE] mt-1 font-sans-body">Thought Leaders</div>
+              </div>
+              <div class="p-3 bg-[#081429] rounded-xl border border-[#1E2D4A]">
+                <div class="text-3xl font-extrabold text-[#C0F43C] font-mono-code">20+</div>
+                <div class="text-xs text-[#8E9BAE] mt-1 font-sans-body">Sponsors & Exhibitors</div>
+              </div>
+              <div class="p-3 bg-[#081429] rounded-xl border border-[#1E2D4A]">
+                <div class="text-3xl font-extrabold text-[#00CEFF] font-mono-code">85%+</div>
+                <div class="text-xs text-[#8E9BAE] mt-1 font-sans-body">C-Level / Heads of AI</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. ABOUT / VALUE PROP WIREFRAME -->
+          <div class="wire-box rounded-xl p-6">
+            <span class="wire-label">SECTION 4: Value Proposition & Pillars</span>
+            <div class="text-center max-w-xl mx-auto mb-6">
+              <div class="text-xs font-mono-code text-[#00CEFF]">WHY WORLD AI SHOW MALAYSIA</div>
+              <h4 class="text-xl font-bold mt-1">Catalyzing ASEAN's AI Economy</h4>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="p-4 bg-[#081429] border border-[#1E2D4A] rounded-xl">
+                <div class="w-8 h-8 rounded bg-[#00CEFF]/20 text-[#00CEFF] flex items-center justify-center font-bold mb-3">01</div>
+                <div class="font-bold text-sm text-white mb-1">Enterprise Scalability</div>
+                <p class="text-xs text-[#8E9BAE] font-sans-body">Actionable case studies from CIOs & CTOs deploying LLMs, agentic architectures, and automated infrastructure.</p>
+              </div>
+              <div class="p-4 bg-[#081429] border border-[#1E2D4A] rounded-xl">
+                <div class="w-8 h-8 rounded bg-[#C0F43C]/20 text-[#C0F43C] flex items-center justify-center font-bold mb-3">02</div>
+                <div class="font-bold text-sm text-white mb-1">Government & Policy</div>
+                <p class="text-xs text-[#8E9BAE] font-sans-body">Direct dialogue with policymakers driving Malaysia's AI ethical governance, data sovereignty, and talent funds.</p>
+              </div>
+              <div class="p-4 bg-[#081429] border border-[#1E2D4A] rounded-xl">
+                <div class="w-8 h-8 rounded bg-[#00CEFF]/20 text-[#00CEFF] flex items-center justify-center font-bold mb-3">03</div>
+                <div class="font-bold text-sm text-white mb-1">Pre-Qualified Matchmaking</div>
+                <p class="text-xs text-[#8E9BAE] font-sans-body">Curated 1-on-1 enterprise meetings connecting verified buyers with global solution providers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. PAST SPEAKERS WIREFRAME -->
+          <div class="wire-box rounded-xl p-6">
+            <span class="wire-label">SECTION 5: SpeakersSection.tsx (Past Speakers)</span>
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <span class="text-xs font-mono-code text-[#C0F43C] uppercase">PRESTIGIOUS ROSTER</span>
+                <h4 class="text-lg font-bold">Past Distinguished Speakers</h4>
+              </div>
+              <div class="px-3 py-1 rounded bg-[#081429] border border-[#1E2D4A] text-xs font-mono-code text-[#00CEFF]">
+                View All Speakers (50+) ↗
+              </div>
+            </div>
+            <!-- Grid of 4 speaker cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div class="bg-[#081429] border border-[#1E2D4A] rounded-xl p-3 text-center">
+                <div class="w-16 h-16 rounded-full bg-white/10 mx-auto mb-2 border border-white/20 flex items-center justify-center text-xs font-mono-code">Photo</div>
+                <div class="text-xs font-bold text-white">YBhg Ts. Dr. X</div>
+                <div class="text-[10px] text-[#8E9BAE] truncate">Chief Digital Officer</div>
+                <div class="text-[10px] text-[#00CEFF] font-mono-code">Gov Agency</div>
+              </div>
+              <div class="bg-[#081429] border border-[#1E2D4A] rounded-xl p-3 text-center">
+                <div class="w-16 h-16 rounded-full bg-white/10 mx-auto mb-2 border border-white/20 flex items-center justify-center text-xs font-mono-code">Photo</div>
+                <div class="text-xs font-bold text-white">Executive Name</div>
+                <div class="text-[10px] text-[#8E9BAE] truncate">Head of AI & Data</div>
+                <div class="text-[10px] text-[#00CEFF] font-mono-code">Major Bank</div>
+              </div>
+              <div class="bg-[#081429] border border-[#1E2D4A] rounded-xl p-3 text-center">
+                <div class="w-16 h-16 rounded-full bg-white/10 mx-auto mb-2 border border-white/20 flex items-center justify-center text-xs font-mono-code">Photo</div>
+                <div class="text-xs font-bold text-white">VP Enterprise AI</div>
+                <div class="text-[10px] text-[#8E9BAE] truncate">Regional Tech Lead</div>
+                <div class="text-[10px] text-[#00CEFF] font-mono-code">Telco Giant</div>
+              </div>
+              <div class="bg-[#081429] border border-[#1E2D4A] rounded-xl p-3 text-center">
+                <div class="w-16 h-16 rounded-full bg-white/10 mx-auto mb-2 border border-white/20 flex items-center justify-center text-xs font-mono-code">Photo</div>
+                <div class="text-xs font-bold text-white">AI Research Lead</div>
+                <div class="text-[10px] text-[#8E9BAE] truncate">Professor & Founder</div>
+                <div class="text-[10px] text-[#00CEFF] font-mono-code">University / Lab</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. PAST SPONSORS & PARTNERS WIREFRAME -->
+          <div class="wire-box rounded-xl p-6">
+            <span class="wire-label">SECTION 6: SponsorsSection.tsx (Past Partners)</span>
+            <div class="text-center mb-4">
+              <span class="text-xs font-mono-code text-[#00CEFF] uppercase">INDUSTRY SUPPORT</span>
+              <h4 class="text-lg font-bold">Past Sponsors & Strategic Partners</h4>
+            </div>
+            <!-- Tiered rows -->
+            <div class="space-y-3">
+              <div>
+                <div class="text-[10px] font-mono-code text-amber-400 mb-1">LEAD & PLATINUM SPONSORS</div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-xs text-white/60">[Global Cloud Leader]</div>
+                  <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-xs text-white/60">[Enterprise AI Platform]</div>
+                  <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-xs text-white/60">[Silicon / GPU Vendor]</div>
+                  <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-xs text-white/60">[Cybersecurity Giant]</div>
+                </div>
+              </div>
+              <div>
+                <div class="text-[10px] font-mono-code text-cyan-400 mb-1">GOLD & SILVER PARTNERS</div>
+                <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                  <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/40">[Partner 1]</div>
+                  <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/40">[Partner 2]</div>
+                  <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/40">[Partner 3]</div>
+                  <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/40">[Partner 4]</div>
+                  <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/40">[Partner 5]</div>
+                  <div class="h-10 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/40">[Partner 6]</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. VIDEO + TESTIMONIALS WIREFRAME -->
+          <div class="wire-box rounded-xl p-6">
+            <span class="wire-label">SECTION 7: TestimonialsSection.tsx (Video & Social Proof)</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Video Placeholder -->
+              <div class="h-48 bg-[#081429] border border-[#1E2D4A] rounded-xl flex flex-col items-center justify-center relative">
+                <div class="w-12 h-12 rounded-full bg-[#00CEFF]/20 text-[#00CEFF] flex items-center justify-center font-bold text-lg mb-2">▶</div>
+                <span class="text-xs font-mono-code text-white">Event Highlights Reel</span>
+                <span class="text-[10px] text-[#8E9BAE]">YouTube / Vimeo Embed</span>
+              </div>
+              <!-- Testimonial Quote -->
+              <div class="h-48 bg-[#081429] border border-[#1E2D4A] rounded-xl p-5 flex flex-col justify-between">
+                <div class="text-xs text-[#8E9BAE] italic font-sans-body">
+                  "World AI Show is the definitive platform in Southeast Asia for connecting enterprise buyers with state-of-the-art AI infrastructure providers. The quality of C-suite attendees is unmatched."
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-white/10 border border-white/20"></div>
+                  <div>
+                    <div class="text-xs font-bold text-white">Regional Director, APAC</div>
+                    <div class="text-[10px] text-[#00CEFF]">Enterprise AI Solutions Provider</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. FAQ ACCORDION WIREFRAME -->
+          <div class="wire-box rounded-xl p-6">
+            <span class="wire-label">SECTION 8: FAQSection.tsx</span>
+            <div class="text-center mb-4">
+              <span class="text-xs font-mono-code text-[#C0F43C] uppercase">FREQUENTLY ASKED QUESTIONS</span>
+              <h4 class="text-base font-bold">Everything you need to know about the 2027 edition</h4>
+            </div>
+            <div class="space-y-2 max-w-2xl mx-auto">
+              <div class="p-3 bg-[#081429] border border-[#1E2D4A] rounded-lg flex items-center justify-between text-xs">
+                <span>When and where is World AI Show Malaysia taking place?</span>
+                <span class="text-[#00CEFF]">+</span>
+              </div>
+              <div class="p-3 bg-[#081429] border border-[#1E2D4A] rounded-lg flex items-center justify-between text-xs">
+                <span>Who should attend this summit?</span>
+                <span class="text-[#00CEFF]">+</span>
+              </div>
+              <div class="p-3 bg-[#081429] border border-[#1E2D4A] rounded-lg flex items-center justify-between text-xs">
+                <span>How can my organization sponsor or exhibit?</span>
+                <span class="text-[#00CEFF]">+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. FINAL CONVERSION CTA BANNER -->
+          <div class="wire-box rounded-xl p-8 text-center bg-gradient-to-r from-[#031533] via-[#051E44] to-[#031533]">
+            <span class="wire-label">SECTION 9: CTASection.tsx (Conversion Anchor)</span>
+            <h3 class="text-2xl font-extrabold text-white mb-2">Be Part of Malaysia's AI Revolution</h3>
+            <p class="text-xs text-[#8E9BAE] max-w-lg mx-auto mb-5 font-sans-body">
+              Join 700+ enterprise decision-makers, government officials, and AI pioneers in Kuala Lumpur on 12-13 October 2027.
+            </p>
+            <div class="inline-flex items-center gap-3">
+              <div class="px-6 py-3 bg-[#C0F43C] text-black font-extrabold text-sm rounded-xl shadow-lg">
+                Enquire Now ↗
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. GLOBAL FOOTER WIREFRAME -->
+          <div class="wire-box rounded-xl p-6 bg-[#01050D]">
+            <span class="wire-label">COMP: FooterSection.tsx</span>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+              <div class="space-y-2">
+                <div class="w-32 h-7 bg-[#0B1E3B] border border-[#00CEFF]/40 rounded flex items-center justify-center font-mono-code text-[10px] text-[#00CEFF]">
+                  [wais-27-footer.svg]
+                </div>
+                <p class="text-[11px] text-[#8E9BAE] font-sans-body">Part of Trescon's global AI and tech event series, connecting enterprise innovators worldwide.</p>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white mb-2 font-mono-code">NAVIGATION</div>
+                <div class="space-y-1 text-xs text-[#8E9BAE]">
+                  <div>Agenda & Themes</div>
+                  <div>Past Speakers</div>
+                  <div>Attend Opportunities</div>
+                  <div>Sponsors & Partners</div>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white mb-2 font-mono-code">ENQUIRIES</div>
+                <div class="space-y-1 text-xs text-[#8E9BAE]">
+                  <div>Sponsorship Enquiry</div>
+                  <div>Speaker Enquiry</div>
+                  <div>Media Partner Enquiry</div>
+                  <div>Association Partner Enquiry</div>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white mb-2 font-mono-code">ORGANIZER</div>
+                <div class="text-xs text-[#8E9BAE]">
+                  <p>Trescon Global</p>
+                  <p class="text-[11px] text-[#64748B] mt-1">enquiry@tresconglobal.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-white/10 pt-4 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#64748B] font-mono-code">
+              <div>© 2027 World AI Show — Malaysia. All rights reserved.</div>
+              <div>basePath: /malaysia | Cloudflare Pages</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- TEMPLATE 2: AGENDA SUITE WIREFRAME -->
+      <!-- ========================================== -->
+      <div id="view-agenda" class="template-view space-y-6 hidden">
+        <div class="bg-[#040D1F] border border-[#1B2B48] rounded-2xl p-6">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#00CEFF]/10 text-[#00CEFF] border border-[#00CEFF]/20 text-xs font-mono-code mb-2">
+            ROUTES: /agenda/* (/agenda, /agenda/agenda, /agenda/the-2030-vision, /agenda/themes, /agenda/call-for-speakers)
+          </div>
+          <h2 class="text-2xl font-extrabold text-white">Agenda & Thematic Suite Wireframe</h2>
+          <p class="text-sm text-[#8E9BAE] font-sans-body mt-1">
+            Structural framework for event proceedings, daily session tracks, Malaysia 2030 AI vision, call-for-speakers application, and thematic deep dives.
+          </p>
+        </div>
+
+        <div class="border border-[#1E2D4A] rounded-2xl bg-[#020814] p-4 sm:p-6 blueprint-grid-dense space-y-4">
+          <!-- Subnav Strip -->
+          <div class="wire-box rounded-xl p-3">
+            <span class="wire-label">COMP: SubNavTabStrip</span>
+            <div class="flex items-center gap-2 overflow-x-auto text-xs font-mono-code">
+              <span class="px-3 py-1 rounded bg-[#00CEFF] text-black font-bold">Overview</span>
+              <span class="px-3 py-1 rounded bg-[#081429] text-[#8E9BAE]">Full Schedule</span>
+              <span class="px-3 py-1 rounded bg-[#081429] text-[#8E9BAE]">Themes & Tracks</span>
+              <span class="px-3 py-1 rounded bg-[#081429] text-[#8E9BAE]">The 2030 Vision</span>
+              <span class="px-3 py-1 rounded bg-[#081429] text-[#8E9BAE]">Call for Speakers</span>
+            </div>
+          </div>
+
+          <!-- Day Switcher & Track Selector -->
+          <div class="wire-box rounded-xl p-4">
+            <span class="wire-label">MODULE: Day & Track Selector</span>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="flex items-center gap-2">
+                <button class="px-4 py-2 rounded-lg bg-[#C0F43C] text-black font-bold text-xs">DAY 1: 12 OCT 2027</button>
+                <button class="px-4 py-2 rounded-lg bg-[#081429] border border-[#1E2D4A] text-[#8E9BAE] font-bold text-xs">DAY 2: 13 OCT 2027</button>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-mono-code text-[#8E9BAE]">
+                <span>Filter Track:</span>
+                <span class="px-2 py-0.5 rounded bg-white/10 text-white">All</span>
+                <span class="px-2 py-0.5 rounded bg-white/5">Gov & Policy</span>
+                <span class="px-2 py-0.5 rounded bg-white/5">Enterprise AI</span>
+                <span class="px-2 py-0.5 rounded bg-white/5">Cyber AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Sessions List -->
+          <div class="wire-box rounded-xl p-6 space-y-3">
+            <span class="wire-label">MODULE: Session Timeline Cards</span>
+            
+            <!-- Session Card 1 -->
+            <div class="p-4 bg-[#081429] border border-[#1E2D4A] rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="font-mono-code text-xs text-[#00CEFF] font-bold min-w-[80px]">09:00 - 09:30</div>
+                <div>
+                  <div class="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-[#C0F43C]/20 text-[#C0F43C] text-[10px] font-mono-code font-bold mb-1">
+                    MINISTERIAL KEYNOTE
+                  </div>
+                  <div class="font-bold text-sm text-white">Inaugural Address: Malaysia's National AI Blueprint & Sovereign Infrastructure</div>
+                  <div class="text-xs text-[#8E9BAE] mt-0.5">Government Dignitary / Minister of Digital</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-mono-code text-[#00CEFF]">
+                <span>Main Stage</span>
+              </div>
+            </div>
+
+            <!-- Session Card 2 -->
+            <div class="p-4 bg-[#081429] border border-[#1E2D4A] rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="font-mono-code text-xs text-[#00CEFF] font-bold min-w-[80px]">09:35 - 10:20</div>
+                <div>
+                  <div class="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 text-[10px] font-mono-code font-bold mb-1">
+                    C-LEVEL PANEL DISCUSSION
+                  </div>
+                  <div class="font-bold text-sm text-white">Scaling Generative AI in Regulated Enterprise: Banking, Telco & Energy</div>
+                  <div class="text-xs text-[#8E9BAE] mt-0.5">Panelists: 4 Enterprise CIOs & Regional Heads of AI</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-mono-code text-[#00CEFF]">
+                <span>Main Stage</span>
+              </div>
+            </div>
+
+            <!-- Session Card 3 -->
+            <div class="p-4 bg-[#081429] border border-[#1E2D4A] rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="font-mono-code text-xs text-[#00CEFF] font-bold min-w-[80px]">10:25 - 11:15</div>
+                <div>
+                  <div class="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 text-[10px] font-mono-code font-bold mb-1">
+                    NETWORKING & COFFEE
+                  </div>
+                  <div class="font-bold text-sm text-white">VIP Networking Break & Exhibition Tour</div>
+                  <div class="text-xs text-[#8E9BAE] mt-0.5">Exhibition Hall & 1-on-1 Matchmaking Lounge</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-mono-code text-[#00CEFF]">
+                <span>Exhibition Floor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- TEMPLATE 3: ATTEND SUITE WIREFRAME -->
+      <!-- ========================================== -->
+      <div id="view-attend" class="template-view space-y-6 hidden">
+        <div class="bg-[#040D1F] border border-[#1B2B48] rounded-2xl p-6">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#00CEFF]/10 text-[#00CEFF] border border-[#00CEFF]/20 text-xs font-mono-code mb-2">
+            ROUTES: /attend/* (/attend, /attend/delegate, /attend/sponsor, /attend/media-partner, /attend/association-partner)
+          </div>
+          <h2 class="text-2xl font-extrabold text-white">Attend & Persona Funnels Wireframe</h2>
+          <p class="text-sm text-[#8E9BAE] font-sans-body mt-1">
+            Segmented conversion funnels tailored to specific buyer personas: Delegates, Enterprise Sponsors, Media Houses, and Industry Associations.
+          </p>
+        </div>
+
+        <div class="border border-[#1E2D4A] rounded-2xl bg-[#020814] p-4 sm:p-6 blueprint-grid-dense space-y-4">
+          <!-- Persona 4-Grid Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Persona 1: Delegate -->
+            <div class="wire-box rounded-xl p-5 flex flex-col justify-between">
+              <span class="wire-label">PERSONA 1</span>
+              <div>
+                <div class="text-xs font-mono-code text-[#C0F43C] mb-1">ENTERPRISE LEADERS</div>
+                <h4 class="text-lg font-bold text-white mb-2">Attend as Delegate</h4>
+                <p class="text-xs text-[#8E9BAE] font-sans-body mb-4">
+                  For CIOs, CTOs, CDOs, and Heads of AI seeking enterprise benchmarks, sovereign AI architectures, and vendor evaluation.
+                </p>
+                <ul class="text-xs text-[#8E9BAE] space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Access to all keynote stages</li>
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> AI matchmaking concierge</li>
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Exclusive networking luncheons</li>
+                </ul>
+              </div>
+              <div class="p-2.5 bg-[#C0F43C] text-black text-center font-bold text-xs rounded-lg">
+                Enquire for Passes ↗
+              </div>
+            </div>
+
+            <!-- Persona 2: Sponsor -->
+            <div class="wire-box rounded-xl p-5 flex flex-col justify-between">
+              <span class="wire-label">PERSONA 2</span>
+              <div>
+                <div class="text-xs font-mono-code text-[#00CEFF] mb-1">TECH PROVIDERS</div>
+                <h4 class="text-lg font-bold text-white mb-2">Sponsor & Exhibit</h4>
+                <p class="text-xs text-[#8E9BAE] font-sans-body mb-4">
+                  Position your brand before 700+ pre-qualified enterprise buyers and government procurement officers across ASEAN.
+                </p>
+                <ul class="text-xs text-[#8E9BAE] space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Thought leadership keynote slots</li>
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Premium exhibition booth</li>
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Pre-scheduled 1-on-1 meetings</li>
+                </ul>
+              </div>
+              <div class="p-2.5 bg-[#00CEFF] text-black text-center font-bold text-xs rounded-lg">
+                Sponsorship Enquiry ↗
+              </div>
+            </div>
+
+            <!-- Persona 3: Media Partner -->
+            <div class="wire-box rounded-xl p-5 flex flex-col justify-between">
+              <span class="wire-label">PERSONA 3</span>
+              <div>
+                <div class="text-xs font-mono-code text-purple-400 mb-1">PRESS & EDITORIAL</div>
+                <h4 class="text-lg font-bold text-white mb-2">Media Partner</h4>
+                <p class="text-xs text-[#8E9BAE] font-sans-body mb-4">
+                  Exclusive access for journalists, tech publications, and broadcast networks covering regional AI developments.
+                </p>
+                <ul class="text-xs text-[#8E9BAE] space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Press lounge access</li>
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Exclusive 1-on-1 speaker interviews</li>
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Brand distribution across site</li>
+                </ul>
+              </div>
+              <div class="p-2.5 bg-[#081429] border border-[#1E2D4A] text-white text-center font-bold text-xs rounded-lg hover:border-[#00CEFF]">
+                Media Enquiry ↗
+              </div>
+            </div>
+
+            <!-- Persona 4: Association Partner -->
+            <div class="wire-box rounded-xl p-5 flex flex-col justify-between">
+              <span class="wire-label">PERSONA 4</span>
+              <div>
+                <div class="text-xs font-mono-code text-emerald-400 mb-1">ECOSYSTEM & BODIES</div>
+                <h4 class="text-lg font-bold text-white mb-2">Association Partner</h4>
+                <p class="text-xs text-[#8E9BAE] font-sans-body mb-4">
+                  Collaborate with trade bodies, AI councils, universities, and industry consortiums to drive mutual delegate benefits.
+                </p>
+                <ul class="text-xs text-[#8E9BAE] space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Member pass allocations</li>
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Endorsement and logo presence</li>
+                  <li class="flex items-center gap-2"><span class="text-[#00CEFF]">✓</span> Panel representation</li>
+                </ul>
+              </div>
+              <div class="p-2.5 bg-[#081429] border border-[#1E2D4A] text-white text-center font-bold text-xs rounded-lg hover:border-[#00CEFF]">
+                Association Enquiry ↗
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- TEMPLATE 4: SPEAKERS HUB WIREFRAME -->
+      <!-- ========================================== -->
+      <div id="view-speakers" class="template-view space-y-6 hidden">
+        <div class="bg-[#040D1F] border border-[#1B2B48] rounded-2xl p-6">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#00CEFF]/10 text-[#00CEFF] border border-[#00CEFF]/20 text-xs font-mono-code mb-2">
+            ROUTE: /speakers (src/app/speakers/page.tsx)
+          </div>
+          <h2 class="text-2xl font-extrabold text-white">Past & Upcoming Speakers Hub</h2>
+          <p class="text-sm text-[#8E9BAE] font-sans-body mt-1">
+            Searchable speaker index with category filters, modal biography flyout, social handles, and session topic associations.
+          </p>
+        </div>
+
+        <div class="border border-[#1E2D4A] rounded-2xl bg-[#020814] p-4 sm:p-6 blueprint-grid-dense space-y-4">
+          <!-- Search & Filter Controls -->
+          <div class="wire-box rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <span class="wire-label">COMP: SpeakerSearchAndFilter</span>
+            <div class="w-full sm:w-72 h-9 bg-[#081429] border border-[#1E2D4A] rounded-lg px-3 flex items-center text-xs text-[#8E9BAE]">
+              🔍 Search by name, title, or company...
+            </div>
+            <div class="flex items-center gap-2 overflow-x-auto text-xs font-mono-code">
+              <span class="px-2.5 py-1 rounded bg-[#00CEFF] text-black font-bold">All</span>
+              <span class="px-2.5 py-1 rounded bg-[#081429] text-[#8E9BAE]">Government</span>
+              <span class="px-2.5 py-1 rounded bg-[#081429] text-[#8E9BAE]">Banking & Finance</span>
+              <span class="px-2.5 py-1 rounded bg-[#081429] text-[#8E9BAE]">Telco & Tech</span>
+              <span class="px-2.5 py-1 rounded bg-[#081429] text-[#8E9BAE]">Healthcare</span>
+            </div>
+          </div>
+
+          <!-- Speaker Cards Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- 8 Speaker Cards Placeholder -->
+            <div class="wire-box rounded-xl p-4 text-center">
+              <div class="w-20 h-20 rounded-2xl bg-white/10 mx-auto mb-3 border border-white/20 flex items-center justify-center font-mono-code text-xs">[Avatar]</div>
+              <div class="font-bold text-sm text-white">YBhg Ts. Dr. X</div>
+              <div class="text-xs text-[#8E9BAE]">Chief Executive Officer</div>
+              <div class="text-xs text-[#00CEFF] font-mono-code mt-0.5">Gov Agency Malaysia</div>
+              <div class="mt-3 pt-2 border-t border-white/10 flex justify-center gap-2 text-xs text-[#8E9BAE]">
+                <span>[LinkedIn]</span>
+                <span>[Bio Modal ↗]</span>
+              </div>
+            </div>
+            <div class="wire-box rounded-xl p-4 text-center">
+              <div class="w-20 h-20 rounded-2xl bg-white/10 mx-auto mb-3 border border-white/20 flex items-center justify-center font-mono-code text-xs">[Avatar]</div>
+              <div class="font-bold text-sm text-white">Dato' Sri Tech Leader</div>
+              <div class="text-xs text-[#8E9BAE]">Group CIO</div>
+              <div class="text-xs text-[#00CEFF] font-mono-code mt-0.5">Top ASEAN Bank</div>
+              <div class="mt-3 pt-2 border-t border-white/10 flex justify-center gap-2 text-xs text-[#8E9BAE]">
+                <span>[LinkedIn]</span>
+                <span>[Bio Modal ↗]</span>
+              </div>
+            </div>
+            <div class="wire-box rounded-xl p-4 text-center">
+              <div class="w-20 h-20 rounded-2xl bg-white/10 mx-auto mb-3 border border-white/20 flex items-center justify-center font-mono-code text-xs">[Avatar]</div>
+              <div class="font-bold text-sm text-white">VP Enterprise AI</div>
+              <div class="text-xs text-[#8E9BAE]">Head of Machine Learning</div>
+              <div class="text-xs text-[#00CEFF] font-mono-code mt-0.5">Global Cloud Vendor</div>
+              <div class="mt-3 pt-2 border-t border-white/10 flex justify-center gap-2 text-xs text-[#8E9BAE]">
+                <span>[LinkedIn]</span>
+                <span>[Bio Modal ↗]</span>
+              </div>
+            </div>
+            <div class="wire-box rounded-xl p-4 text-center">
+              <div class="w-20 h-20 rounded-2xl bg-white/10 mx-auto mb-3 border border-white/20 flex items-center justify-center font-mono-code text-xs">[Avatar]</div>
+              <div class="font-bold text-sm text-white">AI Strategy Director</div>
+              <div class="text-xs text-[#8E9BAE]">Head of Digital Transformation</div>
+              <div class="text-xs text-[#00CEFF] font-mono-code mt-0.5">National Telco</div>
+              <div class="mt-3 pt-2 border-t border-white/10 flex justify-center gap-2 text-xs text-[#8E9BAE]">
+                <span>[LinkedIn]</span>
+                <span>[Bio Modal ↗]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- TEMPLATE 5: PARTNERS & SPONSORS HUB WIREFRAME -->
+      <!-- ========================================== -->
+      <div id="view-partners" class="template-view space-y-6 hidden">
+        <div class="bg-[#040D1F] border border-[#1B2B48] rounded-2xl p-6">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#00CEFF]/10 text-[#00CEFF] border border-[#00CEFF]/20 text-xs font-mono-code mb-2">
+            ROUTE: /partners (src/app/partners/page.tsx)
+          </div>
+          <h2 class="text-2xl font-extrabold text-white">Partners & Sponsors Master Hub</h2>
+          <p class="text-sm text-[#8E9BAE] font-sans-body mt-1">
+            Categorized showcase of enterprise sponsors, government supporting organizations, strategic partners, and media alliances.
+          </p>
+        </div>
+
+        <div class="border border-[#1E2D4A] rounded-2xl bg-[#020814] p-4 sm:p-6 blueprint-grid-dense space-y-4">
+          <!-- Tier 1: Lead & Platinum -->
+          <div class="wire-box rounded-xl p-5">
+            <span class="wire-label">TIER 1: Lead & Platinum Sponsors</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2">
+              <div class="h-24 bg-[#081429] border border-amber-500/30 rounded-xl flex flex-col items-center justify-center p-3 text-center">
+                <span class="text-xs font-bold text-white">[Platinum Partner Logo]</span>
+                <span class="text-[10px] text-amber-400 font-mono-code mt-1">LEAD SPONSOR</span>
+              </div>
+              <div class="h-24 bg-[#081429] border border-amber-500/30 rounded-xl flex flex-col items-center justify-center p-3 text-center">
+                <span class="text-xs font-bold text-white">[Platinum Partner Logo]</span>
+                <span class="text-[10px] text-amber-400 font-mono-code mt-1">PLATINUM SPONSOR</span>
+              </div>
+              <div class="h-24 bg-[#081429] border border-amber-500/30 rounded-xl flex flex-col items-center justify-center p-3 text-center">
+                <span class="text-xs font-bold text-white">[Platinum Partner Logo]</span>
+                <span class="text-[10px] text-amber-400 font-mono-code mt-1">PLATINUM SPONSOR</span>
+              </div>
+              <div class="h-24 bg-[#081429] border border-amber-500/30 rounded-xl flex flex-col items-center justify-center p-3 text-center">
+                <span class="text-xs font-bold text-white">[Platinum Partner Logo]</span>
+                <span class="text-[10px] text-amber-400 font-mono-code mt-1">PLATINUM SPONSOR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tier 2: Gold & Silver Sponsors -->
+          <div class="wire-box rounded-xl p-5">
+            <span class="wire-label">TIER 2: Gold & Silver Sponsors</span>
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-3 mt-2">
+              <div class="h-16 bg-[#081429] border border-cyan-500/20 rounded-lg flex items-center justify-center text-xs text-white/70">[Gold Logo]</div>
+              <div class="h-16 bg-[#081429] border border-cyan-500/20 rounded-lg flex items-center justify-center text-xs text-white/70">[Gold Logo]</div>
+              <div class="h-16 bg-[#081429] border border-cyan-500/20 rounded-lg flex items-center justify-center text-xs text-white/70">[Gold Logo]</div>
+              <div class="h-16 bg-[#081429] border border-cyan-500/20 rounded-lg flex items-center justify-center text-xs text-white/70">[Silver Logo]</div>
+              <div class="h-16 bg-[#081429] border border-cyan-500/20 rounded-lg flex items-center justify-center text-xs text-white/70">[Silver Logo]</div>
+              <div class="h-16 bg-[#081429] border border-cyan-500/20 rounded-lg flex items-center justify-center text-xs text-white/70">[Silver Logo]</div>
+            </div>
+          </div>
+
+          <!-- Tier 3: Supporting Associations & Media -->
+          <div class="wire-box rounded-xl p-5">
+            <span class="wire-label">TIER 3: Supporting Ecosystem & Media</span>
+            <div class="grid grid-cols-4 md:grid-cols-8 gap-2 mt-2">
+              <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/50">[Media 1]</div>
+              <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/50">[Media 2]</div>
+              <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/50">[Media 3]</div>
+              <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/50">[Media 4]</div>
+              <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/50">[Assoc 1]</div>
+              <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/50">[Assoc 2]</div>
+              <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/50">[Assoc 3]</div>
+              <div class="h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[10px] text-white/50">[Assoc 4]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- TEMPLATE 6: EXHIBITION & 3D TOUR WIREFRAME -->
+      <!-- ========================================== -->
+      <div id="view-exhibition" class="template-view space-y-6 hidden">
+        <div class="bg-[#040D1F] border border-[#1B2B48] rounded-2xl p-6">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#00CEFF]/10 text-[#00CEFF] border border-[#00CEFF]/20 text-xs font-mono-code mb-2">
+            ROUTE: /exhibition (src/app/exhibition/page.tsx)
+          </div>
+          <h2 class="text-2xl font-extrabold text-white">Exhibition & 3D Floor Plan Hub</h2>
+          <p class="text-sm text-[#8E9BAE] font-sans-body mt-1">
+            Interactive venue floor plan, 3D WebGL exhibition booth explorer, 360° panorama tour, and booth reservation enquiry system.
+          </p>
+        </div>
+
+        <div class="border border-[#1E2D4A] rounded-2xl bg-[#020814] p-4 sm:p-6 blueprint-grid-dense space-y-4">
+          <!-- 3D Model Viewer Canvas -->
+          <div class="wire-box rounded-xl p-6 text-center">
+            <span class="wire-label">COMP: ModelViewerSection.tsx (Three.js / WebGL)</span>
+            <div class="h-72 bg-[#081429] border border-[#1E2D4A] rounded-xl flex flex-col items-center justify-center relative overflow-hidden">
+              <div class="w-16 h-16 rounded-full bg-[#00CEFF]/10 border border-[#00CEFF]/30 flex items-center justify-center text-2xl text-[#00CEFF] mb-2 animate-pulse">
+                🌐
+              </div>
+              <div class="font-bold text-base text-white">Interactive 3D Floorplan & Booth Layout</div>
+              <div class="text-xs text-[#8E9BAE] max-w-md mt-1">
+                WebGL rendered 3D architectural exhibition model hosted via Cloudflare R2 bucket. Real-time booth reservation status and tier tags.
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <span class="px-3 py-1 bg-white/10 rounded text-xs font-mono-code">Rotate: Drag</span>
+                <span class="px-3 py-1 bg-white/10 rounded text-xs font-mono-code">Zoom: Scroll</span>
+                <span class="px-3 py-1 bg-white/10 rounded text-xs font-mono-code">Select: Click Booth</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 360 Panorama Tour Module -->
+          <div class="wire-box rounded-xl p-5">
+            <span class="wire-label">COMP: VirtualTourSection.tsx (360° Panoramas)</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div class="h-32 bg-[#081429] border border-[#1E2D4A] rounded-lg p-3 flex flex-col justify-between">
+                <span class="text-xs font-bold text-white">Main Conference Hall</span>
+                <span class="text-[10px] text-[#00CEFF] font-mono-code">Launch 360° View ↗</span>
+              </div>
+              <div class="h-32 bg-[#081429] border border-[#1E2D4A] rounded-lg p-3 flex flex-col justify-between">
+                <span class="text-xs font-bold text-white">Exhibition & Showcase Arena</span>
+                <span class="text-[10px] text-[#00CEFF] font-mono-code">Launch 360° View ↗</span>
+              </div>
+              <div class="h-32 bg-[#081429] border border-[#1E2D4A] rounded-lg p-3 flex flex-col justify-between">
+                <span class="text-xs font-bold text-white">VIP Matchmaking Lounge</span>
+                <span class="text-[10px] text-[#00CEFF] font-mono-code">Launch 360° View ↗</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- TEMPLATE 7: NETWORKING SUITE WIREFRAME -->
+      <!-- ========================================== -->
+      <div id="view-networking" class="template-view space-y-6 hidden">
+        <div class="bg-[#040D1F] border border-[#1B2B48] rounded-2xl p-6">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#00CEFF]/10 text-[#00CEFF] border border-[#00CEFF]/20 text-xs font-mono-code mb-2">
+            ROUTES: /networking/* (/networking, /networking/ai-matchmaking, /networking/attendee-app, /networking/photo-gallery)
+          </div>
+          <h2 class="text-2xl font-extrabold text-white">Networking Suite & Mobile App Wireframe</h2>
+          <p class="text-sm text-[#8E9BAE] font-sans-body mt-1">
+            Algorithmic B2B matchmaking, pre-scheduled meeting concierge, attendee mobile application download, and visual photo gallery.
+          </p>
+        </div>
+
+        <div class="border border-[#1E2D4A] rounded-2xl bg-[#020814] p-4 sm:p-6 blueprint-grid-dense space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <!-- Feature 1: AI Matchmaking -->
+            <div class="wire-box rounded-xl p-5">
+              <span class="wire-label">FEATURE 1</span>
+              <div class="w-10 h-10 rounded-lg bg-[#00CEFF]/20 text-[#00CEFF] flex items-center justify-center font-bold mb-3">🤝</div>
+              <h4 class="text-base font-bold text-white mb-2">AI-Powered Matchmaking</h4>
+              <p class="text-xs text-[#8E9BAE] font-sans-body mb-4">
+                Smart algorithmic scheduling pairing enterprise buyers with vetted solution providers based on budget, project timeline, and technical requirements.
+              </p>
+              <div class="text-xs font-mono-code text-[#00CEFF]">Pre-scheduled 20-min slots</div>
+            </div>
+
+            <!-- Feature 2: Attendee App -->
+            <div class="wire-box rounded-xl p-5">
+              <span class="wire-label">FEATURE 2</span>
+              <div class="w-10 h-10 rounded-lg bg-[#C0F43C]/20 text-[#C0F43C] flex items-center justify-center font-bold mb-3">📲</div>
+              <h4 class="text-base font-bold text-white mb-2">Official Attendee App</h4>
+              <p class="text-xs text-[#8E9BAE] font-sans-body mb-4">
+                Personalized agenda builder, live Q&A with speakers, digital business card exchange, and real-time announcement notifications.
+              </p>
+              <div class="text-xs font-mono-code text-[#C0F43C]">iOS & Android Downloads</div>
+            </div>
+
+            <!-- Feature 3: Photo Gallery -->
+            <div class="wire-box rounded-xl p-5">
+              <span class="wire-label">FEATURE 3</span>
+              <div class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center font-bold mb-3">📸</div>
+              <h4 class="text-base font-bold text-white mb-2">Summit Photo Gallery</h4>
+              <p class="text-xs text-[#8E9BAE] font-sans-body mb-4">
+                High-resolution photo streams capturing keynotes, panel discussions, VIP networking lounges, and awards celebrations.
+              </p>
+              <div class="text-xs font-mono-code text-purple-400">View 2026/2027 Moments</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- TEMPLATE 8: ENQUIRY & LEAD FORMS WIREFRAME -->
+      <!-- ========================================== -->
+      <div id="view-enquiry" class="template-view space-y-6 hidden">
+        <div class="bg-[#040D1F] border border-[#1B2B48] rounded-2xl p-6">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#00CEFF]/10 text-[#00CEFF] border border-[#00CEFF]/20 text-xs font-mono-code mb-2">
+            ROUTES: /sponsorship-enquiry, /speaker-enquiry, /media-enquiry, /association-enquiry
+          </div>
+          <h2 class="text-2xl font-extrabold text-white">HubSpot Enquiry & Lead Capture Wireframe</h2>
+          <p class="text-sm text-[#8E9BAE] font-sans-body mt-1">
+            Standardized 2-column conversion layout across all enquiry routes with responsive HubSpot v2 embed integration, instant fallback, and validated portal credentials.
+          </p>
+        </div>
+
+        <div class="border border-[#1E2D4A] rounded-2xl bg-[#020814] p-4 sm:p-6 blueprint-grid-dense space-y-4">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Left Column: Value Prop & Direct Contacts (5 cols) -->
+            <div class="lg:col-span-5 wire-box rounded-xl p-6 space-y-5">
+              <span class="wire-label">LEFT COL: Value Prop & Contact Info</span>
+              <div>
+                <div class="text-xs font-mono-code text-[#C0F43C] mb-1">CONNECT WITH ORGANIZERS</div>
+                <h3 class="text-xl font-bold text-white">Secure Your Enterprise Presence for 2027</h3>
+                <p class="text-xs text-[#8E9BAE] font-sans-body mt-2">
+                  World AI Show brings together senior C-level executives, enterprise buyers, and government decision-makers in Kuala Lumpur.
+                </p>
+              </div>
+
+              <!-- Direct Contact Box -->
+              <div class="p-4 bg-[#081429] border border-[#1E2D4A] rounded-xl space-y-2 text-xs font-mono-code">
+                <div class="text-[#00CEFF] font-bold">DIRECT SALES & ENQUIRY:</div>
+                <div class="text-white">📧 enquiry@tresconglobal.com</div>
+                <div class="text-white">📞 +91 80 4611 3911 / +971 4 361 6661</div>
+                <div class="text-[#8E9BAE] text-[10px]">Response within 24 business hours</div>
+              </div>
+
+              <!-- Key Benefits List -->
+              <div class="space-y-2 text-xs text-[#8E9BAE]">
+                <div class="flex items-center gap-2"><span class="text-[#C0F43C]">✓</span> Verified 85%+ C-level and VIP attendance</div>
+                <div class="flex items-center gap-2"><span class="text-[#C0F43C]">✓</span> Pre-scheduled 1-on-1 executive matchmaking</div>
+                <div class="flex items-center gap-2"><span class="text-[#C0F43C]">✓</span> Keynote presentation & panel placement options</div>
+              </div>
+            </div>
+
+            <!-- Right Column: Form Container (7 cols) -->
+            <div class="lg:col-span-7 wire-box rounded-xl p-6">
+              <span class="wire-label">RIGHT COL: HubspotForm.tsx</span>
+              <div class="text-xs font-mono-code text-[#8E9BAE] mb-4">
+                FORM ID: <span class="text-[#00CEFF]">7d2f2204-7604-4373-ba13-4e240c5a8493</span> | PORTAL: <span class="text-white">2953901 (na1)</span>
+              </div>
+
+              <!-- Form Wireframe Simulation -->
+              <div class="space-y-3">
+                <div class="grid grid-cols-2 gap-3">
+                  <div>
+                    <div class="text-[10px] font-mono-code text-[#8E9BAE] mb-1">FIRST NAME *</div>
+                    <div class="h-9 bg-[#081429] border border-[#1E2D4A] rounded px-3 flex items-center text-xs text-white/40">e.g. John</div>
+                  </div>
+                  <div>
+                    <div class="text-[10px] font-mono-code text-[#8E9BAE] mb-1">LAST NAME *</div>
+                    <div class="h-9 bg-[#081429] border border-[#1E2D4A] rounded px-3 flex items-center text-xs text-white/40">e.g. Doe</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="text-[10px] font-mono-code text-[#8E9BAE] mb-1">BUSINESS EMAIL *</div>
+                  <div class="h-9 bg-[#081429] border border-[#1E2D4A] rounded px-3 flex items-center text-xs text-white/40">john.doe@company.com</div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <div>
+                    <div class="text-[10px] font-mono-code text-[#8E9BAE] mb-1">JOB TITLE *</div>
+                    <div class="h-9 bg-[#081429] border border-[#1E2D4A] rounded px-3 flex items-center text-xs text-white/40">e.g. Chief Technology Officer</div>
+                  </div>
+                  <div>
+                    <div class="text-[10px] font-mono-code text-[#8E9BAE] mb-1">COMPANY NAME *</div>
+                    <div class="h-9 bg-[#081429] border border-[#1E2D4A] rounded px-3 flex items-center text-xs text-white/40">e.g. Enterprise Sdn Bhd</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="text-[10px] font-mono-code text-[#8E9BAE] mb-1">PHONE NUMBER (WITH COUNTRY CODE) *</div>
+                  <div class="h-9 bg-[#081429] border border-[#1E2D4A] rounded px-3 flex items-center text-xs text-white/40">+60 12-345 6789</div>
+                </div>
+
+                <div>
+                  <div class="text-[10px] font-mono-code text-[#8E9BAE] mb-1">SPECIFIC AREAS OF INTEREST / INQUIRY DETAILS</div>
+                  <div class="h-16 bg-[#081429] border border-[#1E2D4A] rounded p-2 text-xs text-white/40">Please specify your requirements...</div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-2">
+                  <div class="w-full py-3 bg-[#C0F43C] text-black font-extrabold text-sm rounded-xl text-center shadow-lg cursor-pointer">
+                    Submit Enquiry ↗
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- SITE ARCHITECTURE / SITEMAP SECTION -->
+  <!-- ========================================== -->
+  <section class="border-t border-[#1B2B48] bg-[#040D1F] py-16" id="sitemap">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-mono-code text-[#00CEFF] uppercase tracking-wider">FULL ARCHITECTURAL TREE</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Complete Site Information Architecture (IA)</h2>
+        <p class="text-sm text-[#8E9BAE] font-sans-body mt-2">
+          Directory structure and URL map of all 18 production routes under <code class="text-white font-mono-code">/malaysia</code>.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- IA Cluster 1: Core & Agenda -->
+        <div class="bg-[#020814] border border-[#1E2D4A] rounded-2xl p-6">
+          <div class="flex items-center gap-2 text-sm font-bold text-[#C0F43C] font-mono-code mb-4">
+            <span>📁 01. CORE & AGENDA</span>
+          </div>
+          <ul class="space-y-3 text-xs font-mono-code">
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/ (Homepage)</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/page.tsx • Master Hero, Stats, Speakers, Sponsors, FAQ</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/agenda/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/agenda/page.tsx • Agenda Hub Overview</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/agenda/agenda/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/agenda/agenda/page.tsx • Full 2-Day Detailed Timeline</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/agenda/themes/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/agenda/themes/page.tsx • Key Thematic Focus Tracks</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/agenda/the-2030-vision/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/agenda/the-2030-vision/page.tsx • Malaysia AI Vision 2030</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/agenda/call-for-speakers/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/agenda/call-for-speakers/page.tsx • Speaker Call Funnel</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- IA Cluster 2: Attend & Stakeholders -->
+        <div class="bg-[#020814] border border-[#1E2D4A] rounded-2xl p-6">
+          <div class="flex items-center gap-2 text-sm font-bold text-[#00CEFF] font-mono-code mb-4">
+            <span>📁 02. ATTEND & STAKEHOLDERS</span>
+          </div>
+          <ul class="space-y-3 text-xs font-mono-code">
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/attend/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/attend/page.tsx • Attend Overview & Tier Matrix</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/attend/delegate/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/attend/delegate/page.tsx • C-Level & Delegate Pass Funnel</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/attend/sponsor/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/attend/sponsor/page.tsx • Sponsorship ROI & Booth Matrix</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/attend/media-partner/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/attend/media-partner/page.tsx • Media Kit & Press Register</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/attend/association-partner/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/attend/association-partner/page.tsx • Association Alliances</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/speakers/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/speakers/page.tsx • Complete Speaker Directory</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/partners/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/partners/page.tsx • Complete Partners & Sponsors Directory</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- IA Cluster 3: Enquiries & Interactive Experience -->
+        <div class="bg-[#020814] border border-[#1E2D4A] rounded-2xl p-6">
+          <div class="flex items-center gap-2 text-sm font-bold text-purple-400 font-mono-code mb-4">
+            <span>📁 03. ENQUIRIES & EXPERIENCES</span>
+          </div>
+          <ul class="space-y-3 text-xs font-mono-code">
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-[#C0F43C] font-bold">/malaysia/sponsorship-enquiry/</div>
+              <div class="text-[#8E9BAE] text-[10px]">HubSpot Form: 7d2f2204-7604-4373-ba13-4e240c5a8493</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-[#00CEFF] font-bold">/malaysia/speaker-enquiry/</div>
+              <div class="text-[#8E9BAE] text-[10px]">HubSpot Form: 7aae4009-64ec-41f0-b30f-7efc83f1ebc6</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-purple-300 font-bold">/malaysia/media-enquiry/</div>
+              <div class="text-[#8E9BAE] text-[10px]">HubSpot Form: 6d1b0984-8964-4452-8593-0c0c5c202878</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-emerald-300 font-bold">/malaysia/association-enquiry/</div>
+              <div class="text-[#8E9BAE] text-[10px]">HubSpot Form: bb31ae13-d02a-49d7-802c-e8bda5180ee4</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/exhibition/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/exhibition/page.tsx • 3D WebGL Floorplan & Panoramas</div>
+            </li>
+            <li class="p-2.5 bg-white/5 rounded-lg border border-white/5">
+              <div class="text-white font-bold">/malaysia/networking/</div>
+              <div class="text-[#8E9BAE] text-[10px]">src/app/networking/page.tsx • Matchmaking & App Suite</div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- TECHNICAL ARCHITECTURE & DESIGN TOKENS -->
+  <!-- ========================================== -->
+  <section class="py-16 border-t border-[#1B2B48] bg-[#020814]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-mono-code text-[#C0F43C] uppercase tracking-wider">SYSTEM SPECIFICATIONS</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Design Tokens & Component Rules</h2>
+        <p class="text-sm text-[#8E9BAE] font-sans-body mt-2">
+          Strict production constraints to maintain consistency across every route and layout.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-5 bg-[#040D1F] border border-[#1E2D4A] rounded-xl">
+          <div class="text-xs font-mono-code text-[#00CEFF] font-bold mb-2">01. GRID & BREAKPOINTS</div>
+          <div class="space-y-1.5 text-xs text-[#8E9BAE] font-sans-body">
+            <div><strong class="text-white">Container Max:</strong> 1280px / 1440px</div>
+            <div><strong class="text-white">Columns:</strong> 12-col desktop, 4-col mobile</div>
+            <div><strong class="text-white">Gutter:</strong> 24px (1.5rem) / 16px (1rem)</div>
+            <div><strong class="text-white">Breakpoints:</strong> sm (640px), md (768px), lg (1024px), xl (1280px)</div>
+          </div>
+        </div>
+
+        <div class="p-5 bg-[#040D1F] border border-[#1E2D4A] rounded-xl">
+          <div class="text-xs font-mono-code text-[#C0F43C] font-bold mb-2">02. COLOR PALETTE</div>
+          <div class="space-y-1.5 text-xs text-[#8E9BAE] font-sans-body">
+            <div><strong class="text-white">Obsidian Base:</strong> #020814</div>
+            <div><strong class="text-white">Card Ink:</strong> #040D1F / #081429</div>
+            <div><strong class="text-white">Lime Primary:</strong> #C0F43C</div>
+            <div><strong class="text-white">Cyan Accent:</strong> #00CEFF / #18D4FF</div>
+          </div>
+        </div>
+
+        <div class="p-5 bg-[#040D1F] border border-[#1E2D4A] rounded-xl">
+          <div class="text-xs font-mono-code text-purple-400 font-bold mb-2">03. TYPOGRAPHY</div>
+          <div class="space-y-1.5 text-xs text-[#8E9BAE] font-sans-body">
+            <div><strong class="text-white">Headings:</strong> Space Grotesk (700/850)</div>
+            <div><strong class="text-white">Body Text:</strong> Inter (400/500)</div>
+            <div><strong class="text-white">Data & Code:</strong> JetBrains Mono (500/700)</div>
+            <div><strong class="text-white">Line Height:</strong> 1.15 headings / 1.6 body</div>
+          </div>
+        </div>
+
+        <div class="p-5 bg-[#040D1F] border border-[#1E2D4A] rounded-xl">
+          <div class="text-xs font-mono-code text-emerald-400 font-bold mb-2">04. FORM ENGINE</div>
+          <div class="space-y-1.5 text-xs text-[#8E9BAE] font-sans-body">
+            <div><strong class="text-white">Provider:</strong> HubSpot Forms v2</div>
+            <div><strong class="text-white">Portal ID:</strong> 2953901 (Region na1)</div>
+            <div><strong class="text-white">Container:</strong> Glassmorphic card</div>
+            <div><strong class="text-white">Fallback:</strong> Direct mailto & phone strip</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="border-t border-[#1B2B48] bg-[#01050D] py-8 text-center text-xs text-[#8E9BAE] font-mono-code">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#C0F43C]"></span>
+        <span>World AI Show Malaysia 2027 • Architectural Wireframe Documentation</span>
+      </div>
+      <div>
+        <span>Generated for Trescon Digital & Engineering Team</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript for Template & Viewport Switching -->
+  <script>
+    function switchTemplate(templateId) {
+      // Hide all template views
+      document.querySelectorAll('.template-view').forEach(el => el.classList.add('hidden'));
+      // Show selected
+      const target = document.getElementById('view-' + templateId);
+      if (target) target.classList.remove('hidden');
+
+      // Update tab styles
+      document.querySelectorAll('.template-tab').forEach(tab => {
+        tab.classList.remove('bg-[#00CEFF]', 'text-black');
+        tab.classList.add('bg-[#081429]', 'text-[#8E9BAE]');
+      });
+      const activeTab = document.getElementById('tab-' + templateId);
+      if (activeTab) {
+        activeTab.classList.remove('bg-[#081429]', 'text-[#8E9BAE]');
+        activeTab.classList.add('bg-[#00CEFF]', 'text-black');
+      }
+
+      // Smooth scroll to preview top
+      document.getElementById('wireframes').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function setViewport(device) {
+      const wrapper = document.getElementById('preview-wrapper');
+      document.querySelectorAll('.vp-btn').forEach(btn => {
+        btn.classList.remove('bg-[#1B2B48]', 'text-[#00CEFF]');
+        btn.classList.add('text-[#8E9BAE]');
+      });
+
+      const activeBtn = document.getElementById('vp-' + device);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-[#8E9BAE]');
+        activeBtn.classList.add('bg-[#1B2B48]', 'text-[#00CEFF]');
+      }
+
+      if (device === 'desktop') {
+        wrapper.style.maxWidth = '100%';
+      } else if (device === 'tablet') {
+        wrapper.style.maxWidth = '768px';
+      } else if (device === 'mobile') {
+        wrapper.style.maxWidth = '390px';
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1893 @@
+[
+  {
+    "session_id": 13956,
+    "session_type": 1,
+    "session_title": "Registration & Welcome Coffee",
+    "session_description": "",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-10 00:30:00",
+    "end_timestamp": "2026-09-10 01:30:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 1,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:41:11.965526",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "f794c2f2-fe91-4af2-9892-c5ced31dbb21",
+        "name": "Registration"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13939,
+    "session_type": 1,
+    "session_title": "Registration & Welcome Coffee",
+    "session_description": "",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-09 00:00:00",
+    "end_timestamp": "2026-09-09 01:00:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 1,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 09:45:08.596430",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "f794c2f2-fe91-4af2-9892-c5ced31dbb21",
+        "name": "Registration"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13940,
+    "session_type": 1,
+    "session_title": "Opening Remarks",
+    "session_description": "",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-09 01:00:00",
+    "end_timestamp": "2026-09-09 01:15:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 2,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 09:45:46.199659",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13957,
+    "session_type": 1,
+    "session_title": "Opening Remarks",
+    "session_description": "<p>From AI Foundations to National and Enterprise Impact&nbsp;</p>\n<p style=\"font-family: Hind, sans-serif;\">&nbsp;</p>\n<p>Opening remarks positioning Day 2 around practical AI deployment, industry transformation and measurable business value.</p>\n<p>&nbsp;</p>",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-10 01:30:00",
+    "end_timestamp": "2026-09-10 01:40:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 2,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:42:19.826474",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 16018,
+    "session_type": 1,
+    "session_title": "Official Opening Address by YBhg. Datuk Fabian Bigar",
+    "session_description": "<div>Malaysia\u2019s AI Future: From National Digital Ambition to Real-World Impact</div>",
+    "session_speakers": [
+      {
+        "speaker_id": 28985,
+        "name": "Fabian Bigar",
+        "about": "YBhg. Datuk Fabian Bigar is the Secretary General of Malaysia\u2019s Ministry of Digital and a senior public-sector leader with extensive experience in national policy, economic transformation and digitalisation. A Sarawakian from Kuching, he holds a BSc in Biology from Case Western Reserve University and a Master of Public Policy from GRIPS, Japan. His career spans the Ministry of Health, PEMANDU and the Prime Minister\u2019s Department. He later led MyDIGITAL Corporation and Malaysia\u2019s Centre for the Fourth Industrial Revolution, driving the Digital Economy Blueprint, 4IR agenda and national digital transformation.",
+        "image_url": "/banking/images/konfhub-archive/52df9bc3c8b89e4d.png",
+        "organisation_logo_url": null,
+        "designation": "Secretary General",
+        "location": null,
+        "organisation": "Ministry of Digital Malaysia",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 01:15:00",
+    "end_timestamp": "2026-09-09 01:35:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 3,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-09-08 11:13:47.509344",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13959,
+    "session_type": 1,
+    "session_title": "AI for Malaysia\u2019s Public Sector: From Digital Services to Intelligent Government",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">This session explores how AI can modernise public services, improve citizen experience, strengthen national systems and support smarter government delivery.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 26411,
+        "name": "Ts. D. Jackson Raao",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ts. D. Jackson Raao is a Malaysian Diplomatic Officer and Professional Technologist at MOSTI specializing in balancing rapid technological innovation with robust cybersecurity, regulatory, and ethical frameworks.</p>",
+        "image_url": "/banking/images/konfhub-archive/0250bff606d1c6f3.png",
+        "organisation_logo_url": null,
+        "designation": "Principal Assistant Secretary",
+        "location": "Malaysia",
+        "organisation": "Ministry of Science, Technology and Innovation",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27732,
+        "name": "Ramana Ramakrishna",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ramana Ramakrishna is a digital native that translates trust into value driven measurable outcomes for enterprise execution with over 30 years of cross-sector leadership across BPO, CRM, Telcos, Healthcare, FSI, Utilities and Construction. Currently leading Gamuda DNeX Cloud, he specialises in reimagining the evolution from data residency towards sovereignty and autonomy for enterprises.</p>",
+        "image_url": "/banking/images/konfhub-archive/971e18592fa8b2ac.png",
+        "organisation_logo_url": null,
+        "designation": "Head, Cybersecurity & Programme Delivery",
+        "location": "Malaysia",
+        "organisation": "Gamuda DNeX Cloud",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28696,
+        "name": "Effendy Zulkifly",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Malaysian technocrat, AI and digital governance strategist, and ecosystem builder advancing trusted AI, fintech, blockchain and public-impact innovation across institutions, industry and society.</p>",
+        "image_url": "/banking/images/konfhub-archive/36b76d89b66273e5.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Digital Officer",
+        "location": null,
+        "organisation": "YAPEIM HOLDINGS",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-10 01:40:00",
+    "end_timestamp": "2026-09-10 02:20:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 3,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:44:08.946515",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "d3e2f45a-4be9-4a0d-8147-632d5d11429e",
+        "name": "Fireside Chat"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13960,
+    "session_type": 1,
+    "session_title": "Blaize Edge AI: Intelligence Everywhere",
+    "session_description": "<p>The smartest models in the world still stall out when the answer is needed in milliseconds, on a device with no reliable connection, running on limited power. Blaize was built to close that gap, not with more cloud, but with silicon and software designed to put real inference directly into cameras, machines, vehicles, and infrastructure.</p>\n<p>As we enter the new era of Edge Intelligence, hybrid compute, real-time inference, and purpose-built silicon work together to sense, respond, and act instantly. Discover how you can solve your real-world business problems with AI-powered solutions.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 27863,
+        "name": "Eric Liew",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Eric Liew is a technology business leader with over 25 years of experience spanning enterprise technology, sales, and business development. Currently with Blaize, he focuses on bringing high-performance Edge AI to real-world applications, helping organizations deploy intelligent systems where decisions need to happen in real time, at the edge.&nbsp;</p>",
+        "image_url": "/banking/images/konfhub-archive/0a2afe13b8627e10.png",
+        "organisation_logo_url": null,
+        "designation": "Regional Sales Director, ASEAN",
+        "location": "Malaysia",
+        "organisation": "Blaize",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      }
+    ],
+    "start_timestamp": "2026-09-10 02:20:00",
+    "end_timestamp": "2026-09-10 02:40:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 4,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:45:18.654646",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "bee9ade2-5f61-4a48-81ba-15f36b16a5cd",
+        "name": "Tech Talk"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13942,
+    "session_type": 1,
+    "session_title": "Building Malaysia\u2019s AI-Ready Enterprise Economy",
+    "session_description": "<p>A premium keynote on building secure, scalable and trusted AI foundations across government, GLCs and enterprises.</p>\n<p>&nbsp;</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 27729,
+        "name": "Murugason R Thangaratnam",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Murugason R. Thangaratnam is a cybersecurity and digital trust leader with extensive expertise in cyber resilience, AI governance, and emerging technology risks. He serves as Cyber Defence and Intelligence Lead at Equanimity Group, Adjunct Professor of Practice at UNIMY, and Digital Expert Panel member at MDEC, while contributing to Malaysia\u2019s Ministry of Digital data governance initiatives.</p>",
+        "image_url": "/banking/images/konfhub-archive/a4ecfada7fc04ee0.png",
+        "organisation_logo_url": null,
+        "designation": "Digital Expert Panel",
+        "location": "Malaysia",
+        "organisation": "Malaysia Digital Economy Corporation (MDEC)",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      }
+    ],
+    "start_timestamp": "2026-09-09 01:35:00",
+    "end_timestamp": "2026-09-09 01:55:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 4,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:07:49.184988",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "92c8a335-9cf3-485c-a74d-8ee7c7fafcaa",
+        "name": "Keynote"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13943,
+    "session_type": 1,
+    "session_title": "Breaking Silos: Keeping Humans in Control at AI Speed",
+    "session_description": "<p>AI is accelerating how organisations build, operate and attack software. But as code, cloud, identities, data and AI workflows change continuously, security teams are often forced to make high-impact decisions with fragmented context. In this keynote, Matt Moore explores why \u201csecurity without context doesn\u2019t scale,\u201d using a real AI software supply-chain incident to show how modern risk crosses development and production boundaries. He outlines a pragmatic approach to connecting observability and security telemetry so teams can prioritise what matters, govern AI in motion, respond faster and keep consequential decisions firmly under human control.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 27737,
+        "name": "Matt Moore",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Matt Moore is a passionate speaker, data enthusiast and Principal Observability Strategist at Datadog, helping organisations make technology simpler, safer and easier to operate. With more than 20 years in tech, he brings practical insight, curiosity and humour to the stage. Away from keyboards, he\u2019s an avid pilot and sailor.</p>",
+        "image_url": "/banking/images/konfhub-archive/adede4559b9e3328.png",
+        "organisation_logo_url": null,
+        "designation": "Principal Observability Strategist",
+        "location": "Australia",
+        "organisation": "Datadog",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      }
+    ],
+    "start_timestamp": "2026-09-09 01:55:00",
+    "end_timestamp": "2026-09-09 02:15:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 5,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:08:57.363971",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "bee9ade2-5f61-4a48-81ba-15f36b16a5cd",
+        "name": "Tech Talk"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 15921,
+    "session_type": 1,
+    "session_title": "Investing in Execution: How Capital Decides What Survives",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">AI is attracting unprecedented capital, but the market has quietly changed what it pays for. Drawing on recent acquisitions, live deployments and second-year deployment economics, Sahaj Kothari sets out the gates an investor applies before committing capital, and why they are the same questions an enterprise should ask before signing a contract. For anyone buying AI, a checklist. For anyone building it, a blueprint.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 28885,
+        "name": "Sahaj Kothari",
+        "about": "Sahaj Kothari is Partner at Capzara Capital, an operator fund investing in AI and enterprise technology across Europe, the Middle East and Asia. Alongside the fund he runs an operating arm deploying conversational and voice AI into live enterprise environments in telecom, BPO and hospitality. A two-times exited founder who has managed over $100M in revenue across 42 brands, formerly at EY and Bain, with an Oxford first-class Masters. He is an award-winning author and was UK runner-up for Entrepreneur of the Year. He judged the Digihealth pitch finals at GITEX Global Dubai. He does not describe the AI market from a spreadsheet. He sees what actually ships.",
+        "image_url": "/banking/images/konfhub-archive/47cfd45f9053fcc7.png",
+        "organisation_logo_url": null,
+        "designation": "Partner",
+        "location": null,
+        "organisation": "Capzara Capital",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-10 02:40:00",
+    "end_timestamp": "2026-09-10 03:00:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 5,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-09-04 12:26:10.724162",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-09 12:19:37",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "92c8a335-9cf3-485c-a74d-8ee7c7fafcaa",
+        "name": "Keynote"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13944,
+    "session_type": 1,
+    "session_title": "The National AI Infrastructure Race: Building Malaysia\u2019s Technology and AI-Ready Infrastructure",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">As AI workloads grow, Malaysia\u2019s cloud maturity, compute capacity, data centre ecosystem, energy readiness and sovereign infrastructure will define its AI competitiveness.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 26410,
+        "name": "Sr Jamie Tan",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Sr Jamie Tan is the Managing Director of JLL Malaysia and Chartered Surveyor with extensive expertise spanning 30 years in property consultancy, valuation, property development and facilities management across commercial, industrial, residential and data centre sectors.</p>",
+        "image_url": "/banking/images/konfhub-archive/eba6de18c6fb4c0a.png",
+        "organisation_logo_url": null,
+        "designation": "Managing Director",
+        "location": "Malaysia",
+        "organisation": "JLL Appraisal & Property Services Sdn Bhd",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "7b068514-2b3d-44b0-935a-70aece5539f0",
+            "name": "Speaker"
+          }
+        ]
+      },
+      {
+        "speaker_id": 27499,
+        "name": "Dr Ahmad Khalid Khairi",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Dr. Ahmad Khalid is a technology and innovation leader passionate about turning emerging technologies from AI and clean energy to space technology into real world business impact.</p>",
+        "image_url": "/banking/images/konfhub-archive/c13bb2d9b935390c.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Technology and Innovation Officer",
+        "location": "Malaysia",
+        "organisation": "UZMA BERHAD",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28687,
+        "name": "Chuan Boon Loo",
+        "about": "Chuan Boon is COO of Sidec, where he leads Selangor\u2019s digital transformation and positions the state as a leading digital hub in ASEAN. He oversees initiatives in startup acceleration, SME digitalisation, talent development, and technology investments. He has supported over 300 startups and generated RM500 million+ in GMV, and previously served as General Manager of SITEC.",
+        "image_url": "/banking/images/konfhub-archive/dd8a80f8e96586c6.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Operating Officer",
+        "location": null,
+        "organisation": "Selangor Information Technology & Digital Economy Corporation",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      },
+      {
+        "speaker_id": 27367,
+        "name": "Ekneswaran Matandor",
+        "about": "Dynamic technology leader with proven impact at IBM and HP, renowned for delivering transformative AI and cybersecurity strategies. A sought-after public speaker, driving conversations that bridge innovation, leadership, and the future of digital transformation across global stages.",
+        "image_url": "/banking/images/konfhub-archive/4c486d6fe1621ade.png",
+        "organisation_logo_url": null,
+        "designation": "Artificial Intelligence & Cybersecurity Leader",
+        "location": "Malaysia",
+        "organisation": null,
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 02:15:00",
+    "end_timestamp": "2026-09-09 02:55:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 6,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:09:46.573488",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "86886579-1cb2-45d4-b109-fb99d31dec2b",
+        "name": "Panel Discussion"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13962,
+    "session_type": 1,
+    "session_title": "Networking & Coffee Break",
+    "session_description": "",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-10 03:00:00",
+    "end_timestamp": "2026-09-10 03:30:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 6,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:47:42.952860",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "fda77053-707f-4392-8fa4-997d6538aa0e",
+        "name": "Break"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13961,
+    "session_type": 1,
+    "session_title": "Why Enterprise AI Stalls After the Pilot and How Malaysian Leaders Are Scaling It",
+    "session_description": "<p>Many AI initiatives fail to move from proof of concept to production. This session explores integration, governance, observability, business alignment and change management required for scale.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 26706,
+        "name": "Raunak Mehta",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Raunak Mehta is Co-Founder and CEO of Igloo, Southeast Asia's leading full-stack insurtech company, processing over 100 million policies monthly across six markets and deploying AI at scale to close the region's US$60 billion insurance protection gap</p>",
+        "image_url": "/banking/images/konfhub-archive/0c4562f0f8e43d36.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Executive Officer",
+        "location": "Singapore",
+        "organisation": "Igloo",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27335,
+        "name": "Saravanan G",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">G Saravanan is a seasoned Chief Information Officer (CIO) with over 25 years of extensive experience in spearheading information technology initiatives within the healthcare industry. His career spans across Southeast Asia and the Middle East specialising in IT strategy, hospital operations, telemedicine ecosystems, and compliance with legal frameworks.</p>",
+        "image_url": "/banking/images/konfhub-archive/0edadb45bf59ecbf.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Information Officer",
+        "location": "Malaysia",
+        "organisation": "National Cancer Society Malaysia",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27698,
+        "name": "Sabrina Yap",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Sabrina Yap leads enterprise-wide initiatives that connect technology innovation with meaningful business transformation. With over 20 years of experience spanning telecommunications, gaming, finance, digital, e commerce and startups, she has led system consolidation, technology modernisation and large-scale transformation programmes.</p>",
+        "image_url": "/banking/images/konfhub-archive/c642afb5710b332e.png",
+        "organisation_logo_url": null,
+        "designation": "Head of Digital Transformation",
+        "location": null,
+        "organisation": "Mr DIY International",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28693,
+        "name": "Manminder Kaur Dhillon",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Manminder Kaur Dhillon is the Founder and CEO of Supernewsroom.AI, building the AI visibility infrastructure that helps brands become known, trusted and recommended by AI.</p>",
+        "image_url": "/banking/images/konfhub-archive/5b6661bb588977fd.png",
+        "organisation_logo_url": null,
+        "designation": "CEO & Founder",
+        "location": null,
+        "organisation": "Supernewsroom.ai",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-10 03:30:00",
+    "end_timestamp": "2026-09-10 04:10:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 7,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:47:07.589651",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-10 00:28:14",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "86886579-1cb2-45d4-b109-fb99d31dec2b",
+        "name": "Panel Discussion"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13945,
+    "session_type": 1,
+    "session_title": "Beyond LLMs: Choosing the Right AI Model Strategy for the Enterprise",
+    "session_description": "<p>A fireside on how technology leaders can navigate the growing AI model landscape&nbsp; from LLMs and SLMs to specialised models&nbsp; and make the right choices around performance, cost, data, security, scalability and business value.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 28375,
+        "name": "Ts. Mohd Shahril Bin Kamaruzzaman",
+        "about": "Shahril leads the Technology, Engineering and Data (T-E-D) division at Bank Islam Malaysia Berhad, overseeing AI+ Automation, Data Lake ecosystem and RPA initiatives. With more than 18 years of experience in system architecture, data engineering and cloud technologies across major organizations towards various cloud platforms, he brings technical expertise in driving digital transformation initiatives. His achievements include delivering significant cost optimization practice, spearheaded automation transformation and built scalable technology platforms that accelerate business growth and operational excellence.",
+        "image_url": "/banking/images/konfhub-archive/55c37ce4b48f00fa.png",
+        "organisation_logo_url": null,
+        "designation": "Head of Technology, Engineering and Data",
+        "location": null,
+        "organisation": "Bank Islam",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      },
+      {
+        "speaker_id": 28723,
+        "name": "Ragunath Murthy",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ragunath \u201cPak Joe\u201d Murthy is a dynamic business leader with over 35 years of life insurance leadership across Asia Pacific, having held senior roles spanning Agency, Distribution, Marketing and Client Management. Today, as Founder &amp; Chief Rainmaker of reAInmaker, he is championing AI-powered platforms\u2014including spAIder, beAIve, butterflAIy and egAIeye\u2014designed to transform productivity and business performance. Beyond business, Pak Joe is a passionate humanitarian and community leader, serving as an Ambassador for the National Cancer Society Malaysia, Trustee of the My Shining Star Foundation, and a Rotary leader. A former Malaysian youth cricketer and co-founder of Silver State Cricket Club, Pak Joe brings the same spirit of teamwork, resilience and leadership to the stage as an international speaker on insurance, AI, technology and leadership.</p>",
+        "image_url": "/banking/images/konfhub-archive/6c1a8f4780064746.png",
+        "organisation_logo_url": null,
+        "designation": "Founder & Chief Rainmaker",
+        "location": null,
+        "organisation": "reAInmaker",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 02:55:00",
+    "end_timestamp": "2026-09-09 03:15:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 7,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:10:40.106819",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "d3e2f45a-4be9-4a0d-8147-632d5d11429e",
+        "name": "Fireside Chat"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13963,
+    "session_type": 1,
+    "session_title": "From Customer 360 to Agent 360: When AI Starts Acting, Not Just Analysing",
+    "session_description": "<p>For years businesses have invested to understand customers better. AI changes the ambition: from knowing the customer to acting intelligently for the customer. The next frontier is agent 360 where connected data, context and AI agents continuously sense intent, decide the next best action and orchestrate experiences across an ecosystem.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 27731,
+        "name": "Low Ngai Yuen",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Low Ngai Yuen is Managing Director of AEON360, driving customer-first transformation across data, digital and commerce. A corporate leader, board director, filmmaker and cultural advocate, she brings together business, technology and creativity\u2014while championing women, the arts and inclusion through WOMENgirls, Kakiseni, 30% Club Malaysia and Malaysia\u2019s National Cultural Council.</p>",
+        "image_url": "/banking/images/konfhub-archive/40b8f2fab510fad5.png",
+        "organisation_logo_url": null,
+        "designation": "Managing Director",
+        "location": "Malaysia",
+        "organisation": "AEON360",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      }
+    ],
+    "start_timestamp": "2026-09-10 04:10:00",
+    "end_timestamp": "2026-09-10 04:30:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 8,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:48:41.329675",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "92c8a335-9cf3-485c-a74d-8ee7c7fafcaa",
+        "name": "Keynote"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13946,
+    "session_type": 1,
+    "session_title": "Networking & Coffee Break",
+    "session_description": "",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-09 03:15:00",
+    "end_timestamp": "2026-09-09 03:40:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 8,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:11:34.303499",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "fda77053-707f-4392-8fa4-997d6538aa0e",
+        "name": "Break"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13948,
+    "session_type": 1,
+    "session_title": "Pilot to Production: Malaysia's Real AI Bottleneck isn't Megawatts",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">Rather than focusing purely on the compute itself, this keynote will offer a deep dive into Malaysia's current AI market landscape. We will unpack the hidden operational and infrastructural hurdles Malaysian enterprise, SME, startups, and AI-native companies face when transitioning from pilot programs to full-scale production, and share strategic insights on how to successfully bridge that gap to scale to the next level.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 28689,
+        "name": "Retainna Lin",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Retainna Lin is VP of Bitdeer AI Cloud, a full-stack AI cloud platform and preferred NVIDIA Cloud Partner, where she leads commercial strategy, partnerships and brand positioning. With a Master's in Digital Leadership from the National University of Singapore and over a decade of B2B marketing experience across Asia and the UK, she bridges technical innovation and commercial strategy, helping organizations navigate the generative AI era and shaping how the world will build and scale the backbone of intelligence.</p>",
+        "image_url": "/banking/images/konfhub-archive/ac8a9b6d7454778f.png",
+        "organisation_logo_url": null,
+        "designation": "Vice President",
+        "location": null,
+        "organisation": "Bitdeer AI",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 03:40:00",
+    "end_timestamp": "2026-09-09 04:00:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 9,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:13:04.245406",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "bee9ade2-5f61-4a48-81ba-15f36b16a5cd",
+        "name": "Tech Talk"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13964,
+    "session_type": 1,
+    "session_title": "AI for Banking and Financial Services: Fraud, Risk, Compliance and Intelligent Operations",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">AI is reshaping how banks detect fraud, manage risk, automate compliance and deliver better customer intelligence.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 26772,
+        "name": "Ts Zairil Anuar Ahmad",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ts. Zairil Anuar Ahmad is a technology leader with over 28 years of experience driving digital transformation in the financial services sector. His expertise spans IT strategy, enterprise technology, cybersecurity, core banking, and infrastructure modernization, delivering resilient technology solutions that enhance operational efficiency and sustainable business growth.</p>",
+        "image_url": "/banking/images/konfhub-archive/30373fdea076817e.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Technology Officer",
+        "location": "Malaysia",
+        "organisation": "Co-opbank Pertama",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 26412,
+        "name": "Ganeshbabu Nagarajan",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ganesh is a seasoned technology executive with 25+ years of experience in the banking and financial services industry, specializing in enterprise technology transformation. He has led large-scale cloud, AI, data centre modernization, and business-critical migration initiatives, driving resilience, innovation, and operational excellence.</p>",
+        "image_url": "/banking/images/konfhub-archive/5aa33884138c7bf9.png",
+        "organisation_logo_url": null,
+        "designation": "Executive Director - Transformation Programmes",
+        "location": "Malaysia",
+        "organisation": "Standard Chartered Bank",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27799,
+        "name": "Goh Ser Yoong",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Goh Ser Yoong is the CISO of Ryt Bank. A Cybersecurity and technology risk professional with a passion for emerging technologies</p>",
+        "image_url": "/banking/images/konfhub-archive/e98cc186f8930ed2.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Information Security Officer",
+        "location": "Malaysia",
+        "organisation": "Ryt Bank",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27737,
+        "name": "Matt Moore",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Matt Moore is a passionate speaker, data enthusiast and Principal Observability Strategist at Datadog, helping organisations make technology simpler, safer and easier to operate. With more than 20 years in tech, he brings practical insight, curiosity and humour to the stage. Away from keyboards, he\u2019s an avid pilot and sailor.</p>",
+        "image_url": "/banking/images/konfhub-archive/adede4559b9e3328.png",
+        "organisation_logo_url": null,
+        "designation": "Principal Observability Strategist",
+        "location": "Australia",
+        "organisation": "Datadog",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28125,
+        "name": "Huy Nguyen-Tuong",
+        "about": "Huy is a Managing Director and Partner at BCG/BCG X, focusing on AI deployment and hyper-personalization across the region. He believes that, in a world where most AI programs fail to deliver positive ROI, enterprises must move beyond POCs and pilots to deploy AI at scale and translate it into measurable business impact.",
+        "image_url": "/banking/images/konfhub-archive/1ae8e80b2b6a25e0.png",
+        "organisation_logo_url": null,
+        "designation": "Managing Director and Partner",
+        "location": null,
+        "organisation": "Boston Consulting Group (BCG)",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-10 04:30:00",
+    "end_timestamp": "2026-09-10 05:10:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 9,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:49:18.534953",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "86886579-1cb2-45d4-b109-fb99d31dec2b",
+        "name": "Panel Discussion"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13947,
+    "session_type": 1,
+    "session_title": "The Data Bottleneck: Building Clean, Governed and AI-Ready Enterprise Data",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">Most AI failures begin with weak data foundations. This session explores how organisations can modernise data architecture, governance and integration for AI at scale.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 26415,
+        "name": "Dr Keeratpal Singh",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Dr. Singh has over 28 years of experience in developing analytics solutions, heading analytics in organizations, providing consultancy for AI strategy, data governance &amp; data management, and software development for various industries.</p>",
+        "image_url": "/banking/images/konfhub-archive/f774842675494ba7.png",
+        "organisation_logo_url": null,
+        "designation": "Chief AI and Data Officer - Asia Pacific (Financial Services)",
+        "location": "Malaysia",
+        "organisation": "Worldline",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27243,
+        "name": "Dr Sadesh Manikam",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Dr. Sadesh Manikam is a distinguished technology and data executive with over 30 years of leadership experience in enterprise data management, artificial intelligence, regulatory compliance, and digital transformation. He leads enterprise-wide data initiatives that drive innovation, operational excellence, and sustainable business value.</p>",
+        "image_url": "/banking/images/konfhub-archive/f68545b5ac7cc0ce.png",
+        "organisation_logo_url": null,
+        "designation": "EVP - Enterprise Data Office and Data Protection Officer",
+        "location": "Malaysia",
+        "organisation": "Bursa Malaysia",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27698,
+        "name": "Sabrina Yap",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Sabrina Yap leads enterprise-wide initiatives that connect technology innovation with meaningful business transformation. With over 20 years of experience spanning telecommunications, gaming, finance, digital, e commerce and startups, she has led system consolidation, technology modernisation and large-scale transformation programmes.</p>",
+        "image_url": "/banking/images/konfhub-archive/c642afb5710b332e.png",
+        "organisation_logo_url": null,
+        "designation": "Head of Digital Transformation",
+        "location": null,
+        "organisation": "Mr DIY International",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28786,
+        "name": "Shafida Halamy",
+        "about": "Shafida Halamy is an IT Service Management and Project Management Leader with extensive experience in enterprise technology operations, digital transformation, and large-scale programme management across Banking, Telecommunications, Oil & Gas, and Manufacturing. PMP, Agile Project Manager, ITIL 4 DPI, and Azure Foundation certified, she specialises in ITIL Service Management, cloud technologies, IT governance, infrastructure modernisation, and digital workplace transformation.",
+        "image_url": "/banking/images/konfhub-archive/21682910033a253d.png",
+        "organisation_logo_url": null,
+        "designation": "Director of Treasury, Procurement & Governance",
+        "location": null,
+        "organisation": "PMI Malaysia",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 04:00:00",
+    "end_timestamp": "2026-09-09 04:40:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 10,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:12:26.548586",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 23:35:55",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "86886579-1cb2-45d4-b109-fb99d31dec2b",
+        "name": "Panel Discussion"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13966,
+    "session_type": 1,
+    "session_title": "Networking Luncheon",
+    "session_description": "",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-10 05:10:00",
+    "end_timestamp": "2026-09-10 06:10:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 10,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:53:25.701929",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "fda77053-707f-4392-8fa4-997d6538aa0e",
+        "name": "Break"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13949,
+    "session_type": 1,
+    "session_title": "From AI Adoption to AI Control: Building Visibility, Security and Governance for Enterprise AI",
+    "session_description": "<p><span data-olk-copy-source=\"MessageBody\">AI is rapidly moving from experimentation to becoming an integral part of the enterprise. But as adoption grows, so do the challenges of visibility, security and governance. This session explores how organisations can embrace AI innovation while maintaining control over what AI is being used, what it can access and how its usage is governed.</span></p>",
+    "session_speakers": [
+      {
+        "speaker_id": 28724,
+        "name": "Mohammed Ashwaq Khan",
+        "about": "Ashwaq Khan is a Solutions Architect at JumpCloud, specialising in Identity and Access Management (IAM), Data Protection, and Modern IT Security. He works closely with organisations to understand complex technology environments and design practical solutions that strengthen security while simplifying technology management.",
+        "image_url": "/banking/images/konfhub-archive/e84ff223beb46487.png",
+        "organisation_logo_url": null,
+        "designation": "Strategic Solutions Architect",
+        "location": null,
+        "organisation": "JumpCloud",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 04:40:00",
+    "end_timestamp": "2026-09-09 05:00:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 11,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:13:54.351459",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "bee9ade2-5f61-4a48-81ba-15f36b16a5cd",
+        "name": "Tech Talk"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13965,
+    "session_type": 1,
+    "session_title": "AI for Manufacturing, Energy and Industrial Operations: From Predictive Maintenance to Autonomous Efficiency",
+    "session_description": "<p>AI is transforming industrial operations through predictive maintenance, supply chain optimisation, energy efficiency and intelligent automation.</p>\n<p>&nbsp;</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 27201,
+        "name": "Ts Narayanan Chidambaram",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ts. Narayanan Chidambaram is a digital transformation and project engineering leader with over 20 years of experience. He leads AI-enabled engineering, automation, and data-driven project delivery initiatives, driving innovation across capital projects while championing responsible AI adoption and digital transformation.</p>",
+        "image_url": "/banking/images/konfhub-archive/86dee1b2704f8af8.png",
+        "organisation_logo_url": null,
+        "designation": "Head - Project Engineering Pod (Technology & Digital PE&T)",
+        "location": "Malaysia",
+        "organisation": "PETRONAS",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27203,
+        "name": "Sudeep Srivastava",
+        "about": "Sudeep Srivastava is Head of IT Malaysia at SLB, a global technology company operating in over 140 countries, driving innovation, automation and digital transformation. He led a large scale AI upskilling initiative for 3,000 employees and is a recognized speaker at prominent industry events.",
+        "image_url": "/banking/images/konfhub-archive/81f8c9e6f7c4250a.png",
+        "organisation_logo_url": null,
+        "designation": "Head - KL IT Center",
+        "location": "Malaysia",
+        "organisation": "SLB (Schlumberger)",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      },
+      {
+        "speaker_id": 27366,
+        "name": "Mohd Hanapi Bisri",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Mohd Hanapi Bisri is a certified ICT professional with over 30 years of global experience across Europe, the Middle East, and ASEAN, Mohd Hanapi Bisri drives digital transformation and sustainable technology. He integrates AI, cybersecurity, and ESG frameworks to empower local organizations and elevate Malaysia\u2019s digital leadership on the global stage.</p>",
+        "image_url": "/banking/images/konfhub-archive/121196608c1c77f4.png",
+        "organisation_logo_url": null,
+        "designation": "Senior Digital Industry Leader - Oil & Gas",
+        "location": "Malaysia",
+        "organisation": null,
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27861,
+        "name": "Dr Chua Wen-Shyan",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Dr. Chua Wen-Shyan is currently the Head of Malaysian Smart Factory 4.0 under the Selangor Human Resource Development Centre (SHRDC). His key area of expertise lies mainly in the area of Control and Automation Systems, Fault Detection and Identification (FDI), and Predictive Maintenance Strategies; which are widely used in Industry 4.0 applications.</p>",
+        "image_url": "/banking/images/konfhub-archive/b499f8ad2e5efe88.png",
+        "organisation_logo_url": null,
+        "designation": "Head of Malaysian Smart Factory 4.0",
+        "location": "Malaysia",
+        "organisation": "Selangor Human Resource Development Centre",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28917,
+        "name": "Nordin Abdullah",
+        "about": "Nordin Abdullah is Founder of the Crisis Management Centre and Founding Chairman of the Malaysia Global Business Forum. An experienced crisis management and strategic communications professional, he advises corporations, industry bodies, and governments on reputational risk, governance, resilience, and crisis readiness. He is the author of Reputational Security and serves on the board of the Public Relations Practitioners Society of Malaysia.",
+        "image_url": "/banking/images/konfhub-archive/be80e836c2d13a6b.png",
+        "organisation_logo_url": null,
+        "designation": "Co-founder",
+        "location": null,
+        "organisation": "News Desk Asia",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-10 06:10:00",
+    "end_timestamp": "2026-09-10 06:50:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 11,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:49:58.066169",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-06 07:02:10",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "86886579-1cb2-45d4-b109-fb99d31dec2b",
+        "name": "Panel Discussion"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13967,
+    "session_type": 1,
+    "session_title": "The Connected Intelligence Economy: Why IoT Powers Malaysia's AI Future",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">A keynote exploring how IoT, edge intelligence and connected infrastructure create the real-world data that enables AI at scale. The session will examine how smart cities, manufacturing, logistics and industrial ecosystems can accelerate Malaysia's AI ambitions through connected technologies and AIoT.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 28374,
+        "name": "Tan Sri Rainer Althoff",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Global Expert in 2G to 5G, Digitalisation and Digital Transformation and AI driven solutions</p>",
+        "image_url": "/banking/images/konfhub-archive/a19962b3d03d10c9.png",
+        "organisation_logo_url": null,
+        "designation": "Strategic Advisor",
+        "location": null,
+        "organisation": "MyIoTA Malaysia",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-10 06:50:00",
+    "end_timestamp": "2026-09-10 07:10:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 12,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:55:35.792512",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "92c8a335-9cf3-485c-a74d-8ee7c7fafcaa",
+        "name": "Keynote"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13950,
+    "session_type": 1,
+    "session_title": "Networking Luncheon",
+    "session_description": "",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-09 05:00:00",
+    "end_timestamp": "2026-09-09 06:00:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 12,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:15:11.950935",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "fda77053-707f-4392-8fa4-997d6538aa0e",
+        "name": "Break"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13968,
+    "session_type": 1,
+    "session_title": "AI for Customer Experience, Digital Services and Intelligent Engagement",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">AI is transforming how organisations deliver personalised customer experiences, optimise digital interactions and create new service offerings. This session explores how enterprises are leveraging AI to enhance customer engagement, drive revenue growth, streamline operations and deliver seamless digital experiences through intelligent AI adoption.&nbsp;</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 27300,
+        "name": "Dario Bianchi",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Dario Bianchi is Chief Product Officer at Mindvalley, building AI-native products and a product organisation to match. He leads the company's AI-native product transformation and a venture studio building its next generation of consumer products</p>",
+        "image_url": "/banking/images/konfhub-archive/18b8cc7fe6744bb8.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Product Officer",
+        "location": "Malaysia",
+        "organisation": "Mindvalley",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27798,
+        "name": "Alex P'ng",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Alex P'ng is Chief Technology Officer at myNEWS Holdings, one of Malaysia's largest convenience retail groups, operating myNEWS, Maru, CU, and SuperValue. He leads the group's AI adoption agenda, architecting automation and agent-based systems that raise workforce productivity, and developing the internal capability for teams to run them independently.</p>",
+        "image_url": "/banking/images/konfhub-archive/b7e0b91e0c602d7a.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Technology Officer",
+        "location": "Malaysia",
+        "organisation": "MYNEWS RETAIL SDN. BHD.",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27565,
+        "name": "Manminder Kaur Dhillon",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Manminder Kaur Dhillon is the Founder and CEO of Supernewsroom.AI, building the AI visibility infrastructure that helps brands become known, trusted and recommended by AI.</p>",
+        "image_url": "/banking/images/konfhub-archive/5b6661bb588977fd.png",
+        "organisation_logo_url": null,
+        "designation": "CEO & Founder",
+        "location": "Malaysia",
+        "organisation": "Supernewsroom.ai",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      },
+      {
+        "speaker_id": 28373,
+        "name": "Firuz Alimov",
+        "about": "Firuz Alimov is a Finance, Banking and AI Transformation Strategist with over 20 years of experience across financial services, banking, telecommunications and consulting. A DBA candidate and Chapter Co-Lead for AI Collective Malaysia in Kuala Lumpur, he works with business leaders, boards and investors on AI adoption, automation, digital transformation and governance. His work focuses on translating emerging technology into practical business strategy, with particular expertise in financial infrastructure, operational transformation and the changing economics of AI.",
+        "image_url": "/banking/images/konfhub-archive/a5217ae50727ee10.png",
+        "organisation_logo_url": null,
+        "designation": "Founder and CEO",
+        "location": null,
+        "organisation": "Aether.builders",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-10 07:10:00",
+    "end_timestamp": "2026-09-10 07:50:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 13,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:56:25.974202",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "86886579-1cb2-45d4-b109-fb99d31dec2b",
+        "name": "Panel Discussion"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13951,
+    "session_type": 1,
+    "session_title": "Securing Malaysia\u2019s AI Future: Cybersecurity, Model Risk and Digital Trust",
+    "session_description": "<p style=\"font-family: Hind, sans-serif;\">AI introduces new risks across data, models, applications and cloud environments. This session explores how organisations can secure AI at scale.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 27732,
+        "name": "Ramana Ramakrishna",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ramana Ramakrishna is a digital native that translates trust into value driven measurable outcomes for enterprise execution with over 30 years of cross-sector leadership across BPO, CRM, Telcos, Healthcare, FSI, Utilities and Construction. Currently leading Gamuda DNeX Cloud, he specialises in reimagining the evolution from data residency towards sovereignty and autonomy for enterprises.</p>",
+        "image_url": "/banking/images/konfhub-archive/971e18592fa8b2ac.png",
+        "organisation_logo_url": null,
+        "designation": "Head, Cybersecurity & Programme Delivery",
+        "location": "Malaysia",
+        "organisation": "Gamuda DNeX Cloud",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27862,
+        "name": "Azlina Binti Ab Aziz",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ts. Dr. Azlina Ab. Aziz is Principal Assistant Director at Malaysia\u2019s National Cyber Security Agency (NACSA). With over 20 years in public service, she leads key national initiatives in AI security, cybersecurity and cryptography, including AISCF and MyKriptografi, while advancing trusted AI, cyber resilience and secure digital transformation in Malaysia.</p>",
+        "image_url": "/banking/images/konfhub-archive/c693daa50a4b1e5b.png",
+        "organisation_logo_url": null,
+        "designation": "Principal Assistant Director",
+        "location": "Malaysia",
+        "organisation": "National Cyber Security Agency (NACSA)",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28159,
+        "name": "Ts. Azrul Zafri Azmi",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Ts. Azrul Zafri Azmi, a Professional Technologist (Ts.) recognised by MBOT, is the Deputy President of the Malaysian Cyber Consumer Association (MCCA) and has over 17 years of experience across technology, digital transformation, business development and entrepreneurship.He also serves as Chairman of DPMM at both national and Selangor levels, supporting young entrepreneurs and Malaysia\u2019s business ecosystem.</p>",
+        "image_url": "/banking/images/konfhub-archive/42f3a7832d4d3336.png",
+        "organisation_logo_url": null,
+        "designation": "Deputy President | Chairman",
+        "location": "Malaysia",
+        "organisation": "Malaysia Cyber Consumer Association (MCCA) | Youth Council of DPMM",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      },
+      {
+        "speaker_id": 27367,
+        "name": "Ekneswaran Matandor",
+        "about": "Dynamic technology leader with proven impact at IBM and HP, renowned for delivering transformative AI and cybersecurity strategies. A sought-after public speaker, driving conversations that bridge innovation, leadership, and the future of digital transformation across global stages.",
+        "image_url": "/banking/images/konfhub-archive/4c486d6fe1621ade.png",
+        "organisation_logo_url": null,
+        "designation": "Artificial Intelligence & Cybersecurity Leader",
+        "location": "Malaysia",
+        "organisation": null,
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 06:00:00",
+    "end_timestamp": "2026-09-09 06:40:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 13,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:15:47.432547",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "86886579-1cb2-45d4-b109-fb99d31dec2b",
+        "name": "Panel Discussion"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13969,
+    "session_type": 1,
+    "session_title": "From AI Experimentation to Enterprise Adoption: Building and Deploying AI",
+    "session_description": "<p>A practical conversation on how institutions can move AI from experimentation to real-world deployment from identifying high-value use cases and selecting the right AI models to building, testing, integrating, securing and scaling AI solutions, while ensuring measurable business value from adoption.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 28126,
+        "name": "Victor Khor Eng Swe",
+        "about": "Victor is the Director of Business Technology at Bank Negara Malaysia, overseeing business applications, project management, solution architecture, data engineering, cloud applications, AI, and innovation. With over 35 years of leadership experience across technology, digital transformation, banking, payments, and AI, he brings extensive expertise in driving technology-led transformation.",
+        "image_url": "/banking/images/konfhub-archive/392a9f50e4a58527.png",
+        "organisation_logo_url": null,
+        "designation": "Director of Business Technology Department",
+        "location": null,
+        "organisation": "Bank Negara Malaysia",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28722,
+        "name": "Ji  Lian",
+        "about": "Ji Lian is an HR Digital Transformation and Analytics professional with extensive experience across \nthe Oil & Gas, Banking, and Conglomerate industries. Specializing in enterprise HR technology, Learning evaluation, machine learning, and people analytics, she translates complex workforce data into actionable strategies that optimize talent capability, operational performance, and enterprise business impact.",
+        "image_url": "/banking/images/konfhub-archive/90e5f7d52960e4d2.png",
+        "organisation_logo_url": null,
+        "designation": "HR Digital Transformation and Analytics professional",
+        "location": null,
+        "organisation": null,
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-10 07:50:00",
+    "end_timestamp": "2026-09-10 08:10:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 14,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:57:07.948622",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-05 09:00:07",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "d3e2f45a-4be9-4a0d-8147-632d5d11429e",
+        "name": "Fireside Chat"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13952,
+    "session_type": 1,
+    "session_title": "Navigating the Global AI Governance Landscape: From Regulation to Trusted Enterprise AI",
+    "session_description": "<p><span data-olk-copy-source=\"MessageBody\">As AI companies expand across markets, Cross-Border Regulation, navigating different regulatory frameworks, data requirements and compliance expectations is becoming increasingly complex. This session explores how organisations can approach cross-border AI governance, manage data and compliance requirements across jurisdictions, and build scalable governance frameworks that support international growth while maintaining innovation, security and trust.</span></p>",
+    "session_speakers": [
+      {
+        "speaker_id": 28359,
+        "name": "Grace Zhang",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Grace Zhang specializes in AI governance, trust infrastructure, cross-border AI deployment and enterprise AI. She previously held senior compliance roles at a Fortune Global 500 technology group and a leading international internet company. she advises enterprises on responsible AI adoption and regularly speaks at international AI and technology forums on trusted AI, agentic systems and global AI governance.</p>",
+        "image_url": "/banking/images/konfhub-archive/a6d25d663446b252.png",
+        "organisation_logo_url": null,
+        "designation": "Founder and CEO",
+        "location": null,
+        "organisation": "Trustharbor",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "23c4bd87-741c-419f-8b98-b3791e46f3cf",
+            "name": "Speaker"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 06:40:00",
+    "end_timestamp": "2026-09-09 07:00:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 14,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:16:45.458512",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "bee9ade2-5f61-4a48-81ba-15f36b16a5cd",
+        "name": "Tech Talk"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13953,
+    "session_type": 1,
+    "session_title": "Preparing for Malaysia\u2019s AI Governance Era: Regulation, Ethics and Enterprise Readiness",
+    "session_description": "<p>As AI governance becomes a board-level priority, enterprises need practical frameworks that support innovation while managing regulatory, ethical and operational risk.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 27235,
+        "name": "Dr Ong Hong Hoe",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Dr. Hong H. Ong is an award-winning enterprise leader and board advisor with 25+ years of global experience driving digital transformation, applied AI, and platform modernization across heavily regulated environments.</p>",
+        "image_url": "/banking/images/konfhub-archive/17e94159fe99de6e.png",
+        "organisation_logo_url": null,
+        "designation": "Director of Digital and Technology",
+        "location": "Malaysia",
+        "organisation": "Labuan Financial Services Authority",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 26773,
+        "name": "Ahmad Faiz bin Mohamed Fadzil",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Faiz Fadzil is a technology leader with pragmatic expertise in IT strategy and innovation. he drives transformative projects on a broad range of technology topics to shape the future of business-driven technology solutions. Faiz blends his 30+ years' experience from the corporate and startup worlds to create a people-first approach towards team building and employee engagement.</p>",
+        "image_url": "/banking/images/konfhub-archive/e562b0f9dd4dc1c6.png",
+        "organisation_logo_url": null,
+        "designation": "Head - Data & AI, Global Technology Unit",
+        "location": "Malaysia",
+        "organisation": "BASF",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27564,
+        "name": "Alex Yap Chun Kiat",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Alex is responsible for architecting end-to-end operational governance frameworks and engineering an industry aligned AI management application, defining enterprise AI risk-tiering methodologies, Focused on embedding proactive, audit-ready AI guardrails that anticipate emerging regulatory landscapes.</p>",
+        "image_url": "/banking/images/konfhub-archive/59c59ed5aa90392b.png",
+        "organisation_logo_url": null,
+        "designation": "Head of Data Engineering",
+        "location": "Malaysia",
+        "organisation": "CelcomDigi",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27738,
+        "name": "Effendy Zulkifly",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Malaysian technocrat, AI and digital governance strategist, and ecosystem builder advancing trusted AI, fintech, blockchain and public-impact innovation across institutions, industry and society.</p>",
+        "image_url": "/banking/images/konfhub-archive/fb2c2c8285ce61ef.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Digital Officer",
+        "location": "Malaysia",
+        "organisation": "YAPEIM HOLDINGS",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28695,
+        "name": "Sr Jamie Tan",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Sr Jamie Tan is the Managing Director of JLL Malaysia and Chartered Surveyor with extensive expertise spanning 30 years in property consultancy, valuation, property development and facilities management across commercial, industrial, residential and data centre sectors.</p>",
+        "image_url": "/banking/images/konfhub-archive/eba6de18c6fb4c0a.png",
+        "organisation_logo_url": null,
+        "designation": "Managing Director",
+        "location": null,
+        "organisation": "JLL Appraisal & Property Services Sdn Bhd",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 07:00:00",
+    "end_timestamp": "2026-09-09 07:40:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 15,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:19:00.590286",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "86886579-1cb2-45d4-b109-fb99d31dec2b",
+        "name": "Panel Discussion"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13954,
+    "session_type": 1,
+    "session_title": "The Enterprise That Thinks: Architecting the AI-First Organisation for Intelligence, Autonomy and Compounding Value",
+    "session_description": "<p>The AI-first enterprise represents the next stage of evolution, an organisation where trusted data becomes its sensory system, AI becomes an intelligence layer, agentic workflows become its execution engine, enterprise architecture provides the connective tissue, and governance establishes the boundaries for responsible autonomy.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 26409,
+        "name": "Budiman Bujang",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Budiman Bujang is a digital and AI transformation leader driving enterprise intelligence, governance, and AI-first innovation across Johor Corporation and its ecosystem.</p>",
+        "image_url": "/banking/images/konfhub-archive/42201086297567a6.png",
+        "organisation_logo_url": null,
+        "designation": "Deputy Chief Digital Officer",
+        "location": "Malaysia",
+        "organisation": "Johor Corporation",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      }
+    ],
+    "start_timestamp": "2026-09-09 07:40:00",
+    "end_timestamp": "2026-09-09 08:00:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 16,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:19:38.713031",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "92c8a335-9cf3-485c-a74d-8ee7c7fafcaa",
+        "name": "Keynote"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 13955,
+    "session_type": 1,
+    "session_title": "GLC Digital Acceleration: Building AI-Ready Operating Models for National Enterprises",
+    "session_description": "<p>This session explores how GLCs can embed AI into operating models, customer services, internal productivity and national-scale digital systems.</p>",
+    "session_speakers": [
+      {
+        "speaker_id": 26413,
+        "name": "Chua Yong Howe",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Yong is Chief Digital Officer at UEM Edgenta with over 20 years of experience in digital transformation, AI, and technology commercialisation. Previously, he led initiatives at Eureka AI, Accenture, and DXC, and has completed executive education programmes at Harvard, IMD, and INSEAD.</p>",
+        "image_url": "/banking/images/konfhub-archive/c8c79a2d56e30b28.png",
+        "organisation_logo_url": null,
+        "designation": "Chief Digital Officer",
+        "location": "Malaysia",
+        "organisation": "UEM Edgenta Berhad",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 27303,
+        "name": "Muhammad Najib Masdan",
+        "about": "<p style=\"font-family: Hind, sans-serif;\">Muhammad Najib Masdan is a senior leader at Khazanah Nasional Berhad, driving strategy, transformation, and AI enabled innovation to create long term value. Passionate about people, partnerships, and organizational excellence, he helps organizations harness technology to improve decision-making and deliver meaningful impact.</p>",
+        "image_url": "/banking/images/konfhub-archive/ad41b378fb97f280.png",
+        "organisation_logo_url": null,
+        "designation": "Senior Vice President",
+        "location": "Malaysia",
+        "organisation": "Khazanah Nasional Berhad",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": []
+      },
+      {
+        "speaker_id": 28422,
+        "name": "Adrian Chew",
+        "about": "Adrian Chew is a Partner at Ernst & Young Consulting Sdn Bhd, where he leads the AI and Technology Consulting practice. With over 30 years of experience, Adrian has successfully led cross-functional teams in delivering AI and data-driven solutions for organizations across diverse sectors, including financial services, telecommunications, utilities, and the public sector.",
+        "image_url": "/banking/images/konfhub-archive/4051c98d2d7b64a5.png",
+        "organisation_logo_url": null,
+        "designation": "Partner and Malaysia AI, Data and Technology Consulting Leader",
+        "location": null,
+        "organisation": "Ernst & Young Consulting Sdn Bhd",
+        "linkedin_url": null,
+        "twitter_url": null,
+        "facebook_url": null,
+        "website_url": null,
+        "tags": [
+          {
+            "id": "efa2439b-61a3-4685-bbfd-d321980869da",
+            "name": "Moderator"
+          }
+        ]
+      }
+    ],
+    "start_timestamp": "2026-09-09 08:00:00",
+    "end_timestamp": "2026-09-09 08:30:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 17,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-05-18 10:20:26.391844",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [
+      {
+        "id": "d3e2f45a-4be9-4a0d-8147-632d5d11429e",
+        "name": "Fireside Chat"
+      }
+    ],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  },
+  {
+    "session_id": 14104,
+    "session_type": 1,
+    "session_title": "Closing Remarks",
+    "session_description": "",
+    "session_speakers": [],
+    "start_timestamp": "2026-09-09 08:30:00",
+    "end_timestamp": "2026-09-09 08:40:00",
+    "session_location": "",
+    "session_colour": "#FFECD3",
+    "track_assigned": false,
+    "session_order": 18,
+    "event_id": "8f07cbab-ebca-4b02-80e3-48c281f1fa8d",
+    "created_at": "2026-06-09 10:22:00.519190",
+    "created_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "updated_at": "2026-09-08 11:17:43",
+    "updated_by": "6e1af99c-b2ce-418f-9a11-664f54541da6",
+    "grid_layout": null,
+    "session_image_url": null,
+    "tags": [],
+    "enable_feedback": false,
+    "enable_qna": false,
+    "qna_topic_id": null
+  }
+]

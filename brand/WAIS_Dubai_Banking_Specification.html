@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World AI Show | AI in Banking and Financial Services | Dubai 2027 — Website Wireframe &amp; Build Specification</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;850&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Brand Chromatic Science & Design Tokens */
+    --obsidian: #020814;
+    --navy-surface: #040D1F;
+    --navy-card: #081429;
+    --navy-header: #07152B;
+    --border-dark: #1B2B48;
+    --border-wire: #2D4268;
+    --lime-primary: #C0F43C;
+    --cyan-accent: #18D4FF;
+    --cyan-aqua: #00CEFF;
+    --purple-tech: #926DFF;
+    --ink-dark: #06111F;
+    --text-white: #FFFFFF;
+    --text-muted: #8E9BAE;
+    --text-dim: #64748B;
+    --line: #1E2D4A;
+    --light-tint: rgba(24, 212, 255, 0.05);
+    --amber: #E5A93C;
+    --amberbg: rgba(229, 169, 60, 0.1);
+    --green: #3CD070;
+    --greenbg: rgba(60, 208, 112, 0.1);
+    --red: #FF5C5C;
+    --redbg: rgba(255, 92, 92, 0.1);
+
+    --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--text-white);
+    background: var(--obsidian);
+    line-height: 1.6;
+    font-size: 14.5px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 120px; }
+
+  /* Document Master Header */
+  header.doc {
+    background: var(--navy-header);
+    border-bottom: 1px solid var(--border-dark);
+    padding: 56px 0 44px;
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  header.doc::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--cyan-accent) 50%, transparent 100%);
+  }
+  header.doc .wrap { padding-bottom: 0; }
+  header.doc .kicker {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--lime-primary);
+    margin: 0 0 14px;
+    font-weight: 700;
+  }
+  header.doc h1 {
+    font-family: var(--font-display);
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    font-weight: 850;
+    letter-spacing: -0.02em;
+  }
+  header.doc h1 span {
+    background: linear-gradient(90deg, var(--cyan-aqua) 0%, var(--lime-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  header.doc p { margin: 0; color: var(--text-muted); max-width: 76ch; font-size: 15px; }
+  header.doc .meta {
+    margin-top: 22px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--cyan-accent);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Table of Contents */
+  nav.toc {
+    background: var(--navy-surface);
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 40px;
+  }
+  nav.toc h2 {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+  }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 36px; }
+  nav.toc li { margin-bottom: 5px; font-size: 13.5px; }
+  nav.toc a { color: var(--cyan-accent); text-decoration: none; transition: color 0.15s ease; }
+  nav.toc a:hover { color: var(--lime-primary); text-decoration: underline; }
+
+  /* Typography & Structure */
+  h2.sec {
+    font-family: var(--font-display);
+    font-size: 24px;
+    margin: 56px 0 6px;
+    padding-top: 20px;
+    border-top: 3px solid var(--border-dark);
+    color: var(--text-white);
+  }
+  h2.sec .num {
+    font-family: var(--font-mono);
+    color: var(--lime-primary);
+    font-variant-numeric: tabular-nums;
+    margin-right: 10px;
+  }
+  h3 { font-family: var(--font-display); font-size: 18px; margin: 34px 0 8px; color: var(--cyan-accent); }
+  h4 { font-family: var(--font-display); font-size: 15px; margin: 22px 0 6px; color: var(--text-white); }
+  p { margin: 0 0 12px; max-width: 78ch; color: var(--text-muted); }
+  ul, ol { max-width: 78ch; color: var(--text-muted); }
+  li { margin-bottom: 5px; }
+  code {
+    font-family: var(--font-mono);
+    font-size: .88em;
+    background: rgba(24, 212, 255, 0.1);
+    color: var(--cyan-accent);
+    padding: 1px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(24, 212, 255, 0.2);
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 14px 0 20px;
+    font-size: 14px;
+    background: var(--navy-surface);
+    border: 1px solid var(--border-dark);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  th, td { border: 1px solid var(--border-dark); padding: 9px 12px; text-align: left; vertical-align: top; }
+  th {
+    background: #0B172E;
+    color: var(--text-white);
+    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+  }
+  tr:nth-child(even) td { background: rgba(8, 20, 41, 0.4); }
+  td { color: var(--text-muted); }
+  td strong, td b { color: var(--text-white); }
+
+  /* Page Module Block */
+  .page {
+    background: var(--navy-surface);
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    margin: 26px 0;
+    overflow: hidden;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.35);
+  }
+  .page > .ph {
+    background: #081429;
+    color: var(--text-white);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-dark);
+  }
+  .page > .ph .t { font-family: var(--font-display); font-weight: 700; font-size: 16px; }
+  .page > .ph .u { font-family: var(--font-mono); font-size: 12px; color: var(--lime-primary); }
+  .page > .pb { padding: 8px 20px 20px; }
+
+  /* Wireframe Container Block */
+  .blk {
+    border: 1px solid var(--border-dark);
+    border-left: 4px solid var(--cyan-accent);
+    border-radius: 5px;
+    margin: 16px 0;
+    background: #030B18;
+  }
+  .blk > .bh {
+    background: var(--navy-card);
+    padding: 8px 14px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--cyan-accent);
+    font-weight: 700;
+    border-bottom: 1px solid var(--border-dark);
+  }
+  .blk > .bb { padding: 14px; }
+  .copy {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    background: #020712;
+    border: 1px dashed var(--border-wire);
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin: 0 0 12px;
+    color: #D1D9E4;
+  }
+  .lbl {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    background: #132B4F;
+    color: var(--cyan-accent);
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: 1px;
+    border: 1px solid rgba(24, 212, 255, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* Callouts & Alert Banners */
+  .note { border-left: 4px solid var(--cyan-accent); background: rgba(24, 212, 255, 0.06); padding: 11px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  .note .h { font-family: var(--font-mono); font-weight: 700; color: var(--cyan-accent); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .asset { border-left: 4px solid var(--amber); background: var(--amberbg); padding: 11px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  .asset .h { font-family: var(--font-mono); font-weight: 700; color: var(--amber); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .rule { border-left: 4px solid var(--red); background: var(--redbg); padding: 11px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  .rule .h { font-family: var(--font-mono); font-weight: 700; color: var(--red); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .ok { border-left: 4px solid var(--green); background: var(--greenbg); padding: 11px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  .ok .h { font-family: var(--font-mono); font-weight: 700; color: var(--green); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .note p:last-child, .asset p:last-child, .rule p:last-child, .ok p:last-child { margin-bottom: 0; }
+
+  .grid { display: grid; gap: 12px; margin: 14px 0; }
+  .g2 { grid-template-columns: 1fr 1fr; }
+  .g3 { grid-template-columns: 1fr 1fr 1fr; }
+  .g4 { grid-template-columns: repeat(4, 1fr); }
+  .card { border: 1px dashed var(--border-wire); background: var(--navy-card); border-radius: 6px; padding: 12px 14px; font-size: 13px; }
+  .card b { display: block; font-family: var(--font-display); color: var(--text-white); margin-bottom: 3px; font-size: 14.5px; }
+
+  /* Image Placeholders */
+  .ph-img {
+    border: 2px dashed rgba(192, 244, 60, 0.4);
+    background: rgba(192, 244, 60, 0.03);
+    border-radius: 6px;
+    padding: 22px 14px;
+    text-align: center;
+    color: var(--lime-primary);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  .ph-img span { display: block; font-weight: 400; color: var(--text-muted); font-size: 11.5px; margin-top: 4px; font-family: var(--font-body); }
+
+  @media(max-width:760px) {
+    nav.toc ol { columns: 1; }
+    .g2, .g3, .g4 { grid-template-columns: 1fr; }
+    .page > .ph { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header class="doc">
+  <div class="wrap">
+    <p class="kicker">Confidential · Production Build Specification</p>
+    <h1>World AI Show | AI in Banking and Financial Services | Dubai 2027<br><span>Website Wireframe &amp; Build Specification</span></h1>
+    <p>Approved structural copy, page hierarchy, chromatic tokens, and UX component architecture for the dedicated financial sector edition of the World AI Show Industry Series. Formatted to the master series navigation and site architecture framework.</p>
+    <p class="meta">
+      <span>Version 2.0 · Master Release</span>
+      <span>24 March 2027 · Dubai, United Arab Emirates</span>
+      <span>worldaishow.com/banking</span>
+      <span>Organised by Trescon</span>
+    </p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<nav class="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#how">How to use this document</a></li>
+    <li><a href="#brand">Brand kit &amp; design direction</a></li>
+    <li><a href="#system">Layout system</a></li>
+    <li><a href="#nav">Navigation &amp; site map</a></li>
+    <li><a href="#components">Component library</a></li>
+    <li><a href="#home">Home page</a></li>
+    <li><a href="#agenda-suite">Agenda suite</a></li>
+    <li><a href="#attend-suite">Attend suite</a></li>
+    <li><a href="#speakers-hub">Speakers hub</a></li>
+    <li><a href="#partners-hub">Partners hub</a></li>
+    <li><a href="#exhibition-hub">Exhibition &amp; 3D floorplan hub</a></li>
+    <li><a href="#networking-hub">Networking suite &amp; attendee app</a></li>
+    <li><a href="#enquiry-suite">Enquiry &amp; lead forms</a></li>
+    <li><a href="#ia-tree">Master information architecture (IA)</a></li>
+    <li><a href="#assets">Creative asset manifest</a></li>
+    <li><a href="#rules">Content rules — do not break</a></li>
+  </ol>
+</nav>
+
+<!-- ============ 01 ============ -->
+<h2 class="sec" id="how"><span class="num">01</span>How to use this document</h2>
+
+<p>This is an authoritative build specification, not a visual mockup. Every line of body copy, heading, research data point, regulatory benchmark, and call to action below is cleared and verbatim — it must be used as written rather than rewritten, paraphrased, or compressed during frontend implementation.</p>
+
+<h3>Working in Antigravity &amp; Web Development Workflows</h3>
+<p>Each page section below is written to be directly usable as an implementation prompt on its own:</p>
+<ol>
+  <li>Start with <b>Brand kit</b>, <b>Layout system</b>, and <b>Component library</b> (sections 02–05). Establish the core tokens and styles first — eighty percent of the user interface relies on these modular components.</li>
+  <li>Build the <b>Home page</b> next, section by section, in chronological order. It exercises the design tokens and serves as the benchmark template for all subsequent pages.</li>
+  <li>Assemble the <b>Agenda</b>, <b>Attend</b>, <b>Speakers</b>, <b>Partners</b>, <b>Exhibition</b>, <b>Networking</b>, and <b>Enquiry</b> suites using the unified World AI Show navigation architecture (sections 07–13). Connect all conversion endpoints to HubSpot Portal ID <code>2953901</code>.</li>
+</ol>
+
+<div class="note">
+  <div class="h">Prompting note</div>
+  <p>Copy a single wireframe block into your development workflow along with its layout instructions rather than pasting entire suites. Where a block specifies an <b>ASSET</b> callout, build the container to the stated dimensions and leave it empty until approved creative files arrive.</p>
+</div>
+
+<h3>Reading the annotations</h3>
+<div class="grid g2">
+  <div class="note"><div class="h">Layout</div><p>Structural layout, alignment, and responsive behavior constraints.</p></div>
+  <div class="asset"><div class="h">Asset</div><p>Creative assets that must be placed or produced to exact dimensions.</p></div>
+  <div class="rule"><div class="h">Rule</div><p>Non-negotiable compliance, legal, or editorial requirements.</p></div>
+  <div class="ok"><div class="h">Rationale</div><p>Strategic context explaining why a specific section or argument is built this way.</p></div>
+</div>
+
+<!-- ============ 02 ============ -->
+<h2 class="sec" id="brand"><span class="num">02</span>Brand kit &amp; design direction</h2>
+
+<p>The visual identity incorporates the master brand guidelines established for the World AI Show platform. It projects an authoritative, high-density, luminous enterprise feel engineered for commercial bank CXOs, risk leaders, chief data officers, and regulatory stakeholders.</p>
+
+<h3>Tone of the design</h3>
+<p>The audience consists of commercial bank CXOs, Chief Risk Officers (CROs), Chief Compliance Officers (CCOs), Heads of AML, Heads of Fraud Risk, Chief Data &amp; AI Officers, Enterprise Architects, and Financial Regulators. The visual aesthetic must convey audited execution, sovereign security, and fiduciary rigor rather than consumer fintech hype.</p>
+<div class="grid g2">
+  <div class="card"><b>Do</b>Deep obsidian backgrounds (<code>#020814</code>), glass cards with subtle borders, clean mono labels, high-contrast Cyber Lime CTA pills with dark ink, and verified regulatory evidence benchmarks.</div>
+  <div class="card"><b>Avoid</b>Generic fintech gradients, retail POS terminals, crypto/Web3 tokens, academic AGI debates, ungrounded futurism, and countdown pressure timers.</div>
+</div>
+
+<h3>Master Palette Application</h3>
+<table>
+  <tr><th>Token Name</th><th>HEX / CSS Value</th><th>Role &amp; Application</th></tr>
+  <tr><td><code>--obsidian</code></td><td><code>#020814</code></td><td>Foundational canvas. Absorbs background noise and maximizes luminescence.</td></tr>
+  <tr><td><code>--navy-surface</code></td><td><code>#040D1F</code></td><td>Primary surface for glass cards, dropdowns, and modals (85–94% opacity with blur).</td></tr>
+  <tr><td><code>--lime-primary</code></td><td><code>#C0F43C</code></td><td>Flagship hero key. Used for primary CTAs, active badges, and metric highlights.</td></tr>
+  <tr><td><code>--cyan-accent</code></td><td><code>#18D4FF</code></td><td>Secondary accent representing enterprise cloud, sovereign infrastructure, and active borders.</td></tr>
+  <tr><td><code>--cyan-aqua</code></td><td><code>#00CEFF</code></td><td>Gradient stop paired with Cyber Lime for master headings.</td></tr>
+  <tr><td><code>--purple-tech</code></td><td><code>#926DFF</code></td><td>Tertiary accent for special highlights and executive boardroom tracks.</td></tr>
+  <tr><td><code>--ink-dark</code></td><td><code>#06111F</code></td><td>Mandatory text ink for Cyber Lime pills. Contrast ratio 15.8:1 (AAA).</td></tr>
+</table>
+
+<div class="rule">
+  <div class="h">Rule — Button Ink Guardrail</div>
+  <p>Never place white text inside a Cyber Lime (<code>#C0F43C</code>) button or badge. White on lime yields an unreadable 1.3:1 contrast ratio. Typography inside Cyber Lime elements must strictly use Carbon Ink (<code>#06111F !important</code>).</p>
+</div>
+
+<!-- ============ 03 ============ -->
+<h2 class="sec" id="system"><span class="num">03</span>Layout system</h2>
+
+<table>
+  <tr><th>Property</th><th>Specification</th></tr>
+  <tr><td>Container</td><td>1280px maximum content width on desktop (1440px on extra-wide), centered with 24px gutters.</td></tr>
+  <tr><td>Grid</td><td>12-column desktop (24px gutter) · 8-column tablet · 4-column mobile.</td></tr>
+  <tr><td>Breakpoints</td><td>sm: 640px · md: 768px · lg: 1024px · xl: 1280px. Mobile layouts must be verified down to 375px.</td></tr>
+  <tr><td>Vertical Rhythm</td><td>96px between major sections on desktop, 56px on mobile.</td></tr>
+  <tr><td>Glass Elevation</td><td>Cards use <code>background: #040D1F</code> with <code>backdrop-filter: blur(24px)</code>, 1px top highlight border, and subtle cyan/lime glow.</td></tr>
+</table>
+
+<!-- ============ 04 ============ -->
+<h2 class="sec" id="nav"><span class="num">04</span>Navigation &amp; site map</h2>
+
+<h3>Menu bar — exact series framework (matching World AI Show Navigation)</h3>
+<div class="copy">LEFT     [ World AI Show: Banking &amp; Financial Services Logo ]
+CENTRE   Agenda ▾  |  Speakers  |  Attend ▾  |  Partners  |  Exhibition  |  Networking ▾
+RIGHT    [ Enquire Now ↗ ]
+
+Agenda ▾
+   Overview &amp; Schedule              →  /banking/agenda/
+   Full 1-Day Master Schedule       →  /banking/agenda/agenda/
+   Themes &amp; The 4 Pillars           →  /banking/agenda/themes/
+   Regulatory Framework &amp; Focus     →  /banking/agenda/the-2030-vision/
+   Call for Speakers                →  /banking/agenda/call-for-speakers/
+
+Attend ▾
+   Attend Overview &amp; Passes         →  /banking/attend/
+   Attend as Delegate (Invited)     →  /banking/attend/delegate/
+   Sponsor &amp; Exhibit                →  /banking/attend/sponsor/
+   Media Partner Registration       →  /banking/attend/media-partner/
+   Association Partner Alliances    →  /banking/attend/association-partner/
+
+Networking ▾
+   Overview &amp; Concierge             →  /banking/networking/
+   AI-Powered Matchmaking           →  /banking/networking/ai-matchmaking/
+   Official Attendee App            →  /banking/networking/attendee-app/
+   Media &amp; Photo Gallery            →  /banking/networking/photo-gallery/</div>
+
+<h3>Full site map (18 Active Production Routes)</h3>
+<table>
+  <tr><th>URL Path</th><th>Page Scope &amp; Layout Template</th><th>Menu Placement</th><th>Indexing</th></tr>
+  <tr><td><code>/banking/</code></td><td>Master Homepage: Hero, Impact Stats, Pillars, Agenda Highlights, Regulators, FAQ</td><td>Root / Logo</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/agenda/</code></td><td>Agenda Hub: Strategic overview, 6-block methodology, clinical format preview</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/agenda/agenda/</code></td><td>Full Timeline: One-Day master schedule (08:00–18:30), breakouts &amp; roundtables</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/agenda/themes/</code></td><td>Themes &amp; Pillars: Detailed breakdown of the 4 Core Sector Content Pillars</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/agenda/the-2030-vision/</code></td><td>Special Feature: Regulatory alignment (CBUAE vs DFSA) &amp; March Dubai Cluster</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/agenda/call-for-speakers/</code></td><td>Faculty Call: Executive speaker submission &amp; clinical case study criteria</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/attend/</code></td><td>Attend Suite: Two-door attendance model (Delegate vs. Business Pass)</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/attend/delegate/</code></td><td>Delegate Pass: Executive invitation criteria (70%+ Buy-Side Enterprise Ratio)</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/attend/sponsor/</code></td><td>Sponsor &amp; Exhibit: Plenary keynotes, workshop clinics, 6/9/12 sqm booths, CXO boardrooms</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/attend/media-partner/</code></td><td>Media Partner: Press privileges, institutional briefing, media kit</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/attend/association-partner/</code></td><td>Association Partner: Regional fintech associations &amp; regulatory council alliances</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/speakers/</code></td><td>Speakers Hub: Searchable faculty directory with bio modals &amp; institutional tags</td><td>Main Nav</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/partners/</code></td><td>Partners Hub: Tier-based showcase (Speaking, Engagement, Industry, Exhibitor)</td><td>Main Nav</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/exhibition/</code></td><td>Exhibition Hub: Floorplan explorer (6, 9, 12 sqm) &amp; DIFC venue showcase</td><td>Main Nav</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/networking/</code></td><td>Networking Suite: 1-on-1 bilateral meetings, attendee app, boardroom access</td><td>Networking ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/sponsorship-enquiry/</code></td><td>Commercial Lead Capture: HubSpot Form 7d2f2204-7604-4373-ba13-4e240c5a8493</td><td>Enquire CTA</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/speaker-enquiry/</code></td><td>Speaker Abstract Form: HubSpot Form 7aae4009-64ec-41f0-b30f-7efc83f1ebc6</td><td>In-Page Links</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/media-enquiry/</code></td><td>Press Accreditation Form: HubSpot Form 6d1b0984-8964-4452-8593-0c0c5c202878</td><td>In-Page Links</td><td>Indexed</td></tr>
+  <tr><td><code>/banking/association-enquiry/</code></td><td>Trade Body Form: HubSpot Form bb31ae13-d02a-49d7-802c-e8bda5180ee4</td><td>In-Page Links</td><td>Indexed</td></tr>
+</table>
+
+<div class="rule">
+  <div class="h">Rule — Architectural Parity</div>
+  <p>To preserve cross-portfolio engineering consistency, the URL hierarchy, directory paths, and component names must remain 100% identical with the World AI Show template. Only the base path (<code>/banking</code>), date (24 March 2027), city (Dubai), and banking-specific copy change.</p>
+</div>
+
+<!-- ============ 05 ============ -->
+<h2 class="sec" id="components"><span class="num">05</span>Component library</h2>
+
+<h3>C1 — Stat row</h3>
+<div class="grid g4">
+  <div class="card"><b>300+</b>Pre-Qualified C-Suite Leaders</div>
+  <div class="card"><b>70%+</b>Buy-Side Enterprise Ratio</div>
+  <div class="card"><b>35–45</b>Expert Faculty Speakers</div>
+  <div class="card"><b>4</b>Core Sector Content Pillars</div>
+</div>
+<div class="note"><div class="h">Layout</div><p>Component C1. Number large in Space Grotesk (Cyber Lime), label small in JetBrains Mono beneath. Four across desktop, two across mobile.</p></div>
+
+<h3>C2 — Source-cited data card</h3>
+<div class="grid g3">
+  <div class="card"><b>USD 3.5B+</b>Middle East banking AI market value by 2027<br><span style="color:var(--text-dim);font-size:12px">PwC Middle East Financial Services AI Report</span></div>
+  <div class="card"><b>+38% YoY</b>Regional APP scam &amp; digital fraud surge (78% banks prioritizing real-time AI)<br><span style="color:var(--text-dim);font-size:12px">Regional Banking Fraud Survey / MENA FinTech Association</span></div>
+  <div class="card"><b>90% False Positives</b>Legacy AML alert overhead consuming 40% of compliance budgets<br><span style="color:var(--text-dim);font-size:12px">PwC / Thomson Reuters Regulatory Intelligence</span></div>
+</div>
+<div class="rule"><div class="h">Rule — Plain-Text Sources</div><p>Every benchmark must carry its source as plain text, never as a hyperlink. Macroeconomic projections and regulatory surveys must be cited accurately without hyperbole.</p></div>
+
+<h3>C3 — Expandable pillar card</h3>
+<div class="note"><div class="h">Layout</div><p>Numbered 01–04, title, one-line description. Expands on click to reveal operational scope, clinical case study formats, and technical discussion points.</p></div>
+
+<h3>C4 — Constituency block</h3>
+<div class="note"><div class="h">Layout</div><p>Five institutional groups representing the banking buying unit: Commercial &amp; Retail Banking; Risk, Compliance &amp; Financial Crime; Insurers, Wealth &amp; Asset Managers; Institutional Hosts &amp; Regulators; Global Cloud, Core &amp; AI Providers. Stacked rows with generous spacing.</p></div>
+
+<h3>C5 — CTA band</h3>
+<div class="note"><div class="h">Layout</div><p>Full-bleed dark container with cyan/lime ambient border. Small kicker line above, large proposition heading, one primary Cyber Lime button.</p></div>
+
+<h3>C6 — Reduced header</h3>
+<div class="note"><div class="h">Layout</div><p>Landing pages only. Logo, event lockup, date/location metadata, single action button. No navigation menu.</p></div>
+
+<!-- ============ 06 ============ -->
+<h2 class="sec" id="home"><span class="num">06</span>Home page</h2>
+<p>Eleven modular sections. Body copy is concise, analytical, and proposition-driven — the headings carry the core argument.</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Home</span><span class="u">/banking/</span></div>
+  <div class="pb">
+
+  <div class="blk"><div class="bh">S1 · Hero</div><div class="bb">
+    <div class="copy"><span class="lbl">kicker</span>World AI Show Industry Series  ·  Sector Edition
+<span class="lbl">logo</span>World AI Show | AI in Banking and Financial Services | Dubai 2027
+<span class="lbl">h1</span>Controlled AI deployment for <span>regulated financial operations.</span>
+<span class="lbl">thesis</span>From use case to operating outcome.
+<span class="lbl">meta</span>24 March 2027  ·  DIFC District, Dubai, UAE  ·  1-Day Executive Decision Forum
+<span class="lbl">standfirst</span>The premier buyer-led executive forum dedicated to the operational realities of deploying
+artificial intelligence across regulated banking, insurance, asset management, and payment operations.
+Convenes 300+ C-suite leaders actively locking down 2027 architecture, fraud defense, and core procurement.
+
+<span class="lbl">cta1</span>Apply for Delegate Pass (Complimentary)  → /banking/attend/delegate/
+<span class="lbl">cta2</span>Explore Commercial Sponsorship             → /banking/attend/sponsor/
+<span class="lbl">cta3</span>View Master Schedule                        → /banking/agenda/agenda/</div>
+    <div class="asset"><div class="h">Asset — Hero Ambient Background</div>
+      <p>Dark video reel or ambient WebGL gradient (1920×1080) graded in deep obsidian with electric cyan and subtle cyber lime refractions. Static fallback required.</p></div>
+    <div class="ph-img">HERO VIDEO PLACEHOLDER — 1920 × 1080<span>Ambient obsidian video loop with financial architectural grade, muted audio</span></div>
+    <div class="rule"><div class="h">Rule — Event Naming &amp; Clustering</div><p>Always write 'World AI Show | AI in Banking and Financial Services | Dubai 2027' on first reference. Position Dubai as Day 1 of the March Dubai Cluster (paired back-to-back with AI in Healthcare &amp; Life Sciences on 25 March 2027, sharing venue infrastructure while maintaining distinct P&amp;L, agendas, and buyers).</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S2 · Stat strip</div><div class="bb">
+    <div class="copy">300+ Pre-Qualified C-Suite  |  70%+ Buy-Side Ratio  |  35–45 Expert Faculty  |  4 Content Pillars</div>
+    <div class="note"><div class="h">Layout</div><p>Component C1. Overlaps the lower edge of the hero section by 30px on desktop.</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S3 · The argument — page centre of gravity</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>The Single Strategic Hook
+<span class="lbl">h2</span>Transitioning from speculative generative AI experimentation
+into core balance-sheet production scrutiny.
+
+<span class="lbl">body</span>Middle East financial institutions have committed substantial capital to digital transformation,
+but production AI remains constrained by legacy core architectures, model explainability requirements,
+and stringent regulatory compliance under Central Bank of the UAE (CBUAE) and DFSA frameworks.
+
+<span class="lbl">cards</span>[ Component C2 — USD 3.5B+ Market Value · +38% APP Fraud Surge · 90% AML False-Positive Overhead ]
+
+<span class="lbl">pull</span>World AI Show | AI in Banking and Financial Services convenes senior banking buyers and ecosystem
+leaders at the critical juncture where 2027 enterprise architecture, fraud defense, and core procurement
+decisions are actively locked down.</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S4 · What the forum is not</div><div class="bb">
+    <div class="copy"><span class="lbl">h2</span>Execution under regulation over fintech hype
+
+<span class="lbl">card1</span>Not a retail fintech or payments expo
+The focus is not on consumer neobanking apps, POS terminals, or merchant acquiring showcases.
+It addresses enterprise banking infrastructure, risk architecture, and operational modernization.
+
+<span class="lbl">card2</span>Not a speculative crypto or Web3 event
+Decentralized finance (DeFi) and speculative digital assets are excluded. Coverage is strictly focused
+on deployable institutional AI, enterprise analytics, and regulated financial workflows.
+
+<span class="lbl">card3</span>Not an academic AI theory summit
+Sessions do not debate theoretical algorithms or distant AGI timelines. Every session evaluates
+proven technology integrated with core transactional platforms.
+
+<span class="lbl">card4</span>Not an unvetted vendor pitch platform
+Trescon maintains strict editorial governance over the agenda. Sponsored speaking slots are strictly
+capped, structured around practical clinical formats, and led by qualified enterprise case studies.</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S5 · The four sector content pillars</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>Specialized Curriculum
+<span class="lbl">h2</span>Four operational mandates. One day.
+
+01  Financial Crime, AML &amp; Real-Time Fraud Defense
+    APP scam mitigation, real-time transaction screening, mule account tracking, synthetic identities.
+
+02  Agentic Servicing, Frontline CX &amp; Operational Workflow Automation
+    Autonomous agentic workflows with strict escalation guardrails, IDP for trade finance, automated eKYC.
+
+03  Risk Modelling, Credit Underwriting &amp; Capital Allocation
+    AI-driven credit underwriting using alternative data, real-time risk simulation, dynamic insurance pricing.
+
+04  Model Risk Governance, Explainability &amp; Sovereign Infrastructure
+    Algorithmic auditability, model drift detection, stress-testing, sovereign data residency, CBUAE/DFSA compliance.
+
+<span class="lbl">footer</span>Universal Themes: Core banking mainframe modernization, data fabric architectures, ethical AI, and workforce reskilling.</div>
+    <div class="note"><div class="h">Layout</div><p>Component C3. Expandable cards displaying detailed operational coverage and clinical formats.</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S6 · Programme architecture &amp; outcome-led formats</div><div class="bb">
+    <div class="copy"><span class="lbl">badge</span>Trescon Six-Part Block Methodology
+<span class="lbl">h2</span>Engineered to drive banking buyers from board priorities down to concrete procurement.
+
+[ Block 1: Sector Priority Brief ]
+Opening executive briefing outlining macroeconomic banking pressures and ranked operational ROI priorities.
+
+[ Block 2: Buyer Evidence ]
+Unvarnished commercial bank case studies examining transferable architecture lessons and pilot post-mortems.
+
+[ Block 3: Risk &amp; Trust Plenary ]
+Specialized compliance panel detailing algorithmic auditability, bias testing, and zero-trust security.
+
+[ Block 4: Parallel Breakout Clinics ]
+Two interactive 75-min workshop clinics (60–80 delegates): Clinic A (Fraud &amp; AML) | Clinic B (Agentic Banking).
+
+[ Block 5: Applied Case Studies ]
+Core modernization demonstrations and algorithmic underwriting deployments across live transactional cores.
+
+[ Block 6: Outcome Roundtables ]
+Structured peer roundtables capturing recorded procurement criteria and 2027 implementation roadmaps.</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S7 · Who is in the room</div><div class="bb">
+    <div class="copy"><span class="lbl">h2</span>Five governed institutional constituencies (Minimum 70% Buy-Side Enterprise Ratio)
+
+Commercial &amp; Retail Banking (Buy-Side 70%+)
+CIOs, CTOs, Chief Data &amp; AI Officers, Chief Digital Officers, Heads of Retail Banking, Heads of Core Transformation.
+
+Risk, Compliance &amp; Financial Crime
+Chief Risk Officers (CROs), Chief Compliance Officers (CCOs), Heads of AML, Heads of Fraud Risk, MLROs, Model Governance Leads.
+
+Insurers, Wealth &amp; Asset Managers
+Chief Operating Officers (COOs), Chief Investment Officers, Heads of Underwriting, Heads of Claims Automation, Actuarial Leads.
+
+Institutional Hosts &amp; Regulators
+Central Bank of the UAE (CBUAE), Dubai Financial Services Authority (DFSA), DIFC Authority, UAE FIU, ADGM.
+
+Global Cloud, Core &amp; AI Providers
+Enterprise software platforms, accelerated compute providers, fraud/AML specialists, core banking modernizers, system integrators.</div>
+    <div class="asset"><div class="h">Asset — Executive Photography</div>
+      <p>Four 800×600 candid images showing senior banking executive peer discussions and closed boardroom sessions. No competing event lanyards visible.</p></div>
+    <div class="ph-img">PHOTO PLACEHOLDERS × 4 — 800 × 600<span>Candid executive discussions from previous World AI Show editions</span></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S8 · How to attend — two-door model</div><div class="bb">
+    <div class="copy"><span class="lbl">door1</span>Delegate Pass — complimentary, strictly by invitation and qualification
+Senior banking, insurance, and financial services executives attend by invitation on a complimentary
+Delegate Pass, subject to qualification against an active operational budget or deployment mandate.
+[cta] Apply for a Delegate Pass   → /banking/attend/delegate/
+
+<span class="lbl">door2</span>Business Pass — paid commercial access with strictly capped quota
+Business Passes provide commercial access for technology solution providers, software vendors, and
+consultancies outside the invitation criteria, with ticket numbers strictly capped to protect room composition.
+[cta] Purchase a Business Pass   → /banking/attend/</div>
+    <div class="rule"><div class="h">Rule — Invitation Qualifier</div><p>The phrase 'by invitation' applies exclusively to complimentary enterprise buyers. It must never appear as a blanket claim for the whole event. 'By invitation only' is prohibited in public marketing.</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S9 · Sponsor value &amp; commercial architecture</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>Commercial Partnerships
+<span class="lbl">h2</span>Where Middle East banking leaders specify, procure, and deploy production AI
+
+<span class="lbl">body</span>Middle East banks are finalizing their 2027 technology procurement decisions now.
+Commercial sponsorship inventory is strictly capped at USD 150,000 to preserve executive exclusivity.
+Partnerships are structured around 20-min main-stage keynotes, exclusive 75-min clinic leadership,
+standardized 6/9/12 sqm concourse booths, and private 15-buyer CXO closed-door boardrooms.
+
+<span class="lbl">cta</span>Explore Sponsorship Tiers   → /banking/attend/sponsor/</div>
+    <div class="rule"><div class="h">Rule — Standards Enforcement</div><p>Speaking slots must be stated as <b>20-minute plenary keynotes</b> or <b>75-minute workshop clinics</b>. Booth sizes must be referenced strictly as <b>6 sqm, 9 sqm, and 12 sqm</b>. No sponsorship pricing may appear on the public website.</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S10 · Credibility &amp; series heritage</div><div class="bb">
+    <div class="copy"><span class="lbl">h2</span>48 global editions. The world's longest-running enterprise AI series.
+
+<span class="lbl">body</span>World AI Show | AI in Banking and Financial Services | Dubai 2027 is organised by Trescon,
+bringing an unrivaled international pedigree in artificial intelligence executive convening.
+
+48       Completed World AI Show editions across four continents
+42,000+  C-level executives and enterprise decision-makers convened
+2,600+   Expert speakers and global technology authorities hosted
+4        Continents</div>
+    <div class="rule"><div class="h">Rule — Organiser Attribution</div><p>Always state 'Organised by Trescon'. Never use 'managed by' or 'in association with' for the organizer role.</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S11 · Twin closing CTA bands</div><div class="bb">
+    <div class="copy"><span class="lbl">band1</span>Dubai · 24 March 2027 · 300+ Senior Banking Leaders · Minimum 70% Buy-Side Ratio
+Be in the room where 2027 banking AI architecture gets finalized
+[cta] Apply for a Delegate Pass   → /banking/attend/delegate/
+
+<span class="lbl">band2</span>4 Sector Content Pillars · Curated Tech Showcase · Closed-Door CXO Boardrooms
+Put your enterprise solution directly before qualified banking procurement committees
+[cta] Enquire About Sponsorship   → /banking/sponsorship-enquiry/</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S12 · Faculty call</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>Faculty
+<span class="lbl">h2</span>If you have deployed AI into core regulated banking, we want you on stage
+<span class="lbl">body</span>We are seeking enterprise banking leaders with unvarnished case studies:
+real-world architecture hurdles, pilot post-mortems, model risk mitigation, and verified balance-sheet outcomes.
+<span class="lbl">cta</span>Apply to Speak   → /banking/agenda/call-for-speakers/</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S13 · FAQ</div><div class="bb">
+    <div class="copy">1  What is World AI Show | AI in Banking and Financial Services | Dubai 2027?
+2  How does this forum fit into the March Dubai Cluster?
+3  Who qualifies for a complimentary Delegate Pass?
+4  What distinguishes CBUAE onshore banking oversight from DFSA free-zone jurisdiction?
+5  What are the four core sector content pillars?
+6  What sponsorship formats and booth sizes are available?
+7  What is the CXO Closed-Door Boardroom format?
+8  Who organises the World AI Show Series?</div>
+    <div class="note"><div class="h">Layout</div><p>Accordion layout with FAQPage structured data schema.</p></div>
+  </div></div>
+
+  </div>
+</div>
+
+<!-- ============ 07 ============ -->
+<h2 class="sec" id="agenda-suite"><span class="num">07</span>Agenda suite</h2>
+<p>Covers routes under <code>/banking/agenda/*</code> matching the master series suite architecture.</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Agenda Suite</span><span class="u">/banking/agenda/ · SubNavTabStrip Architecture</span></div>
+  <div class="pb">
+
+  <div class="blk"><div class="bh">Tab 1 · /banking/agenda/ (Overview)</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>Curriculum Overview
+<span class="lbl">h1</span>From use case to operating outcome
+<span class="lbl">sub</span>Departing entirely from conference speechifying, the forum is built on Trescon's six-part
+block methodology, systematically driving 300+ banking delegates from boardroom compliance
+expectations down to concrete procurement specifications.</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Tab 2 · /banking/agenda/agenda/ (Full 1-Day Master Schedule)</div><div class="bb">
+    <div class="copy"><span class="lbl">master schedule</span>Wednesday 24 March 2027: Execution Under Regulation
+• 08:00–09:00 Executive Registration, Networking Breakfast &amp; Technology Showcase Opening
+• 09:00–10:15 Sector Priority Brief: The 2027 Banking AI Mandate &amp; Opening Anchor Buyer Case Study
+• 10:15–10:45 Exhibition Networking Break &amp; Hosted 1-on-1 Bilateral Buyer-Sponsor Meetings
+• 10:45–12:15 Buyer Evidence Sessions: Real-World Architecture Lessons &amp; Pilot Failure Post-Mortems
+• 12:15–13:00 Executive Panel: Boardroom AI Governance, Model Risk Management &amp; Capital Allocation
+• 13:00–14:00 Executive Working Lunch &amp; Curated Technology Demonstrations
+• 14:00–15:15 Parallel Use-Case Workshops:
+              Clinic A: Real-Time Fraud &amp; AML Intelligence (Hosted by Engagement Partner)
+              Clinic B: Agentic Banking &amp; Front-to-Back Office Automation (Hosted by Engagement Partner)
+• 15:15–16:15 Applied Case Studies: Algorithmic Underwriting &amp; Core Modernization Demonstrations
+• 16:15–17:15 Outcome Roundtables: Procurement Benchmarks &amp; Production Action Plan
+• 17:15–18:30 Closing Executive Summary &amp; Hosted Networking Reception</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Tab 3 · /banking/agenda/themes/ (The 4 Core Content Pillars)</div><div class="bb">
+    <div class="copy">Pillar 1: Financial Crime, AML &amp; Real-Time Fraud Defense
+Mitigating Authorized Push Payment (APP) scams, sub-second transaction fraud detection, AML false-positive
+overhead reduction, synthetic identity resolution, behavioral biometrics, and mule account tracking.
+
+Pillar 2: Agentic Servicing, Frontline CX &amp; Operational Workflow Automation
+Autonomous agentic workflows with defensible human-in-the-loop escalation paths, customer servicing copilots,
+automated onboarding/eKYC, algorithmic mortgage processing, and intelligent document processing (IDP) for trade finance.
+
+Pillar 3: Risk Modelling, Credit Underwriting &amp; Capital Allocation
+AI-driven credit underwriting using alternative data estates, real-time risk simulation, dynamic liquidity management,
+autonomous portfolio optimization, and dynamic insurance claims adjudication.
+
+Pillar 4: Model Risk Governance, Explainability &amp; Sovereign Infrastructure
+Continuous model drift detection, algorithmic auditability, stress-testing, sovereign data residency, hybrid cloud
+orchestration, third-party AI risk management, and compliance with CBUAE and DFSA guidelines.</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Tab 4 · /banking/agenda/the-2030-vision/ (Regulatory Bank &amp; Dubai Catalysts)</div><div class="bb">
+    <div class="copy"><span class="lbl">catalysts</span>Key Regional Catalysts Driving 2027 Banking Procurement:
+• CBUAE Regulatory Modernization: Advanced digital risk, compliance, and AML standards compelling bank system upgrades.
+• DIFC AI &amp; Innovation Mandates: Targeting $500M+ AI enterprises paired with regulatory sandboxes and licensing frameworks.
+• Instant Payment &amp; Open Finance Expansion: National rollout of Aani creating surge demand for sub-second AI fraud defense.
+• Digital-First Banking Competition: Traditional leaders (Emirates NBD, FAB, ADCB, Mashreq) competing directly with neobanks (Wio, Zand).
+
+<span class="lbl">regulatory rule</span>Always distinguish between federal onshore CBUAE jurisdiction and offshore DIFC DFSA jurisdiction.</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Tab 5 · /banking/agenda/call-for-speakers/</div><div class="bb">
+    <div class="copy">Call for Banking &amp; Risk Faculty
+Seeking commercial bank CXOs, CROs, CDAIOs, and regulatory leaders with audited deployment evidence.
+Form links directly to <code>/banking/speaker-enquiry/</code>.</div>
+  </div></div>
+
+  </div>
+</div>
+
+<!-- ============ 08 ============ -->
+<h2 class="sec" id="attend-suite"><span class="num">08</span>Attend suite</h2>
+<p>Segmented conversion routes under <code>/banking/attend/*</code> enforcing audience governance.</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Attend Suite</span><span class="u">/banking/attend/ · Persona Funnels</span></div>
+  <div class="pb">
+
+  <div class="blk"><div class="bh">Route · /banking/attend/ (Overview &amp; Pass Matrix)</div><div class="bb">
+    <div class="copy"><span class="lbl">door1</span>Delegate Pass — Complimentary, Strictly by Invitation &amp; Mandate Qualification
+Reserved exclusively for senior banking, insurance, and investment leaders holding purchasing authority.
+→ /banking/attend/delegate/
+
+<span class="lbl">door2</span>Business Pass — Paid Commercial Access (Strictly Capped Quota)
+Provides commercial access for solution providers, vendors, and consultancies outside the invitation criteria.
+Maintained at a premium ticket barrier to safeguard the 70%+ buy-side ratio.
+→ /banking/attend/</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Route · /banking/attend/delegate/ (Invited Banking CXOs)</div><div class="bb">
+    <div class="copy"><span class="lbl">audience</span>Target Audience: CIOs, CTOs, CROs, CCOs, CDAIOs, Heads of Fraud, MLROs, Regulators.
+<span class="lbl">inclusions</span>Plenary access, choice of Parallel Breakout Clinic (Fraud or Agentic), Outcome Roundtables, Hosted Reception.
+<span class="lbl">privacy</span>Mandatory separate unbundled consent checkboxes under UAE Personal Data Protection Law (PDPL).</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Route · /banking/attend/sponsor/ (Commercial Packages &amp; Booth Standards)</div><div class="bb">
+    <div class="copy"><span class="lbl">standards</span>Standardized Commercial Architecture (Capped at USD 150,000 Total Gross Inventory):
+• Speaking Sponsor (USD 25,000 · Target: 2): 20-Min Plenary Keynote/Fireside + 12 SQM Concourse Booth + 12 Passes
+• Engagement Partner (USD 15,000 · Target: 3): Exclusive Leadership of 75-Min Workshop Clinic + 9 SQM Booth + 8 Passes
+• CXO Closed-Door Boardroom (USD 15,000 · Target: 2): 60-Min Curated Session with 15 Wishlist CXOs + 5-Min Opening Address
+• Industry Partner (USD 10,000 · Target: 3): Plenary Panel Speaking Seat + 9 SQM Booth + 6 Passes
+• Exhibitor (USD 5,000 · Target: 5): 6 SQM Standard Turnkey Concourse Booth + 4 Passes
+→ /banking/sponsorship-enquiry/</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Route · /banking/attend/media-partner/ (Press Accreditation)</div><div class="bb">
+    <div class="copy">Press credentials, executive interview room access, and approved institutional media briefings.
+→ /banking/media-enquiry/</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Route · /banking/attend/association-partner/ (Financial Alliances)</div><div class="bb">
+    <div class="copy">Regional fintech alliances, banking federations, and regulatory research institutes.
+→ /banking/association-enquiry/</div>
+  </div></div>
+
+  </div>
+</div>
+
+<!-- ============ 09 ============ -->
+<h2 class="sec" id="speakers-hub"><span class="num">09</span>Speakers hub</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Speakers Hub</span><span class="u">/banking/speakers/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">layout</span>Search &amp; Filter Controls:
+Search by name, designation, or institutional banking organization.
+Filter pills: All · Retail Banking CXOs · Risk &amp; Compliance (CRO/CCO) · Financial Crime &amp; AML · Data &amp; AI Architects · Regulators.
+
+<span class="lbl">card format</span>
+[ Avatar Photo (600×600) ]
+Speaker Name
+Job Title (e.g. Chief Risk Officer / Chief Data &amp; AI Officer)
+Commercial Bank / Regulatory Authority (e.g. Emirates NBD, FAB, ADCB, CBUAE, DFSA)
+[ LinkedIn Profile ]  [ Session Link ↗ ]
+
+<span class="lbl">faculty intake</span>
+Unannounced speaking slots carry holding text with link to <code>/banking/agenda/call-for-speakers/</code>.</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 10 ============ -->
+<h2 class="sec" id="partners-hub"><span class="num">10</span>Partners hub</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Partners &amp; Sponsors</span><span class="u">/banking/partners/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">structure</span>Tier-Grouped Commercial Logo Wall:
+• Tier 1: Speaking Sponsors (20-Min Plenary Keynote) — 12 SQM Booth
+• Tier 2: Engagement Partners (Clinic Leaders: Fraud &amp; AML / Agentic Banking) — 9 SQM Booth
+• Tier 3: CXO Closed-Door Boardroom Partners (15 Wishlist Banking Leaders)
+• Tier 4: Industry Partners (Plenary Panelists) — 9 SQM Booth
+• Tier 5: Concourse Turnkey Exhibitors — 6 SQM Booth
+• Institutional Regulators &amp; Supporting Financial Media
+
+Unconfirmed tiers are dynamically hidden. CTA links directly to <code>/banking/sponsorship-enquiry/</code>.</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 11 ============ -->
+<h2 class="sec" id="exhibition-hub"><span class="num">11</span>Exhibition &amp; 3D floorplan hub</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Exhibition Hub</span><span class="u">/banking/exhibition/ · DIFC Event Facility &amp; Floorplan</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">floorplan explorer</span>
+Interactive concourse map displaying standardized turnkey booth footprints:
+• 12 SQM Premium Island (Speaking Sponsor)
+• 9 SQM Prominent Booths (Engagement &amp; Industry Partners)
+• 6 SQM Turnkey Booths (Exhibitors)
+• 2 CXO Private Closed-Door Boardroom Suites
+• Dedicated Technology Demonstration Concourse &amp; Bilateral Meeting Lounge
+
+<span class="lbl">venue showcase</span>
+DIFC District Event Facility / Jumeirah Emirates Towers (Subject to final technical clearance).</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 12 ============ -->
+<h2 class="sec" id="networking-hub"><span class="num">12</span>Networking suite &amp; attendee app</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Networking Suite</span><span class="u">/banking/networking/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">subroutes</span>
+• /banking/networking/ (Executive Concierge &amp; 1-on-1 Bilateral Meetings)
+• /banking/networking/ai-matchmaking/ (Algorithmic pre-scheduled procurement meetings)
+• /banking/networking/attendee-app/ (Personalized master agenda, interactive polls &amp; digital business cards)
+• /banking/networking/photo-gallery/ (Executive photography from 48 global World AI Show editions)</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 13 ============ -->
+<h2 class="sec" id="enquiry-suite"><span class="num">13</span>Enquiry &amp; lead forms</h2>
+<p>Standardized 2-column conversion layout paired with HubSpot Portal ID <code>2953901</code>.</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Enquiry Suite</span><span class="u">HubSpot Forms v2 Embed Architecture</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">/banking/sponsorship-enquiry/</span>
+Heading: "Engage Middle East Banking Decision-Makers in Dubai"
+HubSpot Form: 7d2f2204-7604-4373-ba13-4e240c5a8493
+Fields: Name, Work Email, Mobile, Job Title, Company, Package of Interest (Speaking Sponsor / Engagement Partner / CXO Boardroom / Industry Partner / Exhibitor), Target Solution Category (Fraud &amp; AML / Core Modernization / Agentic Servicing / Sovereign Cloud).
+
+<span class="lbl">/banking/speaker-enquiry/</span>
+Heading: "Apply to Join the Dubai Banking Faculty"
+HubSpot Form: 7aae4009-64ec-41f0-b30f-7efc83f1ebc6
+Fields: Name, Title, Financial Institution, Implementation Case Study, Core Mainframe Architecture, Model Explainability Metrics.
+
+<span class="lbl">/banking/media-enquiry/</span>
+Heading: "Apply for Media Accreditation"
+HubSpot Form: 6d1b0984-8964-4452-8593-0c0c5c202878
+
+<span class="lbl">/banking/association-enquiry/</span>
+Heading: "Institutional Partnership Application"
+HubSpot Form: bb31ae13-d02a-49d7-802c-e8bda5180ee4</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 14 ============ -->
+<h2 class="sec" id="ia-tree"><span class="num">14</span>Master information architecture (IA)</h2>
+<p>Directory tree confirming full architectural parity with the master series framework.</p>
+
+<div class="grid g3">
+  <div class="card">
+    <b>01. CORE &amp; AGENDA</b>
+    <code>/banking/</code> (Homepage)<br>
+    <code>/banking/agenda/</code> (Agenda Hub)<br>
+    <code>/banking/agenda/agenda/</code> (Master Schedule)<br>
+    <code>/banking/agenda/themes/</code> (4 Content Pillars)<br>
+    <code>/banking/agenda/the-2030-vision/</code> (Regulators &amp; Catalysts)<br>
+    <code>/banking/agenda/call-for-speakers/</code> (Faculty Intake)
+  </div>
+  <div class="card">
+    <b>02. ATTEND &amp; STAKEHOLDERS</b>
+    <code>/banking/attend/</code> (Attend Hub)<br>
+    <code>/banking/attend/delegate/</code> (Delegate Pass)<br>
+    <code>/banking/attend/sponsor/</code> (Commercial Prospectus)<br>
+    <code>/banking/attend/media-partner/</code> (Media Kit)<br>
+    <code>/banking/attend/association-partner/</code> (Alliances)<br>
+    <code>/banking/speakers/</code> (Speakers Directory)<br>
+    <code>/banking/partners/</code> (Partners Showcase)
+  </div>
+  <div class="card">
+    <b>03. ENQUIRIES &amp; EXPERIENCES</b>
+    <code>/banking/sponsorship-enquiry/</code> (HubSpot Form)<br>
+    <code>/banking/speaker-enquiry/</code> (HubSpot Form)<br>
+    <code>/banking/media-enquiry/</code> (HubSpot Form)<br>
+    <code>/banking/association-enquiry/</code> (HubSpot Form)<br>
+    <code>/banking/exhibition/</code> (Floorplan &amp; DIFC Venue)<br>
+    <code>/banking/networking/</code> (Matchmaking &amp; App)
+  </div>
+</div>
+
+<!-- ============ 15 ============ -->
+<h2 class="sec" id="assets"><span class="num">15</span>Creative asset manifest</h2>
+
+<table>
+  <tr><th>Asset</th><th>Specification</th><th>Where used</th><th>Notes</th></tr>
+  <tr><td>Hero background video</td><td>1920×1080 min, MP4 + WebM, 8–12s loop, muted</td><td>Home S1</td><td>Deep obsidian grade with electric cyan and cyber lime refractions. Poster fallback required.</td></tr>
+  <tr><td>Hero poster fallback</td><td>1920×1080 JPG</td><td>Home S1</td><td>Static fallback for reduced motion and mobile viewports.</td></tr>
+  <tr><td>Official vector lockup</td><td>SVG, 422.09×170.0 viewBox, clean paths</td><td>Site-wide</td><td>Features electric blue wordmark, DUBAI outline pill, and BANKING &amp; FINANCIAL SERVICES subtitle.</td></tr>
+  <tr><td>Clinic roadmap graphic</td><td>SVG / UI mockup container</td><td>Home S6, Agenda</td><td>Illustrates parallel breakout clinics: Clinic A (Fraud &amp; AML) vs Clinic B (Agentic Banking).</td></tr>
+  <tr><td>Executive photography</td><td>4 × 800×600 landscape</td><td>Home S7, Attend</td><td>Candid senior banking roundtables from previous World AI Show editions. No competing lanyards.</td></tr>
+  <tr><td>Open Graph social card</td><td>1200×630 PNG</td><td>Site-wide metadata</td><td>Carries "Dubai | 24 March 2027 | AI in Banking &amp; Financial Services".</td></tr>
+  <tr><td>Favicon set</td><td>32, 180, 192, 512 PNG/ICO</td><td>Site-wide</td><td>Derived from official WAIS vector monogram.</td></tr>
+  <tr><td>Master vector lockups</td><td>SVG — dark and light canvas</td><td>Site-wide</td><td>High-contrast dark canvas default; high-contrast carbon ink on white for collateral.</td></tr>
+</table>
+
+<!-- ============ 16 ============ -->
+<h2 class="sec" id="rules"><span class="num">16</span>Content rules — do not break</h2>
+<p>Mandatory editorial, legal, and commercial guardrails established in the Master Blueprint.</p>
+
+<table>
+  <tr><th>#</th><th>Rule</th><th>Operational &amp; Commercial Rationale</th></tr>
+  <tr><td>1</td><td>Event Duration: State strictly as a <b>1-Day Executive Decision Forum</b>.</td><td>Reflects the master execution timeline on 24 March 2027 and its pairing with Healthcare on 25 March.</td></tr>
+  <tr><td>2</td><td>Clustering Model: Position Dubai as <b>Day 1 of the March Dubai Cluster</b>.</td><td>Paired back-to-back with AI in Healthcare &amp; Life Sciences, sharing infrastructure while maintaining distinct P&amp;Ls and audiences.</td></tr>
+  <tr><td>3</td><td>Partner Durations: State speaking slots strictly as <b>20-minute plenary keynotes</b> or <b>75-minute workshop clinics</b>.</td><td>Aligns with approved commercial tier deliverables for Speaking Sponsors and Engagement Partners.</td></tr>
+  <tr><td>4</td><td>Booth Sizes: Reference strictly as <b>6 sqm, 9 sqm, and 12 sqm</b>.</td><td>Standardized floor space allocation across Speaking Sponsors (12 sqm), Engagement/Industry Partners (9 sqm), and Exhibitors (6 sqm).</td></tr>
+  <tr><td>5</td><td>No sponsorship tier pricing anywhere on the public website.</td><td>Commercial inventory is strictly capped at USD 150,000; pricing lives strictly in the sales rate card.</td></tr>
+  <tr><td>6</td><td>"By invitation" must never appear as an unqualified claim about the whole event.</td><td>Complimentary delegate passes are by invitation and qualification; paid business passes exist alongside. "By invitation only" is prohibited.</td></tr>
+  <tr><td>7</td><td>Consent Qualifier: Delegate contact details are shared only where explicit consent is provided under UAE PDPL.</td><td>Mandatory compliance requirement under the UAE Personal Data Protection Law. Never promise unconsented attendee data.</td></tr>
+  <tr><td>8</td><td>Regulatory Delineation: Always distinguish between federal <b>CBUAE</b> jurisdiction and offshore DIFC <b>DFSA</b> jurisdiction.</td><td>Never conflate onshore federal UAE banking rules with DIFC free-zone rules in published copy.</td></tr>
+  <tr><td>9</td><td>Regulatory Patronage Guardrail: Never imply official endorsement or patronage from CBUAE, DFSA, or DIFC without signed agreements.</td><td>Protects institutional neutrality and corporate liability.</td></tr>
+  <tr><td>10</td><td>UK English throughout (programme, organise, prioritise, analyse, centre).</td><td>Maintains consistent editorial standards across the global series portfolio.</td></tr>
+  <tr><td>11</td><td>Organiser Attribution: Always state "Organised by Trescon" (never "managed by" or "in association with").</td><td>Maintains corporate entity governance and series brand ownership.</td></tr>
+</table>
+
+<div class="rule">
+  <div class="h">If in doubt</div>
+  <p>Any copy, metric, pricing variation, or structural layout not contained in this specification or in the approved Top-line Messaging document must be cleared with the Corporate Marketing Director before external publication.</p>
+</div>
+
+<p style="margin-top:56px;padding-top:20px;border-top:1px solid var(--border-dark);color:var(--text-dim);font-family:var(--font-mono);font-size:12px">
+World AI Show | AI in Banking and Financial Services | Dubai 2027 — Website wireframe &amp; build specification · Version 2.0<br>
+Confidential and intended solely for internal engineering, marketing, and commercial teams. © 2026–2027 Trescon. All rights reserved.
+</p>
+
+</div>
+</body>
+</html>

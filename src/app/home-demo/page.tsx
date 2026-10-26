@@ -1,0 +1,31 @@
+import { Header } from "../components/sections/Header";
+import { HeroSectionDemo } from "../components/sections/HeroSectionDemo";
+import { ModelViewerSection } from "../components/sections/ModelViewerSection";
+import { StatsSection } from "../components/sections/StatsSection";
+import { EcosystemSectionDemo } from "../components/sections/EcosystemSectionDemo";
+import { AgendaSection } from "../components/sections/AgendaSection";
+import { SpeakersSection } from "../components/sections/SpeakersSection";
+import { NetworkingSection } from "../components/sections/NetworkingSection";
+import { TestimonialsSection } from "../components/sections/TestimonialsSection";
+import { SponsorsSection } from "../components/sections/SponsorsSection";
+import { OrganizerSection } from "../components/sections/OrganizerSection";
+import { FooterSection } from "../components/sections/FooterSection";
+
+export default function HomeDemo() {
+  return (
+    <main className="relative flex flex-col min-h-screen overflow-x-hidden bg-[#020b1c]">
+      <Header />
+      <HeroSectionDemo />
+      <ModelViewerSection />
+      <StatsSection />
+      <EcosystemSectionDemo />
+      <AgendaSection />
+      <SpeakersSection />
+      <NetworkingSection />
+      <TestimonialsSection />
+      <SponsorsSection />
+      <OrganizerSection />
+      <FooterSection />
+    </main>
+  );
+}

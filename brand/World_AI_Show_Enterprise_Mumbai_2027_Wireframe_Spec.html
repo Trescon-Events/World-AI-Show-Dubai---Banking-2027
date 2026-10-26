@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World AI Show: The Enterprise Edition | Mumbai 2027 — Website Wireframe &amp; Build Specification</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;850&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Brand Chromatic Science & Tokens */
+    --obsidian: #020814;
+    --navy-surface: #040D1F;
+    --navy-card: #081429;
+    --navy-header: #07152B;
+    --border-dark: #1B2B48;
+    --border-wire: #2D4268;
+    --lime-primary: #C0F43C;
+    --cyan-accent: #18D4FF;
+    --cyan-aqua: #00CEFF;
+    --purple-tech: #926DFF;
+    --ink-dark: #06111F;
+    --text-white: #FFFFFF;
+    --text-muted: #8E9BAE;
+    --text-dim: #64748B;
+    --line: #1E2D4A;
+    --light-tint: rgba(24, 212, 255, 0.05);
+    --amber: #E5A93C;
+    --amberbg: rgba(229, 169, 60, 0.1);
+    --green: #3CD070;
+    --greenbg: rgba(60, 208, 112, 0.1);
+    --red: #FF5C5C;
+    --redbg: rgba(255, 92, 92, 0.1);
+
+    --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--text-white);
+    background: var(--obsidian);
+    line-height: 1.6;
+    font-size: 14.5px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 120px; }
+
+  /* Document Master Header */
+  header.doc {
+    background: var(--navy-header);
+    border-bottom: 1px solid var(--border-dark);
+    padding: 56px 0 44px;
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  header.doc::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--cyan-accent) 50%, transparent 100%);
+  }
+  header.doc .wrap { padding-bottom: 0; }
+  header.doc .kicker {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--lime-primary);
+    margin: 0 0 14px;
+    font-weight: 700;
+  }
+  header.doc h1 {
+    font-family: var(--font-display);
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    font-weight: 850;
+    letter-spacing: -0.02em;
+  }
+  header.doc h1 span {
+    background: linear-gradient(90deg, var(--cyan-aqua) 0%, var(--lime-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  header.doc p { margin: 0; color: var(--text-muted); max-width: 72ch; font-size: 15px; }
+  header.doc .meta {
+    margin-top: 22px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--cyan-accent);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Table of Contents */
+  nav.toc {
+    background: var(--navy-surface);
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 40px;
+  }
+  nav.toc h2 {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+  }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 36px; }
+  nav.toc li { margin-bottom: 5px; font-size: 13.5px; }
+  nav.toc a { color: var(--cyan-accent); text-decoration: none; transition: color 0.15s ease; }
+  nav.toc a:hover { color: var(--lime-primary); text-decoration: underline; }
+
+  /* Typography & Structure */
+  h2.sec {
+    font-family: var(--font-display);
+    font-size: 24px;
+    margin: 56px 0 6px;
+    padding-top: 20px;
+    border-top: 3px solid var(--border-dark);
+    color: var(--text-white);
+  }
+  h2.sec .num {
+    font-family: var(--font-mono);
+    color: var(--lime-primary);
+    font-variant-numeric: tabular-nums;
+    margin-right: 10px;
+  }
+  h3 { font-family: var(--font-display); font-size: 18px; margin: 34px 0 8px; color: var(--cyan-accent); }
+  h4 { font-family: var(--font-display); font-size: 15px; margin: 22px 0 6px; color: var(--text-white); }
+  p { margin: 0 0 12px; max-width: 78ch; color: var(--text-muted); }
+  ul, ol { max-width: 78ch; color: var(--text-muted); }
+  li { margin-bottom: 5px; }
+  code {
+    font-family: var(--font-mono);
+    font-size: .88em;
+    background: rgba(24, 212, 255, 0.1);
+    color: var(--cyan-accent);
+    padding: 1px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(24, 212, 255, 0.2);
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 14px 0 20px;
+    font-size: 14px;
+    background: var(--navy-surface);
+    border: 1px solid var(--border-dark);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  th, td { border: 1px solid var(--border-dark); padding: 9px 12px; text-align: left; vertical-align: top; }
+  th {
+    background: #0B172E;
+    color: var(--text-white);
+    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+  }
+  tr:nth-child(even) td { background: rgba(8, 20, 41, 0.4); }
+  td { color: var(--text-muted); }
+  td strong, td b { color: var(--text-white); }
+
+  /* Page Module Block */
+  .page {
+    background: var(--navy-surface);
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    margin: 26px 0;
+    overflow: hidden;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.35);
+  }
+  .page > .ph {
+    background: #081429;
+    color: var(--text-white);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-dark);
+  }
+  .page > .ph .t { font-family: var(--font-display); font-weight: 700; font-size: 16px; }
+  .page > .ph .u { font-family: var(--font-mono); font-size: 12px; color: var(--lime-primary); }
+  .page > .pb { padding: 8px 20px 20px; }
+
+  /* Wireframe Container Block */
+  .blk {
+    border: 1px solid var(--border-dark);
+    border-left: 4px solid var(--cyan-accent);
+    border-radius: 5px;
+    margin: 16px 0;
+    background: #030B18;
+  }
+  .blk > .bh {
+    background: var(--navy-card);
+    padding: 8px 14px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--cyan-accent);
+    font-weight: 700;
+    border-bottom: 1px solid var(--border-dark);
+  }
+  .blk > .bb { padding: 14px; }
+  .copy {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    background: #020712;
+    border: 1px dashed var(--border-wire);
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin: 0 0 12px;
+    color: #D1D9E4;
+  }
+  .lbl {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    background: #132B4F;
+    color: var(--cyan-accent);
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: 1px;
+    border: 1px solid rgba(24, 212, 255, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* Callouts & Alert Banners */
+  .note { border-left: 4px solid var(--cyan-accent); background: rgba(24, 212, 255, 0.06); padding: 11px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  .note .h { font-family: var(--font-mono); font-weight: 700; color: var(--cyan-accent); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .asset { border-left: 4px solid var(--amber); background: var(--amberbg); padding: 11px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  .asset .h { font-family: var(--font-mono); font-weight: 700; color: var(--amber); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .rule { border-left: 4px solid var(--red); background: var(--redbg); padding: 11px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  .rule .h { font-family: var(--font-mono); font-weight: 700; color: var(--red); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .ok { border-left: 4px solid var(--green); background: var(--greenbg); padding: 11px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  .ok .h { font-family: var(--font-mono); font-weight: 700; color: var(--green); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .note p:last-child, .asset p:last-child, .rule p:last-child, .ok p:last-child { margin-bottom: 0; }
+
+  .grid { display: grid; gap: 12px; margin: 14px 0; }
+  .g2 { grid-template-columns: 1fr 1fr; }
+  .g3 { grid-template-columns: 1fr 1fr 1fr; }
+  .g4 { grid-template-columns: repeat(4, 1fr); }
+  .card { border: 1px dashed var(--border-wire); background: var(--navy-card); border-radius: 6px; padding: 12px 14px; font-size: 13px; }
+  .card b { display: block; font-family: var(--font-display); color: var(--text-white); margin-bottom: 3px; font-size: 14.5px; }
+
+  /* Image Placeholders */
+  .ph-img {
+    border: 2px dashed rgba(192, 244, 60, 0.4);
+    background: rgba(192, 244, 60, 0.03);
+    border-radius: 6px;
+    padding: 22px 14px;
+    text-align: center;
+    color: var(--lime-primary);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  .ph-img span { display: block; font-weight: 400; color: var(--text-muted); font-size: 11.5px; margin-top: 4px; font-family: var(--font-body); }
+
+  @media(max-width:760px) {
+    nav.toc ol { columns: 1; }
+    .g2, .g3, .g4 { grid-template-columns: 1fr; }
+    .page > .ph { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header class="doc">
+  <div class="wrap">
+    <p class="kicker">Confidential · Production Build Specification</p>
+    <h1>World AI Show: The Enterprise Edition | Mumbai 2027<br><span>Website Wireframe &amp; Build Specification</span></h1>
+    <p>Approved structural copy, page hierarchy, chromatic tokens, and UX component architecture for the launch of the World AI Show Series in India[cite: 1]. Adapted to the master series navigation and site architecture framework[cite: 34].</p>
+    <p class="meta">
+      <span>Version 2.0 · Master Release</span>
+      <span>20–21 April 2027 · Mumbai, India[cite: 1]</span>
+      <span>worldaishow.com/enterprise</span>
+      <span>Organised by Trescon</span>
+    </p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<nav class="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#how">How to use this document</a></li>
+    <li><a href="#brand">Brand kit &amp; design direction</a></li>
+    <li><a href="#system">Layout system</a></li>
+    <li><a href="#nav">Navigation &amp; site map</a></li>
+    <li><a href="#components">Component library</a></li>
+    <li><a href="#home">Home page</a></li>
+    <li><a href="#agenda-suite">Agenda suite</a></li>
+    <li><a href="#attend-suite">Attend suite</a></li>
+    <li><a href="#speakers-hub">Speakers hub</a></li>
+    <li><a href="#partners-hub">Partners hub</a></li>
+    <li><a href="#exhibition-hub">Exhibition &amp; 3D floorplan hub</a></li>
+    <li><a href="#networking-hub">Networking suite &amp; attendee app</a></li>
+    <li><a href="#enquiry-suite">Enquiry &amp; lead forms</a></li>
+    <li><a href="#ia-tree">Master information architecture (IA)</a></li>
+    <li><a href="#assets">Creative asset manifest</a></li>
+    <li><a href="#rules">Content rules — do not break</a></li>
+  </ol>
+</nav>
+
+<!-- ============ 01 ============ -->
+<h2 class="sec" id="how"><span class="num">01</span>How to use this document</h2>
+
+<p>This is a build specification, not a visual mockup[cite: 33]. Every line of body copy, heading, research data point, and call to action below is approved and final — it must be used verbatim rather than rewritten, paraphrased, or compressed during frontend implementation[cite: 33].</p>
+
+<h3>Working in Antigravity &amp; Web Development Workflows</h3>
+<p>Each page section below is written to be directly usable as an implementation prompt on its own[cite: 33]:</p>
+<ol>
+  <li>Start with <b>Brand kit</b>, <b>Layout system</b>, and <b>Component library</b> (sections 02–05)[cite: 33]. Build the core component tokens first — eighty percent of the site is the same eight components repeated[cite: 33].</li>
+  <li>Build the <b>Home page</b> next, section by section, in order[cite: 33]. It exercises the design tokens and serves as the reference template for all subsequent pages[cite: 33].</li>
+  <li>Assemble the <b>Agenda</b>, <b>Attend</b>, <b>Speakers</b>, <b>Partners</b>, <b>Exhibition</b>, <b>Networking</b>, and <b>Enquiry</b> suites using the unified World AI Show navigation architecture (sections 07–13)[cite: 34]. Connect all conversion endpoints to HubSpot Portal ID <code>2953901</code>[cite: 32].</li>
+</ol>
+
+<div class="note">
+  <div class="h">Prompting note</div>
+  <p>Copy a single wireframe block into your development workflow along with its layout instructions rather than pasting entire pages[cite: 33]. Where a block specifies an <b>ASSET</b> callout, build the container to the stated dimensions and leave it empty until approved creative files arrive[cite: 33].</p>
+</div>
+
+<h3>Reading the annotations</h3>
+<div class="grid g2">
+  <div class="note"><div class="h">Layout</div><p>Structural layout, alignment, and responsive behavior constraints[cite: 33].</p></div>
+  <div class="asset"><div class="h">Asset</div><p>Creative assets that must be placed or produced to exact dimensions[cite: 33].</p></div>
+  <div class="rule"><div class="h">Rule</div><p>Non-negotiable compliance, legal, or editorial requirements[cite: 33].</p></div>
+  <div class="ok"><div class="h">Rationale</div><p>Strategic context explaining why a specific section or argument is built this way[cite: 33].</p></div>
+</div>
+
+<!-- ============ 02 ============ -->
+<h2 class="sec" id="brand"><span class="num">02</span>Brand kit &amp; design direction</h2>
+
+<p>The visual identity incorporates the master brand guidelines established for the World AI Show platform[cite: 31]. It projects an authoritative, high-density, luminous enterprise feel engineered for enterprise CXOs, operational leaders, and technical buyers[cite: 1, 31].</p>
+
+<h3>Tone of the design</h3>
+<p>The audience consists of CIOs, Chief AI Officers, CTOs, CDOs, CISOs, enterprise architects, and transformation heads[cite: 1]. The visual aesthetic must convey enterprise-grade reliability and architectural rigor rather than speculative consumer excitement[cite: 1, 31].</p>
+<div class="grid g2">
+  <div class="card"><b>Do</b>Deep obsidian backgrounds (<code>#020814</code>), glass cards with subtle borders, clean mono labels, high-contrast Cyber Lime CTA pills with dark ink, and verified evidence metrics[cite: 31].</div>
+  <div class="card"><b>Avoid</b>Generic purple-to-blue consumer gradients, floating sci-fi robot hands, stock circuit boards, ungrounded futurism, and countdown pressure timers[cite: 31, 33].</div>
+</div>
+
+<h3>Master Palette Application</h3>
+<table>
+  <tr><th>Token Name</th><th>HEX / CSS Value</th><th>Role &amp; Application</th></tr>
+  <tr><td><code>--obsidian</code></td><td><code>#020814</code></td><td>Foundational canvas. Absorbs background noise and maximizes luminescence[cite: 31].</td></tr>
+  <tr><td><code>--navy-surface</code></td><td><code>#040D1F</code></td><td>Primary surface for glass cards, dropdowns, and modals (85–94% opacity with blur)[cite: 31].</td></tr>
+  <tr><td><code>--lime-primary</code></td><td><code>#C0F43C</code></td><td>Flagship hero key. Used for primary CTAs, active badges, and metric highlights[cite: 31].</td></tr>
+  <tr><td><code>--cyan-accent</code></td><td><code>#18D4FF</code></td><td>Secondary accent representing enterprise cloud, infrastructure, and active borders[cite: 31].</td></tr>
+  <tr><td><code>--cyan-aqua</code></td><td><code>#00CEFF</code></td><td>Gradient stop paired with Cyber Lime for master headings[cite: 31].</td></tr>
+  <tr><td><code>--purple-tech</code></td><td><code>#926DFF</code></td><td>Tertiary accent for special highlights and executive tracks[cite: 31].</td></tr>
+  <tr><td><code>--ink-dark</code></td><td><code>#06111F</code></td><td>Mandatory text ink for Cyber Lime pills. Contrast ratio 15.8:1 (AAA)[cite: 31].</td></tr>
+</table>
+
+<div class="rule">
+  <div class="h">Rule — Button Ink Guardrail</div>
+  <p>Never place white text inside a Cyber Lime (<code>#C0F43C</code>) button or badge[cite: 31]. White on lime yields an unreadable 1.3:1 contrast ratio[cite: 31]. Typography inside Cyber Lime elements must strictly use Carbon Ink (<code>#06111F !important</code>)[cite: 31].</p>
+</div>
+
+<!-- ============ 03 ============ -->
+<h2 class="sec" id="system"><span class="num">03</span>Layout system</h2>
+
+<table>
+  <tr><th>Property</th><th>Specification</th></tr>
+  <tr><td>Container</td><td>1280px maximum content width on desktop (1440px on extra-wide), centered with 24px gutters[cite: 32].</td></tr>
+  <tr><td>Grid</td><td>12-column desktop (24px gutter) · 8-column tablet · 4-column mobile[cite: 32, 33].</td></tr>
+  <tr><td>Breakpoints</td><td>sm: 640px · md: 768px · lg: 1024px · xl: 1280px[cite: 32]. Mobile layouts must be verified down to 375px[cite: 33].</td></tr>
+  <tr><td>Vertical Rhythm</td><td>96px between major sections on desktop, 56px on mobile[cite: 33].</td></tr>
+  <tr><td>Glass Elevation</td><td>Cards use <code>background: #040D1F</code> with <code>backdrop-filter: blur(24px)</code>, 1px top highlight border, and subtle cyan/lime glow[cite: 31].</td></tr>
+</table>
+
+<!-- ============ 04 ============ -->
+<h2 class="sec" id="nav"><span class="num">04</span>Navigation &amp; site map</h2>
+
+<h3>Menu bar — exact series framework (matching World AI Show Malaysia)</h3>
+<div class="copy">LEFT     [ World AI Show: The Enterprise Edition Logo ]
+CENTRE   Agenda ▾  |  Speakers  |  Attend ▾  |  Partners  |  Exhibition  |  Networking ▾
+RIGHT    [ Enquire Now ↗ ]
+
+Agenda ▾
+   Overview &amp; Schedule              →  /enterprise/agenda/
+   Full 2-Day Timeline              →  /enterprise/agenda/agenda/
+   Themes &amp; The 5 Pillars           →  /enterprise/agenda/themes/
+   The AI ROI Clinic &amp; Roadmap      →  /enterprise/agenda/the-2030-vision/
+   Call for Speakers                →  /enterprise/agenda/call-for-speakers/
+
+Attend ▾
+   Attend Overview &amp; Passes         →  /enterprise/attend/
+   Attend as Delegate (Invited)     →  /enterprise/attend/delegate/
+   Sponsor &amp; Exhibit                →  /enterprise/attend/sponsor/
+   Media Partner Registration       →  /enterprise/attend/media-partner/
+   Association Partner Alliances    →  /enterprise/attend/association-partner/
+
+Networking ▾
+   Overview &amp; Experiences           →  /enterprise/networking/
+   AI-Powered Matchmaking           →  /enterprise/networking/ai-matchmaking/
+   Official Attendee App            →  /enterprise/networking/attendee-app/
+   Media &amp; Photo Gallery            →  /enterprise/networking/photo-gallery/</div>
+
+<h3>Full site map (18 Active Production Routes)</h3>
+<table>
+  <tr><th>URL Path</th><th>Page Scope &amp; Layout Template</th><th>Menu Placement</th><th>Indexing</th></tr>
+  <tr><td><code>/enterprise/</code></td><td>Master Homepage: Hero, Impact Stats, Pillars, ROI Clinic, Marquee, FAQ</td><td>Root / Logo</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/agenda/</code></td><td>Agenda Hub: Strategic overview, 2-day session tracks, keynote preview</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/agenda/agenda/</code></td><td>Full Timeline: Day 1 (Execution) &amp; Day 2 (Scale) schedule + boardrooms[cite: 1, 6, 8]</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/agenda/themes/</code></td><td>Themes &amp; Pillars: Detailed breakdown of the 5 Master Content Pillars[cite: 4]</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/agenda/the-2030-vision/</code></td><td>Special Feature: The AI ROI Clinic framework &amp; India Series trajectory[cite: 8]</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/agenda/call-for-speakers/</code></td><td>Faculty Call: Speaker submission form &amp; evaluation criteria</td><td>Agenda ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/attend/</code></td><td>Attend Suite: Two-door attendance model (Delegate vs. Business Pass)[cite: 15]</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/attend/delegate/</code></td><td>Delegate Pass: Executive invitation criteria &amp; qualification form[cite: 15]</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/attend/sponsor/</code></td><td>Sponsor &amp; Exhibit: 30-min speaking slots, 4/6/12 sqm booths, CXO boardrooms[cite: 6, 7, 23]</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/attend/media-partner/</code></td><td>Media Partner: Press privileges, interview holding room, media kit</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/attend/association-partner/</code></td><td>Association Partner: Trade council alliances &amp; delegation packages</td><td>Attend ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/speakers/</code></td><td>Speakers Hub: Searchable faculty directory with bio modals &amp; company tags</td><td>Main Nav</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/partners/</code></td><td>Partners Hub: Tier-based showcase (Lead, Platinum, Gold, Silver, Bronze)[cite: 22]</td><td>Main Nav</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/exhibition/</code></td><td>Exhibition Hub: 3D floorplan explorer (4, 6, 12 sqm) &amp; 360° venue tour</td><td>Main Nav</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/networking/</code></td><td>Networking Suite: Executive matchmaking, attendee app, media gallery</td><td>Networking ▾</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/sponsorship-enquiry/</code></td><td>Commercial Lead Capture: HubSpot Form 7d2f2204-7604-4373-ba13-4e240c5a8493[cite: 32]</td><td>Enquire CTA</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/speaker-enquiry/</code></td><td>Speaker Abstract Form: HubSpot Form 7aae4009-64ec-41f0-b30f-7efc83f1ebc6[cite: 32]</td><td>In-Page Links</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/media-enquiry/</code></td><td>Press Accreditation Form: HubSpot Form 6d1b0984-8964-4452-8593-0c0c5c202878[cite: 32]</td><td>In-Page Links</td><td>Indexed</td></tr>
+  <tr><td><code>/enterprise/association-enquiry/</code></td><td>Trade Body Form: HubSpot Form bb31ae13-d02a-49d7-802c-e8bda5180ee4[cite: 32]</td><td>In-Page Links</td><td>Indexed</td></tr>
+</table>
+
+<div class="rule">
+  <div class="h">Rule — Architectural Consistency</div>
+  <p>Because World AI Show: The Enterprise Edition and World AI Show Malaysia share the same site architecture, the URL hierarchy, directory paths, and component names must remain 100% identical[cite: 34]. Only the base path (<code>/enterprise</code> vs <code>/malaysia</code>), dates, city, and market-specific copy change[cite: 34].</p>
+</div>
+
+<!-- ============ 05 ============ -->
+<h2 class="sec" id="components"><span class="num">05</span>Component library</h2>
+
+<h3>C1 — Stat row</h3>
+<div class="grid g4">
+  <div class="card"><b>200–300</b>Qualified CXOs[cite: 9]</div>
+  <div class="card"><b>35–45</b>Speakers &amp; Panelists[cite: 6, 7, 8]</div>
+  <div class="card"><b>5</b>Content Pillars[cite: 4]</div>
+  <div class="card"><b>2 Days</b>Executive Conference</div>
+</div>
+<div class="note"><div class="h">Layout</div><p>Component C1[cite: 33]. Number large in Space Grotesk (Cyber Lime), label small in JetBrains Mono beneath[cite: 31, 33]. Four across desktop, two across mobile[cite: 33].</p></div>
+
+<h3>C2 — Source-cited data card</h3>
+<div class="grid g3">
+  <div class="card"><b>40% vs 28%</b>India AI adoption vs global benchmark<br><span style="color:var(--text-dim);font-size:12px">Deloitte India, April 2026</span>[cite: 2]</div>
+  <div class="card"><b>83% Gap</b>Organizations lacking core process redesign<br><span style="color:var(--text-dim);font-size:12px">Deloitte India, April 2026</span>[cite: 2, 4]</div>
+  <div class="card"><b>74% vs 21%</b>Agentic ambition vs mature governance<br><span style="color:var(--text-dim);font-size:12px">Deloitte Global, January 2026</span>[cite: 2, 4]</div>
+</div>
+<div class="rule"><div class="h">Rule — Plain-Text Sources</div><p>Every data point must carry its source as plain text, never as a hyperlink[cite: 17, 33]. Macroeconomic projections (NITI Aayog, CCI) must be cited with their scenario/projection qualifiers[cite: 2, 4, 33].</p></div>
+
+<h3>C3 — Expandable pillar card</h3>
+<div class="note"><div class="h">Layout</div><p>Numbered 01–05, title, one-line description[cite: 33]. Expands on click to reveal research evidence, session mapping, and discussion points from the production brief[cite: 4, 33].</p></div>
+
+<h3>C4 — Constituency block</h3>
+<div class="note"><div class="h">Layout</div><p>Four executive groups representing the 39-person enterprise buying unit: Technology Leadership, Data &amp; Architecture, Operations &amp; Transformation, and Risk &amp; Governance[cite: 1, 2, 3]. Stacked rows with generous spacing[cite: 33].</p></div>
+
+<h3>C5 — CTA band</h3>
+<div class="note"><div class="h">Layout</div><p>Full-bleed dark container with cyan/lime ambient border[cite: 33]. Small kicker line above, large proposition heading, one primary Cyber Lime button[cite: 31, 33].</p></div>
+
+<h3>C6 — Reduced header</h3>
+<div class="note"><div class="h">Layout</div><p>Landing pages only[cite: 33]. Logo, event lockup, date/location metadata, single action button[cite: 33]. No navigation menu[cite: 33].</p></div>
+
+<!-- ============ 06 ============ -->
+<h2 class="sec" id="home"><span class="num">06</span>Home page</h2>
+<p>Eleven modular sections. Body copy is concise and proposition-driven — the headings carry the core argument[cite: 30, 33].</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Home</span><span class="u">/enterprise/</span></div>
+  <div class="pb">
+
+  <div class="blk"><div class="bh">S1 · Hero</div><div class="bb">
+    <div class="copy"><span class="lbl">kicker</span>The Launch of the World AI Show Series in India
+<span class="lbl">logo</span>World AI Show: The Enterprise Edition | Mumbai 2027[cite: 1]
+<span class="lbl">h1</span>Where AI becomes the operating model.[cite: 1]
+<span class="lbl">meta</span>20–21 April 2027  ·  Mumbai, India  ·  2 Full Days[cite: 1]
+<span class="lbl">standfirst</span>The premier cross-functional executive conference addressing the architecture,
+systems integration, agentic governance, and verifiable ROI of enterprise AI.[cite: 1]
+The inaugural edition of a nationwide series culminating in the 2027 Series Finale.
+
+<span class="lbl">cta1</span>Enquire Now (Sponsorship &amp; Passes)  → /enterprise/sponsorship-enquiry/
+<span class="lbl">cta2</span>Explore The India Series             → /enterprise/agenda/the-2030-vision/
+<span class="lbl">cta3</span>Download Prospectus                   → /enterprise/attend/sponsor/</div>
+    <div class="asset"><div class="h">Asset — Hero Ambient Background</div>
+      <p>Dark video reel or ambient WebGL gradient (1920×1080) graded in deep obsidian with subtle cyan/lime light refractions[cite: 31, 33]. Static poster frame required as fallback[cite: 33].</p></div>
+    <div class="ph-img">HERO VIDEO PLACEHOLDER — 1920 × 1080[cite: 33]<span>Ambient obsidian video loop with dark grade, muted audio[cite: 31, 33]</span></div>
+    <div class="rule"><div class="h">Rule — Duration &amp; Series Framing</div><p>Strictly communicate the conference as a <b>2-day executive event</b> (never 1.5 days). Position Mumbai clearly as <b>Edition 1 of the World AI Show Series in India</b>, establishing anticipation for the year-end Series Finale.</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S2 · Stat strip</div><div class="bb">
+    <div class="copy">200–300 Qualified CXOs  |  35–45 Speakers  |  5 Content Pillars  |  2 Full Days[cite: 4, 6, 7, 8, 9]</div>
+    <div class="note"><div class="h">Layout</div><p>Component C1[cite: 33]. Overlaps the lower edge of the hero section by 30px on desktop[cite: 33].</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S3 · The argument — page centre of gravity</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>The Execution Gap
+<span class="lbl">h2</span>Enterprises have proved AI in the sandbox.
+The battle now is making it work across daily business operations.[cite: 1, 3]
+
+<span class="lbl">body</span>India's enterprise adoption rate leads globally at nearly 40% (Deloitte India, 2026),
+yet 83% of organizations remain trapped in point-tool retrofitting without core process reinvention.[cite: 2, 4]
+
+<span class="lbl">cards</span>[ Component C2 — 40% vs 28% Adoption · 83% Process Gap · 74% vs 21% Governance Gap ][cite: 2, 4]
+
+<span class="lbl">pull</span>World AI Show: The Enterprise Edition convenes the cross-functional leaders
+who own the systems, workflows, controls, and budgets required to turn experimental
+AI into a dependable operating model.[cite: 1, 3]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S4 · What this is not</div><div class="bb">
+    <div class="copy"><span class="lbl">h2</span>Operational ownership over technology demonstrations[cite: 1, 3]
+
+<span class="lbl">card1</span>Not an AI awareness conference
+We do not debate whether AI will transform enterprise. We address the integration,
+monitoring, and workflow redesign required after launch.[cite: 1, 2, 4]
+
+<span class="lbl">card2</span>Not a developer hackathon
+It gathers the cross-functional enterprise buying group: CIOs, CAIOs, CDOs, COOs,
+CISOs, and transformation leaders.[cite: 1, 3]
+
+<span class="lbl">card3</span>Not an uncapped vendor showcase
+Editorial integrity is preserved. Sponsored sessions are standardized at 30 minutes,
+vetted for implementation proof, and strictly capped.[cite: 6, 7, 33]
+
+<span class="lbl">card4</span>Not a standalone, one-off event
+It is the launchpad of the World AI Show Series in India, building momentum directly
+toward the national Series Finale in late 2027.</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S5 · The five content pillars</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>Curated Agenda
+<span class="lbl">h2</span>Five decisions. Two days.[cite: 1, 4]
+
+01  Enterprise AI strategy and business value[cite: 4]
+02  Pilot to production and workflow redesign[cite: 4]
+03  Agentic AI and accountable autonomy[cite: 4]
+04  Data context and the AI-ready stack[cite: 4]
+05  Governance, security and proportionate trust[cite: 4]
+
+<span class="lbl">footer</span>Workforce restructuring, operating-model change, and verified ROI run across all five.[cite: 4]</div>
+    <div class="note"><div class="h">Layout</div><p>Component C3[cite: 33]. Expandable cards displaying specific session formats and research citations from Section 4 of the production brief[cite: 4, 33].</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S6 · Special feature: The AI ROI Clinic</div><div class="bb">
+    <div class="copy"><span class="lbl">badge</span>Interactive Stage Feature
+<span class="lbl">h2</span>The AI ROI Clinic: What should the board actually measure?[cite: 8]
+
+<span class="lbl">standfirst</span>A facilitated, on-stage working session interrogating a live enterprise deployment.[cite: 8]
+
+[ Stage 1: Problem &amp; Baseline ]
+Introduce an enterprise use case and examine the verified pre-AI baseline.[cite: 8]
+
+[ Stage 2: Evidence &amp; Full Cost ]
+Audit cycle times, error rates, hidden integration overheads, and exception escalation.[cite: 8]
+
+[ Stage 3: The Boardroom Verdict ]
+The room and panel decide: Does the deployment Scale, Redesign, or Stop?[cite: 8]</div>
+    <div class="ok"><div class="h">Rationale</div><p>The AI ROI Clinic is the conference's premier programmatic differentiator[cite: 8]. It proves the event prioritizes financial and operational rigor over theoretical keynotes[cite: 1, 8].</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S7 · Who is in the room</div><div class="bb">
+    <div class="copy"><span class="lbl">h2</span>The complete enterprise buying unit[cite: 2, 3]
+
+Enterprise technology leadership
+CIOs, CTOs, and Chief AI Officers setting enterprise platforms and deployment roadmaps.[cite: 1]
+
+Enterprise architecture &amp; data
+CDOs and Chief Architects modernizing real-time data fabrics and cloud integration.[cite: 1, 4]
+
+Operations &amp; transformation
+COOs and Business Heads establishing human-AI handoffs and productivity metrics.[cite: 1, 4]
+
+Risk, security &amp; compliance
+CISOs, GRC Heads, and Legal Counsel instituting guardrails, audit trails, and agent permissions.[cite: 1, 4]</div>
+    <div class="asset"><div class="h">Asset — Executive Photography</div>
+      <p>Four 800×600 candid images showing senior executive peer-to-peer roundtable discussions from prior World AI Show editions[cite: 33]. No competing event lanyards visible[cite: 33].</p></div>
+    <div class="ph-img">PHOTO PLACEHOLDERS × 4 — 800 × 600[cite: 33]<span>Candid executive discussions from previous World AI Show editions[cite: 33]</span></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S8 · How to attend — two doors</div><div class="bb">
+    <div class="copy"><span class="lbl">door1</span>Delegate Pass — complimentary, by invitation and qualification[cite: 15]
+Senior enterprise technology, data, operations, and risk leaders attend by invitation,
+subject to qualification based on an active mandate to deploy enterprise AI.[cite: 1, 15]
+[cta] Apply for a Delegate Pass   → /enterprise/attend/delegate/[cite: 15]
+
+<span class="lbl">door2</span>Business Pass — commercial access[cite: 15]
+Paid access for technology solution providers, system integrators, consultancies,
+and practitioners outside the invitation criteria. Availability is strictly controlled.[cite: 15]
+[cta] Buy a Business Pass   → /enterprise/attend/[cite: 15]</div>
+    <div class="rule"><div class="h">Rule — Invitation Qualifier</div><p>The phrase "by invitation" must never appear as an unqualified claim about the whole event[cite: 15, 33]. It always travels with the qualified enterprise delegate audience[cite: 15, 33]. "By invitation only" must not be used[cite: 15].</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S9 · Sponsor band</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>Partnerships
+<span class="lbl">h2</span>Your buyers are redesigning workflows now, not after the pilot[cite: 1, 2]
+
+<span class="lbl">body</span>Modern enterprise buying groups average 39 decision-makers (Foundry, 2026).[cite: 2, 3]
+Commercial partnerships are structured around 30-minute stage thought leadership,
+standardized 4, 6, or 12 sqm exhibition spaces, and curated closed-door CXO boardrooms.[cite: 6, 7, 23]
+
+<span class="lbl">cta</span>Explore sponsorship   → /enterprise/attend/sponsor/[cite: 33]</div>
+    <div class="rule"><div class="h">Rule — Standards Enforcement</div><p>Speaking slots must be stated as <b>30-minute standalone sessions</b>[cite: 6, 7, 8]. Booth spaces must be referenced strictly as <b>4 sqm, 6 sqm, and 12 sqm</b>. No sponsorship tier pricing may appear on the website[cite: 21, 33].</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S10 · Credibility &amp; series heritage</div><div class="bb">
+    <div class="copy"><span class="lbl">h2</span>A premier India launch. 48 global editions of proven authority.[cite: 25]
+
+<span class="lbl">body</span>World AI Show: The Enterprise Edition is organized by Trescon, the team behind
+World AI Show — the world's longest-running AI summit series.[cite: 25, 30]
+
+48       World AI Show editions completed across four continents[cite: 25, 30]
+42,000+  C-level executives and enterprise leaders convened[cite: 25, 30]
+2,600+   Speakers hosted[cite: 25, 30]
+4        Continents[cite: 25, 30]</div>
+    <div class="rule"><div class="h">Rule — Organiser Attribution</div><p>Always describe the event as organized by <b>Trescon</b> (never "Trescon India", "managed by", or "in partnership with")[cite: 25, 30].</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S11 · Twin closing CTA bands</div><div class="bb">
+    <div class="copy"><span class="lbl">band1</span>Mumbai · 20–21 April 2027 · 2 Full Days · 200–300 Enterprise Leaders[cite: 1, 9]
+Be in the room where the operating model gets decided[cite: 1]
+[cta] Apply for a Delegate Pass   → /enterprise/attend/delegate/[cite: 15]
+
+<span class="lbl">band2</span>5 Content Pillars · 30-Min Stage Sessions · Standardized Booths[cite: 4, 6, 7]
+Put your solutions in front of the cross-functional buying unit[cite: 3]
+[cta] Enquire about sponsorship   → /enterprise/sponsorship-enquiry/[cite: 33]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S12 · Speak at the conference</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>Faculty
+<span class="lbl">h2</span>If you have scaled AI in production, we want you on the stage[cite: 33]
+<span class="lbl">body</span>We are looking for enterprise leaders with real deployment evidence:
+the original baseline, trade-offs made, exception rates, and verified business outcomes.[cite: 1, 8, 33]
+<span class="lbl">cta</span>Apply to speak   → /enterprise/agenda/call-for-speakers/[cite: 33]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S13 · FAQ</div><div class="bb">
+    <div class="copy">1  What is World AI Show: The Enterprise Edition?[cite: 1]
+2  How does this edition connect to the wider World AI Show Series in India?
+3  Who qualifies for a complimentary Delegate Pass?[cite: 15]
+4  What does the 2-day programme cover?[cite: 1]
+5  What are the speaking durations and standardized booth sizes for sponsors?
+6  Where and when does the event take place?[cite: 1]
+7  What is the AI ROI Clinic?[cite: 8]
+8  Who organises the World AI Show Series?[cite: 25, 30]</div>
+    <div class="note"><div class="h">Layout</div><p>Accordion layout with FAQPage structured data schema[cite: 33].</p></div>
+  </div></div>
+
+  </div>
+</div>
+
+<!-- ============ 07 ============ -->
+<h2 class="sec" id="agenda-suite"><span class="num">07</span>Agenda suite</h2>
+<p>Covers routes under <code>/enterprise/agenda/*</code> matching the Malaysia suite architecture[cite: 34].</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Agenda Suite</span><span class="u">/enterprise/agenda/ · SubNavTabStrip Architecture</span>[cite: 34]</div>
+  <div class="pb">
+
+  <div class="blk"><div class="bh">Tab 1 · /enterprise/agenda/ (Overview)</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>Executive Programme
+<span class="lbl">h1</span>Two days, five operational decisions[cite: 1, 4]
+<span class="lbl">sub</span>Day 1 focuses on enterprise execution, architectures, and agentic autonomy.[cite: 1]
+Day 2 focuses on repeatable delivery, operating models, governance, and the AI ROI Clinic.[cite: 1, 8]
+The full session timeline will be published following steering committee review.[cite: 33]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Tab 2 · /enterprise/agenda/agenda/ (Full 2-Day Timeline)</div><div class="bb">
+    <div class="copy"><span class="lbl">day1</span>Tuesday 20 April 2027: Enterprise Execution[cite: 1, 6]
+• 09:30–10:00 Registration &amp; Exhibition Networking[cite: 6]
+• 10:00–10:25 Opening Plenary Keynote: From AI Ambition to Enterprise Execution[cite: 6]
+• 10:25–11:00 Panel: What Changes Between AI Pilot and Production?[cite: 6]
+• 11:00–11:30 Partner Thought Leadership Session 1 (30 Minutes)[cite: 6]
+• 11:00–12:00 Curated Executive Roundtable 1 (Closed-Door, 15 CXOs)[cite: 6]
+• 11:30–12:15 Fireside: Productivity is Not Transformation — Redesigning Work[cite: 6]
+• 12:15–12:45 Partner Thought Leadership Session 2 (30 Minutes)[cite: 6]
+• 12:00–13:00 Curated Executive Roundtable 2 (Closed-Door, 15 CXOs)[cite: 6]
+• 12:45–13:15 Deployment Case Study: One Use Case, One Outcome[cite: 6]
+• 14:15–14:45 Partner Thought Leadership Session 3 (30 Minutes)[cite: 7]
+• 14:45–15:30 Panel: The AI-Ready Enterprise Stack (Data, Cloud, Sovereignty)[cite: 7]
+• 15:30–16:00 Partner Thought Leadership Session 4 (30 Minutes)[cite: 7]
+• 16:00–16:45 Panel: Agentic AI in the Enterprise — Where Should Autonomy Act?[cite: 7]
+• 16:45–17:15 Guest Keynote: Building the Intelligent Enterprise[cite: 7]
+• 17:15–17:35 Audience Reset Segment (Clean Comedy / Mentalist)[cite: 7]
+
+<span class="lbl">day2</span>Wednesday 21 April 2027: Strategy to Scale[cite: 1, 8]
+• 09:30–10:00 Keynote: The Next Frontier of Enterprise AI[cite: 8]
+• 10:00–10:45 Dialogue: Building a Repeatable AI Delivery Model[cite: 8]
+• 10:45–11:15 Partner Thought Leadership Session 5 (30 Minutes)[cite: 8]
+• 11:15–12:00 The AI ROI Clinic: What Should the Board Actually Measure?[cite: 8]
+• 12:00–12:30 Partner Thought Leadership Session 6 (30 Minutes)[cite: 8]
+• 12:30–13:15 Panel: Redesigning the AI Operating Model — People &amp; Roles[cite: 8]
+• 13:15–13:30 Closing: The Enterprise AI Playbook[cite: 8]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Tab 3 · /enterprise/agenda/themes/ (The 5 Master Content Pillars)</div><div class="bb">
+    <div class="copy">01 Enterprise AI Strategy &amp; Business Value[cite: 4]
+   Use-case scale decisions, executive outcome ownership, board-level productivity metrics.[cite: 4]
+
+02 Pilot to Production &amp; Process Redesign[cite: 4]
+   Continuous integration, latency, exception handling, and human-in-the-loop workflows.[cite: 4]
+
+03 Agentic AI &amp; Accountable Autonomy[cite: 4]
+   Agent identity, tool permissions, approval gates, auditability, and failure containment.[cite: 4]
+
+04 Data Context &amp; The AI-Ready Stack[cite: 4]
+   Real-time enterprise access, API fabrics, hybrid-cloud trade-offs, and data quality.[cite: 4]
+
+05 Governance, Security &amp; Proportional Trust[cite: 4]
+   Proportionate risk tiering, synthetic media safeguards, and compliance guidelines.[cite: 4]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Tab 4 · /enterprise/agenda/the-2030-vision/ (AI ROI Clinic &amp; Series Trajectory)</div><div class="bb">
+    <div class="copy"><span class="lbl">clinic</span>The AI ROI Clinic Framework
+Auditing the pre-AI operational baseline, hidden integration costs, human escalation volume,
+and service quality to deliver a live Scale, Redesign, or Stop verdict.[cite: 8]
+
+<span class="lbl">roadmap</span>The India Series Trajectory
+Edition 1: The Enterprise Edition (Mumbai)  →  Regional Chapters (Q2–Q3)  →  Series Finale (Q4).</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Tab 5 · /enterprise/agenda/call-for-speakers/</div><div class="bb">
+    <div class="copy">Call for Enterprise Speakers
+Seeking CIOs, CAIOs, CTOs, and Transformation Leaders with live production evidence.[cite: 1]
+Form links directly to <code>/enterprise/speaker-enquiry/</code>.[cite: 32, 34]</div>
+  </div></div>
+
+  </div>
+</div>
+
+<!-- ============ 08 ============ -->
+<h2 class="sec" id="attend-suite"><span class="num">08</span>Attend suite</h2>
+<p>Segmented conversion routes under <code>/enterprise/attend/*</code> matching the Malaysia suite architecture[cite: 34].</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Attend Suite</span><span class="u">/enterprise/attend/ · Persona Funnels</span>[cite: 34]</div>
+  <div class="pb">
+
+  <div class="blk"><div class="bh">Route · /enterprise/attend/ (Overview &amp; Pass Matrix)</div><div class="bb">
+    <div class="copy"><span class="lbl">door1</span>Delegate Pass — Complimentary, By Invitation &amp; Qualification[cite: 15]
+For enterprise technology, operations, and risk leaders.[cite: 1, 15]
+→ /enterprise/attend/delegate/[cite: 15]
+
+<span class="lbl">door2</span>Business Pass — Commercial Access[cite: 15]
+For technology solution providers, software vendors, and consultants.[cite: 15]
+Capped availability to protect buyer composition.[cite: 15]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Route · /enterprise/attend/delegate/ (Invited Enterprise CXOs)</div><div class="bb">
+    <div class="copy"><span class="lbl">audience</span>Target Audience: CIOs, CAIOs, CTOs, CDOs, CISOs, COOs, Transformation Heads.[cite: 1]
+<span class="lbl">inclusions</span>2-day plenary access, voting in the AI ROI Clinic, networking lounges.[cite: 1, 8]
+<span class="lbl">privacy</span>Mandatory separate unbundled consent checkboxes for name/title and contact details.[cite: 22, 33]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Route · /enterprise/attend/sponsor/ (Commercial Packages &amp; Booth Standards)</div><div class="bb">
+    <div class="copy"><span class="lbl">standards</span>Standardized Speaking &amp; Booth Framework:
+• Lead Partner (1 Position): 30-Min Keynote + 1 Panel + 12 sqm Booth + CXO Boardroom[cite: 6, 7, 22, 23]
+• Platinum Partner: 30-Min Standalone Session + 6 sqm Booth[cite: 6, 7, 8, 22]
+• Gold Partner: 30-Min Standalone Session + 6 sqm Booth[cite: 6, 7, 8, 22]
+• Silver Partner: 1 Panel Seat + 4 sqm Booth[cite: 22]
+• Bronze Partner: 4 sqm Turnkey Floor Presence[cite: 22]
+• CXO Boardroom Partner (Standalone): 15 Pre-Qualified CXOs, 5-Min Opening Address inside room[cite: 22, 23]
+→ /enterprise/sponsorship-enquiry/[cite: 32, 34]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Route · /enterprise/attend/media-partner/ (Press Accreditation)</div><div class="bb">
+    <div class="copy">Press credentials, executive interview room access, and editorial distribution.
+→ /enterprise/media-enquiry/[cite: 32, 34]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">Route · /enterprise/attend/association-partner/ (Trade Bodies)</div><div class="bb">
+    <div class="copy">Industry councils, trade chambers, and professional AI bodies.
+→ /enterprise/association-enquiry/[cite: 32, 34]</div>
+  </div></div>
+
+  </div>
+</div>
+
+<!-- ============ 09 ============ -->
+<h2 class="sec" id="speakers-hub"><span class="num">09</span>Speakers hub</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Speakers Hub</span><span class="u">/enterprise/speakers/</span>[cite: 34]</div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">layout</span>Search &amp; Filter Controls:
+Search by name, designation, or company[cite: 34].
+Filter pills: All · Chief AI Officers · CIOs &amp; CTOs · Data &amp; Architecture · CISOs &amp; Risk[cite: 34].
+
+<span class="lbl">card format</span>
+[ Avatar Photo (600×600) ][cite: 33]
+Speaker Name
+Job Title (e.g. Chief AI Officer / Group CIO)[cite: 1]
+Enterprise Organization[cite: 1]
+[ LinkedIn Profile ]  [ Session Link ↗ ][cite: 34]
+
+<span class="lbl">faculty intake</span>
+Holding text for unannounced slots + link to <code>/enterprise/agenda/call-for-speakers/</code>.[cite: 33, 34]</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 10 ============ -->
+<h2 class="sec" id="partners-hub"><span class="num">10</span>Partners hub</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Partners &amp; Sponsors</span><span class="u">/enterprise/partners/</span>[cite: 34]</div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">structure</span>Tier-Grouped Logo Wall:
+• Tier 1: Lead Partner (1 Position Only) — 12 sqm[cite: 22, 33]
+• Tier 2: Platinum &amp; Gold Partners — 6 sqm[cite: 22]
+• Tier 3: Silver &amp; Bronze Partners — 4 sqm[cite: 22]
+• CXO Boardroom Partners[cite: 23, 33]
+• Turnkey Exhibitors (4 sqm)[cite: 23]
+• Supporting Media &amp; Association Alliances[cite: 33]
+
+Unconfirmed tiers are dynamically hidden[cite: 33]. CTA links to <code>/enterprise/sponsorship-enquiry/</code>[cite: 32, 34].</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 11 ============ -->
+<h2 class="sec" id="exhibition-hub"><span class="num">11</span>Exhibition &amp; 3D floorplan hub</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Exhibition Hub</span><span class="u">/enterprise/exhibition/ · 3D WebGL Model &amp; Virtual Tour</span>[cite: 34]</div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">model viewer</span>
+WebGL-rendered interactive 3D floorplan hosted on Cloudflare R2[cite: 32, 34].
+Displays standardized booth footprints:
+• 12 sqm Prime Island (Lead Partner)[cite: 22]
+• 6 sqm Standardized Pods (Platinum / Gold)[cite: 22]
+• 4 sqm Linear Booths (Silver / Bronze / Exhibitor)[cite: 22, 23]
+• 2 Parallel Closed-Door Boardrooms (Day 1)[cite: 6, 9]
+
+<span class="lbl">virtual tour</span>
+360° Panorama Nodes: Main Plenary Stage · Exhibition Arena · VIP Boardroom Lounge.[cite: 34]</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 12 ============ -->
+<h2 class="sec" id="networking-hub"><span class="num">12</span>Networking suite &amp; attendee app</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Networking Suite</span><span class="u">/enterprise/networking/</span>[cite: 34]</div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">subroutes</span>
+• /enterprise/networking/ (Overview &amp; Concierge)[cite: 34]
+• /enterprise/networking/ai-matchmaking/ (Algorithmic pre-scheduled 20-min 1-on-1 meetings)[cite: 30, 34]
+• /enterprise/networking/attendee-app/ (Personalized 2-day agenda builder &amp; digital business cards)[cite: 30, 34]
+• /enterprise/networking/photo-gallery/ (High-resolution executive photography from global series)[cite: 34]</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 13 ============ -->
+<h2 class="sec" id="enquiry-suite"><span class="num">13</span>Enquiry &amp; lead forms</h2>
+<p>Standardized 2-column conversion layout paired with HubSpot Portal ID <code>2953901</code>[cite: 32, 34].</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Enquiry Suite</span><span class="u">HubSpot Forms v2 Embed Architecture</span>[cite: 32, 34]</div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">/enterprise/sponsorship-enquiry/</span>
+Heading: "Secure Your Enterprise Presence for Mumbai 2027"[cite: 1, 34]
+HubSpot Form: 7d2f2204-7604-4373-ba13-4e240c5a8493[cite: 32]
+Fields: Name, Work Email, Mobile, Job Title, Company, Tier of Interest (Lead / Plat / Gold / Silver / Boardroom), Target Buying Sectors[cite: 21, 34].
+
+<span class="lbl">/enterprise/speaker-enquiry/</span>
+Heading: "Apply to Join the Enterprise Faculty"[cite: 34]
+HubSpot Form: 7aae4009-64ec-41f0-b30f-7efc83f1ebc6[cite: 32]
+Fields: Name, Title, Company, Case Study Topic, Problem Statement, Baseline &amp; ROI Evidence[cite: 1, 8].
+
+<span class="lbl">/enterprise/media-enquiry/</span>
+Heading: "Apply for Media Accreditation"[cite: 33, 34]
+HubSpot Form: 6d1b0984-8964-4452-8593-0c0c5c202878[cite: 32]
+
+<span class="lbl">/enterprise/association-enquiry/</span>
+Heading: "Partner with the World AI Show Series"[cite: 34]
+HubSpot Form: bb31ae13-d02a-49d7-802c-e8bda5180ee4[cite: 32]</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 14 ============ -->
+<h2 class="sec" id="ia-tree"><span class="num">14</span>Master information architecture (IA)</h2>
+<p>Directory tree confirming full architectural parity with the Malaysia wireframe blueprint[cite: 34].</p>
+
+<div class="grid g3">
+  <div class="card">
+    <b>01. CORE &amp; AGENDA</b>[cite: 34]
+    <code>/enterprise/</code> (Homepage)[cite: 34]<br>
+    <code>/enterprise/agenda/</code> (Agenda Hub)[cite: 34]<br>
+    <code>/enterprise/agenda/agenda/</code> (Full Schedule)[cite: 34]<br>
+    <code>/enterprise/agenda/themes/</code> (5 Content Pillars)[cite: 4, 34]<br>
+    <code>/enterprise/agenda/the-2030-vision/</code> (ROI Clinic &amp; Roadmap)[cite: 8, 34]<br>
+    <code>/enterprise/agenda/call-for-speakers/</code> (Faculty Intake)[cite: 34]
+  </div>
+  <div class="card">
+    <b>02. ATTEND &amp; STAKEHOLDERS</b>[cite: 34]
+    <code>/enterprise/attend/</code> (Attend Hub)[cite: 34]<br>
+    <code>/enterprise/attend/delegate/</code> (Delegate Pass)[cite: 15, 34]<br>
+    <code>/enterprise/attend/sponsor/</code> (Commercial Prospectus)[cite: 34]<br>
+    <code>/enterprise/attend/media-partner/</code> (Media Kit)[cite: 34]<br>
+    <code>/enterprise/attend/association-partner/</code> (Trade Alliances)[cite: 34]<br>
+    <code>/enterprise/speakers/</code> (Speakers Directory)[cite: 34]<br>
+    <code>/enterprise/partners/</code> (Partners Showcase)[cite: 34]
+  </div>
+  <div class="card">
+    <b>03. ENQUIRIES &amp; EXPERIENCES</b>[cite: 34]
+    <code>/enterprise/sponsorship-enquiry/</code> (HubSpot Form)[cite: 32, 34]<br>
+    <code>/enterprise/speaker-enquiry/</code> (HubSpot Form)[cite: 32, 34]<br>
+    <code>/enterprise/media-enquiry/</code> (HubSpot Form)[cite: 32, 34]<br>
+    <code>/enterprise/association-enquiry/</code> (HubSpot Form)[cite: 32, 34]<br>
+    <code>/enterprise/exhibition/</code> (3D Floorplan &amp; 360°)[cite: 34]<br>
+    <code>/enterprise/networking/</code> (Matchmaking &amp; App)[cite: 34]
+  </div>
+</div>
+
+<!-- ============ 15 ============ -->
+<h2 class="sec" id="assets"><span class="num">15</span>Creative asset manifest</h2>
+
+<table>
+  <tr><th>Asset</th><th>Specification</th><th>Where used</th><th>Notes</th></tr>
+  <tr><td>Hero background video</td><td>1920×1080 min, MP4 + WebM, 8–12s loop, muted[cite: 33]</td><td>Home S1[cite: 33]</td><td>Deep obsidian grade with cyan/lime refractions[cite: 31, 33]. Poster fallback required[cite: 33].</td></tr>
+  <tr><td>Hero poster fallback</td><td>1920×1080 JPG[cite: 33]</td><td>Home S1[cite: 33]</td><td>Static fallback for reduced motion and mobile[cite: 33].</td></tr>
+  <tr><td>Series roadmap graphic</td><td>SVG, responsive[cite: 33]</td><td>Home S4, Agenda Hub</td><td>3-stage visual pipeline: Mumbai $\rightarrow$ Regional Chapters $\rightarrow$ Series Finale.</td></tr>
+  <tr><td>ROI Clinic diagram</td><td>SVG / UI mockup container[cite: 33]</td><td>Home S6, Agenda</td><td>Illustrates 3 stages: Baseline, Cost Audit, Verdict (Scale/Redesign/Stop)[cite: 8].</td></tr>
+  <tr><td>Executive photography</td><td>4 × 800×600 landscape[cite: 33]</td><td>Home S7, Attend</td><td>Candid executive roundtables. No competing lanyards[cite: 33].</td></tr>
+  <tr><td>Open Graph social card</td><td>1200×630 PNG[cite: 33]</td><td>Site-wide metadata[cite: 33]</td><td>Carries "Mumbai | 20–21 April 2027 | 2 Full Days"[cite: 1].</td></tr>
+  <tr><td>Favicon set</td><td>32, 180, 192, 512 PNG/ICO[cite: 33]</td><td>Site-wide[cite: 33]</td><td>Derived from official WAIS vector monogram[cite: 31, 33].</td></tr>
+  <tr><td>Master vector lockups</td><td>SVG — header, footer, monochrome[cite: 31, 33]</td><td>Site-wide[cite: 33]</td><td>Header uses #18D4FF/#FFFFFF; Footer uses #C0F43C for country highlight[cite: 31].</td></tr>
+</table>
+
+<!-- ============ 16 ============ -->
+<h2 class="sec" id="rules"><span class="num">16</span>Content rules — do not break</h2>
+<p>Mandatory editorial, legal, and commercial guardrails established in the Master Top-line Messaging document[cite: 26, 33].</p>
+
+<table>
+  <tr><th>#</th><th>Rule</th><th>Operational &amp; Commercial Rationale</th></tr>
+  <tr><td>1</td><td>Event Duration: State strictly as <b>2 Days</b> (never 1.5 days).</td><td>Reflects commercial sponsorship packaging, booth investment value, and executive presence.</td></tr>
+  <tr><td>2</td><td>Series Launch: Frame Mumbai as <b>Edition 1 of the World AI Show Series in India</b>.</td><td>Builds year-long anticipation for regional chapters and the 2027 Series Finale.</td></tr>
+  <tr><td>3</td><td>Partner Durations: State speaking slots strictly as <b>30 Minutes</b>[cite: 6, 7, 8].</td><td>Aligns with the approved production brief and main-stage commercial commitments[cite: 6, 7, 8].</td></tr>
+  <tr><td>4</td><td>Booth Sizes: Reference strictly as <b>4 sqm, 6 sqm, and 12 sqm</b>.</td><td>Standardized floor space allocation across Lead (12 sqm), Platinum/Gold (6 sqm), and Silver/Bronze (4 sqm).</td></tr>
+  <tr><td>5</td><td>No sponsorship tier pricing anywhere on the site[cite: 21, 33].</td><td>Pricing lives strictly in the commercial rate card issued by sales[cite: 21, 33].</td></tr>
+  <tr><td>6</td><td>"By invitation" must never appear as an unqualified claim about the whole event[cite: 15, 33].</td><td>The invitation framing applies to the delegate pass; the paid business pass exists alongside it[cite: 15, 33].</td></tr>
+  <tr><td>7</td><td>Consent Qualifier: Delegate contact details are shared only where consented[cite: 22, 33].</td><td>Mandatory compliance requirement under data privacy standards[cite: 22, 33].</td></tr>
+  <tr><td>8</td><td>Economic Projections: Always label NITI Aayog / CCI figures as scenario models or projections[cite: 2, 4].</td><td>Prevents misrepresenting economic scenarios as guaranteed fiscal outcomes[cite: 2, 4].</td></tr>
+  <tr><td>9</td><td>UK English throughout (programme, organise, model, prioritise)[cite: 26, 33].</td><td>Maintains consistent editorial standards across the global series portfolio[cite: 26, 33].</td></tr>
+  <tr><td>10</td><td>Organiser Attribution: Always state "Organised by Trescon" (never "Trescon India")[cite: 25, 30].</td><td>Maintains corporate entity governance and brand ownership[cite: 25, 30].</td></tr>
+</table>
+
+<div class="rule">
+  <div class="h">If in doubt</div>
+  <p>Any copy, metric, or structural layout not contained in this specification or in the approved Top-line Messaging document must be cleared with the Corporate Marketing Director before publication[cite: 33].</p>
+</div>
+
+<p style="margin-top:56px;padding-top:20px;border-top:1px solid var(--border-dark);color:var(--text-dim);font-family:var(--font-mono);font-size:12px">
+World AI Show: The Enterprise Edition | Mumbai 2027 — Website wireframe &amp; build specification · Version 2.0<br>
+Confidential and intended solely for internal engineering, marketing, and commercial teams. © 2026–2027 Trescon. All rights reserved.[cite: 1, 33]
+</p>
+
+</div>
+</body>
+</html>
