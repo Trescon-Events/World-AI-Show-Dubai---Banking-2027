@@ -41,7 +41,7 @@ export default function SpeakerOnboardingPage() {
               </p>
 
               {/* Hubspot Form Embedded Container */}
-              <HubspotForm portalId="2953901" formId="12dd9b9c-597d-4dd7-88e9-f42a62a23451" region="na1" />
+              <HubspotForm portalId="2953901" formId="f2fac7ab-ed7b-42da-8b06-54114e52b081" region="na1" />
             </div>
 
           </div>
