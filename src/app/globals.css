@@ -284,6 +284,14 @@ button[class*="bg-[#06111f]"] {
   background: transparent !important;
 }
 
+/* Hide any embedded banner images inside HubSpot forms */
+.hubspot-form-container .hs-richtext img,
+.hubspot-form-container .hs-form img,
+.hubspot-form-container .hs-form-private img,
+.hubspot-form-container .hs-richtext:has(img) {
+  display: none !important;
+}
+
 .hubspot-form-container .hs-form fieldset,
 .hubspot-form-container .hs-form-private fieldset {
   max-width: 100% !important;

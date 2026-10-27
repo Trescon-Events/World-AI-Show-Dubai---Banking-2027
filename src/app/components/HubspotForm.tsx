@@ -104,14 +104,51 @@ export default function HubspotForm({ portalId, formId, region = "na1", classNam
             container.innerHTML = ""; // Clear out previous instances
           }
 
+          const stripBannerImages = (root: Document | HTMLElement | null | undefined) => {
+            if (!root || !("querySelectorAll" in root)) return;
+            root.querySelectorAll(".hs-richtext img, form img, .hs-form img").forEach((img) => {
+              const richTextWrapper = img.closest(".hs-richtext");
+              if (richTextWrapper) {
+                richTextWrapper.remove();
+              } else {
+                img.remove();
+              }
+            });
+          };
+
           window.hbspt.forms.create({
             portalId: portalId,
             formId: formId,
             region: region || "na1",
             target: `#${containerId}`,
             css: "",
-            onFormReady: () => {
+            onFormReady: ($form: any) => {
               setIsFormReady(true);
+              const formContainer = document.getElementById(containerId);
+              stripBannerImages(formContainer);
+
+              // Handle $form if HubSpot passes a jQuery object or HTMLElement (including inside an iframe)
+              const formEl: HTMLElement | null =
+                $form instanceof HTMLElement ? $form : $form?.[0] instanceof HTMLElement ? $form[0] : null;
+              if (formEl) {
+                stripBannerImages(formEl);
+                stripBannerImages(formEl.ownerDocument);
+              }
+
+              // Also check any HubSpot iframe inside the container
+              formContainer?.querySelectorAll("iframe").forEach((iframe) => {
+                try {
+                  const doc = iframe.contentDocument || iframe.contentWindow?.document;
+                  if (doc) {
+                    stripBannerImages(doc);
+                    const style = doc.createElement("style");
+                    style.textContent = `.hs-richtext img, .hs-form img, form img, .hs-richtext:has(img) { display: none !important; }`;
+                    doc.head?.appendChild(style);
+                  }
+                } catch {
+                  // Cross-origin iframe; ignore
+                }
+              });
             }
           });
         }
