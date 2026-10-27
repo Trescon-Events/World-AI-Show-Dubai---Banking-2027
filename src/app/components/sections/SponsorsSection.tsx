@@ -60,22 +60,14 @@ export function SponsorsSection() {
   return (
     <section className="relative py-[100px] pb-0 bg-[#030b19] overflow-hidden max-sm:py-[72px] max-sm:pb-0" id="partners">
       <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
-        {/* S9 · Sponsor band */}
-        <div className="text-center mb-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-cyan/30 bg-cyan/10 text-cyan text-xs font-mono uppercase tracking-[2px]">
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan animate-pulse"></span>
-            Commercial Partnerships
-          </div>
-        </div>
-
-        {/* Title */}
+        {/* S9 · Sponsor band (Page 10) */}
         <h2 className="text-center font-[850] text-white leading-[1.06] tracking-[-2px] text-[clamp(36px,4.6vw,56px)] max-w-[940px] mx-auto">
-          Where Middle East banking leaders specify, procure, and{" "}
-          <GradientText>deploy production AI</GradientText>
+          Explore Commercial Partnerships at{" "}
+          <GradientText>World AI Show</GradientText>
         </h2>
 
-        <p className="mt-6 max-w-[820px] mx-auto text-center text-muted text-[18px] leading-[1.6] max-sm:text-[16px]">
-          Middle East banks are finalising their 2027 technology procurement decisions now. Commercial partnerships are structured around 20-minute plenary keynotes, exclusive 75-minute workshop clinics, standardised 6 sqm, 9 sqm, and 12 sqm concourse booths, and private 15-buyer CXO closed-door boardrooms.
+        <p className="mt-6 max-w-[860px] mx-auto text-center text-muted text-[18px] leading-[1.6] max-sm:text-[16px]">
+          Regional financial institutions are moving past experimental copilots and locking down procurement for their core transactional estates. Commercial partnerships put your solutions directly inside the room where enterprise architecture is modernised, compliance risk is governed, and vendor shortlists are signed. Engage qualified institutional procurement committees through main-stage thought leadership, clinical use-case workshops, and closed-door CXO boardrooms.
         </p>
 
         <div className="mt-8 flex justify-center">

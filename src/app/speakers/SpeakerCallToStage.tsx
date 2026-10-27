@@ -9,9 +9,9 @@ export function SpeakerCallToStage() {
       <div className="relative z-10 w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
         {/* Centered section heading */}
         <h2 className="text-center font-[850] text-white leading-tight tracking-[-1.5px] text-[clamp(34px,4.5vw,50px)] mb-[56px]">
-          Take the Stage at <br />
+          Take the Stage at{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ceff] to-[#C0F43C]">
-            World AI Show | AI in Banking and Financial Services | Dubai 2027
+            World AI Show
           </span>
         </h2>
 
@@ -76,7 +76,7 @@ export function SpeakerCallToStage() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#020b1c]/40 via-transparent to-transparent pointer-events-none z-1" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/banking/images/agenda/take-the-stage.webp"
+              src="/banking/images/agenda/accelerating-malaysia-audience.webp"
               alt="Speaker presenting on stage at World AI Show Dubai"
               className="w-full h-[360px] md:h-[480px] filter saturate-[0.96] brightness-[0.96]"
               style={{ objectFit: "cover", objectPosition: "top" }}

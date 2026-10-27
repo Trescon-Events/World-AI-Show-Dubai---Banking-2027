@@ -13,14 +13,11 @@ export function PartnersHero() {
       }}
     >
       <div className="relative z-10 w-[min(1114px,calc(100%-48px))] mx-auto">
-        <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
-          Partners &amp; Sponsors · DIFC District, Dubai
-        </span>
         <h1 className="m-0 text-white font-[850] leading-[1.06] tracking-[-2px] text-[clamp(42px,5.4vw,72px)] max-w-[820px]">
-          <GradientText>Partner</GradientText> at World AI Show Dubai
+          <GradientText>Partner With us</GradientText> at World AI Show
         </h1>
         <p className="max-w-[740px] mt-6 mb-0 text-white/84 text-[19px] leading-relaxed max-sm:text-base">
-          Commercial partnerships are structured around 20-minute plenary keynotes, exclusive 75-minute workshop clinics, standardised 6 sqm, 9 sqm, and 12 sqm concourse booths, and private 15-buyer CXO closed-door boardrooms.
+          Commercial partnerships are structured around plenary keynotes, exclusive workshop clinics, standardised concourse booths, and private CXO closed-door boardrooms.
         </p>
       </div>
     </section>

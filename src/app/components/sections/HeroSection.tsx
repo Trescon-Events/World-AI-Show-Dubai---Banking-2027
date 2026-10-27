@@ -378,71 +378,53 @@ export function HeroSection() {
       className="hero-bg relative min-h-[820px] -mt-[102px] grid place-items-center overflow-hidden text-center max-[980px]:min-h-[760px] max-sm:-mt-[71px] max-sm:min-h-[720px]"
       id="home"
     >
-      {/* Background Video Layer (matches Malaysia setup) */}
+      {/* Background Video Layer (from worldaishow.com/dubai header) */}
       <video
-        className="absolute inset-0 w-full h-full object-cover opacity-35 z-0 mix-blend-screen"
+        className="absolute inset-0 w-full h-full object-cover opacity-55 z-0"
         autoPlay
         muted
         loop
         playsInline
         aria-hidden="true"
       >
+        <source src="/banking/videos/wais-dubai-hero-banner.mp4" type="video/mp4" />
         <source src="/banking/videos/wais-mumbai-hero-banner.webm" type="video/webm" />
-        <source src="/banking/videos/wais-malaysia-hero-banner.mp4" type="video/mp4" />
       </video>
 
-      {/* Animated Futuristic Digital Data Network & Analytics Dashboards Canvas */}
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full pointer-events-none z-[1] opacity-90"
-        aria-hidden="true"
-      />
-
-      {/* Malaysia-style Tint Layer & Cyber Grid Overlays on top */}
+      {/* Subtle Tint Layer & Overlays on top */}
       <div
-        className="hero-overlay absolute inset-0 z-[2] opacity-75 pointer-events-none"
+        className="hero-overlay absolute inset-0 z-[2] opacity-65 pointer-events-none"
         aria-hidden="true"
       />
       <div
         className="absolute inset-0 z-[2] pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 62% 55% at 50% 48%, rgba(2, 9, 24, 0.78) 0%, rgba(2, 9, 24, 0.48) 55%, rgba(2, 9, 24, 0.72) 100%)",
+            "radial-gradient(ellipse 62% 55% at 50% 48%, rgba(2, 9, 24, 0.72) 0%, rgba(2, 9, 24, 0.45) 55%, rgba(2, 9, 24, 0.72) 100%)",
         }}
         aria-hidden="true"
       />
       <div
-        className="hero-grid-pattern absolute bottom-0 left-[-6%] right-[-6%] h-[245px] z-[2] opacity-70 blur-[1px] pointer-events-none"
+        className="hero-grid-pattern absolute bottom-0 left-[-6%] right-[-6%] h-[245px] z-[2] opacity-50 blur-[1px] pointer-events-none"
         aria-hidden="true"
       />
 
       {/* Hero Content */}
       <div className="container relative z-10 mx-auto px-6 pt-[220px] lg:pt-[240px] pb-16 max-sm:pt-[175px] max-sm:pb-12 max-sm:px-4 flex flex-col items-center">
-        {/* Series Kicker */}
-        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#18d4ff]/35 bg-[#051428]/90 text-[#18d4ff] font-mono text-[11px] sm:text-[12px] uppercase tracking-[2.4px] font-bold mb-4">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#C0F43C] animate-pulse" />
-          World AI Show Industry Series · Sector Edition
-        </span>
-
         {/* Event Lockup Sub-label */}
         <p className="text-white/95 font-mono text-[14px] sm:text-[17px] lg:text-[19px] uppercase tracking-[2.2px] font-bold mb-5">
-          World AI Show | AI in Banking and Financial Services | Dubai 2027
+          World AI Show | Banking and Financial Services
         </p>
 
         {/* Hero Title */}
-        <h1 className="max-w-[1040px] mx-auto text-white font-[850] leading-[1.08] xl:leading-[72px] tracking-[-1.8px] text-[clamp(34px,4.8vw,66px)] xl:text-[66px] text-center mb-4">
+        <h1 className="max-w-[1040px] mx-auto text-white font-[850] leading-[1.08] xl:leading-[72px] tracking-[-1.8px] text-[clamp(34px,4.8vw,66px)] xl:text-[66px] text-center mb-5">
           <span className="block">Controlled AI deployment for</span>
           <span className="block"><GradientText>regulated financial operations.</GradientText></span>
         </h1>
 
-        {/* Thesis Line */}
-        <p className="text-[#C0F43C] font-mono text-[14px] sm:text-[16px] uppercase tracking-[2.2px] font-extrabold mb-5">
-          From use case to operating outcome.
-        </p>
-
         {/* Standfirst (20px, 33px line-height, 0 tracking, 400 weight, #CBD5E1) */}
         <p className="max-w-[880px] mx-auto text-[#CBD5E1] text-[clamp(15px,1.6vw,19px)] xl:text-[19px] font-normal leading-relaxed xl:leading-[31px] tracking-normal text-center mb-8">
-          The premier buyer-led executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations. Convenes 300+ C-suite leaders actively locking down 2027 architecture, fraud defence, and core procurement.
+          A premier executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations, convening 300+ C-suite leaders and actively locking down the architecture, fraud defense, and core procurement for the future.
         </p>
 
         <div className="w-full max-w-[780px] border-t border-white/20 opacity-60 mt-1" />

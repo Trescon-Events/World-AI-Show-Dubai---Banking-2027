@@ -49,61 +49,10 @@ function matchesFilter(designation: string, filter: FilterPill): boolean {
 }
 
 export function SpeakersList() {
-  const [liveSpeakers, setLiveSpeakers] = useState<KonfHubSpeaker[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState<FilterPill>("All");
 
-  useEffect(() => {
-    fetch("/banking/api/konfhub-speakers")
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch speakers");
-        return res.json();
-      })
-      .then((data) => {
-        const list: KonfHubSpeaker[] = [];
-        if (data.categorized && Array.isArray(data.categorized)) {
-          for (const cat of data.categorized) {
-            const entities = cat.entity || cat.speakers || [];
-            if (Array.isArray(entities)) {
-              list.push(...entities);
-            }
-          }
-        }
-        if (data.uncategorized && Array.isArray(data.uncategorized)) {
-          list.push(...data.uncategorized);
-        }
-
-        const uniqueMap = new Map();
-        for (const s of list) {
-          const key = s.name.trim().toLowerCase();
-          if (!uniqueMap.has(key)) {
-            uniqueMap.set(key, s);
-          }
-        }
-        const uniqueList = Array.from(uniqueMap.values());
-        uniqueList.sort((a, b) => (a.speaker_order ?? 999) - (b.speaker_order ?? 999));
-        setLiveSpeakers(uniqueList);
-      })
-      .catch((err) => {
-        console.error("Failed to load live speakers:", err);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }, []);
-
   const baseList = useMemo(() => {
-    if (liveSpeakers.length > 0) {
-      return liveSpeakers.map((s, idx) => ({
-        id: String(s.speaker_id || idx),
-        name: s.name || "",
-        designation: s.designation || "",
-        company: s.organisation || "",
-        image: s.image_url || "/banking/images/speakers/default.png",
-        bio: s.about,
-      }));
-    }
     return pastSpeakers.map((s) => ({
       id: s.id,
       name: s.name,
@@ -112,7 +61,7 @@ export function SpeakersList() {
       image: s.image,
       bio: s.bio,
     }));
-  }, [liveSpeakers]);
+  }, []);
 
   const filteredSpeakers = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
@@ -130,27 +79,6 @@ export function SpeakersList() {
   return (
     <section className="relative py-[92px] bg-[#020b1c] max-sm:py-[62px]" id="lineup">
       <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
-
-        {/* Faculty Intake Banner (Section 09) */}
-        <div className="mb-12 p-7 rounded-[20px] border border-[#C0F43C]/35 bg-gradient-to-r from-[#C0F43C]/10 via-[#041022] to-[#18D4FF]/10 flex flex-wrap items-center justify-between gap-6">
-          <div className="max-w-[700px]">
-            <span className="inline-block font-mono text-[11px] uppercase tracking-[1.8px] text-[#C0F43C] mb-2">
-              Dubai 2027 Banking Faculty Intake · Unannounced Slots Open
-            </span>
-            <h3 className="text-white font-extrabold text-[22px] leading-snug m-0 mb-1.5">
-              If you have deployed AI into core regulated banking, we want you on stage
-            </h3>
-            <p className="text-white/75 text-[15px] leading-relaxed m-0">
-              Dubai 2027 banking faculty announcements release in waves following steering committee review. Apply to join the 35–45 expert speakers below, or browse past speakers from the global World AI Show series.
-            </p>
-          </div>
-          <a
-            href="/banking/agenda/call-for-speakers/"
-            className="inline-flex items-center justify-center gap-2 h-[48px] px-7 rounded-full font-extrabold text-[14px] text-[#06111F] [color:#06111F!important] bg-[#C0F43C] hover:shadow-[0_0_24px_rgba(192,244,60,0.35)] transition-all duration-200 shrink-0"
-          >
-            Apply to Speak →
-          </a>
-        </div>
 
         {/* Search & Filter Controls (Section 09) */}
         <div className="mb-10 flex flex-col gap-5">
@@ -171,7 +99,7 @@ export function SpeakersList() {
             </div>
           </div>
 
-          {/* Filter Pills: All · Chief AI Officers · CIOs & CTOs · Data & Architecture · CISOs & Risk */}
+          {/* Filter Pills */}
           <div className="flex flex-wrap items-center gap-2.5">
             {FILTER_PILLS.map((pill) => {
               const isActive = activeFilter === pill;
@@ -193,9 +121,7 @@ export function SpeakersList() {
           </div>
         </div>
 
-        {isLoading ? (
-          <p className="text-white/60 text-lg">Loading speaker directory...</p>
-        ) : filteredSpeakers.length === 0 ? (
+        {filteredSpeakers.length === 0 ? (
           <p className="text-white/60 text-lg">No speakers match your current search or filter criteria.</p>
         ) : (
           <div className="speaker-grid grid grid-cols-3 gap-[22px] max-[980px]:grid-cols-2 max-sm:grid-cols-1">

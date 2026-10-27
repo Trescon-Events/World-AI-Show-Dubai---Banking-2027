@@ -307,7 +307,7 @@ export function TestimonialsSection() {
         <div className="mt-14 flex flex-col items-center">
           <div className="relative w-[min(780px,100%)] aspect-video rounded-[20px] border-2 border-[#18d4ff]/40 bg-[#030a18] overflow-hidden shadow-[0_24px_60px_rgba(0,0,0,0.5),0_0_32px_rgba(24,212,255,0.18)]">
             <iframe
-              src="https://www.youtube.com/embed/ZQ8-RcE79HE?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/1Trq5urDZM8?rel=0&modestbranding=1"
               title="World AI Show Testimonial Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

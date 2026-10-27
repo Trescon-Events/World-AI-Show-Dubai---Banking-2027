@@ -102,52 +102,243 @@ const sourceCitedCards: TelemetryCardData[] = [
   },
 ];
 
-const whatThisIsNotCards = [
-  {
-    index: "01",
-    tag: "INSTITUTIONAL INFRASTRUCTURE",
-    title: "Not a retail fintech or payments expo",
-    body: "The focus is not on consumer neobanking apps, POS terminals, or merchant acquiring showcases. It addresses enterprise banking infrastructure, risk architecture, and operational modernisation.",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+/* Animated 3D Isometric Benchmark Graphics (Page 4 Mock) */
+function BenchmarkGraphic({ index }: { index: string }) {
+  if (index === "01") {
+    // Card 01: Isometric 3D Rising Capital Bars + Glowing $ Symbol + Upward Growth Arrow
+    return (
+      <div className="relative w-full h-[175px] my-3 rounded-[16px] bg-gradient-to-b from-[#041428]/80 to-[#030b18]/90 border border-[#18d4ff]/15 overflow-hidden flex items-center justify-center">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_40%,rgba(192,244,60,0.16),transparent_65%)] pointer-events-none" />
+        <svg viewBox="0 0 280 165" className="w-full h-full" fill="none">
+          <defs>
+            <linearGradient id="isoGrid01" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#18d4ff" stopOpacity="0.35" />
+              <stop offset="100%" stopColor="#C0F43C" stopOpacity="0.1" />
+            </linearGradient>
+            <linearGradient id="barCyan" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#18d4ff" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#084c70" stopOpacity="0.4" />
+            </linearGradient>
+            <linearGradient id="barLime" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#e2ff88" />
+              <stop offset="40%" stopColor="#C0F43C" />
+              <stop offset="100%" stopColor="#26874e" stopOpacity="0.7" />
+            </linearGradient>
+            <filter id="glowLime01" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="4" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          {/* Isometric Floor Grid */}
+          <g stroke="url(#isoGrid01)" strokeWidth="0.9">
+            <path d="M35 128 L140 82 L245 128 L140 158 Z" fill="rgba(24,212,255,0.04)" />
+            <line x1="70" y1="113" x2="175" y2="148" />
+            <line x1="105" y1="97" x2="210" y2="138" />
+            <line x1="175" y1="97" x2="70" y2="138" />
+            <line x1="210" y1="113" x2="105" y2="148" />
+          </g>
+
+          {/* Isometric 3D Bar 1 (Left) */}
+          <g className="animate-[IsoPulse_3.2s_ease-in-out_infinite]">
+            <polygon points="62,126 78,118 94,126 78,134" fill="#18d4ff" opacity="0.35" />
+            <polygon points="62,98 78,90 94,98 78,106" fill="#5ce1ff" />
+            <polygon points="62,98 78,106 78,134 62,126" fill="url(#barCyan)" />
+            <polygon points="94,98 78,106 78,134 94,126" fill="#0d6c94" opacity="0.85" />
+          </g>
+
+          {/* Isometric 3D Bar 2 (Middle-Left) */}
+          <g className="animate-[IsoPulse_3.2s_ease-in-out_0.4s_infinite]">
+            <polygon points="104,132 120,124 136,132 120,140" fill="#18d4ff" opacity="0.35" />
+            <polygon points="104,84 120,76 136,84 120,92" fill="#8CF79B" />
+            <polygon points="104,84 120,92 120,140 104,132" fill="url(#barCyan)" />
+            <polygon points="136,84 120,92 120,140 136,132" fill="#128394" opacity="0.9" />
+          </g>
+
+          {/* Isometric 3D Bar 3 (Middle-Right) */}
+          <g className="animate-[IsoPulse_3.2s_ease-in-out_0.8s_infinite]">
+            <polygon points="146,122 162,114 178,122 162,130" fill="#C0F43C" opacity="0.35" />
+            <polygon points="146,64 162,56 178,64 162,72" fill="#d9ff7a" />
+            <polygon points="146,64 162,72 162,130 146,122" fill="url(#barLime)" />
+            <polygon points="178,64 162,72 162,130 178,122" fill="#68a829" opacity="0.9" />
+          </g>
+
+          {/* Isometric 3D Bar 4 (Tallest Hero Lime Pillar + Upward Arrow) */}
+          <g className="animate-[IsoFloat_3s_ease-in-out_infinite]" filter="url(#glowLime01)">
+            <polygon points="190,38 212,26 234,38 212,50" fill="#eeffab" />
+            <polygon points="190,38 212,50 212,126 190,114" fill="url(#barLime)" />
+            <polygon points="234,38 212,50 212,126 234,114" fill="#82c91e" />
+            {/* Upward Arrow Crown */}
+            <polygon points="212,10 232,28 221,28 221,42 203,42 203,28 192,28" fill="#e9ff99" />
+          </g>
+
+          {/* Floating 3D Dollar Sign Badge */}
+          <g className="animate-[IsoFloat_2.6s_ease-in-out_0.3s_infinite]" filter="url(#glowLime01)">
+            <circle cx="176" cy="42" r="16" fill="#071f36" stroke="#C0F43C" strokeWidth="2" />
+            <text x="176" y="48" textAnchor="middle" fill="#C0F43C" fontSize="18" fontWeight="900" fontFamily="monospace">
+              $
+            </text>
+          </g>
+
+          {/* Rising Trend Trajectory Line */}
+          <path
+            d="M58 108 Q115 92 160 62 T212 22"
+            stroke="#C0F43C"
+            strokeWidth="2.2"
+            strokeDasharray="4 4"
+            className="animate-[DashFlow_2.5s_linear_infinite]"
+          />
+        </svg>
+      </div>
+    );
+  }
+
+  if (index === "02") {
+    // Card 02: Isometric 3D Cyber-Shield + Pulsing Radar Rings + Real-Time AI Defense Nodes
+    return (
+      <div className="relative w-full h-[175px] my-3 rounded-[16px] bg-gradient-to-b from-[#041428]/80 to-[#030b18]/90 border border-[#18d4ff]/15 overflow-hidden flex items-center justify-center">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(24,212,255,0.16),rgba(192,244,60,0.08)_45%,transparent_70%)] pointer-events-none" />
+        <svg viewBox="0 0 280 165" className="w-full h-full" fill="none">
+          <defs>
+            <linearGradient id="shieldFace" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#e3ff8c" />
+              <stop offset="45%" stopColor="#C0F43C" />
+              <stop offset="100%" stopColor="#18d4ff" />
+            </linearGradient>
+            <linearGradient id="shieldInner" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0c2d48" />
+              <stop offset="100%" stopColor="#041224" />
+            </linearGradient>
+            <filter id="glowShield02" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="4.5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          {/* Isometric Radar Ellipses on Floor */}
+          <g transform="translate(140, 122)">
+            <ellipse rx="96" ry="32" stroke="#18d4ff" strokeOpacity="0.22" strokeWidth="1" strokeDasharray="5 4" />
+            <ellipse rx="68" ry="22" stroke="#18d4ff" strokeOpacity="0.4" strokeWidth="1.2" className="animate-pulse" />
+            <ellipse rx="38" ry="12" stroke="#C0F43C" strokeOpacity="0.65" strokeWidth="1.5" />
+          </g>
+
+          {/* Orbiting Threat-Interception Nodes */}
+          <g className="animate-[IsoPulse_2.8s_ease-in-out_infinite]">
+            <line x1="56" y1="74" x2="105" y2="82" stroke="#18d4ff" strokeWidth="1.2" strokeDasharray="3 3" />
+            <circle cx="56" cy="74" r="4.5" fill="#18d4ff" />
+            <line x1="224" y1="66" x2="175" y2="78" stroke="#C0F43C" strokeWidth="1.2" strokeDasharray="3 3" />
+            <circle cx="224" cy="66" r="4.5" fill="#C0F43C" />
+            <line x1="212" y1="118" x2="168" y2="104" stroke="#18d4ff" strokeWidth="1.2" strokeDasharray="3 3" />
+            <circle cx="212" cy="118" r="4" fill="#18d4ff" />
+          </g>
+
+          {/* 3D Isometric Glowing Shield */}
+          <g className="animate-[IsoFloat_3.2s_ease-in-out_infinite]" filter="url(#glowShield02)">
+            {/* Back 3D extrusion layer */}
+            <path
+              d="M146 22 L190 40 L190 82 C190 112 146 134 146 134 C146 134 102 112 102 82 L102 40 Z"
+              fill="#0c5978"
+              opacity="0.55"
+            />
+            {/* Front Shield Rim */}
+            <path
+              d="M140 18 L184 36 L184 78 C184 108 140 130 140 130 C140 130 96 108 96 78 L96 36 Z"
+              fill="url(#shieldInner)"
+              stroke="url(#shieldFace)"
+              strokeWidth="4"
+            />
+            {/* Inner Shield Crest */}
+            <path
+              d="M140 30 L172 44 L172 76 C172 98 140 116 140 116 C140 116 108 98 108 76 L108 44 Z"
+              fill="rgba(192,244,60,0.1)"
+              stroke="#18d4ff"
+              strokeWidth="1.4"
+              strokeOpacity="0.7"
+            />
+            {/* Verified Check / Lock Core */}
+            <path
+              d="M126 74 L136 84 L156 62"
+              stroke="#C0F43C"
+              strokeWidth="4.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // Card 03: Isometric 3D AML False-Positive Filter Plane & Neural Verification Stream
+  return (
+    <div className="relative w-full h-[175px] my-3 rounded-[16px] bg-gradient-to-b from-[#041428]/80 to-[#030b18]/90 border border-[#18d4ff]/15 overflow-hidden flex items-center justify-center">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(24,212,255,0.16),rgba(192,244,60,0.1)_50%,transparent_70%)] pointer-events-none" />
+      <svg viewBox="0 0 280 165" className="w-full h-full" fill="none">
+        <defs>
+          <linearGradient id="filterPlane" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#18d4ff" stopOpacity="0.55" />
+            <stop offset="50%" stopColor="#0a2948" stopOpacity="0.85" />
+            <stop offset="100%" stopColor="#C0F43C" stopOpacity="0.55" />
+          </linearGradient>
+          <filter id="glowFilter03" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="3.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        {/* Isometric Base Platform */}
+        <polygon
+          points="42,126 140,86 238,126 140,156"
+          fill="rgba(24,212,255,0.05)"
+          stroke="#18d4ff"
+          strokeOpacity="0.3"
+          strokeWidth="1"
+        />
+
+        {/* Upper Unfiltered Alert Nodes (90% False Positives Cloud) */}
+        <g className="animate-[IsoFloat_2.8s_ease-in-out_infinite]">
+          <polygon points="105,28 113,42 97,42" fill="#18d4ff" opacity="0.65" />
+          <polygon points="135,20 143,34 127,34" fill="#18d4ff" opacity="0.85" />
+          <polygon points="168,26 176,40 160,40" fill="#18d4ff" opacity="0.55" />
+          <polygon points="120,44 128,58 112,58" fill="#38bdf8" opacity="0.75" />
+          <polygon points="154,42 162,56 146,56" fill="#38bdf8" opacity="0.7" />
+          <polygon points="186,44 194,58 178,58" fill="#18d4ff" opacity="0.5" />
+        </g>
+
+        {/* Central Isometric AI Filter Gate / Sieve Plane */}
+        <g filter="url(#glowFilter03)">
+          <polygon
+            points="64,82 140,52 216,82 140,112"
+            fill="url(#filterPlane)"
+            stroke="#18d4ff"
+            strokeWidth="2"
+          />
+          <line x1="92" y1="71" x2="168" y2="101" stroke="#C0F43C" strokeOpacity="0.5" strokeWidth="1" />
+          <line x1="116" y1="61" x2="192" y2="91" stroke="#C0F43C" strokeOpacity="0.5" strokeWidth="1" />
+          <line x1="168" y1="61" x2="92" y2="91" stroke="#18d4ff" strokeOpacity="0.5" strokeWidth="1" />
+          <line x1="192" y1="71" x2="116" y2="101" stroke="#18d4ff" strokeOpacity="0.5" strokeWidth="1" />
+        </g>
+
+        {/* Verified High-Precision Output Stream (Glowing Lime Nodes) */}
+        <g filter="url(#glowFilter03)" className="animate-[IsoPulse_2.4s_ease-in-out_infinite]">
+          <line x1="84" y1="136" x2="156" y2="108" stroke="#C0F43C" strokeWidth="3" strokeLinecap="round" />
+          <circle cx="96" cy="131" r="4.5" fill="#C0F43C" />
+          <circle cx="118" cy="123" r="4.5" fill="#e5ff8a" />
+          <circle cx="140" cy="114" r="4.5" fill="#C0F43C" />
+        </g>
       </svg>
-    ),
-  },
-  {
-    index: "02",
-    tag: "REGULATED WORKFLOWS",
-    title: "Not a speculative crypto or Web3 event",
-    body: "Decentralised finance (DeFi) and speculative digital assets are excluded. Coverage is strictly focused on deployable institutional AI, enterprise analytics, and regulated financial workflows.",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-      </svg>
-    ),
-  },
-  {
-    index: "03",
-    tag: "PRODUCTION CORES",
-    title: "Not an academic AI theory summit",
-    body: "Sessions do not debate theoretical algorithms or distant AGI timelines. Every session evaluates proven technology integrated with core transactional platforms.",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
-      </svg>
-    ),
-  },
-  {
-    index: "04",
-    tag: "EDITORIAL GOVERNANCE",
-    title: "Not an unvetted vendor pitch platform",
-    body: "Trescon maintains strict editorial governance over the agenda. Sponsored speaking slots are strictly capped, structured around practical clinical formats, and led by qualified enterprise case studies.",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-      </svg>
-    ),
-  },
-];
+    </div>
+  );
+}
 
 function useAnimatedValue(target: number, triggerKey: number, duration = 1350, delay = 0) {
   const [val, setVal] = useState(0);
@@ -230,7 +421,7 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
 
       <div>
         {/* Top Icon & Telemetry Index */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-5">
           <div className="w-11 h-11 rounded-xl border border-white/12 bg-white/[0.04] flex items-center justify-center shadow-[inset_0_0_16px_rgba(24,212,255,0.08)] group-hover:border-[#C0F43C]/40 group-hover:scale-105 transition-all duration-300">
             {card.icon}
           </div>
@@ -240,12 +431,15 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
         </div>
 
         {/* Animated Big Metric */}
-        <strong className="block text-[clamp(30px,3.2vw,40px)] font-[850] leading-none tracking-[-1.2px] mb-3 bg-gradient-to-r from-[#C0F43C] via-[#d8ff75] to-[#18d4ff] bg-clip-text text-transparent tabular-nums">
+        <strong className="block text-[clamp(30px,3.2vw,40px)] font-[850] leading-none tracking-[-1.2px] mb-2 bg-gradient-to-r from-[#C0F43C] via-[#d8ff75] to-[#18d4ff] bg-clip-text text-transparent tabular-nums">
           {card.displayValue}
         </strong>
 
+        {/* Animated 3D Isometric Graphic (Page 4 Mock) */}
+        <BenchmarkGraphic index={card.index} />
+
         {/* Metric Label */}
-        <p className="m-0 text-white font-bold text-[18px] leading-[1.35] mb-6">
+        <p className="m-0 text-white font-bold text-[17.5px] leading-[1.35] mb-5">
           {card.label}
         </p>
 
@@ -303,7 +497,7 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
       </div>
 
       {/* Citation Footer */}
-      <div className="mt-7 pt-4 border-t border-white/[0.08] flex items-center justify-between">
+      <div className="mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
         <span className="inline-flex items-center gap-2 text-white/55 font-mono text-[12px]">
           <span className="w-1.5 h-1.5 rounded-full bg-[#C0F43C] animate-pulse" />
           {card.source}
@@ -319,13 +513,25 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
 export function EcosystemSectionDemo() {
   return (
     <section
-      className="relative w-full px-20 py-28 bg-[#020b1c] overflow-hidden flex flex-col items-center gap-28 max-lg:px-6 max-sm:px-4 max-sm:py-16 max-sm:gap-20"
+      className="relative w-full px-20 pt-10 pb-20 bg-[#020b1c] overflow-hidden flex flex-col items-center max-lg:px-6 max-sm:px-4 max-sm:py-12"
       id="ecosystem"
     >
       <style>{`
         @keyframes telemetryShimmer {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(200%); }
+        }
+        @keyframes IsoFloat {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-6px); }
+        }
+        @keyframes IsoPulse {
+          0%, 100% { opacity: 0.82; transform: translateY(0px); }
+          50% { opacity: 1; transform: translateY(-3px); }
+        }
+        @keyframes DashFlow {
+          0% { stroke-dashoffset: 24; }
+          100% { stroke-dashoffset: 0; }
         }
       `}</style>
 
@@ -345,28 +551,16 @@ export function EcosystemSectionDemo() {
         className="absolute top-12 left-1/2 -translate-x-1/2 w-[900px] h-[420px] rounded-full bg-[#18d4ff]/[0.05] blur-[130px] pointer-events-none"
         aria-hidden="true"
       />
-      <div
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[900px] h-[420px] rounded-full bg-[#C0F43C]/[0.04] blur-[140px] pointer-events-none"
-        aria-hidden="true"
-      />
 
       {/* ───── S3 · The argument — page centre of gravity ───── */}
       <div className="relative z-10 w-full max-w-[1140px] mx-auto flex flex-col items-center text-center">
-        {/* Eyebrow Pill */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#18d4ff]/35 bg-[#051428]/90 shadow-[0_0_24px_rgba(24,212,255,0.14)] mb-6">
-          <span className="w-2 h-2 rounded-full bg-[#18d4ff] animate-pulse" />
-          <span className="text-[#18d4ff] text-xs font-mono font-bold uppercase tracking-[2.4px]">
-            The Single Strategic Hook
-          </span>
-        </div>
-
         <h2 className="max-w-[960px] text-center font-[850] text-white leading-[1.06] tracking-[-1.8px] text-[clamp(34px,4.5vw,54px)] mb-6">
-          Transitioning from speculative generative AI experimentation{" "}
-          <GradientText>into core balance-sheet production scrutiny.</GradientText>
+          Transitioning From AI Experimentation to{" "}
+          <GradientText>Audit-Ready Core Production</GradientText>
         </h2>
 
         <p className="max-w-[880px] text-white/75 text-[19px] leading-[1.6] mb-14 max-sm:text-[16px]">
-          Middle East financial institutions have committed substantial capital to digital transformation, but production AI remains constrained by legacy core architectures, model explainability requirements, and stringent regulatory compliance under Central Bank of the UAE (CBUAE) and DFSA frameworks.
+          Middle East’s financial leaders are committing substantial capital to AI, but taking models live into core operations requires uncompromising governance. Scaling production now demands clear model explainability, seamless integration with legacy banking cores, and uncompromising adherence to Central Bank of the UAE (CBUAE) and DFSA regulatory mandates.
         </p>
 
         {/* Component C2 — Animated Source-Cited Telemetry Cards */}
@@ -398,68 +592,6 @@ export function EcosystemSectionDemo() {
               </p>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* ───── S4 · What this is not ───── */}
-      <div className="relative z-10 w-full max-w-[1140px] mx-auto flex flex-col items-center">
-        <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#C0F43C]/35 bg-[#C0F43C]/10 shadow-[0_0_24px_rgba(192,244,60,0.12)] mb-5">
-            <span className="w-2 h-2 rounded-full bg-[#C0F43C]" />
-            <span className="text-[#C0F43C] text-xs font-mono font-bold uppercase tracking-[2.2px]">
-              What This Forum Is Not
-            </span>
-          </div>
-          <h2 className="text-center font-[850] text-white leading-[1.06] tracking-[-1.8px] text-[clamp(32px,4.4vw,52px)]">
-            Execution under regulation over <GradientText>fintech hype</GradientText>
-          </h2>
-        </div>
-
-        <div className="w-full grid grid-cols-2 gap-6 max-md:grid-cols-1">
-          {whatThisIsNotCards.map((item) => (
-            <article
-              key={item.title}
-              className="group relative p-8 max-sm:p-6 rounded-[24px] border border-white/[0.12] bg-gradient-to-br from-[#071932]/90 via-[#040e20]/95 to-[#030916]/95 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)] hover:border-[#18d4ff]/55 hover:-translate-y-1.5 hover:shadow-[0_28px_65px_rgba(0,0,0,0.55),0_0_34px_rgba(24,212,255,0.12)] transition-all duration-300 overflow-hidden"
-            >
-              {/* Watermark Index Number */}
-              <span
-                className="absolute right-6 top-4 font-[900] text-[76px] leading-none tracking-tighter text-white/[0.03] group-hover:text-[#18d4ff]/[0.08] transition-colors duration-300 select-none pointer-events-none"
-                aria-hidden="true"
-              >
-                {item.index}
-              </span>
-
-              {/* Top Row: Icon + Pill Tag */}
-              <div className="relative z-10 flex items-center gap-4 mb-6">
-                <div className="w-13 h-13 rounded-2xl border border-[#18d4ff]/30 bg-gradient-to-br from-[#18d4ff]/20 to-[#C0F43C]/10 flex items-center justify-center text-[#18d4ff] group-hover:text-[#C0F43C] group-hover:border-[#C0F43C]/45 group-hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(24,212,255,0.12)]">
-                  {item.icon}
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[#C0F43C] font-mono text-[11px] font-bold uppercase tracking-[1.8px]">
-                    STANDARD // {item.index}
-                  </span>
-                  <span className="text-white/50 font-mono text-[11px] uppercase tracking-[1.2px]">
-                    {item.tag}
-                  </span>
-                </div>
-              </div>
-
-              {/* Card Heading */}
-              <h3 className="relative z-10 m-0 mb-3 text-white font-[850] text-[23px] leading-tight group-hover:text-[#C0F43C] transition-colors duration-200">
-                {item.title}
-              </h3>
-
-              {/* Divider with expanding hover highlight */}
-              <div className="relative z-10 w-full h-[1px] bg-white/[0.08] mb-4 overflow-hidden">
-                <div className="w-12 group-hover:w-full h-full bg-gradient-to-r from-[#C0F43C] to-[#18d4ff] transition-all duration-500" />
-              </div>
-
-              {/* Card Body */}
-              <p className="relative z-10 m-0 text-white/75 text-[16px] leading-[1.65]">
-                {item.body}
-              </p>
-            </article>
-          ))}
         </div>
       </div>
     </section>

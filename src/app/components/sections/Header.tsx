@@ -4,12 +4,12 @@ import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Logo } from "../Shared";
 
-const navItems = ["Home", "Attend", "Agenda", "Speakers", "Partner", "Exhibition", "Networking"];
+const navItems = ["Home", "Attend", "Agenda", "Speakers", "Partner", "Networking"];
 
 // Dropdown submenus — Speakers excluded
 const subMenus: Record<string, string[]> = {
   Attend: ["Overview", "Delegate", "Sponsor", "Media Partner", "Association Partner"],
-  Agenda: ["Overview", "The 2030 Vision", "Agenda", "Themes", "Call for Speakers"],
+  Agenda: ["Overview", "The Vision", "Agenda", "Themes", "Call for Speakers"],
   Networking: ["Overview", "Attendee APP", "AI Matchmaking", "Photo Gallery"],
 };
 
@@ -66,7 +66,7 @@ function getSubNavItemFromPath(pathname: string): string {
   if (cleanPath.startsWith("/attend/association-partner")) return "Association Partner";
   if (cleanPath === "/attend" || cleanPath === "/attend/") return "Overview";
   // Agenda sub-pages
-  if (cleanPath.startsWith("/agenda/the-2030-vision"))     return "The 2030 Vision";
+  if (cleanPath.startsWith("/agenda/the-2030-vision"))     return "The Vision";
   if (cleanPath.startsWith("/agenda/themes"))              return "Themes";
   if (cleanPath.startsWith("/agenda/call-for-speakers"))   return "Call for Speakers";
   if (cleanPath.startsWith("/agenda/agenda"))              return "Agenda";
@@ -136,6 +136,7 @@ export function Header({ activeItem, subNavItems, activeSubNavItem }: HeaderProp
     if (parentItem === "Networking" || parentItem === "Attend" || parentItem === "Agenda") {
       const parentPath = parentItem === "Networking" ? "/banking/networking" : `/banking/${parentItem.toLowerCase()}`;
       if (subItem === "Overview") return parentPath;
+      if (parentItem === "Agenda" && subItem === "The Vision") return "/banking/agenda/the-2030-vision";
       return `${parentPath}/${subItem.toLowerCase().replaceAll(" ", "-")}`;
     }
     const parentPath = parentItem === "Home" ? "/banking/" : `/banking/${parentItem.toLowerCase()}`;

@@ -42,9 +42,6 @@ export function FooterSection() {
             <a href="/banking/partners" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
               Partners
             </a>
-            <a href="/banking/exhibition" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
-              Exhibition
-            </a>
           </div>
 
           {/* Column 2: Enquiries */}

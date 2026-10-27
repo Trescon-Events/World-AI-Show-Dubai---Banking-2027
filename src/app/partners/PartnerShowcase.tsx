@@ -48,39 +48,9 @@ export function PartnerShowcase() {
       <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] rounded-full bg-purple-500/5 blur-[120px] pointer-events-none" />
 
       <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
-        {/* ── PART 1: SHOWCASING THE FUTURE SECTION ─────────────────── */}
-        <div className="grid grid-cols-[1.1fr_0.9fr] max-[980px]:grid-cols-1 gap-12 items-center mb-20">
-          <div className="flex flex-col gap-6 max-[980px]:text-center max-[980px]:items-center">
-            <h2 className="m-0 font-space-grotesk text-white font-[850] text-[clamp(32px,4vw,46px)] leading-tight tracking-tight">
-              Where Middle East banking leaders specify, procure, and{" "}
-              <span className="text-[#C0F43C]">deploy</span>{" "}
-              <span className="text-[#00ceff]">production AI.</span>
-            </h2>
-            <p className="m-0 text-white/70 text-[16px] leading-relaxed max-w-[580px] font-sans">
-              World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE) convenes 300+ pre-qualified C-suite banking, insurance, risk, and regulatory decision-makers with a minimum 70% buy-side enterprise ratio.
-            </p>
-          </div>
-
-          <div className="relative group max-[980px]:mx-auto w-full max-w-[480px]">
-            <div className="absolute -inset-1.5 rounded-[16px] bg-gradient-to-r from-[#00ceff] to-[#9a6cff] opacity-40 blur-[8px] group-hover:opacity-75 transition duration-500" />
-            <div className="relative rounded-[12px] overflow-hidden border-2 border-[#00ceff] bg-[#040916]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/banking/images/sponsors/showcase.webp"
-                alt="Banking AI Showcase at World AI Show Dubai"
-                className="w-full h-auto object-cover aspect-[1.7/1] transform group-hover:scale-[1.01] transition-all duration-500"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-
         {/* ── PART 2: TIER-GROUPED ARCHITECTURE (Section 10) ─────────── */}
         <div className="mb-20">
           <div className="text-center mb-10">
-            <span className="inline-block font-mono text-[11px] uppercase tracking-[2px] text-cyan mb-2">
-              Commercial Architecture · Dubai 2027
-            </span>
             <h3 className="text-white font-[850] text-[clamp(26px,3.4vw,38px)] m-0">
               Tier-Grouped Commercial <GradientText>Structure</GradientText>
             </h3>
@@ -126,7 +96,7 @@ export function PartnerShowcase() {
             </h3>
 
             <p className="m-0 text-white/70 text-[16px] leading-relaxed max-w-[680px] font-sans">
-              Secure your commercial partnership for World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE).
+              Secure your commercial partnership today.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-4 w-full max-sm:flex-col max-sm:items-center">

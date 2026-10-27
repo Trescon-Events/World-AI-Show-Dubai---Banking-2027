@@ -12,23 +12,23 @@ import { AgendaSection, sixPartBlocks } from "../components/sections/AgendaSecti
 import { SpeakersSection } from "../components/sections/SpeakersSection";
 import { SpeakerCallToStage } from "../speakers/SpeakerCallToStage";
 
-const subNav = ["Overview", "The 2030 Vision", "Agenda", "Themes", "Call for Speakers"];
+const subNav = ["Overview", "The Vision", "Agenda", "Themes", "Call for Speakers"];
 
 const formats = [
   {
-    title: "20-Minute Plenary Keynotes & Buyer Evidence",
-    text: "Commercial bank CIOs, CTOs, CROs, and Speaking Sponsors delivering 20-minute standalone keynotes and fireside case studies examining real-world architecture hurdles, pilot post-mortems, and verified balance-sheet ROI.",
-    image: "/banking/images/agenda/keynotes.webp",
+    title: "Plenary Keynotes & Live Buyer Evidence",
+    text: "Frontline case studies and fireside briefings led by commercial bank CXOs and enterprise architects. Moving past theoretical hype to examine real-world core integration hurdles, pilot failure post-mortems, and verified balance-sheet performance.",
+    image: "/banking/images/agenda/dubai/overview.png",
   },
   {
-    title: "75-Minute Parallel Breakout Clinics",
-    text: "Two interactive 75-minute workshop clinics (60–80 delegates each): Clinic A (Real-Time Fraud, AML & Financial Crime) and Clinic B (Agentic Banking & Core Modernisation).",
-    image: "/banking/images/agenda/panel-discussion.webp",
+    title: "Interactive Use-Case Breakout Clinics",
+    text: "Collaborative, hands-on workshop tracks designed to tackle acute operational bottlenecks. Delegates deep-dive into practical deployment frameworks for real-time fraud and AML defense, sub-second payment screening, and autonomous front-to-back office agentic workflows.",
+    image: "/banking/images/Attend/AI-decision-maker.webp",
   },
   {
-    title: "CXO Closed-Door Boardrooms & Outcome Roundtables",
-    text: "Invitation-only 60-minute CXO Closed-Door Boardrooms for 15 wishlist banking leaders under Chatham House Rule, followed by Block 6 Outcome Roundtables capturing 2027 procurement specifications.",
-    image: "/banking/images/agenda/Fireside.webp",
+    title: "Closed-Door Boardrooms & Peer Roundtables",
+    text: "Private, off-the-record discussions held under the Chatham House Rule alongside facilitated executive roundtables. Engineered for senior decision-makers to benchmark technology stacks, navigate regulatory oversight, and align vendor procurement roadmaps.",
+    image: "/banking/images/networking/meet-leaders.webp",
   },
 ];
 
@@ -430,12 +430,9 @@ export function AgendaOverview() {
     <>
       <section className={`${styles.hero} pt-[200px]`} id="overview">
         <div className={styles.container}>
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-[#18d4ff]/30 rounded-full text-[#18d4ff] font-mono text-[12px] uppercase tracking-[2px] bg-[#18d4ff]/5">
-            Curriculum Overview
-          </span>
           <h1>From use case to <br /><GradientText>operating outcome.</GradientText></h1>
           <p className={styles.heroPara}>
-            Departing entirely from conference speechifying, the forum is built on Trescon&apos;s six-part block methodology, systematically driving 300+ banking delegates from boardroom compliance expectations down to concrete procurement specifications.
+            Departing entirely from conference speechifying, the forum is built to systematically driving banking delegates from boardroom compliance expectations down to concrete procurement specifications.
           </p>
         </div>
       </section>
@@ -443,12 +440,12 @@ export function AgendaOverview() {
       <section className={styles.aboutSection}>
         <div className={styles.split}>
           <div>
-            <h2>Controlled AI deployment for <GradientText>regulated financial operations.</GradientText></h2>
-            <p>
-              World AI Show | AI in Banking and Financial Services | Dubai 2027 is a 1-Day Executive Decision Forum taking place on 24 March 2027 in DIFC District, Dubai, UAE. Positioned as Day 1 of the March Dubai Cluster, it convenes 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (minimum 70% buy-side enterprise ratio).
+            <h2 className="!mb-6">Controlled AI deployment for <GradientText>regulated financial operations.</GradientText></h2>
+            <p className="mt-6 mb-4">
+              World AI Show | Banking and Financial Services will convene 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (minimum 70% buy-side enterprise ratio).
             </p>
-            <p>
-              Every block in the 1-day programme is engineered to move senior financial services buyers from board-level regulatory scrutiny under onshore Central Bank of the UAE (CBUAE) and offshore DIFC Dubai Financial Services Authority (DFSA) frameworks down to live architecture validation and 2027 procurement decisions.
+            <p className="m-0">
+              Every block in the programme is engineered to move senior financial services buyers from board-level regulatory scrutiny under onshore Central Bank of the UAE (CBUAE) and offshore DIFC Dubai Financial Services Authority (DFSA) frameworks down to live architecture validation and 2027 procurement decisions.
             </p>
           </div>
           <img src="/banking/images/agenda/About.webp" alt="Banking executives networking at World AI Show Dubai" loading="lazy" />
@@ -457,7 +454,7 @@ export function AgendaOverview() {
 
       <section className={styles.formatsSection}>
         <div className={styles.container}>
-          <h2>Trescon <GradientText>Six-Part Block Methodology.</GradientText></h2>
+          <h2>A <GradientText>Six-Part Block Methodology.</GradientText></h2>
           <p>Engineered to drive banking buyers from board priorities down to concrete procurement across one intensive day.</p>
 
           <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1 mb-14 text-left">
@@ -495,7 +492,7 @@ export function AgendaOverview() {
 
       <section className={styles.finalCta} id="cta">
         <div className={styles.ctaBox}>
-          <h2>Be in the room where <GradientText>2027 banking AI architecture gets finalised.</GradientText></h2>
+          <h2>Be in the room where <GradientText>2027s banking AI architecture gets finalised.</GradientText></h2>
           <p>Apply for a complimentary Delegate Pass (strictly by invitation and qualification), enquire about commercial sponsorship, or apply to join the Dubai banking faculty.</p>
           <div className={styles.actions}>
             <a className={`${styles.button} ${styles.solid} group`} href="/banking/attend/delegate/">Apply for a Delegate Pass <ArrowSVG /></a>
@@ -512,52 +509,118 @@ export function AgendaOverview() {
   );
 }
 
+const visionPoints = [
+  {
+    title: "Navigating Onshore CBUAE and Offshore DFSA Frameworks",
+    text: "Production banking AI in the UAE requires clear separation between federal onshore oversight under the Central Bank of the UAE (CBUAE) and offshore free-zone supervision under the Dubai Financial Services Authority (DFSA). The forum delivers actionable blueprints for data residency, model explainability, and audit-ready governance across both regimes.",
+    bullets: [] as string[],
+    image: "/banking/images/agenda/dubai/overview.png",
+  },
+  {
+    title: "Production Realities Over Sandbox Hype",
+    text: "With regional banking AI projected to exceed USD 3.5B by 2027, leadership teams are focusing on audited, high-impact implementations:",
+    bullets: [
+      "+38% YoY APP scam surge driving real-time AI detection",
+      "90% False Alerts Legacy AML overhead consuming compliance budgets",
+    ],
+    image: "/banking/images/agenda/accelerating-malaysia-audience.webp",
+  },
+  {
+    title: "Day 1 of the March Executive Cluster",
+    text: "On 24 March 2027, the Banking edition convenes 300+ C-suite leaders, followed on 25 March by AI in Healthcare & Life Sciences. Both forums share world-class venue infrastructure while preserving dedicated agendas, distinct P&Ls, and curated buy-side audiences.",
+    bullets: [] as string[],
+    image: "/banking/images/networking/meet-leaders.webp",
+  },
+];
+
 export function AgendaVision() {
+  const [activePoint, setActivePoint] = useState(0);
+
   return (
     <>
       <section
         className={`${styles.hero} pt-[200px]`}
         id="the-2030-vision-hero"
         style={{
-          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.52) 42%, rgba(2, 7, 19, 0.08) 100%), url(/banking/images/agenda/Vision-2030-bg.webp) right center / cover no-repeat"
+          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.9) 0%, rgba(2, 7, 19, 0.56) 42%, rgba(2, 7, 19, 0.1) 100%), url(/banking/images/Attend/Association-banner.webp) right center / cover no-repeat"
         }}
       >
         <div className={styles.container}>
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-[#18d4ff]/30 rounded-full text-[#18d4ff] font-mono text-[12px] uppercase tracking-[2px] bg-[#18d4ff]/5">
-            REGULATORY FRAMEWORK &amp; REGIONAL CATALYSTS
-          </span>
           <h1>Execution Under Regulation: <br /><GradientText>UAE &amp; GCC Banking AI Mandate.</GradientText></h1>
         </div>
       </section>
 
       <section className={styles.visionSection} id="the-2030-vision">
-        <div className={styles.split}>
-          <div className={styles.leftCol}>
-            <img src="/banking/images/agenda/driving-malaysia-stage.webp" alt="Executive panel discussion at World AI Show Dubai" loading="lazy" />
+        <div className={styles.container}>
+          <div className="grid grid-cols-[0.95fr_1.05fr] gap-12 items-stretch max-[980px]:grid-cols-1 mb-10">
+            <div className="relative rounded-[22px] overflow-hidden border border-[#20d5ff]/30 bg-[#040d1d] shadow-[0_0_42px_rgba(0,206,255,0.14)] min-h-[420px]">
+              <img
+                key={visionPoints[activePoint].image}
+                src={visionPoints[activePoint].image}
+                alt={visionPoints[activePoint].title}
+                className="w-full h-full object-cover transition-all duration-300"
+                loading="lazy"
+              />
+            </div>
+
+            <div className="flex flex-col gap-4 justify-between">
+              {visionPoints.map((pt, idx) => {
+                const isActive = idx === activePoint;
+                return (
+                  <button
+                    key={pt.title}
+                    type="button"
+                    onClick={() => setActivePoint(idx)}
+                    className={`text-left p-6 rounded-[18px] border transition-all duration-200 cursor-pointer ${
+                      isActive
+                        ? "border-[#C0F43C]/65 bg-gradient-to-br from-[#C0F43C]/10 via-[#06152d] to-[#040d1d] shadow-[0_12px_32px_rgba(192,244,60,0.12)]"
+                        : "border-white/12 bg-[#040d1d]/75 hover:border-[#18d4ff]/40"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between gap-3 mb-2">
+                      <h3 className={`m-0 font-extrabold text-[19px] leading-snug ${isActive ? "text-[#C0F43C]" : "text-white"}`}>
+                        {pt.title}
+                      </h3>
+                      <span className={`font-mono text-xs px-2.5 py-1 rounded-full ${isActive ? "bg-[#C0F43C] text-[#06111F] font-bold" : "bg-white/10 text-white/60"}`}>
+                        0{idx + 1}
+                      </span>
+                    </div>
+                    <p className="m-0 text-white/75 text-[15px] leading-relaxed">
+                      {pt.text}
+                    </p>
+                    {pt.bullets.length > 0 && (
+                      <ul className="mt-3 mb-0 pl-0 list-none space-y-1.5">
+                        {pt.bullets.map((b) => (
+                          <li key={b} className="flex items-start gap-2 text-white/85 text-[14.5px] font-medium">
+                            <span className="text-[#C0F43C] font-bold">•</span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
           </div>
-          <div className={styles.visionCopy}>
-            <p>
-              <strong>Onshore CBUAE vs Offshore DIFC DFSA Jurisdiction:</strong> Deploying production AI in the UAE requires rigorous architectural alignment across two distinct regulatory regimes: federal onshore banking oversight under the Central Bank of the UAE (CBUAE) and offshore financial free-zone supervision under the Dubai Financial Services Authority (DFSA) within the DIFC.
-            </p>
-            <p>
-              <strong>Balance-Sheet Scrutiny Over Sandbox Hype:</strong> With the Middle East banking AI market projected to surpass USD 3.5B+ by 2027 (Source: PwC Middle East Financial Services AI Report) and regional APP scams surging +38% YoY (Source: Regional Banking Fraud Survey / MENA FinTech Association), institutions are prioritising explainable, auditable AI that reduces legacy 90% AML false-positive alert overhead (Source: PwC / Thomson Reuters Regulatory Intelligence).
-            </p>
-            <p>
-              <strong>Day 1 of the March Dubai Cluster:</strong> World AI Show | AI in Banking and Financial Services | Dubai 2027 leads the March Dubai Cluster on 24 March 2027, followed on 25 March 2027 by World AI Show | AI in Healthcare &amp; Life Sciences, sharing world-class DIFC District venue infrastructure while maintaining dedicated sector governance.
-            </p>
-            <blockquote>
-              &ldquo;78% of regional banks are prioritising real-time AI fraud defence as instant payment volumes and synthetic identity vectors accelerate across the GCC.&rdquo;
-              <cite className={styles.blockquoteCite}>&mdash; SOURCE: REGIONAL BANKING FRAUD SURVEY / MENA FINTECH ASSOCIATION</cite>
-            </blockquote>
-          </div>
+
+          {/* Full-width Quote Box (Page 26 top) */}
+          <blockquote className="w-full m-0 p-9 md:px-12 rounded-[22px] border-[1.5px] border-[#18d4ff]/45 bg-gradient-to-br from-[#040b1b]/95 to-[#0a1834]/98 shadow-[0_0_35px_rgba(24,212,255,0.18),inset_0_0_25px_rgba(24,212,255,0.05)] text-[#f7f9ff] text-[clamp(20px,2.4vw,25px)] font-[750] leading-[1.45] text-center">
+            &ldquo;78% of regional banks are prioritising real-time AI fraud defence as instant payment volumes and synthetic identity vectors accelerate across the GCC.&rdquo;
+            <cite className="block mt-4 text-[11px] font-mono font-bold tracking-[2px] uppercase text-white/50 not-italic">
+              &mdash; SOURCE: REGIONAL BANKING FRAUD SURVEY / MENA FINTECH ASSOCIATION
+            </cite>
+          </blockquote>
         </div>
       </section>
 
       <section className={styles.gatewaySection}>
         <div className={styles.container}>
-          <h2>Key Regional Catalysts Driving <GradientText>2027 Banking Procurement.</GradientText></h2>
-          <p>The four regulatory and competitive pressures shaping technology investment across Middle East financial institutions.</p>
-          <div className={styles.cardGrid}>
+          <h2 className="mb-12">
+            The Four Regulatory and Competitive Pressures{" "}
+            <GradientText>Shaping Technology Investment Across Middle East Financial Institutions.</GradientText>
+          </h2>
+          <div className="grid grid-cols-2 gap-6 max-sm:grid-cols-1">
             {regionalCatalysts.map(([title, text, icon], index) => (
               <IconCard icon={icon} index={index} key={title} text={text} title={title} />
             ))}
@@ -566,9 +629,9 @@ export function AgendaVision() {
       </section>
 
       <AgendaSection
-        title={<>Four operational mandates. <GradientText>One day.</GradientText></>}
-        subtitle="Specialised Curriculum"
-        description="Universal Themes: Core banking mainframe modernisation, data fabric architectures, ethical AI, and workforce reskilling."
+        title={<>Focused on Four Core <GradientText>Operational Mandates</GradientText></>}
+        subtitle=""
+        description=""
       />
     </>
   );
@@ -579,19 +642,13 @@ export function AgendaLiveTimeline() {
     <>
       <section className={`${styles.hero} pt-[200px]`} id="agenda-timeline-hero">
         <div className={styles.container}>
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-[#18d4ff]/30 rounded-full text-[#18d4ff] font-mono text-[12px] uppercase tracking-[2px] bg-[#18d4ff]/5">
-            1-Day Master Schedule · Wednesday 24 March 2027
-          </span>
-          <h1><GradientText>DUBAI 2027 MASTER SCHEDULE</GradientText></h1>
-          <p className={styles.heroPara}>
-            Wednesday 24 March 2027: Execution Under Regulation · DIFC District, Dubai, UAE · Day 1 of the March Dubai Cluster.
-          </p>
+          <h1><GradientText>Event Schedule</GradientText></h1>
         </div>
       </section>
       <AgendaTabs />
       <section className={styles.finalCta} id="cta">
         <div className={styles.ctaBox}>
-          <h2>Be in the room where <GradientText>2027 banking AI architecture gets finalised.</GradientText></h2>
+          <h2>Be in the room where <GradientText>2027s banking AI architecture gets finalised.</GradientText></h2>
           <p>Apply for a complimentary Delegate Pass (strictly by invitation and qualification), enquire about commercial sponsorship, or apply to join the Dubai banking faculty.</p>
           <div className={styles.actions}>
             <a className={`${styles.button} ${styles.solid} group`} href="/banking/sponsorship-enquiry/">Enquire about sponsorship <ArrowSVG /></a>
@@ -615,22 +672,19 @@ export function AgendaThemes() {
         className={`${styles.hero} pt-[200px]`}
         id="agenda-themes-hero"
         style={{
-          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.48) 42%, rgba(2, 7, 19, 0.05) 100%), url(/banking/images/agenda/Themes-bg.webp) right center / cover no-repeat"
+          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.48) 42%, rgba(2, 7, 19, 0.05) 100%), url(/banking/images/theme/Theme-02.webp) right center / cover no-repeat"
         }}
       >
         <div className={styles.container}>
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-[#18d4ff]/30 rounded-full text-[#18d4ff] font-mono text-[12px] uppercase tracking-[2px] bg-[#18d4ff]/5">
-            The 4 Core Sector Content Pillars
-          </span>
           <h1>Four operational mandates. <br /><GradientText>One day.</GradientText></h1>
           <p className={styles.heroPara}>
-            Universal Themes: Core banking mainframe modernisation, data fabric architectures, ethical AI, and workforce reskilling.
+            Centered around Core banking mainframe modernisation, data fabric architectures, ethical AI, and workforce reskilling.
           </p>
         </div>
       </section>
       <AgendaSection
-        title={<>Four operational mandates. <GradientText>One day.</GradientText></>}
-        subtitle="Specialised Curriculum"
+        title={<>Focused on Four Core <GradientText>Operational Mandates</GradientText></>}
+        subtitle=""
         description="Click any content pillar below to inspect its full operational scope, clinical format, and technical discussion points."
       />
       <section className="relative pb-[104px] bg-[#051224]/70 max-sm:pb-[72px]">
@@ -656,7 +710,7 @@ export function AgendaThemes() {
       </section>
       <section className={styles.finalCta} id="cta">
         <div className={styles.ctaBox}>
-          <h2>Be in the room where <GradientText>2027 banking AI architecture gets finalised.</GradientText></h2>
+          <h2>Be in the room where <GradientText>2027s banking AI architecture gets finalised.</GradientText></h2>
           <p>Apply for a complimentary Delegate Pass (strictly by invitation and qualification), enquire about commercial sponsorship, or apply to join the Dubai banking faculty.</p>
           <div className={styles.actions}>
             <a className={`${styles.button} ${styles.solid} group`} href="/banking/sponsorship-enquiry/">Enquire about sponsorship <ArrowSVG /></a>
@@ -688,9 +742,6 @@ export function AgendaCallForSpeakers() {
         }}
       >
         <div className={styles.container}>
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-[#18d4ff]/30 rounded-full text-[#18d4ff] font-mono text-[12px] uppercase tracking-[2px] bg-[#18d4ff]/5">
-            Call for Banking &amp; Risk Faculty
-          </span>
           <h1 className="text-white font-[850] tracking-[-2px] leading-[1.06] text-[clamp(40px,5.6vw,68px)] max-w-[900px]">
             If you have deployed AI into core regulated banking,{" "}
             <GradientText>we want you on stage</GradientText>
@@ -701,8 +752,8 @@ export function AgendaCallForSpeakers() {
       <SpeakersSection
         heading={
           <>
-            Join Our Global Faculty of{" "}
-            <GradientText>Banking &amp; Financial Services AI Leaders</GradientText>
+            A Look Back at{" "}
+            <GradientText>Past World AI Show Speakers</GradientText>
           </>
         }
       />

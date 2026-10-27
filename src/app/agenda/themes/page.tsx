@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Four operational mandates. One day. Explore the 4 Core Sector Content Pillars of World AI Show | AI in Banking and Financial Services | Dubai 2027.",
 };
 
-const subNav = ["Overview", "The 2030 Vision", "Agenda", "Themes", "Call for Speakers"];
+const subNav = ["Overview", "The Vision", "Agenda", "Themes", "Call for Speakers"];
 
 export default function ThemesPage() {
   return (

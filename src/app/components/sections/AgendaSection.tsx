@@ -131,16 +131,16 @@ function ThemeIcon({ index }: { index: number }) {
 export function AgendaSection({
   title = (
     <>
-      Four operational mandates. <GradientText>One day.</GradientText>
+      Focused on Four Core <GradientText>Operational Mandates</GradientText>
     </>
   ),
-  subtitle = "Specialised Curriculum",
-  description = "Universal Themes: Core banking mainframe modernisation, data fabric architectures, ethical AI, and workforce reskilling.",
-  showSixBlocks = true,
+  subtitle = null,
+  description = null,
+  showSixBlocks = false,
 }: {
   title?: ReactNode;
   subtitle?: ReactNode | null;
-  description?: ReactNode;
+  description?: ReactNode | null;
   showSixBlocks?: boolean;
 }) {
   const [expandedPillar, setExpandedPillar] = useState<number | null>(0);
@@ -151,21 +151,12 @@ export function AgendaSection({
       id="agenda"
     >
       <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
-        {/* S5 · Four Core Content Pillars */}
-        {subtitle && (
-          <div className="text-center mb-4">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-cyan/30 bg-cyan/10 text-cyan text-xs font-mono uppercase tracking-[2px]">
-              {subtitle}
-            </span>
-          </div>
-        )}
-
         {/* Headings */}
-        <h2 className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(36px,4.8vw,56px)]">
+        <h2 className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(36px,4.8vw,56px)] mb-[44px]">
           {title}
         </h2>
         {description && (
-          <p className="max-w-[920px] mx-auto mt-5 text-center text-muted text-[18px] leading-[1.55] mb-[44px]">
+          <p className="max-w-[920px] mx-auto -mt-6 text-center text-muted text-[18px] leading-[1.55] mb-[44px]">
             {description}
           </p>
         )}
@@ -245,23 +236,10 @@ export function AgendaSection({
           })}
         </div>
 
-        {/* Universal Themes Footer Bar */}
-        <div className="mt-8 p-5 rounded-[16px] border border-[#18d4ff]/25 bg-[#041022]/85 text-center">
-          <p className="m-0 text-white/85 text-[15px] leading-relaxed">
-            <strong className="text-[#C0F43C] font-mono text-xs uppercase tracking-[1.8px] mr-2">
-              Universal Themes:
-            </strong>
-            Core banking mainframe modernisation, data fabric architectures, ethical AI, and workforce reskilling.
-          </p>
-        </div>
-
-        {/* S6 · Programme Architecture (Trescon Six-Part Block Methodology) */}
+        {/* S6 · Programme Architecture (Six-Part Block Methodology) */}
         {showSixBlocks && (
           <div className="mt-24 pt-16 border-t border-white/10">
             <div className="text-center mb-12">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-[#C0F43C]/35 bg-[#C0F43C]/10 text-[#C0F43C] text-xs font-mono uppercase tracking-[2px] mb-4">
-                Trescon Six-Part Block Methodology
-              </span>
               <h3 className="text-center font-[850] text-white leading-[1.08] tracking-[-1.6px] text-[clamp(30px,4vw,46px)] max-w-[900px] mx-auto">
                 Engineered to drive banking buyers from board priorities down to{" "}
                 <GradientText>concrete procurement.</GradientText>

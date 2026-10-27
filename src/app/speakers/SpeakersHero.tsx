@@ -12,15 +12,9 @@ export function SpeakersHero() {
       }}
     >
       <div className="relative z-10 w-[min(1114px,calc(100%-48px))] mx-auto">
-        <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
-          35–45 Expert Faculty Speakers · Steering Committee Review
-        </span>
-        <h1 className="m-0 text-white font-[850] leading-[1.05] tracking-[-2px] text-[clamp(44px,5.6vw,74px)]">
-          <GradientText>DUBAI BANKING FACULTY</GradientText>
+        <h1 className="m-0 text-white font-[850] leading-[1.06] tracking-[-2px] text-[clamp(36px,4.8vw,62px)] max-w-[960px] uppercase">
+          MEET THE <GradientText>AI ARCHITECTS</GradientText> OF THE BANKING AND FINANCIAL SECTOR IN THE MIDDLE EAST
         </h1>
-        <p className="max-w-[740px] mt-6 mb-0 text-white/84 text-[19px] leading-relaxed max-sm:text-base">
-          35–45 retail and commercial banking CXOs, CROs, CCOs, financial crime &amp; AML authorities, data &amp; AI architects, and regulators are being curated for Dubai 2027 (24 March 2027 · DIFC District) based on unvarnished production evidence and verified balance-sheet outcomes.
-        </p>
       </div>
     </section>
   );

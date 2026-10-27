@@ -23,7 +23,7 @@ const valueCards: CardItem[] = [
   {
     title: "Controlled AI Deployment for Regulated Finance",
     text: "A 1-Day Executive Decision Forum for 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders transitioning from speculative pilots into core balance-sheet production.",
-    icon: "/banking/images/Attend/banking-ai-in-action.svg",
+    icon: "/banking/images/Attend/enterprise-ai-in-action.svg",
   },
   {
     title: "Five Governed Institutional Constituencies",
@@ -31,8 +31,8 @@ const valueCards: CardItem[] = [
     icon: "/banking/images/Attend/region-ai-decision-makers.svg",
   },
   {
-    title: "4 Sector Content Pillars & Six-Part Methodology",
-    text: "Structured around Trescon's six-part block methodology covering real-time fraud & AML defence, agentic servicing, algorithmic credit underwriting, and model risk governance.",
+    title: "Hands-On Use-Case Clinics & Peer Evidence",
+    text: "Drive decision-makers through practical deployment post-mortems, closed-door breakout clinics, and roundtables to resolve legacy core integration, establish audit-ready model governance, and define actionable 2027 procurement roadmaps.",
     icon: "/banking/images/Attend/insights-drive-transformation.svg",
   },
 ];
@@ -66,7 +66,7 @@ const gatewayCards: CardItem[] = [
   {
     title: "1-on-1 Bilateral Buyer-Sponsor Meetings",
     text: "AI-powered matchmaking facilitating pre-scheduled 1-on-1 bilateral introductions with vetted technology and core banking providers.",
-    icon: "/banking/images/Attend/gateway/banking-ai-showcases.svg",
+    icon: "/banking/images/Attend/gateway/enterprise-ai-showcases.svg",
   },
   {
     title: "Technology Concourse Access",
@@ -109,7 +109,7 @@ const sponsorBenefits: CardItem[] = [
   {
     title: "Curated 1-on-1 Bilateral Meetings",
     text: "Pre-scheduled bilateral introductions with pre-qualified banking CIOs, CTOs, CROs, CCOs, and procurement heads.",
-    icon: "/banking/images/Attend/sponsor/networking-lunch-branding.webp",
+    icon: "/banking/images/Attend/partner/networking-access.webp",
   },
   {
     title: "Minimum 70% Buy-Side Guarantee",
@@ -355,7 +355,7 @@ export function AttendCTASection() {
             Dubai · 24 March 2027 · 1-Day Forum · 300+ Senior Banking Leaders
           </span>
           <h2 className="max-w-[780px] mx-auto mb-8 text-[#f7f9ff] font-[850] leading-[1.08] tracking-[-1.8px] text-[clamp(36px,5vw,56px)] max-sm:text-[32px] max-sm:tracking-[-1px]">
-            Be in the room where <span className="bg-gradient-to-r from-[#C0F43C] to-[#18d4ff] bg-clip-text text-transparent">2027 banking AI architecture</span> gets finalised.
+            Be in the room where <span className="bg-gradient-to-r from-[#C0F43C] to-[#18d4ff] bg-clip-text text-transparent">2027s banking AI architecture</span> gets finalised.
           </h2>
 
           <div className="flex flex-wrap justify-center items-center gap-4 mt-8 mb-12 max-sm:flex-col max-sm:w-full">
@@ -415,24 +415,18 @@ export function AttendOverviewSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[760px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1120px)/2))] py-[76px] pt-[280px] overflow-hidden bg-cover bg-[position:right_center] bg-no-repeat max-sm:min-h-[690px] max-sm:px-[18px] max-sm:py-[56px] max-sm:pt-[240px]"
+        className="relative min-h-[700px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1120px)/2))] py-[76px] pt-[280px] overflow-hidden bg-cover bg-[position:right_center] bg-no-repeat max-sm:min-h-[600px] max-sm:px-[18px] max-sm:py-[56px] max-sm:pt-[240px]"
         style={{
           backgroundImage:
-            'linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.48) 42%, rgba(2, 7, 19, 0.05) 100%), url("/banking/images/Attend/Attend-Hero-bg.webp")',
+            'linear-gradient(90deg, rgba(2, 7, 19, 0.92) 0%, rgba(2, 7, 19, 0.56) 45%, rgba(2, 7, 19, 0.1) 100%), url("/banking/images/Attend/Delegates-banner.webp")',
         }}
         id="overview"
       >
         <div className="heroBackdrop absolute bottom-0 right-[-3%] w-[58%] h-[84%] opacity-0 pointer-events-none" />
-        <div className="relative z-10 max-w-[840px]">
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
-            How To Attend — Two Doors · Dubai 2027
-          </span>
-          <h1 className="m-0 text-[#f7f9ff] font-[850] leading-[1.05] tracking-[-1.8px] text-[clamp(44px,5.6vw,70px)] max-sm:text-[38px]">
-            Controlled AI deployment for <GradientText>regulated financial operations.</GradientText>
+        <div className="relative z-10 max-w-[860px]">
+          <h1 className="m-0 text-[#f7f9ff] font-[850] leading-[1.06] tracking-[-1.8px] text-[clamp(42px,5.4vw,68px)] max-sm:text-[36px]">
+            Focusing on controlled AI deployment for <GradientText>regulated financial operations.</GradientText>
           </h1>
-          <p className="max-w-[760px] mt-[26px] mb-0 text-white/88 text-[19px] leading-normal max-sm:text-[17px]">
-            World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE) convenes 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders with a minimum 70% buy-side enterprise ratio.
-          </p>
           <div className="flex flex-wrap gap-3.5 mt-10 max-sm:flex-col max-sm:items-start max-sm:gap-4">
             <ArrowButton href="/banking/attend/delegate/" variant="solid">
               Apply for a Delegate Pass
@@ -440,6 +434,31 @@ export function AttendOverviewSection() {
             <ArrowButton href="/banking/sponsorship-enquiry/" variant="outline">
               Enquire about sponsorship
             </ArrowButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Controlled Execution Over Financial Hype Split Section (Pages 12-13) */}
+      <section className="py-[92px] bg-[#020b1c] max-sm:py-[66px]">
+        <div className="grid grid-cols-[1.08fr_0.92fr] items-center gap-[68px] w-[min(1120px,calc(100%-48px))] mx-auto max-[980px]:grid-cols-1 max-sm:gap-[34px]">
+          <div className="flex flex-col">
+            <h2 className="m-0 text-white font-[850] leading-[1.08] tracking-[-1.6px] text-[clamp(36px,4.4vw,52px)] max-sm:text-[32px]">
+              Controlled execution over <GradientText>financial hype.</GradientText>
+            </h2>
+            <p className="mt-6 mb-4 text-white/75 text-[17px] leading-[1.65]">
+              World AI Show | Banking and Financial Services is an executive decision forum convening commercial bank CXOs, Chief Risk Officers, Chief Compliance Officers, Chief Data &amp; AI Officers, and financial regulators moving AI from experimental sandboxes into core transactional workflows. As part of the World AI Show Industry Series, the forum addresses the architectural hurdles, model auditability standards, and fiduciary risk controls required under active oversight from the Central Bank of the UAE (CBUAE) and DFSA.
+            </p>
+            <p className="m-0 text-white/75 text-[17px] leading-[1.65]">
+              It is structured around four critical operational mandates every financial buying committee must resolve: real-time fraud and AML defense, agentic servicing automation, algorithmic credit underwriting, and sovereign model risk governance.
+            </p>
+          </div>
+          <div className="relative overflow-hidden border border-[#55cfff]/25 rounded-[24px] bg-[#071426]/72 shadow-[0_0_44px_rgba(0,206,255,0.14)]">
+            <img
+              src="/banking/images/agenda/About.webp"
+              alt="Controlled execution over financial hype"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -458,11 +477,8 @@ export function AttendOverviewSection() {
       <section className="py-[86px] bg-[#020c21] max-sm:py-[62px]" id="pass-matrix">
         <div className="w-[min(1120px,calc(100%-48px))] mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-cyan/30 bg-cyan/10 text-cyan text-xs font-mono uppercase tracking-[2px] mb-3">
-              Pass Matrix · Two-Door Attendance Model
-            </span>
             <h2 className="max-w-[820px] mx-auto text-white font-[850] leading-[1.05] tracking-[-1.8px] text-[clamp(36px,4.6vw,54px)]">
-              Choose your <GradientText>access pathway</GradientText>
+              How You Can be <GradientText>Part of This Event</GradientText>
             </h2>
           </div>
 
@@ -470,9 +486,6 @@ export function AttendOverviewSection() {
             {/* Door 1 */}
             <div className="flex flex-col justify-between p-9 rounded-[24px] border border-[#C0F43C]/45 bg-gradient-to-br from-[#C0F43C]/10 via-[#041022] to-[#041022] shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
               <div>
-                <span className="inline-block px-3.5 py-1 rounded-full bg-[#C0F43C]/15 border border-[#C0F43C]/40 text-[#C0F43C] font-mono text-[11px] uppercase tracking-[1.8px] mb-4">
-                  Door 01 · Buy-Side Financial Institutions (70%+ Ratio)
-                </span>
                 <h3 className="text-white font-extrabold text-[25px] leading-[1.2] mb-3">
                   Delegate Pass — complimentary, strictly by invitation and qualification
                 </h3>
@@ -495,9 +508,6 @@ export function AttendOverviewSection() {
             {/* Door 2 */}
             <div className="flex flex-col justify-between p-9 rounded-[24px] border border-cyan/40 bg-gradient-to-br from-cyan/10 via-[#041022] to-[#041022] shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
               <div>
-                <span className="inline-block px-3.5 py-1 rounded-full bg-cyan/15 border border-cyan/40 text-cyan font-mono text-[11px] uppercase tracking-[1.8px] mb-4">
-                  Door 02 · Commercial Access (Capped Quota)
-                </span>
                 <h3 className="text-white font-extrabold text-[25px] leading-[1.2] mb-3">
                   Business Pass — paid commercial access with strictly capped quota
                 </h3>
@@ -523,23 +533,10 @@ export function AttendOverviewSection() {
         </div>
       </section>
 
-      {/* Video & Value Section */}
+      {/* Value Section */}
       <section className="py-[86px] bg-gradient-to-b from-[#031127] to-[#020b1c] text-center max-sm:py-[62px]">
         <div className="w-[min(1120px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-28px,1120px)]">
-          <h2 className="max-w-[820px] mx-auto text-white font-[850] leading-[1.05] tracking-[-1.8px] text-[clamp(40px,5vw,60px)] max-sm:text-[38px] max-sm:tracking-[-1px]">
-            Experience the Pedigree of <GradientText>World AI Show.</GradientText>
-          </h2>
-          <div className="relative w-[min(700px,100%)] aspect-video mx-auto my-[58px] border-[3px] border-[#8559ff]/58 rounded-[13px] overflow-hidden shadow-[0_0_24px_rgba(151,108,255,0.35)]">
-            <iframe
-              src="https://www.youtube.com/embed/rIHUrmsdY2U?rel=0&modestbranding=1"
-              title="World AI Show Executive Forum Aftermovie"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="absolute inset-0 w-full h-full border-0"
-              loading="lazy"
-            />
-          </div>
-          <h3 className="max-w-[820px] mx-auto mt-16 mb-10 text-white font-[850] leading-[1.08] tracking-[-1.5px] text-[clamp(32px,4vw,46px)] max-sm:text-[30px]">
+          <h3 className="max-w-[820px] mx-auto mt-0 mb-10 text-white font-[850] leading-[1.08] tracking-[-1.5px] text-[clamp(32px,4vw,46px)] max-sm:text-[30px]">
             Why Banking Leaders Convene in <GradientText>DIFC District, Dubai</GradientText>
           </h3>
           <div className="grid grid-cols-3 gap-4 mb-9 max-[980px]:grid-cols-[repeat(3,310px)] max-sm:grid-cols-1">
@@ -566,14 +563,11 @@ export function AttendDelegateSection() {
         <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] rounded-full bg-[#C0F43C]/2 blur-[130px] pointer-events-none z-0" />
 
         <div className="relative z-10 max-w-[840px]">
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
-            Delegate Pass — Complimentary, Strictly By Invitation &amp; Qualification
-          </span>
           <h1 className="m-0 text-[#f7f9ff] font-[850] leading-[1.05] tracking-[-1.8px] text-[clamp(42px,5.4vw,66px)] max-sm:text-[36px]">
             Built for Pre-Qualified <GradientText>Banking &amp; Financial Services CXOs.</GradientText>
           </h1>
           <p className="max-w-[740px] mt-[24px] mb-0 text-white/88 text-[19px] leading-normal">
-            Target Audience: CIOs, CTOs, CROs, CCOs, CDAIOs, Heads of Fraud, MLROs, and Regulators. Senior banking, insurance, and financial services executives attend by invitation on a complimentary Delegate Pass, subject to qualification against an active operational budget or deployment mandate.
+            Complimentary Delegate Passes are reserved for senior banking, insurance, and financial services leaders, including CIOs, CTOs, CROs, CCOs, CDAIOs, Heads of Fraud, MLROs, and regulators attending by invitation and subject to qualification against an active operational budget or deployment mandate.
           </p>
           <div className="flex gap-3.5 mt-9 max-sm:flex-col max-sm:items-start max-sm:gap-4">
             <ArrowButton href="#delegate-qualification">Apply for a Delegate Pass</ArrowButton>
@@ -620,21 +614,18 @@ export function AttendSponsorSection() {
       {/* Hero Section */}
       <section
         className="relative min-h-[760px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1120px)/2))] py-[76px] pt-[280px] overflow-hidden bg-cover bg-[position:right_center] bg-no-repeat max-sm:min-h-[690px] max-sm:px-[18px] max-sm:py-[56px] max-sm:pt-[240px]"
-        style={{ backgroundImage: 'url("/banking/images/Attend/Sponsor-banner.webp")' }}
+        style={{ backgroundImage: 'url("/banking/images/Attend/Delegates-banner.webp")' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#020713]/88 via-[#020713]/48 to-transparent z-0 pointer-events-none" />
         <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] rounded-full bg-[#18d4ff]/4 blur-[110px] pointer-events-none z-0" />
         <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] rounded-full bg-[#C0F43C]/2 blur-[130px] pointer-events-none z-0" />
 
         <div className="relative z-10 max-w-[840px]">
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
-            Commercial Packages &amp; Booth Standards · Dubai 2027
-          </span>
           <h1 className="m-0 text-[#f7f9ff] font-[850] leading-[1.05] tracking-[-1.8px] text-[clamp(42px,5.4vw,66px)] max-sm:text-[36px]">
             Where Middle East banking leaders specify, procure, and <GradientText>deploy production AI.</GradientText>
           </h1>
           <p className="max-w-[760px] mt-[24px] mb-0 text-white/88 text-[19px] leading-normal">
-            Middle East banks are finalising their 2027 technology procurement decisions now. Commercial partnerships are structured around 20-minute plenary keynotes, exclusive 75-minute workshop clinics, standardised 6 sqm, 9 sqm, and 12 sqm concourse booths, and private 15-buyer CXO closed-door boardrooms.
+            Explore commercial partnerships structured around plenary keynotes, workshop clinics, concourse booths, and private buyer CXO closed-door boardrooms.
           </p>
           <div className="flex gap-3.5 mt-9 max-sm:flex-col max-sm:items-start max-sm:gap-4">
             <ArrowButton href="/banking/sponsorship-enquiry/">Enquire About Sponsorship</ArrowButton>
@@ -691,14 +682,11 @@ export function AttendMediaSection() {
         <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] rounded-full bg-[#C0F43C]/2 blur-[130px] pointer-events-none z-0" />
 
         <div className="relative z-10 max-w-[820px]">
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
-            Financial Press Accreditation · Dubai 2027
-          </span>
           <h1 className="m-0 text-[#f7f9ff] font-[850] leading-[1.05] tracking-[-1.8px] text-[clamp(44px,5.5vw,68px)] max-sm:text-[38px]">
             Cover the Premier <GradientText>Middle East Banking AI Forum</GradientText>
           </h1>
           <p className="max-w-[710px] mt-[24px] mb-0 text-white/88 text-[19px] leading-normal">
-            Financial press credentials, executive interview room access, and editorial partnerships for World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE).
+            Secure accredited press credentials, dedicated broadcast suite access, and 1-on-1 briefings with commercial bank CXOs, financial crime heads, and regulators setting the Middle East&apos;s 2027 AI agenda.
           </p>
           <div className="flex gap-3.5 mt-9 max-sm:flex-col max-sm:items-start max-sm:gap-4">
             <ArrowButton href="/banking/media-enquiry/">Apply for Media Accreditation</ArrowButton>
@@ -715,10 +703,10 @@ export function AttendMediaSection() {
         title={<>Financial Press Credentials &amp; <GradientText>Executive Interview Access</GradientText></>}
         text={
           <>
-            World AI Show | AI in Banking and Financial Services | Dubai 2027 convenes 300+ pre-qualified C-suite banking, insurance, and risk leaders alongside 35–45 expert faculty speakers in DIFC District, Dubai.
+            World AI Show | Banking and Financial Services convenes 300+ pre-qualified C-suite banking, insurance, and risk leaders alongside 35–45 expert faculty speakers in DIFC District, Dubai.
             <br />
             <br />
-            Accredited financial journalists, editors, and industry analysts receive press credentials, dedicated interview suite access, and official research syndication opportunities across Day 1 of the March Dubai Cluster.
+            Accredited financial journalists, editors, and industry analysts receive press credentials, dedicated interview suite access, and official research syndication opportunities across the entire day of the event.
           </>
         }
       />
@@ -745,14 +733,11 @@ export function AttendAssociationSection() {
         <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] rounded-full bg-[#C0F43C]/2 blur-[130px] pointer-events-none z-0" />
 
         <div className="relative z-10 max-w-[820px]">
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
-            Banking Federations &amp; FinTech Alliances · Dubai 2027
-          </span>
           <h1 className="m-0 text-[#f7f9ff] font-[850] leading-[1.05] tracking-[-1.8px] text-[clamp(44px,5.5vw,68px)] max-sm:text-[38px]">
             Institutional <GradientText>Partnership Application</GradientText>
           </h1>
           <p className="max-w-[710px] mt-[24px] mb-0 text-white/88 text-[19px] leading-normal">
-            Regional fintech associations, banking federations, risk &amp; compliance institutes, and trade chambers collaborating on World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai).
+            Collaborate with regional fintech associations, banking federations, and regulatory bodies to steer national AI adoption, foster bilateral delegations, and champion audited financial innovation across the Middle East.
           </p>
           <div className="flex gap-3.5 mt-9 max-sm:flex-col max-sm:items-start max-sm:gap-4">
             <ArrowButton href="/banking/association-enquiry/">Apply for Institutional Partnership</ArrowButton>

@@ -30,15 +30,9 @@ export function SpeakersCTASection() {
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-7 items-stretch">
           {/* ── Card 1: Delegate Pass (Lime Accent Glass Card) ── */}
           <article className="group relative p-10 max-sm:p-7 rounded-[28px] border border-[#C0F43C]/35 bg-gradient-to-br from-[#0a1e2e]/90 via-[#051122]/95 to-[#030915]/98 backdrop-blur-xl shadow-[0_24px_64px_rgba(0,0,0,0.5),0_0_32px_rgba(192,244,60,0.08),inset_0_1px_0_rgba(255,255,255,0.12)] hover:border-[#C0F43C]/65 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-            <div className="absolute top-0 left-10 right-10 h-[2px] bg-gradient-to-r from-transparent via-[#C0F43C] to-transparent opacity-85" />
             <div className="absolute -top-20 -right-20 w-52 h-52 rounded-full bg-[#C0F43C]/10 blur-3xl pointer-events-none" />
 
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#C0F43C]/35 bg-[#C0F43C]/10 text-[#C0F43C] font-mono text-[11px] font-bold uppercase tracking-[1.8px] mb-7">
-                <span className="w-2 h-2 rounded-full bg-[#C0F43C] animate-pulse" />
-                Dubai · 24 March 2027 · 300+ Senior Banking Leaders · 70%+ Buy-Side
-              </div>
-
               <div className="grid grid-cols-3 gap-3 mb-8 p-4 rounded-2xl border border-white/[0.08] bg-[#020814]/65 max-sm:grid-cols-1">
                 <div className="flex flex-col pr-2 border-r border-white/10 max-sm:border-r-0 max-sm:border-b max-sm:pb-3">
                   <strong className="text-[24px] xl:text-[26px] font-[850] leading-none text-[#C0F43C] tracking-tight tabular-nums">
@@ -70,7 +64,7 @@ export function SpeakersCTASection() {
 
               <h2 className="m-0 text-white font-[850] leading-[1.1] tracking-[-1.4px] text-[clamp(26px,3.1vw,38px)]">
                 Be in the room where{" "}
-                <GradientText>2027 banking AI architecture gets finalised</GradientText>
+                <GradientText>2027s banking AI architecture gets finalised</GradientText>
               </h2>
 
               <p className="m-0 mt-4 text-white/75 text-[15.5px] leading-[1.65]">
@@ -99,15 +93,9 @@ export function SpeakersCTASection() {
 
           {/* ── Card 2: Commercial Partnerships (Cyan Accent Glass Card) ── */}
           <article className="group relative p-10 max-sm:p-7 rounded-[28px] border border-[#18d4ff]/35 bg-gradient-to-br from-[#071c36]/90 via-[#051122]/95 to-[#030915]/98 backdrop-blur-xl shadow-[0_24px_64px_rgba(0,0,0,0.5),0_0_32px_rgba(24,212,255,0.08),inset_0_1px_0_rgba(255,255,255,0.12)] hover:border-[#18d4ff]/65 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-            <div className="absolute top-0 left-10 right-10 h-[2px] bg-gradient-to-r from-transparent via-[#18d4ff] to-transparent opacity-85" />
             <div className="absolute -top-20 -right-20 w-52 h-52 rounded-full bg-[#18d4ff]/10 blur-3xl pointer-events-none" />
 
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#18d4ff]/35 bg-[#18d4ff]/10 text-[#18d4ff] font-mono text-[11px] font-bold uppercase tracking-[1.8px] mb-7">
-                <span className="w-2 h-2 rounded-full bg-[#18d4ff] animate-pulse" />
-                4 Sector Content Pillars · Curated Tech Showcase · Closed-Door CXO Boardrooms
-              </div>
-
               <div className="grid grid-cols-[1fr_1.15fr] gap-4 mb-8 p-4 rounded-2xl border border-white/[0.08] bg-[#020814]/65 max-sm:grid-cols-1">
                 <div className="flex flex-col pr-3 border-r border-white/10 max-sm:border-r-0 max-sm:border-b max-sm:pb-3">
                   <strong className="text-[24px] xl:text-[26px] font-[850] leading-none text-[#18d4ff] tracking-tight tabular-nums">

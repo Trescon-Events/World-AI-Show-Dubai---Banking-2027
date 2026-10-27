@@ -237,7 +237,7 @@ function StatCard({ stat }: { stat: (typeof statsData)[0] }) {
 
 export function StatsSection() {
   return (
-    <section className="relative py-[88px] -mt-[30px] z-10 bg-[#020c21] overflow-hidden max-sm:py-[64px] max-sm:mt-0" id="attend">
+    <section className="relative pt-[68px] pb-[32px] -mt-[30px] z-10 bg-[#020b1c] overflow-hidden max-sm:py-[48px] max-sm:mt-0" id="attend">
       <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
         {/* Title Heading */}
         <h2 className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(38px,4.8vw,56px)]">

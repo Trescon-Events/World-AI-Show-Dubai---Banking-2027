@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Seeking banking CIOs, CTOs, CROs, CCOs, CDAIOs, and Regulators with live production evidence to join the stage on 24 March 2027 in DIFC District, Dubai.",
 };
 
-const subNav = ["Overview", "The 2030 Vision", "Agenda", "Themes", "Call for Speakers"];
+const subNav = ["Overview", "The Vision", "Agenda", "Themes", "Call for Speakers"];
 
 export default function CallForSpeakersPage() {
   return (

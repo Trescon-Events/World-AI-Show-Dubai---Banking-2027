@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Explore the full 1-day master schedule for Wednesday 24 March 2027: Execution Under Regulation in DIFC District, Dubai, UAE.",
 };
 
-const subNav = ["Overview", "The 2030 Vision", "Agenda", "Themes", "Call for Speakers"];
+const subNav = ["Overview", "The Vision", "Agenda", "Themes", "Call for Speakers"];
 
 export default function AgendaSessionsPage() {
   return (
