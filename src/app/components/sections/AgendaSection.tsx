@@ -152,11 +152,18 @@ export function AgendaSection({
     >
       <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
         {/* Headings */}
-        <h2 className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(36px,4.8vw,56px)] mb-[44px]">
+        <h2
+          data-aos="fade-up"
+          className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(36px,4.8vw,56px)] mb-[44px]"
+        >
           {title}
         </h2>
         {description && (
-          <p className="max-w-[920px] mx-auto -mt-6 text-center text-muted text-[18px] leading-[1.55] mb-[44px]">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="max-w-[920px] mx-auto -mt-6 text-center text-muted text-[18px] leading-[1.55] mb-[44px]"
+          >
             {description}
           </p>
         )}
@@ -168,6 +175,8 @@ export function AgendaSection({
             return (
               <article
                 key={theme.index}
+                data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
+                data-aos-delay={String((idx % 2) * 150)}
                 onMouseEnter={() => setExpandedPillar(idx)}
                 onMouseLeave={() => setExpandedPillar(null)}
                 onClick={() => setExpandedPillar(isExpanded ? null : idx)}

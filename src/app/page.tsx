@@ -13,7 +13,7 @@ import { FooterSection } from "./components/sections/FooterSection";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col min-h-screen overflow-x-hidden bg-[#020b1c]">
+    <main className="relative flex flex-col min-h-screen overflow-x-clip bg-[#020b1c]">
       <Header />
       <HeroSection />
       <StatsSection />

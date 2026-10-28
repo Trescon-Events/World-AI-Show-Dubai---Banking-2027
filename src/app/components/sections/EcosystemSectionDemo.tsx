@@ -321,6 +321,8 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
   return (
     <article
       ref={cardRef}
+      data-aos={cardIndex === 0 ? "fade-right" : cardIndex === 1 ? "fade-up" : "fade-left"}
+      data-aos-delay={String(cardIndex * 150)}
       onMouseEnter={replayAnimation}
       className="group relative p-7 rounded-[20px] border border-[#2a4359]/80 bg-[#071320] shadow-[0_24px_60px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.08)] text-left flex flex-col justify-between overflow-hidden hover:-translate-y-1.5 hover:border-[#2fd5f6]/55 hover:shadow-[0_28px_70px_rgba(0,0,0,0.65),0_0_32px_rgba(47,213,246,0.14)] transition-all duration-300"
     >
@@ -480,12 +482,19 @@ export function EcosystemSectionDemo() {
 
       {/* ───── S3 · The argument — page centre of gravity ───── */}
       <div className="relative z-10 w-full max-w-[1140px] mx-auto flex flex-col items-center text-center">
-        <h2 className="max-w-[960px] text-center font-[850] text-white leading-[1.06] tracking-[-1.8px] text-[clamp(34px,4.5vw,54px)] mb-6">
+        <h2
+          data-aos="fade-up"
+          className="max-w-[960px] text-center font-[850] text-white leading-[1.06] tracking-[-1.8px] text-[clamp(34px,4.5vw,54px)] mb-6"
+        >
           Transitioning From AI Experimentation to{" "}
           <GradientText>Audit-Ready Core Production</GradientText>
         </h2>
 
-        <p className="max-w-[880px] text-white/75 text-[19px] leading-[1.6] mb-14 max-sm:text-[16px]">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="max-w-[880px] text-white/75 text-[19px] leading-[1.6] mb-14 max-sm:text-[16px]"
+        >
           Middle East’s financial leaders are committing substantial capital to AI, but taking models live into core operations requires uncompromising governance. Scaling production now demands clear model explainability, seamless integration with legacy banking cores, and uncompromising adherence to Central Bank of the UAE (CBUAE) and DFSA regulatory mandates.
         </p>
 
@@ -497,7 +506,11 @@ export function EcosystemSectionDemo() {
         </div>
 
         {/* Executive Mandate Callout Banner */}
-        <div className="relative w-full p-9 max-sm:p-6 rounded-[24px] border border-[#C0F43C]/35 bg-gradient-to-r from-[#06152d]/95 via-[#091e3a]/95 to-[#06152d]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45),0_0_40px_rgba(192,244,60,0.08)] overflow-hidden text-left">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-delay="150"
+          className="relative w-full p-9 max-sm:p-6 rounded-[24px] border border-[#C0F43C]/35 bg-gradient-to-r from-[#06152d]/95 via-[#091e3a]/95 to-[#06152d]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45),0_0_40px_rgba(192,244,60,0.08)] overflow-hidden text-left"
+        >
           {/* Left glowing accent bar */}
           <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-[#C0F43C] via-[#18d4ff] to-[#C0F43C]" />
           {/* Right decorative radial glow */}

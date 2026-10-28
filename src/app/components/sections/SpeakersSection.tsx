@@ -59,7 +59,10 @@ export function SpeakersSection({
         </div>
 
         {/* S12 · Faculty Call Card */}
-        <div className="mt-16 p-9 max-sm:p-6 rounded-[24px] border border-[#C0F43C]/35 bg-gradient-to-r from-[#06152d]/95 via-[#081d38]/95 to-[#06152d]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-between gap-8 max-lg:flex-col max-lg:text-center">
+        <div
+          data-aos="zoom-in-up"
+          className="mt-16 p-9 max-sm:p-6 rounded-[24px] border border-[#C0F43C]/35 bg-gradient-to-r from-[#06152d]/95 via-[#081d38]/95 to-[#06152d]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-between gap-8 max-lg:flex-col max-lg:text-center"
+        >
           <div className="max-w-[720px]">
             <span className="inline-block text-[#C0F43C] font-mono text-[11px] font-bold uppercase tracking-[2.2px] mb-2">
               Faculty

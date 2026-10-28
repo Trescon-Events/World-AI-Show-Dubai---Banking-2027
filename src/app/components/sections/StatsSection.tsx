@@ -197,11 +197,13 @@ function HoverParticles({ isHovered }: { isHovered: boolean }) {
 }
 
 /* ── Interactive Stats Card (Component C1) ───────────────── */
-function StatCard({ stat }: { stat: (typeof statsData)[0] }) {
+function StatCard({ stat, index }: { stat: (typeof statsData)[0]; index: number }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <article
+      data-aos={index === 0 ? "fade-right" : index === 3 ? "fade-left" : "fade-up"}
+      data-aos-delay={String(index * 100)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="relative min-h-[194px] p-6 border-0 border-t border-[#293442]/55 rounded-[15px] bg-gradient-to-br from-[#00ceff]/20 to-[#c0f43c]/9 shadow-[0_20px_60px_rgba(0,0,0,0.22),inset_0_0_28px_rgba(65,220,255,0.06)] backdrop-blur-md group hover:-translate-y-1 transition-all duration-300 border-t-[#293442] overflow-hidden flex flex-col items-center justify-center text-center"
@@ -240,14 +242,17 @@ export function StatsSection() {
     <section className="relative pt-[68px] pb-[32px] -mt-[30px] z-10 bg-[#020b1c] overflow-hidden max-sm:py-[48px] max-sm:mt-0" id="attend">
       <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
         {/* Title Heading */}
-        <h2 className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(38px,4.8vw,56px)]">
+        <h2
+          data-aos="fade-up"
+          className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(38px,4.8vw,56px)]"
+        >
           <GradientText>The Power</GradientText> Behind the <GradientText>Room</GradientText>
         </h2>
 
         {/* Stats Grid Layout (Four across desktop, two across mobile per C1) */}
         <div className="grid grid-cols-4 gap-4 mt-12 pb-1.5 max-[980px]:grid-cols-2 max-sm:grid-cols-2 max-sm:mt-8">
-          {statsData.map((stat) => (
-            <StatCard key={stat.index} stat={stat} />
+          {statsData.map((stat, idx) => (
+            <StatCard key={stat.index} stat={stat} index={idx} />
           ))}
         </div>
       </div>

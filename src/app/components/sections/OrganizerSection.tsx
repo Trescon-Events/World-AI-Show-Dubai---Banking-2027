@@ -16,7 +16,11 @@ export function OrganizerSection() {
         {/* S11 · Twin Closing CTA Bands (Moved above Trescon section & top lines removed per Page 11) */}
         <div className="grid grid-cols-2 gap-6 max-[980px]:grid-cols-1">
           {/* Band 1: Delegate Pass */}
-          <div className="flex flex-col justify-between p-8 rounded-[24px] border border-white/15 bg-gradient-to-br from-[#06182e] via-[#041022] to-[#030917] shadow-[0_20px_50px_rgba(0,0,0,0.45)]">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="100"
+            className="flex flex-col justify-between p-8 rounded-[24px] border border-white/15 bg-gradient-to-br from-[#06182e] via-[#041022] to-[#030917] shadow-[0_20px_50px_rgba(0,0,0,0.45)]"
+          >
             <div>
               <h3 className="m-0 mb-6 text-white font-[850] text-[clamp(24px,2.8vw,32px)] leading-[1.15] tracking-[-0.8px]">
                 Be in the room where 2027s banking AI architecture gets finalised
@@ -33,7 +37,11 @@ export function OrganizerSection() {
           </div>
 
           {/* Band 2: Sponsorship */}
-          <div className="flex flex-col justify-between p-8 rounded-[24px] border border-white/15 bg-gradient-to-br from-[#06182e] via-[#041022] to-[#030917] shadow-[0_20px_50px_rgba(0,0,0,0.45)]">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="200"
+            className="flex flex-col justify-between p-8 rounded-[24px] border border-white/15 bg-gradient-to-br from-[#06182e] via-[#041022] to-[#030917] shadow-[0_20px_50px_rgba(0,0,0,0.45)]"
+          >
             <div>
               <h3 className="m-0 mb-6 text-white font-[850] text-[clamp(24px,2.8vw,32px)] leading-[1.15] tracking-[-0.8px]">
                 Put your enterprise solution directly before qualified banking procurement committees
@@ -51,7 +59,10 @@ export function OrganizerSection() {
         </div>
 
         {/* S10 · Credibility & Series Heritage */}
-        <div className="p-9 sm:p-11 rounded-[28px] border border-white/10 bg-gradient-to-b from-[#061428]/90 via-[#040d1d]/95 to-[#030915]/95 shadow-[0_24px_60px_rgba(0,0,0,0.45)]">
+        <div
+          data-aos="fade-up"
+          className="p-9 sm:p-11 rounded-[28px] border border-white/10 bg-gradient-to-b from-[#061428]/90 via-[#040d1d]/95 to-[#030915]/95 shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
+        >
           <div className="text-center mb-10">
             <h2 className="text-center font-[850] text-white text-[clamp(28px,3.8vw,46px)] leading-[1.08] tracking-[-1.5px] max-w-[900px] mx-auto mb-5">
               48 global editions. <GradientText>The world&apos;s longest-running enterprise AI series.</GradientText>
@@ -80,6 +91,7 @@ export function OrganizerSection() {
 
         {/* Main Organizer Attribution Panel */}
         <div
+          data-aos="zoom-in-up"
           className="grid grid-cols-[0.68fr_1fr] gap-[56px] items-center min-h-[240px] p-[48px_56px] border border-white/10 border-t-[#00CEFF]/60 rounded-[28px] backdrop-blur-[16px] shadow-[0_16px_48px_rgba(0,0,0,0.4),0_0_32px_rgba(192,244,60,0.04)] max-[980px]:grid-cols-1 max-sm:p-[34px_22px] max-sm:gap-[32px]"
           style={{
             background:

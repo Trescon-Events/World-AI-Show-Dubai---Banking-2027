@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { AOSInit } from "./components/AOSInit";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} h-full antialiased`}>
       <body suppressHydrationWarning className="min-h-full flex flex-col font-space-grotesk bg-bg text-text">
+        <AOSInit />
         {children}
         <ScrollToTop />
       </body>

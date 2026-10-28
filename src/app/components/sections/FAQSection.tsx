@@ -67,7 +67,11 @@ export function FAQSection() {
         </h2>
 
         {/* Semantic Accordion List */}
-        <div className="max-w-[976px] mx-auto mt-12 p-[26px_16px] border border-white/8 rounded-[24px] bg-[#040a19]/50 shadow-[0_20px_60px_rgba(0,0,0,0.1)] max-sm:p-3">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          className="max-w-[976px] mx-auto mt-12 p-[26px_16px] border border-white/8 rounded-[24px] bg-[#040a19]/50 shadow-[0_20px_60px_rgba(0,0,0,0.1)] max-sm:p-3"
+        >
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (

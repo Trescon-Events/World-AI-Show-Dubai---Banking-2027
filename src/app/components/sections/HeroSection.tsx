@@ -34,25 +34,41 @@ export function HeroSection() {
       {/* Hero Content */}
       <div className="container relative z-10 mx-auto px-6 pt-[220px] lg:pt-[240px] pb-16 max-sm:pt-[175px] max-sm:pb-12 max-sm:px-4 flex flex-col items-center">
         {/* Event Lockup Sub-label */}
-        <p className="text-white/95 font-mono text-[14px] sm:text-[17px] lg:text-[19px] uppercase tracking-[2.2px] font-bold mb-5">
+        <p
+          data-aos="fade-down"
+          data-aos-delay="50"
+          className="text-white/95 font-mono text-[14px] sm:text-[17px] lg:text-[19px] uppercase tracking-[2.2px] font-bold mb-5"
+        >
           World AI Show | Banking and Financial Services
         </p>
 
         {/* Hero Title */}
-        <h1 className="max-w-[1040px] mx-auto text-white font-[850] leading-[1.08] xl:leading-[72px] tracking-[-1.8px] text-[clamp(34px,4.8vw,66px)] xl:text-[66px] text-center mb-5">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="max-w-[1040px] mx-auto text-white font-[850] leading-[1.08] xl:leading-[72px] tracking-[-1.8px] text-[clamp(34px,4.8vw,66px)] xl:text-[66px] text-center mb-5"
+        >
           <span className="block">Controlled AI deployment for</span>
           <span className="block"><GradientText>regulated financial operations.</GradientText></span>
         </h1>
 
         {/* Standfirst (20px, 33px line-height, 0 tracking, 400 weight, #CBD5E1) */}
-        <p className="max-w-[880px] mx-auto text-[#CBD5E1] text-[clamp(15px,1.6vw,19px)] xl:text-[19px] font-normal leading-relaxed xl:leading-[31px] tracking-normal text-center mb-8">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="max-w-[880px] mx-auto text-[#CBD5E1] text-[clamp(15px,1.6vw,19px)] xl:text-[19px] font-normal leading-relaxed xl:leading-[31px] tracking-normal text-center mb-8"
+        >
           A premier executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations, convening 300+ C-suite leaders and actively locking down the architecture, fraud defense, and core procurement for the future.
         </p>
 
-        <div className="w-full max-w-[780px] border-t border-white/20 opacity-60 mt-1" />
+        <div data-aos="fade-in" data-aos-delay="250" className="w-full max-w-[780px] border-t border-white/20 opacity-60 mt-1" />
 
         {/* Event Meta Footer */}
-        <div className="grid grid-cols-[max-content_max-content_max-content] justify-center items-center gap-6 w-full max-w-[820px] mx-auto mt-7 text-center max-[980px]:grid-cols-1 max-sm:gap-3 max-sm:mt-5">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="grid grid-cols-[max-content_max-content_max-content] justify-center items-center gap-6 w-full max-w-[820px] mx-auto mt-7 text-center max-[980px]:grid-cols-1 max-sm:gap-3 max-sm:mt-5"
+        >
           {/* Column 1: Dates */}
           <div className="pr-6 border-r border-white/27 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-sm:w-full max-sm:pb-3 max-sm:border-b max-sm:border-white/20">
             <strong className="block text-[34px] font-[850] text-white leading-none max-sm:text-[26px]">
@@ -85,7 +101,11 @@ export function HeroSection() {
         </div>
 
         {/* Hero CTA Actions */}
-        <div className="flex justify-center flex-wrap gap-3.5 mt-9 max-sm:flex-col max-sm:items-center max-sm:gap-3.5 max-sm:w-full max-sm:max-w-[340px]">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          className="flex justify-center flex-wrap gap-3.5 mt-9 max-sm:flex-col max-sm:items-center max-sm:gap-3.5 max-sm:w-full max-sm:max-w-[340px]"
+        >
           <Button href="/banking/attend/delegate/" showArrow={true}>
             Apply for Delegate Pass (Complimentary)
           </Button>
