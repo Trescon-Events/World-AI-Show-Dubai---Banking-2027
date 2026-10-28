@@ -143,7 +143,7 @@ export function AgendaSection({
   description?: ReactNode | null;
   showSixBlocks?: boolean;
 }) {
-  const [expandedPillar, setExpandedPillar] = useState<number | null>(0);
+  const [expandedPillar, setExpandedPillar] = useState<number | null>(null);
 
   return (
     <section
@@ -161,18 +161,20 @@ export function AgendaSection({
           </p>
         )}
 
-        {/* Component C3 — Expandable Pillar Cards (4 Cards in 2x2 Grid) */}
-        <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
+        {/* Component C3 — Expandable Pillar Cards (4 Cards in 2x2 Grid — expands on hover) */}
+        <div className="grid grid-cols-2 gap-6 items-start max-md:grid-cols-1">
           {themeItems.map((theme, idx) => {
             const isExpanded = expandedPillar === idx;
             return (
               <article
                 key={theme.index}
+                onMouseEnter={() => setExpandedPillar(idx)}
+                onMouseLeave={() => setExpandedPillar(null)}
                 onClick={() => setExpandedPillar(isExpanded ? null : idx)}
                 className={`group relative flex flex-col justify-between p-7 rounded-[20px] border transition-all duration-300 cursor-pointer text-left ${
                   isExpanded
-                    ? "border-[#C0F43C]/65 bg-gradient-to-br from-[#071a33]/95 via-[#040e22]/98 to-[#030916]/98 shadow-[0_20px_50px_rgba(0,0,0,0.45),0_0_32px_rgba(192,244,60,0.14)]"
-                    : "border-white/15 bg-gradient-to-br from-[#00ceff]/10 via-[#040c1e]/95 to-[#996cff]/10 shadow-[inset_0_0_28px_rgba(65,220,255,0.05),0_20px_50px_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:border-[#18d4ff]/55"
+                    ? "border-[#C0F43C]/65 bg-gradient-to-br from-[#071a33]/95 via-[#040e22]/98 to-[#030916]/98 shadow-[0_20px_50px_rgba(0,0,0,0.45),0_0_32px_rgba(192,244,60,0.14)] -translate-y-1"
+                    : "border-white/15 bg-gradient-to-br from-[#00ceff]/10 via-[#040c1e]/95 to-[#996cff]/10 shadow-[inset_0_0_28px_rgba(65,220,255,0.05),0_20px_50px_rgba(0,0,0,0.3)]"
                 }`}
               >
                 <div>
@@ -181,7 +183,7 @@ export function AgendaSection({
                       className={`grid place-items-center w-[48px] h-[48px] border rounded-[14px] transition-all duration-300 ${
                         isExpanded
                           ? "border-[#C0F43C]/60 bg-[#C0F43C]/18 text-[#C0F43C]"
-                          : "border-cyan/30 bg-cyan/10 text-cyan group-hover:border-[#C0F43C]/50 group-hover:bg-[#C0F43C]/18 group-hover:text-[#C0F43C]"
+                          : "border-cyan/30 bg-cyan/10 text-cyan"
                       }`}
                     >
                       <ThemeIcon index={idx} />
@@ -191,7 +193,7 @@ export function AgendaSection({
                         className={`px-3 py-1 rounded-full border font-mono text-[11px] font-bold uppercase tracking-[1.8px] transition-colors duration-300 ${
                           isExpanded
                             ? "border-[#C0F43C]/50 bg-[#C0F43C]/15 text-[#C0F43C]"
-                            : "border-white/10 bg-white/5 text-cyan group-hover:border-[#C0F43C]/40 group-hover:bg-[#C0F43C]/15 group-hover:text-[#C0F43C]"
+                            : "border-white/10 bg-white/5 text-cyan"
                         }`}
                       >
                         Pillar / {theme.index}
@@ -204,7 +206,7 @@ export function AgendaSection({
 
                   <h3
                     className={`m-0 mb-3 font-extrabold text-[21px] leading-[1.26] transition-colors duration-200 ${
-                      isExpanded ? "text-[#C0F43C]" : "text-white group-hover:text-[#C0F43C]"
+                      isExpanded ? "text-[#C0F43C]" : "text-white"
                     }`}
                   >
                     {theme.label}
@@ -214,8 +216,14 @@ export function AgendaSection({
                     {theme.shortDesc}
                   </p>
 
-                  {isExpanded && (
-                    <div className="mt-5 pt-4 border-t border-white/12 space-y-3 animate-fadeIn">
+                  <div
+                    className={`grid transition-all duration-300 ease-out overflow-hidden ${
+                      isExpanded
+                        ? "grid-rows-[1fr] opacity-100 mt-5 pt-4 border-t border-white/12"
+                        : "grid-rows-[0fr] opacity-0 mt-0 pt-0 border-t border-transparent"
+                    }`}
+                  >
+                    <div className="min-h-0 space-y-3 overflow-hidden">
                       <div>
                         <span className="block font-mono text-[11px] uppercase tracking-[1.6px] text-[#18d4ff] mb-1">
                           Operational Scope &amp; Technical Focus
@@ -229,7 +237,7 @@ export function AgendaSection({
                         Format: {theme.clinicalFormat}
                       </div>
                     </div>
-                  )}
+                  </div>
                 </div>
               </article>
             );
