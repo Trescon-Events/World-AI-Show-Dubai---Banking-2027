@@ -68,11 +68,11 @@ export function Logo() {
     <a
       className="flex items-center w-[180px] h-[60px] hover:opacity-90 transition-opacity duration-200"
       href="/banking/"
-      aria-label="World AI Show | AI in Banking and Financial Services | Dubai 2027"
+      aria-label="World AI Show | BFSI | Dubai 2027"
     >
       <img
         src="/banking/logos/wais-27-banking_header.svg"
-        alt="World AI Show | AI in Banking and Financial Services | Dubai 2027"
+        alt="World AI Show | BFSI | Dubai 2027"
         width={180}
         height={60}
         className="w-full h-full object-contain"

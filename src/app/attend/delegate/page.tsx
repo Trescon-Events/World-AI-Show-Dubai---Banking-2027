@@ -4,8 +4,8 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AttendDelegateSection } from "../page";
 
 export const metadata: Metadata = {
-  title: "Delegate Pass | Attend | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Delegate Pass — complimentary, strictly by invitation and qualification for CIOs, CTOs, CROs, CCOs, CDAIOs, Heads of Fraud, MLROs, and Regulators at World AI Show | AI in Banking and Financial Services | Dubai 2027.",
+  title: "Delegate Pass | Attend | World AI Show | BFSI | Dubai 2027",
+  description: "Delegate Pass — complimentary, strictly by invitation and qualification for CIOs, CTOs, CROs, CCOs, CDAIOs, Heads of Fraud, MLROs, and Regulators at World AI Show | BFSI | Dubai 2027.",
 };
 
 const subNav = ["Overview", "Delegate", "Sponsor", "Media Partner", "Association Partner"];

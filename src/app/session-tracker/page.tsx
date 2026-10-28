@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Session Tracker | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Session Attendance Tracker for World AI Show | AI in Banking and Financial Services | Dubai 2027.",
+  title: "Session Tracker | World AI Show | BFSI | Dubai 2027",
+  description: "Session Attendance Tracker for World AI Show | BFSI | Dubai 2027.",
 };
 
 export default function SessionTrackerPage() {

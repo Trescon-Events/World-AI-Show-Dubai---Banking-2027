@@ -5,8 +5,8 @@ import { GradientText } from "../Shared";
 
 const faqs = [
   {
-    q: "What is World AI Show | AI in Banking and Financial Services | Dubai 2027?",
-    a: "World AI Show | AI in Banking and Financial Services | Dubai 2027 is a 1-Day Executive Decision Forum taking place on 24 March 2027 in DIFC District, Dubai, UAE. It convenes 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (maintaining a minimum 70% buy-side enterprise ratio) to address controlled AI deployment for regulated financial operations.",
+    q: "What is World AI Show | BFSI | Dubai 2027?",
+    a: "World AI Show | BFSI | Dubai 2027 is a 1-Day Executive Decision Forum taking place on 24 March 2027 in DIFC District, Dubai, UAE. It convenes 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (maintaining a minimum 70% buy-side enterprise ratio) to address controlled AI deployment for regulated financial operations.",
   },
   {
     q: "How does this forum fit into the March Dubai Cluster?",
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Who organises the World AI Show Series?",
-    a: "World AI Show | AI in Banking and Financial Services | Dubai 2027 is organised by Trescon, the team behind the world's longest-running enterprise AI summit series with 48 completed global editions across four continents, convening 42,000+ C-level executives and 2,600+ expert speakers.",
+    a: "World AI Show | BFSI | Dubai 2027 is organised by Trescon, the team behind the world's longest-running enterprise AI summit series with 48 completed global editions across four continents, convening 42,000+ C-level executives and 2,600+ expert speakers.",
   },
 ];
 

@@ -15,7 +15,7 @@ const channels: ChannelItem[] = [
   {
     title: "CXO Closed-Door Boardroom Discussions",
     tag: "High-Focus Formats",
-    desc: "Move past generic panels. World AI Show | AI in Banking and Financial Services | Dubai 2027 features closed-door boardroom discussions limited to 15 pre-selected buy-side banking leaders per session. Focus on CBUAE and DFSA regulatory compliance, model risk governance, AML supervision, and core banking scaling.",
+    desc: "Move past generic panels. World AI Show | BFSI | Dubai 2027 features closed-door boardroom discussions limited to 15 pre-selected buy-side banking leaders per session. Focus on CBUAE and DFSA regulatory compliance, model risk governance, AML supervision, and core banking scaling.",
     benefits: [
       "Closed-door, Chatham House Rule guidelines",
       "Direct peer-to-peer insights exchange",

@@ -6,9 +6,9 @@ import { PartnerShowcase } from "./PartnerShowcase";
 import { FooterSection } from "../components/sections/FooterSection";
 
 export const metadata: Metadata = {
-  title: "Partners & Sponsors | World AI Show | AI in Banking and Financial Services | Dubai 2027",
+  title: "Partners & Sponsors | World AI Show | BFSI | Dubai 2027",
   description:
-    "Explore the Tier-Grouped Partner & Sponsor Showcase for World AI Show | AI in Banking and Financial Services | Dubai 2027: Speaking Sponsors (12 sqm), Engagement & Industry Partners (9 sqm), CXO Closed-Door Boardrooms, and Concourse Exhibitors (6 sqm).",
+    "Explore the Tier-Grouped Partner & Sponsor Showcase for World AI Show | BFSI | Dubai 2027: Speaking Sponsors (12 sqm), Engagement & Industry Partners (9 sqm), CXO Closed-Door Boardrooms, and Concourse Exhibitors (6 sqm).",
 };
 
 const subNav = ["Overview", "Sponsors", "Exhibitors", "Media", "Associations"];

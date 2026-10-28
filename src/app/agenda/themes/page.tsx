@@ -4,8 +4,8 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AgendaThemes } from "../AgendaPage";
 
 export const metadata: Metadata = {
-  title: "The 4 Core Content Pillars | Agenda | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Four operational mandates. One day. Explore the 4 Core Sector Content Pillars of World AI Show | AI in Banking and Financial Services | Dubai 2027.",
+  title: "The 4 Core Content Pillars | Agenda | World AI Show | BFSI | Dubai 2027",
+  description: "Four operational mandates. One day. Explore the 4 Core Sector Content Pillars of World AI Show | BFSI | Dubai 2027.",
 };
 
 const subNav = ["Overview", "The Vision", "Agenda", "Themes", "Call for Speakers"];

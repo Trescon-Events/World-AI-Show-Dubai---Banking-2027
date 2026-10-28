@@ -39,7 +39,7 @@ export function HeroSection() {
           data-aos-delay="50"
           className="text-white/95 font-mono text-[14px] sm:text-[17px] lg:text-[19px] uppercase tracking-[2.2px] font-bold mb-5"
         >
-          World AI Show | Banking and Financial Services
+          World AI Show | BFSI
         </p>
 
         {/* Hero Title */}

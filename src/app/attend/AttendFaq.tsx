@@ -41,7 +41,7 @@ export function AttendFaq({ faqs }: { faqs: string[] }) {
             >
               <div className="overflow-hidden">
                 <p className="max-w-[740px] ml-[68px] mr-6 pb-4 text-[#aeb5c5] text-[15px] leading-relaxed max-sm:ml-[44px]">
-                  World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE) is built for senior banking, insurance, risk, compliance, and regulatory decision-makers. Registration, sponsorship, and master schedule details are managed by the official Trescon team.
+                  World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE) is built for senior banking, insurance, risk, compliance, and regulatory decision-makers. Registration, sponsorship, and master schedule details are managed by the official Trescon team.
                 </p>
               </div>
             </div>

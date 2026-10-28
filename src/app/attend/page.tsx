@@ -6,9 +6,9 @@ import { GradientText } from "../components/Shared";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Attend | World AI Show | AI in Banking and Financial Services | Dubai 2027",
+  title: "Attend | World AI Show | BFSI | Dubai 2027",
   description:
-    "How to attend World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE). Explore the Delegate Pass (complimentary, strictly by invitation and qualification), Business Pass, and Commercial Sponsorship packages.",
+    "How to attend World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE). Explore the Delegate Pass (complimentary, strictly by invitation and qualification), Business Pass, and Commercial Sponsorship packages.",
 };
 
 const subNav = ["Overview", "Delegate", "Sponsor", "Media Partner", "Association Partner"];
@@ -179,7 +179,7 @@ const associationBenefits: CardItem[] = [
   },
   {
     title: "Co-Branded GCC Ecosystem Outreach",
-    text: "Joint executive communications, regulatory briefings, and institutional visibility across World AI Show | AI in Banking and Financial Services | Dubai 2027.",
+    text: "Joint executive communications, regulatory briefings, and institutional visibility across World AI Show | BFSI | Dubai 2027.",
     icon: "/banking/images/Attend/partner/joint-marketing-campaigns.webp",
   },
   {
@@ -446,7 +446,7 @@ export function AttendOverviewSection() {
               Controlled execution over <GradientText>financial hype.</GradientText>
             </h2>
             <p className="mt-6 mb-4 text-white/75 text-[17px] leading-[1.65]">
-              World AI Show | Banking and Financial Services is an executive decision forum convening commercial bank CXOs, Chief Risk Officers, Chief Compliance Officers, Chief Data &amp; AI Officers, and financial regulators moving AI from experimental sandboxes into core transactional workflows. As part of the World AI Show Industry Series, the forum addresses the architectural hurdles, model auditability standards, and fiduciary risk controls required under active oversight from the Central Bank of the UAE (CBUAE) and DFSA.
+              World AI Show | BFSI is an executive decision forum convening commercial bank CXOs, Chief Risk Officers, Chief Compliance Officers, Chief Data &amp; AI Officers, and financial regulators moving AI from experimental sandboxes into core transactional workflows. As part of the World AI Show Industry Series, the forum addresses the architectural hurdles, model auditability standards, and fiduciary risk controls required under active oversight from the Central Bank of the UAE (CBUAE) and DFSA.
             </p>
             <p className="m-0 text-white/75 text-[17px] leading-[1.65]">
               It is structured around four critical operational mandates every financial buying committee must resolve: real-time fraud and AML defense, agentic servicing automation, algorithmic credit underwriting, and sovereign model risk governance.
@@ -703,7 +703,7 @@ export function AttendMediaSection() {
         title={<>Financial Press Credentials &amp; <GradientText>Executive Interview Access</GradientText></>}
         text={
           <>
-            World AI Show | Banking and Financial Services convenes 300+ pre-qualified C-suite banking, insurance, and risk leaders alongside 35–45 expert faculty speakers in DIFC District, Dubai.
+            World AI Show | BFSI convenes 300+ pre-qualified C-suite banking, insurance, and risk leaders alongside 35–45 expert faculty speakers in DIFC District, Dubai.
             <br />
             <br />
             Accredited financial journalists, editors, and industry analysts receive press credentials, dedicated interview suite access, and official research syndication opportunities across the entire day of the event.
@@ -755,7 +755,7 @@ export function AttendAssociationSection() {
         title={<>Banking Federations, FinTech Councils &amp; <GradientText>Risk Institutes</GradientText></>}
         text={
           <>
-            World AI Show | AI in Banking and Financial Services | Dubai 2027 welcomes regional banking federations, fintech associations, and professional risk and compliance bodies as official institutional partners.
+            World AI Show | BFSI | Dubai 2027 welcomes regional banking federations, fintech associations, and professional risk and compliance bodies as official institutional partners.
             <br />
             <br />
             Connect your senior banking and financial services members with 300+ pre-qualified C-suite peers, nominate faculty speakers with verified production case studies, and shape the regional regulatory and procurement dialogue in DIFC District, Dubai.

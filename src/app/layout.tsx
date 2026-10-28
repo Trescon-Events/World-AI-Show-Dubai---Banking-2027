@@ -11,14 +11,14 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "World AI Show | AI in Banking and Financial Services | Dubai 2027",
+  title: "World AI Show | BFSI | Dubai 2027",
   description:
     "The premier buyer-led executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations. 24 March 2027 · DIFC District, Dubai, UAE · 1-Day Executive Decision Forum. Organised by Trescon.",
   icons: {
     icon: "/banking/favicon.png",
   },
   openGraph: {
-    title: "World AI Show | AI in Banking and Financial Services | Dubai 2027",
+    title: "World AI Show | BFSI | Dubai 2027",
     description:
       "Controlled AI deployment for regulated financial operations. From use case to operating outcome. 24 March 2027 · DIFC District, Dubai, UAE · Day 1 · March Dubai Cluster. Organised by Trescon.",
     type: "website",

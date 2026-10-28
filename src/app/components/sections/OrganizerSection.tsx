@@ -68,7 +68,7 @@ export function OrganizerSection() {
               48 global editions. <GradientText>The world&apos;s longest-running enterprise AI series.</GradientText>
             </h2>
             <p className="max-w-[820px] mx-auto text-white/75 text-[18px] leading-[1.6]">
-              World AI Show | AI in Banking and Financial Services | Dubai 2027 is organised by Trescon, bringing an unrivalled international pedigree in artificial intelligence executive convening.
+              World AI Show | BFSI | Dubai 2027 is organised by Trescon, bringing an unrivalled international pedigree in artificial intelligence executive convening.
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export function OrganizerSection() {
 
           <div className="flex flex-col">
             <p className="m-0 text-[#a4adbd] text-[16px] leading-[1.65]">
-              World AI Show | AI in Banking and Financial Services | Dubai 2027 is organised by Trescon. Positioned as Day 1 of the March Dubai Cluster (paired back-to-back with AI in Healthcare &amp; Life Sciences on 25 March 2027), the forum shares enterprise venue infrastructure while maintaining a strictly dedicated banking P&amp;L, regulatory agenda, and pre-qualified financial services buyer audience.
+              World AI Show | BFSI | Dubai 2027 is organised by Trescon. Positioned as Day 1 of the March Dubai Cluster (paired back-to-back with AI in Healthcare &amp; Life Sciences on 25 March 2027), the forum shares enterprise venue infrastructure while maintaining a strictly dedicated banking P&amp;L, regulatory agenda, and pre-qualified financial services buyer audience.
             </p>
 
             <a

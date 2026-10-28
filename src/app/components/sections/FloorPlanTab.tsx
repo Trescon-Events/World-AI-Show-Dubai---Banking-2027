@@ -94,7 +94,7 @@ export function FloorPlanTab() {
         >
           <img
             src="https://pub-70eeb092c44c45ee83f856cfdd1a0fd9.r2.dev/images/360/top-view-floor-plan.png"
-            alt="World AI Show | AI in Banking and Financial Services | Dubai 2027 Floor Plan - Top View"
+            alt="World AI Show | BFSI | Dubai 2027 Floor Plan - Top View"
             className="w-full h-full object-contain pointer-events-none select-none"
             draggable={false}
           />

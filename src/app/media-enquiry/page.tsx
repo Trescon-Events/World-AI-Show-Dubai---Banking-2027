@@ -47,7 +47,7 @@ export default function MediaEnquiryPage() {
                 Apply for <span className="text-[#18d4ff]">Media Accreditation</span>
               </h1>
               <p className="m-0 text-white/70 text-[16px] leading-relaxed mb-9">
-                Request financial press credentials, executive interview room access, and editorial partnerships for World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE · 1-Day Executive Decision Forum).
+                Request financial press credentials, executive interview room access, and editorial partnerships for World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE · 1-Day Executive Decision Forum).
               </p>
 
               {/* Hubspot Form Embedded Container */}

@@ -4,8 +4,8 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AttendeeAppContent } from "./AttendeeAppContent";
 
 export const metadata: Metadata = {
-  title: "Attendee App | Networking | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Personalised 1-day agenda builder, clinic selection, and digital business card exchange for World AI Show | AI in Banking and Financial Services | Dubai 2027.",
+  title: "Attendee App | Networking | World AI Show | BFSI | Dubai 2027",
+  description: "Personalised 1-day agenda builder, clinic selection, and digital business card exchange for World AI Show | BFSI | Dubai 2027.",
 };
 
 const subNav = ["Overview", "Attendee APP", "AI Matchmaking", "Photo Gallery"];

@@ -4,7 +4,7 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AttendSponsorSection } from "../page";
 
 export const metadata: Metadata = {
-  title: "Commercial Packages & Booth Standards | Attend | World AI Show | AI in Banking and Financial Services | Dubai 2027",
+  title: "Commercial Packages & Booth Standards | Attend | World AI Show | BFSI | Dubai 2027",
   description: "Explore commercial partnerships for Dubai 2027: 20-minute plenary keynotes, 75-minute workshop clinics, standardised 6 sqm, 9 sqm, and 12 sqm booths, and closed-door CXO boardrooms.",
 };
 

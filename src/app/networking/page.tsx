@@ -4,8 +4,8 @@ import { FooterSection } from "../components/sections/FooterSection";
 import { GradientText } from "../components/Shared";
 
 export const metadata: Metadata = {
-  title: "Networking Suite & Attendee App | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Explore the Networking Suite for World AI Show | AI in Banking and Financial Services | Dubai 2027: Algorithmic pre-scheduled 1-on-1 meetings, personalised 1-day agenda builder, clinic selection, digital business card exchange, and executive photo gallery.",
+  title: "Networking Suite & Attendee App | World AI Show | BFSI | Dubai 2027",
+  description: "Explore the Networking Suite for World AI Show | BFSI | Dubai 2027: Algorithmic pre-scheduled 1-on-1 meetings, personalised 1-day agenda builder, clinic selection, digital business card exchange, and executive photo gallery.",
 };
 
 const subNav = ["Overview", "Attendee APP", "AI Matchmaking", "Photo Gallery"];
@@ -296,7 +296,7 @@ export default function NetworkingPage() {
             Be in the room where <GradientText>regulated banking AI gets decided.</GradientText>
           </h2>
           <p className="m-0 mt-4 text-white/58 text-[15px] leading-relaxed max-w-[580px] mx-auto">
-            Apply for a complimentary Delegate Pass (by invitation and qualification) or enquire about commercial sponsorship for World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE · 1-Day Executive Decision Forum).
+            Apply for a complimentary Delegate Pass (by invitation and qualification) or enquire about commercial sponsorship for World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE · 1-Day Executive Decision Forum).
           </p>
 
           <div className="mt-8 flex justify-center gap-4 flex-wrap">

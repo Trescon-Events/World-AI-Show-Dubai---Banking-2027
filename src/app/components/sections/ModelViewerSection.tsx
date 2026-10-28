@@ -13,7 +13,7 @@ export function ModelViewerSection() {
             Interactive <span className="text-[#C0F43C]">3D Floorplan</span>
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto text-lg">
-            Explore the World AI Show | AI in Banking and Financial Services | Dubai 2027 venue in full 3D.
+            Explore the World AI Show | BFSI | Dubai 2027 venue in full 3D.
           </p>
         </div>
         <div className="w-full aspect-video min-h-[500px] max-h-[750px] relative max-w-5xl mx-auto">

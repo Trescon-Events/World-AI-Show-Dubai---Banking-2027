@@ -527,7 +527,7 @@ export function EcosystemSectionDemo() {
                 The Executive Mandate
               </span>
               <p className="m-0 text-white font-semibold text-[19px] leading-[1.55] max-sm:text-[16px]">
-                World AI Show | AI in Banking and Financial Services convenes senior banking buyers and ecosystem leaders at the critical juncture where 2027 enterprise architecture, fraud defence, and core procurement decisions are actively locked down.
+                World AI Show | BFSI convenes senior banking buyers and ecosystem leaders at the critical juncture where 2027 enterprise architecture, fraud defence, and core procurement decisions are actively locked down.
               </p>
             </div>
           </div>

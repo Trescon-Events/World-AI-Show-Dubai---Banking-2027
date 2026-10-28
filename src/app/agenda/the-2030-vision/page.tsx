@@ -4,7 +4,7 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AgendaVision } from "../AgendaPage";
 
 export const metadata: Metadata = {
-  title: "Regulatory Framework & Regional Catalysts | Agenda | World AI Show | AI in Banking and Financial Services | Dubai 2027",
+  title: "Regulatory Framework & Regional Catalysts | Agenda | World AI Show | BFSI | Dubai 2027",
   description: "Explore onshore CBUAE and offshore DIFC DFSA AI governance mandates and the regional catalysts driving 2027 banking procurement in Dubai.",
 };
 

@@ -4,8 +4,8 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { WhatsAppNetworkingContent } from "./WhatsAppNetworkingContent";
 
 export const metadata: Metadata = {
-  title: "WhatsApp Community | Networking | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Join the official World AI Show | AI in Banking and Financial Services | Dubai 2027 WhatsApp networking groups to connect with delegates, speakers, and sponsors before the event.",
+  title: "WhatsApp Community | Networking | World AI Show | BFSI | Dubai 2027",
+  description: "Join the official World AI Show | BFSI | Dubai 2027 WhatsApp networking groups to connect with delegates, speakers, and sponsors before the event.",
 };
 
 const subNav = ["Overview", "Attendee APP", "AI Matchmaking", "Photo Gallery"];

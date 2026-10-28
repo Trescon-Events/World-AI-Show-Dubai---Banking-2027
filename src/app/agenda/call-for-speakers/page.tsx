@@ -4,7 +4,7 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AgendaCallForSpeakers } from "../AgendaPage";
 
 export const metadata: Metadata = {
-  title: "Call for Banking & Risk Faculty | Agenda | World AI Show | AI in Banking and Financial Services | Dubai 2027",
+  title: "Call for Banking & Risk Faculty | Agenda | World AI Show | BFSI | Dubai 2027",
   description: "Seeking banking CIOs, CTOs, CROs, CCOs, CDAIOs, and Regulators with live production evidence to join the stage on 24 March 2027 in DIFC District, Dubai.",
 };
 

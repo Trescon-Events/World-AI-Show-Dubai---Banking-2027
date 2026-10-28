@@ -47,7 +47,7 @@ export default function AssociationEnquiryPage() {
                 Institutional <span className="text-[#18d4ff]">Partnership Application</span>
               </h1>
               <p className="m-0 text-white/70 text-[16px] leading-relaxed mb-9">
-                Regional banking federations, fintech associations, risk and compliance institutes, and trade chambers: collaborate on World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE · Day 1 of the March Dubai Cluster).
+                Regional banking federations, fintech associations, risk and compliance institutes, and trade chambers: collaborate on World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE · Day 1 of the March Dubai Cluster).
               </p>
 
               {/* Hubspot Form Embedded Container */}

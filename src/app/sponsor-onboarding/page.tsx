@@ -37,7 +37,7 @@ export default function SponsorOnboardingPage() {
                 Sponsor <span className="text-[#18d4ff]">Onboarding</span>
               </h1>
               <p className="m-0 text-white/70 text-[16px] leading-relaxed mb-9">
-                Please complete the form below to submit your company branding, assets, and onboarding details for World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE).
+                Please complete the form below to submit your company branding, assets, and onboarding details for World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE).
               </p>
 
               {/* Hubspot Form Embedded Container */}

@@ -35,7 +35,7 @@ export function AOSInit() {
         // Directional AOS for grid children & cards (left -> fade-right, middle -> fade-up, right -> fade-left)
         const grids = sec.querySelectorAll(".grid");
         grids.forEach((grid) => {
-          if (grid.closest(".logo-marquee-rail, .marquee-partners, .marquee-partners-reverse, .sticky, summary")) return;
+          if (grid.closest(".logo-marquee-rail, .marquee-partners, .marquee-partners-reverse, .sticky, summary, article")) return;
           const children = Array.from(grid.children) as HTMLElement[];
           if (children.length < 2) return;
 
@@ -76,9 +76,9 @@ export function AOSInit() {
 
     autoDecorate();
 
-    // Remove existing aos-animate classes first so animations visibly play
-    document.querySelectorAll<HTMLElement>("[data-aos].aos-animate").forEach((el) => {
-      el.classList.remove("aos-animate");
+    // Reset existing animate state first so animations visibly play on route change
+    document.querySelectorAll<HTMLElement>("[data-aos]").forEach((el) => {
+      el.removeAttribute("data-aos-animate");
     });
 
     document.documentElement.classList.add("aos-enabled");
@@ -88,9 +88,9 @@ export function AOSInit() {
         entries.forEach((entry) => {
           const el = entry.target as HTMLElement;
           if (entry.isIntersecting) {
-            el.classList.add("aos-animate");
+            el.setAttribute("data-aos-animate", "true");
           } else {
-            el.classList.remove("aos-animate");
+            el.removeAttribute("data-aos-animate");
           }
         });
       },

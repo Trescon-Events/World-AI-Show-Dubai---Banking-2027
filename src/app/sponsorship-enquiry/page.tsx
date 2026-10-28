@@ -47,7 +47,7 @@ export default function SponsorshipEnquiryPage() {
                 Engage Middle East Banking <span className="text-[#18d4ff]">Decision-Makers in Dubai</span>
               </h1>
               <p className="m-0 text-white/70 text-[16px] leading-relaxed mb-9">
-                Enquire about Speaking Sponsor packages (20-minute plenary keynotes &amp; 12 sqm island booths), Engagement Partner packages (exclusive leadership of 75-minute workshop clinics &amp; 9 sqm booths), private 15-buyer CXO Closed-Door Boardrooms, Industry Partner packages (9 sqm), and 6 sqm turnkey concourse exhibition booths at World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE).
+                Enquire about Speaking Sponsor packages (20-minute plenary keynotes &amp; 12 sqm island booths), Engagement Partner packages (exclusive leadership of 75-minute workshop clinics &amp; 9 sqm booths), private 15-buyer CXO Closed-Door Boardrooms, Industry Partner packages (9 sqm), and 6 sqm turnkey concourse exhibition booths at World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE).
               </p>
 
               {/* Hubspot Form Embedded Container */}

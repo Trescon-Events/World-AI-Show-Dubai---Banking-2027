@@ -15,7 +15,7 @@ export function FooterSection() {
           <div className="flex flex-col">
             <img
               src="/banking/logos/wais-27-banking_footer.svg"
-              alt="World AI Show | AI in Banking and Financial Services | Dubai 2027"
+              alt="World AI Show | BFSI | Dubai 2027"
               width={250}
               height={50}
               className="w-[min(250px,100%)] h-auto object-contain mb-4 select-none"
@@ -89,7 +89,7 @@ export function FooterSection() {
         {/* Footer Bottom Row */}
         <div className="flex items-center justify-between gap-6 pt-[34px] max-sm:flex-col max-sm:items-start">
           <p className="m-0 text-white/52 font-mono text-[13px] leading-relaxed">
-            © 2026–2027 World AI Show | AI in Banking and Financial Services | Dubai 2027. All rights reserved. Organised by Trescon.
+            © 2026–2027 World AI Show | BFSI | Dubai 2027. All rights reserved. Organised by Trescon.
           </p>
           <div className="flex gap-3">
             <a

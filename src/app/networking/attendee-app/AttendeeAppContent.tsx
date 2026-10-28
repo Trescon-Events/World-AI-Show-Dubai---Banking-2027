@@ -40,7 +40,7 @@ export function AttendeeAppContent() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ceff] to-[#C0F43C]">Fully in Hand</span>
             </h1>
             <p className="m-0 mt-6 text-white/70 text-[18px] leading-relaxed max-sm:text-[15px]">
-              The World AI Show | AI in Banking and Financial Services | Dubai 2027 Event App is your command centre on the ground in the DIFC District. Personalised 1-day agenda builder, parallel breakout clinic selection, speakers, sponsors, and live networking — all unified in one AI-powered platform.
+              The World AI Show | BFSI | Dubai 2027 Event App is your command centre on the ground in the DIFC District. Personalised 1-day agenda builder, parallel breakout clinic selection, speakers, sponsors, and live networking — all unified in one AI-powered platform.
             </p>
             <div className="flex flex-wrap items-center gap-4 mt-8">
               <a

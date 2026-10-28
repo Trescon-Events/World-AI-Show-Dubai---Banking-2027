@@ -999,54 +999,54 @@ html.aos-enabled [data-aos] {
   will-change: opacity, transform;
 }
 
-html.aos-enabled [data-aos]:not(.aos-animate) {
+html.aos-enabled [data-aos]:not([data-aos-animate="true"]) {
   opacity: 0 !important;
   pointer-events: none;
 }
 
-html.aos-enabled [data-aos="fade-up"]:not(.aos-animate) {
+html.aos-enabled [data-aos="fade-up"]:not([data-aos-animate="true"]) {
   transform: translate3d(0, 64px, 0) !important;
 }
 
-html.aos-enabled [data-aos="fade-down"]:not(.aos-animate) {
+html.aos-enabled [data-aos="fade-down"]:not([data-aos-animate="true"]) {
   transform: translate3d(0, -64px, 0) !important;
 }
 
 /* AOS convention: fade-right = slide in from left toward right; fade-left = slide in from right toward left */
-html.aos-enabled [data-aos="fade-right"]:not(.aos-animate) {
+html.aos-enabled [data-aos="fade-right"]:not([data-aos-animate="true"]) {
   transform: translate3d(-72px, 0, 0) !important;
 }
 
-html.aos-enabled [data-aos="fade-left"]:not(.aos-animate) {
+html.aos-enabled [data-aos="fade-left"]:not([data-aos-animate="true"]) {
   transform: translate3d(72px, 0, 0) !important;
 }
 
-html.aos-enabled [data-aos="zoom-in"]:not(.aos-animate) {
+html.aos-enabled [data-aos="zoom-in"]:not([data-aos-animate="true"]) {
   transform: scale3d(0.86, 0.86, 1) !important;
 }
 
-html.aos-enabled [data-aos="zoom-in-up"]:not(.aos-animate) {
+html.aos-enabled [data-aos="zoom-in-up"]:not([data-aos-animate="true"]) {
   transform: translate3d(0, 52px, 0) scale3d(0.9, 0.9, 1) !important;
 }
 
-html.aos-enabled [data-aos="fade-in"]:not(.aos-animate) {
+html.aos-enabled [data-aos="fade-in"]:not([data-aos-animate="true"]) {
   transform: none !important;
 }
 
-html.aos-enabled [data-aos].aos-animate {
+html.aos-enabled [data-aos][data-aos-animate="true"] {
   opacity: 1;
 }
 
-html.aos-enabled [data-aos][data-aos-delay="50"].aos-animate { transition-delay: 50ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="100"].aos-animate { transition-delay: 100ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="150"].aos-animate { transition-delay: 150ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="200"].aos-animate { transition-delay: 200ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="250"].aos-animate { transition-delay: 250ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="300"].aos-animate { transition-delay: 300ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="350"].aos-animate { transition-delay: 350ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="400"].aos-animate { transition-delay: 400ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="450"].aos-animate { transition-delay: 450ms !important; }
-html.aos-enabled [data-aos][data-aos-delay="500"].aos-animate { transition-delay: 500ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="50"][data-aos-animate="true"] { transition-delay: 50ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="100"][data-aos-animate="true"] { transition-delay: 100ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="150"][data-aos-animate="true"] { transition-delay: 150ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="200"][data-aos-animate="true"] { transition-delay: 200ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="250"][data-aos-animate="true"] { transition-delay: 250ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="300"][data-aos-animate="true"] { transition-delay: 300ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="350"][data-aos-animate="true"] { transition-delay: 350ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="400"][data-aos-animate="true"] { transition-delay: 400ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="450"][data-aos-animate="true"] { transition-delay: 450ms !important; }
+html.aos-enabled [data-aos][data-aos-delay="500"][data-aos-animate="true"] { transition-delay: 500ms !important; }
 
 html.aos-enabled [data-aos][data-aos-duration="500"] { transition-duration: 500ms !important; }
 html.aos-enabled [data-aos][data-aos-duration="600"] { transition-duration: 600ms !important; }

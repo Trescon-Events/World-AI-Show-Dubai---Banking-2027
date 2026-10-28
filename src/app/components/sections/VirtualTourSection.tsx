@@ -21,7 +21,7 @@ export function VirtualTourSection() {
             Virtual <GradientText>Tour</GradientText>
           </h2>
           <p className="max-w-[620px] mx-auto text-white/60 text-[16px] leading-relaxed">
-            Immerse yourself in the world-class venue of World AI Show | AI in Banking and Financial Services | Dubai 2027. Explore our exhibition floor and main networking halls in fully interactive 360 degrees.
+            Immerse yourself in the world-class venue of World AI Show | BFSI | Dubai 2027. Explore our exhibition floor and main networking halls in fully interactive 360 degrees.
           </p>
         </div>
 

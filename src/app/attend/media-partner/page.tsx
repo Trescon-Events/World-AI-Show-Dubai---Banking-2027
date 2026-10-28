@@ -4,8 +4,8 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AttendMediaSection } from "../page";
 
 export const metadata: Metadata = {
-  title: "Media Accreditation | Attend | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Apply for media accreditation for World AI Show | AI in Banking and Financial Services | Dubai 2027. Financial press credentials, executive interview room access, and editorial partnerships.",
+  title: "Media Accreditation | Attend | World AI Show | BFSI | Dubai 2027",
+  description: "Apply for media accreditation for World AI Show | BFSI | Dubai 2027. Financial press credentials, executive interview room access, and editorial partnerships.",
 };
 
 const subNav = ["Overview", "Delegate", "Sponsor", "Media Partner", "Association Partner"];

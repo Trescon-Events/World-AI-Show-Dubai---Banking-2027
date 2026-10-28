@@ -442,7 +442,7 @@ export function AgendaOverview() {
           <div>
             <h2 className="!mb-6">Controlled AI deployment for <GradientText>regulated financial operations.</GradientText></h2>
             <p className="mt-6 mb-4">
-              World AI Show | Banking and Financial Services will convene 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (minimum 70% buy-side enterprise ratio).
+              World AI Show | BFSI will convene 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (minimum 70% buy-side enterprise ratio).
             </p>
             <p className="m-0">
               Every block in the programme is engineered to move senior financial services buyers from board-level regulatory scrutiny under onshore Central Bank of the UAE (CBUAE) and offshore DIFC Dubai Financial Services Authority (DFSA) frameworks down to live architecture validation and 2027 procurement decisions.

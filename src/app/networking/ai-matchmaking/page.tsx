@@ -4,8 +4,8 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AIMatchmakingContent } from "./AIMatchmakingContent";
 
 export const metadata: Metadata = {
-  title: "AI Matchmaking | Networking | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Algorithmic pre-scheduled 1-on-1 meetings at World AI Show | AI in Banking and Financial Services | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE).",
+  title: "AI Matchmaking | Networking | World AI Show | BFSI | Dubai 2027",
+  description: "Algorithmic pre-scheduled 1-on-1 meetings at World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE).",
 };
 
 const subNav = ["Overview", "Attendee APP", "AI Matchmaking", "Photo Gallery"];

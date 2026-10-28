@@ -4,8 +4,8 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { AttendAssociationSection } from "../page";
 
 export const metadata: Metadata = {
-  title: "Institutional Partnerships | Attend | World AI Show | AI in Banking and Financial Services | Dubai 2027",
-  description: "Partner with World AI Show | AI in Banking and Financial Services | Dubai 2027. Regional banking federations, fintech associations, and risk & compliance institutes.",
+  title: "Institutional Partnerships | Attend | World AI Show | BFSI | Dubai 2027",
+  description: "Partner with World AI Show | BFSI | Dubai 2027. Regional banking federations, fintech associations, and risk & compliance institutes.",
 };
 
 const subNav = ["Overview", "Delegate", "Sponsor", "Media Partner", "Association Partner"];

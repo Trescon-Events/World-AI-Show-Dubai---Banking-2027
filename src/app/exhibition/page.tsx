@@ -8,9 +8,9 @@ import { FooterSection } from "../components/sections/FooterSection";
 import { GradientText } from "../components/Shared";
 
 export const metadata: Metadata = {
-  title: "Exhibition & Concourse Hub | World AI Show | AI in Banking and Financial Services | Dubai 2027",
+  title: "Exhibition & Concourse Hub | World AI Show | BFSI | Dubai 2027",
   description:
-    "Explore the interactive concourse floorplan and 360° virtual tour for World AI Show | AI in Banking and Financial Services | Dubai 2027: 12 sqm Premium Island, 9 sqm Prominent Booths, 6 sqm Turnkey Booths, and 2 CXO Closed-Door Boardroom Suites.",
+    "Explore the interactive concourse floorplan and 360° virtual tour for World AI Show | BFSI | Dubai 2027: 12 sqm Premium Island, 9 sqm Prominent Booths, 6 sqm Turnkey Booths, and 2 CXO Closed-Door Boardroom Suites.",
 };
 
 const footprints = [
