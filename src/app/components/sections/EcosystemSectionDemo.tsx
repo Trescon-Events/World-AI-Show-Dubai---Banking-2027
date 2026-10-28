@@ -26,7 +26,7 @@ const sourceCitedCards: TelemetryCardData[] = [
   {
     index: "01",
     displayValue: "USD 3.5B+",
-    primaryNum: 85,
+    primaryNum: 35,
     label: "Middle East banking AI market value by 2027",
     source: "PwC Middle East Financial Services AI Report",
     image: "/banking/images/benchmarks/benchmark-01.png",
@@ -135,7 +135,7 @@ const sourceCitedCards: TelemetryCardData[] = [
   },
 ];
 
-/* Exact 3D Isometric Benchmark Artwork from Specification */
+/* Exact 3D Isometric Benchmark Artwork + Live Synchronized Animations */
 function BenchmarkGraphic({ card }: { card: TelemetryCardData }) {
   return (
     <div
@@ -147,17 +147,199 @@ function BenchmarkGraphic({ card }: { card: TelemetryCardData }) {
           : "h-[205px] -mt-2 mb-3"
       }`}
     >
-      <img
-        src={card.image}
-        alt={card.label}
-        className="w-full h-full object-contain object-center mix-blend-lighten scale-[1.03] group-hover:scale-[1.06] transition-transform duration-500"
-        style={{
-          maskImage:
-            "radial-gradient(ellipse 92% 88% at 52% 52%, black 68%, transparent 100%)",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 92% 88% at 52% 52%, black 68%, transparent 100%)",
-        }}
-      />
+      <div className="relative w-full h-full animate-[IsoFloat_3.8s_ease-in-out_infinite]">
+        {/* Exact 3D Isometric Artwork (screen-blended so black background is 100% seamless) */}
+        <img
+          src={card.image}
+          alt={card.label}
+          className="w-full h-full object-contain object-center mix-blend-screen animate-[NeonBreath_3.2s_ease-in-out_infinite] group-hover:scale-[1.04] transition-transform duration-500"
+        />
+
+        {/* Card 01 Live Animation Overlay: Rising Capital Stream + Isometric Grid Pulses + Cube Beacon */}
+        {card.index === "01" && (
+          <svg
+            viewBox="0 0 304 246"
+            className="absolute inset-0 w-full h-full overflow-visible mix-blend-screen"
+            fill="none"
+          >
+            {/* Isometric Floor Circuit Energy Pulses */}
+            <path
+              d="M100 236 L218 175 L292 134"
+              stroke="#2fd5f6"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeDasharray="16 90"
+              className="animate-[CircuitPulse_2.6s_linear_infinite]"
+            />
+            <path
+              d="M100 236 L22 190 L98 146"
+              stroke="#C0F43C"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeDasharray="14 85"
+              className="animate-[CircuitPulse_3s_linear_infinite]"
+            />
+
+            {/* Rising Energy Stream Along the 3D Green Arrow & $ Sign */}
+            <line
+              x1="251"
+              y1="145"
+              x2="251"
+              y2="14"
+              stroke="#e5ff85"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeDasharray="18 70"
+              className="animate-[ArrowAscend_1.8s_linear_infinite]"
+            />
+            <circle cx="215" cy="95" r="3" fill="#e5ff85" className="animate-[ParticleRise_2.2s_ease-out_infinite]" />
+            <circle cx="252" cy="110" r="3.5" fill="#C0F43C" className="animate-[ParticleRise_1.9s_ease-out_0.5s_infinite]" />
+            <circle cx="235" cy="125" r="2.5" fill="#2fd5f6" className="animate-[ParticleRise_2.5s_ease-out_1.1s_infinite]" />
+            <circle cx="195" cy="145" r="2.8" fill="#C0F43C" className="animate-[ParticleRise_2.3s_ease-out_0.8s_infinite]" />
+
+            {/* Front-Left Glowing Green Cube Pulse Ring */}
+            <polygon
+              points="100,192 122,203 100,214 78,203"
+              stroke="#e5ff85"
+              strokeWidth="1.8"
+              fill="rgba(192,244,60,0.12)"
+              className="animate-[CubeBeacon_2.4s_ease-in-out_infinite]"
+            />
+          </svg>
+        )}
+
+        {/* Card 02 Live Animation Overlay: Deflecting Laser Beams + Shield Impact Flash + Radar Rings */}
+        {card.index === "02" && (
+          <svg
+            viewBox="0 0 304 230"
+            className="absolute inset-0 w-full h-full overflow-visible mix-blend-screen"
+            fill="none"
+          >
+            {/* Expanding Isometric Pedestal Radar Rings */}
+            <g transform="translate(174, 187) rotate(-8)">
+              <ellipse
+                rx="54"
+                ry="26"
+                stroke="#2fd5f6"
+                strokeWidth="1.8"
+                className="animate-[RadarWave_2.6s_ease-out_infinite]"
+              />
+              <ellipse
+                rx="54"
+                ry="26"
+                stroke="#C0F43C"
+                strokeWidth="1.5"
+                className="animate-[RadarWave_2.6s_ease-out_1.3s_infinite]"
+              />
+            </g>
+
+            {/* Incoming Attack Laser -> Deflecting Off Shield Face */}
+            <path
+              d="M296 36 L160 112 L52 54"
+              stroke="#e4ff82"
+              strokeWidth="2.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeDasharray="28 160"
+              className="animate-[LaserDeflect_1.9s_linear_infinite]"
+            />
+            <path
+              d="M294 64 L158 116 L76 112"
+              stroke="#2fd5f6"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeDasharray="24 150"
+              className="animate-[LaserDeflect_2.2s_linear_0.6s_infinite]"
+            />
+            <path
+              d="M285 90 L156 122 L38 175"
+              stroke="#2fd5f6"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeDasharray="22 150"
+              className="animate-[LaserDeflect_2.0s_linear_1.1s_infinite]"
+            />
+
+            {/* Shield Core Impact Energy Flash */}
+            <circle
+              cx="159"
+              cy="114"
+              r="11"
+              fill="rgba(192,244,60,0.45)"
+              className="animate-[ImpactFlash_1.9s_ease-in-out_infinite]"
+            />
+            <circle
+              cx="159"
+              cy="114"
+              r="5"
+              fill="#ffffff"
+              className="animate-[ImpactFlash_1.9s_ease-in-out_infinite]"
+            />
+          </svg>
+        )}
+
+        {/* Card 03 Live Animation Overlay: Filtered Verified Stream + Blocked Alert Ripples */}
+        {card.index === "03" && (
+          <svg
+            viewBox="0 0 304 206"
+            className="absolute inset-0 w-full h-full overflow-visible mix-blend-screen"
+            fill="none"
+          >
+            {/* Blocked False-Positive Triangle Ripples on Glass Filter */}
+            <circle
+              cx="170"
+              cy="74"
+              r="9"
+              stroke="#2fd5f6"
+              strokeWidth="1.6"
+              className="animate-[FilterRipple_2.2s_ease-out_infinite]"
+            />
+            <circle
+              cx="132"
+              cy="54"
+              r="8"
+              stroke="#2fd5f6"
+              strokeWidth="1.6"
+              className="animate-[FilterRipple_2.5s_ease-out_0.8s_infinite]"
+            />
+            <circle
+              cx="198"
+              cy="96"
+              r="9"
+              stroke="#2fd5f6"
+              strokeWidth="1.6"
+              className="animate-[FilterRipple_2.0s_ease-out_1.4s_infinite]"
+            />
+
+            {/* Central AI Portal Pulse Square */}
+            <polygon
+              points="155,102 166,108 166,120 155,114"
+              stroke="#e8ff8c"
+              strokeWidth="2"
+              fill="rgba(192,244,60,0.28)"
+              className="animate-[CubeBeacon_1.8s_ease-in-out_infinite]"
+            />
+
+            {/* Continuous Verified Data Packets Streaming Down the Output Beam */}
+            <path
+              d="M160 112 L14 194"
+              stroke="#e5ff85"
+              strokeWidth="4.5"
+              strokeLinecap="round"
+              strokeDasharray="6 22"
+              className="animate-[StreamOut_1.2s_linear_infinite]"
+            />
+            <path
+              d="M160 112 L14 194"
+              stroke="#C0F43C"
+              strokeWidth="2"
+              strokeLinecap="round"
+              opacity="0.7"
+            />
+          </svg>
+        )}
+      </div>
     </div>
   );
 }
@@ -226,9 +408,17 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
   };
 
   const staggerMs = cardIndex * 140;
+  const primaryCount = useAnimatedValue(card.primaryNum, animTrigger, 1300, staggerMs + 40);
   const bar0Count = useAnimatedValue(card.bars[0].value, animTrigger, 1400, staggerMs + 120);
   const bar1Count = useAnimatedValue(card.bars[1].value, animTrigger, 1400, staggerMs + 280);
   const barCounts = [bar0Count, bar1Count];
+
+  const formattedHeadline =
+    card.index === "01"
+      ? `USD ${(primaryCount / 10).toFixed(1)}B+`
+      : card.index === "02"
+      ? `+${primaryCount}% YoY`
+      : `${primaryCount}% False Positives`;
 
   return (
     <article
@@ -247,9 +437,9 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
           </span>
         </div>
 
-        {/* Big Metric */}
-        <strong className="relative z-10 block text-[clamp(26px,2.5vw,34px)] font-[850] leading-[1.1] tracking-[-0.8px] text-[#C0F43C] tabular-nums">
-          {card.displayValue}
+        {/* Animated Big Metric */}
+        <strong className="relative z-10 block text-[clamp(26px,2.5vw,34px)] font-[850] leading-[1.1] tracking-[-0.8px] text-[#C0F43C] tabular-nums drop-shadow-[0_0_18px_rgba(192,244,60,0.22)]">
+          {animTrigger > 0 ? formattedHeadline : card.displayValue}
         </strong>
 
         {/* Exact 3D Isometric Graphic */}
@@ -326,12 +516,49 @@ export function EcosystemSectionDemo() {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-6px); }
         }
-        @keyframes IsoPulse {
-          0%, 100% { opacity: 0.82; transform: translateY(0px); }
-          50% { opacity: 1; transform: translateY(-3px); }
+        @keyframes NeonBreath {
+          0%, 100% { filter: brightness(1) drop-shadow(0 0 0px rgba(47, 213, 246, 0)); }
+          50% { filter: brightness(1.12) drop-shadow(0 0 12px rgba(192, 244, 60, 0.22)); }
         }
-        @keyframes DashFlow {
-          0% { stroke-dashoffset: 24; }
+        @keyframes CircuitPulse {
+          0% { stroke-dashoffset: 212; opacity: 0.25; }
+          50% { opacity: 1; }
+          100% { stroke-dashoffset: 0; opacity: 0.25; }
+        }
+        @keyframes ArrowAscend {
+          0% { stroke-dashoffset: 176; opacity: 0.35; }
+          50% { opacity: 1; }
+          100% { stroke-dashoffset: 0; opacity: 0.35; }
+        }
+        @keyframes ParticleRise {
+          0% { transform: translateY(14px) scale(0.7); opacity: 0; }
+          40% { opacity: 0.95; }
+          100% { transform: translateY(-28px) scale(1.15); opacity: 0; }
+        }
+        @keyframes CubeBeacon {
+          0%, 100% { opacity: 0.35; filter: drop-shadow(0 0 2px #C0F43C); }
+          50% { opacity: 1; filter: drop-shadow(0 0 10px #C0F43C); }
+        }
+        @keyframes RadarWave {
+          0% { transform: scale(0.82); opacity: 0.9; }
+          100% { transform: scale(1.28); opacity: 0; }
+        }
+        @keyframes LaserDeflect {
+          0% { stroke-dashoffset: 188; opacity: 0.2; }
+          35% { opacity: 1; }
+          100% { stroke-dashoffset: 0; opacity: 0.1; }
+        }
+        @keyframes ImpactFlash {
+          0%, 100% { transform: scale(0.6); opacity: 0.15; }
+          45% { transform: scale(1.35); opacity: 0.95; }
+          65% { transform: scale(0.8); opacity: 0.3; }
+        }
+        @keyframes FilterRipple {
+          0% { transform: scale(0.4); opacity: 0.95; }
+          100% { transform: scale(1.9); opacity: 0; }
+        }
+        @keyframes StreamOut {
+          0% { stroke-dashoffset: 56; }
           100% { stroke-dashoffset: 0; }
         }
       `}</style>
