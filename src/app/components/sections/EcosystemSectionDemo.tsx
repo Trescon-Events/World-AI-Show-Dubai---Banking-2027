@@ -138,28 +138,20 @@ const sourceCitedCards: TelemetryCardData[] = [
 /* Exact 3D Isometric Benchmark Artwork + Live Synchronized Animations */
 function BenchmarkGraphic({ card }: { card: TelemetryCardData }) {
   return (
-    <div
-      className={`relative w-full overflow-hidden flex items-center justify-center select-none pointer-events-none ${
-        card.index === "01"
-          ? "h-[235px] -mt-12 mb-1"
-          : card.index === "02"
-          ? "h-[215px] -mt-6 mb-2"
-          : "h-[205px] -mt-2 mb-3"
-      }`}
-    >
+    <div className="relative w-full h-[200px] mt-1.5 mb-3 overflow-hidden flex items-center justify-center select-none pointer-events-none">
       <div className="relative w-full h-full animate-[IsoFloat_3.8s_ease-in-out_infinite]">
-        {/* Exact 3D Isometric Artwork (screen-blended so black background is 100% seamless) */}
+        {/* Exact 3D Isometric Artwork (RGB-matched to #071320 with feathered edges) */}
         <img
           src={card.image}
           alt={card.label}
-          className="w-full h-full object-contain object-center mix-blend-screen animate-[NeonBreath_3.2s_ease-in-out_infinite] group-hover:scale-[1.04] transition-transform duration-500"
+          className="w-full h-full object-contain object-center animate-[NeonBreath_3.2s_ease-in-out_infinite] group-hover:scale-[1.04] transition-transform duration-500"
         />
 
-        {/* Card 01 Live Animation Overlay: Rising Capital Stream + Isometric Grid Pulses + Cube Beacon */}
+        {/* Card 01 Live Animation Overlay: Rising Capital Stream + Isometric Grid Pulses */}
         {card.index === "01" && (
           <svg
             viewBox="0 0 304 246"
-            className="absolute inset-0 w-full h-full overflow-visible mix-blend-screen"
+            className="absolute inset-0 w-full h-full overflow-visible"
             fill="none"
           >
             {/* Isometric Floor Circuit Energy Pulses */}
@@ -187,155 +179,61 @@ function BenchmarkGraphic({ card }: { card: TelemetryCardData }) {
               x2="251"
               y2="14"
               stroke="#e5ff85"
-              strokeWidth="3"
+              strokeWidth="2.5"
               strokeLinecap="round"
               strokeDasharray="18 70"
               className="animate-[ArrowAscend_1.8s_linear_infinite]"
             />
-            <circle cx="215" cy="95" r="3" fill="#e5ff85" className="animate-[ParticleRise_2.2s_ease-out_infinite]" />
-            <circle cx="252" cy="110" r="3.5" fill="#C0F43C" className="animate-[ParticleRise_1.9s_ease-out_0.5s_infinite]" />
-            <circle cx="235" cy="125" r="2.5" fill="#2fd5f6" className="animate-[ParticleRise_2.5s_ease-out_1.1s_infinite]" />
-            <circle cx="195" cy="145" r="2.8" fill="#C0F43C" className="animate-[ParticleRise_2.3s_ease-out_0.8s_infinite]" />
-
-            {/* Front-Left Glowing Green Cube Pulse Ring */}
-            <polygon
-              points="100,192 122,203 100,214 78,203"
-              stroke="#e5ff85"
-              strokeWidth="1.8"
-              fill="rgba(192,244,60,0.12)"
-              className="animate-[CubeBeacon_2.4s_ease-in-out_infinite]"
-            />
+            <circle cx="215" cy="95" r="2.8" fill="#e5ff85" className="animate-[ParticleRise_2.2s_ease-out_infinite]" />
+            <circle cx="252" cy="110" r="3" fill="#C0F43C" className="animate-[ParticleRise_1.9s_ease-out_0.5s_infinite]" />
+            <circle cx="235" cy="125" r="2.2" fill="#2fd5f6" className="animate-[ParticleRise_2.5s_ease-out_1.1s_infinite]" />
           </svg>
         )}
 
-        {/* Card 02 Live Animation Overlay: Deflecting Laser Beams + Shield Impact Flash + Radar Rings */}
+        {/* Card 02 Live Animation Overlay: Deflecting Laser Beams + Radar Rings */}
         {card.index === "02" && (
           <svg
             viewBox="0 0 304 230"
-            className="absolute inset-0 w-full h-full overflow-visible mix-blend-screen"
+            className="absolute inset-0 w-full h-full overflow-visible"
             fill="none"
           >
-            {/* Expanding Isometric Pedestal Radar Rings */}
-            <g transform="translate(174, 187) rotate(-8)">
-              <ellipse
-                rx="54"
-                ry="26"
-                stroke="#2fd5f6"
-                strokeWidth="1.8"
-                className="animate-[RadarWave_2.6s_ease-out_infinite]"
-              />
-              <ellipse
-                rx="54"
-                ry="26"
-                stroke="#C0F43C"
-                strokeWidth="1.5"
-                className="animate-[RadarWave_2.6s_ease-out_1.3s_infinite]"
-              />
-            </g>
-
             {/* Incoming Attack Laser -> Deflecting Off Shield Face */}
             <path
               d="M296 36 L160 112 L52 54"
               stroke="#e4ff82"
-              strokeWidth="2.8"
+              strokeWidth="2.4"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeDasharray="28 160"
+              strokeDasharray="26 160"
               className="animate-[LaserDeflect_1.9s_linear_infinite]"
             />
             <path
               d="M294 64 L158 116 L76 112"
               stroke="#2fd5f6"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeDasharray="24 150"
-              className="animate-[LaserDeflect_2.2s_linear_0.6s_infinite]"
-            />
-            <path
-              d="M285 90 L156 122 L38 175"
-              stroke="#2fd5f6"
               strokeWidth="2.2"
               strokeLinecap="round"
+              strokeLinejoin="round"
               strokeDasharray="22 150"
-              className="animate-[LaserDeflect_2.0s_linear_1.1s_infinite]"
-            />
-
-            {/* Shield Core Impact Energy Flash */}
-            <circle
-              cx="159"
-              cy="114"
-              r="11"
-              fill="rgba(192,244,60,0.45)"
-              className="animate-[ImpactFlash_1.9s_ease-in-out_infinite]"
-            />
-            <circle
-              cx="159"
-              cy="114"
-              r="5"
-              fill="#ffffff"
-              className="animate-[ImpactFlash_1.9s_ease-in-out_infinite]"
+              className="animate-[LaserDeflect_2.2s_linear_0.6s_infinite]"
             />
           </svg>
         )}
 
-        {/* Card 03 Live Animation Overlay: Filtered Verified Stream + Blocked Alert Ripples */}
+        {/* Card 03 Live Animation Overlay: Filtered Verified Stream */}
         {card.index === "03" && (
           <svg
             viewBox="0 0 304 206"
-            className="absolute inset-0 w-full h-full overflow-visible mix-blend-screen"
+            className="absolute inset-0 w-full h-full overflow-visible"
             fill="none"
           >
-            {/* Blocked False-Positive Triangle Ripples on Glass Filter */}
-            <circle
-              cx="170"
-              cy="74"
-              r="9"
-              stroke="#2fd5f6"
-              strokeWidth="1.6"
-              className="animate-[FilterRipple_2.2s_ease-out_infinite]"
-            />
-            <circle
-              cx="132"
-              cy="54"
-              r="8"
-              stroke="#2fd5f6"
-              strokeWidth="1.6"
-              className="animate-[FilterRipple_2.5s_ease-out_0.8s_infinite]"
-            />
-            <circle
-              cx="198"
-              cy="96"
-              r="9"
-              stroke="#2fd5f6"
-              strokeWidth="1.6"
-              className="animate-[FilterRipple_2.0s_ease-out_1.4s_infinite]"
-            />
-
-            {/* Central AI Portal Pulse Square */}
-            <polygon
-              points="155,102 166,108 166,120 155,114"
-              stroke="#e8ff8c"
-              strokeWidth="2"
-              fill="rgba(192,244,60,0.28)"
-              className="animate-[CubeBeacon_1.8s_ease-in-out_infinite]"
-            />
-
             {/* Continuous Verified Data Packets Streaming Down the Output Beam */}
             <path
               d="M160 112 L14 194"
               stroke="#e5ff85"
-              strokeWidth="4.5"
+              strokeWidth="4"
               strokeLinecap="round"
-              strokeDasharray="6 22"
+              strokeDasharray="5 22"
               className="animate-[StreamOut_1.2s_linear_infinite]"
-            />
-            <path
-              d="M160 112 L14 194"
-              stroke="#C0F43C"
-              strokeWidth="2"
-              strokeLinecap="round"
-              opacity="0.7"
             />
           </svg>
         )}
@@ -428,17 +326,17 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
     >
       <div>
         {/* Top Icon & Telemetry Index */}
-        <div className="relative z-10 flex items-center justify-between mb-3">
+        <div className="relative z-10 flex items-center justify-between mb-2.5">
           <div className="flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
             {card.icon}
           </div>
-          <span className="text-[#79acc7] font-mono text-[13px] font-semibold tracking-[0.8px] uppercase">
+          <span className="text-[#79acc7] font-mono text-[12px] font-semibold tracking-[0.8px] uppercase">
             BENCHMARK // {card.index}
           </span>
         </div>
 
         {/* Animated Big Metric */}
-        <strong className="relative z-10 block text-[clamp(26px,2.5vw,34px)] font-[850] leading-[1.1] tracking-[-0.8px] text-[#C0F43C] tabular-nums drop-shadow-[0_0_18px_rgba(192,244,60,0.22)]">
+        <strong className="relative z-10 block text-[clamp(21px,1.9vw,26px)] font-[850] leading-[1.15] tracking-[-0.5px] text-[#C0F43C] tabular-nums drop-shadow-[0_0_16px_rgba(192,244,60,0.2)] mb-1">
           {animTrigger > 0 ? formattedHeadline : card.displayValue}
         </strong>
 
@@ -446,15 +344,15 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
         <BenchmarkGraphic card={card} />
 
         {/* Metric Label */}
-        <p className="relative z-10 m-0 text-white font-semibold text-[18px] leading-[1.3] mb-4">
+        <p className="relative z-10 m-0 text-white font-semibold text-[15.5px] leading-[1.35] mb-3.5">
           {card.label}
         </p>
 
         {/* Animated Visual Data Comparison Bars */}
-        <div className="relative z-10 space-y-3.5 pt-2">
+        <div className="relative z-10 space-y-3 pt-1.5">
           {card.bars.map((bar, bIdx) => (
             <div key={bar.name} className="space-y-1.5">
-              <div className="flex items-center justify-between text-[12.5px]">
+              <div className="flex items-center justify-between text-[11.5px]">
                 <span className="text-white/80 group-hover:text-white transition-colors">
                   {bar.name}
                 </span>

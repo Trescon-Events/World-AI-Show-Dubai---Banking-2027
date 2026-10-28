@@ -10,7 +10,7 @@ export function HeroSection() {
     >
       {/* Background Video Layer (from worldaishow.com/dubai header) */}
       <video
-        className="absolute inset-0 w-full h-full object-cover opacity-100 brightness-[1.15] contrast-[1.12] z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-100 brightness-[1.45] contrast-[1.08] z-0"
         autoPlay
         muted
         loop
@@ -21,22 +21,12 @@ export function HeroSection() {
         <source src="/banking/videos/wais-mumbai-hero-banner.webm" type="video/webm" />
       </video>
 
-      {/* Deep Navy / Dark Blue Color Tint Layer (gives the monochrome video the rich blue WAIS tone while keeping subjects visible) */}
+      {/* Single Light Dark-Blue Tint Overlay (adds rich navy tone while keeping 65%+ of the bright video clearly visible) */}
       <div
-        className="absolute inset-0 z-[1] pointer-events-none mix-blend-multiply"
+        className="absolute inset-0 z-[1] pointer-events-none"
         style={{
           background:
-            "linear-gradient(180deg, rgba(6, 36, 88, 0.72) 0%, rgba(4, 28, 72, 0.65) 55%, rgba(2, 14, 38, 0.88) 100%)",
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Dark Blue Atmospheric Overlay & Smooth Bottom Transition */}
-      <div
-        className="absolute inset-0 z-[2] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle at 50% 38%, rgba(4, 24, 62, 0.38) 0%, rgba(2, 12, 32, 0.68) 70%, rgba(2, 11, 28, 0.92) 100%), linear-gradient(180deg, rgba(2, 11, 28, 0.35) 0%, rgba(2, 11, 28, 0.20) 55%, rgba(2, 11, 28, 0.95) 100%)",
+            "linear-gradient(180deg, rgba(5, 32, 78, 0.36) 0%, rgba(4, 26, 66, 0.32) 65%, rgba(2, 11, 28, 0.85) 100%)",
         }}
         aria-hidden="true"
       />
