@@ -514,7 +514,6 @@ const visionPoints = [
     title: "Navigating Onshore CBUAE and Offshore DFSA Frameworks",
     text: "Production banking AI in the UAE requires clear separation between federal onshore oversight under the Central Bank of the UAE (CBUAE) and offshore free-zone supervision under the Dubai Financial Services Authority (DFSA). The forum delivers actionable blueprints for data residency, model explainability, and audit-ready governance across both regimes.",
     bullets: [] as string[],
-    image: "/banking/images/agenda/dubai/overview.png",
   },
   {
     title: "Production Realities Over Sandbox Hype",
@@ -523,19 +522,15 @@ const visionPoints = [
       "+38% YoY APP scam surge driving real-time AI detection",
       "90% False Alerts Legacy AML overhead consuming compliance budgets",
     ],
-    image: "/banking/images/agenda/accelerating-malaysia-audience.webp",
   },
   {
     title: "Day 1 of the March Executive Cluster",
     text: "On 24 March 2027, the Banking edition convenes 300+ C-suite leaders, followed on 25 March by AI in Healthcare & Life Sciences. Both forums share world-class venue infrastructure while preserving dedicated agendas, distinct P&Ls, and curated buy-side audiences.",
     bullets: [] as string[],
-    image: "/banking/images/networking/meet-leaders.webp",
   },
 ];
 
 export function AgendaVision() {
-  const [activePoint, setActivePoint] = useState(0);
-
   return (
     <>
       <section
@@ -553,54 +548,44 @@ export function AgendaVision() {
       <section className={styles.visionSection} id="the-2030-vision">
         <div className={styles.container}>
           <div className="grid grid-cols-[0.95fr_1.05fr] gap-12 items-stretch max-[980px]:grid-cols-1 mb-10">
-            <div className="relative rounded-[22px] overflow-hidden border border-[#20d5ff]/30 bg-[#040d1d] shadow-[0_0_42px_rgba(0,206,255,0.14)] min-h-[420px]">
+            <div className="group relative rounded-[22px] overflow-hidden border border-[#20d5ff]/30 bg-[#040d1d] shadow-[0_0_42px_rgba(0,206,255,0.14)] min-h-[420px]">
               <img
-                key={visionPoints[activePoint].image}
-                src={visionPoints[activePoint].image}
-                alt={visionPoints[activePoint].title}
-                className="w-full h-full object-cover transition-all duration-300"
+                src="/banking/images/agenda/dubai/the-vision.jpg"
+                alt="UAE and GCC Banking AI Mandate"
+                className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                 loading="lazy"
               />
             </div>
 
             <div className="flex flex-col gap-4 justify-between">
-              {visionPoints.map((pt, idx) => {
-                const isActive = idx === activePoint;
-                return (
-                  <button
-                    key={pt.title}
-                    type="button"
-                    onClick={() => setActivePoint(idx)}
-                    className={`text-left p-6 rounded-[18px] border transition-all duration-200 cursor-pointer ${
-                      isActive
-                        ? "border-[#C0F43C]/65 bg-gradient-to-br from-[#C0F43C]/10 via-[#06152d] to-[#040d1d] shadow-[0_12px_32px_rgba(192,244,60,0.12)]"
-                        : "border-white/12 bg-[#040d1d]/75 hover:border-[#18d4ff]/40"
-                    }`}
-                  >
-                    <div className="flex items-center justify-between gap-3 mb-2">
-                      <h3 className={`m-0 font-extrabold text-[19px] leading-snug ${isActive ? "text-[#C0F43C]" : "text-white"}`}>
-                        {pt.title}
-                      </h3>
-                      <span className={`font-mono text-xs px-2.5 py-1 rounded-full ${isActive ? "bg-[#C0F43C] text-[#06111F] font-bold" : "bg-white/10 text-white/60"}`}>
-                        0{idx + 1}
-                      </span>
-                    </div>
-                    <p className="m-0 text-white/75 text-[15px] leading-relaxed">
-                      {pt.text}
-                    </p>
-                    {pt.bullets.length > 0 && (
-                      <ul className="mt-3 mb-0 pl-0 list-none space-y-1.5">
-                        {pt.bullets.map((b) => (
-                          <li key={b} className="flex items-start gap-2 text-white/85 text-[14.5px] font-medium">
-                            <span className="text-[#C0F43C] font-bold">•</span>
-                            <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </button>
-                );
-              })}
+              {visionPoints.map((pt, idx) => (
+                <article
+                  key={pt.title}
+                  className="group text-left p-6 rounded-[18px] border border-white/12 bg-[#040d1d]/75 transition-all duration-300 cursor-default hover:border-[#C0F43C]/65 hover:bg-gradient-to-br hover:from-[#C0F43C]/10 hover:via-[#06152d] hover:to-[#040d1d] hover:shadow-[0_12px_32px_rgba(192,244,60,0.12)] hover:-translate-y-0.5"
+                >
+                  <div className="flex items-center justify-between gap-3 mb-2">
+                    <h3 className="m-0 font-extrabold text-[19px] leading-snug text-white transition-colors duration-300 group-hover:text-[#C0F43C]">
+                      {pt.title}
+                    </h3>
+                    <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-white/10 text-white/60 transition-all duration-300 group-hover:bg-[#C0F43C] group-hover:text-[#06111F] group-hover:font-bold">
+                      0{idx + 1}
+                    </span>
+                  </div>
+                  <p className="m-0 text-white/75 text-[15px] leading-relaxed">
+                    {pt.text}
+                  </p>
+                  {pt.bullets.length > 0 && (
+                    <ul className="mt-3 mb-0 pl-0 list-none space-y-1.5">
+                      {pt.bullets.map((b) => (
+                        <li key={b} className="flex items-start gap-2 text-white/85 text-[14.5px] font-medium">
+                          <span className="text-[#C0F43C] font-bold">•</span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </article>
+              ))}
             </div>
           </div>
 
