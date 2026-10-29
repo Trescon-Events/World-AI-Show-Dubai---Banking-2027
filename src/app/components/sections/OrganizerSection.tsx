@@ -70,14 +70,11 @@ export function OrganizerSection() {
               width={270}
               height={80}
             />
-            <h3 className="mt-6 text-white font-[850] text-[clamp(22px,2.5vw,30px)] leading-[1.15] tracking-[-0.8px]">
-              Day 1 of the March Dubai Cluster · DIFC District, Dubai.
-            </h3>
           </div>
 
           <div className="flex flex-col">
             <p className="m-0 text-[#a4adbd] text-[16px] leading-[1.65]">
-              World AI Show | BFSI | Dubai 2027 is organised by Trescon. Positioned as Day 1 of the March Dubai Cluster (paired back-to-back with AI in Healthcare &amp; Life Sciences on 25 March 2027), the forum shares enterprise venue infrastructure while maintaining a strictly dedicated banking P&amp;L, regulatory agenda, and pre-qualified financial services buyer audience.
+              Powered by Trescon’s decade-long track record of convening over 42,000 C-suite executives and 2,600+ expert speakers across four continents, World AI Show | BFSI leads the March Dubai Cluster. Held back-to-back with the Healthcare and Life Sciences edition, this dedicated decision forum connects institutional buyers, fintech innovators, and regulators under a single, focused fiduciary agenda.
             </p>
 
             <a
