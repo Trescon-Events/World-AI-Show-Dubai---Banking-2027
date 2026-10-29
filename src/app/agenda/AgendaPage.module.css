@@ -248,7 +248,7 @@
 
     linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.52) 42%, rgba(2, 7, 19, 0.08) 100%),
 
-    url("/banking/images/agenda/Agenda-bg.webp") right center / cover no-repeat;
+    url("/banking/images/agenda/Overview-hero.webp") center top / cover no-repeat;
 
 }
  

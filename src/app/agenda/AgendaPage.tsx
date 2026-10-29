@@ -428,7 +428,14 @@ function AgendaTabs() {
 export function AgendaOverview() {
   return (
     <>
-      <section className={`${styles.hero} pt-[200px]`} id="overview">
+      <section
+        className={`${styles.hero} pt-[200px]`}
+        id="overview"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.52) 42%, rgba(2, 7, 19, 0.08) 100%), url(/banking/images/agenda/Overview-hero.webp) center top / cover no-repeat",
+        }}
+      >
         <div className={styles.container}>
           <h1>From use case to <br /><GradientText>operating outcome.</GradientText></h1>
           <p className={styles.heroPara}>
@@ -537,7 +544,7 @@ export function AgendaVision() {
         className={`${styles.hero} pt-[200px]`}
         id="the-2030-vision-hero"
         style={{
-          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.9) 0%, rgba(2, 7, 19, 0.56) 42%, rgba(2, 7, 19, 0.1) 100%), url(/banking/images/Attend/Association-banner.webp) right center / cover no-repeat"
+          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.9) 0%, rgba(2, 7, 19, 0.56) 42%, rgba(2, 7, 19, 0.1) 100%), url(/banking/images/agenda/Vision-hero.webp) center top / cover no-repeat"
         }}
       >
         <div className={styles.container}>
@@ -625,7 +632,14 @@ export function AgendaVision() {
 export function AgendaLiveTimeline() {
   return (
     <>
-      <section className={`${styles.hero} pt-[200px]`} id="agenda-timeline-hero">
+      <section
+        className={`${styles.hero} pt-[200px]`}
+        id="agenda-timeline-hero"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.52) 42%, rgba(2, 7, 19, 0.08) 100%), url(/banking/images/agenda/Agenda-hero.webp) center top / cover no-repeat",
+        }}
+      >
         <div className={styles.container}>
           <h1><GradientText>Event Schedule</GradientText></h1>
         </div>
@@ -657,7 +671,7 @@ export function AgendaThemes() {
         className={`${styles.hero} pt-[200px]`}
         id="agenda-themes-hero"
         style={{
-          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.48) 42%, rgba(2, 7, 19, 0.05) 100%), url(/banking/images/theme/Theme-02.webp) right center / cover no-repeat"
+          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.48) 42%, rgba(2, 7, 19, 0.05) 100%), url(/banking/images/agenda/Themes-hero.webp) center top / cover no-repeat"
         }}
       >
         <div className={styles.container}>
@@ -719,7 +733,7 @@ export function AgendaCallForSpeakers() {
         className={`${styles.hero} pt-[200px]`}
         id="agenda-speakers-hero"
         style={{
-          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.52) 42%, rgba(2, 7, 19, 0.08) 100%), url(/banking/images/agenda/Call-speakers-bg.webp) right center / cover no-repeat",
+          background: "linear-gradient(90deg, rgba(2, 7, 19, 0.88) 0%, rgba(2, 7, 19, 0.52) 42%, rgba(2, 7, 19, 0.08) 100%), url(/banking/images/agenda/Call-speakers-bg.webp) center top / cover no-repeat",
           alignItems: "center",
           minHeight: "750px",
           marginTop: "0",

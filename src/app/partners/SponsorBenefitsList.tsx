@@ -55,7 +55,7 @@ export function SponsorBenefitsList() {
         </h2>
       </div>
 
-      <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)] grid grid-cols-4 gap-4 overflow-x-auto pb-6 max-[980px]:grid-cols-[repeat(4,290px)] max-sm:grid-cols-1">
+      <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)] grid grid-cols-4 gap-4 max-[980px]:grid-cols-2 max-sm:grid-cols-1">
         {benefits.map((benefit, index) => (
           <article
             key={benefit.title}

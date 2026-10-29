@@ -1,14 +1,5 @@
 "use client";
 
-import { Counter, GradientText } from "../Shared";
-
-const seriesCredibilityStats = [
-  { end: 48, suffix: "", label: "Completed World AI Show editions across four continents" },
-  { end: 42000, suffix: "+", label: "C-level executives and enterprise decision-makers convened" },
-  { end: 2600, suffix: "+", label: "Expert speakers and global technology authorities hosted" },
-  { end: 4, suffix: "", label: "Continents across the global World AI Show footprint" },
-];
-
 export function OrganizerSection() {
   return (
     <section className="relative py-[104px] pt-[80px] bg-[#020713] overflow-hidden" id="organizer">
@@ -55,37 +46,6 @@ export function OrganizerSection() {
                 Enquire About Sponsorship →
               </a>
             </div>
-          </div>
-        </div>
-
-        {/* S10 · Credibility & Series Heritage */}
-        <div
-          data-aos="fade-up"
-          className="p-9 sm:p-11 rounded-[28px] border border-white/10 bg-gradient-to-b from-[#061428]/90 via-[#040d1d]/95 to-[#030915]/95 shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
-        >
-          <div className="text-center mb-10">
-            <h2 className="text-center font-[850] text-white text-[clamp(28px,3.8vw,46px)] leading-[1.08] tracking-[-1.5px] max-w-[900px] mx-auto mb-5">
-              48 global editions. <GradientText>The world&apos;s longest-running enterprise AI series.</GradientText>
-            </h2>
-            <p className="max-w-[820px] mx-auto text-white/75 text-[18px] leading-[1.6]">
-              World AI Show | BFSI | Dubai 2027 is organised by Trescon, bringing an unrivalled international pedigree in artificial intelligence executive convening.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
-            {seriesCredibilityStats.map((item) => (
-              <div
-                key={item.label}
-                className="p-6 rounded-2xl border border-white/10 bg-white/[0.025] hover:border-[#C0F43C]/45 hover:bg-white/[0.04] transition-all duration-300 text-center"
-              >
-                <strong className="block text-[#C0F43C] font-[850] text-[clamp(32px,3.5vw,42px)] leading-none mb-3">
-                  <Counter end={item.end} suffix={item.suffix} />
-                </strong>
-                <span className="block text-white/75 font-mono text-[12px] uppercase tracking-[1.2px] leading-relaxed font-semibold">
-                  {item.label}
-                </span>
-              </div>
-            ))}
           </div>
         </div>
 

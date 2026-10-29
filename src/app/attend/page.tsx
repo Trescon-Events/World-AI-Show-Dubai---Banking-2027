@@ -279,7 +279,7 @@ export function NumberedCard({ item, index }: { item: CardItem; index: number })
 
 export function BenefitGrid({ items }: { items: CardItem[] }) {
   return (
-    <div className="grid grid-cols-4 gap-4 overflow-x-auto pb-1.5 max-[980px]:grid-cols-[repeat(4,280px)] max-sm:grid-cols-1">
+    <div className="grid grid-cols-4 gap-4 max-[980px]:grid-cols-2 max-sm:grid-cols-1">
       {items.map((item, index) => (
         <NumberedCard item={item} index={index} key={item.title} />
       ))}
@@ -310,33 +310,36 @@ export function SplitSection({
 }) {
   return (
     <section className="py-[92px] bg-[#020b1c] max-sm:py-[66px]" id={id}>
-      <div
-        className={`grid grid-cols-[1fr_minmax(360px,47%)] items-center gap-[74px] w-[min(1120px,calc(100%-48px))] mx-auto max-[980px]:grid-cols-1 max-sm:gap-[34px]`}
-      >
-        <div className={`flex flex-col ${reverse ? "max-[980px]:order-none order-2" : "order-none"}`}>
+      <div className="w-[min(1120px,calc(100%-48px))] mx-auto">
+        <div className="mb-10">
           {eyebrow && (
-            <p className="m-0 mb-[19px] text-white/78 text-[13px] font-[650] tracking-[4px] uppercase select-none font-mono">
+            <p className="m-0 mb-[16px] text-white/78 text-[13px] font-[650] tracking-[4px] uppercase select-none font-mono">
               {eyebrow}
             </p>
           )}
-          <h2 className="m-0 text-white font-[850] leading-[1.05] tracking-[-1.8px] text-[clamp(42px,5vw,62px)] max-sm:text-[38px] max-sm:tracking-[-1px]">
+          <h2 className="m-0 text-white font-[850] leading-[1.1] tracking-[-1.6px] text-[clamp(30px,3.6vw,46px)] max-sm:text-[30px] max-sm:tracking-[-1px]">
             {title}
           </h2>
-          <p className="mt-6 mb-9 text-white/66 text-[19px] leading-relaxed max-sm:text-base">
-            {text}
-          </p>
-          <div className="flex">
-            <ArrowButton href={buttonHref || `#${id}`}>{button}</ArrowButton>
-          </div>
         </div>
-        <div className="relative overflow-hidden border border-[#55cfff]/22 rounded-[24px] bg-[#071426]/72 shadow-[0_0_44px_rgba(0,206,255,0.12)]">
-          <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-[#020b2c]/18 pointer-events-none" />
-          <img
-            src={imageSrc}
-            alt={imageAlt}
-            className="w-full h-auto object-cover filter saturate-[0.96] brightness-[0.95]"
-            loading="lazy"
-          />
+
+        <div className="grid grid-cols-[1fr_minmax(360px,47%)] items-center gap-[64px] max-[980px]:grid-cols-1 max-sm:gap-[34px]">
+          <div className={`flex flex-col ${reverse ? "max-[980px]:order-none order-2" : "order-none"}`}>
+            <p className="m-0 mb-9 text-white/75 text-[18px] leading-[1.7] max-sm:text-base">
+              {text}
+            </p>
+            <div className="flex">
+              <ArrowButton href={buttonHref || `#${id}`}>{button}</ArrowButton>
+            </div>
+          </div>
+          <div className="relative overflow-hidden border border-[#55cfff]/22 rounded-[24px] bg-[#071426]/72 shadow-[0_0_44px_rgba(0,206,255,0.12)]">
+            <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-[#020b2c]/18 pointer-events-none" />
+            <img
+              src={imageSrc}
+              alt={imageAlt}
+              className="w-full h-auto object-cover filter saturate-[0.96] brightness-[0.95]"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -415,10 +418,10 @@ export function AttendOverviewSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[700px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1120px)/2))] py-[76px] pt-[280px] overflow-hidden bg-cover bg-[position:right_center] bg-no-repeat max-sm:min-h-[600px] max-sm:px-[18px] max-sm:py-[56px] max-sm:pt-[240px]"
+        className="relative min-h-[700px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1120px)/2))] py-[76px] pt-[280px] overflow-hidden bg-cover bg-[position:center_top] bg-no-repeat max-sm:min-h-[600px] max-sm:px-[18px] max-sm:py-[56px] max-sm:pt-[240px]"
         style={{
           backgroundImage:
-            'linear-gradient(90deg, rgba(2, 7, 19, 0.92) 0%, rgba(2, 7, 19, 0.56) 45%, rgba(2, 7, 19, 0.1) 100%), url("/banking/images/Attend/Delegates-banner.webp")',
+            'linear-gradient(90deg, rgba(2, 7, 19, 0.92) 0%, rgba(2, 7, 19, 0.56) 45%, rgba(2, 7, 19, 0.1) 100%), url("/banking/images/Attend/Overview-banner.webp")',
         }}
         id="overview"
       >
@@ -555,7 +558,7 @@ export function AttendDelegateSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[760px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1120px)/2))] py-[76px] pt-[280px] overflow-hidden bg-cover bg-[position:right_center] bg-no-repeat max-sm:min-h-[690px] max-sm:px-[18px] max-sm:py-[56px] max-sm:pt-[240px]"
+        className="relative min-h-[760px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1120px)/2))] py-[76px] pt-[280px] overflow-hidden bg-cover bg-[position:center_top] bg-no-repeat max-sm:min-h-[690px] max-sm:px-[18px] max-sm:py-[56px] max-sm:pt-[240px]"
         style={{ backgroundImage: 'url("/banking/images/Attend/Delegates-banner.webp")' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#020713]/88 via-[#020713]/48 to-transparent z-0 pointer-events-none" />
@@ -614,7 +617,7 @@ export function AttendSponsorSection() {
       {/* Hero Section */}
       <section
         className="relative min-h-[760px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1120px)/2))] py-[76px] pt-[280px] overflow-hidden bg-cover bg-[position:right_center] bg-no-repeat max-sm:min-h-[690px] max-sm:px-[18px] max-sm:py-[56px] max-sm:pt-[240px]"
-        style={{ backgroundImage: 'url("/banking/images/Attend/Delegates-banner.webp")' }}
+        style={{ backgroundImage: 'url("/banking/images/Attend/Sponsor-banner.webp")' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#020713]/88 via-[#020713]/48 to-transparent z-0 pointer-events-none" />
         <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] rounded-full bg-[#18d4ff]/4 blur-[110px] pointer-events-none z-0" />
@@ -641,7 +644,13 @@ export function AttendSponsorSection() {
         imageAlt="Standardised Speaking and Booth Framework at World AI Show Dubai"
         imageSrc="/banking/images/Attend/brand-center-innovation.webp"
         reverse={false}
-        title={<>Put Your Enterprise Solution Before <GradientText>Qualified Banking Procurement Committees</GradientText></>}
+        title={
+          <>
+            Put Your Enterprise Solution Before{" "}
+            <br className="max-md:hidden" />
+            <GradientText>Qualified Banking Procurement Committees</GradientText>
+          </>
+        }
         text={
           <>
             • <strong>Speaking Sponsor:</strong> 20-Min Plenary Keynote/Fireside + 12 sqm Concourse Booth + 12 Passes

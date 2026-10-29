@@ -83,17 +83,6 @@ function ThrivingEnvironmentShowcase() {
     };
   }, []);
 
-  const jumpToSlide = (idx: number) => {
-    const el = trackRef.current;
-    if (!el) return;
-    const scrollable = el.offsetHeight - window.innerHeight;
-    const targetY =
-      window.scrollY +
-      el.getBoundingClientRect().top +
-      (idx / (thrivingEnvironmentItems.length - 1)) * scrollable;
-    window.scrollTo({ top: targetY, behavior: "smooth" });
-  };
-
   const activeIndex = Math.min(
     thrivingEnvironmentItems.length - 1,
     Math.max(0, Math.round(scrollStage))
@@ -163,28 +152,7 @@ function ThrivingEnvironmentShowcase() {
             );
           })}
 
-          {/* Top-Right Interactive Slide Progress Selector Pills */}
-          <div className="absolute top-24 right-[3.5vw] z-[60] flex items-center gap-2 max-sm:top-20 max-sm:right-4">
-            {thrivingEnvironmentItems.map((item, idx) => {
-              const isCurrent = idx === activeIndex;
-              return (
-                <button
-                  key={item.num}
-                  type="button"
-                  onClick={() => jumpToSlide(idx)}
-                  className={`px-3 py-1.5 rounded-full font-mono text-xs font-bold tracking-wider transition-all duration-300 cursor-pointer border ${
-                    isCurrent
-                      ? "bg-[#C0F43C] text-[#06111F] border-[#C0F43C] shadow-[0_0_16px_rgba(192,244,60,0.45)]"
-                      : "bg-black/45 text-white/70 border-white/20 hover:border-white/50 hover:text-white backdrop-blur-md"
-                  }`}
-                >
-                  {item.num}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Bottom Overlay Layer (01/04 + Vertical Divider + Title & Description) */}
+          {/* Bottom Overlay Layer (Colored Title & Description) */}
           {thrivingEnvironmentItems.map((item, idx) => {
             const isCurrent = idx === activeIndex;
             return (
@@ -197,31 +165,13 @@ function ThrivingEnvironmentShowcase() {
                 }`}
                 style={{ zIndex: 50 + idx }}
               >
-                {/* Giant Index Number + /04 + Vertical Divider + Title & Description */}
-                <div className="flex items-end gap-6 max-sm:flex-col max-sm:items-start max-sm:gap-3">
-                  <div className="flex items-end select-none shrink-0">
-                    <div className="overflow-hidden pt-4">
-                      <span className="text-[#C0F43C] text-[clamp(64px,7.5vw,116px)] leading-[0.74] font-[850] block tracking-tighter drop-shadow-[0_0_24px_rgba(192,244,60,0.28)]">
-                        {item.num}
-                      </span>
-                    </div>
-                    <div className="overflow-hidden mb-1">
-                      <span className="text-white/60 text-[clamp(18px,1.8vw,28px)] font-semibold ml-1 leading-none block font-mono">
-                        /0{thrivingEnvironmentItems.length}
-                      </span>
-                    </div>
+                <div className="flex flex-col gap-2.5 self-end mb-1 max-w-[740px]">
+                  <div className="leading-[1.06] text-[clamp(24px,2.8vw,40px)] font-[850] uppercase tracking-[-0.8px]">
+                    <GradientText>{item.title}</GradientText>
                   </div>
-
-                  <div className="h-[84px] max-sm:hidden w-px bg-white/25 self-end mb-1.5 shrink-0" />
-
-                  <div className="flex flex-col gap-2 self-end mb-1 max-w-[680px]">
-                    <div className="text-white leading-[1.02] text-[clamp(22px,2.6vw,38px)] font-[850] uppercase tracking-[-0.8px]">
-                      {item.title}
-                    </div>
-                    <p className="m-0 text-white/80 text-[clamp(14px,1.15vw,17px)] leading-[1.55] font-normal">
-                      {item.desc}
-                    </p>
-                  </div>
+                  <p className="m-0 text-white/85 text-[clamp(14.5px,1.15vw,17.5px)] leading-[1.55] font-normal">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             );

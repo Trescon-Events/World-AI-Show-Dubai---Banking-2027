@@ -94,7 +94,7 @@ export default function NetworkingPage() {
 
       {/* ── Section 1: Hero ── */}
       <section
-        className="relative pt-[220px] pb-[120px] overflow-hidden bg-cover bg-center flex items-center min-h-[700px] max-md:pt-[170px]"
+        className="relative pt-[220px] pb-[120px] overflow-hidden bg-cover bg-[position:center_top] flex items-center min-h-[700px] max-md:pt-[170px]"
         style={{
           backgroundImage: `linear-gradient(90deg, rgba(2, 7, 19, 0.96) 0%, rgba(2, 7, 19, 0.8) 45%, rgba(2, 7, 19, 0.25) 100%), url('/banking/images/networking/networking-hero-bg.webp')`
         }}

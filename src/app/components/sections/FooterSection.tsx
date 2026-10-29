@@ -76,7 +76,12 @@ export function FooterSection() {
             >
               Trescon
             </a>
-            <a href="#organizer" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a
+              href="https://tresconglobal.com/about-us/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5"
+            >
               About Us
             </a>
             <a href="/banking/general-enquiry" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
