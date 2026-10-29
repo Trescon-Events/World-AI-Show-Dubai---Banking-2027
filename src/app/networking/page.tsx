@@ -110,7 +110,7 @@ export default function NetworkingPage() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ceff] to-[#C0F43C]">By Design.</span>
             </h1>
             <p className="m-0 mt-6 text-white/75 text-[18px] leading-relaxed max-sm:text-[15px]">
-              300+ pre-qualified C-suite banking, risk, compliance, and technology leaders at the 1-Day Executive Decision Forum in the DIFC District, Dubai (24 March 2027 · Day 1 of the March Dubai Cluster). Algorithmic pre-scheduled 1-on-1 meetings, closed-door 15-buyer CXO boardrooms, and a personalised 1-day agenda builder.
+              Curated specifically for senior banking, risk, and insurance leadership, the forum moves beyond casual hallway encounters to deliver intentional, high-impact peer exchange. Connect directly with institutional decision-makers through pre-scheduled bilateral meetings, private boardroom discussions, and collaborative working groups built to address live procurement and architecture priorities.
             </p>
 
             {/* Quick links buttons */}

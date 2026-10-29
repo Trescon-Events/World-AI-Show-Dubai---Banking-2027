@@ -14,21 +14,43 @@ import { SpeakerCallToStage } from "../speakers/SpeakerCallToStage";
 
 const subNav = ["Overview", "The Vision", "Agenda", "Themes", "Call for Speakers"];
 
-const formats = [
+const formats: { title: string; text: string; icon: ReactNode }[] = [
   {
     title: "Plenary Keynotes & Live Buyer Evidence",
     text: "Frontline case studies and fireside briefings led by commercial bank CXOs and enterprise architects. Moving past theoretical hype to examine real-world core integration hurdles, pilot failure post-mortems, and verified balance-sheet performance.",
-    image: "/banking/images/agenda/dubai/overview.png",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+        <path d="M19 10v1a7 7 0 0 1-14 0v-1" />
+        <line x1="12" y1="18" x2="12" y2="22" />
+        <line x1="8" y1="22" x2="16" y2="22" />
+      </svg>
+    ),
   },
   {
     title: "Interactive Use-Case Breakout Clinics",
     text: "Collaborative, hands-on workshop tracks designed to tackle acute operational bottlenecks. Delegates deep-dive into practical deployment frameworks for real-time fraud and AML defense, sub-second payment screening, and autonomous front-to-back office agentic workflows.",
-    image: "/banking/images/Attend/AI-decision-maker.webp",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+        <path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4" />
+      </svg>
+    ),
   },
   {
     title: "Closed-Door Boardrooms & Peer Roundtables",
     text: "Private, off-the-record discussions held under the Chatham House Rule alongside facilitated executive roundtables. Engineered for senior decision-makers to benchmark technology stacks, navigate regulatory oversight, and align vendor procurement roadmaps.",
-    image: "/banking/images/networking/meet-leaders.webp",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+    ),
   },
 ];
 
@@ -457,6 +479,22 @@ export function AgendaOverview() {
           </div>
           <img src="/banking/images/agenda/About.webp" alt="Banking executives networking at World AI Show Dubai" loading="lazy" />
         </div>
+
+        <div className={`${styles.container} mt-16`}>
+          <div className={styles.formatGrid}>
+            {formats.map((item) => (
+              <article className={`${styles.formatCard} !p-7`} key={item.title}>
+                <div className="w-12 h-12 rounded-2xl border border-[#18d4ff]/35 bg-gradient-to-br from-[#18d4ff]/15 to-[#C0F43C]/10 flex items-center justify-center text-[#18d4ff] shadow-[0_0_24px_rgba(24,212,255,0.18)]">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className={styles.formatsSection}>
@@ -464,7 +502,7 @@ export function AgendaOverview() {
           <h2>A <GradientText>Six-Part Block Methodology.</GradientText></h2>
           <p>Engineered to drive banking buyers from board priorities down to concrete procurement across one intensive day.</p>
 
-          <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1 mb-14 text-left">
+          <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1 text-left">
             {sixPartBlocks.map((block) => (
               <div
                 key={block.num}
@@ -480,18 +518,6 @@ export function AgendaOverview() {
                   {block.desc}
                 </p>
               </div>
-            ))}
-          </div>
-
-          <div className={styles.formatGrid}>
-            {formats.map((item) => (
-              <article className={styles.formatCard} key={item.title}>
-                <img src={item.image} alt="" loading="lazy" />
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              </article>
             ))}
           </div>
         </div>
