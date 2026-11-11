@@ -14,6 +14,7 @@ import { FooterSection } from "../../components/sections/FooterSection";
 import { Ai2047BrandBookV1System } from "../_design-system/Ai2047BrandBookV1System";
 import { LogoSwap } from "../_design-system/LogoSwap";
 import { TestimonialsPreview } from "../_design-system/TestimonialsPreview";
+import { VortexCursor } from "../_design-system/VortexCursor";
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap", variable: "--font-jakarta" });
 const grotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap", variable: "--font-grotesk" });
@@ -34,9 +35,10 @@ export default function BrandBookHomePreview() {
     <div className={`ai2047-brandbook-v1 ${jakarta.variable} ${grotesk.variable}`}>
       <Ai2047BrandBookV1System />
       <LogoSwap />
+      <VortexCursor />
       <main className="relative flex flex-col min-h-screen overflow-x-clip">
         <Header activeItem="Home" />
-        <HeroSection />
+        <HeroSection description="A premier executive forum exploring AI deployment across regulated financial services, convening 300+ C-suite leaders to shape future architecture, fraud defence, and procurement." />
         <StatsSection />
         <EcosystemSection />
         <AgendaSection />

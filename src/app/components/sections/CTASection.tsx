@@ -123,7 +123,7 @@ export function CTASection() {
                   Location
                 </span>
                 <strong className="text-[18px] font-extrabold text-white tracking-wide text-center">
-                  DIFC District, Dubai, UAE
+                  Dubai, UAE
                 </strong>
               </div>
 

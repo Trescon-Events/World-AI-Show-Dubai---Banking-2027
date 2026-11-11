@@ -105,7 +105,6 @@ export function TestimonialsPreview() {
             <button type="button" className="tp-btn" aria-label="Previous testimonial" onClick={() => go(active === 0 ? testimonials.length - 1 : active - 1)}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
             </button>
-            <div className="tp-count"><b>{String(active + 1).padStart(2, "0")}</b> / {String(testimonials.length).padStart(2, "0")}</div>
             <button type="button" className="tp-btn" aria-label="Next testimonial" onClick={() => go(active === testimonials.length - 1 ? 0 : active + 1)}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
             </button>
@@ -119,7 +118,6 @@ export function TestimonialsPreview() {
                 <span className="tp-qico" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
                 </span>
-                <span className="tp-tag">ENDORSER // {t.id}</span>
                 <span className="tp-tag">{t.highlight}</span>
               </div>
               <blockquote>&ldquo;{t.quote}&rdquo;</blockquote>
@@ -140,7 +138,6 @@ export function TestimonialsPreview() {
         <div className="tp-strip">
           {testimonials.map((item, i) => (
             <button key={item.name} type="button" className={`tp-pick${i === active ? " is-active" : ""}`} onClick={() => go(i)}>
-              <small>{item.id} · PARTNER</small>
               <strong>{item.name}</strong>
               <span>{item.highlight}</span>
             </button>

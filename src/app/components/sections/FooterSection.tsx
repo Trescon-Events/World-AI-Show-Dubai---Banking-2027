@@ -21,7 +21,7 @@ export function FooterSection() {
               className="w-[min(250px,100%)] h-auto object-contain mb-4 select-none"
             />
             <p className="max-w-[430px] m-0 mt-2 text-muted text-[17px] leading-[1.55]">
-              The premier buyer-led executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations. Day 1 of the March Dubai Cluster · DIFC District, Dubai, UAE.
+              The premier buyer-led executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations. Day 1 of the March Dubai Cluster · Dubai, UAE.
             </p>
           </div>
 

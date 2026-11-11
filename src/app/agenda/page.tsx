@@ -3,7 +3,7 @@ import { AgendaPage } from "./AgendaPage";
 export const metadata: Metadata = {
   title: "Curriculum Overview | World AI Show | BFSI | Dubai 2027",
   description:
-    "From use case to operating outcome. Explore Trescon's six-part block methodology for World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE)."
+    "From use case to operating outcome. Explore Trescon's six-part block methodology for World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE)."
 };
 export default function Page() {
   return <AgendaPage />;

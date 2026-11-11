@@ -30,7 +30,7 @@ const nav = [
 const stats = [
   ["300+", "Pre-Qualified C-Suite Leaders", "users"],
   ["80%+", "Buy-Side Enterprise Ratio", "target"],
-  ["35–45", "Expert Faculty Speakers", "mic"],
+  ["40+", "Expert Faculty Speakers", "mic"],
   ["4", "Core Sector Content Pillars", "layers"],
 ] as const;
 
@@ -46,8 +46,8 @@ const constituencies = [
 ] as const;
 
 const faqs = [
-  ["What is World AI Show | BFSI | Dubai 2027?", "A 1-Day Executive Decision Forum on 24 March 2027 in DIFC District, Dubai, UAE. It convenes 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (maintaining a minimum 80% buy-side enterprise ratio) to address controlled AI deployment for regulated financial operations."],
-  ["How does this forum fit into the March Dubai Cluster?", "The forum is Day 1 of the March Dubai Cluster, paired back-to-back with World AI Show | AI in Healthcare & Life Sciences on 25 March 2027. Both share premium DIFC District venue infrastructure while maintaining separate P&Ls, dedicated sector agendas, and distinct pre-qualified buyer audiences."],
+  ["What is World AI Show | BFSI | Dubai 2027?", "A 1-Day Executive Decision Forum on 24 March 2027 in Dubai, UAE. It convenes 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (maintaining a minimum 80% buy-side enterprise ratio) to address controlled AI deployment for regulated financial operations."],
+  ["How does this forum fit into the March Dubai Cluster?", "The forum is Day 1 of the March Dubai Cluster, paired back-to-back with World AI Show | AI in Healthcare & Life Sciences on 25 March 2027. Both share premium venue infrastructure in Dubai, UAE while maintaining separate P&Ls, dedicated sector agendas, and distinct pre-qualified buyer audiences."],
   ["Who qualifies for a complimentary Delegate Pass?", "The Delegate Pass is complimentary, strictly by invitation and qualification, for senior buy-side executives from commercial and retail banks, insurers, wealth and asset managers, and regulatory authorities holding an active operational budget or deployment mandate. Solution providers may apply for a paid Business Pass, subject to a strictly capped quota."],
   ["What is the CXO Closed-Door Boardroom format?", "An exclusive 60-minute curated private session hosting 15 pre-qualified wishlist banking and risk CXOs under Chatham House Rule, with a 5-minute sponsor opening address and dedicated executive moderation."],
   ["Who organises the World AI Show Series?", "Trescon, the team behind the world's longest-running enterprise AI summit series, with 48 completed global editions across four continents, convening 42,000+ C-level executives and 2,600+ expert speakers."],
@@ -88,7 +88,7 @@ export default function BrandPreviewHome() {
               </p>
               <div className="hero-meta">
                 <div><strong>24</strong><span>March 2027</span></div>
-                <div><strong>DIFC District, Dubai</strong><span>Day 1 · March Dubai Cluster</span></div>
+                <div><strong>Dubai, UAE</strong><span>Day 1 · March Dubai Cluster</span></div>
                 <div><strong>1-Day</strong><span>Executive Decision Forum</span></div>
               </div>
               <div className="hero-actions">
@@ -278,7 +278,7 @@ export default function BrandPreviewHome() {
               <a className="logo-link" href="/banking/" aria-label="World AI Show BFSI Dubai home">
                 <img src={LOGO_WHITE} alt="World AI Show | BFSI | Dubai" width={144} height={58} loading="lazy" />
               </a>
-              <p style={{ marginTop: 16 }}>24 March 2027 · DIFC District, Dubai, UAE · 1-Day Executive Decision Forum. Organised by Trescon.</p>
+              <p style={{ marginTop: 16 }}>24 March 2027 · Dubai, UAE · 1-Day Executive Decision Forum. Organised by Trescon.</p>
             </div>
             <div className="ftr-col">
               <h5>Explore</h5>

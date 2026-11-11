@@ -52,8 +52,8 @@ function Counter({ end, prefix = "", suffix = "", duration = 1500 }: { end: numb
 
 const statsData = [
   { number: 300, prefix: "", suffix: "+", label: "Pre-Qualified C-Suite Leaders" },
-  { number: 70, prefix: "", suffix: "%+", label: "Buy-Side Enterprise Ratio" },
-  { number: 45, prefix: "35–", suffix: "", label: "Expert Faculty Speakers" },
+  { number: 80, prefix: "", suffix: "%+", label: "Buy-Side Enterprise Ratio" },
+  { number: 40, prefix: "", suffix: "+", label: "Expert Faculty Speakers" },
   { number: 4, prefix: "", suffix: "", label: "Core Sector Content Pillars" },
   { number: 48, prefix: "", suffix: "", label: "Global Series Editions" },
 ];

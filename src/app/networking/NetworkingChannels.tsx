@@ -38,7 +38,7 @@ const channels: ChannelItem[] = [
   {
     title: "VIP Executive Lounge & Bilateral Meeting Concourse",
     tag: "Premium Access",
-    desc: "Build long-term relationships in the DIFC District's executive suites. Engage with sovereign wealth CIOs, retail and corporate banking CXOs, and regulatory supervisors during structured networking breaks.",
+    desc: "Build long-term relationships in executive suites in Dubai, UAE. Engage with sovereign wealth CIOs, retail and corporate banking CXOs, and regulatory supervisors during structured networking breaks.",
     benefits: [
       "Restricted executive lounge access",
       "Sovereign wealth & Tier-1 bank buyer hubs",

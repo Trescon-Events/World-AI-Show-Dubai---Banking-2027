@@ -8,7 +8,7 @@ import { FooterSection } from "../components/sections/FooterSection";
 export const metadata: Metadata = {
   title: "Speakers Hub | World AI Show | BFSI | Dubai 2027",
   description:
-    "Explore the Banking & Risk Faculty and past global series speakers for World AI Show | BFSI | Dubai 2027 (35–45 Expert Faculty Speakers).",
+    "Explore the Banking & Risk Faculty and past global series speakers for World AI Show | BFSI | Dubai 2027 (40+ Expert Faculty Speakers).",
 };
 
 

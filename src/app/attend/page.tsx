@@ -8,7 +8,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = {
   title: "Attend | World AI Show | BFSI | Dubai 2027",
   description:
-    "How to attend World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE). Explore the Delegate Pass (complimentary, strictly by invitation and qualification), Business Pass, and Commercial Sponsorship packages.",
+    "How to attend World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE). Explore the Delegate Pass (complimentary, strictly by invitation and qualification), Business Pass, and Commercial Sponsorship packages.",
 };
 
 const subNav = ["Overview", "Delegate", "Sponsor", "Media Partner", "Association Partner"];
@@ -49,18 +49,13 @@ const gatewayCards: CardItem[] = [
     icon: "/banking/images/Attend/gateway/high-value-networking.svg",
   },
   {
-    title: "Block 6 Outcome Roundtables",
-    text: "Participate in structured peer-to-peer outcome roundtables capturing recorded procurement criteria and 2027 implementation roadmaps.",
-    icon: "/banking/images/Attend/gateway/curated-roundtable-discussions.svg",
-  },
-  {
     title: "Strict Buy-Side Qualification",
     text: "Reserved for CIOs, CTOs, CROs, CCOs, CDAIOs, Heads of Fraud, MLROs, and Regulators holding an active operational budget or deployment mandate.",
     icon: "/banking/images/Attend/gateway/speaker-materials-and-insights.svg",
   },
   {
     title: "Hosted Luncheon & Closing Reception",
-    text: "Includes the Executive Networking Luncheon and the Closing Executive Reception in DIFC District concluding Day 1 of the March Dubai Cluster.",
+    text: "Includes the Executive Networking Luncheon and the Closing Executive Reception in Dubai, UAE concluding Day 1 of the March Dubai Cluster.",
     icon: "/banking/images/Attend/gateway/networking-lunch-and-business-meetings.svg",
   },
   {
@@ -112,8 +107,8 @@ const sponsorBenefits: CardItem[] = [
     icon: "/banking/images/Attend/partner/networking-access.webp",
   },
   {
-    title: "Minimum 70% Buy-Side Guarantee",
-    text: "Strict room governance ensuring at least 70% of the 300+ attendees represent buy-side financial institutions and regulators.",
+    title: "Minimum 80% Buy-Side Guarantee",
+    text: "Strict room governance ensuring at least 80% of the 300+ attendees represent buy-side financial institutions and regulators.",
     icon: "/banking/images/Attend/sponsor/exclusive-sponsorship-branding.webp",
   },
   {
@@ -131,7 +126,7 @@ const mediaBenefits: CardItem[] = [
   },
   {
     title: "Executive Interview Room Access",
-    text: "Dedicated press workspace and private interview suites in DIFC District for 1-on-1 briefings with banking CXOs and global faculty.",
+    text: "Dedicated press workspace and private interview suites in Dubai, UAE for 1-on-1 briefings with banking CXOs and global faculty.",
     icon: "/banking/images/Attend/media/dedicated-media-facilities.webp",
   },
   {
@@ -146,12 +141,12 @@ const mediaBenefits: CardItem[] = [
   },
   {
     title: "Supporting Financial Media Recognition",
-    text: "Featured placement in the Institutional Regulators & Supporting Financial Media showcase across the website and DIFC venue.",
+    text: "Featured placement in the Institutional Regulators & Supporting Financial Media showcase across the website and event venue in Dubai, UAE.",
     icon: "/banking/images/Attend/media/amplified-media-visibility.webp",
   },
   {
     title: "March Dubai Cluster Coverage",
-    text: "Editorial access across the March Dubai Cluster in DIFC District (Day 1: Banking & Financial Services on 24 March; Day 2: Healthcare & Life Sciences on 25 March).",
+    text: "Editorial access across the March Dubai Cluster in Dubai, UAE (Day 1: Banking & Financial Services on 24 March; Day 2: Healthcare & Life Sciences on 25 March).",
     icon: "/banking/images/Attend/media/brand-and-media-recognition.webp",
   },
   {
@@ -161,7 +156,7 @@ const mediaBenefits: CardItem[] = [
   },
   {
     title: "VIP Concourse & Reception Access",
-    text: "Connect directly with 300+ pre-qualified C-suite banking leaders and 35–45 expert faculty speakers in Dubai.",
+    text: "Connect directly with 300+ pre-qualified C-suite banking leaders and 40+ expert faculty speakers in Dubai.",
     icon: "/banking/images/Attend/media/networking-access.webp",
   },
 ];
@@ -194,7 +189,7 @@ const associationBenefits: CardItem[] = [
   },
   {
     title: "VIP Bilateral Networking Access",
-    text: "Connect association leadership with 300+ pre-qualified C-suite banking decision-makers in DIFC District, Dubai.",
+    text: "Connect association leadership with 300+ pre-qualified C-suite banking decision-makers in Dubai, UAE.",
     icon: "/banking/images/Attend/partner/networking-access.webp",
   },
   {
@@ -324,9 +319,9 @@ export function SplitSection({
 
         <div className="grid grid-cols-[1fr_minmax(360px,47%)] items-center gap-[64px] max-[980px]:grid-cols-1 max-sm:gap-[34px]">
           <div className={`flex flex-col ${reverse ? "max-[980px]:order-none order-2" : "order-none"}`}>
-            <p className="m-0 mb-9 text-white/75 text-[18px] leading-[1.7] max-sm:text-base">
+            <div className="m-0 mb-9 text-white/75 text-[18px] leading-[1.7] max-sm:text-base">
               {text}
-            </p>
+            </div>
             <div className="flex">
               <ArrowButton href={buttonHref || `#${id}`}>{button}</ArrowButton>
             </div>
@@ -394,7 +389,7 @@ export function AttendCTASection() {
                 Location
               </span>
               <strong className="text-[17px] font-extrabold text-white tracking-wide text-center">
-                DIFC District, Dubai, UAE
+                Dubai, UAE
               </strong>
             </div>
 
@@ -519,7 +514,7 @@ export function AttendOverviewSection() {
                 </p>
                 <ul className="space-y-2.5 mb-8 text-white/75 text-[15px] list-none p-0">
                   <li className="flex items-start gap-2.5"><span className="text-cyan font-bold">✓</span> Paid commercial access for enterprise AI, cloud, fraud/AML, and core banking vendors</li>
-                  <li className="flex items-start gap-2.5"><span className="text-cyan font-bold">✓</span> Strictly capped quota to protect the minimum 70% buy-side enterprise ratio</li>
+                  <li className="flex items-start gap-2.5"><span className="text-cyan font-bold">✓</span> Strictly capped quota to protect the minimum 80% buy-side enterprise ratio</li>
                   <li className="flex items-start gap-2.5"><span className="text-cyan font-bold">✓</span> Full 1-day access to plenary blocks, concourse showcase, and Closing Executive Reception</li>
                 </ul>
               </div>
@@ -652,17 +647,22 @@ export function AttendSponsorSection() {
           </>
         }
         text={
-          <>
-            • <strong>Speaking Sponsor:</strong> 20-Min Plenary Keynote/Fireside + 12 sqm Concourse Booth + 12 Passes
-            <br />
-            • <strong>Engagement Partner:</strong> Exclusive Leadership of 75-Min Workshop Clinic + 9 sqm Booth + 8 Passes
-            <br />
-            • <strong>CXO Closed-Door Boardroom:</strong> 60-Min Curated Session with 15 Wishlist CXOs + 5-Min Opening Address
-            <br />
-            • <strong>Industry Partner:</strong> Plenary Panel Speaking Seat + 9 sqm Booth + 6 Passes
-            <br />
-            • <strong>Exhibitor:</strong> 6 sqm Standard Turnkey Concourse Booth + 4 Passes
-          </>
+          <div className="flex flex-col gap-3">
+            {[
+              ["Speaking Sponsor:", "20-Min Plenary Keynote/Fireside + 12 sqm Concourse Booth + 12 Passes"],
+              ["Engagement Partner:", "Exclusive Leadership of 75-Min Workshop Clinic + 9 sqm Booth + 8 Passes"],
+              ["CXO Closed-Door Boardroom:", "60-Min Curated Session with 15 Wishlist CXOs + 5-Min Opening Address"],
+              ["Industry Partner:", "Plenary Panel Speaking Seat + 9 sqm Booth + 6 Passes"],
+              ["Exhibitor:", "6 sqm Standard Turnkey Concourse Booth + 4 Passes"],
+            ].map(([label, desc]) => (
+              <div
+                key={label}
+                className="px-5 py-4 border border-white/[0.17] rounded-[13px] bg-gradient-to-br from-[#00ceff]/12 to-[#996cff]/14 bg-[#050c1c]/80 text-[16px] leading-[1.55] shadow-[inset_0_0_28px_rgba(65,220,255,0.05)]"
+              >
+                <strong className="text-white">{label}</strong> {desc}
+              </div>
+            ))}
+          </div>
         }
       />
 
@@ -712,7 +712,7 @@ export function AttendMediaSection() {
         title={<>Financial Press Credentials &amp; <GradientText>Executive Interview Access</GradientText></>}
         text={
           <>
-            World AI Show | BFSI convenes 300+ pre-qualified C-suite banking, insurance, and risk leaders alongside 35–45 expert faculty speakers in DIFC District, Dubai.
+            World AI Show | BFSI convenes 300+ pre-qualified C-suite banking, insurance, and risk leaders alongside 40+ expert faculty speakers in Dubai, UAE.
             <br />
             <br />
             Accredited financial journalists, editors, and industry analysts receive press credentials, dedicated interview suite access, and official research syndication opportunities across the entire day of the event.
@@ -767,7 +767,7 @@ export function AttendAssociationSection() {
             World AI Show | BFSI | Dubai 2027 welcomes regional banking federations, fintech associations, and professional risk and compliance bodies as official institutional partners.
             <br />
             <br />
-            Connect your senior banking and financial services members with 300+ pre-qualified C-suite peers, nominate faculty speakers with verified production case studies, and shape the regional regulatory and procurement dialogue in DIFC District, Dubai.
+            Connect your senior banking and financial services members with 300+ pre-qualified C-suite peers, nominate faculty speakers with verified production case studies, and shape the regional regulatory and procurement dialogue in Dubai, UAE.
           </>
         }
       />

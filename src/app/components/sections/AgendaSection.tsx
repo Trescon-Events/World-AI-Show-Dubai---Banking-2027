@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { GradientText } from "../Shared";
 
 export const themeItems = [
@@ -13,7 +13,9 @@ export const themeItems = [
     expandedScope:
       "Mitigating Authorised Push Payment (APP) scams, sub-second transaction fraud detection, AML false-positive overhead reduction, synthetic identity resolution, behavioural biometrics, and mule account tracking.",
     clinicalFormat: "Interactive 75-minute Workshop Clinic A (60–80 delegates) & Buyer Evidence Plenary",
-    image: "/banking/images/agenda/keynotes.webp",
+    video: "/banking/videos/agenda/financial-crime.mp4?v=2",
+    image: "/banking/videos/agenda/financial-crime-poster.webp?v=2",
+    imagePos: "object-center",
   },
   {
     index: "02",
@@ -24,7 +26,9 @@ export const themeItems = [
     expandedScope:
       "Autonomous agentic workflows with defensible human-in-the-loop escalation paths, customer servicing copilots, automated onboarding/eKYC, algorithmic mortgage processing, and intelligent document processing (IDP) for trade finance.",
     clinicalFormat: "Interactive 75-minute Workshop Clinic B (60–80 delegates) & Applied Case Studies",
-    image: "/banking/images/agenda/panel-discussion.webp",
+    video: "/banking/videos/agenda/agentic-servicing.mp4",
+    image: "/banking/videos/agenda/agentic-servicing-poster.webp",
+    imagePos: "object-center",
   },
   {
     index: "03",
@@ -35,7 +39,9 @@ export const themeItems = [
     expandedScope:
       "AI-driven credit underwriting using alternative data estates, real-time risk simulation, dynamic liquidity management, autonomous portfolio optimisation, and dynamic insurance claims adjudication.",
     clinicalFormat: "Applied Case Studies Plenary & Outcome Roundtables",
-    image: "/banking/images/agenda/driving-malaysia-stage.webp",
+    video: "/banking/videos/agenda/risk-modelling.mp4",
+    image: "/banking/videos/agenda/risk-modelling-poster.webp",
+    imagePos: "object-center",
   },
   {
     index: "04",
@@ -46,7 +52,9 @@ export const themeItems = [
     expandedScope:
       "Continuous model drift detection, algorithmic auditability, stress-testing, sovereign data residency, hybrid cloud orchestration, third-party AI risk management, and compliance with onshore CBUAE and DIFC DFSA guidelines.",
     clinicalFormat: "Risk & Trust Plenary Panel & Regulatory Compliance Briefings",
-    image: "/banking/images/agenda/Fireside.webp",
+    video: "/banking/videos/agenda/model-risk-governance.mp4",
+    image: "/banking/videos/agenda/model-risk-governance-poster.webp",
+    imagePos: "object-center",
   },
 ];
 
@@ -89,42 +97,117 @@ export const sixPartBlocks = [
   },
 ];
 
-function ThemeIcon({ index }: { index: number }) {
-  const normalized = ((index % 4) + 4) % 4;
-  if (normalized === 0) {
-    return (
-      <svg className="w-[23px] h-[23px] fill-none stroke-current stroke-[1.8] stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 3 4 7v6c0 5 3.4 8.8 8 10 4.6-1.2 8-5 8-10V7l-8-4Z" />
-        <path d="m9 12 2 2 4-4" />
-      </svg>
-    );
-  }
-  if (normalized === 1) {
-    return (
-      <svg className="w-[23px] h-[23px] fill-none stroke-current stroke-[1.8] stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 4 4 8l8 4 8-4-8-4Z" />
-        <path d="m4 12 8 4 8-4" />
-        <path d="m4 16 8 4 8-4" />
-      </svg>
-    );
-  }
-  if (normalized === 2) {
-    return (
-      <svg className="w-[23px] h-[23px] fill-none stroke-current stroke-[1.8] stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 20h16" />
-        <path d="M6 20V9h5v11" />
-        <path d="M13 20V4h5v16" />
-        <path d="M8 12h1M8 15h1M15 8h1M15 11h1M15 14h1" />
-      </svg>
-    );
-  }
+function AgendaPillarCard({
+  theme,
+  idx,
+  isExpanded,
+  onEnter,
+  onLeave,
+  onToggle,
+}: {
+  theme: (typeof themeItems)[number];
+  idx: number;
+  isExpanded: boolean;
+  onEnter: () => void;
+  onLeave: () => void;
+  onToggle: () => void;
+}) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (isExpanded) {
+      video.play().catch(() => {});
+    } else {
+      video.pause();
+    }
+  }, [isExpanded]);
+
+  const handleMouseEnter = () => {
+    onEnter();
+    videoRef.current?.play().catch(() => {});
+  };
+
+  const handleMouseLeave = () => {
+    onLeave();
+    videoRef.current?.pause();
+  };
+
   return (
-    <svg className="w-[23px] h-[23px] fill-none stroke-current stroke-[1.8] stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 4v5" />
-      <path d="M6 14h12" />
-      <path d="M8 20h8" />
-      <path d="M12 9 6 14l6 5 6-5-6-5Z" />
-    </svg>
+    <article
+      data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
+      data-aos-delay={String((idx % 2) * 150)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={onToggle}
+      className={`agenda-pillar-card group relative flex flex-col justify-between overflow-hidden rounded-[20px] border transition-all duration-300 cursor-pointer text-left ${
+        isExpanded
+          ? "border-[#C0F43C]/65 bg-gradient-to-br from-[#071a33]/95 via-[#040e22]/98 to-[#030916]/98 shadow-[0_20px_50px_rgba(0,0,0,0.45),0_0_32px_rgba(192,244,60,0.14)] -translate-y-1"
+          : "border-white/15 bg-gradient-to-br from-[#00ceff]/10 via-[#040c1e]/95 to-[#996cff]/10 shadow-[inset_0_0_28px_rgba(65,220,255,0.05),0_20px_50px_rgba(0,0,0,0.3)]"
+      }`}
+    >
+      <div className="agenda-pillar-media relative w-full h-[228px] max-sm:h-[192px] overflow-hidden border-b border-white/10">
+        <video
+          ref={videoRef}
+          src={theme.video}
+          poster={theme.image}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label={theme.label}
+          className={`w-full h-full object-cover ${theme.imagePos} transition-transform duration-500 ease-out group-hover:scale-[1.04]`}
+        />
+        <span
+          aria-hidden="true"
+          className={`agenda-play-badge pointer-events-none absolute right-3.5 bottom-3.5 grid place-items-center w-10 h-10 rounded-full transition-all duration-300 ${
+            isExpanded ? "opacity-0 scale-90" : "opacity-100 scale-100"
+          }`}
+        >
+          <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current translate-x-[1px]">
+            <path d="M8 5.5v13l10-6.5-10-6.5z" />
+          </svg>
+        </span>
+      </div>
+
+      <div className="agenda-pillar-body p-7 max-sm:p-5">
+        <h3
+          className={`m-0 mb-3 font-extrabold text-[21px] leading-[1.26] transition-colors duration-200 ${
+            isExpanded ? "text-[#C0F43C]" : "text-white"
+          }`}
+        >
+          {theme.label}
+        </h3>
+
+        <p className="m-0 text-white/80 text-[15.5px] leading-[1.6]">
+          {theme.shortDesc}
+        </p>
+
+        <div
+          className={`grid transition-all duration-300 ease-out overflow-hidden ${
+            isExpanded
+              ? "grid-rows-[1fr] opacity-100 mt-5 pt-4 border-t border-white/12"
+              : "grid-rows-[0fr] opacity-0 mt-0 pt-0 border-t border-transparent"
+          }`}
+        >
+          <div className="min-h-0 space-y-3 overflow-hidden">
+            <div>
+              <span className="block font-mono text-[11px] uppercase tracking-[1.6px] text-[#18d4ff] mb-1">
+                Operational Scope &amp; Technical Focus
+              </span>
+              <p className="m-0 text-white/75 text-[14.5px] leading-[1.6]">
+                {theme.expandedScope}
+              </p>
+            </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.04] border border-white/10 text-white/80 font-mono text-[11.5px]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C0F43C]" />
+              Format: {theme.clinicalFormat}
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
   );
 }
 
@@ -168,89 +251,19 @@ export function AgendaSection({
           </p>
         )}
 
-        {/* Component C3 — Expandable Pillar Cards (4 Cards in 2x2 Grid — expands on hover) */}
+        {/* Component C3 — Expandable Pillar Cards (4 Cards in 2x2 Grid — video plays & card expands on hover) */}
         <div className="grid grid-cols-2 gap-6 items-start max-md:grid-cols-1">
-          {themeItems.map((theme, idx) => {
-            const isExpanded = expandedPillar === idx;
-            return (
-              <article
-                key={theme.index}
-                data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
-                data-aos-delay={String((idx % 2) * 150)}
-                onMouseEnter={() => setExpandedPillar(idx)}
-                onMouseLeave={() => setExpandedPillar(null)}
-                onClick={() => setExpandedPillar(isExpanded ? null : idx)}
-                className={`group relative flex flex-col justify-between p-7 rounded-[20px] border transition-all duration-300 cursor-pointer text-left ${
-                  isExpanded
-                    ? "border-[#C0F43C]/65 bg-gradient-to-br from-[#071a33]/95 via-[#040e22]/98 to-[#030916]/98 shadow-[0_20px_50px_rgba(0,0,0,0.45),0_0_32px_rgba(192,244,60,0.14)] -translate-y-1"
-                    : "border-white/15 bg-gradient-to-br from-[#00ceff]/10 via-[#040c1e]/95 to-[#996cff]/10 shadow-[inset_0_0_28px_rgba(65,220,255,0.05),0_20px_50px_rgba(0,0,0,0.3)]"
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-3 mb-5">
-                    <span
-                      className={`grid place-items-center w-[48px] h-[48px] border rounded-[14px] transition-all duration-300 ${
-                        isExpanded
-                          ? "border-[#C0F43C]/60 bg-[#C0F43C]/18 text-[#C0F43C]"
-                          : "border-cyan/30 bg-cyan/10 text-cyan"
-                      }`}
-                    >
-                      <ThemeIcon index={idx} />
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`px-3 py-1 rounded-full border font-mono text-[11px] font-bold uppercase tracking-[1.8px] transition-colors duration-300 ${
-                          isExpanded
-                            ? "border-[#C0F43C]/50 bg-[#C0F43C]/15 text-[#C0F43C]"
-                            : "border-white/10 bg-white/5 text-cyan"
-                        }`}
-                      >
-                        Pillar / {theme.index}
-                      </span>
-                      <span className="text-white/60 font-mono text-xs px-2 py-0.5 rounded border border-white/10">
-                        {isExpanded ? "− Collapse" : "+ Expand Scope"}
-                      </span>
-                    </div>
-                  </div>
-
-                  <h3
-                    className={`m-0 mb-3 font-extrabold text-[21px] leading-[1.26] transition-colors duration-200 ${
-                      isExpanded ? "text-[#C0F43C]" : "text-white"
-                    }`}
-                  >
-                    {theme.label}
-                  </h3>
-
-                  <p className="m-0 text-white/80 text-[15.5px] leading-[1.6]">
-                    {theme.shortDesc}
-                  </p>
-
-                  <div
-                    className={`grid transition-all duration-300 ease-out overflow-hidden ${
-                      isExpanded
-                        ? "grid-rows-[1fr] opacity-100 mt-5 pt-4 border-t border-white/12"
-                        : "grid-rows-[0fr] opacity-0 mt-0 pt-0 border-t border-transparent"
-                    }`}
-                  >
-                    <div className="min-h-0 space-y-3 overflow-hidden">
-                      <div>
-                        <span className="block font-mono text-[11px] uppercase tracking-[1.6px] text-[#18d4ff] mb-1">
-                          Operational Scope &amp; Technical Focus
-                        </span>
-                        <p className="m-0 text-white/75 text-[14.5px] leading-[1.6]">
-                          {theme.expandedScope}
-                        </p>
-                      </div>
-                      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.04] border border-white/10 text-white/80 font-mono text-[11.5px]">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#C0F43C]" />
-                        Format: {theme.clinicalFormat}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
+          {themeItems.map((theme, idx) => (
+            <AgendaPillarCard
+              key={theme.index}
+              theme={theme}
+              idx={idx}
+              isExpanded={expandedPillar === idx}
+              onEnter={() => setExpandedPillar(idx)}
+              onLeave={() => setExpandedPillar(null)}
+              onToggle={() => setExpandedPillar(expandedPillar === idx ? null : idx)}
+            />
+          ))}
         </div>
 
         {/* S6 · Programme Architecture (Six-Part Block Methodology) */}

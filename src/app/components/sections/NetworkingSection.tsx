@@ -5,7 +5,7 @@ import { GradientText } from "../Shared";
 
 const buyingUnitConstituencies = [
   {
-    title: "Commercial & Retail Banking (Buy-Side 70%+)",
+    title: "Commercial & Retail Banking (Buy-Side 80%+)",
     desc: "CIOs, CTOs, Chief Data & AI Officers, Chief Digital Officers, Heads of Retail Banking, Heads of Core Transformation.",
     badge: "01 · COMMERCIAL & RETAIL BANKING",
   },

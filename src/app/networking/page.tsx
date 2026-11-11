@@ -144,7 +144,7 @@ export default function NetworkingPage() {
             </div>
             <div className="flex flex-col">
               <span className="text-[40px] font-[900] text-[#C0F43C] tracking-tight">
-                70%+
+                80%+
               </span>
               <span className="text-[12.5px] text-white/50 uppercase tracking-widest font-mono font-bold mt-1.5">Buy-Side Enterprise Ratio</span>
             </div>
@@ -296,7 +296,7 @@ export default function NetworkingPage() {
             Be in the room where <GradientText>regulated banking AI gets decided.</GradientText>
           </h2>
           <p className="m-0 mt-4 text-white/58 text-[15px] leading-relaxed max-w-[580px] mx-auto">
-            Apply for a complimentary Delegate Pass (by invitation and qualification) or enquire about commercial sponsorship for World AI Show | BFSI | Dubai 2027 (24 March 2027 · DIFC District, Dubai, UAE · 1-Day Executive Decision Forum).
+            Apply for a complimentary Delegate Pass (by invitation and qualification) or enquire about commercial sponsorship for World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE · 1-Day Executive Decision Forum).
           </p>
 
           <div className="mt-8 flex justify-center gap-4 flex-wrap">

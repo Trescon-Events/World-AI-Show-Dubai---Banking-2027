@@ -2,7 +2,11 @@
 
 import { Button, GradientText } from "../Shared";
 
-export function HeroSection() {
+export function HeroSection({
+  description = "A premier executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations, convening 300+ C-suite leaders and actively locking down the architecture, fraud defense, and core procurement for the future.",
+}: {
+  description?: string;
+} = {}) {
   return (
     <section
       className="hero-bg relative min-h-[820px] -mt-[102px] grid place-items-center overflow-hidden text-center max-[980px]:min-h-[760px] max-sm:-mt-[71px] max-sm:min-h-[720px]"
@@ -56,9 +60,9 @@ export function HeroSection() {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="max-w-[880px] mx-auto text-[#CBD5E1] text-[clamp(15px,1.6vw,19px)] xl:text-[19px] font-normal leading-relaxed xl:leading-[31px] tracking-normal text-center mb-8"
+          className="max-w-[820px] mx-auto text-[#CBD5E1] text-[clamp(15px,1.25vw,17px)] xl:text-[17px] font-normal leading-relaxed xl:leading-[28px] tracking-normal text-center mb-8"
         >
-          A premier executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations, convening 300+ C-suite leaders and actively locking down the architecture, fraud defense, and core procurement for the future.
+          {description}
         </p>
 
         <div data-aos="fade-in" data-aos-delay="250" className="w-full max-w-[780px] border-t border-white/20 opacity-60 mt-1" />
@@ -82,7 +86,7 @@ export function HeroSection() {
           {/* Column 2: Venue */}
           <div className="pr-6 border-r border-white/27 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-sm:w-full max-sm:pb-3 max-sm:border-b max-sm:border-white/20">
             <strong className="block text-[34px] font-[850] text-white leading-none max-sm:text-[26px]">
-              DIFC District, <GradientText>Dubai</GradientText>
+              Dubai, <GradientText>UAE</GradientText>
             </strong>
             <span className="block mt-2 text-[13px] font-bold text-white/80 uppercase tracking-[1.5px] max-sm:text-[12px] max-sm:mt-1.5">
               DAY 1 · MARCH DUBAI CLUSTER
@@ -106,18 +110,12 @@ export function HeroSection() {
           data-aos-delay="400"
           className="flex justify-center flex-wrap gap-3.5 mt-9 max-sm:flex-col max-sm:items-center max-sm:gap-3.5 max-sm:w-full max-sm:max-w-[340px]"
         >
-          <Button href="/banking/attend/delegate/" showArrow={true}>
-            Apply for Delegate Pass (Complimentary)
-          </Button>
-          <Button href="/banking/attend/sponsor/" variant="outline" showArrow={true}>
+          <Button href="/banking/attend/sponsor/" showArrow={true}>
             Explore Commercial Sponsorship
           </Button>
-          <a
-            href="/banking/agenda/agenda/"
-            className="inline-flex items-center justify-center gap-2 min-w-[156px] h-[49px] rounded-full font-extrabold text-sm text-white/85 hover:text-[#18d4ff] border border-white/15 bg-white/5 hover:border-[#18d4ff]/50 transition-all duration-200 px-6"
-          >
-            View Master Schedule →
-          </a>
+          <Button href="/banking/attend/delegate/" variant="outline" showArrow={true}>
+            Apply for Delegate Pass
+          </Button>
         </div>
       </div>
     </section>

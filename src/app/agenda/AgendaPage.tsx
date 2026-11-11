@@ -240,7 +240,7 @@ const bankingSchedule: BankingAgendaSession[] = [
     endTime: "18:30",
     title: "Closing Executive Reception",
     typeTitle: "Executive Reception",
-    location: "VIP Networking Terrace · DIFC District",
+    location: "VIP Networking Terrace · Dubai, UAE",
     description:
       "Informal drinks and peer synthesis concluding Day 1 of the March Dubai Cluster.",
     trackId: "main",
@@ -359,7 +359,7 @@ function AgendaTabs() {
               type="button"
             >
               <span>{day.label}</span>
-              <strong>Day 1 · 24 March 2027 · DIFC District, Dubai</strong>
+              <strong>Day 1 · 24 March 2027 · Dubai, UAE</strong>
               <small>Day 1 of the March Dubai Cluster · 08:00 – 18:30 GST</small>
             </button>
           ))}
@@ -418,7 +418,7 @@ function AgendaTabs() {
         <div className={styles.timeline}>
           <div className={styles.timelineHead}>
             <span>Wednesday 24 March 2027: Execution Under Regulation</span>
-            <span>DIFC District, Dubai, UAE · 1-Day Executive Decision Forum</span>
+            <span>Dubai, UAE · 1-Day Executive Decision Forum</span>
           </div>
 
           {filteredItems.length === 0 ? (
@@ -471,7 +471,7 @@ export function AgendaOverview() {
           <div>
             <h2 className="!mb-6">Controlled AI deployment for <GradientText>regulated financial operations.</GradientText></h2>
             <p className="mt-6 mb-4">
-              World AI Show | BFSI will convene 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (minimum 70% buy-side enterprise ratio).
+              World AI Show | BFSI will convene 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (minimum 80% buy-side enterprise ratio).
             </p>
             <p className="m-0">
               Every block in the programme is engineered to move senior financial services buyers from board-level regulatory scrutiny under onshore Central Bank of the UAE (CBUAE) and offshore DIFC Dubai Financial Services Authority (DFSA) frameworks down to live architecture validation and 2027 procurement decisions.
@@ -533,7 +533,7 @@ export function AgendaOverview() {
           </div>
           <dl>
             <div><dt>Date</dt><dd>24 March 2027 · 1-Day Forum</dd></div>
-            <div><dt>Venue</dt><dd>DIFC District, Dubai, UAE</dd></div>
+            <div><dt>Venue</dt><dd>Dubai, UAE</dd></div>
             <div><dt>Cluster</dt><dd>Day 1 · March Dubai Cluster</dd></div>
           </dl>
         </div>
@@ -681,7 +681,7 @@ export function AgendaLiveTimeline() {
           </div>
           <dl>
             <div><dt>Date</dt><dd>24 March 2027 · 1-Day Forum</dd></div>
-            <div><dt>Venue</dt><dd>DIFC District, Dubai, UAE</dd></div>
+            <div><dt>Venue</dt><dd>Dubai, UAE</dd></div>
             <div><dt>Cluster</dt><dd>Day 1 · March Dubai Cluster</dd></div>
           </dl>
         </div>
@@ -743,7 +743,7 @@ export function AgendaThemes() {
           </div>
           <dl>
             <div><dt>Date</dt><dd>24 March 2027 · 1-Day Forum</dd></div>
-            <div><dt>Venue</dt><dd>DIFC District, Dubai, UAE</dd></div>
+            <div><dt>Venue</dt><dd>Dubai, UAE</dd></div>
             <div><dt>Cluster</dt><dd>Day 1 · March Dubai Cluster</dd></div>
           </dl>
         </div>

@@ -67,7 +67,7 @@ const statsData = [
   },
   {
     icon: "/banking/icons/stats/3.svg",
-    number: 70,
+    number: 80,
     prefix: "",
     suffix: "%+",
     label: "Buy-Side Enterprise Ratio",
@@ -75,9 +75,9 @@ const statsData = [
   },
   {
     icon: "/banking/icons/stats/2.svg",
-    number: 45,
-    prefix: "35–",
-    suffix: "",
+    number: 40,
+    prefix: "",
+    suffix: "+",
     label: "Expert Faculty Speakers",
     index: "03",
   },

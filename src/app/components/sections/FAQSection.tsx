@@ -6,11 +6,11 @@ import { GradientText } from "../Shared";
 const faqs = [
   {
     q: "What is World AI Show | BFSI | Dubai 2027?",
-    a: "World AI Show | BFSI | Dubai 2027 is a 1-Day Executive Decision Forum taking place on 24 March 2027 in DIFC District, Dubai, UAE. It convenes 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (maintaining a minimum 70% buy-side enterprise ratio) to address controlled AI deployment for regulated financial operations.",
+    a: "World AI Show | BFSI | Dubai 2027 is a 1-Day Executive Decision Forum taking place on 24 March 2027 in Dubai, UAE. It convenes 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders (maintaining a minimum 80% buy-side enterprise ratio) to address controlled AI deployment for regulated financial operations.",
   },
   {
     q: "How does this forum fit into the March Dubai Cluster?",
-    a: "The forum is positioned as Day 1 of the March Dubai Cluster, paired back-to-back with World AI Show | AI in Healthcare & Life Sciences on 25 March 2027. Both forums share premium DIFC District venue infrastructure while maintaining strictly separate P&Ls, dedicated sector agendas, and distinct pre-qualified buyer audiences.",
+    a: "The forum is positioned as Day 1 of the March Dubai Cluster, paired back-to-back with World AI Show | AI in Healthcare & Life Sciences on 25 March 2027. Both forums share premium venue infrastructure in Dubai, UAE while maintaining strictly separate P&Ls, dedicated sector agendas, and distinct pre-qualified buyer audiences.",
   },
   {
     q: "Who qualifies for a complimentary Delegate Pass?",

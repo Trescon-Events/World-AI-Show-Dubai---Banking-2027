@@ -41,8 +41,8 @@ const footprints = [
   },
   {
     size: "Venue Showcase",
-    title: "DIFC District Event Facility / Jumeirah Emirates Towers",
-    desc: "Positioned in the heart of Dubai's financial district (Subject to final technical clearance) for Day 1 of the March Dubai Cluster.",
+    title: "Executive Event Facility · Dubai, UAE",
+    desc: "Positioned in the heart of Dubai, UAE (Subject to final technical clearance) for Day 1 of the March Dubai Cluster.",
   },
 ];
 
@@ -58,13 +58,13 @@ export default function ExhibitionPage() {
         <div className="w-[min(1114px,calc(100%-48px))] mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center mb-3 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
-              Exhibition &amp; Concourse Hub · DIFC District, Dubai
+              Exhibition &amp; Concourse Hub · Dubai, UAE
             </span>
             <h2 className="font-[850] text-white leading-tight tracking-[-1.5px] text-[clamp(30px,4vw,46px)] m-0">
               Standardised Concourse <GradientText>Footprints &amp; Floorplan</GradientText>
             </h2>
             <p className="mt-3 text-white/70 text-[16px] max-w-[760px] mx-auto">
-              Venue Showcase: DIFC District Event Facility / Jumeirah Emirates Towers (Subject to final technical clearance). Standardised 6 sqm, 9 sqm, and 12 sqm concourse booths alongside 2 private CXO Closed-Door Boardroom Suites.
+              Venue Showcase: Dubai, UAE (Subject to final technical clearance). Standardised 6 sqm, 9 sqm, and 12 sqm concourse booths alongside 2 private CXO Closed-Door Boardroom Suites.
             </p>
           </div>
 

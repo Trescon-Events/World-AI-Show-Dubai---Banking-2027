@@ -5,7 +5,7 @@ import { AgendaLiveTimeline } from "../AgendaPage";
 
 export const metadata: Metadata = {
   title: "1-Day Master Schedule | Agenda | World AI Show | BFSI | Dubai 2027",
-  description: "Explore the full 1-day master schedule for Wednesday 24 March 2027: Execution Under Regulation in DIFC District, Dubai, UAE.",
+  description: "Explore the full 1-day master schedule for Wednesday 24 March 2027: Execution Under Regulation in Dubai, UAE.",
 };
 
 const subNav = ["Overview", "The Vision", "Agenda", "Themes", "Call for Speakers"];

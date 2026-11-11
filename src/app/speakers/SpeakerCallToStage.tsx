@@ -25,13 +25,13 @@ export function SpeakerCallToStage() {
               We are seeking enterprise banking, insurance, and financial services leaders — CIOs, CTOs, CROs, CCOs, CDAIOs, Heads of Fraud &amp; AML, MLROs, and Regulators — with unvarnished case studies: real-world architecture hurdles, pilot post-mortems, model risk mitigation, and verified balance-sheet outcomes.
             </p>
             <p className="m-0 text-white/68 text-[16px] leading-[1.65] mb-8">
-              Taking place on 24 March 2027 in DIFC District, Dubai (Day 1 of the March Dubai Cluster), the forum prioritises execution under onshore CBUAE and offshore DIFC DFSA regulation over fintech hype across four core content pillars.
+              Taking place on 24 March 2027 in Dubai, UAE (Day 1 of the March Dubai Cluster), the forum prioritises execution under onshore CBUAE and offshore DIFC DFSA regulation over fintech hype across four core content pillars.
             </p>
 
             {/* Value Highlights */}
             <div className="p-7 border border-[#7eacd9]/14 rounded-[16px] bg-[#04080f]/80 shadow-[inset_0_0_24px_rgba(33,173,255,0.04)]">
               <strong className="block text-[#C0F43C] text-[12px] font-mono uppercase tracking-[2px] mb-5">
-                Why join the Banking Faculty in DIFC District, Dubai:
+                Why join the Banking Faculty in Dubai, UAE:
               </strong>
               <ul className="m-0 pl-0 list-none flex flex-col gap-5">
                 <li className="flex items-start gap-3.5 text-white/80 text-[15px]">
@@ -53,7 +53,7 @@ export function SpeakerCallToStage() {
                     className="w-5 h-5 object-contain mt-[3px] select-none flex-shrink-0"
                   />
                   <span>
-                    <strong className="text-white">300+ Pre-Qualified C-Suite Leaders (70%+ Buy-Side):</strong> Address senior GCC banking, insurance, risk, and regulatory decision-makers actively locking down 2027 architectures.
+                    <strong className="text-white">300+ Pre-Qualified C-Suite Leaders (80%+ Buy-Side):</strong> Address senior GCC banking, insurance, risk, and regulatory decision-makers actively locking down 2027 architectures.
                   </span>
                 </li>
                 <li className="flex items-start gap-3.5 text-white/80 text-[15px]">

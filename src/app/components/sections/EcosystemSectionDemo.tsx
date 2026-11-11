@@ -327,14 +327,11 @@ function TelemetryCard({ card, cardIndex }: { card: TelemetryCardData; cardIndex
       className="group relative p-7 rounded-[20px] border border-[#2a4359]/80 bg-[#071320] shadow-[0_24px_60px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.08)] text-left flex flex-col justify-between overflow-hidden hover:-translate-y-1.5 hover:border-[#2fd5f6]/55 hover:shadow-[0_28px_70px_rgba(0,0,0,0.65),0_0_32px_rgba(47,213,246,0.14)] transition-all duration-300"
     >
       <div>
-        {/* Top Icon & Telemetry Index */}
+        {/* Top Icon */}
         <div className="relative z-10 flex items-center justify-between mb-2.5">
           <div className="flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
             {card.icon}
           </div>
-          <span className="text-[#79acc7] font-mono text-[12px] font-semibold tracking-[0.8px] uppercase">
-            BENCHMARK // {card.index}
-          </span>
         </div>
 
         {/* Animated Big Metric */}

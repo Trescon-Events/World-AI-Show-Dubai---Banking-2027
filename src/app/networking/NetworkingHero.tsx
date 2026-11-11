@@ -18,7 +18,7 @@ export function NetworkingHero() {
           <GradientText>banking AI leaders connect.</GradientText>
         </h1>
         <p className="max-w-[700px] mt-6 mb-0 text-white/74 text-[20px] leading-relaxed max-sm:text-base">
-          A dedicated networking environment in the DIFC District, Dubai designed to foster institutional partnerships. Connect with central bank regulators, banking CXOs, CROs, CCOs, and enterprise AI architects without spectators.
+          A dedicated networking environment in Dubai, UAE designed to foster institutional partnerships. Connect with central bank regulators, banking CXOs, CROs, CCOs, and enterprise AI architects without spectators.
         </p>
       </div>
     </section>
