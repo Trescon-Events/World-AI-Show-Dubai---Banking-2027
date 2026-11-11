@@ -21,18 +21,18 @@ type CardItem = {
 
 const valueCards: CardItem[] = [
   {
-    title: "Controlled AI Deployment for Regulated Finance",
-    text: "A 1-Day Executive Decision Forum for 300+ pre-qualified C-suite banking, insurance, asset management, and payment leaders transitioning from speculative pilots into core balance-sheet production.",
+    title: "Controlled Deployment for Regulated Operations",
+    text: "An exclusive decision forum for senior banking, insurance, and investment leaders advancing from conversational AI experiments to core balance-sheet operations. Engineered around live procurement timelines, model explainability, and fiduciary compliance.",
     icon: "/banking/images/Attend/enterprise-ai-in-action.svg",
   },
   {
-    title: "Five Governed Institutional Constituencies",
-    text: "Maintaining a minimum 70% buy-side enterprise ratio across commercial & retail banks, risk & financial crime leadership, insurers & wealth managers, onshore CBUAE & DIFC DFSA regulators, and global AI providers.",
+    title: "Pre-Qualified Buy-Side Leadership",
+    text: "Governed by a strict 80%+ enterprise buyer threshold. Convenes commercial bank CXOs, chief risk officers, compliance directors, and central bank regulators holding active deployment mandates and technology budgets.",
     icon: "/banking/images/Attend/region-ai-decision-makers.svg",
   },
   {
-    title: "Hands-On Use-Case Clinics & Peer Evidence",
-    text: "Drive decision-makers through practical deployment post-mortems, closed-door breakout clinics, and roundtables to resolve legacy core integration, establish audit-ready model governance, and define actionable 2027 procurement roadmaps.",
+    title: "Outcome-Led Peer Evidence & Case Studies",
+    text: "Replacing passive vendor presentations with unvarnished pilot post-mortems, hands-on clinical problem-solving, and closed-door roundtables designed to resolve legacy core integration and establish audit-ready model governance.",
     icon: "/banking/images/Attend/insights-drive-transformation.svg",
   },
 ];
@@ -82,29 +82,29 @@ const gatewayCards: CardItem[] = [
 
 const sponsorBenefits: CardItem[] = [
   {
-    title: "Speaking Sponsor (12 sqm Booth)",
-    text: "20-Minute Plenary Keynote or Fireside Chat + 12 sqm Premium Island Concourse Booth + 12 Executive Passes.",
-    icon: "/banking/images/Attend/sponsor/speaking-opportunities.webp",
-  },
-  {
-    title: "Engagement Partner (9 sqm Booth)",
-    text: "Exclusive Leadership of a 75-Minute Workshop Clinic (Clinic A: Fraud & AML or Clinic B: Agentic Banking) + 9 sqm Prominent Booth + 8 Passes.",
+    title: "Brand Visibility at Scale",
+    text: "Amplify your presence across the venue, website, event app, digital screens, campaigns and attendee communications.",
     icon: "/banking/images/Attend/sponsor/brand-visibility-at-scale.webp",
   },
   {
-    title: "CXO Closed-Door Boardroom",
-    text: "60-Minute Curated Private Session with 15 Pre-Qualified Wishlist Banking CXOs + 5-Minute Sponsor Opening Address under Chatham House Rule.",
-    icon: "/banking/images/Attend/sponsor/hosted-meetings.webp",
-  },
-  {
-    title: "Industry Partner (9 sqm Booth)",
-    text: "Plenary Panel Speaking Seat (Block 3 or Block 5) + 9 sqm Prominent Concourse Booth + 6 Executive Passes.",
+    title: "Qualified Lead Generation",
+    text: "Connect directly with pre-qualified enterprise buyers, stakeholders, investors and AI decision-makers.",
     icon: "/banking/images/Attend/sponsor/qualified-lead-generation.webp",
   },
   {
-    title: "Exhibitor (6 sqm Turnkey Booth)",
-    text: "6 sqm Standard Turnkey Concourse Booth in the high-traffic networking and technology demonstration arena + 4 Passes.",
+    title: "Product Showcase Floor",
+    text: "Demonstrate platforms and innovations live to enterprise leaders seeking transformative technologies.",
     icon: "/banking/images/Attend/sponsor/product-showcase-floor.webp",
+  },
+  {
+    title: "Speaking Opportunities",
+    text: "Position your organisation as a thought leader through keynotes, panels and strategic conversations.",
+    icon: "/banking/images/Attend/sponsor/speaking-opportunities.webp",
+  },
+  {
+    title: "1:1 Hosted Meetings",
+    text: "Engage in curated business meetings aligned to your ideal customer profile and business objectives.",
+    icon: "/banking/images/Attend/sponsor/hosted-meetings.webp",
   },
   {
     title: "Curated 1-on-1 Bilateral Meetings",
@@ -540,7 +540,7 @@ export function AttendOverviewSection() {
       <section className="py-[86px] bg-gradient-to-b from-[#031127] to-[#020b1c] text-center max-sm:py-[62px]">
         <div className="w-[min(1120px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-28px,1120px)]">
           <h3 className="max-w-[820px] mx-auto mt-0 mb-10 text-white font-[850] leading-[1.08] tracking-[-1.5px] text-[clamp(32px,4vw,46px)] max-sm:text-[30px]">
-            Why Banking Leaders Convene in <GradientText>DIFC District, Dubai</GradientText>
+            Why Financial Leaders are Convening <GradientText>World AI Show</GradientText>
           </h3>
           <div className="grid grid-cols-3 gap-4 mb-9 max-[980px]:grid-cols-[repeat(3,310px)] max-sm:grid-cols-1">
             {valueCards.map((card, index) => (
