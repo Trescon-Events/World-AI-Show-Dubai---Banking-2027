@@ -211,11 +211,12 @@ export function ArrowButton({
 }: {
   children: ReactNode;
   href?: string;
-  variant?: "solid" | "outline";
+  variant?: "solid" | "outline" | "outline-dark";
 }) {
   const styles = {
     solid: "bb-btn-primary max-sm:w-full",
     outline: "bb-btn-outline-light max-sm:w-full",
+    "outline-dark": "bb-btn-outline-dark max-sm:w-full",
   };
 
   return (
@@ -407,7 +408,7 @@ export function AttendOverviewSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[680px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] py-[76px] pt-[280px] overflow-hidden bg-[#08121E] bg-cover bg-[position:center_top] bg-no-repeat border-b-2 border-[#0069B8] max-sm:min-h-[580px] max-sm:px-[16px] max-sm:py-[56px] max-sm:pt-[220px]"
+        className="relative min-h-[560px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] pt-[190px] pb-[76px] overflow-hidden bg-[#08121E] bg-cover bg-[position:center_top] bg-no-repeat border-b-2 border-[#0069B8] max-[1200px]:pt-[150px] max-sm:min-h-[460px] max-sm:px-[16px] max-sm:pt-[126px] max-sm:pb-[56px]"
         style={{
           backgroundImage:
             'linear-gradient(90deg, rgba(8, 18, 30, 0.94) 0%, rgba(8, 18, 30, 0.68) 45%, rgba(8, 18, 30, 0.18) 100%), url("/banking/images/Attend/Overview-banner.webp")',
@@ -422,7 +423,7 @@ export function AttendOverviewSection() {
             <ArrowButton href="/banking/attend/delegate/" variant="solid">
               Apply for a Business Pass
             </ArrowButton>
-            <ArrowButton href="/banking/sponsorship-enquiry/" variant="outline">
+            <ArrowButton href="/banking/sponsorship-enquiry/" variant="outline-dark">
               Enquire about sponsorship
             </ArrowButton>
           </div>
@@ -546,7 +547,7 @@ export function AttendDelegateSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[680px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] py-[76px] pt-[280px] overflow-hidden bg-[#08121E] bg-cover bg-[position:center_top] bg-no-repeat border-b-2 border-[#0069B8] max-sm:min-h-[580px] max-sm:px-[16px] max-sm:py-[56px] max-sm:pt-[220px]"
+        className="relative min-h-[560px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] pt-[190px] pb-[76px] overflow-hidden bg-[#08121E] bg-cover bg-[position:center_top] bg-no-repeat border-b-2 border-[#0069B8] max-[1200px]:pt-[150px] max-sm:min-h-[460px] max-sm:px-[16px] max-sm:pt-[126px] max-sm:pb-[56px]"
         style={{ backgroundImage: 'url("/banking/images/Attend/Delegates-banner.webp")' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#08121E]/92 via-[#08121E]/62 to-[#08121E]/18 z-0 pointer-events-none" />
@@ -602,7 +603,7 @@ export function AttendSponsorSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[680px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] py-[76px] pt-[280px] overflow-hidden bg-[#08121E] bg-cover bg-[position:right_center] bg-no-repeat border-b-2 border-[#0069B8] max-sm:min-h-[580px] max-sm:px-[16px] max-sm:py-[56px] max-sm:pt-[220px]"
+        className="relative min-h-[560px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] pt-[190px] pb-[76px] overflow-hidden bg-[#08121E] bg-cover bg-[position:right_center] bg-no-repeat border-b-2 border-[#0069B8] max-[1200px]:pt-[150px] max-sm:min-h-[460px] max-sm:px-[16px] max-sm:pt-[126px] max-sm:pb-[56px]"
         style={{ backgroundImage: 'url("/banking/images/Attend/Sponsor-banner.webp")' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#08121E]/92 via-[#08121E]/62 to-[#08121E]/18 z-0 pointer-events-none" />
@@ -672,7 +673,7 @@ export function AttendMediaSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[680px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] py-[76px] pt-[280px] overflow-hidden bg-[#08121E] bg-cover bg-[position:right_center] bg-no-repeat border-b-2 border-[#0069B8] max-sm:min-h-[580px] max-sm:px-[16px] max-sm:py-[56px] max-sm:pt-[220px]"
+        className="relative min-h-[560px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] pt-[190px] pb-[76px] overflow-hidden bg-[#08121E] bg-cover bg-[position:right_center] bg-no-repeat border-b-2 border-[#0069B8] max-[1200px]:pt-[150px] max-sm:min-h-[460px] max-sm:px-[16px] max-sm:pt-[126px] max-sm:pb-[56px]"
         style={{ backgroundImage: 'url("/banking/images/Attend/Media-banner.webp")' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#08121E]/92 via-[#08121E]/62 to-[#08121E]/18 z-0 pointer-events-none" />
@@ -721,7 +722,7 @@ export function AttendAssociationSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[680px] -mt-[102px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] py-[76px] pt-[280px] overflow-hidden bg-[#08121E] bg-cover bg-[position:right_center] bg-no-repeat border-b-2 border-[#0069B8] max-sm:min-h-[580px] max-sm:px-[16px] max-sm:py-[56px] max-sm:pt-[220px]"
+        className="relative min-h-[560px] flex items-end px-[max(24px,calc((100vw-1172px)/2))] pt-[190px] pb-[76px] overflow-hidden bg-[#08121E] bg-cover bg-[position:right_center] bg-no-repeat border-b-2 border-[#0069B8] max-[1200px]:pt-[150px] max-sm:min-h-[460px] max-sm:px-[16px] max-sm:pt-[126px] max-sm:pb-[56px]"
         style={{ backgroundImage: 'url("/banking/images/Attend/Association-banner.webp")' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#08121E]/92 via-[#08121E]/62 to-[#08121E]/18 z-0 pointer-events-none" />

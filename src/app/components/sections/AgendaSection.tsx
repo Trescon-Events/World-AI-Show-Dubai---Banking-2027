@@ -159,16 +159,6 @@ function AgendaPillarCard({
           aria-label={theme.label}
           className={`w-full h-full object-cover ${theme.imagePos} transition-transform duration-500 ease-out group-hover:scale-[1.04]`}
         />
-        <span
-          aria-hidden="true"
-          className={`agenda-play-badge pointer-events-none absolute right-3.5 bottom-3.5 grid place-items-center w-10 h-10 rounded-full bg-[#08121E]/72 text-white border border-white/38 backdrop-blur-[6px] transition-all duration-300 ${
-            isExpanded ? "opacity-0 scale-90" : "opacity-100 scale-100"
-          }`}
-        >
-          <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current translate-x-[1px]">
-            <path d="M8 5.5v13l10-6.5-10-6.5z" />
-          </svg>
-        </span>
       </div>
 
       <div className="agenda-pillar-body flex-1 p-7 max-sm:p-5">

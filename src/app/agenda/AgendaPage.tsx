@@ -7,7 +7,6 @@ import { FooterSection } from "../components/sections/FooterSection";
 import { Header } from "../components/sections/Header";
 
 import styles from "./AgendaPage.module.css";
-import "./agenda.css";
 import { AgendaSection, sixPartBlocks } from "../components/sections/AgendaSection";
 import { SpeakersSection } from "../components/sections/SpeakersSection";
 import { SpeakerCallToStage } from "../speakers/SpeakerCallToStage";
@@ -436,7 +435,7 @@ export function AgendaOverview() {
   return (
     <>
       <section
-        className={`${styles.hero} pt-[200px]`}
+        className={styles.hero}
         id="overview"
         style={{
           background:
@@ -552,7 +551,7 @@ export function AgendaVision() {
   return (
     <>
       <section
-        className={`${styles.hero} pt-[200px]`}
+        className={styles.hero}
         id="the-2030-vision-hero"
         style={{
           background: "linear-gradient(90deg, rgba(8, 18, 30, 0.92) 0%, rgba(8, 18, 30, 0.62) 46%, rgba(8, 18, 30, 0.14) 100%), url(/banking/images/agenda/Vision-hero.webp) center top / cover no-repeat"
@@ -644,7 +643,7 @@ export function AgendaLiveTimeline() {
   return (
     <>
       <section
-        className={`${styles.hero} pt-[200px]`}
+        className={styles.hero}
         id="agenda-timeline-hero"
         style={{
           background:
@@ -679,7 +678,7 @@ export function AgendaThemes() {
   return (
     <>
       <section
-        className={`${styles.hero} pt-[200px]`}
+        className={styles.hero}
         id="agenda-themes-hero"
         style={{
           background: "linear-gradient(90deg, rgba(8, 18, 30, 0.92) 0%, rgba(8, 18, 30, 0.62) 46%, rgba(8, 18, 30, 0.14) 100%), url(/banking/images/agenda/Themes-hero.webp) center top / cover no-repeat"
@@ -741,7 +740,7 @@ export function AgendaCallForSpeakers() {
   return (
     <>
       <section
-        className={`${styles.hero} pt-[200px]`}
+        className={styles.hero}
         id="agenda-speakers-hero"
         style={{
           background: "linear-gradient(90deg, rgba(8, 18, 30, 0.92) 0%, rgba(8, 18, 30, 0.62) 46%, rgba(8, 18, 30, 0.14) 100%), url(/banking/images/agenda/Call-speakers-bg.webp) center top / cover no-repeat",

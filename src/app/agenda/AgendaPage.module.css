@@ -15,7 +15,7 @@
 .container,
 .split {
   width: min(1172px, calc(100% - 48px));
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .gradientText {
@@ -24,13 +24,27 @@
 
 .hero {
   position: relative;
-  min-height: 680px;
+  min-height: 580px;
   margin-top: 0;
+  padding-top: 200px;
   padding-bottom: 84px;
   display: flex;
   align-items: center;
   background-color: var(--midnight);
   border-bottom: 2px solid var(--blue);
+}
+@media (max-width: 1200px) {
+  .hero {
+    min-height: 500px;
+    padding-top: 136px;
+  }
+}
+@media (max-width: 640px) {
+  .hero {
+    min-height: 440px;
+    padding-top: 112px;
+    padding-bottom: 56px;
+  }
 }
 
 .hero h1,
@@ -62,7 +76,12 @@
   line-height: 1.55;
 }
 
-.aboutSection,
+.aboutSection {
+  padding: 144px 0 96px;
+  background: var(--cloud);
+  color: #334155;
+}
+
 .visionSection,
 .timelineSection {
   padding: 96px 0;

@@ -6,7 +6,7 @@ export function PartnersHero() {
   return (
     <section
       id="overview"
-      className="relative min-h-[640px] flex items-center page-hero-top pb-[88px] overflow-hidden bg-[#08121E] bg-cover bg-[position:center_top] bg-no-repeat border-b-2 border-[#0069B8] max-sm:min-h-[520px] max-sm:pb-[56px]"
+      className="relative min-h-[520px] flex items-center page-hero-top pb-[76px] overflow-hidden bg-[#08121E] bg-cover bg-[position:center_top] bg-no-repeat border-b-2 border-[#0069B8] max-sm:min-h-[420px] max-sm:pb-[52px]"
       style={{
         backgroundImage:
           'linear-gradient(90deg, rgba(8, 18, 30, 0.94) 0%, rgba(8, 18, 30, 0.72) 45%, rgba(8, 18, 30, 0.18) 100%), url("/banking/images/sponsors/Partners-logo-banner.webp")',
