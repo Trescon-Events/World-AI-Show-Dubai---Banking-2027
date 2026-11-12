@@ -171,12 +171,12 @@ export default function HubspotForm({ portalId, formId, region = "na1", classNam
 
   if (isSubmitted) {
     return (
-      <div className="flex flex-col items-center justify-center text-center p-8 border border-[#C0F43C]/20 rounded-[20px] bg-[#040c1e]/60 min-h-[350px] transition-all duration-300">
+      <div className="flex flex-col items-center justify-center text-center p-8 border border-[#009EAD]/40 rounded-[20px] bg-[#0D1B2E]/90 min-h-[350px] transition-all duration-300">
         <span className="text-[52px] mb-4">✅</span>
-        <h3 className="m-0 text-white font-extrabold text-[22px] mb-2 uppercase tracking-wide">
+        <h3 className="m-0 text-white font-bold text-[22px] mb-2 uppercase tracking-wide">
           Enquiry Received
         </h3>
-        <p className="m-0 text-white/70 text-[15px] max-w-[420px] leading-relaxed">
+        <p className="m-0 text-[#F7F9FC]/80 text-[15px] max-w-[420px] leading-relaxed">
           Thank you for reaching out! Your information has been securely captured. A representative from our team will contact you shortly.
         </p>
       </div>
@@ -186,7 +186,7 @@ export default function HubspotForm({ portalId, formId, region = "na1", classNam
   if (loadError) {
     return (
       <div className="w-full flex flex-col transition-all duration-300 animate-fadeIn">
-        <div className="p-4 border border-[#926DFF]/20 rounded-[12px] bg-[#926DFF]/5 text-white/80 text-[13px] leading-normal mb-6 flex gap-3 items-center">
+        <div className="p-4 border border-[#009EAD]/35 rounded-[12px] bg-[#0069B8]/15 text-[#F7F9FC]/90 text-[13px] leading-normal mb-6 flex gap-3 items-center">
           <span className="text-[16px]">💡</span>
           <p className="m-0">
             HubSpot Form scripts are blocked by your browser shield/ad-blocker. Displaying our direct secure fallback form to capture your enquiry.
@@ -196,24 +196,24 @@ export default function HubspotForm({ portalId, formId, region = "na1", classNam
         <form onSubmit={handleFallbackSubmit} className="flex flex-col gap-5 w-full">
           <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
             <div className="flex flex-col gap-2">
-              <label className="text-[12px] font-bold text-white/50 uppercase tracking-[1px] font-mono">Full Name *</label>
+              <label className="text-[12px] font-bold text-[#F7F9FC]/75 uppercase tracking-[0.08em]">Full Name *</label>
               <input
                 type="text"
                 required
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
-                className="h-[48px] px-4 rounded-[8px] bg-white/[0.03] border border-white/10 text-white placeholder-white/30 text-[14px] focus:outline-none focus:border-cyan/50 transition-colors"
+                className="h-[48px] px-4 rounded-[12px] bg-[#08121E]/80 border border-[#0069B8]/45 text-white placeholder-white/40 text-[14px] focus:outline-none focus:border-[#009EAD] transition-colors"
                 placeholder="John Doe"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-[12px] font-bold text-white/50 uppercase tracking-[1px] font-mono">Company Email *</label>
+              <label className="text-[12px] font-bold text-[#F7F9FC]/75 uppercase tracking-[0.08em]">Company Email *</label>
               <input
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-[48px] px-4 rounded-[8px] bg-white/[0.03] border border-white/10 text-white placeholder-white/30 text-[14px] focus:outline-none focus:border-cyan/50 transition-colors"
+                className="h-[48px] px-4 rounded-[12px] bg-[#08121E]/80 border border-[#0069B8]/45 text-white placeholder-white/40 text-[14px] focus:outline-none focus:border-[#009EAD] transition-colors"
                 placeholder="john@company.com"
               />
             </div>
@@ -221,52 +221,52 @@ export default function HubspotForm({ portalId, formId, region = "na1", classNam
 
           <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
             <div className="flex flex-col gap-2">
-              <label className="text-[12px] font-bold text-white/50 uppercase tracking-[1px] font-mono">Phone Number</label>
+              <label className="text-[12px] font-bold text-[#F7F9FC]/75 uppercase tracking-[0.08em]">Phone Number</label>
               <input
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="h-[48px] px-4 rounded-[8px] bg-white/[0.03] border border-white/10 text-white placeholder-white/30 text-[14px] focus:outline-none focus:border-cyan/50 transition-colors"
-                placeholder="+60 12 345 6789"
+                className="h-[48px] px-4 rounded-[12px] bg-[#08121E]/80 border border-[#0069B8]/45 text-white placeholder-white/40 text-[14px] focus:outline-none focus:border-[#009EAD] transition-colors"
+                placeholder="+971 50 123 4567"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-[12px] font-bold text-white/50 uppercase tracking-[1px] font-mono">Job Title</label>
+              <label className="text-[12px] font-bold text-[#F7F9FC]/75 uppercase tracking-[0.08em]">Job Title</label>
               <input
                 type="text"
                 value={jobTitle}
                 onChange={(e) => setJobTitle(e.target.value)}
-                className="h-[48px] px-4 rounded-[8px] bg-white/[0.03] border border-white/10 text-white placeholder-white/30 text-[14px] focus:outline-none focus:border-cyan/50 transition-colors"
+                className="h-[48px] px-4 rounded-[12px] bg-[#08121E]/80 border border-[#0069B8]/45 text-white placeholder-white/40 text-[14px] focus:outline-none focus:border-[#009EAD] transition-colors"
                 placeholder="Chief AI Officer"
               />
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-[12px] font-bold text-white/50 uppercase tracking-[1px] font-mono">Company Name</label>
+            <label className="text-[12px] font-bold text-[#F7F9FC]/75 uppercase tracking-[0.08em]">Company Name</label>
             <input
               type="text"
               value={company}
               onChange={(e) => setCompany(e.target.value)}
-              className="h-[48px] px-4 rounded-[8px] bg-white/[0.03] border border-white/10 text-white placeholder-white/30 text-[14px] focus:outline-none focus:border-cyan/50 transition-colors"
-              placeholder="Your Organization"
+              className="h-[48px] px-4 rounded-[12px] bg-[#08121E]/80 border border-[#0069B8]/45 text-white placeholder-white/40 text-[14px] focus:outline-none focus:border-[#009EAD] transition-colors"
+              placeholder="Your Organisation"
             />
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-[12px] font-bold text-white/50 uppercase tracking-[1px] font-mono">Message / Requirements</label>
+            <label className="text-[12px] font-bold text-[#F7F9FC]/75 uppercase tracking-[0.08em]">Message / Requirements</label>
             <textarea
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="p-4 rounded-[8px] bg-white/[0.03] border border-white/10 text-white placeholder-white/30 text-[14px] focus:outline-none focus:border-cyan/50 transition-colors resize-none"
+              className="p-4 rounded-[12px] bg-[#08121E]/80 border border-[#0069B8]/45 text-white placeholder-white/40 text-[14px] focus:outline-none focus:border-[#009EAD] transition-colors resize-none"
               placeholder="Tell us about your interests..."
             />
           </div>
 
           <button
             type="submit"
-            className="mt-4 w-full h-[50px] rounded-full font-extrabold text-[14.5px] text-black [color:#06111f!important] bg-[#C0F43C] hover:shadow-[0_0_24px_rgba(192,244,60,0.3)] transition-all duration-200 cursor-pointer"
+            className="bb-btn-primary mt-4 w-full h-[50px] font-bold text-[14.5px] cursor-pointer"
           >
             Submit Enquiry ➔
           </button>
@@ -277,11 +277,11 @@ export default function HubspotForm({ portalId, formId, region = "na1", classNam
 
   return (
     <div className={`w-full ${className}`} suppressHydrationWarning={true}>
-      <div id={containerId} className="hubspot-form-container w-full min-h-[600px] flex items-center justify-center bg-white/[0.01] rounded-[16px]" suppressHydrationWarning={true}>
+      <div id={containerId} className="hubspot-form-container w-full min-h-[600px] flex items-center justify-center bg-[#08121E]/40 rounded-[16px]" suppressHydrationWarning={true}>
         {/* Loading Spinner */}
         <div className="flex flex-col items-center gap-3" suppressHydrationWarning={true}>
-          <div className="w-8 h-8 rounded-full border-2 border-white/10 border-t-[#C0F43C] animate-spin" suppressHydrationWarning={true} />
-          <span className="text-[12px] font-mono text-white/30 uppercase tracking-[2px]" suppressHydrationWarning={true}>Loading Form...</span>
+          <div className="w-8 h-8 rounded-full border-2 border-[#0069B8]/30 border-t-[#009EAD] animate-spin" suppressHydrationWarning={true} />
+          <span className="text-[12px] font-bold text-[#F7F9FC]/60 uppercase tracking-[0.12em]" suppressHydrationWarning={true}>Loading Form...</span>
         </div>
       </div>
     </div>

@@ -1,55 +1,31 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
-import { Header } from "../../components/sections/Header";
-import { HeroSection } from "../../components/sections/HeroSection";
-import { StatsSection } from "../../components/sections/StatsSection";
-import { EcosystemSectionDemo as EcosystemSection } from "../../components/sections/EcosystemSectionDemo";
-import { AgendaSection } from "../../components/sections/AgendaSection";
-import { SpeakersSection } from "../../components/sections/SpeakersSection";
-import { NetworkingSection } from "../../components/sections/NetworkingSection";
-import { SponsorsSection } from "../../components/sections/SponsorsSection";
-import { FAQSection } from "../../components/sections/FAQSection";
-import { OrganizerSection } from "../../components/sections/OrganizerSection";
-import { FooterSection } from "../../components/sections/FooterSection";
-import { Ai2047BrandBookV1System } from "../_design-system/Ai2047BrandBookV1System";
-import { LogoSwap } from "../_design-system/LogoSwap";
-import { TestimonialsPreview } from "../_design-system/TestimonialsPreview";
-import { VortexCursor } from "../_design-system/VortexCursor";
-
-const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap", variable: "--font-jakarta" });
-const grotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap", variable: "--font-grotesk" });
 
 export const metadata: Metadata = {
-  title: "AI 2047 Brand Book Preview | World AI Show | BFSI | Dubai 2027",
-  description: "Isolated preview of the live homepage styled to the AI 2047 Brand Book V1.0.",
+  title: "World AI Show | BFSI | Dubai 2027",
+  description: "Redirecting to World AI Show | BFSI | Dubai 2027 homepage.",
   robots: { index: false, follow: false },
-  icons: { icon: "/banking/images/test-brand/favicon-vortex.svg" },
 };
 
-/**
- * Mirrors src/app/page.tsx section-for-section. The only preview-only swap is the testimonials
- * section (redesigned in _design-system) — same quotes and video as the live page.
- */
-export default function BrandBookHomePreview() {
+export default function HomePreviewRedirect() {
   return (
-    <div className={`ai2047-brandbook-v1 ${jakarta.variable} ${grotesk.variable}`}>
-      <Ai2047BrandBookV1System />
-      <LogoSwap />
-      <VortexCursor />
-      <main className="relative flex flex-col min-h-screen overflow-x-clip">
-        <Header activeItem="Home" />
-        <HeroSection description="A premier executive forum exploring AI deployment across regulated financial services, convening 300+ C-suite leaders to shape future architecture, fraud defence, and procurement." />
-        <StatsSection />
-        <EcosystemSection />
-        <AgendaSection />
-        <SpeakersSection />
-        <NetworkingSection />
-        <TestimonialsPreview />
-        <SponsorsSection />
-        <OrganizerSection />
-        <FAQSection />
-        <FooterSection />
-      </main>
-    </div>
+    <main className="min-h-screen grid place-items-center bg-[#08121E] text-[#F7F9FC] p-6 text-center">
+      <meta httpEquiv="refresh" content="0;url=/banking/" />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: 'window.location.replace("/banking/");',
+        }}
+      />
+      <div className="space-y-4">
+        <p className="text-[16px] text-[#F7F9FC]/80">
+          Redirecting to the promoted World AI Show | BFSI | Dubai 2027 homepage…
+        </p>
+        <a
+          href="/banking/"
+          className="bb-btn-primary inline-flex items-center justify-center px-6 py-3 font-bold text-[14px]"
+        >
+          Go to Homepage →
+        </a>
+      </div>
+    </main>
   );
 }

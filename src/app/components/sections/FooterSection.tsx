@@ -2,77 +2,74 @@
 
 export function FooterSection() {
   return (
-    <footer className="relative py-[74px] pb-[38px] bg-gradient-to-b from-[#040c1c]/72 to-[#030b19] bg-[#030b19] border-t border-white/5 overflow-hidden" id="footer">
-      {/* Visual top glow accent */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] h-[1px] bg-[radial-gradient(circle,rgba(18,205,255,0.24),transparent_70%)] pointer-events-none" />
+    <footer className="relative py-[74px] pb-[38px] bg-[#08121E] border-t-2 border-[#0069B8] overflow-hidden" id="footer">
+      <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
 
-      <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
-        
         {/* Footer Top Column Grid */}
-        <div className="grid grid-cols-[1.65fr_0.7fr_0.78fr_0.7fr] gap-[72px] pb-[48px] border-b border-white/20 max-[980px]:grid-cols-1 max-[980px]:gap-[42px]">
-          
+        <div className="grid grid-cols-[1.65fr_0.7fr_0.78fr_0.7fr] gap-[72px] pb-[48px] border-b border-[#0069B8]/40 max-[980px]:grid-cols-1 max-[980px]:gap-[42px]">
+
           {/* Brand block */}
           <div className="flex flex-col">
             <img
-              src="/banking/logos/wais-27-banking_footer.svg"
+              src="/banking/images/brand/logo-white.svg"
               alt="World AI Show | BFSI | Dubai 2027"
-              width={250}
-              height={50}
-              className="w-[min(250px,100%)] h-auto object-contain mb-4 select-none"
+              width={220}
+              height={62}
+              className="w-[220px] max-w-full h-auto object-contain object-left mb-4 select-none"
             />
-            <p className="max-w-[430px] m-0 mt-2 text-muted text-[17px] leading-[1.55]">
+            <p className="max-w-[430px] m-0 mt-2 text-[#F7F9FC]/80 text-[16px] leading-[1.6]">
               The premier buyer-led executive forum dedicated to the operational realities of deploying artificial intelligence across regulated banking, insurance, asset management, and payment operations. Day 1 of the March Dubai Cluster · Dubai, UAE.
             </p>
           </div>
 
           {/* Column 1: Links */}
-          <div className="flex flex-col gap-[18px]">
-            <h3 className="m-0 mb-2 text-white/74 font-mono text-[12px] uppercase tracking-[5px] select-none">
+          <div className="flex flex-col gap-[16px]">
+            <h3 className="m-0 mb-2 text-[#009EAD] text-[12px] font-bold uppercase tracking-[0.2em] select-none">
               Event
             </h3>
-            <a href="/banking/attend" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a href="/banking/attend" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Attend
             </a>
-            <a href="/banking/agenda" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a href="/banking/agenda" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Agenda
             </a>
-            <a href="/banking/speakers" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a href="/banking/speakers" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Speakers
             </a>
-            <a href="/banking/partners" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a href="/banking/partners" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Partners
             </a>
           </div>
 
           {/* Column 2: Enquiries */}
-          <div className="flex flex-col gap-[18px]">
-            <h3 className="m-0 mb-2 text-white/74 font-mono text-[12px] uppercase tracking-[5px] select-none">
+          <div className="flex flex-col gap-[16px]">
+            <h3 className="m-0 mb-2 text-[#009EAD] text-[12px] font-bold uppercase tracking-[0.2em] select-none">
               Enquiries
             </h3>
-            <a href="/banking/sponsorship-enquiry" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a href="/banking/sponsorship-enquiry" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Sponsorships
             </a>
-            <a href="/banking/attend/delegate" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
-              Delegate Pass
+            <a href="/banking/attend/delegate" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+              Business Pass
             </a>
-            <a href="/banking/media-enquiry" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a href="/banking/media-enquiry" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Media Partner
             </a>
-            <a href="/banking/speaker-enquiry" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a href="/banking/speaker-enquiry" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Speaker Slot
             </a>
           </div>
 
           {/* Column 3: Organiser */}
-          <div className="flex flex-col gap-[18px]">
-            <h3 className="m-0 mb-2 text-white/74 font-mono text-[12px] uppercase tracking-[5px] select-none">
+          <div className="flex flex-col gap-[16px]">
+            <h3 className="m-0 mb-2 text-[#009EAD] text-[12px] font-bold uppercase tracking-[0.2em] select-none">
               Organiser
             </h3>
             <a
               href="https://www.tresconglobal.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5"
+              className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5"
             >
               Trescon
             </a>
@@ -80,11 +77,11 @@ export function FooterSection() {
               href="https://tresconglobal.com/about-us/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5"
+              className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5"
             >
               About Us
             </a>
-            <a href="/banking/general-enquiry" className="text-muted text-[15px] hover:text-cyan transition-colors duration-150 py-0.5">
+            <a href="/banking/general-enquiry" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Contact Us
             </a>
           </div>
@@ -93,7 +90,7 @@ export function FooterSection() {
 
         {/* Footer Bottom Row */}
         <div className="flex items-center justify-between gap-6 pt-[34px] max-sm:flex-col max-sm:items-start">
-          <p className="m-0 text-white/52 font-mono text-[13px] leading-relaxed">
+          <p className="m-0 text-[#F7F9FC]/65 text-[13px] leading-relaxed">
             © 2026–2027 World AI Show | BFSI | Dubai 2027. All rights reserved. Organised by Trescon.
           </p>
           <div className="flex gap-3">
@@ -101,7 +98,7 @@ export function FooterSection() {
               href="https://www.linkedin.com/showcase/world-ai-show/"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid place-items-center w-[38px] h-[38px] border border-[#C0F43C]/60 rounded-full text-[#C0F43C] hover:text-[#C0F43C] hover:border-[#C0F43C] hover:scale-105 transition-all duration-200 shadow-[0_0_12px_rgba(192,244,60,0.15)]"
+              className="grid place-items-center w-[38px] h-[38px] bg-[#0D1B2E] border border-[#0069B8] rounded-full text-white hover:bg-[#F15928] hover:border-[#F15928] hover:-translate-y-[3px] hover:scale-[1.08] hover:shadow-[0_10px_22px_rgba(241,89,40,0.42)] transition-all duration-200"
               aria-label="LinkedIn"
             >
               <svg className="w-[15px] h-[15px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +109,7 @@ export function FooterSection() {
               href="https://x.com/WorldAIShow"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid place-items-center w-[38px] h-[38px] border border-[#C0F43C]/60 rounded-full text-[#C0F43C] hover:text-[#C0F43C] hover:border-[#C0F43C] hover:scale-105 transition-all duration-200 shadow-[0_0_12px_rgba(192,244,60,0.15)]"
+              className="grid place-items-center w-[38px] h-[38px] bg-[#0D1B2E] border border-[#0069B8] rounded-full text-white hover:bg-[#F15928] hover:border-[#F15928] hover:-translate-y-[3px] hover:scale-[1.08] hover:shadow-[0_10px_22px_rgba(241,89,40,0.42)] transition-all duration-200"
               aria-label="Twitter"
             >
               <svg className="w-[14px] h-[14px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +120,7 @@ export function FooterSection() {
               href="https://www.instagram.com/world_ai_show?igsh=anRibHE4OHFlOHM%3D"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid place-items-center w-[38px] h-[38px] border border-[#C0F43C]/60 rounded-full text-[#C0F43C] hover:text-[#C0F43C] hover:border-[#C0F43C] hover:scale-105 transition-all duration-200 shadow-[0_0_12px_rgba(192,244,60,0.15)]"
+              className="grid place-items-center w-[38px] h-[38px] bg-[#0D1B2E] border border-[#0069B8] rounded-full text-white hover:bg-[#F15928] hover:border-[#F15928] hover:-translate-y-[3px] hover:scale-[1.08] hover:shadow-[0_10px_22px_rgba(241,89,40,0.42)] transition-all duration-200"
               aria-label="Instagram"
             >
               <svg className="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +131,7 @@ export function FooterSection() {
               href="https://www.youtube.com/channel/UCrJB-EsWzCNPk34FO_N8Qew/videos"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid place-items-center w-[38px] h-[38px] border border-[#C0F43C]/60 rounded-full text-[#C0F43C] hover:text-[#C0F43C] hover:border-[#C0F43C] hover:scale-105 transition-all duration-200 shadow-[0_0_12px_rgba(192,244,60,0.15)]"
+              className="grid place-items-center w-[38px] h-[38px] bg-[#0D1B2E] border border-[#0069B8] rounded-full text-white hover:bg-[#F15928] hover:border-[#F15928] hover:-translate-y-[3px] hover:scale-[1.08] hover:shadow-[0_10px_22px_rgba(241,89,40,0.42)] transition-all duration-200"
               aria-label="YouTube"
             >
               <svg className="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

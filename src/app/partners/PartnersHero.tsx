@@ -6,15 +6,15 @@ export function PartnersHero() {
   return (
     <section
       id="overview"
-      className="relative min-h-[680px] flex items-center page-hero-top pb-[90px] overflow-hidden bg-cover bg-[position:center_top] bg-no-repeat after:absolute after:inset-x-0 after:bottom-0 after:h-24 after:bg-gradient-to-t after:from-[#020814] after:to-transparent after:z-0 max-sm:min-h-[540px] max-sm:pb-[60px]"
+      className="relative min-h-[640px] flex items-center page-hero-top pb-[88px] overflow-hidden bg-[#08121E] bg-cover bg-[position:center_top] bg-no-repeat border-b-2 border-[#0069B8] max-sm:min-h-[520px] max-sm:pb-[56px]"
       style={{
         backgroundImage:
-          'linear-gradient(90deg, rgba(2, 7, 19, 0.92) 0%, rgba(2, 7, 19, 0.62) 42%, rgba(2, 7, 19, 0.1) 100%), url("/banking/images/sponsors/Partners-logo-banner.webp")',
+          'linear-gradient(90deg, rgba(8, 18, 30, 0.94) 0%, rgba(8, 18, 30, 0.72) 45%, rgba(8, 18, 30, 0.18) 100%), url("/banking/images/sponsors/Partners-logo-banner.webp")',
       }}
     >
-      <div className="relative z-10 w-[min(1114px,calc(100%-48px))] mx-auto">
-        <h1 className="m-0 text-white font-[850] leading-[1.06] tracking-[-2px] text-[clamp(42px,5.4vw,72px)] max-w-[820px]">
-          <GradientText>Partner With us</GradientText> at World AI Show
+      <div className="relative z-10 w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] mx-auto">
+        <h1 className="font-heading m-0 text-white font-bold leading-[1.06] tracking-[-0.02em] text-[clamp(40px,5.2vw,66px)] max-w-[820px]">
+          <GradientText tone="teal">Partner With Us</GradientText> at World AI Show
         </h1>
         <p className="max-w-[740px] mt-6 mb-0 text-white/84 text-[19px] leading-relaxed max-sm:text-base">
           Commercial partnerships are structured around plenary keynotes, exclusive workshop clinics, standardised concourse booths, and private CXO closed-door boardrooms.

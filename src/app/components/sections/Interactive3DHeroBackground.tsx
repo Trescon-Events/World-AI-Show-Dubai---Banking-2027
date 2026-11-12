@@ -17,7 +17,7 @@ export function Interactive3DHeroBackground() {
 
     // 1. Scene, Camera & WebGL Renderer
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x070a0e, 0.022);
+    scene.fog = new THREE.FogExp2(0x08121e, 0.022);
 
     const camera = new THREE.PerspectiveCamera(
       55,
@@ -54,7 +54,7 @@ export function Interactive3DHeroBackground() {
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("touchmove", handleTouchMove, { passive: true });
 
-    // 3. Undulating Cyber Terrain Mesh (Electric Cyan #10d7ff)
+    // 3. Undulating Cyber Terrain Mesh (Horizon Teal #009EAD)
     const gridWidth = 95;
     const gridDepth = 95;
     const gridSegments = 64;
@@ -67,7 +67,7 @@ export function Interactive3DHeroBackground() {
     terrainGeo.rotateX(-Math.PI / 2);
 
     const terrainMat = new THREE.MeshBasicMaterial({
-      color: 0x10d7ff,
+      color: 0x009ead,
       wireframe: true,
       transparent: true,
       opacity: 0.2,
@@ -83,31 +83,31 @@ export function Interactive3DHeroBackground() {
       initialTerrainY[i] = terrainPos.getY(i);
     }
 
-    // 4. Flowing Neural Data Highway Streams (Alternating #b5f43b & #10d7ff)
+    // 4. Flowing Neural Data Highway Streams (Alternating Sovereign Blue & Horizon Teal)
     const streamCount = 8;
     const linesGroup = new THREE.Group();
     scene.add(linesGroup);
 
     const streamMaterials = [
       new THREE.LineBasicMaterial({
-        color: 0xb5f43b,
+        color: 0x0069b8,
         transparent: true,
         opacity: 0.75,
         linewidth: 2,
       }),
       new THREE.LineBasicMaterial({
-        color: 0x10d7ff,
+        color: 0x009ead,
         transparent: true,
         opacity: 0.65,
         linewidth: 2,
       }),
       new THREE.LineBasicMaterial({
-        color: 0xb5f43b,
+        color: 0x0069b8,
         transparent: true,
         opacity: 0.45,
       }),
       new THREE.LineBasicMaterial({
-        color: 0x10d7ff,
+        color: 0x009ead,
         transparent: true,
         opacity: 0.35,
       }),
@@ -146,21 +146,21 @@ export function Interactive3DHeroBackground() {
       });
     }
 
-    // 5. Two-Tone Glowing AI Constellation Particles (#b5f43b & #10d7ff)
+    // 5. Two-Tone Glowing AI Constellation Particles (Sovereign Blue & Horizon Teal)
     const particleCount = 650;
     const particleGeo = new THREE.BufferGeometry();
     const coords = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
 
-    const voltLime = new THREE.Color(0xb5f43b);
-    const electricCyan = new THREE.Color(0x10d7ff);
+    const sovereignBlue = new THREE.Color(0x0069b8);
+    const horizonTeal = new THREE.Color(0x009ead);
 
     for (let i = 0; i < particleCount * 3; i += 3) {
       coords[i] = (Math.random() - 0.5) * 75;
       coords[i + 1] = (Math.random() - 0.5) * 42;
       coords[i + 2] = (Math.random() - 0.5) * 50;
 
-      const chosenColor = Math.random() > 0.5 ? voltLime : electricCyan;
+      const chosenColor = Math.random() > 0.5 ? sovereignBlue : horizonTeal;
       colors[i] = chosenColor.r;
       colors[i + 1] = chosenColor.g;
       colors[i + 2] = chosenColor.b;
@@ -178,7 +178,7 @@ export function Interactive3DHeroBackground() {
         const gradient = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
         gradient.addColorStop(0, "rgba(255, 255, 255, 1)");
         gradient.addColorStop(0.2, "rgba(255, 255, 255, 0.85)");
-        gradient.addColorStop(0.45, "rgba(181, 244, 59, 0.45)");
+        gradient.addColorStop(0.45, "rgba(0, 158, 173, 0.45)");
         gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, 64, 64);
@@ -287,7 +287,7 @@ export function Interactive3DHeroBackground() {
       className="absolute inset-0 w-full h-full overflow-hidden z-0"
       style={{
         background:
-          "radial-gradient(circle at 50% 40%, rgba(16, 215, 255, 0.08) 0%, rgba(7, 10, 14, 1) 85%)",
+          "radial-gradient(circle at 50% 40%, rgba(0, 158, 173, 0.12) 0%, rgba(8, 18, 30, 1) 85%)",
       }}
       aria-hidden="true"
     >
@@ -299,7 +299,7 @@ export function Interactive3DHeroBackground() {
         className="absolute inset-0 z-1 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle at 50% 50%, transparent 35%, rgba(7, 10, 14, 0.8) 100%)",
+            "radial-gradient(circle at 50% 50%, transparent 35%, rgba(8, 18, 30, 0.8) 100%)",
         }}
       />
     </div>

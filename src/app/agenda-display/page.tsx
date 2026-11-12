@@ -213,16 +213,16 @@ export default function AgendaDisplayPage() {
   const renderSession = (session: Session) => (
     <div key={session.id} className="border-b border-gray-200 flex flex-col w-full break-inside-avoid" style={{ paddingTop: '5px', paddingBottom: '5px' }}>
       <div className="flex items-center flex-wrap gap-2 mb-1">
-        <div className="text-[16px] font-extrabold text-gray-800 uppercase tracking-tight">
+        <div className="text-[16px] font-extrabold text-[#334155] uppercase tracking-tight">
           {session.startTime} – {session.endTime}
         </div>
         {session.typeTitle && (
-          <div className="text-[14px] font-bold text-[#00a8e8] uppercase tracking-wider ml-1">
+          <div className="text-[14px] font-bold text-[#0069B8] uppercase tracking-wider ml-1">
             • {session.typeTitle}
           </div>
         )}
       </div>
-      <div className="text-[18px] font-extrabold text-[#0b1c2c] leading-tight mb-1 pr-2">
+      <div className="text-[18px] font-extrabold text-[#08121E] leading-tight mb-1 pr-2">
         {session.title}
       </div>
       {session.speakers && session.speakers.length > 0 && (
@@ -231,12 +231,12 @@ export default function AgendaDisplayPage() {
             <div key={idx} className="flex items-start gap-2">
               <div className="flex flex-col">
                 {spk.role === "MODERATOR" && (
-                  <div className="text-[12px] font-extrabold text-[#00a8e8] uppercase tracking-wider mb-0.5 leading-none">
+                  <div className="text-[12px] font-extrabold text-[#F15928] uppercase tracking-wider mb-0.5 leading-none">
                     MODERATOR
                   </div>
                 )}
-                <div className="text-[16px] font-bold text-[#0b1c2c] leading-none mb-0.5">{spk.name}</div>
-                <div className="text-[14px] font-medium text-gray-600 leading-tight">
+                <div className="text-[16px] font-bold text-[#08121E] leading-none mb-0.5">{spk.name}</div>
+                <div className="text-[14px] font-medium text-[#52657A] leading-tight">
                   {spk.designation}{spk.designation && spk.organisation ? ", " : ""}{spk.organisation}
                 </div>
               </div>
@@ -249,24 +249,23 @@ export default function AgendaDisplayPage() {
 
   return (
     <div 
-      className={`min-h-screen bg-[#071324] flex flex-col ${!isFullscreen && !isDownloading ? 'pt-[80px]' : ''}`}
-      style={{ fontFamily: '"Space Grotesk", "Space Grotesk Fallback", Arial, Helvetica, sans-serif' }}
+      className={`min-h-screen bg-[#08121E] font-sans flex flex-col ${!isFullscreen && !isDownloading ? 'pt-[80px]' : ''}`}
     >
       <Head>
         <title>Agenda TV Display</title>
       </Head>
 
       {!isFullscreen && !isDownloading && (
-        <div className="fixed top-0 left-0 right-0 p-4 bg-[#050e1a]/80 backdrop-blur-md z-50 flex items-center justify-center gap-6 text-white shadow-xl">
+        <div className="fixed top-0 left-0 right-0 p-4 bg-[#08121E]/92 border-b border-[#0069B8]/40 backdrop-blur-md z-50 flex items-center justify-center gap-6 text-white shadow-xl">
           <div className="flex gap-2">
             {days.map((day, idx) => (
               <button
                 key={day.key}
                 onClick={() => setActiveDayKey(day.key)}
-                className={`px-5 py-2 rounded-full font-bold transition-all ${
+                className={`px-5 py-2 rounded-full font-bold transition-all cursor-pointer ${
                   activeDayKey === day.key
-                    ? "bg-[#00a8e8] text-white shadow-lg"
-                    : "bg-white/10 hover:bg-white/20"
+                    ? "bg-[#0069B8] text-white shadow-lg"
+                    : "bg-[#0D1B2E] border border-[#0069B8]/30 hover:border-[#009EAD]"
                 }`}
               >
                 Day {idx + 1}
@@ -274,20 +273,20 @@ export default function AgendaDisplayPage() {
             ))}
           </div>
 
-          <div className="h-8 w-px bg-white/20 mx-2"></div>
+          <div className="h-8 w-px bg-[#0069B8]/40 mx-2"></div>
 
-          <button onClick={handleDownload8K} className="flex items-center gap-2 px-6 py-2.5 rounded-full font-bold bg-[#1cd466] hover:bg-[#15b253] text-[#071324] transition-all">
+          <button onClick={handleDownload8K} className="flex items-center gap-2 px-6 py-2.5 rounded-full font-bold bg-[#009EAD] hover:bg-[#007f8b] text-white transition-all cursor-pointer">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
             Download 8K
           </button>
-          <button onClick={handleDownload16K} className="flex items-center gap-2 px-6 py-2.5 rounded-full font-bold bg-[#d4a01c] hover:bg-[#b28415] text-[#071324] transition-all">
+          <button onClick={handleDownload16K} className="flex items-center gap-2 px-6 py-2.5 rounded-full font-bold bg-[#F15928] hover:bg-[#D94B1E] text-white transition-all cursor-pointer">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
             Download 16K
           </button>
           
           <button 
             onClick={() => document.documentElement.requestFullscreen()} 
-            className="flex items-center gap-2 px-6 py-2.5 rounded-full font-bold bg-white/10 hover:bg-white/20 transition-all ml-4"
+            className="flex items-center gap-2 px-6 py-2.5 rounded-full font-bold bg-[#0D1B2E] border border-[#0069B8]/50 hover:border-[#009EAD] transition-all ml-4 cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
             TV Fullscreen
@@ -295,7 +294,7 @@ export default function AgendaDisplayPage() {
         </div>
       )}
 
-      <div className="flex-1 w-full flex items-center justify-center bg-[#071324] overflow-hidden relative">
+      <div className="flex-1 w-full flex items-center justify-center bg-[#08121E] overflow-hidden relative">
         <div
           id="agenda-display-container"
           style={isDownloading ? undefined : {
@@ -305,17 +304,17 @@ export default function AgendaDisplayPage() {
             transformOrigin: 'center center',
             position: 'absolute'
           }}
-          className={`bg-white text-gray-900 flex flex-col shrink-0 ${isDownloading ? 'fixed top-0 left-0 w-[1920px] h-[1080px] z-[-9999]' : ''}`}
+          className={`bg-white text-[#08121E] flex flex-col shrink-0 ${isDownloading ? 'fixed top-0 left-0 w-[1920px] h-[1080px] z-[-9999]' : ''}`}
         >
-          <div className="w-[1920px] h-[140px] bg-[#071324] flex items-center justify-between px-10 border-b border-gray-800 shrink-0">
-            <img src="/banking/logos/wais-27-enterprise_header.svg" alt="World AI Show — Enterprise" className="h-[75px]" />
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[46px] font-extrabold text-white tracking-wide">
+          <div className="w-[1920px] h-[140px] bg-[#08121E] flex items-center justify-between px-10 border-b-4 border-[#0069B8] shrink-0">
+            <img src="/banking/images/brand/logo-white.svg" alt="World AI Show — Dubai 2027" className="h-[75px]" />
+            <div className="font-heading absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[44px] font-bold text-white tracking-tight">
               Conference Agenda – Day {dayIndex || 1}
             </div>
             <img src="/banking/logos/Trescon-org.svg" alt="Trescon" className="h-[60px] opacity-90" />
           </div>
 
-          <div className="w-[1920px] h-[940px] bg-white px-[60px] pt-[30px] pb-[80px] overflow-hidden relative">
+          <div className="w-[1920px] h-[940px] bg-[#F7F9FC] px-[60px] pt-[30px] pb-[80px] overflow-hidden relative">
             {!isMeasured && (
               <div ref={measureRef} className="absolute opacity-0 pointer-events-none" style={{ width: '420px' }}>
                 {activeSessions.map(renderSession)}

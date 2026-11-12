@@ -15,7 +15,7 @@ const subNav = ["Overview", "Sponsors", "Exhibitors", "Media", "Associations"];
 
 export default function PartnersPage() {
   return (
-    <main className="page-partners relative min-h-screen bg-gradient-to-b from-[#020814] via-[#031022] to-[#020a18] text-white font-space-grotesk overflow-x-hidden">
+    <main className="page-partners relative min-h-screen bg-[#F7F9FC] text-[#334155] font-sans overflow-x-hidden">
       <Header activeItem="Partner" />
       <PartnersHero />
       <SponsorsGrid />

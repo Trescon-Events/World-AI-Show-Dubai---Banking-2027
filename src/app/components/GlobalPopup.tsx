@@ -12,7 +12,7 @@ export function GlobalPopup() {
   const rightPanelRef = useRef<HTMLDivElement>(null);
   const animFrameRef = useRef<number>(0);
 
-  const isHomePage = pathname === "/" || pathname === "";
+  const isHomePage = pathname === "/" || pathname === "" || pathname === "/banking" || pathname === "/banking/";
 
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -82,9 +82,9 @@ export function GlobalPopup() {
           const projX = w * 0.5 + (baseX - w * 0.5) * scale;
           const projY = baseY + dy * scale + h * 0.12 * (1 - scale);
           const xRatio = Math.max(0, Math.min(1, projX / w));
-          const red = Math.round(181 * xRatio);
-          const green = Math.round(243 + 2 * xRatio);
-          const blue = Math.round(255 + (35 - 255) * xRatio);
+          const red = Math.round(0 + 0 * xRatio);
+          const green = Math.round(105 + 53 * xRatio);
+          const blue = Math.round(184 - 11 * xRatio);
           const edgeFade = Math.sin(xRatio * Math.PI) * 0.9 + 0.1;
           const alpha = (0.2 + 0.8 * depthRatio) * 0.75 * edgeFade;
           grid[r][c] = {
@@ -182,17 +182,17 @@ export function GlobalPopup() {
             .wais-popup-overlay.active { opacity: 1; pointer-events: all; }
             .wais-popup-backdrop {
               position: absolute; inset: 0;
-              background: rgba(2,8,28,0.75);
+              background: rgba(8,18,30,0.78);
               backdrop-filter: blur(12px);
               -webkit-backdrop-filter: blur(12px);
             }
             .wais-popup-card {
               position: relative;
               width: 900px; max-width: 92vw; height: 500px;
-              background: radial-gradient(circle at 80% 20%, #06173a 0%, #02081c 100%);
+              background: radial-gradient(circle at 80% 20%, #0D1B2E 0%, #08121E 100%);
               border-radius: 24px;
-              border: 1px solid rgba(0,243,255,0.15);
-              box-shadow: 0 0 30px rgba(0,243,255,0.15), 0 0 50px rgba(181,245,35,0.1);
+              border: 1px solid rgba(0,105,184,0.55);
+              box-shadow: 0 24px 64px rgba(8,18,30,0.65), 0 0 36px rgba(0,105,184,0.25);
               overflow: hidden; z-index: 10;
               transform: scale(0.2) translateY(40px); opacity: 0;
               transition: transform 0.9s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.7s ease;
@@ -204,15 +204,15 @@ export function GlobalPopup() {
             .wais-close-btn {
               position: absolute; top: 24px; right: 24px;
               width: 36px; height: 36px; border-radius: 50%;
-              background: #b5f523; border: none;
+              background: #F15928; border: none;
               display: flex; justify-content: center; align-items: center;
               cursor: pointer; z-index: 30;
-              box-shadow: 0 0 15px rgba(181,245,35,0.4);
+              box-shadow: 0 8px 20px rgba(241,89,40,0.4);
               transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
             }
             .wais-close-btn:hover {
               transform: scale(1.1) rotate(90deg);
-              background: #fff; box-shadow: 0 0 20px rgba(255,255,255,0.6);
+              background: #D94B1E; box-shadow: 0 10px 24px rgba(241,89,40,0.55);
             }
             /* LEFT */
             .wais-popup-left {
@@ -221,9 +221,9 @@ export function GlobalPopup() {
               display: flex; flex-direction: column; justify-content: space-between;
               position: relative; z-index: 5;
             }
-            .wais-accent-bar { width: 50px; height: 4px; background: #b5f523; border-radius: 2px; }
+            .wais-accent-bar { width: 50px; height: 4px; background: #F15928; border-radius: 2px; }
             .wais-popup-title {
-              font-family: 'Space Grotesk', sans-serif;
+              font-family: var(--font-sg), 'Space Grotesk', sans-serif;
               font-size: 40px; line-height: 1.15; font-weight: 700;
               display: flex; flex-direction: column; margin-top: 15px;
               text-align: left;
@@ -231,46 +231,46 @@ export function GlobalPopup() {
             }
             .wais-popup-title span { display: block; overflow: hidden; }
             .wais-word-white { color: #fff; }
-            .wais-word-lime { color: #b5f523; text-shadow: 0 0 10px rgba(181,245,35,0.2); }
+            .wais-word-teal { color: #009EAD; }
             .wais-register-info { display:flex; align-items:center; gap:16px; margin: 20px 0; }
             .wais-icon-circle {
               width:48px; height:48px; border-radius:50%;
-              border:1.5px solid rgba(255,255,255,0.15);
-              background:rgba(255,255,255,0.03);
+              border:1.5px solid rgba(0,105,184,0.55);
+              background:rgba(0,105,184,0.18);
               display:flex; justify-content:center; align-items:center;
               color:#fff; flex-shrink:0;
             }
-            .wais-info-text { font-size:15px; line-height:1.4; color:#8a99ad; font-weight:400; text-align: left; }
+            .wais-info-text { font-size:15px; line-height:1.45; color:rgba(247,249,252,0.78); font-weight:400; text-align: left; }
             .wais-cta-button {
               display:inline-flex; justify-content:space-between; align-items:center;
-              width:320px; padding:16px 24px;
-              background:#b5f523; color:#02081c;
-              text-decoration:none; border-radius:8px;
-              font-family:'Outfit',sans-serif; font-weight:800; font-size:15px; letter-spacing:0.5px;
+              width:320px; padding:15px 24px;
+              background:#F15928; color:#FFFFFF !important;
+              text-decoration:none; border-radius:9999px;
+              font-family: var(--font-pjs), sans-serif; font-weight:700; font-size:15px; letter-spacing:0.3px;
               position:relative; overflow:hidden;
-              box-shadow:0 5px 15px rgba(181,245,35,0.3);
-              transition:all 0.4s cubic-bezier(0.16,1,0.3,1);
+              box-shadow:0 8px 22px rgba(241,89,40,0.34);
+              transition:all 0.3s cubic-bezier(0.22,1,0.36,1);
             }
-            .wais-cta-button:hover { transform:translateY(-2px); box-shadow:0 10px 25px rgba(181,245,35,0.5); background:#fff; }
+            .wais-cta-button:hover { transform:translateY(-2px); box-shadow:0 14px 30px rgba(241,89,40,0.5); background:#D94B1E; }
             .wais-cta-button::after {
               content:''; position:absolute; top:-50%; left:-60%;
               width:30%; height:200%;
-              background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0) 100%);
+              background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%);
               transform:rotate(25deg);
               animation:wais-shine 4s ease-in-out infinite;
             }
             @keyframes wais-shine { 0%{left:-60%;} 30%{left:120%;} 100%{left:120%;} }
             .wais-cta-btn-span { position:relative; z-index:5; }
-            .wais-cta-arrow { position:relative; z-index:5; transition:transform 0.4s cubic-bezier(0.16,1,0.3,1); }
+            .wais-cta-arrow { position:relative; z-index:5; transition:transform 0.3s cubic-bezier(0.22,1,0.36,1); }
             .wais-cta-button:hover .wais-cta-arrow { transform:translateX(6px); }
             .wais-trust-footer { display:flex; align-items:center; gap:8px; margin-top:15px; flex-wrap:nowrap; white-space:nowrap; }
             .wais-trust-item {
               display:flex; align-items:center; gap:5px;
-              font-size:10.5px; font-weight:500; color:#8a99ad;
+              font-size:10.5px; font-weight:500; color:rgba(247,249,252,0.72);
               letter-spacing:0.2px; white-space:nowrap;
             }
-            .wais-trust-icon { color:#b5f523; opacity:0.95; flex-shrink:0; }
-            .wais-trust-divider { width:1px; height:12px; background:rgba(255,255,255,0.15); }
+            .wais-trust-icon { color:#009EAD; opacity:0.95; flex-shrink:0; }
+            .wais-trust-divider { width:1px; height:12px; background:rgba(0,105,184,0.45); }
             /* RIGHT */
             .wais-popup-right {
               width:47%; height:100%;
@@ -284,11 +284,11 @@ export function GlobalPopup() {
             }
             .wais-ambient-glow {
               position:absolute; border-radius:50%;
-              filter:blur(80px); opacity:0.35;
+              filter:blur(80px); opacity:0.28;
               pointer-events:none; z-index:2;
             }
-            .wais-cyan-glow { width:250px;height:250px;background:#00f3ff;top:10%;right:15%; }
-            .wais-lime-glow { width:200px;height:200px;background:#b5f523;bottom:5%;left:10%;opacity:0.25; }
+            .wais-cyan-glow { width:250px;height:250px;background:#009EAD;top:10%;right:15%; }
+            .wais-lime-glow { width:200px;height:200px;background:#0069B8;bottom:5%;left:10%;opacity:0.35; }
             .wais-tickets-perspective {
               position:relative; width:280px; height:320px;
               z-index:5; perspective:1000px;
@@ -318,22 +318,22 @@ export function GlobalPopup() {
             }
             .wais-ticket-top { text-align:center; display:flex; flex-direction:column; align-items:center; }
             .wais-ticket-badge {
-              background:#b5f523; color:#02081c;
-              font-family:'Outfit',sans-serif; font-weight:800; font-size:11px;
+              background:#F15928; color:#FFFFFF;
+              font-family:var(--font-pjs),sans-serif; font-weight:800; font-size:11px;
               padding:3px 10px; border-radius:4px; margin-bottom:24px;
-              letter-spacing:0.5px; box-shadow:0 0 8px rgba(181,245,35,0.4);
+              letter-spacing:0.5px; box-shadow:0 4px 12px rgba(241,89,40,0.45);
             }
-            .wais-ticket-tag { color:#00f3ff; font-family:'Outfit',sans-serif; font-weight:800; font-size:13px; margin-bottom:24px; }
-            .wais-ticket-main { font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.8px; color:#fff; line-height:1.2; }
-            .wais-ticket-sub { font-family:'Outfit',sans-serif; font-weight:700; font-size:12px; letter-spacing:1.5px; color:#00f3ff; margin-top:2px; }
+            .wais-ticket-tag { color:#009EAD; font-family:var(--font-pjs),sans-serif; font-weight:800; font-size:13px; margin-bottom:24px; }
+            .wais-ticket-main { font-family:var(--font-sg),sans-serif; font-weight:700; font-size:13px; letter-spacing:0.8px; color:#fff; line-height:1.2; }
+            .wais-ticket-sub { font-family:var(--font-sg),sans-serif; font-weight:700; font-size:12px; letter-spacing:1.5px; color:#009EAD; margin-top:2px; }
             .wais-ticket-divider { width:100%; position:absolute; top:70%; left:0; display:flex; justify-content:center; }
-            .wais-divider-line { width:80%; border-bottom:1.5px dashed rgba(0,243,255,0.25); }
-            .wais-ticket-bottom { margin-bottom:4px; color:#00f3ff; }
+            .wais-divider-line { width:80%; border-bottom:1.5px dashed rgba(0,158,173,0.45); }
+            .wais-ticket-bottom { margin-bottom:4px; color:#009EAD; }
             .wais-scanner-beam {
               position:absolute; width:calc(100% - 4px); height:4px; left:2px;
-              background:linear-gradient(to right,transparent,#00f3ff,transparent);
-              box-shadow:0 0 10px #00f3ff;
-              z-index:6; animation:wais-scanner 3.5s linear infinite; opacity:0.8; pointer-events:none;
+              background:linear-gradient(to right,transparent,#009EAD,transparent);
+              box-shadow:0 0 10px #009EAD;
+              z-index:6; animation:wais-scanner 3.5s linear infinite; opacity:0.85; pointer-events:none;
             }
             @keyframes wais-scanner { 0%{top:10px;} 50%{top:calc(100% - 14px);} 100%{top:10px;} }
             @media(max-width:700px){
@@ -357,7 +357,7 @@ export function GlobalPopup() {
               {/* Close */}
               <button className="wais-close-btn" onClick={handleClose} aria-label="Close popup">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path d="M1 1L13 13M13 1L1 13" stroke="#02081c" strokeWidth="2.5" strokeLinecap="round"/>
+                  <path d="M1 1L13 13M13 1L1 13" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round"/>
                 </svg>
               </button>
 
@@ -366,9 +366,9 @@ export function GlobalPopup() {
                 <div className="wais-accent-bar" />
                 <div className="wais-popup-title">
                   <span className="wais-word-white">Limited</span>
-                  <span className="wais-word-lime">Free Delegate</span>
+                  <span className="wais-word-teal">Business</span>
                   <span className="wais-word-white">Passes</span>
-                  <span className="wais-word-lime">Remaining</span>
+                  <span className="wais-word-teal">Remaining</span>
                 </div>
                 <div className="wais-register-info">
                   <div className="wais-icon-circle">
@@ -379,7 +379,7 @@ export function GlobalPopup() {
                       <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                     </svg>
                   </div>
-                  <span className="wais-info-text">Register now before<br/>all free passes are claimed.</span>
+                  <span className="wais-info-text">Register now before<br/>all Business Passes are claimed.</span>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                   <a className="wais-cta-button" href="/banking/sponsorship-enquiry">
@@ -394,7 +394,7 @@ export function GlobalPopup() {
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         <polygon points="12 8 13.5 11 16.5 11 14 13 15 16 12 14.5 9 16 10 13 7.5 11 10.5 11"/>
                       </svg>
-                      <span>100% Complimentary</span>
+                      <span>Business Pass</span>
                     </div>
                     <div className="wais-trust-divider" />
                     <div className="wais-trust-item">
@@ -428,12 +428,12 @@ export function GlobalPopup() {
                       {/* Back Ticket */}
                       <div className="wais-ticket wais-ticket-back">
                         <svg className="wais-ticket-bg-svg" viewBox="0 0 140 240" fill="none">
-                          <path d="M 12 0 L 58 0 A 12 12 0 0 0 82 0 L 128 0 A 12 12 0 0 1 140 12 L 140 160 A 8 8 0 0 0 140 176 L 140 228 A 12 12 0 0 1 128 240 L 82 240 A 12 12 0 0 0 58 240 L 12 240 A 12 12 0 0 1 0 228 L 0 176 A 8 8 0 0 0 0 160 L 0 12 A 12 12 0 0 1 12 0 Z" fill="#030d29" fillOpacity="0.85" stroke="rgba(0,243,255,0.45)" strokeWidth="1.5"/>
+                          <path d="M 12 0 L 58 0 A 12 12 0 0 0 82 0 L 128 0 A 12 12 0 0 1 140 12 L 140 160 A 8 8 0 0 0 140 176 L 140 228 A 12 12 0 0 1 128 240 L 82 240 A 12 12 0 0 0 58 240 L 12 240 A 12 12 0 0 1 0 228 L 0 176 A 8 8 0 0 0 0 160 L 0 12 A 12 12 0 0 1 12 0 Z" fill="#0D1B2E" fillOpacity="0.92" stroke="rgba(0,105,184,0.65)" strokeWidth="1.5"/>
                         </svg>
-                        <div className="wais-ticket-content" style={{opacity:0.5}}>
+                        <div className="wais-ticket-content" style={{opacity:0.65}}>
                           <div className="wais-ticket-top">
-                            <span className="wais-ticket-tag">FREE</span>
-                            <span className="wais-ticket-main">DELEGATE</span>
+                            <span className="wais-ticket-tag">VIP</span>
+                            <span className="wais-ticket-main">BUSINESS</span>
                             <span className="wais-ticket-main">PASS</span>
                           </div>
                           <div className="wais-ticket-divider"><div className="wais-divider-line"/></div>
@@ -450,18 +450,18 @@ export function GlobalPopup() {
                       <div className="wais-ticket wais-ticket-front">
                         <svg className="wais-ticket-bg-svg" viewBox="0 0 140 240" fill="none">
                           <defs>
-                            <filter id="neon-glow-cyan" x="-25%" y="-25%" width="150%" height="150%">
+                            <filter id="brand-glow-teal" x="-25%" y="-25%" width="150%" height="150%">
                               <feGaussianBlur stdDeviation="4" result="blur"/>
                               <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
                             </filter>
                           </defs>
-                          <path d="M 12 0 L 58 0 A 12 12 0 0 0 82 0 L 128 0 A 12 12 0 0 1 140 12 L 140 160 A 8 8 0 0 0 140 176 L 140 228 A 12 12 0 0 1 128 240 L 82 240 A 12 12 0 0 0 58 240 L 12 240 A 12 12 0 0 1 0 228 L 0 176 A 8 8 0 0 0 0 160 L 0 12 A 12 12 0 0 1 12 0 Z" fill="#030d29" fillOpacity="0.85" stroke="#00f3ff" strokeWidth="1.8" filter="url(#neon-glow-cyan)"/>
+                          <path d="M 12 0 L 58 0 A 12 12 0 0 0 82 0 L 128 0 A 12 12 0 0 1 140 12 L 140 160 A 8 8 0 0 0 140 176 L 140 228 A 12 12 0 0 1 128 240 L 82 240 A 12 12 0 0 0 58 240 L 12 240 A 12 12 0 0 1 0 228 L 0 176 A 8 8 0 0 0 0 160 L 0 12 A 12 12 0 0 1 12 0 Z" fill="#0D1B2E" fillOpacity="0.94" stroke="#009EAD" strokeWidth="1.8" filter="url(#brand-glow-teal)"/>
                         </svg>
                         <div className="wais-scanner-beam" />
                         <div className="wais-ticket-content">
                           <div className="wais-ticket-top">
-                            <div className="wais-ticket-badge">FREE</div>
-                            <div className="wais-ticket-main">DELEGATE</div>
+                            <div className="wais-ticket-badge">2027</div>
+                            <div className="wais-ticket-main">BUSINESS</div>
                             <div className="wais-ticket-sub">PASS</div>
                           </div>
                           <div className="wais-ticket-divider"><div className="wais-divider-line"/></div>

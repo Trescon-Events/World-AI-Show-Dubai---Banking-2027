@@ -50,42 +50,42 @@ const channels: ChannelItem[] = [
 
 export function NetworkingChannels() {
   return (
-    <section className="relative py-[92px] bg-[#020b1c]" id="channels">
-      <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
+    <section className="relative py-[92px] bg-[#F7F9FC]" id="channels">
+      <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
         
         {/* Title */}
         <div className="text-center mb-16">
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-[#18d4ff]/30 rounded-full text-[#18d4ff] font-mono text-[12px] uppercase tracking-[2px] bg-[#18d4ff]/5">
+          <span className="inline-flex items-center mb-5 px-4 py-1.5 border border-[#0069B8]/25 rounded-full text-[#0069B8] text-[12px] font-bold uppercase tracking-[0.14em] bg-white">
             Networking Platforms
           </span>
-          <h2 className="font-[850] text-white leading-tight tracking-[-1.5px] text-[clamp(36px,4.5vw,56px)]">
+          <h2 className="font-heading font-bold text-[#08121E] leading-tight tracking-[-0.02em] text-[clamp(34px,4.4vw,52px)]">
             A working summit. <br />
-            <GradientText>Built to forge partnerships.</GradientText>
+            <GradientText tone="blue">Built to forge partnerships.</GradientText>
           </h2>
         </div>
 
         {/* Channels Split list */}
-        <div className="flex flex-col gap-[96px] max-sm:gap-14">
+        <div className="flex flex-col gap-[84px] max-sm:gap-14">
           {channels.map((channel) => (
             <div
               key={channel.title}
-              className={`grid grid-cols-[1fr_0.94fr] items-center gap-[74px] max-[980px]:grid-cols-1 max-[980px]:gap-[36px]`}
+              className={`grid grid-cols-[1fr_0.94fr] items-center gap-[64px] max-[980px]:grid-cols-1 max-[980px]:gap-[36px]`}
             >
               {/* Info Column */}
               <div className={`${channel.reverse ? "order-2 max-[980px]:order-none" : "order-none"}`}>
-                <span className="text-[#18d4ff] font-mono text-[12px] uppercase tracking-[3px] font-bold block mb-3">
+                <span className="text-[#0069B8] text-[12px] uppercase tracking-[0.14em] font-bold block mb-3">
                   {channel.tag}
                 </span>
-                <h3 className="m-0 text-white font-[850] text-[34px] leading-tight mb-5 max-sm:text-[26px]">
+                <h3 className="font-heading m-0 text-[#08121E] font-bold text-[32px] leading-tight mb-5 max-sm:text-[26px]">
                   {channel.title}
                 </h3>
-                <p className="m-0 text-white/66 text-[17px] leading-relaxed mb-6">
+                <p className="m-0 text-[#334155] text-[16.5px] leading-relaxed mb-6">
                   {channel.desc}
                 </p>
                 <ul className="m-0 pl-0 list-none flex flex-col gap-3">
                   {channel.benefits.map((benefit) => (
-                    <li key={benefit} className="flex items-center gap-3 text-white/80 text-[15px]">
-                      <span className="grid place-items-center w-[18px] h-[18px] rounded-full bg-cyan/15 text-cyan text-[10px] font-extrabold select-none">
+                    <li key={benefit} className="flex items-center gap-3 text-[#08121E] font-medium text-[15px]">
+                      <span className="grid place-items-center w-[20px] h-[20px] rounded-full bg-[#0069B8] text-white text-[10px] font-extrabold select-none shrink-0">
                         ✓
                       </span>
                       {benefit}
@@ -95,7 +95,7 @@ export function NetworkingChannels() {
               </div>
 
               {/* Graphic Column */}
-              <div className="relative min-h-[340px] overflow-hidden border border-[#20d5ff]/24 rounded-[24px] bg-[#071426]/72 shadow-[0_0_42px_rgba(0,206,255,0.1)]">
+              <div className="relative min-h-[340px] overflow-hidden border border-[#0069B8]/25 rounded-[20px] bg-white shadow-[0_18px_40px_rgba(8,18,30,0.1)]">
                 <img
                   src={channel.image}
                   alt={channel.title}

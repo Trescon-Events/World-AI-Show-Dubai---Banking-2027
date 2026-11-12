@@ -8,17 +8,16 @@ const INTERACTIVE_SELECTOR =
 const TEXT_OR_EMBED_SELECTOR = 'input, textarea, select, option, [contenteditable="true"], iframe';
 
 /**
- * Preview-only: keeps the native default OS cursor across normal page regions and
- * swaps only the interactive pointing hand ("cursor: pointer") for the dotted vortex
- * above the "i" from the World AI Show brand mark.
+ * Keeps the native default OS cursor across normal page regions and swaps
+ * interactive pointing hands for the dotted vortex mark from the brand lockup.
  */
 export function VortexCursor() {
   const wrapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const root = document.querySelector<HTMLElement>(".ai2047-brandbook-v1");
+    const root = document.documentElement;
     const el = wrapRef.current;
-    if (!root || !el) return;
+    if (!el) return;
 
     const finePointer = window.matchMedia("(pointer: fine) and (hover: hover)");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -28,7 +27,7 @@ export function VortexCursor() {
     let visible = false;
 
     const updateState = (target: EventTarget | null) => {
-      if (!(target instanceof Element) || !target.closest(".ai2047-brandbook-v1") || target.closest(TEXT_OR_EMBED_SELECTOR)) {
+      if (!(target instanceof Element) || target.closest(TEXT_OR_EMBED_SELECTOR)) {
         el.dataset.hidden = "1";
         el.dataset.pointing = "0";
         return;
@@ -40,10 +39,10 @@ export function VortexCursor() {
 
       const onOrangeBtn = Boolean(
         target.closest(
-          'a[class*="bg-[#c0f43c" i], button[class*="bg-[#c0f43c" i], a[class*="bg-[#18d4ff" i], button[class*="bg-[#18d4ff" i], header a[href*="sponsorship-enquiry"], #organizer a[href*="sponsorship-enquiry"], #organizer a[href*="tresconglobal.com"], .tp-btn'
+          '.bb-btn-primary, a[class*="bg-[#F15928" i], button[class*="bg-[#F15928" i], .wais-cta-button, .wais-close-btn, .tp-btn, footer a[aria-label]:hover'
         )
       );
-      const onBlueSurface = Boolean(target.closest("#speakers, #organizer"));
+      const onBlueSurface = Boolean(target.closest("#speakers, #organizer, .surface-blue"));
 
       if (onOrangeBtn) {
         el.dataset.tone = "orange";

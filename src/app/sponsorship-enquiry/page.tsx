@@ -1,52 +1,41 @@
 "use client";
 
-import Link from "next/link";
 import { Header } from "../components/sections/Header";
 import { FooterSection } from "../components/sections/FooterSection";
 import HubspotForm from "../components/HubspotForm";
 
 export default function SponsorshipEnquiryPage() {
   return (
-    <main className="relative min-h-screen bg-gradient-to-b from-[#020814] via-[#031022] to-[#020a18] text-white font-space-grotesk overflow-x-hidden">
-      {/* Background glow graphics */}
-      <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[radial-gradient(circle,rgba(192,244,60,0.04),transparent_70%)] pointer-events-none" />
-      <div className="absolute top-[40%] left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(circle,rgba(24,212,255,0.03),transparent_70%)] pointer-events-none" />
+    <main className="relative min-h-screen bg-[#08121E] text-white font-sans overflow-x-hidden">
+      <div className="absolute top-[18%] left-1/2 -translate-x-1/2 w-[640px] h-[320px] bg-[radial-gradient(circle,rgba(0,105,184,0.16),transparent_70%)] pointer-events-none" />
+      <div className="absolute top-[42%] left-1/2 -translate-x-1/2 w-[780px] h-[380px] bg-[radial-gradient(circle,rgba(0,158,173,0.1),transparent_70%)] pointer-events-none" />
 
       <Header activeItem="Attend" />
 
       {/* Main Content Area */}
-      <section className="relative z-10 py-[140px] pt-[200px] max-sm:py-[100px] max-sm:pt-[130px]">
-        <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
+      <section className="relative z-10 py-[140px] pt-[180px] max-sm:py-[100px] max-sm:pt-[120px]">
+        <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
           
           {/* Back button */}
           <div className="mb-8">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-white/50 hover:text-[#C0F43C] text-[15px] transition-colors duration-200"
+            <a
+              href="/banking/"
+              className="inline-flex items-center gap-2 text-white/75 hover:text-[#F15928] text-[15px] font-medium transition-colors duration-200"
             >
-              <span className="font-mono">←</span> Back to Home
-            </Link>
+              <span>←</span> Back to Home
+            </a>
           </div>
 
-          {/* Premium Glass Form Card */}
-          <div
-            className="relative w-full max-w-[900px] mx-auto p-12 max-sm:p-6 rounded-[32px] backdrop-blur-[24px] overflow-hidden"
-            style={{
-              background: "linear-gradient(125.2deg, rgba(0, 206, 255, 0.064) 0%, rgba(192, 244, 60, 0.012) 100%), rgba(4, 14, 33, 0.85)",
-              boxShadow: "0 0 40px 0 rgba(192, 244, 60, 0.18), 0 0 0 1px rgba(192, 244, 60, 0.40), 0 24px 64px 0 rgba(0, 0, 0, 0.5)"
-            }}
-          >
-            {/* Top border highlight */}
-            <div className="absolute top-0 left-0 right-0 h-[1px] bg-[#2E3C4D]/55" />
-
+          {/* Raised Brand Book Form Card */}
+          <div className="relative w-full max-w-[900px] mx-auto p-12 max-sm:p-6 rounded-[24px] bg-[#0D1B2E] border border-[#0069B8]/52 border-t-4 border-t-[#F15928] shadow-[0_24px_64px_rgba(8,18,30,0.5)] overflow-hidden">
             <div className="relative z-10 flex flex-col">
-              <span className="text-[#C0F43C] font-mono text-[11px] font-extrabold uppercase tracking-[0.25em] mb-3">
+              <span className="text-[#009EAD] text-[12px] font-bold uppercase tracking-[0.14em] mb-3">
                 Commercial Partnerships · Dubai 2027
               </span>
-              <h1 className="m-0 text-white font-[850] text-[clamp(28px,4vw,42px)] leading-tight tracking-[-1px] mb-4">
-                Engage Middle East Banking <span className="text-[#18d4ff]">Decision-Makers in Dubai</span>
+              <h1 className="font-heading m-0 text-white font-bold text-[clamp(28px,4vw,42px)] leading-tight tracking-[-0.02em] mb-4">
+                Engage Middle East Banking <span className="text-[#009EAD]">Decision-Makers in Dubai</span>
               </h1>
-              <p className="m-0 text-white/70 text-[16px] leading-relaxed mb-9">
+              <p className="m-0 text-white/80 text-[16px] leading-relaxed mb-9">
                 Enquire about Speaking Sponsor packages (20-minute plenary keynotes &amp; 12 sqm island booths), Engagement Partner packages (exclusive leadership of 75-minute workshop clinics &amp; 9 sqm booths), private 15-buyer CXO Closed-Door Boardrooms, Industry Partner packages (9 sqm), and 6 sqm turnkey concourse exhibition booths at World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE).
               </p>
 

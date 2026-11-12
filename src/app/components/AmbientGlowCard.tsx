@@ -24,7 +24,7 @@ export function AmbientGlowCard({ children, className = "" }: { children: ReactN
       <div 
         className="absolute -inset-[10px] rounded-[inherit] -z-10 opacity-0 transition-opacity duration-300 pointer-events-none group-hover:opacity-100 blur-[20px]"
         style={{
-          background: "radial-gradient(400px circle at var(--x, 50%) var(--y, 50%), rgba(0,206,255,0.25), transparent 70%)"
+          background: "radial-gradient(400px circle at var(--x, 50%) var(--y, 50%), rgba(0,105,184,0.22), transparent 70%)"
         }}
       />
 
@@ -32,7 +32,7 @@ export function AmbientGlowCard({ children, className = "" }: { children: ReactN
       <div 
         className="absolute inset-0 rounded-[inherit] p-[1.5px] pointer-events-none opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10"
         style={{
-          background: "radial-gradient(350px circle at var(--x, 50%) var(--y, 50%), rgba(0,206,255,0.8) 0%, rgba(0,206,255,0.4) 30%, transparent 65%)",
+          background: "radial-gradient(350px circle at var(--x, 50%) var(--y, 50%), rgba(0,158,173,0.75) 0%, rgba(0,105,184,0.35) 35%, transparent 65%)",
           WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
           WebkitMaskComposite: "xor",
           maskComposite: "exclude",

@@ -143,11 +143,11 @@ function AgendaPillarCard({
       onClick={onToggle}
       className={`agenda-pillar-card group relative flex flex-col justify-between overflow-hidden rounded-[20px] border transition-all duration-300 cursor-pointer text-left ${
         isExpanded
-          ? "border-[#C0F43C]/65 bg-gradient-to-br from-[#071a33]/95 via-[#040e22]/98 to-[#030916]/98 shadow-[0_20px_50px_rgba(0,0,0,0.45),0_0_32px_rgba(192,244,60,0.14)] -translate-y-1"
-          : "border-white/15 bg-gradient-to-br from-[#00ceff]/10 via-[#040c1e]/95 to-[#996cff]/10 shadow-[inset_0_0_28px_rgba(65,220,255,0.05),0_20px_50px_rgba(0,0,0,0.3)]"
+          ? "border-[#0069B8] bg-white shadow-[0_20px_44px_rgba(0,105,184,0.16)] -translate-y-1"
+          : "border-[#0069B8]/22 bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] hover:border-[#0069B8] hover:-translate-y-1 hover:shadow-[0_20px_44px_rgba(0,105,184,0.16)]"
       }`}
     >
-      <div className="agenda-pillar-media relative w-full h-[228px] max-sm:h-[192px] overflow-hidden border-b border-white/10">
+      <div className="agenda-pillar-media relative w-full h-[228px] max-sm:h-[192px] overflow-hidden bg-[#08121E] border-b border-[#0069B8]/18">
         <video
           ref={videoRef}
           src={theme.video}
@@ -161,7 +161,7 @@ function AgendaPillarCard({
         />
         <span
           aria-hidden="true"
-          className={`agenda-play-badge pointer-events-none absolute right-3.5 bottom-3.5 grid place-items-center w-10 h-10 rounded-full transition-all duration-300 ${
+          className={`agenda-play-badge pointer-events-none absolute right-3.5 bottom-3.5 grid place-items-center w-10 h-10 rounded-full bg-[#08121E]/72 text-white border border-white/38 backdrop-blur-[6px] transition-all duration-300 ${
             isExpanded ? "opacity-0 scale-90" : "opacity-100 scale-100"
           }`}
         >
@@ -173,35 +173,35 @@ function AgendaPillarCard({
 
       <div className="agenda-pillar-body p-7 max-sm:p-5">
         <h3
-          className={`m-0 mb-3 font-extrabold text-[21px] leading-[1.26] transition-colors duration-200 ${
-            isExpanded ? "text-[#C0F43C]" : "text-white"
+          className={`m-0 mb-3 font-medium text-[21px] leading-[1.3] transition-colors duration-200 ${
+            isExpanded ? "text-[#0069B8]" : "text-[#08121E] group-hover:text-[#0069B8]"
           }`}
         >
           {theme.label}
         </h3>
 
-        <p className="m-0 text-white/80 text-[15.5px] leading-[1.6]">
+        <p className="m-0 text-[#334155] text-[15.5px] leading-[1.6]">
           {theme.shortDesc}
         </p>
 
         <div
           className={`grid transition-all duration-300 ease-out overflow-hidden ${
             isExpanded
-              ? "grid-rows-[1fr] opacity-100 mt-5 pt-4 border-t border-white/12"
+              ? "grid-rows-[1fr] opacity-100 mt-5 pt-4 border-t border-[#0069B8]/18"
               : "grid-rows-[0fr] opacity-0 mt-0 pt-0 border-t border-transparent"
           }`}
         >
           <div className="min-h-0 space-y-3 overflow-hidden">
             <div>
-              <span className="block font-mono text-[11px] uppercase tracking-[1.6px] text-[#18d4ff] mb-1">
+              <span className="block text-[11px] font-bold uppercase tracking-[0.08em] text-[#0069B8] mb-1">
                 Operational Scope &amp; Technical Focus
               </span>
-              <p className="m-0 text-white/75 text-[14.5px] leading-[1.6]">
+              <p className="m-0 text-[#334155] text-[14.5px] leading-[1.6]">
                 {theme.expandedScope}
               </p>
             </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.04] border border-white/10 text-white/80 font-mono text-[11.5px]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C0F43C]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F7F9FC] border border-[#0069B8]/22 text-[#08121E] text-[12px] font-semibold">
+              <span className="w-2 h-2 rounded-full bg-[#F15928]" />
               Format: {theme.clinicalFormat}
             </div>
           </div>
@@ -214,7 +214,7 @@ function AgendaPillarCard({
 export function AgendaSection({
   title = (
     <>
-      Focused on Four Core <GradientText>Operational Mandates</GradientText>
+      Focused on Four Core <GradientText tone="blue">Operational Mandates</GradientText>
     </>
   ),
   subtitle = null,
@@ -230,14 +230,14 @@ export function AgendaSection({
 
   return (
     <section
-      className="relative py-[104px] bg-gradient-to-b from-[#020a18]/96 to-[#051224]/70 max-sm:py-[72px]"
+      className="relative py-[104px] bg-[#F7F9FC] max-sm:py-[72px]"
       id="agenda"
     >
-      <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
+      <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
         {/* Headings */}
         <h2
           data-aos="fade-up"
-          className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(36px,4.8vw,56px)] mb-[44px]"
+          className="text-center font-semibold text-[#08121E] leading-[1.2] tracking-[-0.01em] text-[clamp(30px,3.8vw,48px)] mb-[44px]"
         >
           {title}
         </h2>
@@ -245,13 +245,13 @@ export function AgendaSection({
           <p
             data-aos="fade-up"
             data-aos-delay="100"
-            className="max-w-[920px] mx-auto -mt-6 text-center text-muted text-[18px] leading-[1.55] mb-[44px]"
+            className="max-w-[920px] mx-auto -mt-6 text-center text-[#334155] text-[clamp(16px,1.5vw,19px)] leading-[1.45] mb-[44px]"
           >
             {description}
           </p>
         )}
 
-        {/* Component C3 — Expandable Pillar Cards (4 Cards in 2x2 Grid — video plays & card expands on hover) */}
+        {/* Component C3 — Expandable Pillar Cards (4 Cards in 2x2 Grid) */}
         <div className="grid grid-cols-2 gap-6 items-start max-md:grid-cols-1">
           {themeItems.map((theme, idx) => (
             <AgendaPillarCard
@@ -268,39 +268,35 @@ export function AgendaSection({
 
         {/* S6 · Programme Architecture (Six-Part Block Methodology) */}
         {showSixBlocks && (
-          <div className="mt-24 pt-16 border-t border-white/10">
+          <div className="mt-24 pt-16 border-t border-[#0069B8]/20">
             <div className="text-center mb-12">
-              <h3 className="text-center font-[850] text-white leading-[1.08] tracking-[-1.6px] text-[clamp(30px,4vw,46px)] max-w-[900px] mx-auto">
+              <h3 className="text-center font-semibold text-[#08121E] leading-[1.2] tracking-[-0.01em] text-[clamp(26px,3vw,40px)] max-w-[900px] mx-auto">
                 Engineered to drive banking buyers from board priorities down to{" "}
-                <GradientText>concrete procurement.</GradientText>
+                <GradientText tone="blue">concrete procurement.</GradientText>
               </h3>
             </div>
 
-            <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
+            <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-sm:grid-cols-1">
               {sixPartBlocks.map((block) => {
-                const isGreen = block.accent === "green";
+                const isOrange = block.accent === "green";
                 return (
                   <div
                     key={block.num}
-                    className={`p-6 rounded-[18px] border transition-all duration-300 hover:-translate-y-1 ${
-                      isGreen
-                        ? "border-[#C0F43C]/35 bg-gradient-to-br from-[#C0F43C]/[0.07] via-[#041022] to-[#030917]"
-                        : "border-[#18d4ff]/35 bg-gradient-to-br from-[#18d4ff]/[0.07] via-[#041022] to-[#030917]"
-                    }`}
+                    className="p-6 rounded-[18px] border border-[#0069B8]/22 bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] hover:border-[#0069B8] transition-all duration-300 hover:-translate-y-1"
                   >
                     <span
-                      className={`inline-block px-3 py-1 rounded-full font-mono text-[11px] font-bold uppercase tracking-[1.6px] mb-3 border ${
-                        isGreen
-                          ? "border-[#C0F43C]/40 bg-[#C0F43C]/12 text-[#C0F43C]"
-                          : "border-[#18d4ff]/40 bg-[#18d4ff]/12 text-[#18d4ff]"
+                      className={`inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-[0.08em] mb-3 border ${
+                        isOrange
+                          ? "border-[#F15928]/35 bg-[#F15928]/10 text-[#F15928]"
+                          : "border-[#0069B8]/30 bg-[#0069B8]/10 text-[#0069B8]"
                       }`}
                     >
                       {block.num}
                     </span>
-                    <h4 className="m-0 mb-2.5 text-white font-extrabold text-[19px] leading-snug">
+                    <h4 className="m-0 mb-2.5 text-[#08121E] font-semibold text-[19px] leading-snug">
                       {block.title}
                     </h4>
-                    <p className="m-0 text-white/75 text-[14.5px] leading-[1.6]">
+                    <p className="m-0 text-[#334155] text-[14.5px] leading-[1.6]">
                       {block.desc}
                     </p>
                   </div>
@@ -311,7 +307,7 @@ export function AgendaSection({
             <div className="mt-10 flex justify-center">
               <a
                 href="/banking/agenda/agenda/"
-                className="inline-flex items-center justify-center gap-2 h-[50px] px-8 rounded-full font-extrabold text-[14.5px] text-[#06111F] [color:#06111F!important] bg-[#C0F43C] hover:shadow-[0_0_24px_rgba(192,244,60,0.35)] transition-all duration-200"
+                className="bb-btn-primary inline-flex items-center justify-center gap-2 h-[50px] px-8 font-bold text-[14.5px]"
               >
                 Explore Full 1-Day Master Schedule →
               </a>

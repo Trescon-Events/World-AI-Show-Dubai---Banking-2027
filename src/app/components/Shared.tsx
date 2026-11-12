@@ -55,27 +55,45 @@ export function Counter({ end, suffix = "", duration = 1500 }: CounterProps) {
   );
 }
 
-export function GradientText({ children }: { children: ReactNode }) {
-  return (
-    <span className="bg-gradient-to-r from-[#8ddcff] via-[#10d7ff] via-[#4ee9be] to-[#b5f43b] bg-clip-text text-transparent">
-      {children}
-    </span>
-  );
+export function GradientText({
+  children,
+  tone = "blue",
+}: {
+  children: ReactNode;
+  tone?: "blue" | "teal" | "white-orange";
+}) {
+  const toneClass =
+    tone === "teal"
+      ? "text-[#009EAD]"
+      : tone === "white-orange"
+      ? "text-white underline decoration-[#F15928] decoration-[3px] underline-offset-[6px]"
+      : "text-[#0069B8]";
+  return <span className={toneClass}>{children}</span>;
 }
 
-export function Logo() {
+export function Logo({
+  variant = "dark",
+  className = "",
+}: {
+  variant?: "dark" | "white";
+  className?: string;
+}) {
+  const src =
+    variant === "white"
+      ? "/banking/images/brand/logo-white.svg"
+      : "/banking/images/brand/logo-dark.svg";
   return (
     <a
-      className="flex items-center w-[180px] h-[60px] hover:opacity-90 transition-opacity duration-200"
+      className={`flex items-center w-[176px] h-[56px] hover:opacity-90 transition-opacity duration-200 ${className}`}
       href="/banking/"
       aria-label="World AI Show | BFSI | Dubai 2027"
     >
       <img
-        src="/banking/logos/wais-27-banking_header.svg"
+        src={src}
         alt="World AI Show | BFSI | Dubai 2027"
-        width={180}
-        height={60}
-        className="w-full h-full object-contain"
+        width={176}
+        height={56}
+        className="w-full h-full object-contain object-left"
       />
     </a>
   );
@@ -83,19 +101,19 @@ export function Logo() {
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: "solid" | "outline";
+  variant?: "solid" | "outline" | "outline-light";
   href?: string;
   showArrow?: boolean;
 }
 
 export function Button({ children, variant = "solid", href = "#cta", showArrow = false }: ButtonProps) {
   const baseClasses =
-    "group inline-flex items-center justify-center gap-2.5 min-w-[156px] h-[49px] rounded-full font-extrabold text-sm transition-all duration-200 ease-out hover:-translate-y-0.5 cursor-pointer px-6";
+    "group inline-flex items-center justify-center gap-2.5 min-w-[156px] h-[49px] rounded-full font-bold text-[14.5px] px-6 cursor-pointer";
 
   const variants = {
-    solid: "bg-[#C0F43C] !text-black [color:#06111f!important] shadow-[0_0_24px_rgba(192,244,60,0.24)] hover:shadow-[0_0_32px_rgba(192,244,60,0.4)]",
-    outline:
-      "border border-[#4eb9ff]/80 text-white bg-[#030a18]/30 shadow-[inset_0_0_24px_rgba(46,172,255,0.08)] hover:bg-[#030a18]/50 hover:border-cyan/100",
+    solid: "bb-btn-primary text-white",
+    outline: "bb-btn-outline-dark text-white",
+    "outline-light": "bb-btn-outline-light",
   };
 
   return (

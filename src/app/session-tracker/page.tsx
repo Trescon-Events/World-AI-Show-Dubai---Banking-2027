@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function SessionTrackerPage() {
   return (
-    <main className="fixed inset-0 w-full h-full bg-[#06111f] overflow-hidden">
+    <main className="fixed inset-0 w-full h-full bg-[#08121E] overflow-hidden">
       <iframe
         src="/banking/session-tracker-app/index.html"
         className="absolute inset-0 w-full h-full border-none"

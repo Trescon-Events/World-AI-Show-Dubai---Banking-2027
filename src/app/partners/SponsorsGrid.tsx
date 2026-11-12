@@ -62,8 +62,8 @@ const INDIA_GOVERNMENT_ASSOCIATIONS: SponsorLogo[] = [
 
 function LogoCard({ item }: { item: SponsorLogo }) {
   return (
-    <div className="group relative overflow-hidden flex flex-col items-center justify-center border border-[#18d4ff]/20 rounded-[18px] bg-[#04080f]/55 p-3 hover:-translate-y-1.5 hover:border-[#C0F43C]/60 hover:shadow-[0_12px_30px_rgba(192,244,60,0.14)] transition-all duration-300 select-none w-full aspect-[1.75/1]">
-      <div className="w-full h-full flex items-center justify-center bg-white rounded-[12px] p-4 shadow-[inset_0_2px_4px_rgba(0,0,0,0.03)] group-hover:scale-[1.02] transition-all duration-300">
+    <div className="group relative overflow-hidden flex flex-col items-center justify-center border border-[#0069B8]/22 rounded-[16px] bg-white p-3 shadow-[0_8px_24px_rgba(8,18,30,0.05)] hover:-translate-y-1 hover:border-[#0069B8] hover:shadow-[0_14px_30px_rgba(8,18,30,0.1)] transition-all duration-300 select-none w-full aspect-[1.75/1]">
+      <div className="w-full h-full flex items-center justify-center bg-white rounded-[10px] p-3 transition-all duration-300">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={item.logo}
@@ -103,28 +103,28 @@ export function SponsorsGrid() {
   }, []);
 
   return (
-    <section className="relative py-[92px] bg-[#020b1c]" id="sponsors">
-      <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
+    <section className="relative py-[92px] bg-[#F7F9FC]" id="sponsors">
+      <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
         {/* Section intro */}
         <div className="text-center mb-12">
-          <span className="inline-flex items-center mb-5 px-3.5 py-1.5 border border-cyan/30 rounded-full text-cyan font-mono text-[12px] uppercase tracking-[2px] bg-cyan/5">
+          <span className="inline-flex items-center mb-5 px-4 py-1.5 border border-[#0069B8]/25 rounded-full text-[#0069B8] text-[12px] font-bold uppercase tracking-[0.14em] bg-white">
             Past Ecosystem · World AI Show Global Series
           </span>
-          <h2 className="font-[850] text-white leading-tight tracking-[-1.5px] text-[clamp(36px,4.5vw,54px)] max-w-[800px] mx-auto">
-            Past Sponsors &amp; <GradientText>Partners</GradientText>
+          <h2 className="font-heading font-bold text-[#08121E] leading-tight tracking-[-0.02em] text-[clamp(34px,4.4vw,52px)] max-w-[800px] mx-auto">
+            Past Sponsors &amp; <GradientText tone="blue">Partners</GradientText>
           </h2>
         </div>
 
-        {/* Secondary Navigation Tab Bar (2 tabs — 3D Experience removed per feedback) */}
+        {/* Secondary Navigation Tab Bar */}
         <div className="flex justify-center mb-14 max-sm:mb-10">
-          <div className="flex flex-wrap justify-center p-1 gap-1 sm:gap-0 bg-[#050c1d]/90 border border-white/10 rounded-full max-sm:rounded-[24px] shadow-[0_8px_32px_rgba(0,0,0,0.4)] max-w-full">
+          <div className="flex flex-wrap justify-center p-1.5 gap-1 sm:gap-1.5 bg-white border border-[#0069B8]/22 rounded-full max-sm:rounded-[24px] shadow-[0_8px_24px_rgba(8,18,30,0.06)] max-w-full">
             <button
               type="button"
               onClick={() => setActiveTab("sponsors-exhibitors")}
-              className={`flex-none px-8 py-3 max-sm:px-4 max-sm:py-2.5 rounded-full text-sm max-sm:text-xs font-extrabold transition-all duration-300 cursor-pointer ${
+              className={`flex-none px-8 py-3 max-sm:px-4 max-sm:py-2.5 rounded-full text-sm max-sm:text-xs font-bold transition-all duration-300 cursor-pointer ${
                 activeTab === "sponsors-exhibitors"
-                  ? "bg-[#C0F43C] text-black shadow-[0_0_20px_rgba(192,244,60,0.2)]"
-                  : "text-white/60 hover:text-white"
+                  ? "bg-[#F15928] text-white shadow-[0_8px_20px_rgba(241,89,40,0.28)]"
+                  : "text-[#334155] hover:text-[#0069B8]"
               }`}
             >
               Past Sponsors &amp; Exhibitors
@@ -132,10 +132,10 @@ export function SponsorsGrid() {
             <button
               type="button"
               onClick={() => setActiveTab("associations-media")}
-              className={`flex-none px-8 py-3 max-sm:px-4 max-sm:py-2.5 rounded-full text-sm max-sm:text-xs font-extrabold transition-all duration-300 cursor-pointer ${
+              className={`flex-none px-8 py-3 max-sm:px-4 max-sm:py-2.5 rounded-full text-sm max-sm:text-xs font-bold transition-all duration-300 cursor-pointer ${
                 activeTab === "associations-media"
-                  ? "bg-[#C0F43C] text-black shadow-[0_0_20px_rgba(192,244,60,0.2)]"
-                  : "text-white/60 hover:text-white"
+                  ? "bg-[#F15928] text-white shadow-[0_8px_20px_rgba(241,89,40,0.28)]"
+                  : "text-[#334155] hover:text-[#0069B8]"
               }`}
             >
               Past Government, Association &amp; Media Partners
@@ -156,8 +156,8 @@ export function SponsorsGrid() {
         {activeTab === "associations-media" && (
           <div className="space-y-14">
             <div>
-              <h3 className="m-0 mb-6 text-white font-[850] text-[22px] flex items-center gap-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#C0F43C] shadow-[0_0_10px_#C0F43C]" />
+              <h3 className="font-heading m-0 mb-6 text-[#08121E] font-bold text-[22px] flex items-center gap-2.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#F15928]" />
                 Past Government &amp; Institutional Partners (GCC &amp; Global Series)
               </h3>
               <div className="grid grid-cols-4 gap-5 max-[980px]:grid-cols-3 max-sm:grid-cols-2">
@@ -169,8 +169,8 @@ export function SponsorsGrid() {
 
             {mediaPartners.length > 0 && (
               <div>
-                <h3 className="m-0 mb-6 text-white font-[850] text-[22px] flex items-center gap-2.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#18d4ff] shadow-[0_0_10px_#18d4ff]" />
+                <h3 className="font-heading m-0 mb-6 text-[#08121E] font-bold text-[22px] flex items-center gap-2.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#0069B8]" />
                   Media Partners
                 </h3>
                 <div className="grid grid-cols-4 gap-5 max-[980px]:grid-cols-3 max-sm:grid-cols-2">

@@ -120,7 +120,7 @@ function HoverParticles({ isHovered }: { isHovered: boolean }) {
     };
     resizeCanvas();
 
-    const colors = ["#00ceff", "#c0f43c", "#9a6cff"];
+    const colors = ["#0069B8", "#009EAD", "#F15928"];
     const initParticles = () => {
       particles = [];
       const particleCount = 22;
@@ -206,31 +206,30 @@ function StatCard({ stat, index }: { stat: (typeof statsData)[0]; index: number 
       data-aos-delay={String(index * 100)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="relative min-h-[194px] p-6 border-0 border-t border-[#293442]/55 rounded-[15px] bg-gradient-to-br from-[#00ceff]/20 to-[#c0f43c]/9 shadow-[0_20px_60px_rgba(0,0,0,0.22),inset_0_0_28px_rgba(65,220,255,0.06)] backdrop-blur-md group hover:-translate-y-1 transition-all duration-300 border-t-[#293442] overflow-hidden flex flex-col items-center justify-center text-center"
+      className="relative min-h-[194px] p-6 border border-[#0069B8]/22 rounded-[16px] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] group hover:-translate-y-1 hover:border-[#0069B8] transition-all duration-300 overflow-hidden flex flex-col items-center justify-center text-center"
     >
       <HoverParticles isHovered={isHovered} />
 
-      <div className="relative z-10 grid place-items-center w-10 h-10 mx-auto rounded-full bg-black/26 text-cyan shadow-[inset_0_0_12px_rgba(24,212,255,0.1)] group-hover:scale-105 transition-transform duration-200">
+      <div
+        className="relative z-10 grid place-items-center w-12 h-12 mx-auto rounded-full bg-[#0069B8] text-white bb-icon-float bb-icon-ring group-hover:bg-[#F15928] group-hover:scale-108 transition-all duration-200"
+        style={{ animationDelay: `${index * 0.65}s` }}
+      >
         <img
           src={stat.icon}
           alt=""
-          width={22}
-          height={22}
-          className="w-[22px] h-[22px] object-contain"
+          width={24}
+          height={24}
+          className="w-6 h-6 object-contain brightness-0 invert bb-icon-breathe"
           aria-hidden="true"
         />
       </div>
 
-      <span className="absolute top-[18px] right-[20px] text-white/45 font-mono text-[11px] tracking-wider select-none z-10">
-        {stat.index}
-      </span>
-
-      <strong className="block mt-[22px] text-[#C0F43C] font-[850] text-[34px] leading-none tracking-tight relative z-10 text-center">
+      <strong className="block mt-5 font-display text-[#0069B8] font-bold text-[38px] leading-none tracking-tight relative z-10 text-center">
         {stat.prefix}
         <Counter end={stat.number} suffix={stat.suffix} />
       </strong>
 
-      <p className="mt-3 text-white/80 font-mono text-[13px] uppercase tracking-[1px] leading-relaxed font-semibold relative z-10 text-center">
+      <p className="mt-3 text-[#334155] text-[13px] uppercase tracking-[0.06em] leading-relaxed font-semibold relative z-10 text-center">
         {stat.label}
       </p>
     </article>
@@ -239,18 +238,18 @@ function StatCard({ stat, index }: { stat: (typeof statsData)[0]; index: number 
 
 export function StatsSection() {
   return (
-    <section className="relative pt-[68px] pb-[32px] -mt-[30px] z-10 bg-[#020b1c] overflow-hidden max-sm:py-[48px] max-sm:mt-0" id="attend">
-      <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)]">
+    <section className="relative py-[88px] z-10 bg-[#F7F9FC] overflow-hidden max-sm:py-[56px]" id="attend">
+      <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
         {/* Title Heading */}
         <h2
           data-aos="fade-up"
-          className="text-center font-[850] text-white leading-[1.04] tracking-[-2px] text-[clamp(38px,4.8vw,56px)]"
+          className="text-center font-semibold text-[#08121E] leading-[1.2] tracking-[-0.01em] text-[clamp(30px,3.8vw,48px)]"
         >
-          <GradientText>The Power</GradientText> Behind the <GradientText>Room</GradientText>
+          <GradientText tone="blue">The Power</GradientText> Behind the <GradientText tone="blue">Room</GradientText>
         </h2>
 
-        {/* Stats Grid Layout (Four across desktop, two across mobile per C1) */}
-        <div className="grid grid-cols-4 gap-4 mt-12 pb-1.5 max-[980px]:grid-cols-2 max-sm:grid-cols-2 max-sm:mt-8">
+        {/* Stats Grid Layout */}
+        <div className="grid grid-cols-4 gap-6 mt-12 pb-1.5 max-[980px]:grid-cols-2 max-sm:grid-cols-2 max-sm:mt-8">
           {statsData.map((stat, idx) => (
             <StatCard key={stat.index} stat={stat} index={idx} />
           ))}

@@ -45,13 +45,13 @@ const partnerLogos = [
 
 export function PartnerMarquee() {
   return (
-    <section className="relative py-[92px] pb-0 bg-[#030b19] overflow-hidden max-sm:py-[62px]" id="exhibitors">
-      <div className="w-[min(1114px,calc(100%-48px))] mx-auto max-sm:w-[min(100%-32px,1114px)] text-center mb-14">
-        <h2 className="font-[850] text-white leading-tight tracking-[-1.5px] text-[clamp(36px,4.5vw,52px)]">
-          The ecosystem, <GradientText>in motion.</GradientText>
+    <section className="relative py-[92px] pb-0 bg-[#F7F9FC] border-t border-[#0069B8]/15 overflow-hidden max-sm:py-[62px]" id="exhibitors">
+      <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] mx-auto text-center mb-14">
+        <h2 className="font-heading font-bold text-[#08121E] leading-tight tracking-[-0.02em] text-[clamp(34px,4.2vw,48px)]">
+          The ecosystem, <GradientText tone="blue">in motion.</GradientText>
         </h2>
-        <p className="max-w-[620px] mx-auto mt-4 text-white/58 text-[16px] leading-relaxed">
-          Hover over any row to pause the scrolling and inspect our confirmed summit sponsors and associate organizations.
+        <p className="max-w-[620px] mx-auto mt-4 text-[#334155] text-[16px] leading-relaxed">
+          Hover over any row to pause the scrolling and inspect our confirmed summit sponsors and associate organisations.
         </p>
       </div>
 
@@ -63,7 +63,7 @@ export function PartnerMarquee() {
             {[...row1, ...row1, ...row1, ...row1].map((logo, index) => (
               <span
                 key={`${logo.alt}-r1-${index}`}
-                className="flex-none grid place-items-center w-[190px] h-[82px] rounded-[12px] bg-white shadow-[0_0_28px_rgba(20,212,255,0.16)] select-none px-4"
+                className="flex-none grid place-items-center w-[190px] h-[82px] rounded-[12px] bg-white border border-[#0069B8]/22 shadow-[0_8px_20px_rgba(8,18,30,0.06)] select-none px-4"
               >
                 <img
                   src={logo.path}
@@ -84,7 +84,7 @@ export function PartnerMarquee() {
             {[...row2, ...row2, ...row2, ...row2].map((logo, index) => (
               <span
                 key={`${logo.alt}-r2-${index}`}
-                className="flex-none grid place-items-center w-[190px] h-[82px] rounded-[12px] bg-white shadow-[0_0_28px_rgba(20,212,255,0.16)] select-none px-4"
+                className="flex-none grid place-items-center w-[190px] h-[82px] rounded-[12px] bg-white border border-[#0069B8]/22 shadow-[0_8px_20px_rgba(8,18,30,0.06)] select-none px-4"
               >
                 <img
                   src={logo.path}
@@ -101,8 +101,8 @@ export function PartnerMarquee() {
       </div>
 
       {/* Partners white banner slider */}
-      <div id="media-marquee" className="mt-[92px] p-[28px_0_34px] bg-white text-center overflow-hidden">
-        <p className="m-0 mb-[26px] text-[18px] font-bold text-[#151923] uppercase tracking-[1.5px] select-none">
+      <div id="media-marquee" className="mt-[92px] p-[28px_0_34px] bg-white border-y border-[#0069B8]/15 text-center overflow-hidden">
+        <p className="font-heading m-0 mb-[26px] text-[18px] font-bold text-[#08121E] uppercase tracking-[0.14em] select-none">
           Media &amp; Association Partners
         </p>
         <div className="relative w-full overflow-hidden">

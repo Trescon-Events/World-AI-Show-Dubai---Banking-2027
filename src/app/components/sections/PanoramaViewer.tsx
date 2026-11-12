@@ -59,11 +59,11 @@ export default function PanoramaViewer({ imageUrl }: { imageUrl: string }) {
     setFov((prev) => Math.max(30, Math.min(110, prev + delta)));
   };
 
-  if (!mounted) return <div className="w-full h-full bg-[#050c1d] flex items-center justify-center border border-white/5 rounded-2xl" />;
+  if (!mounted) return <div className="w-full h-full bg-[#08121E] flex items-center justify-center border border-white/5 rounded-2xl" />;
 
   return (
     <div 
-      className="w-full h-full relative cursor-grab active:cursor-grabbing bg-[#050c1d] rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
+      className="w-full h-full relative cursor-grab active:cursor-grabbing bg-[#08121E] rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
       onWheel={handleWheel}
     >
       <Canvas camera={{ position: [0, 0, 0.1], fov: 75 }}>
@@ -81,8 +81,8 @@ export default function PanoramaViewer({ imageUrl }: { imageUrl: string }) {
       </Canvas>
       
       {/* 360 Label */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md px-6 py-2.5 rounded-full border border-white/10 text-white/80 text-[13px] font-medium tracking-wide flex items-center gap-3 pointer-events-none shadow-lg whitespace-nowrap">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-cyan">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-[#08121E]/85 backdrop-blur-md px-6 py-2.5 rounded-full border border-[#009EAD]/40 text-white/90 text-[13px] font-medium tracking-wide flex items-center gap-3 pointer-events-none shadow-lg whitespace-nowrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#009EAD]">
           <path d="M5 9l-3 3 3 3M9 5l3-3 3 3M19 9l3 3-3 3M9 19l3 3 3-3M2 12h20M12 2v20"/>
         </svg>
         Drag to explore 360°
@@ -92,21 +92,21 @@ export default function PanoramaViewer({ imageUrl }: { imageUrl: string }) {
       <div className="absolute bottom-6 right-6 flex gap-2 z-10">
         <button
           onClick={(e) => { e.stopPropagation(); setFov((prev) => Math.max(30, prev - 15)); }}
-          className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md border border-white/20 !text-white flex items-center justify-center hover:bg-[#C0F43C] hover:!text-black transition-all text-xl font-bold shadow-lg"
+          className="w-10 h-10 rounded-full bg-[#08121E]/85 backdrop-blur-md border border-[#009EAD]/45 !text-white flex items-center justify-center hover:bg-[#F15928] hover:border-[#F15928] transition-all text-xl font-bold shadow-lg cursor-pointer"
           aria-label="Zoom in"
         >
           +
         </button>
         <button
           onClick={(e) => { e.stopPropagation(); setFov(75); }}
-          className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md border border-white/20 !text-white flex items-center justify-center hover:bg-[#C0F43C] hover:!text-black transition-all text-sm font-bold shadow-lg"
+          className="w-10 h-10 rounded-full bg-[#08121E]/85 backdrop-blur-md border border-[#009EAD]/45 !text-white flex items-center justify-center hover:bg-[#F15928] hover:border-[#F15928] transition-all text-sm font-bold shadow-lg cursor-pointer"
           aria-label="Reset zoom"
         >
           ⟲
         </button>
         <button
           onClick={(e) => { e.stopPropagation(); setFov((prev) => Math.min(110, prev + 15)); }}
-          className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md border border-white/20 !text-white flex items-center justify-center hover:bg-[#C0F43C] hover:!text-black transition-all text-xl font-bold shadow-lg"
+          className="w-10 h-10 rounded-full bg-[#08121E]/85 backdrop-blur-md border border-[#009EAD]/45 !text-white flex items-center justify-center hover:bg-[#F15928] hover:border-[#F15928] transition-all text-xl font-bold shadow-lg cursor-pointer"
           aria-label="Zoom out"
         >
           −

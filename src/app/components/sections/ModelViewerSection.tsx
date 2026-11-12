@@ -6,13 +6,13 @@ const ModelViewer = dynamic(() => import("./ModelViewer"), { ssr: false });
 
 export function ModelViewerSection() {
   return (
-    <section className="relative py-20 bg-[#020b1c] overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10">
+    <section className="relative py-20 bg-[#08121E] border-y-2 border-[#0069B8] overflow-hidden">
+      <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] mx-auto relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 uppercase tracking-tight font-space-grotesk">
-            Interactive <span className="text-[#C0F43C]">3D Floorplan</span>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">
+            Interactive <span className="text-[#009EAD]">3D Floorplan</span>
           </h2>
-          <p className="text-white/70 max-w-2xl mx-auto text-lg">
+          <p className="text-white/80 max-w-2xl mx-auto text-lg">
             Explore the World AI Show | BFSI | Dubai 2027 venue in full 3D.
           </p>
         </div>

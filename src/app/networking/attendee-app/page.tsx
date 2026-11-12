@@ -12,7 +12,7 @@ const subNav = ["Overview", "Attendee APP", "AI Matchmaking", "Photo Gallery"];
 
 export default function AttendeeAppPage() {
   return (
-    <main className="relative min-h-screen bg-gradient-to-b from-[#020814] via-[#031022] to-[#020a18] text-white font-space-grotesk overflow-x-hidden">
+    <main className="relative min-h-screen bg-[#F7F9FC] text-[#334155] font-sans overflow-x-hidden">
       <Header activeItem="Networking" subNavItems={subNav} activeSubNavItem="Attendee APP" />
       <AttendeeAppContent />
       <FooterSection />

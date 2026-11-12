@@ -13,9 +13,9 @@ import { FooterSection } from "./components/sections/FooterSection";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col min-h-screen overflow-x-clip bg-[#020b1c]">
-      <Header />
-      <HeroSection />
+    <main className="relative flex flex-col min-h-screen overflow-x-clip bg-[#F7F9FC]">
+      <Header activeItem="Home" />
+      <HeroSection description="A premier executive forum exploring AI deployment across regulated financial services, convening 300+ C-suite leaders to shape future architecture, fraud defence, and procurement." />
       <StatsSection />
       <EcosystemSection />
       <AgendaSection />

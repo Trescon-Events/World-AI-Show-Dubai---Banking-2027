@@ -25,23 +25,23 @@ export function HeroSection({
         <source src="/banking/videos/wais-mumbai-hero-banner.webm" type="video/webm" />
       </video>
 
-      {/* Single Light Dark-Blue Tint Overlay (adds rich navy tone while keeping 65%+ of the bright video clearly visible) */}
+      {/* Dark Slate Tint Overlay */}
       <div
         className="absolute inset-0 z-[1] pointer-events-none"
         style={{
           background:
-            "linear-gradient(180deg, rgba(5, 32, 78, 0.36) 0%, rgba(4, 26, 66, 0.32) 65%, rgba(2, 11, 28, 0.85) 100%)",
+            "linear-gradient(180deg, rgba(8, 18, 30, 0.48) 0%, rgba(8, 18, 30, 0.78) 68%, #08121E 100%)",
         }}
         aria-hidden="true"
       />
 
       {/* Hero Content */}
-      <div className="container relative z-10 mx-auto px-6 pt-[220px] lg:pt-[240px] pb-16 max-sm:pt-[175px] max-sm:pb-12 max-sm:px-4 flex flex-col items-center">
+      <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] relative z-10 mx-auto pt-[220px] lg:pt-[240px] pb-16 max-sm:pt-[175px] max-sm:pb-12 flex flex-col items-center">
         {/* Event Lockup Sub-label */}
         <p
           data-aos="fade-down"
           data-aos-delay="50"
-          className="text-white/95 font-mono text-[14px] sm:text-[17px] lg:text-[19px] uppercase tracking-[2.2px] font-bold mb-5"
+          className="text-white/95 font-sans text-[14px] sm:text-[17px] lg:text-[19px] uppercase tracking-[0.14em] font-bold mb-5"
         >
           World AI Show | BFSI
         </p>
@@ -50,22 +50,22 @@ export function HeroSection({
         <h1
           data-aos="fade-up"
           data-aos-delay="100"
-          className="max-w-[1040px] mx-auto text-white font-[850] leading-[1.08] xl:leading-[72px] tracking-[-1.8px] text-[clamp(34px,4.8vw,66px)] xl:text-[66px] text-center mb-5"
+          className="max-w-[1040px] mx-auto text-white font-bold leading-[1.15] tracking-[-0.01em] text-[clamp(36px,4.5vw,57px)] text-center mb-5"
         >
           <span className="block">Controlled AI deployment for</span>
-          <span className="block"><GradientText>regulated financial operations.</GradientText></span>
+          <span className="block"><GradientText tone="teal">regulated financial operations.</GradientText></span>
         </h1>
 
-        {/* Standfirst (20px, 33px line-height, 0 tracking, 400 weight, #CBD5E1) */}
+        {/* Standfirst */}
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="max-w-[820px] mx-auto text-[#CBD5E1] text-[clamp(15px,1.25vw,17px)] xl:text-[17px] font-normal leading-relaxed xl:leading-[28px] tracking-normal text-center mb-8"
+          className="max-w-[820px] mx-auto text-[#F7F9FC] text-[clamp(15px,1.25vw,17px)] font-normal leading-[1.62] text-center mb-8"
         >
           {description}
         </p>
 
-        <div data-aos="fade-in" data-aos-delay="250" className="w-full max-w-[780px] border-t border-white/20 opacity-60 mt-1" />
+        <div data-aos="fade-in" data-aos-delay="250" className="w-full max-w-[780px] border-t border-[#0069B8]/48 mt-1" />
 
         {/* Event Meta Footer */}
         <div
@@ -74,31 +74,31 @@ export function HeroSection({
           className="grid grid-cols-[max-content_max-content_max-content] justify-center items-center gap-6 w-full max-w-[820px] mx-auto mt-7 text-center max-[980px]:grid-cols-1 max-sm:gap-3 max-sm:mt-5"
         >
           {/* Column 1: Dates */}
-          <div className="pr-6 border-r border-white/27 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-sm:w-full max-sm:pb-3 max-sm:border-b max-sm:border-white/20">
-            <strong className="block text-[34px] font-[850] text-white leading-none max-sm:text-[26px]">
-              <GradientText>24</GradientText>
+          <div className="pr-6 border-r border-white/28 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-[980px]:pb-3.5 max-[980px]:border-b max-[980px]:border-white/22 max-sm:w-full">
+            <strong className="block font-display text-[34px] font-semibold text-white leading-none max-sm:text-[26px]">
+              <GradientText tone="teal">24</GradientText>
             </strong>
-            <span className="block mt-2 text-[13px] font-bold text-white/80 uppercase tracking-[1.5px] max-sm:text-[12px] max-sm:mt-1.5">
+            <span className="block mt-2 text-[12.5px] font-bold text-white/80 uppercase tracking-[0.1em] max-sm:text-[12px] max-sm:mt-1.5">
               MARCH 2027
             </span>
           </div>
 
           {/* Column 2: Venue */}
-          <div className="pr-6 border-r border-white/27 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-sm:w-full max-sm:pb-3 max-sm:border-b max-sm:border-white/20">
-            <strong className="block text-[34px] font-[850] text-white leading-none max-sm:text-[26px]">
-              Dubai, <GradientText>UAE</GradientText>
+          <div className="pr-6 border-r border-white/28 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-[980px]:pb-3.5 max-[980px]:border-b max-[980px]:border-white/22 max-sm:w-full">
+            <strong className="block font-display text-[34px] font-semibold text-white leading-none max-sm:text-[26px]">
+              Dubai, <GradientText tone="teal">UAE</GradientText>
             </strong>
-            <span className="block mt-2 text-[13px] font-bold text-white/80 uppercase tracking-[1.5px] max-sm:text-[12px] max-sm:mt-1.5">
+            <span className="block mt-2 text-[12.5px] font-bold text-white/80 uppercase tracking-[0.1em] max-sm:text-[12px] max-sm:mt-1.5">
               DAY 1 · MARCH DUBAI CLUSTER
             </span>
           </div>
 
           {/* Column 3: Duration */}
-          <div className="text-left max-[980px]:text-center max-sm:w-full">
-            <strong className="block text-[34px] font-[850] text-white leading-none max-sm:text-[26px]">
-              1-<GradientText>Day</GradientText>
+          <div className="text-center max-sm:w-full">
+            <strong className="block font-display text-[34px] font-semibold text-white leading-none max-sm:text-[26px]">
+              1-<GradientText tone="teal">Day</GradientText>
             </strong>
-            <span className="block mt-2 text-[13px] font-bold text-white/80 uppercase tracking-[1.5px] max-sm:text-[12px] max-sm:mt-1.5">
+            <span className="block mt-2 text-[12.5px] font-bold text-white/80 uppercase tracking-[0.1em] max-sm:text-[12px] max-sm:mt-1.5">
               EXECUTIVE DECISION FORUM
             </span>
           </div>
@@ -114,7 +114,7 @@ export function HeroSection({
             Explore Commercial Sponsorship
           </Button>
           <Button href="/banking/attend/delegate/" variant="outline" showArrow={true}>
-            Apply for Delegate Pass
+            Apply for Business Pass
           </Button>
         </div>
       </div>

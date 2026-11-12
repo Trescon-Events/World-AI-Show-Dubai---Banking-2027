@@ -56,8 +56,8 @@ export function HeroSectionDemo() {
         this.vx = 0;
         this.vy = 0;
         this.radius = Math.random() * 2 + 1;
-        // Soft shifting color palette from deep blue to magical teal
-        this.hue = 190 + Math.random() * 30; 
+        // Brand palette from Sovereign Blue (206deg) to Horizon Teal (185deg)
+        this.hue = 185 + Math.random() * 25; 
       }
 
       update(targetX: number, targetY: number, time: number, width: number, height: number, active: boolean) {
@@ -129,7 +129,7 @@ export function HeroSectionDemo() {
       const time = timestamp * 0.002;
 
       // Slow, heavy trail fade to create the visual "softness"
-      activeCtx.fillStyle = 'rgba(2, 2, 5, 0.04)';
+      activeCtx.fillStyle = 'rgba(8, 18, 30, 0.08)';
       activeCtx.fillRect(0, 0, W, H);
 
       // Turn on blending mode that makes overlapping lines "glow" brighter
@@ -153,7 +153,7 @@ export function HeroSectionDemo() {
         }
       }
       
-      activeCtx.strokeStyle = 'rgba(0, 130, 255, 0.08)';
+      activeCtx.strokeStyle = 'rgba(0, 158, 173, 0.14)';
       activeCtx.lineWidth = 2;
       activeCtx.stroke();
 
@@ -183,7 +183,7 @@ export function HeroSectionDemo() {
       className="relative min-h-[720px] -mt-[102px] grid place-items-center overflow-hidden text-center max-[980px]:min-h-[680px] max-sm:-mt-[71px] max-sm:min-h-[720px]" 
       id="home"
       style={{
-        background: "#020205"
+        background: "#08121E"
       }}
     >
       {/* Background Canvas */}
@@ -193,7 +193,7 @@ export function HeroSectionDemo() {
       <div 
         className="absolute inset-0 pointer-events-none z-2" 
         style={{
-          boxShadow: "inset 0 0 220px rgba(0, 0, 0, 0.75)"
+          boxShadow: "inset 0 0 220px rgba(8, 18, 30, 0.85)"
         }}
       />
 
@@ -202,38 +202,38 @@ export function HeroSectionDemo() {
       <div className="hero-grid-pattern absolute bottom-0 left-[-6%] right-[-6%] h-[245px] z-1 opacity-70 blur-[1px]" aria-hidden="true" />
 
       {/* Hero Content */}
-      <div className="container relative z-10 mx-auto px-6 pt-[231px] max-sm:pt-[180px] max-sm:px-4 flex flex-col items-center">
-        {/* Glow Status Pill */}
-        <p className="inline-flex items-center h-8 px-3.5 mb-[25px] border border-[#b9f82d]/72 rounded-full text-white/82 text-[14px] uppercase tracking-[1px] font-medium shadow-[0_0_12px_rgba(185,248,45,0.15)] bg-black/40">
+      <div className="container relative z-10 w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] mx-auto pt-[231px] max-sm:pt-[180px] flex flex-col items-center">
+        {/* Status Pill */}
+        <p className="inline-flex items-center h-8 px-4 mb-[25px] border border-[#009EAD]/55 rounded-full text-white/90 text-[12px] uppercase tracking-[0.14em] font-semibold bg-[#0D1B2E]/80">
           48th Global Edition
         </p>
 
         {/* Hero Title */}
-        <h1 className="max-w-[1030px] mx-auto text-white font-[850] leading-[1.04] tracking-[-2px] text-[clamp(42px,7.2vw,94px)] text-center mb-8">
-          Where Malaysia&apos;s <GradientText>AI Decisions</GradientText> Get Made.
+        <h1 className="font-heading max-w-[1030px] mx-auto text-white font-bold leading-[1.06] tracking-[-0.02em] text-[clamp(42px,6.8vw,86px)] text-center mb-8">
+          Where Malaysia&apos;s <GradientText tone="teal">AI Decisions</GradientText> Get Made.
         </h1>
 
-        <div className="w-full max-w-[900px] border-t border-white/20 opacity-60"></div>
+        <div className="w-full max-w-[900px] border-t border-[#0069B8]/40"></div>
 
         {/* Event Meta Footer */}
         <div className="grid grid-cols-[max-content_max-content] justify-center items-center gap-6 w-full max-w-[650px] mx-auto mt-8 text-center max-[980px]:grid-cols-1 max-sm:gap-3 max-sm:mt-6">
           
           {/* Column 1: Dates */}
-          <div className="pr-6 border-r border-white/27 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-sm:w-full max-sm:pb-3 max-sm:border-b max-sm:border-white/20">
-            <strong className="block text-[36px] font-[850] text-white leading-none max-sm:text-[28px]">
-              12-<GradientText>13</GradientText>
+          <div className="pr-6 border-r border-[#0069B8]/40 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-sm:w-full max-sm:pb-3 max-sm:border-b max-sm:border-[#0069B8]/40">
+            <strong className="font-heading block text-[36px] font-bold text-white leading-none max-sm:text-[28px]">
+              12-<GradientText tone="teal">13</GradientText>
             </strong>
-            <span className="block mt-2 text-[15px] font-bold text-white/80 uppercase tracking-[1.5px] max-sm:text-[13px] max-sm:mt-1.5">
+            <span className="block mt-2 text-[14px] font-bold text-white/80 uppercase tracking-[0.14em] max-sm:text-[13px] max-sm:mt-1.5">
               OCT 2027
             </span>
           </div>
 
           {/* Column 2: Venue */}
           <div className="text-left max-[980px]:text-center max-sm:w-full">
-            <strong className="block text-[36px] font-[850] text-white leading-none max-sm:text-[28px]">
-              Kuala <GradientText>Lumpur</GradientText>
+            <strong className="font-heading block text-[36px] font-bold text-white leading-none max-sm:text-[28px]">
+              Kuala <GradientText tone="teal">Lumpur</GradientText>
             </strong>
-            <span className="block mt-2 text-[15px] font-bold text-white/80 uppercase tracking-[1.5px] max-sm:text-[13px] max-sm:mt-1.5">
+            <span className="block mt-2 text-[14px] font-bold text-[#F15928] uppercase tracking-[0.14em] max-sm:text-[13px] max-sm:mt-1.5">
               MALAYSIA
             </span>
           </div>
