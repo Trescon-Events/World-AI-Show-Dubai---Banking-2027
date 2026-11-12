@@ -27,16 +27,16 @@ export function FooterSection() {
             <h3 className="m-0 mb-2 text-[#009EAD] text-[12px] font-bold uppercase tracking-[0.2em] select-none">
               Event
             </h3>
-            <a href="/banking/attend" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/attend" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Attend
             </a>
-            <a href="/banking/agenda" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/agenda" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Agenda
             </a>
-            <a href="/banking/speakers" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/speakers" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Speakers
             </a>
-            <a href="/banking/partners" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/partners" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Partners
             </a>
           </div>
@@ -46,16 +46,16 @@ export function FooterSection() {
             <h3 className="m-0 mb-2 text-[#009EAD] text-[12px] font-bold uppercase tracking-[0.2em] select-none">
               Enquiries
             </h3>
-            <a href="/banking/sponsorship-enquiry" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/sponsorship-enquiry" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Sponsorships
             </a>
-            <a href="/banking/attend/delegate" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/attend/delegate" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Business Pass
             </a>
-            <a href="/banking/media-enquiry" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/media-enquiry" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Media Partner
             </a>
-            <a href="/banking/speaker-enquiry" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/speaker-enquiry" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Speaker Slot
             </a>
           </div>
@@ -69,7 +69,7 @@ export function FooterSection() {
               href="https://www.tresconglobal.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5"
+              className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5"
             >
               Trescon
             </a>
@@ -77,11 +77,11 @@ export function FooterSection() {
               href="https://tresconglobal.com/about-us/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5"
+              className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5"
             >
               About Us
             </a>
-            <a href="/banking/general-enquiry" className="inline-block text-[#F7F9FC]/85 text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
+            <a href="/banking/general-enquiry" className="inline-block text-white text-[15px] hover:text-[#009EAD] hover:translate-x-[3px] transition-all duration-150 py-0.5">
               Contact Us
             </a>
           </div>

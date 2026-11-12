@@ -72,37 +72,37 @@ html {
   background: var(--bb-midnight);
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  color: var(--bb-text-light);
-  background: var(--bb-cloud);
-  font-family: var(--font-pjs);
-  letter-spacing: 0;
-}
-
 @layer base {
+  body {
+    margin: 0;
+    min-width: 320px;
+    color: var(--bb-text-light);
+    background: var(--bb-cloud);
+    font-family: var(--font-pjs);
+    letter-spacing: 0;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-sg);
     letter-spacing: -0.01em;
   }
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
-}
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
 
-img {
-  display: block;
-  max-width: 100%;
+  img {
+    display: block;
+    max-width: 100%;
+  }
 }
 
 ::selection {

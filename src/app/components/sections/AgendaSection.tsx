@@ -141,7 +141,7 @@ function AgendaPillarCard({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={onToggle}
-      className={`agenda-pillar-card group relative flex flex-col justify-between overflow-hidden rounded-[20px] border transition-all duration-300 cursor-pointer text-left ${
+      className={`agenda-pillar-card group relative flex h-full flex-col overflow-hidden rounded-[20px] border transition-all duration-300 cursor-pointer text-left ${
         isExpanded
           ? "border-[#0069B8] bg-white shadow-[0_20px_44px_rgba(0,105,184,0.16)] -translate-y-1"
           : "border-[#0069B8]/22 bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] hover:border-[#0069B8] hover:-translate-y-1 hover:shadow-[0_20px_44px_rgba(0,105,184,0.16)]"
@@ -171,7 +171,7 @@ function AgendaPillarCard({
         </span>
       </div>
 
-      <div className="agenda-pillar-body p-7 max-sm:p-5">
+      <div className="agenda-pillar-body flex-1 p-7 max-sm:p-5">
         <h3
           className={`m-0 mb-3 font-medium text-[21px] leading-[1.3] transition-colors duration-200 ${
             isExpanded ? "text-[#0069B8]" : "text-[#08121E] group-hover:text-[#0069B8]"
@@ -252,7 +252,7 @@ export function AgendaSection({
         )}
 
         {/* Component C3 — Expandable Pillar Cards (4 Cards in 2x2 Grid) */}
-        <div className="grid grid-cols-2 gap-6 items-start max-md:grid-cols-1">
+        <div className="grid grid-cols-2 auto-rows-fr gap-6 items-stretch max-md:grid-cols-1 max-md:auto-rows-auto">
           {themeItems.map((theme, idx) => (
             <AgendaPillarCard
               key={theme.index}

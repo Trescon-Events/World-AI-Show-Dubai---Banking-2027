@@ -211,7 +211,7 @@ export function Header({ activeItem, subNavItems, activeSubNavItem }: HeaderProp
           <Logo variant="dark" />
 
           {/* Desktop Navigation Links */}
-          <div className="flex justify-center gap-[25px] text-[15px] font-semibold tracking-[0.8px] uppercase text-[#08121E] max-[1200px]:hidden h-full items-center">
+          <div className="flex justify-end gap-[25px] text-[15px] font-semibold tracking-[0.8px] uppercase text-[#08121E] max-[1200px]:hidden h-full items-center">
             {navItems.map((item) => {
               const isActive = item === currentActiveItem;
               return (
