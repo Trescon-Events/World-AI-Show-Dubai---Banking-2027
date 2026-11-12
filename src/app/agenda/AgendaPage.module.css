@@ -8,7 +8,7 @@
   min-height: 100vh;
   overflow-x: hidden;
   color: #334155;
-  background: var(--cloud);
+  background: var(--bb-cloud, #F7F9FC);
   font-family: var(--font-plus-jakarta-sans), "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .gradientText {
-  color: var(--blue);
+  color: var(--bb-blue, #0069B8);
 }
 
 .hero {
@@ -30,8 +30,8 @@
   padding-bottom: 84px;
   display: flex;
   align-items: center;
-  background-color: var(--midnight);
-  border-bottom: 2px solid var(--blue);
+  background-color: var(--bb-midnight, #08121E);
+  border-bottom: 2px solid var(--bb-blue, #0069B8);
 }
 @media (max-width: 1200px) {
   .hero {
@@ -78,29 +78,29 @@
 
 .aboutSection {
   padding: 144px 0 96px;
-  background: var(--cloud);
+  background: var(--bb-cloud, #F7F9FC);
   color: #334155;
 }
 
 .visionSection,
 .timelineSection {
   padding: 96px 0;
-  background: var(--cloud);
+  background: var(--bb-cloud, #F7F9FC);
   color: #334155;
 }
 
 .aboutSection h2,
 .visionSection h2,
 .timelineIntro h2 {
-  color: var(--midnight);
+  color: var(--bb-midnight, #08121E);
 }
 
 .formatsSection {
   padding: 96px 0;
-  background: var(--midnight);
+  background: var(--bb-midnight, #08121E);
   color: rgba(247, 249, 252, 0.84);
-  border-top: 2px solid var(--blue);
-  border-bottom: 2px solid var(--blue);
+  border-top: 2px solid var(--bb-blue, #0069B8);
+  border-bottom: 2px solid var(--bb-blue, #0069B8);
 }
 
 .formatsSection h2 {
@@ -109,7 +109,7 @@
 
 .gatewaySection {
   padding: 96px 0;
-  background: var(--blue);
+  background: var(--bb-blue, #0069B8);
   color: #ffffff;
 }
 
@@ -119,7 +119,7 @@
 
 .finalCta {
   padding: 96px 0;
-  background: var(--blue);
+  background: var(--bb-blue, #0069B8);
   color: #ffffff;
 }
 
@@ -179,7 +179,7 @@
 .formatCard {
   overflow: hidden;
   border: 1px solid rgba(0, 105, 184, 0.22);
-  border-top: 4px solid var(--blue);
+  border-top: 4px solid var(--bb-blue, #0069B8);
   border-radius: 18px;
   background: #ffffff;
   box-shadow: 0 12px 32px rgba(8, 18, 30, 0.06);
@@ -191,8 +191,8 @@
 }
 
 .formatCard:hover {
-  border-color: var(--blue);
-  border-top-color: var(--orange);
+  border-color: var(--bb-blue, #0069B8);
+  border-top-color: var(--bb-orange, #F15928);
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(8, 18, 30, 0.11);
 }
@@ -200,7 +200,7 @@
 .formatCard h3 {
   margin: 0 0 8px;
   font-family: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
-  color: var(--midnight);
+  color: var(--bb-midnight, #08121E);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.25;
@@ -217,7 +217,7 @@
   position: relative;
   padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-top: 4px solid var(--orange);
+  border-top: 4px solid var(--bb-orange, #F15928);
   border-radius: 18px;
   background: #ffffff;
   color: #334155;
@@ -237,7 +237,7 @@
   height: 52px;
   margin-bottom: 20px;
   border-radius: 14px;
-  background: var(--blue);
+  background: var(--bb-blue, #0069B8);
   box-shadow: 0 8px 18px rgba(0, 105, 184, 0.24);
 }
 
@@ -255,7 +255,7 @@
   padding: 4px 10px;
   border-radius: 999px;
   background: rgba(0, 105, 184, 0.1);
-  color: var(--blue);
+  color: var(--bb-blue, #0069B8);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -264,7 +264,7 @@
 .iconCard h3 {
   margin: 0 0 10px;
   font-family: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
-  color: var(--midnight);
+  color: var(--bb-midnight, #08121E);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.25;
@@ -307,13 +307,14 @@
 }
 
 .trackTabs button:hover {
-  border-color: var(--blue);
-  color: var(--blue);
+  border-color: var(--bb-blue, #0069B8);
+  color: var(--bb-blue, #0069B8);
 }
 
-.trackTabs .activeTrack {
-  border-color: var(--orange);
-  background: var(--orange);
+.trackTabs button.activeTrack,
+.trackTabs button.activeTrack:hover {
+  border-color: var(--bb-orange, #F15928);
+  background: var(--bb-orange, #F15928);
   color: #ffffff;
   box-shadow: 0 8px 20px rgba(241, 89, 40, 0.26);
 }
@@ -346,7 +347,7 @@
   padding: 0 18px;
   border: 1px solid rgba(0, 105, 184, 0.25);
   border-radius: 999px;
-  color: var(--midnight);
+  color: var(--bb-midnight, #08121E);
   background: #ffffff;
   font-size: 14px;
   outline: none;
@@ -359,7 +360,7 @@
 
 .agendaFilters input:focus,
 .agendaFilters select:focus {
-  border-color: var(--teal);
+  border-color: var(--bb-teal, #009EAD);
   box-shadow: 0 0 0 3px rgba(0, 158, 173, 0.14);
 }
 
@@ -369,7 +370,7 @@
   border: 0;
   border-radius: 999px;
   color: #ffffff;
-  background: var(--blue);
+  background: var(--bb-blue, #0069B8);
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
@@ -384,7 +385,7 @@
 .timeline {
   padding: 36px 32px;
   border: 1px solid rgba(0, 105, 184, 0.22);
-  border-top: 4px solid var(--blue);
+  border-top: 4px solid var(--bb-blue, #0069B8);
   border-radius: 20px;
   background: #ffffff;
   box-shadow: 0 14px 36px rgba(8, 18, 30, 0.06);
@@ -398,7 +399,7 @@
   padding-bottom: 18px;
   margin-bottom: 8px;
   border-bottom: 2px solid rgba(0, 105, 184, 0.2);
-  color: var(--blue);
+  color: var(--bb-blue, #0069B8);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -432,7 +433,7 @@
 }
 
 .timelineRow time {
-  color: var(--midnight);
+  color: var(--bb-midnight, #08121E);
   font-family: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -466,7 +467,7 @@
 .timelineRow h3 {
   margin: 0 0 8px;
   font-family: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
-  color: var(--midnight);
+  color: var(--bb-midnight, #08121E);
   font-size: 19px;
   font-weight: 700;
   line-height: 1.3;
@@ -481,7 +482,7 @@
 
 .locationText {
   display: inline-block;
-  color: var(--teal);
+  color: var(--bb-teal, #009EAD);
   font-size: 13px;
   font-weight: 700;
 }
@@ -493,9 +494,9 @@
   gap: 32px;
   padding: 40px 44px;
   border: 1px solid rgba(0, 105, 184, 0.52);
-  border-top: 4px solid var(--orange);
+  border-top: 4px solid var(--bb-orange, #F15928);
   border-radius: 20px;
-  background: var(--raised);
+  background: var(--bb-raised, #0D1B2E);
   box-shadow: 0 20px 48px rgba(8, 18, 30, 0.28);
 }
 
@@ -518,7 +519,7 @@
   margin: 0 auto;
   padding: 52px 48px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-top: 4px solid var(--orange);
+  border-top: 4px solid var(--bb-orange, #F15928);
   border-radius: 22px;
   background: #ffffff;
   color: #334155;
@@ -529,7 +530,7 @@
 .ctaBox h2 {
   max-width: 780px;
   margin: 0 auto 16px;
-  color: var(--midnight);
+  color: var(--bb-midnight, #08121E);
   font-size: clamp(32px, 4.2vw, 48px);
 }
 
@@ -570,7 +571,7 @@
 
 .button.solid {
   color: #ffffff;
-  background: var(--orange);
+  background: var(--bb-orange, #F15928);
   box-shadow: 0 12px 26px rgba(241, 89, 40, 0.34);
 }
 
@@ -580,13 +581,13 @@
 }
 
 .button.outline {
-  color: var(--midnight);
-  border: 1.5px solid var(--blue);
+  color: var(--bb-midnight, #08121E);
+  border: 1.5px solid var(--bb-blue, #0069B8);
   background: #ffffff;
 }
 
 .button.outline:hover {
-  border-color: var(--orange);
+  border-color: var(--bb-orange, #F15928);
   background: rgba(241, 89, 40, 0.06);
 }
 
@@ -611,7 +612,7 @@
 .ctaBox dd {
   margin: 6px 0 0;
   font-family: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
-  color: var(--midnight);
+  color: var(--bb-midnight, #08121E);
   font-size: 17px;
   font-weight: 700;
 }
