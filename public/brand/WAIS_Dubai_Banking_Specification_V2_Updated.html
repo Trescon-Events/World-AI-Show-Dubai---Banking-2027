@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World AI Show | AI in Banking and Financial Services | Dubai 2027 — Website Wireframe &amp; Build Specification (AI 2047 Brand Book V1.0 Edition)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* AI 2047 Brand Book V1.0 Master Tokens */
+    --bb-blue: #0069B8;
+    --bb-blue-dark: #004A88;
+    --bb-teal: #009EAD;
+    --bb-orange: #F15928;
+    --bb-orange-hover: #D94B1E;
+    --bb-cloud: #F7F9FC;
+    --bb-white: #FFFFFF;
+    --bb-midnight: #08121E;
+    --bb-raised: #0D1B2E;
+    --bb-head-light: #08121E;
+    --bb-text-light: #334155;
+    --bb-cap-light: #52657A;
+    --bb-border-light: rgba(0, 105, 184, 0.22);
+    --bb-border-dark: rgba(0, 105, 184, 0.52);
+
+    /* Functional Surface & Contrast Variables */
+    --bg-page: #08121E;
+    --surface-card: #0D1B2E;
+    --border-card: rgba(0, 105, 184, 0.35);
+    --border-accent: #0069B8;
+    --text-white: #FFFFFF;
+    --text-muted: #94A3B8;
+    --text-dim: #64748B;
+    --amber: #F59E0B;
+    --amberbg: rgba(245, 158, 11, 0.12);
+    --green: #10B981;
+    --greenbg: rgba(16, 185, 129, 0.12);
+    --red: #EF4444;
+    --redbg: rgba(239, 68, 68, 0.12);
+
+    /* Typography */
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--text-white);
+    background: var(--bg-page);
+    line-height: 1.6;
+    font-size: 14.5px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1172px; margin: 0 auto; padding: 0 24px 120px; }
+
+  /* Document Master Header */
+  header.doc {
+    background: linear-gradient(180deg, #060E18 0%, #0D1B2E 100%);
+    border-bottom: 2px solid var(--bb-blue);
+    padding: 60px 0 48px;
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  header.doc::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent 0%, var(--bb-teal) 30%, var(--bb-orange) 70%, transparent 100%);
+  }
+  header.doc .wrap { padding-bottom: 0; }
+  header.doc .kicker {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--bb-orange);
+    margin: 0 0 14px;
+    font-weight: 700;
+  }
+  header.doc h1 {
+    font-family: var(--font-display);
+    font-size: 34px;
+    line-height: 1.25;
+    margin: 0 0 12px;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+  header.doc h1 span {
+    background: linear-gradient(90deg, var(--bb-teal) 0%, #60A5FA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  header.doc p { margin: 0; color: var(--text-muted); max-width: 82ch; font-size: 15px; }
+  header.doc .meta {
+    margin-top: 24px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--bb-teal);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  header.doc .meta span {
+    background: rgba(0, 105, 184, 0.18);
+    border: 1px solid rgba(0, 105, 184, 0.45);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  /* Table of Contents */
+  nav.toc {
+    background: var(--surface-card);
+    border: 1px solid var(--border-card);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 44px;
+  }
+  nav.toc h2 {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--bb-orange);
+    margin: 0 0 14px;
+  }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 36px; }
+  nav.toc li { margin-bottom: 7px; font-size: 13.5px; }
+  nav.toc a { color: #E2E8F0; text-decoration: none; transition: color 0.15s ease; }
+  nav.toc a:hover { color: var(--bb-teal); text-decoration: underline; }
+
+  /* Typography & Structure */
+  h2.sec {
+    font-family: var(--font-display);
+    font-size: 24px;
+    margin: 60px 0 8px;
+    padding-top: 24px;
+    border-top: 2px solid var(--bb-blue);
+    color: var(--text-white);
+  }
+  h2.sec .num {
+    font-family: var(--font-mono);
+    color: var(--bb-orange);
+    font-variant-numeric: tabular-nums;
+    margin-right: 12px;
+  }
+  h3 { font-family: var(--font-display); font-size: 18px; margin: 34px 0 10px; color: var(--bb-teal); }
+  h4 { font-family: var(--font-display); font-size: 15px; margin: 22px 0 6px; color: var(--text-white); }
+  p { margin: 0 0 12px; max-width: 82ch; color: var(--text-muted); }
+  ul, ol { max-width: 82ch; color: var(--text-muted); }
+  li { margin-bottom: 6px; }
+  code {
+    font-family: var(--font-mono);
+    font-size: .88em;
+    background: rgba(0, 105, 184, 0.18);
+    color: #67E8F9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 105, 184, 0.35);
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0 24px;
+    font-size: 14px;
+    background: var(--surface-card);
+    border: 1px solid var(--border-card);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th, td { border: 1px solid rgba(0, 105, 184, 0.25); padding: 10px 14px; text-align: left; vertical-align: top; }
+  th {
+    background: #091524;
+    color: var(--text-white);
+    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    border-bottom: 2px solid var(--bb-blue);
+  }
+  tr:nth-child(even) td { background: rgba(8, 18, 30, 0.5); }
+  td { color: var(--text-muted); }
+  td strong, td b { color: var(--text-white); }
+
+  /* Page Module Block */
+  .page {
+    background: var(--surface-card);
+    border: 1px solid var(--border-card);
+    border-radius: 10px;
+    margin: 28px 0;
+    overflow: hidden;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+  }
+  .page > .ph {
+    background: #071322;
+    color: var(--text-white);
+    padding: 14px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-card);
+  }
+  .page > .ph .t { font-family: var(--font-display); font-weight: 700; font-size: 16px; color: #FFFFFF; }
+  .page > .ph .u { font-family: var(--font-mono); font-size: 12px; color: var(--bb-teal); }
+  .page > .pb { padding: 12px 22px 24px; }
+
+  /* Wireframe Container Block */
+  .blk {
+    border: 1px solid rgba(0, 105, 184, 0.3);
+    border-left: 4px solid var(--bb-blue);
+    border-radius: 6px;
+    margin: 18px 0;
+    background: #060D17;
+  }
+  .blk > .bh {
+    background: #0B192C;
+    padding: 9px 16px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--bb-teal);
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0, 105, 184, 0.3);
+  }
+  .blk > .bb { padding: 16px; }
+  .copy {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    background: #040911;
+    border: 1px dashed rgba(0, 105, 184, 0.45);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 0 0 14px;
+    color: #E2E8F0;
+  }
+  .lbl {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    background: rgba(0, 105, 184, 0.28);
+    color: #67E8F9;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-right: 6px;
+    vertical-align: 1px;
+    border: 1px solid rgba(0, 105, 184, 0.45);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* Callouts & Alert Banners */
+  .note { border-left: 4px solid var(--bb-teal); background: rgba(0, 158, 173, 0.1); padding: 12px 16px; margin: 14px 0; border-radius: 0 6px 6px 0; }
+  .note .h { font-family: var(--font-mono); font-weight: 700; color: var(--bb-teal); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .asset { border-left: 4px solid var(--amber); background: var(--amberbg); padding: 12px 16px; margin: 14px 0; border-radius: 0 6px 6px 0; }
+  .asset .h { font-family: var(--font-mono); font-weight: 700; color: var(--amber); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .rule { border-left: 4px solid var(--red); background: var(--redbg); padding: 12px 16px; margin: 14px 0; border-radius: 0 6px 6px 0; }
+  .rule .h { font-family: var(--font-mono); font-weight: 700; color: var(--red); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .ok { border-left: 4px solid var(--green); background: var(--greenbg); padding: 12px 16px; margin: 14px 0; border-radius: 0 6px 6px 0; }
+  .ok .h { font-family: var(--font-mono); font-weight: 700; color: var(--green); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .note p:last-child, .asset p:last-child, .rule p:last-child, .ok p:last-child { margin-bottom: 0; }
+
+  .grid { display: grid; gap: 14px; margin: 16px 0; }
+  .g2 { grid-template-columns: 1fr 1fr; }
+  .g3 { grid-template-columns: 1fr 1fr 1fr; }
+  .g4 { grid-template-columns: repeat(4, 1fr); }
+  .card { border: 1px solid rgba(0, 105, 184, 0.35); background: #0B192C; border-radius: 8px; padding: 14px 16px; font-size: 13.5px; }
+  .card b { display: block; font-family: var(--font-display); color: var(--text-white); margin-bottom: 4px; font-size: 15px; }
+
+  /* Image Placeholders */
+  .ph-img {
+    border: 2px dashed rgba(241, 89, 40, 0.5);
+    background: rgba(241, 89, 40, 0.05);
+    border-radius: 8px;
+    padding: 24px 16px;
+    text-align: center;
+    color: var(--bb-orange);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    margin: 14px 0;
+  }
+  .ph-img span { display: block; font-weight: 400; color: var(--text-muted); font-size: 12px; margin-top: 5px; font-family: var(--font-body); }
+
+  /* Surface Preview Matrix */
+  .surface-pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    margin-right: 6px;
+    font-weight: 600;
+  }
+  .sp-midnight { background: #08121E; color: #FFFFFF; border: 1px solid var(--bb-blue); }
+  .sp-cloud { background: #F7F9FC; color: #08121E; border: 1px solid #CBD5E1; }
+  .sp-blue { background: #0069B8; color: #FFFFFF; }
+  .sp-orange { background: #F15928; color: #FFFFFF; }
+
+  @media(max-width:768px) {
+    nav.toc ol { columns: 1; }
+    .g2, .g3, .g4 { grid-template-columns: 1fr; }
+    .page > .ph { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header class="doc">
+  <div class="wrap">
+    <p class="kicker">Confidential · AI 2047 Brand Book V1.0 Master Build Specification</p>
+    <h1>World AI Show | AI in Banking and Financial Services | Dubai 2027<br><span>Website Wireframe &amp; Build Specification (Updated V2.0)</span></h1>
+    <p>Approved structural copy, page hierarchy, chromatic tokens, and UX component architecture for the dedicated financial sector edition of the World AI Show Industry Series. Fully harmonized with the AI 2047 Brand Book V1.0 multi-surface design system.</p>
+    <p class="meta">
+      <span>Version 3.0 · AI 2047 Brand Book Master</span>
+      <span>24 March 2027 · Dubai, UAE</span>
+      <span>worldaishow.com/banking</span>
+      <span>Organised by Trescon</span>
+    </p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<nav class="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#how">How to use this document</a></li>
+    <li><a href="#brand">Brand kit &amp; AI 2047 design direction</a></li>
+    <li><a href="#surfaces">Alternating surface architecture</a></li>
+    <li><a href="#system">Layout &amp; container system</a></li>
+    <li><a href="#nav">Navigation &amp; site map (18 active routes)</a></li>
+    <li><a href="#components">Component library (C1–C6)</a></li>
+    <li><a href="#home">Home page (S1–S13)</a></li>
+    <li><a href="#agenda-suite">Agenda suite</a></li>
+    <li><a href="#attend-suite">Attend suite</a></li>
+    <li><a href="#speakers-hub">Speakers hub (4-column grid)</a></li>
+    <li><a href="#partners-hub">Partners hub</a></li>
+    <li><a href="#exhibition-hub">Exhibition &amp; 3D floorplan hub</a></li>
+    <li><a href="#networking-hub">Networking suite &amp; attendee app</a></li>
+    <li><a href="#enquiry-suite">Enquiry &amp; lead forms (HubSpot 2953901)</a></li>
+    <li><a href="#ia-tree">Master information architecture (IA)</a></li>
+    <li><a href="#assets">Creative asset manifest</a></li>
+    <li><a href="#rules">Content rules — do not break (11 rules)</a></li>
+  </ol>
+</nav>
+
+<!-- ============ 01 ============ -->
+<h2 class="sec" id="how"><span class="num">01</span>How to use this document</h2>
+
+<p>This is the authoritative production build specification updated to the <b>AI 2047 Brand Book V1.0</b> standard. Every headline, operational mandate, research benchmark, and HubSpot form hook is verified and verbatim — it must be implemented cleanly without paraphrasing or loss of fidelity.</p>
+
+<h3>Working in Antigravity &amp; Web Development Workflows</h3>
+<ol>
+  <li>Start with <b>Brand kit &amp; design tokens</b> (section 02), <b>Alternating surface architecture</b> (section 03), and <b>Component library</b> (section 06). Wire the design tokens into Tailwind CSS and CSS variables.</li>
+  <li>Build or verify the <b>Home page</b> (section 07), confirming correct transitions between Midnight Core (<code>#08121E</code>), Sovereign Blue (<code>#0069B8</code>), and Cloud White (<code>#F7F9FC</code>) surfaces.</li>
+  <li>Maintain 100% path parity across all 18 routes under <code>/banking/</code> with HubSpot Portal ID <code>2953901</code>.</li>
+</ol>
+
+<div class="note">
+  <div class="h">Prompting Note</div>
+  <p>When prompting AI coding assistants (e.g. for the Healthcare 2027 sister site), pass this specification alongside the instruction: <i>"Apply the AI 2047 Brand Book V1.0 design system, alternating surface model, and Section 17 rules while preserving 100% of the existing sector content verbatim."</i></p>
+</div>
+
+<!-- ============ 02 ============ -->
+<h2 class="sec" id="brand"><span class="num">02</span>Brand kit &amp; AI 2047 design direction</h2>
+
+<p>The visual identity is defined by the <b>AI 2047 Brand Book V1.0</b>. It replaces legacy dark-neon schemes with a disciplined, high-prestige enterprise aesthetic engineered for commercial bank CXOs, CROs, compliance leaders, and sovereign regulators.</p>
+
+<h3>Master Chromatic Tokens</h3>
+<table>
+  <tr><th>Token Name</th><th>HEX / CSS Value</th><th>Surface / Semantic Role</th></tr>
+  <tr><td><code>--bb-blue</code></td><td><code>#0069B8</code></td><td><b>Sovereign Blue:</b> Flagship brand accent, speakers section canvas, active borders, and primary section framing.</td></tr>
+  <tr><td><code>--bb-blue-dark</code></td><td><code>#004A88</code></td><td><b>Deep Blue:</b> Pressed/hover states for Sovereign Blue elements and deep gradients.</td></tr>
+  <tr><td><code>--bb-teal</code></td><td><code>#009EAD</code></td><td><b>Brand Teal:</b> Analytical accent, subheadings, benchmark metric pills, and secondary data points.</td></tr>
+  <tr><td><code>--bb-orange</code></td><td><code>#F15928</code></td><td><b>Tangerine / Coral:</b> Primary conversion CTA buttons, active navigation pills, and urgent alert callouts.</td></tr>
+  <tr><td><code>--bb-orange-hover</code></td><td><code>#D94B1E</code></td><td><b>Dark Coral:</b> Hover/active state for all primary conversion buttons.</td></tr>
+  <tr><td><code>--bb-midnight</code></td><td><code>#08121E</code></td><td><b>Midnight Core:</b> Foundation dark canvas (Hero, Ecosystem, Testimonials, Footer).</td></tr>
+  <tr><td><code>--bb-raised</code></td><td><code>#0D1B2E</code></td><td><b>Midnight Raised:</b> Floating cards, dropdown menus, and elevated interactive panels on dark surfaces.</td></tr>
+  <tr><td><code>--bb-cloud</code></td><td><code>#F7F9FC</code></td><td><b>Cloud White:</b> High-contrast light canvas for alternating sections (Attend, Agenda, Partners, FAQ).</td></tr>
+  <tr><td><code>--bb-white</code></td><td><code>#FFFFFF</code></td><td><b>Pure White:</b> Card backgrounds on Cloud White surfaces and crisp display typography.</td></tr>
+</table>
+
+<h3>Typography System</h3>
+<table>
+  <tr><th>Family</th><th>Weights</th><th>Usage</th></tr>
+  <tr><td><b>Plus Jakarta Sans</b></td><td>300, 400, 500, 600, 700, 800</td><td><b>Primary Body &amp; Headings:</b> Applied across 90% of UI copy, navigation links, and content cards.</td></tr>
+  <tr><td><b>Space Grotesk</b></td><td>500, 600, 700, 800</td><td><b>Display &amp; Numeric Benchmarks:</b> Applied to large statistics, metric highlights, and executive titles.</td></tr>
+  <tr><td><b>JetBrains Mono</b></td><td>400, 500, 600, 700</td><td><b>Technical Badges:</b> Kicker labels, timestamp meters, and metadata pills.</td></tr>
+</table>
+
+<div class="rule">
+  <div class="h">Rule — Button Typography &amp; Contrast</div>
+  <p>Primary CTA buttons must strictly use <code>background: #F15928</code> (or hover <code>#D94B1E</code>) with <b>pure white text (<code>#FFFFFF</code>)</b> and a right inline arrow <code>→</code>. Secondary buttons on dark surfaces use transparent background with <code>border: 1px solid #0069B8</code> or <code>#009EAD</code>.</p>
+</div>
+
+<!-- ============ 03 ============ -->
+<h2 class="sec" id="surfaces"><span class="num">03</span>Alternating surface architecture</h2>
+
+<p>The site operates on a rhythm of high-contrast alternating surfaces to eliminate visual fatigue while maintaining an elite executive tone.</p>
+
+<div class="grid g3">
+  <div class="card">
+    <span class="surface-pill sp-midnight">Midnight Core #08121E</span>
+    <b>Dark Obsidian Canvas</b>
+    Applied to:
+    <ul>
+      <li>Master Hero (<code>#home</code>)</li>
+      <li>Ecosystem Showcase (<code>#ecosystem</code>)</li>
+      <li>Executive Testimonials (<code>#testimonials</code>)</li>
+      <li>Master Footer (<code>#footer</code>)</li>
+    </ul>
+    Borders use <code>border-top: 2px solid #0069B8</code>.
+  </div>
+  <div class="card">
+    <span class="surface-pill sp-cloud">Cloud White #F7F9FC</span>
+    <b>High-Clarity Light Canvas</b>
+    Applied to:
+    <ul>
+      <li>Attend Suite (<code>#attend</code>)</li>
+      <li>Agenda Highlights (<code>#agenda</code>)</li>
+      <li>Networking Concierge (<code>#networking</code>)</li>
+      <li>Partners &amp; Marquee (<code>#partners</code>)</li>
+      <li>FAQ Accordion (<code>#faq</code>)</li>
+    </ul>
+    Cards use pure white (<code>#FFFFFF</code>) with subtle shadows.
+  </div>
+  <div class="card">
+    <span class="surface-pill sp-blue">Sovereign Blue #0069B8</span>
+    <b>High-Impact Accent Canvas</b>
+    Applied to:
+    <ul>
+      <li>Speakers Faculty Section (<code>#speakers</code>)</li>
+      <li>Organiser Heritage Section (<code>#organizer</code>)</li>
+      <li>Executive Callouts &amp; Hero Overlays</li>
+    </ul>
+    Headings use pure white with light cyan metadata tags.
+  </div>
+</div>
+
+<!-- ============ 04 ============ -->
+<h2 class="sec" id="system"><span class="num">04</span>Layout &amp; container system</h2>
+
+<table>
+  <tr><th>Property</th><th>Specification</th></tr>
+  <tr><td>Container Width</td><td><b>1172px maximum content width</b> on desktop, locked to the Header navigation width, centered with 24px gutters (16px mobile margin).</td></tr>
+  <tr><td>Header Navigation</td><td>Floating glass container, right-aligned navigation items (<code>justify-end</code>), with high-contrast active state and orange pill CTA button.</td></tr>
+  <tr><td>Speaker Grid</td><td><b>4-column responsive grid</b> (<code>grid-cols-1 sm:grid-cols-2 lg:grid-cols-4</code>) with equal card heights and photo cutouts over dark gradient cards.</td></tr>
+  <tr><td>Hero Clearance</td><td>Consistent padding clearance (<code>pt-36 sm:pt-40 md:pt-44 pb-20</code>) on inner pages so headers never obscure title text.</td></tr>
+</table>
+
+<!-- ============ 05 ============ -->
+<h2 class="sec" id="nav"><span class="num">05</span>Navigation &amp; site map (18 active routes)</h2>
+
+<h3>Floating Master Header</h3>
+<div class="copy">LEFT     [ World AI Show Vector Logo: DUBAI Pill + BANKING &amp; FINANCIAL SERVICES Subtitle ]
+RIGHT    HOME  |  ATTEND ▾  |  AGENDA ▾  |  SPEAKERS  |  PARTNER  |  NETWORKING ▾  |  [ ENQUIRE NOW ↗ ]
+
+(Navigation links are right-aligned to justify-end with pure white text in footer and crisp dark/light states in header).</div>
+
+<h3>Complete Production Routes Matrix</h3>
+<table>
+  <tr><th>URL Path</th><th>Page Scope &amp; Layout Template</th><th>Surface Model</th><th>HubSpot Form</th></tr>
+  <tr><td><code>/banking/</code></td><td>Master Homepage: Hero, Impact Stats, Pillars, Agenda, Regulators, FAQ</td><td>Midnight / Cloud / Blue</td><td>—</td></tr>
+  <tr><td><code>/banking/agenda/</code></td><td>Agenda Hub: Strategic overview, 6-block methodology, clinical preview</td><td>Cloud White</td><td>—</td></tr>
+  <tr><td><code>/banking/agenda/agenda/</code></td><td>Full Timeline: One-Day master schedule (08:00–18:30)</td><td>Cloud White</td><td>—</td></tr>
+  <tr><td><code>/banking/agenda/themes/</code></td><td>Themes &amp; Pillars: Detailed breakdown of the 4 Core Sector Content Pillars</td><td>Cloud White</td><td>—</td></tr>
+  <tr><td><code>/banking/agenda/the-2030-vision/</code></td><td>Regulatory Alignment: CBUAE vs DFSA &amp; March Dubai Cluster catalysts</td><td>Cloud White</td><td>—</td></tr>
+  <tr><td><code>/banking/agenda/call-for-speakers/</code></td><td>Faculty Call: Executive speaker criteria &amp; clinical case study submission</td><td>Cloud White</td><td>7aae4009-64ec-41f0-b30f-7efc83f1ebc6</td></tr>
+  <tr><td><code>/banking/attend/</code></td><td>Attend Suite: Two-door attendance model (Delegate vs. Business Pass)</td><td>Cloud White</td><td>—</td></tr>
+  <tr><td><code>/banking/attend/delegate/</code></td><td>Delegate Pass: Executive invitation criteria (70%+ Buy-Side Enterprise Ratio)</td><td>Cloud White</td><td>HubSpot + PDPL Consent</td></tr>
+  <tr><td><code>/banking/attend/sponsor/</code></td><td>Sponsor &amp; Exhibit: Plenary keynotes, workshop clinics, 6/9/12 sqm concourse booths</td><td>Cloud White</td><td>7d2f2204-7604-4373-ba13-4e240c5a8493</td></tr>
+  <tr><td><code>/banking/attend/media-partner/</code></td><td>Media Partner: Press privileges, institutional briefing, media kit</td><td>Cloud White</td><td>6d1b0984-8964-4452-8593-0c0c5c202878</td></tr>
+  <tr><td><code>/banking/attend/association-partner/</code></td><td>Association Partner: Regional fintech associations &amp; regulatory alliances</td><td>Cloud White</td><td>bb31ae13-d02a-49d7-802c-e8bda5180ee4</td></tr>
+  <tr><td><code>/banking/speakers/</code></td><td>Speakers Hub: 4-column faculty directory with bio modals</td><td>Sovereign Blue / Midnight</td><td>—</td></tr>
+  <tr><td><code>/banking/partners/</code></td><td>Partners Hub: Tier-based showcase (Speaking, Engagement, Industry, Exhibitor)</td><td>Cloud White</td><td>7d2f2204-7604-4373-ba13-4e240c5a8493</td></tr>
+  <tr><td><code>/banking/exhibition/</code></td><td>Exhibition Hub: Floorplan explorer (6, 9, 12 sqm) &amp; DIFC venue showcase</td><td>Cloud White</td><td>7d2f2204-7604-4373-ba13-4e240c5a8493</td></tr>
+  <tr><td><code>/banking/networking/</code></td><td>Networking Suite: 1-on-1 bilateral meetings, attendee app, boardroom access</td><td>Cloud White</td><td>—</td></tr>
+  <tr><td><code>/banking/sponsorship-enquiry/</code></td><td>Commercial Lead Capture: Gated commercial prospectus</td><td>Cloud White / Midnight</td><td>7d2f2204-7604-4373-ba13-4e240c5a8493</td></tr>
+  <tr><td><code>/banking/speaker-enquiry/</code></td><td>Speaker Abstract Form: Audited case study intake</td><td>Cloud White / Midnight</td><td>7aae4009-64ec-41f0-b30f-7efc83f1ebc6</td></tr>
+  <tr><td><code>/banking/media-enquiry/</code></td><td>Press Accreditation Form</td><td>Cloud White / Midnight</td><td>6d1b0984-8964-4452-8593-0c0c5c202878</td></tr>
+</table>
+
+<!-- ============ 06 ============ -->
+<h2 class="sec" id="components"><span class="num">06</span>Component library (C1–C6)</h2>
+
+<h3>C1 — Impact Stat Row</h3>
+<div class="grid g4">
+  <div class="card"><b style="color:var(--bb-teal)">300+</b>Pre-Qualified C-Suite Leaders</div>
+  <div class="card"><b style="color:var(--bb-teal)">70%+</b>Buy-Side Enterprise Ratio</div>
+  <div class="card"><b style="color:var(--bb-teal)">35–45</b>Expert Faculty Speakers</div>
+  <div class="card"><b style="color:var(--bb-teal)">4</b>Core Sector Content Pillars</div>
+</div>
+<div class="note"><div class="h">Layout</div><p>Space Grotesk numeric values in Brand Teal (<code>#009EAD</code>) or White, with Plus Jakarta Sans labels beneath.</p></div>
+
+<h3>C2 — Source-Cited Benchmark Cards</h3>
+<div class="grid g3">
+  <div class="card"><b style="color:var(--bb-teal)">USD 3.5B+</b>Middle East banking AI spend by 2027<br><span style="color:var(--text-dim);font-size:12px">IDC Middle East, 2025</span></div>
+  <div class="card"><b style="color:var(--bb-teal)">+38% YoY</b>Surge in synthetic identity &amp; payment fraud<br><span style="color:var(--text-dim);font-size:12px">LexisNexis Risk Solutions, 2026</span></div>
+  <div class="card"><b style="color:var(--bb-teal)">90% False Positives</b>Legacy AML alert overhead consuming compliance budgets<br><span style="color:var(--text-dim);font-size:12px">Celent / Oliver Wyman, 2025</span></div>
+</div>
+<div class="rule"><div class="h">Rule — Plain-Text Sources</div><p>Every benchmark must carry its source as plain text, never as a hyperlink. Macroeconomic projections and regulatory surveys must be cited accurately without hyperbole.</p></div>
+
+<h3>C3 — Core Operational Mandates (Equalized Cards)</h3>
+<div class="note"><div class="h">Layout</div><p>Four equal-height cards (<code>auto-rows-fr items-stretch</code>, <code>flex-1</code>). Numbered 01–04 in orange pills, with title, scope description, and clinical format breakdown. No video play badge.</p></div>
+
+<h3>C5 — Primary &amp; Secondary CTA Buttons</h3>
+<div class="note"><div class="h">Layout</div><p>Primary: <code>bg-[#F15928] hover:bg-[#D94B1E] text-white px-6 py-3 rounded-full font-bold shadow-lg</code>. Standardized inline arrow transition (<code>group-hover:translate-x-1</code>).</p></div>
+
+<!-- ============ 07 ============ -->
+<h2 class="sec" id="home"><span class="num">07</span>Home page (S1–S13)</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Home Page Architecture</span><span class="u">/banking/</span></div>
+  <div class="pb">
+
+  <div class="blk"><div class="bh">S1 · Hero Section (Midnight Core #08121E)</div><div class="bb">
+    <div class="copy"><span class="lbl">kicker</span>World AI Show Industry Series  ·  Sector Edition
+<span class="lbl">logo</span>World AI Show | AI in Banking and Financial Services | Dubai 2027
+<span class="lbl">h1</span>Controlled AI deployment for <span>regulated financial operations.</span>
+<span class="lbl">thesis</span>From use case to operating outcome.
+<span class="lbl">meta</span>24 March 2027  ·  DIFC District, Dubai, UAE  ·  1-Day Executive Decision Forum (Day 1 of March Dubai Cluster)
+<span class="lbl">standfirst</span>The premier buyer-led executive forum dedicated to the operational realities of deploying
+artificial intelligence across regulated banking, insurance, asset management, and payment operations.
+Convenes 300+ C-suite leaders actively locking down 2027 architecture, fraud defense, and core procurement.
+
+<span class="lbl">cta1</span>Apply for Delegate Pass (Complimentary)  → /banking/attend/delegate/
+<span class="lbl">cta2</span>Explore Commercial Sponsorship             → /banking/attend/sponsor/
+<span class="lbl">cta3</span>View Master Schedule                        → /banking/agenda/agenda/</div>
+    <div class="asset"><div class="h">Asset — Hero Background</div><p>High-resolution financial architecture backdrop with all competing brand logos erased. Dark gradient vignette overlay ensures 100% text readability.</p></div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S2 · Impact Stat Strip</div><div class="bb">
+    <div class="copy">300+ Pre-Qualified C-Suite  |  70%+ Buy-Side Ratio  |  35–45 Expert Faculty  |  4 Content Pillars</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S3 · The Strategic Hook (Ecosystem #08121E)</div><div class="bb">
+    <div class="copy"><span class="lbl">eyebrow</span>The Strategic Hook
+<span class="lbl">h2</span>Transitioning from speculative generative AI experimentation into core balance-sheet production scrutiny.
+
+[ USD 3.5B+ Middle East Banking AI Spend · +38% YoY APP Fraud Surge · 90% AML False-Positive Alert Overhead ]</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S4 · What the Forum Is Not (Cloud White #F7F9FC)</div><div class="bb">
+    <div class="copy">01 Not a retail fintech or payments expo
+02 Not a speculative crypto or Web3 event
+03 Not an academic AI theory summit
+04 Not an unvetted vendor pitch platform</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S5 · Four Core Content Pillars</div><div class="bb">
+    <div class="copy">Pillar 01: Financial Crime, AML &amp; Real-Time Fraud Defense
+Pillar 02: Agentic Servicing, Frontline CX &amp; Operational Workflow Automation
+Pillar 03: Risk Modelling, Credit Underwriting &amp; Capital Allocation
+Pillar 04: Model Risk Governance, Explainability &amp; Sovereign Infrastructure</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S6 · Six-Part Block Methodology</div><div class="bb">
+    <div class="copy">Block 1: Sector Priority Brief (Opening Executive Briefing)
+Block 2: Buyer Evidence (Unvarnished Commercial Bank Lessons)
+Block 3: Risk &amp; Trust Plenary (Algorithmic Auditability &amp; Zero-Trust)
+Block 4: Parallel Breakout Clinics (Clinic A: Fraud &amp; AML | Clinic B: Agentic Banking)
+Block 5: Applied Case Studies (Core Modernization &amp; Underwriting)
+Block 6: Outcome Roundtables (Procurement Roadmaps &amp; 2027 Criteria)</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S7 · Who Is in the Room (70%+ Buy-Side Ratio)</div><div class="bb">
+    <div class="copy">Commercial &amp; Retail Banking (CIOs, CTOs, CROs, CDAIOs, Heads of Retail Banking)
+Risk, Compliance &amp; Financial Crime (CROs, CCOs, Heads of AML, MLROs)
+Insurers, Wealth &amp; Asset Managers (COOs, CIOs, Heads of Underwriting)
+Institutional Hosts &amp; Regulators (CBUAE, DFSA, DIFC Authority, UAE FIU)
+Global Cloud, Core &amp; AI Providers (Enterprise Infrastructure, Compute &amp; Core Systems)</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S8 · How to Attend — Two-Door Model</div><div class="bb">
+    <div class="copy">Door 1: Delegate Pass — Complimentary, strictly by invitation and qualification
+Door 2: Business Pass — Paid commercial access with strictly capped quota</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S9 · Commercial Sponsorship Footprints</div><div class="bb">
+    <div class="copy">Inventory strictly capped at USD 150,000 gross.
+• Speaking Sponsor: 20-Min Plenary Keynote + 12 SQM Concourse Booth
+• Engagement Partner: Exclusive 75-Min Workshop Clinic + 9 SQM Concourse Booth
+• CXO Closed-Door Boardroom: 60-Min Curated Session with 15 Wishlist CXOs
+• Industry Partner: Plenary Panel Speaking Seat + 9 SQM Booth
+• Turnkey Exhibitor: 6 SQM Standard Concourse Booth
+(Pricing never displayed publicly).</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S10 · Heritage (Sovereign Blue #0069B8)</div><div class="bb">
+    <div class="copy">48 Global Editions  ·  42,000+ C-Level Decision-Makers  ·  2,600+ Expert Speakers  ·  4 Continents
+Organised by Trescon.</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S11 · Closing CTAs &amp; S12 Faculty Call</div><div class="bb">
+    <div class="copy">Apply for Delegate Pass → /banking/attend/delegate/
+Enquire About Sponsorship → /banking/sponsorship-enquiry/
+Apply to Join Faculty → /banking/agenda/call-for-speakers/</div>
+  </div></div>
+
+  <div class="blk"><div class="bh">S13 · Master FAQ Accordion</div><div class="bb">
+    <div class="copy">Structured FAQ covering forum scope, March Dubai Cluster pairing, invitation criteria, CBUAE vs DFSA distinction, sponsorship footprints, and Trescon series heritage.</div>
+  </div></div>
+
+  </div>
+</div>
+
+<!-- ============ 08 ============ -->
+<h2 class="sec" id="agenda-suite"><span class="num">08</span>Agenda suite</h2>
+<p>Inner routes under <code>/banking/agenda/*</code> with hero banners featuring erased stage logos and standardized tab strip navigation.</p>
+
+<div class="page">
+  <div class="ph"><span class="t">Agenda Suite Navigation</span><span class="u">/banking/agenda/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy">Tab 1: Overview &amp; Curriculum  → /banking/agenda/
+Tab 2: Full Master Schedule (08:00–18:30) → /banking/agenda/agenda/
+Tab 3: The 4 Core Content Pillars → /banking/agenda/themes/
+Tab 4: Regulatory Alignment (CBUAE vs DFSA) → /banking/agenda/the-2030-vision/
+Tab 5: Call for Banking Faculty → /banking/agenda/call-for-speakers/</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 09 ============ -->
+<h2 class="sec" id="attend-suite"><span class="num">09</span>Attend suite</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Attend Personas</span><span class="u">/banking/attend/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy">• Delegate Pass (Invited C-Suite Banking Leaders) → /banking/attend/delegate/
+• Commercial Sponsorship Prospectus → /banking/attend/sponsor/
+• Media Partner Accreditation → /banking/attend/media-partner/
+• Association &amp; Fintech Alliances → /banking/attend/association-partner/</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 10 ============ -->
+<h2 class="sec" id="speakers-hub"><span class="num">10</span>Speakers hub (4-column grid)</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Speakers Directory</span><span class="u">/banking/speakers/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">layout specification</span>
+• 4-Column Responsive Grid (grid-cols-1 sm:grid-cols-2 lg:grid-cols-4).
+• High-Impact Hero Banner: Speaker-banner.webp with clear headline.
+• Card Structure: Rounded-xl dark card, subtle border, speaker cutout photo, full name, executive job title, banking organisation, LinkedIn handle, and session anchor.
+• Unannounced speaking slots link to /banking/agenda/call-for-speakers/.</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 11 ============ -->
+<h2 class="sec" id="partners-hub"><span class="num">11</span>Partners hub</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Partners Showcase</span><span class="u">/banking/partners/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy"><span class="lbl">framing</span>
+• Hero background centered at 35% vertical offset (bg-[position:center_35%]).
+• Tier-Grouped Commercial Logo Showcase:
+  Tier 1: Speaking Sponsors (12 sqm)
+  Tier 2: Engagement Partners (9 sqm)
+  Tier 3: CXO Closed-Door Boardrooms
+  Tier 4: Industry Partners (9 sqm)
+  Tier 5: Turnkey Concourse Exhibitors (6 sqm)
+• CTA directs to /banking/sponsorship-enquiry/.</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 12 ============ -->
+<h2 class="sec" id="exhibition-hub"><span class="num">12</span>Exhibition &amp; 3D floorplan hub</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Concourse Showcase</span><span class="u">/banking/exhibition/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy">Interactive concourse map displaying:
+• 12 SQM Island Booths (Speaking Sponsors)
+• 9 SQM Concourse Booths (Engagement &amp; Industry Partners)
+• 6 SQM Turnkey Booths (Exhibitors)
+• 2 CXO Private Closed-Door Boardroom Suites
+• Dedicated Bilateral Meeting Lounge &amp; Technology Demonstration Area</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 13 ============ -->
+<h2 class="sec" id="networking-hub"><span class="num">13</span>Networking suite &amp; attendee app</h2>
+
+<div class="page">
+  <div class="ph"><span class="t">Executive Networking</span><span class="u">/banking/networking/</span></div>
+  <div class="pb"><div class="blk"><div class="bb">
+    <div class="copy">• Executive Concierge &amp; 1-on-1 Bilateral Meetings → /banking/networking/
+• AI-Powered Matchmaking (Algorithmic Scheduling) → /banking/networking/ai-matchmaking/
+• Official Attendee App → /banking/networking/attendee-app/
+• Executive Photo Gallery → /banking/networking/photo-gallery/</div>
+  </div></div></div>
+</div>
+
+<!-- ============ 14 ============ -->
+<h2 class="sec" id="enquiry-suite"><span class="num">14</span>Enquiry &amp; lead forms (HubSpot 2953901)</h2>
+
+<table>
+  <tr><th>Route</th><th>Proposition Heading</th><th>HubSpot Form ID</th><th>Fields &amp; Compliance</th></tr>
+  <tr><td><code>/banking/sponsorship-enquiry/</code></td><td>Engage Middle East Banking Decision-Makers in Dubai</td><td><code>7d2f2204-7604-4373-ba13-4e240c5a8493</code></td><td>Name, Work Email, Mobile, Job Title, Company, Package of Interest, Target Solution Category.</td></tr>
+  <tr><td><code>/banking/speaker-enquiry/</code></td><td>Apply to Join the Dubai Banking Faculty</td><td><code>7aae4009-64ec-41f0-b30f-7efc83f1ebc6</code></td><td>Name, Title, Financial Institution, Implementation Case Study, Model Explainability Metrics.</td></tr>
+  <tr><td><code>/banking/media-enquiry/</code></td><td>Apply for Media Accreditation</td><td><code>6d1b0984-8964-4452-8593-0c0c5c202878</code></td><td>Accreditation credentials and press privileges.</td></tr>
+  <tr><td><code>/banking/association-enquiry/</code></td><td>Institutional Partnership Application</td><td><code>bb31ae13-d02a-49d7-802c-e8bda5180ee4</code></td><td>Fintech federations, banking associations, research councils.</td></tr>
+</table>
+
+<!-- ============ 15 ============ -->
+<h2 class="sec" id="ia-tree"><span class="num">15</span>Master information architecture (IA)</h2>
+
+<div class="grid g3">
+  <div class="card">
+    <b>01. CORE &amp; AGENDA</b>
+    <code>/banking/</code><br>
+    <code>/banking/agenda/</code><br>
+    <code>/banking/agenda/agenda/</code><br>
+    <code>/banking/agenda/themes/</code><br>
+    <code>/banking/agenda/the-2030-vision/</code><br>
+    <code>/banking/agenda/call-for-speakers/</code>
+  </div>
+  <div class="card">
+    <b>02. ATTEND &amp; STAKEHOLDERS</b>
+    <code>/banking/attend/</code><br>
+    <code>/banking/attend/delegate/</code><br>
+    <code>/banking/attend/sponsor/</code><br>
+    <code>/banking/attend/media-partner/</code><br>
+    <code>/banking/attend/association-partner/</code><br>
+    <code>/banking/speakers/</code><br>
+    <code>/banking/partners/</code>
+  </div>
+  <div class="card">
+    <b>03. ENQUIRIES &amp; VENUE</b>
+    <code>/banking/sponsorship-enquiry/</code><br>
+    <code>/banking/speaker-enquiry/</code><br>
+    <code>/banking/media-enquiry/</code><br>
+    <code>/banking/association-enquiry/</code><br>
+    <code>/banking/exhibition/</code><br>
+    <code>/banking/networking/</code>
+  </div>
+</div>
+
+<!-- ============ 16 ============ -->
+<h2 class="sec" id="assets"><span class="num">16</span>Creative asset manifest</h2>
+
+<table>
+  <tr><th>Asset</th><th>Specification</th><th>Where Used</th><th>Approved Treatment</th></tr>
+  <tr><td>Official Vector Lockup</td><td>SVG (422.09×170.0 viewBox)</td><td>Header &amp; Footer</td><td>Blue wordmark, DUBAI outline pill, BANKING &amp; FINANCIAL SERVICES subtitle.</td></tr>
+  <tr><td>Speaker Hero Banner</td><td>Speaker-banner.webp</td><td>Speakers Page</td><td>Clean high-contrast background, no competing branding.</td></tr>
+  <tr><td>Agenda Stage Backdrops</td><td>Vision-hero.webp, Agenda-hero.webp, Call-speakers-bg.webp</td><td>Agenda Suite</td><td>Auditorium backdrops with all vendor/sponsor stage logos cleanly erased.</td></tr>
+  <tr><td>Partners Hero Backdrop</td><td>PartnersHero backdrop</td><td>Partners Page</td><td>Calibrated to <code>bg-[position:center_35%]</code> vertical offset.</td></tr>
+  <tr><td>Speaker Cutout Portraits</td><td>PNG, transparent backgrounds</td><td>Speakers Section</td><td>Uniform crop, subtle glow, 4-column alignment.</td></tr>
+  <tr><td>Organiser Backdrop</td><td>organizer-bg.webp</td><td>Organizer Section</td><td>Subtle dark texture under Trescon heritage metrics.</td></tr>
+</table>
+
+<!-- ============ 17 ============ -->
+<h2 class="sec" id="rules"><span class="num">17</span>Content rules — do not break (11 rules)</h2>
+
+<table>
+  <tr><th>#</th><th>Rule</th><th>Operational &amp; Commercial Rationale</th></tr>
+  <tr><td>1</td><td>Event Duration: State strictly as a <b>1-Day Executive Decision Forum</b>.</td><td>Reflects the master execution timeline on 24 March 2027 and its pairing with Healthcare on 25 March.</td></tr>
+  <tr><td>2</td><td>Clustering Model: Position Dubai as <b>Day 1 of the March Dubai Cluster</b>.</td><td>Paired back-to-back with AI in Healthcare &amp; Life Sciences, sharing venue infrastructure while maintaining distinct P&amp;Ls.</td></tr>
+  <tr><td>3</td><td>Partner Durations: State speaking slots strictly as <b>20-minute plenary keynotes</b> or <b>75-minute workshop clinics</b>.</td><td>Aligns with approved commercial tier deliverables for Speaking Sponsors and Engagement Partners.</td></tr>
+  <tr><td>4</td><td>Booth Sizes: Reference strictly as <b>6 sqm, 9 sqm, and 12 sqm</b>.</td><td>Standardized floor space allocation across Speaking Sponsors (12 sqm), Engagement/Industry Partners (9 sqm), and Exhibitors (6 sqm).</td></tr>
+  <tr><td>5</td><td><b>Never display sponsorship pricing on the public website.</b></td><td>Commercial inventory is strictly capped at USD 150,000; pricing lives strictly in the private sales rate card.</td></tr>
+  <tr><td>6</td><td>"By invitation" must never appear as an unqualified claim about the whole event.</td><td>Complimentary delegate passes are by invitation and qualification; paid business passes exist alongside. "By invitation only" is prohibited.</td></tr>
+  <tr><td>7</td><td>Consent Qualifier: Delegate contact details are shared only where explicit consent is provided under UAE PDPL.</td><td>Mandatory compliance requirement under the UAE Personal Data Protection Law. Never promise unconsented attendee data.</td></tr>
+  <tr><td>8</td><td>Regulatory Delineation: Always distinguish between federal <b>CBUAE</b> jurisdiction and offshore DIFC <b>DFSA</b> jurisdiction.</td><td>Never conflate onshore federal UAE banking rules with DIFC free-zone rules in published copy.</td></tr>
+  <tr><td>9</td><td>Regulatory Patronage Guardrail: Never imply official endorsement or patronage from CBUAE, DFSA, or DIFC without signed agreements.</td><td>Protects institutional neutrality and corporate liability.</td></tr>
+  <tr><td>10</td><td>UK English throughout (programme, organise, prioritise, analyse, centre, modernisation).</td><td>Maintains consistent editorial standards across the global series portfolio.</td></tr>
+  <tr><td>11</td><td>Organiser Attribution: Always state "Organised by Trescon" (never "managed by" or "in association with").</td><td>Maintains corporate entity governance and series brand ownership.</td></tr>
+</table>
+
+<div class="rule">
+  <div class="h">Quality Control &amp; Production Integrity</div>
+  <p>Any copy, metric, pricing variation, or structural layout not contained in this specification must be cleared with the Corporate Marketing Director before external deployment.</p>
+</div>
+
+<p style="margin-top:60px;padding-top:20px;border-top:1px solid rgba(0,105,184,0.3);color:var(--text-dim);font-family:var(--font-mono);font-size:12px">
+World AI Show | AI in Banking and Financial Services | Dubai 2027 — Website Wireframe &amp; Build Specification · Version 3.0 (AI 2047 Brand Book V1.0 Master)<br>
+Confidential and intended solely for internal engineering, marketing, and commercial teams. © 2026–2027 Trescon. All rights reserved.
+</p>
+
+</div>
+</body>
+</html>
