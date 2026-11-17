@@ -631,14 +631,17 @@ const sponsorCollageStrip = [
   {
     src: "/banking/images/v3-preview/sponsor-strip-1.jpg",
     alt: "Enterprise AI sponsorship built stands and executive networking on the exhibition concourse",
+    widthClass: "w-[460px] max-sm:w-[310px]",
   },
   {
     src: "/banking/images/v3-preview/sponsor-strip-2.jpg",
     alt: "Interactive AI financial experience showcase and live buyer engagement",
+    widthClass: "w-[360px] max-sm:w-[250px]",
   },
   {
     src: "/banking/images/v3-preview/sponsor-strip-3.jpg",
     alt: "Pre-qualified institutional decision-makers engaging at a sponsor showcase booth",
+    widthClass: "w-[430px] max-sm:w-[290px]",
   },
 ];
 
@@ -667,7 +670,7 @@ export function AttendSponsorSectionV3() {
         </div>
       </section>
 
-      <section className="py-[92px] bg-[#F7F9FC] max-sm:py-[66px]" id="sponsor">
+      <section className="pt-[92px] pb-[80px] bg-[#F7F9FC] overflow-hidden max-sm:py-[66px]" id="sponsor">
         <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] mx-auto">
           <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
             <div>
@@ -715,25 +718,40 @@ export function AttendSponsorSectionV3() {
               </article>
             ))}
           </div>
+        </div>
 
-          {/* Horizontal Line Strip Image Collage */}
-          <div className="mt-9 p-3 rounded-[22px] bg-white border border-[#0069B8]/22 shadow-[0_18px_42px_rgba(8,18,30,0.08)]">
-            <div className="grid grid-cols-[1.15fr_0.92fr_1.13fr] gap-3 max-[900px]:grid-cols-3 max-sm:grid-cols-1">
-              {sponsorCollageStrip.map((photo) => (
-                <div
-                  key={photo.src}
-                  className="group relative overflow-hidden rounded-[14px] h-[255px] max-[980px]:h-[210px] max-sm:h-[220px] bg-[#08121E]"
-                >
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08121E]/35 via-transparent to-transparent opacity-60 group-hover:opacity-25 transition-opacity duration-300" />
-                </div>
-              ))}
-            </div>
+        {/* Full-Bleed Continuous Scrolling Photo Strip */}
+        <div
+          className="mt-12 relative w-full overflow-hidden py-2"
+          style={{
+            maskImage: "linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%)",
+            WebkitMaskImage:
+              "linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%)",
+          }}
+        >
+          <div className="marquee-partners flex">
+            {[0, 1].map((groupIdx) => (
+              <div
+                key={groupIdx}
+                aria-hidden={groupIdx === 1 ? "true" : undefined}
+                className="flex shrink-0 items-center gap-5 pr-5"
+              >
+                {[...sponsorCollageStrip, ...sponsorCollageStrip].map((photo, idx) => (
+                  <div
+                    key={`${groupIdx}-${idx}`}
+                    className={`group relative shrink-0 overflow-hidden rounded-[18px] ${photo.widthClass} h-[275px] max-sm:h-[205px] border border-[#0069B8]/20 shadow-[0_14px_34px_rgba(8,18,30,0.1)] bg-[#08121E]`}
+                  >
+                    <img
+                      src={photo.src}
+                      alt={groupIdx === 0 && idx < sponsorCollageStrip.length ? photo.alt : ""}
+                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08121E]/35 via-transparent to-transparent opacity-50 group-hover:opacity-15 transition-opacity duration-300" />
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </section>
