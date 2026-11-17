@@ -591,11 +591,11 @@ function FinalCtaBlockV3() {
           <GradientText>2027 BFSI AI architecture &amp; procurement get finalised.</GradientText>
         </h2>
         <p>
-          Apply for a complimentary Delegate Pass (by invitation &amp; qualification), enquire about our 9-tier commercial sponsorship inventory, or apply to join the Dubai BFSI faculty.
+          Buy tickets, enquire about our 9-tier commercial sponsorship inventory, or apply to join the Dubai BFSI faculty.
         </p>
         <div className={styles.actions}>
           <a className={`${styles.button} ${styles.solid} group`} href={`${V3_BASE}/attend/delegate/`}>
-            Apply for Delegate Pass <ArrowSVG />
+            Buy Tickets <ArrowSVG />
           </a>
           <a
             className={`${styles.button} ${styles.outline} group`}

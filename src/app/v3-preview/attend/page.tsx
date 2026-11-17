@@ -373,7 +373,7 @@ export function AttendOverviewSectionV3() {
           </p>
           <div className="flex flex-wrap gap-3.5 mt-10 max-sm:flex-col max-sm:items-start max-sm:gap-4">
             <ArrowButtonV3 href={`${V3_BASE}/attend/delegate/`} variant="solid">
-              Apply for Delegate Pass
+              Buy Tickets
             </ArrowButtonV3>
             <ArrowButtonV3 href={`${V3_BASE}/sponsorship-enquiry/`} variant="outline-dark">
               Enquire about sponsorship
@@ -454,7 +454,7 @@ export function AttendOverviewSectionV3() {
               </div>
               <div>
                 <ArrowButtonV3 href={`${V3_BASE}/attend/delegate/`} variant="solid">
-                  Apply for Delegate Pass
+                  Buy Tickets
                 </ArrowButtonV3>
               </div>
             </div>
@@ -532,13 +532,13 @@ export function AttendDelegateSectionV3() {
             Complimentary Delegate Passes are reserved by invitation and qualification (80%+ buy-side institutional ratio) for senior C-suite leaders across commercial and Islamic banks, insurers, wealth and asset managers, and financial regulators.
           </p>
           <div className="flex gap-3.5 mt-9 max-sm:flex-col max-sm:items-start max-sm:gap-4">
-            <ArrowButtonV3 href="#delegate-qualification">Apply for Delegate Pass</ArrowButtonV3>
+            <ArrowButtonV3 href="#delegate-qualification">Buy Tickets</ArrowButtonV3>
           </div>
         </div>
       </section>
 
       <SplitSectionV3
-        button="Submit Delegate Pass Application"
+        button="Buy Tickets"
         buttonHref={`${V3_BASE}/general-enquiry/`}
         id="delegate-qualification"
         eyebrow="Buy-Side Qualification & UAE PDPL Consent Governance"

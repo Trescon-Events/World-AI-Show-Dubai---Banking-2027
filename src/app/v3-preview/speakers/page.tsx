@@ -105,7 +105,7 @@ export default function SpeakersPageV3() {
 
               <div className="mt-9 pt-6 border-t border-[#0069B8]/30">
                 <a href={`${V3_BASE}/attend/delegate/`} className="bb-btn-primary max-sm:w-full">
-                  Apply for Delegate Pass
+                  Buy Tickets
                   <svg
                     className="bb-btn-arrow w-4 h-4 flex-shrink-0"
                     fill="none"

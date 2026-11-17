@@ -108,7 +108,7 @@ export default function NetworkingPageV3() {
 
             <div className="flex flex-wrap items-center gap-4 mt-9 max-sm:flex-col max-sm:items-stretch">
               <a href={`${V3_BASE}/attend/delegate/`} className="bb-btn-primary text-center">
-                Apply for Delegate Pass ➔
+                Buy Tickets ➔
               </a>
               <a
                 href={`${V3_BASE}/sponsorship-enquiry/`}
@@ -283,12 +283,12 @@ export default function NetworkingPageV3() {
             <GradientText tone="blue">2027 BFSI AI architecture gets decided.</GradientText>
           </h2>
           <p className="m-0 mt-4 text-[#334155] text-[15.5px] leading-relaxed max-w-[600px] mx-auto">
-            Apply for a complimentary Delegate Pass (by invitation &amp; qualification) or enquire about commercial sponsorship for World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE).
+            Buy tickets or enquire about commercial sponsorship for World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE).
           </p>
 
           <div className="mt-8 flex justify-center gap-4 flex-wrap">
             <a href={`${V3_BASE}/attend/delegate/`} className="bb-btn-primary max-sm:w-full">
-              Apply for Delegate Pass ➔
+              Buy Tickets ➔
             </a>
             <a
               href={`${V3_BASE}/sponsorship-enquiry/`}

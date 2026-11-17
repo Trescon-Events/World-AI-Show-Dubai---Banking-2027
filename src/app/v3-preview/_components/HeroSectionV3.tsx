@@ -116,7 +116,7 @@ export function HeroSectionV3() {
             Explore Commercial Sponsorship
           </ButtonV3>
           <ButtonV3 href={`${V3_BASE}/attend/delegate/`} variant="outline" showArrow={true}>
-            Apply for Delegate Pass
+            Buy Tickets
           </ButtonV3>
         </div>
       </div>

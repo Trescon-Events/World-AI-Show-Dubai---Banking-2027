@@ -255,7 +255,7 @@ export function NetworkingSectionV3() {
                   href={`${V3_BASE}/attend/delegate/`}
                   className="bb-btn-primary inline-flex items-center justify-center gap-2.5 h-[50px] px-7 font-bold text-[15px]"
                 >
-                  Apply for Delegate Pass
+                  Buy Tickets
                   <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
