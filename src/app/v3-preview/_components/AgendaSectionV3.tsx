@@ -183,7 +183,7 @@ function AgendaPillarCard({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={onToggle}
-      className={`agenda-pillar-card group relative flex h-full flex-col overflow-hidden rounded-[20px] border transition-all duration-300 cursor-pointer text-left ${
+      className={`agenda-pillar-card group relative flex flex-col overflow-hidden rounded-[20px] border transition-all duration-300 cursor-pointer text-left ${
         isExpanded
           ? "border-[#0069B8] bg-white shadow-[0_20px_44px_rgba(0,105,184,0.16)] -translate-y-1"
           : "border-[#0069B8]/22 bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] hover:border-[#0069B8] hover:-translate-y-1 hover:shadow-[0_20px_44px_rgba(0,105,184,0.16)]"
@@ -217,8 +217,8 @@ function AgendaPillarCard({
         </span>
       </div>
 
-      <div className="agenda-pillar-body flex-1 flex flex-col justify-between p-6 max-sm:p-5">
-        <div>
+      <div className="agenda-pillar-body p-6 max-sm:p-5">
+        <div className="min-h-[162px] max-md:min-h-0">
           <h3
             className={`m-0 mb-2.5 font-semibold text-[19.5px] leading-[1.3] transition-colors duration-200 ${
               isExpanded ? "text-[#0069B8]" : "text-[#08121E] group-hover:text-[#0069B8]"
@@ -232,26 +232,25 @@ function AgendaPillarCard({
           </p>
         </div>
 
-        <div className="mt-4 pt-3.5 border-t border-[#0069B8]/14">
-          <div className="inline-flex items-start gap-2 px-3 py-1.5 rounded-lg bg-[#F7F9FC] border border-[#0069B8]/20 text-[#08121E] text-[11.5px] font-semibold leading-snug">
-            <span className="w-2 h-2 rounded-full bg-[#F15928] shrink-0 mt-1" />
-            <span>{theme.clinicalFormat}</span>
-          </div>
-
-          <div
-            className={`grid transition-all duration-300 ease-out overflow-hidden ${
-              isExpanded
-                ? "grid-rows-[1fr] opacity-100 mt-4 pt-3.5 border-t border-[#0069B8]/18"
-                : "grid-rows-[0fr] opacity-0 mt-0 pt-0 border-t border-transparent"
-            }`}
-          >
-            <div className="min-h-0 overflow-hidden">
+        <div
+          className={`grid transition-all duration-300 ease-out overflow-hidden ${
+            isExpanded
+              ? "grid-rows-[1fr] opacity-100 mt-5 pt-4 border-t border-[#0069B8]/18"
+              : "grid-rows-[0fr] opacity-0 mt-0 pt-0 border-t border-transparent"
+          }`}
+        >
+          <div className="min-h-0 space-y-3 overflow-hidden">
+            <div>
               <span className="block text-[11px] font-bold uppercase tracking-[0.08em] text-[#0069B8] mb-1">
                 Operational Scope &amp; Technical Focus
               </span>
               <p className="m-0 text-[#334155] text-[14px] leading-[1.6]">
                 {theme.expandedScope}
               </p>
+            </div>
+            <div className="inline-flex items-start gap-2 px-3 py-1.5 rounded-lg bg-[#F7F9FC] border border-[#0069B8]/22 text-[#08121E] text-[11.5px] font-semibold leading-snug">
+              <span className="w-2 h-2 rounded-full bg-[#F15928] shrink-0 mt-1" />
+              <span>Format: {theme.clinicalFormat}</span>
             </div>
           </div>
         </div>
@@ -298,8 +297,8 @@ export function AgendaSectionV3({
           </p>
         )}
 
-        {/* Component C3 — Six Equal-Height Cards in Balanced 3x2 Responsive Grid */}
-        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 auto-rows-fr gap-6 items-stretch max-md:auto-rows-auto">
+        {/* Component C3 — Six Cards in Balanced 3x2 Responsive Grid (only hovered card expands) */}
+        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-6 items-start">
           {themeItemsV3.map((theme, idx) => (
             <AgendaPillarCard
               key={theme.index}
