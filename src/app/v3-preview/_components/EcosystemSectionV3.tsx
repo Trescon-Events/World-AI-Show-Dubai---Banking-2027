@@ -15,7 +15,7 @@ interface TelemetryCardData {
   label: string;
   source: string;
   image: string;
-  artVariant: "stream" | "shield" | "growth";
+  artVariant: "adoption" | "vendor" | "growth";
   bars: TelemetryBar[];
   icon: React.ReactNode;
 }
@@ -27,8 +27,8 @@ const sourceCitedCards: TelemetryCardData[] = [
     primaryNum: 71,
     label: "Up from 33% in 2024 across DIFC firms, yet only 14% run autonomous agents live",
     source: "DFSA AI Survey (2 November 2026)",
-    image: "/banking/images/brand/benchmark-03.png",
-    artVariant: "stream",
+    image: "/banking/images/v3-preview/benchmark-adoption.png",
+    artVariant: "adoption",
     bars: [
       {
         name: "DIFC firms actively deploying AI (up from 33% in 2024)",
@@ -40,11 +40,17 @@ const sourceCitedCards: TelemetryCardData[] = [
       },
     ],
     icon: (
-      <svg className="w-7 h-7 text-[#009EAD]" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-        <path d="M16.5 5.5 L27 9.5 V17.5 C27 24.2 16.5 29.5 16.5 29.5 C16.5 29.5 6 24.2 6 17.5 V9.5 L16.5 5.5 Z" />
-        <polyline points="12.5 17 15.5 20 21 14" />
-        <circle cx="24.5" cy="24.5" r="5.2" className="fill-[#0D1B2E] group-hover:fill-[#0069B8] transition-colors" stroke="currentColor" strokeWidth={1.7} />
-        <polyline points="22.3 24.5 24 26.2 27 23" />
+      <svg className="w-7 h-7 text-[#009EAD] group-hover:text-white transition-colors" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
+        {/* Isometric Autonomous Cube + AI Processor Pins */}
+        <polygon points="18 6.5 27.5 12 27.5 23 18 28.5 8.5 23 8.5 12" />
+        <polyline points="8.5 12 18 17.5 27.5 12" />
+        <line x1="18" y1="17.5" x2="18" y2="28.5" />
+        <line x1="18" y1="3" x2="18" y2="6.5" />
+        <line x1="18" y1="28.5" x2="18" y2="32.5" />
+        <line x1="5" y1="10" x2="8.5" y2="12" />
+        <line x1="27.5" y1="23" x2="31" y2="25" />
+        <line x1="31" y1="10" x2="27.5" y2="12" />
+        <line x1="8.5" y1="23" x2="5" y2="25" />
       </svg>
     ),
   },
@@ -54,8 +60,8 @@ const sourceCitedCards: TelemetryCardData[] = [
     primaryNum: 75,
     label: "Surveyed generative AI adopters relying on third-party vendor solutions",
     source: "DFSA AI Survey (2 November 2026)",
-    image: "/banking/images/brand/benchmark-02.png",
-    artVariant: "shield",
+    image: "/banking/images/v3-preview/benchmark-vendor.png",
+    artVariant: "vendor",
     bars: [
       {
         name: "Generative AI adopters relying on third-party solutions",
@@ -67,14 +73,17 @@ const sourceCitedCards: TelemetryCardData[] = [
       },
     ],
     icon: (
-      <svg className="w-7 h-7 text-[#009EAD]" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-        <path d="M7.5 9.5 A13.5 13.5 0 0 0 7.5 26.5" />
-        <path d="M28.5 9.5 A13.5 13.5 0 0 1 28.5 26.5" />
-        <path d="M10.5 12 A10 10 0 0 0 10.5 24" />
-        <path d="M25.5 12 A10 10 0 0 1 25.5 24" />
-        <circle cx="18" cy="18" r="7.5" />
-        <path d="M18 12.8 L22.2 14.5 V18.2 C22.2 20.9 18 22.8 18 22.8 C18 22.8 13.8 20.9 13.8 18.2 V14.5 L18 12.8 Z" />
-        <line x1="18" y1="13.2" x2="18" y2="22.4" />
+      <svg className="w-7 h-7 text-[#009EAD] group-hover:text-white transition-colors" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
+        {/* Central Core + 4 Third-Party Vendor Nodes */}
+        <rect x="13.5" y="13.5" width="9" height="9" rx="2" />
+        <circle cx="7.5" cy="7.5" r="2.8" />
+        <circle cx="28.5" cy="7.5" r="2.8" />
+        <circle cx="7.5" cy="28.5" r="2.8" />
+        <circle cx="28.5" cy="28.5" r="2.8" />
+        <line x1="9.6" y1="9.6" x2="13.5" y2="13.5" />
+        <line x1="26.4" y1="9.6" x2="22.5" y2="13.5" />
+        <line x1="9.6" y1="26.4" x2="13.5" y2="22.5" />
+        <line x1="26.4" y1="26.4" x2="22.5" y2="22.5" />
       </svg>
     ),
   },
@@ -97,7 +106,7 @@ const sourceCitedCards: TelemetryCardData[] = [
       },
     ],
     icon: (
-      <svg className="w-7 h-7 text-[#009EAD]" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
+      <svg className="w-7 h-7 text-[#009EAD] group-hover:text-white transition-colors" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
         <line x1="4" y1="31" x2="32" y2="31" />
         <rect x="6.5" y="23" width="3.8" height="8" rx="0.6" />
         <rect x="12.8" y="19" width="3.8" height="12" rx="0.6" />
@@ -111,14 +120,199 @@ const sourceCitedCards: TelemetryCardData[] = [
 ];
 
 function BenchmarkGraphic({ card }: { card: TelemetryCardData }) {
+  const aspectClass =
+    card.artVariant === "growth" ? "aspect-[304/246]" : "aspect-[4/3]";
+
   return (
-    <div className="relative w-full h-[200px] mt-1.5 mb-3 overflow-hidden flex items-center justify-center select-none pointer-events-none">
-      <div className="relative w-full h-full animate-[IsoFloat_3.8s_ease-in-out_infinite]">
+    <div className="relative w-full h-[206px] mt-1.5 mb-3 overflow-hidden flex items-center justify-center select-none pointer-events-none">
+      <div className={`relative h-full w-auto ${aspectClass} animate-[IsoFloat_3.8s_ease-in-out_infinite]`}>
         <img
           src={card.image}
           alt={card.label}
-          className="w-full h-full object-contain object-center bb-bench-art group-hover:scale-[1.04] transition-transform duration-500"
+          className="w-full h-full object-contain object-center bb-bench-art group-hover:scale-[1.05] transition-transform duration-500"
         />
+
+        {card.artVariant === "adoption" && (
+          <svg
+            viewBox="0 0 304 228"
+            className="absolute inset-0 w-full h-full overflow-visible"
+            fill="none"
+          >
+            {/* 4 Isometric Pilot-to-Core Neural Traces */}
+            <path
+              d="M84 85 L130 112"
+              stroke="#009EAD"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeDasharray="12 46"
+              className="animate-[BridgeFlow_1.9s_linear_infinite]"
+            />
+            <path
+              d="M220 85 L174 112"
+              stroke="#67E8F9"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeDasharray="12 46"
+              className="animate-[BridgeFlow_2.1s_linear_0.4s_infinite]"
+            />
+            <path
+              d="M84 152 L130 125"
+              stroke="#0069B8"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeDasharray="12 46"
+              className="animate-[BridgeFlow_2.3s_linear_0.8s_infinite]"
+            />
+            <path
+              d="M220 152 L174 125"
+              stroke="#009EAD"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeDasharray="12 46"
+              className="animate-[BridgeFlow_1.8s_linear_1.1s_infinite]"
+            />
+
+            {/* Orbiting Holographic Ring Pulse Around Autonomous Cube */}
+            <ellipse
+              cx="152"
+              cy="79"
+              rx="42"
+              ry="21"
+              stroke="#67E8F9"
+              strokeWidth="1.6"
+              strokeDasharray="24 96"
+              className="animate-[OrbitSweep_3.2s_linear_infinite]"
+            />
+            <ellipse
+              cx="152"
+              cy="79"
+              rx="29"
+              ry="14.5"
+              stroke="#F15928"
+              strokeWidth="1.4"
+              strokeDasharray="16 74"
+              className="animate-[OrbitSweepReverse_2.6s_linear_infinite]"
+            />
+
+            {/* Ascending Vertical Telemetry Beams */}
+            <line
+              x1="129"
+              y1="108"
+              x2="129"
+              y2="34"
+              stroke="#009EAD"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeDasharray="14 68"
+              className="animate-[BeamRise_2.0s_linear_infinite]"
+            />
+            <line
+              x1="152"
+              y1="104"
+              x2="152"
+              y2="24"
+              stroke="#67E8F9"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeDasharray="16 72"
+              className="animate-[BeamRise_1.7s_linear_0.45s_infinite]"
+            />
+            <line
+              x1="175"
+              y1="108"
+              x2="175"
+              y2="34"
+              stroke="#009EAD"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeDasharray="14 68"
+              className="animate-[BeamRise_2.2s_linear_0.9s_infinite]"
+            />
+
+            {/* Rising Live Agent Nodes */}
+            <circle cx="152" cy="76" r="2.8" fill="#F15928" className="bb-svg-dot animate-[NodePulse_2s_ease-in-out_infinite]" />
+            <circle cx="136" cy="96" r="2.3" fill="#67E8F9" className="bb-svg-dot animate-[ParticleRise_2.1s_ease-out_infinite]" />
+            <circle cx="168" cy="92" r="2.5" fill="#F15928" className="bb-svg-dot animate-[ParticleRise_2.4s_ease-out_0.7s_infinite]" />
+            <circle cx="152" cy="64" r="2.1" fill="#009EAD" className="bb-svg-dot animate-[ParticleRise_1.9s_ease-out_1.2s_infinite]" />
+          </svg>
+        )}
+
+        {card.artVariant === "vendor" && (
+          <svg
+            viewBox="0 0 304 228"
+            className="absolute inset-0 w-full h-full overflow-visible"
+            fill="none"
+          >
+            {/* 4 High-Speed Third-Party Vendor -> Core Data Bridge Streams */}
+            <path
+              d="M93 83 L133 107"
+              stroke="#67E8F9"
+              strokeWidth="2.6"
+              strokeLinecap="round"
+              strokeDasharray="12 44"
+              className="animate-[BridgeFlow_1.5s_linear_infinite]"
+            />
+            <path
+              d="M211 83 L171 107"
+              stroke="#009EAD"
+              strokeWidth="2.6"
+              strokeLinecap="round"
+              strokeDasharray="12 44"
+              className="animate-[BridgeFlow_1.7s_linear_0.35s_infinite]"
+            />
+            <path
+              d="M93 151 L137 123"
+              stroke="#F15928"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeDasharray="12 44"
+              className="animate-[BridgeFlow_1.8s_linear_0.75s_infinite]"
+            />
+            <path
+              d="M211 151 L167 123"
+              stroke="#67E8F9"
+              strokeWidth="2.6"
+              strokeLinecap="round"
+              strokeDasharray="12 44"
+              className="animate-[BridgeFlow_1.6s_linear_1.1s_infinite]"
+            />
+
+            {/* Central Tower Base Orbit Ring */}
+            <ellipse
+              cx="152"
+              cy="122"
+              rx="36"
+              ry="20"
+              stroke="#009EAD"
+              strokeWidth="1.6"
+              strokeDasharray="22 86"
+              className="animate-[OrbitSweep_3s_linear_infinite]"
+            />
+
+            {/* Central Banking Tower Core Vertical Uplift */}
+            <line
+              x1="152"
+              y1="122"
+              x2="152"
+              y2="52"
+              stroke="#67E8F9"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeDasharray="14 64"
+              className="animate-[BeamRise_1.8s_linear_infinite]"
+            />
+
+            {/* Pulsing API Gateway Beacons on the 4 Vendor Modules */}
+            <circle cx="93" cy="83" r="2.8" fill="#67E8F9" className="bb-svg-dot animate-[NodePulse_1.8s_ease-in-out_infinite]" />
+            <circle cx="211" cy="83" r="2.8" fill="#009EAD" className="bb-svg-dot animate-[NodePulse_1.8s_ease-in-out_0.45s_infinite]" />
+            <circle cx="93" cy="151" r="2.8" fill="#F15928" className="bb-svg-dot animate-[NodePulse_1.8s_ease-in-out_0.9s_infinite]" />
+            <circle cx="211" cy="151" r="2.8" fill="#67E8F9" className="bb-svg-dot animate-[NodePulse_1.8s_ease-in-out_1.35s_infinite]" />
+
+            {/* Floating Telemetry Particles Around Central Core */}
+            <circle cx="142" cy="92" r="2.2" fill="#67E8F9" className="bb-svg-dot animate-[ParticleRise_2.2s_ease-out_infinite]" />
+            <circle cx="162" cy="88" r="2.4" fill="#F15928" className="bb-svg-dot animate-[ParticleRise_2.0s_ease-out_0.6s_infinite]" />
+          </svg>
+        )}
 
         {card.artVariant === "growth" && (
           <svg
@@ -156,50 +350,6 @@ function BenchmarkGraphic({ card }: { card: TelemetryCardData }) {
             <circle cx="215" cy="95" r="2.8" fill="#009EAD" className="animate-[ParticleRise_2.2s_ease-out_infinite]" />
             <circle cx="252" cy="110" r="3" fill="#F15928" className="animate-[ParticleRise_1.9s_ease-out_0.5s_infinite]" />
             <circle cx="235" cy="125" r="2.2" fill="#0069B8" className="animate-[ParticleRise_2.5s_ease-out_1.1s_infinite]" />
-          </svg>
-        )}
-
-        {card.artVariant === "shield" && (
-          <svg
-            viewBox="0 0 304 230"
-            className="absolute inset-0 w-full h-full overflow-visible"
-            fill="none"
-          >
-            <path
-              d="M296 36 L160 112 L52 54"
-              stroke="#009EAD"
-              strokeWidth="2.4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeDasharray="26 160"
-              className="animate-[LaserDeflect_1.9s_linear_infinite]"
-            />
-            <path
-              d="M294 64 L158 116 L76 112"
-              stroke="#0069B8"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeDasharray="22 150"
-              className="animate-[LaserDeflect_2.2s_linear_0.6s_infinite]"
-            />
-          </svg>
-        )}
-
-        {card.artVariant === "stream" && (
-          <svg
-            viewBox="0 0 304 206"
-            className="absolute inset-0 w-full h-full overflow-visible"
-            fill="none"
-          >
-            <path
-              d="M160 112 L14 194"
-              stroke="#009EAD"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeDasharray="5 22"
-              className="animate-[StreamOut_1.2s_linear_infinite]"
-            />
           </svg>
         )}
       </div>
@@ -361,6 +511,10 @@ export function EcosystemSectionV3() {
       id="ecosystem"
     >
       <style>{`
+        .bb-svg-dot {
+          transform-box: fill-box;
+          transform-origin: center;
+        }
         @keyframes telemetryShimmer {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(200%); }
@@ -384,14 +538,29 @@ export function EcosystemSectionV3() {
           40% { opacity: 0.95; }
           100% { transform: translateY(-28px) scale(1.15); opacity: 0; }
         }
-        @keyframes LaserDeflect {
-          0% { stroke-dashoffset: 188; opacity: 0.2; }
-          35% { opacity: 1; }
-          100% { stroke-dashoffset: 0; opacity: 0.1; }
+        @keyframes BridgeFlow {
+          0% { stroke-dashoffset: 58; opacity: 0.25; }
+          45% { opacity: 1; }
+          100% { stroke-dashoffset: 0; opacity: 0.25; }
         }
-        @keyframes StreamOut {
-          0% { stroke-dashoffset: 56; }
-          100% { stroke-dashoffset: 0; }
+        @keyframes OrbitSweep {
+          0% { stroke-dashoffset: 120; opacity: 0.45; }
+          50% { opacity: 1; }
+          100% { stroke-dashoffset: 0; opacity: 0.45; }
+        }
+        @keyframes OrbitSweepReverse {
+          0% { stroke-dashoffset: 0; opacity: 0.4; }
+          50% { opacity: 0.95; }
+          100% { stroke-dashoffset: 90; opacity: 0.4; }
+        }
+        @keyframes BeamRise {
+          0% { stroke-dashoffset: 84; opacity: 0.2; }
+          50% { opacity: 0.95; }
+          100% { stroke-dashoffset: 0; opacity: 0.2; }
+        }
+        @keyframes NodePulse {
+          0%, 100% { transform: scale(0.85); opacity: 0.55; }
+          50% { transform: scale(1.35); opacity: 1; }
         }
       `}</style>
 
