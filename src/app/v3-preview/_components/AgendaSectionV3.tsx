@@ -239,19 +239,13 @@ function AgendaPillarCard({
               : "grid-rows-[0fr] opacity-0 mt-0 pt-0 border-t border-transparent"
           }`}
         >
-          <div className="min-h-0 space-y-3 overflow-hidden">
-            <div>
-              <span className="block text-[11px] font-bold uppercase tracking-[0.08em] text-[#0069B8] mb-1">
-                Operational Scope &amp; Technical Focus
-              </span>
-              <p className="m-0 text-[#334155] text-[14px] leading-[1.6]">
-                {theme.expandedScope}
-              </p>
-            </div>
-            <div className="inline-flex items-start gap-2 px-3 py-1.5 rounded-lg bg-[#F7F9FC] border border-[#0069B8]/22 text-[#08121E] text-[11.5px] font-semibold leading-snug">
-              <span className="w-2 h-2 rounded-full bg-[#F15928] shrink-0 mt-1" />
-              <span>Format: {theme.clinicalFormat}</span>
-            </div>
+          <div className="min-h-0 overflow-hidden">
+            <span className="block text-[11px] font-bold uppercase tracking-[0.08em] text-[#0069B8] mb-1">
+              Operational Scope &amp; Technical Focus
+            </span>
+            <p className="m-0 text-[#334155] text-[14px] leading-[1.6]">
+              {theme.expandedScope}
+            </p>
           </div>
         </div>
       </div>
