@@ -103,7 +103,7 @@ export default function NetworkingPageV3() {
               <GradientText tone="teal">By Design.</GradientText>
             </h1>
             <p className="m-0 mt-6 text-white/82 text-[18px] leading-relaxed max-sm:text-[15px]">
-              Engineered for senior banking, insurance, risk, and regulatory leaders across 25+ UAE banks and insurers and 15+ GCC and African financial groups — uniting 50+ pre-scheduled bilateral meetings, 3 Closed-Door CXO Boardrooms (20 buyers each), and 7 Synthetic Experience Labs.
+              Engineered for senior banking, insurance, risk, and regulatory leaders across 25+ UAE banks and insurers and 15+ GCC and African financial groups — uniting 50+ pre-scheduled bilateral meetings, 3 Closed-Door CXO Boardrooms (20 buyers each), and 7 Interactive Experience Labs.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mt-9 max-sm:flex-col max-sm:items-stretch">

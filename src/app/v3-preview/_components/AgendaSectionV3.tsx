@@ -127,7 +127,7 @@ export const sixPartBlocksV3 = [
   },
   {
     num: "Block 5",
-    title: "7 Interactive Synthetic Experience Labs",
+    title: "7 Interactive Experience Labs",
     desc: "Hands-on floor simulations: Financial Crime Lab, Explain My Loan Decision, Autonomous Payment Challenge, AI Accountability Hearing & Insurance Triage.",
     accent: "cyan",
   },

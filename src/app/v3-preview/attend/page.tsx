@@ -39,7 +39,7 @@ const valueCards: CardItem[] = [
   },
   {
     title: "Clinical Workshops, Boardrooms & Floor Labs",
-    text: "Combines 15-minute buyer keynotes, two 75-minute clinical workshops, three 20-buyer Closed-Door CXO Boardrooms, and 7 Interactive Synthetic Experience Labs.",
+    text: "Combines 15-minute buyer keynotes, two 75-minute clinical workshops, three 20-buyer Closed-Door CXO Boardrooms, and 7 Interactive Experience Labs.",
     icon: "/banking/images/Attend/insights-drive-transformation.svg",
   },
 ];
@@ -56,7 +56,7 @@ const gatewayCards: CardItem[] = [
     icon: "/banking/images/Attend/gateway/high-value-networking.svg",
   },
   {
-    title: "7 Interactive Synthetic Experience Labs",
+    title: "7 Interactive Experience Labs",
     text: "Hands-on floor simulations spanning the Financial Crime Lab, Explain My Loan Decision, Autonomous Payment Challenge, AI Accountability Hearing, and Insurance Claim Triage.",
     icon: "/banking/images/Attend/gateway/enterprise-ai-showcases.svg",
   },
@@ -157,8 +157,8 @@ const mediaBenefits: CardItem[] = [
     icon: "/banking/images/Attend/media/brand-and-media-recognition.webp",
   },
   {
-    title: "Synthetic Experience Lab Walkthroughs",
-    text: "Witness live floor simulations across the 7 Interactive Synthetic Experience Labs including Financial Crime, Loan Explainability, and Autonomous Payments.",
+    title: "Experience Lab Walkthroughs",
+    text: "Witness live floor simulations across the 7 Interactive Experience Labs including Financial Crime, Loan Explainability, and Autonomous Payments.",
     icon: "/banking/images/Attend/media/exclusive-story-opportunities.webp",
   },
   {
@@ -444,7 +444,7 @@ export function AttendOverviewSectionV3() {
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#F15928] font-bold">✓</span>
-                    <span>Inclusions: Plenary access, 75-min Workshop A or B, 7 Synthetic Experience Labs, Luncheon &amp; Networking Reception</span>
+                    <span>Inclusions: Plenary access, 75-min Workshop A or B, 7 Interactive Experience Labs, Luncheon &amp; Networking Reception</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#F15928] font-bold">✓</span>
@@ -547,7 +547,7 @@ export function AttendDelegateSectionV3() {
         title={
           <>
             Plenaries, 75-Min Clinical Workshops &amp;{" "}
-            <GradientText tone="blue">7 Synthetic Experience Labs</GradientText>
+            <GradientText tone="blue">7 Interactive Experience Labs</GradientText>
           </>
         }
         text={
@@ -555,7 +555,7 @@ export function AttendDelegateSectionV3() {
             <strong>Target Buy-Side Audience:</strong> Group CEOs, CIOs, CTOs, CDAIOs, CROs, CCOs, MLROs, Insurance CEOs/COOs, Chief Claims &amp; Underwriting Officers, Chief Investment Officers, and Supervisory Regulators across the UAE, GCC, and selected African markets.
             <br />
             <br />
-            <strong>Inclusions:</strong> Full 1-day plenary access across all 6 operational mandates, choice of 75-minute Workshop A (Bank-Ready Deployment) or Workshop B (Intelligent Lending, Fraud &amp; Insurance Operations), hands-on floor simulations across 7 Synthetic Experience Labs, Networking Luncheon, and Closing Reception.
+            <strong>Inclusions:</strong> Full 1-day plenary access across all 6 operational mandates, choice of 75-minute Workshop A (Bank-Ready Deployment) or Workshop B (Intelligent Lending, Fraud &amp; Insurance Operations), hands-on floor simulations across 7 Interactive Experience Labs, Networking Luncheon, and Closing Reception.
             <br />
             <br />
             <strong>UAE PDPL Consent Qualifier:</strong> Mandatory unbundled consent checkboxes under the UAE Personal Data Protection Law (PDPL) — delegate contact details are shared only where explicit opt-in consent is provided.

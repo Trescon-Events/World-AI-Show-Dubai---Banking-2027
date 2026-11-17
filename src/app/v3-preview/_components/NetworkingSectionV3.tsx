@@ -46,7 +46,7 @@ const thrivingEnvironmentItems = [
   },
   {
     num: "03",
-    title: "Interactive Synthetic Experience Labs (7 Hands-On Floor Simulations)",
+    title: "Interactive Experience Labs (7 Hands-On Floor Simulations)",
     desc: "Seven live floor simulations including the Financial Crime Investigation Lab, Explain My Loan Decision Lab, Autonomous Payment Challenge, AI Accountability Hearing, Insurance Claim Triage, Control Room & Procurement Clinic.",
     image: "/banking/images/environment/executive-roundtables.jpg",
   },

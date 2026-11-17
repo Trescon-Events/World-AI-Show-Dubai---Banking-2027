@@ -119,7 +119,7 @@ export default function AttendeeAppPageV3() {
                         Personalised 1-Day Agenda
                       </h4>
                       <p className="m-0 text-white/75 text-[14px] leading-relaxed">
-                        Bookmark plenaries across the 6 operational mandates, select Workshop A or B, and plan visits to the 7 Synthetic Experience Labs.
+                        Bookmark plenaries across the 6 operational mandates, select Workshop A or B, and plan visits to the 7 Interactive Experience Labs.
                       </p>
                     </div>
                   </div>

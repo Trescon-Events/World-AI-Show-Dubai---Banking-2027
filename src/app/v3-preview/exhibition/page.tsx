@@ -9,7 +9,7 @@ import { FloorPlanTab } from "../../components/sections/FloorPlanTab";
 export const metadata: Metadata = {
   title: "Exhibition & Floorplan Hub | World AI Show | BFSI | Dubai 2027 (V3 Preview)",
   description:
-    "Explore the interactive concourse map for World AI Show | BFSI | Dubai 2027: 9 sqm Built Stands, 4 sqm Turnkey Stands, 2 sqm Start Up Pods, 3 Closed-Door CXO Boardrooms, and 7 Interactive Synthetic Experience Labs.",
+    "Explore the interactive concourse map for World AI Show | BFSI | Dubai 2027: 9 sqm Built Stands, 4 sqm Turnkey Stands, 2 sqm Start Up Pods, 3 Closed-Door CXO Boardrooms, and 7 Interactive Experience Labs.",
   robots: { index: false, follow: false },
 };
 
@@ -36,7 +36,7 @@ const footprintsV3 = [
   },
   {
     size: "7 Experience Labs",
-    title: "7 Interactive Synthetic Experience Labs Zone",
+    title: "7 Interactive Experience Labs Zone",
     desc: "Hands-on floor simulations: Financial Crime Lab, Explain My Loan Decision, Autonomous Payment Challenge, AI Accountability Hearing, Insurance Claim Triage, Control Room & Procurement Clinic.",
   },
   {
@@ -60,10 +60,10 @@ export default function ExhibitionPageV3() {
               Exhibition &amp; Concourse Hub · Dubai, UAE
             </span>
             <h2 className="font-heading font-bold text-[#08121E] leading-tight tracking-[-0.02em] text-[clamp(30px,4vw,46px)] m-0">
-              Concourse Footprints, <GradientText tone="blue">Boardrooms &amp; Synthetic Labs</GradientText>
+              Concourse Footprints, <GradientText tone="blue">Boardrooms &amp; Experience Labs</GradientText>
             </h2>
             <p className="mt-3 text-[#334155] text-[16px] max-w-[800px] mx-auto">
-              Venue Showcase: Dubai, UAE (Subject to final technical clearance). Featuring 9 sqm built stands, 4 sqm turnkey stands, 2 sqm Start Up pods, 3 Closed-Door CXO Boardrooms (20 buyers each), and 7 Interactive Synthetic Experience Labs.
+              Venue Showcase: Dubai, UAE (Subject to final technical clearance). Featuring 9 sqm built stands, 4 sqm turnkey stands, 2 sqm Start Up pods, 3 Closed-Door CXO Boardrooms (20 buyers each), and 7 Interactive Experience Labs.
             </p>
           </div>
 

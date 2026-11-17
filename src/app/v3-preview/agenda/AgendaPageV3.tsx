@@ -26,7 +26,7 @@ const formats: { title: string; text: string; icon: ReactNode }[] = [
     ),
   },
   {
-    title: "75-Minute Workshops & 7 Synthetic Experience Labs",
+    title: "75-Minute Workshops & 7 Interactive Experience Labs",
     text: "Workshop A (Bank-Ready Deployment) and Workshop B (Intelligent Lending, Fraud & Insurance Operations), paired with 7 hands-on floor simulations including the Financial Crime Lab, Explain My Loan Decision, and Autonomous Payment Challenge.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -96,11 +96,11 @@ const bfsiSchedule: BfsiAgendaSession[] = [
     dayLabel: "Wednesday 24 March 2027: From AI Pilots to Proven Financial Performance",
     startTime: "08:00",
     endTime: "08:50",
-    title: "Registration, Welcome Coffee & Synthetic Experience Labs Open",
+    title: "Registration, Welcome Coffee & Experience Labs Open",
     typeTitle: "Networking & Experience Labs",
     location: "Concourse Showcase (9 sqm, 4 sqm & 2 sqm Stands) · Dubai, UAE",
     description:
-      "Executive badge collection, welcome refreshments, and early access to the 7 Interactive Synthetic Experience Labs and exhibition concourse.",
+      "Executive badge collection, welcome refreshments, and early access to the 7 Interactive Experience Labs and exhibition concourse.",
     trackId: "main",
     trackTitle: "Main Plenary Stage",
   },
@@ -152,13 +152,13 @@ const bfsiSchedule: BfsiAgendaSession[] = [
     dayLabel: "Wednesday 24 March 2027: From AI Pilots to Proven Financial Performance",
     startTime: "10:30",
     endTime: "11:15",
-    title: "Morning Bilateral Matchmaking & Synthetic Lab Simulations",
+    title: "Morning Bilateral Matchmaking & Experience Lab Simulations",
     typeTitle: "1-on-1 Matchmaking & Labs",
-    location: "Matchmaking Lounge & 7 Synthetic Experience Labs Zone",
+    location: "Matchmaking Lounge & 7 Interactive Experience Labs Zone",
     description:
       "Pre-scheduled 1-on-1 buyer-supplier meetings (50+ bilateral meetings) alongside hands-on trials at the Financial Crime Investigation Lab and AI Accountability Hearing.",
     trackId: "labs",
-    trackTitle: "7 Synthetic Experience Labs",
+    trackTitle: "7 Interactive Experience Labs",
   },
   {
     id: 106,
@@ -252,11 +252,11 @@ const bfsiSchedule: BfsiAgendaSession[] = [
     endTime: "15:30",
     title: "Interactive Floor Simulations: Explain My Loan, Claim Triage & Control Room Labs",
     typeTitle: "1-on-1 Matchmaking & Labs",
-    location: "7 Synthetic Experience Labs Zone",
+    location: "7 Interactive Experience Labs Zone",
     description:
       "Live floor walk-throughs across the Explain My Loan Decision Lab, Insurance Claim Triage simulation, Autonomous Payment Challenge, Control Room, and Procurement Clinic.",
     trackId: "labs",
-    trackTitle: "7 Synthetic Experience Labs",
+    trackTitle: "7 Interactive Experience Labs",
   },
   {
     id: 113,
@@ -849,7 +849,7 @@ export function AgendaLiveTimelineV3() {
             <GradientText tone="teal">Full 1-Day Master Schedule</GradientText>
           </h1>
           <p className={styles.heroPara}>
-            Wednesday 24 March 2027 · 08:00–17:15 + Networking Reception · Includes Workshop A, Workshop B, 3 Closed-Door CXO Boardrooms, and 7 Interactive Synthetic Experience Labs.
+            Wednesday 24 March 2027 · 08:00–17:15 + Networking Reception · Includes Workshop A, Workshop B, 3 Closed-Door CXO Boardrooms, and 7 Interactive Experience Labs.
           </p>
         </div>
       </section>
