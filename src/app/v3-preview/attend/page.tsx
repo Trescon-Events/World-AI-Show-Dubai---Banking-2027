@@ -47,7 +47,7 @@ const valueCards: CardItem[] = [
 const gatewayCards: CardItem[] = [
   {
     title: "Full 1-Day Plenary Access",
-    text: "Complete access on Wednesday 24 March 2027 (08:00–17:15) across all six operational mandates, DFSA survey briefings, and 15-minute buyer evidence keynotes.",
+    text: "Complete access on Wednesday 24 March 2027 across all six operational mandates, DFSA survey briefings, and 15-minute buyer evidence keynotes.",
     icon: "/banking/images/Attend/gateway/access-to-all-sessions.svg",
   },
   {
@@ -259,7 +259,7 @@ export function ArrowButtonV3({
 
 export function NumberedCardV3({ item, index }: { item: CardItem; index: number }) {
   return (
-    <article className="group relative min-h-[235px] p-7 border border-[#0069B8]/22 border-t-4 border-t-[#0069B8] rounded-[16px] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#0069B8] hover:border-t-[#F15928] hover:shadow-[0_18px_40px_rgba(8,18,30,0.11)] text-left">
+    <article className="group relative w-full min-h-[235px] p-7 border border-[#0069B8]/22 border-t-4 border-t-[#0069B8] rounded-[16px] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#0069B8] hover:border-t-[#F15928] hover:shadow-[0_18px_40px_rgba(8,18,30,0.11)] text-left">
       <span className="grid place-items-center w-11 h-11 mb-7 rounded-[12px] text-white bg-[#0069B8] text-[11px] font-extrabold select-none group-hover:bg-[#F15928] transition-all duration-300">
         {item.icon ? (
           <img
@@ -287,9 +287,14 @@ export function NumberedCardV3({ item, index }: { item: CardItem; index: number 
 
 export function BenefitGridV3({ items }: { items: CardItem[] }) {
   return (
-    <div className="grid grid-cols-4 gap-5 max-[980px]:grid-cols-2 max-sm:grid-cols-1">
+    <div className="flex flex-wrap justify-center gap-5">
       {items.map((item, index) => (
-        <NumberedCardV3 item={item} index={index} key={item.title} />
+        <div
+          key={item.title}
+          className="flex w-[calc((100%-60px)/4)] max-[980px]:w-[calc((100%-20px)/2)] max-sm:w-full"
+        >
+          <NumberedCardV3 item={item} index={index} />
+        </div>
       ))}
     </div>
   );
@@ -575,15 +580,66 @@ export function AttendDelegateSectionV3() {
 }
 
 const nineCommercialTiers = [
-  ["Tier 1 · Powered By:", "Exclusive Headline Partner · 15-min Plenary Keynote + Panel Seat, 60-min CXO Boardroom (20 Pre-Qualified Buyers), 9 sqm Built Stand"],
-  ["Tier 2 · Diamond Sponsor:", "15-min Plenary Keynote, 60-min CXO Boardroom (20 Pre-Qualified Buyers), 9 sqm Built Stand, 3× Branding"],
-  ["Tier 3 · Platinum Sponsor:", "15-min Plenary Keynote + Panel Seat, 9 sqm Built Stand, 2× Branding"],
-  ["Tier 4 · Gold Sponsor:", "15-min Plenary Keynote, 9 sqm Built Stand, 50-Account Target Wishlist"],
-  ["Tier 5 · Boardroom Partner:", "Exclusive 60-min Closed-Door CXO Boardroom for 20 Pre-Qualified Buyers under Chatham House Rule"],
-  ["Tier 6 · Silver Sponsor:", "Plenary Panel Speaking Seat + 4 sqm Built Stand"],
-  ["Tier 7 · Bronze Sponsor:", "4 sqm Built Stand + WebApp Badge Scan & UAE PDPL Consented Directory"],
-  ["Tier 8 · Concourse Exhibitor:", "4 sqm Turnkey Showcase Stand in the high-traffic concourse arena"],
-  ["Tier 9 · Start Up Pod:", "2 sqm Turnkey Innovation Pod for emerging Fintech, Insurtech & AI Innovators"],
+  {
+    tier: "Tier 01",
+    name: "Powered By",
+    desc: "Exclusive Headline Partner · 15-min Plenary Keynote + Panel Seat, 60-min CXO Boardroom (20 Pre-Qualified Buyers), 9 sqm Built Stand",
+  },
+  {
+    tier: "Tier 02",
+    name: "Diamond Sponsor",
+    desc: "15-min Plenary Keynote, 60-min CXO Boardroom (20 Pre-Qualified Buyers), 9 sqm Built Stand, 3× Branding",
+  },
+  {
+    tier: "Tier 03",
+    name: "Platinum Sponsor",
+    desc: "15-min Plenary Keynote + Panel Seat, 9 sqm Built Stand, 2× Branding",
+  },
+  {
+    tier: "Tier 04",
+    name: "Gold Sponsor",
+    desc: "15-min Plenary Keynote, 9 sqm Built Stand, 50-Account Target Wishlist",
+  },
+  {
+    tier: "Tier 05",
+    name: "Boardroom Partner",
+    desc: "Exclusive 60-min Closed-Door CXO Boardroom for 20 Pre-Qualified Buyers under Chatham House Rule",
+  },
+  {
+    tier: "Tier 06",
+    name: "Silver Sponsor",
+    desc: "Plenary Panel Speaking Seat + 4 sqm Built Stand",
+  },
+  {
+    tier: "Tier 07",
+    name: "Bronze Sponsor",
+    desc: "4 sqm Built Stand + WebApp Badge Scan & UAE PDPL Consented Directory",
+  },
+  {
+    tier: "Tier 08",
+    name: "Concourse Exhibitor",
+    desc: "4 sqm Turnkey Showcase Stand in the high-traffic concourse arena",
+  },
+  {
+    tier: "Tier 09",
+    name: "Start Up Pod",
+    desc: "2 sqm Turnkey Innovation Pod for emerging Fintech, Insurtech & AI Innovators",
+  },
+];
+
+const sponsorCollageStrip = [
+  {
+    src: "/banking/images/v3-preview/sponsor-strip-1.jpg",
+    alt: "Enterprise AI sponsorship built stands and executive networking on the exhibition concourse",
+  },
+  {
+    src: "/banking/images/v3-preview/sponsor-strip-2.jpg",
+    alt: "Interactive AI financial experience showcase and live buyer engagement",
+  },
+  {
+    src: "/banking/images/v3-preview/sponsor-strip-3.jpg",
+    alt: "Pre-qualified institutional decision-makers engaging at a sponsor showcase booth",
+  },
 ];
 
 export function AttendSponsorSectionV3() {
@@ -611,34 +667,76 @@ export function AttendSponsorSectionV3() {
         </div>
       </section>
 
-      <SplitSectionV3
-        button="Request Private Commercial Infopack"
-        buttonHref={`${V3_BASE}/sponsorship-enquiry/`}
-        id="sponsor"
-        eyebrow="9-Tier Commercial Inventory · Powered By to Start Up Pod"
-        imageAlt="Commercial Sponsorship Inventory at World AI Show Dubai"
-        imageSrc="/banking/images/Attend/brand-center-innovation.webp"
-        reverse={false}
-        title={
-          <>
-            Put Your Enterprise Solution Inside{" "}
-            <br className="max-md:hidden" />
-            <GradientText>2027 BFSI Procurement Shortlists</GradientText>
-          </>
-        }
-        text={
-          <div className="flex flex-col gap-2.5">
-            {nineCommercialTiers.map(([label, desc]) => (
-              <div
-                key={label}
-                className="px-4 py-3 border border-[#0069B8]/22 border-l-4 border-l-[#0069B8] rounded-[12px] bg-white text-[14.5px] leading-[1.5] text-[#334155] shadow-[0_6px_18px_rgba(8,18,30,0.05)]"
+      <section className="py-[92px] bg-[#F7F9FC] max-sm:py-[66px]" id="sponsor">
+        <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] mx-auto">
+          <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
+            <div>
+              <p className="m-0 mb-[14px] text-[#0069B8] text-[12px] font-bold tracking-[0.14em] uppercase select-none">
+                9-Tier Commercial Inventory · Powered By to Start Up Pod
+              </p>
+              <h2 className="font-heading m-0 text-[#08121E] font-bold leading-[1.1] tracking-[-0.02em] text-[clamp(30px,3.6vw,46px)] max-sm:text-[28px]">
+                Put Your Enterprise Solution Inside{" "}
+                <br className="max-md:hidden" />
+                <GradientText>2027 BFSI Procurement Shortlists</GradientText>
+              </h2>
+            </div>
+            <div className="flex shrink-0">
+              <ArrowButtonV3 href={`${V3_BASE}/sponsorship-enquiry/`}>
+                Request Private Commercial Infopack
+              </ArrowButtonV3>
+            </div>
+          </div>
+
+          {/* 3x3 Grid of Commercial Sponsorship Tiers */}
+          <div className="grid grid-cols-3 gap-5 max-[980px]:grid-cols-2 max-sm:grid-cols-1">
+            {nineCommercialTiers.map((item, idx) => (
+              <article
+                key={item.tier}
+                className="group relative flex flex-col justify-between p-6 border border-[#0069B8]/22 border-t-4 border-t-[#0069B8] rounded-[16px] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#0069B8] hover:border-t-[#F15928] hover:shadow-[0_18px_40px_rgba(8,18,30,0.11)]"
               >
-                <strong className="text-[#08121E]">{label}</strong> {desc}
-              </div>
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <span className="inline-block px-2.5 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-[0.08em] text-[#0069B8] bg-[#0069B8]/10 group-hover:text-white group-hover:bg-[#F15928] transition-colors duration-300">
+                      {item.tier}
+                    </span>
+                    {idx === 0 && (
+                      <span className="text-[10.5px] font-mono font-bold uppercase tracking-[0.08em] text-[#F15928]">
+                        Exclusive
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="font-heading m-0 mb-2 text-[#08121E] font-bold text-[19px] leading-snug group-hover:text-[#0069B8] transition-colors duration-200">
+                    {item.name}
+                  </h3>
+                  <p className="m-0 text-[#334155] text-[14.5px] leading-[1.6]">
+                    {item.desc}
+                  </p>
+                </div>
+              </article>
             ))}
           </div>
-        }
-      />
+
+          {/* Horizontal Line Strip Image Collage */}
+          <div className="mt-9 p-3 rounded-[22px] bg-white border border-[#0069B8]/22 shadow-[0_18px_42px_rgba(8,18,30,0.08)]">
+            <div className="grid grid-cols-[1.15fr_0.92fr_1.13fr] gap-3 max-[900px]:grid-cols-3 max-sm:grid-cols-1">
+              {sponsorCollageStrip.map((photo) => (
+                <div
+                  key={photo.src}
+                  className="group relative overflow-hidden rounded-[14px] h-[255px] max-[980px]:h-[210px] max-sm:h-[220px] bg-[#08121E]"
+                >
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08121E]/35 via-transparent to-transparent opacity-60 group-hover:opacity-25 transition-opacity duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-[86px] bg-[#08121E] border-t-2 border-[#0069B8] max-sm:py-[62px]">
         <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] mx-auto">
