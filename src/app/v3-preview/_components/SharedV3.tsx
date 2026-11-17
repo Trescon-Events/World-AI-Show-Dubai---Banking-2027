@@ -1,9 +1,22 @@
 "use client";
 
 import { ReactNode } from "react";
-import { GradientText } from "../../components/Shared";
 
-export { GradientText };
+export function GradientText({
+  children,
+  tone = "blue",
+}: {
+  children: ReactNode;
+  tone?: "blue" | "teal" | "white-orange";
+}) {
+  const toneClass =
+    tone === "teal"
+      ? "text-[#009EAD]"
+      : tone === "white-orange"
+      ? "text-white"
+      : "text-[#0069B8]";
+  return <span className={toneClass}>{children}</span>;
+}
 
 export const V3_BASE = "/banking/v3-preview";
 

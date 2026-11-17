@@ -483,8 +483,8 @@ function AgendaTabsV3() {
       <div className={styles.container}>
         <div className={styles.timelineIntro}>
           <h2>
-            Full 1-Day Master Schedule:{" "}
-            <GradientText>08:00–17:15 + Networking Reception.</GradientText>
+            A look at the schedule for{" "}
+            <GradientText>World AI Show | BFSI</GradientText>
           </h2>
         </div>
 
@@ -846,11 +846,8 @@ export function AgendaLiveTimelineV3() {
       >
         <div className={styles.container}>
           <h1>
-            <GradientText tone="teal">Full 1-Day Master Schedule</GradientText>
+            <GradientText tone="teal">Event Schedule</GradientText>
           </h1>
-          <p className={styles.heroPara}>
-            Wednesday 24 March 2027 · 08:00–17:15 + Networking Reception · Includes Workshop A, Workshop B, 3 Closed-Door CXO Boardrooms, and 7 Interactive Experience Labs.
-          </p>
         </div>
       </section>
       <AgendaTabsV3 />

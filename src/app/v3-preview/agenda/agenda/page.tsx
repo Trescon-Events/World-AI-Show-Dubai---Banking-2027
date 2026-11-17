@@ -4,9 +4,9 @@ import { FooterV3 } from "../../_components/FooterV3";
 import { AgendaLiveTimelineV3, agendaSubNavV3 } from "../AgendaPageV3";
 
 export const metadata: Metadata = {
-  title: "Full 1-Day Master Schedule | Agenda | World AI Show | BFSI | Dubai 2027 (V3 Preview)",
+  title: "Event Schedule | Agenda | World AI Show | BFSI | Dubai 2027 (V3 Preview)",
   description:
-    "Explore the full 1-day master schedule (08:00–17:15 + Networking Reception) on 24 March 2027 in Dubai, UAE, including Workshop A, Workshop B, 3 Closed-Door CXO Boardrooms, and 7 Interactive Experience Labs.",
+    "A look at the schedule for World AI Show | BFSI on 24 March 2027 in Dubai, UAE, including Workshop A, Workshop B, 3 Closed-Door CXO Boardrooms, and 7 Interactive Experience Labs.",
   robots: { index: false, follow: false },
 };
 
