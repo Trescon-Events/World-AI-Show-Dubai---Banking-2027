@@ -60,7 +60,7 @@ export function HeroSectionV3() {
           data-aos-delay="200"
           className="max-w-[850px] mx-auto text-[#F7F9FC] text-[clamp(15px,1.25vw,17px)] font-normal leading-[1.62] text-center mb-8"
         >
-          Building intelligent, trusted and resilient financial institutions. A dedicated executive decision forum convening 300–400 C-suite banking, insurance, risk, and regulatory leaders across the UAE, GCC, and selected African markets to shape architecture, fraud defence, and procurement.
+          A dedicated executive decision forum convening 300–400 C-suite banking, insurance, risk, and regulatory leaders across the UAE, GCC, and selected African markets to shape architecture, fraud defence, and procurement.
         </p>
 
         <div
