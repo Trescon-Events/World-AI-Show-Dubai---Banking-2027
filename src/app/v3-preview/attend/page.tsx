@@ -389,7 +389,7 @@ export function AttendOverviewSectionV3() {
               Audited execution over <GradientText tone="blue">experimental pilots.</GradientText>
             </h2>
             <p className="mt-6 mb-4 text-[#334155] text-[17px] leading-[1.65]">
-              World AI Show | BFSI is a 1-Day Executive Decision Forum convening 300–400 commercial bank CXOs, insurance leaders, CROs, CCOs, CDAIOs, and financial regulators in Dubai, UAE (Day 1 of the March Dubai Cluster). The programme addresses real-world architectural hurdles, model explainability, and fiduciary risk controls across federal onshore Central Bank of the UAE (CBUAE) and offshore DIFC DFSA frameworks.
+              World AI Show | BFSI is a 1-Day Executive Decision Forum convening 300–400 commercial bank CXOs, insurance leaders, CROs, CCOs, CDAIOs, and financial regulators. The programme addresses real-world architectural hurdles, model explainability, and fiduciary risk controls across federal onshore Central Bank of the UAE (CBUAE) and offshore DIFC DFSA frameworks.
             </p>
             <p className="m-0 text-[#334155] text-[17px] leading-[1.65]">
               It is structured around six operational mandates: fighting financial crime, responsible AI and regulatory confidence, intelligent banking operations, smarter lending, insurance and claims transformation, and future payments &amp; sovereign infrastructure.
@@ -491,7 +491,7 @@ export function AttendOverviewSectionV3() {
                   Enquire for Business Pass
                 </ArrowButtonV3>
                 <ArrowButtonV3 href={`${V3_BASE}/attend/sponsor/`} variant="solid">
-                  Explore 9 Sponsorship Tiers
+                  Explore Sponsorships
                 </ArrowButtonV3>
               </div>
             </div>
@@ -546,19 +546,18 @@ export function AttendDelegateSectionV3() {
         imageSrc="/banking/images/Attend/AI-decision-maker.webp"
         title={
           <>
-            Plenaries, 75-Min Clinical Workshops &amp;{" "}
-            <GradientText tone="blue">7 Interactive Experience Labs</GradientText>
+            Plenaries, Workshops and{" "}
+            <GradientText tone="blue">Experience Labs</GradientText>
           </>
         }
         text={
           <>
-            <strong>Target Buy-Side Audience:</strong> Group CEOs, CIOs, CTOs, CDAIOs, CROs, CCOs, MLROs, Insurance CEOs/COOs, Chief Claims &amp; Underwriting Officers, Chief Investment Officers, and Supervisory Regulators across the UAE, GCC, and selected African markets.
-            <br />
-            <br />
-            <strong>Inclusions:</strong> Full 1-day plenary access across all 6 operational mandates, choice of 75-minute Workshop A (Bank-Ready Deployment) or Workshop B (Intelligent Lending, Fraud &amp; Insurance Operations), hands-on floor simulations across 7 Interactive Experience Labs, Networking Luncheon, and Closing Reception.
-            <br />
-            <br />
-            <strong>UAE PDPL Consent Qualifier:</strong> Mandatory unbundled consent checkboxes under the UAE Personal Data Protection Law (PDPL) — delegate contact details are shared only where explicit opt-in consent is provided.
+            <p className="m-0 mb-4">
+              Designed for senior banking, insurance, risk, investment, and regulatory leaders across the UAE, GCC, and select African markets, the programme combines strategic plenaries with focused peer engagement and practical learning. Delegates gain access to a full day of discussions addressing six operational mandates shaping the future of financial services.
+            </p>
+            <p className="m-0">
+              The experience includes a choice of two 75-minute specialist workshops, hands-on simulations across seven Interactive Experience Labs, and dedicated networking opportunities through a luncheon and closing reception. All delegate engagement and contact sharing follow UAE PDPL requirements, with information shared only upon explicit opt-in consent.
+            </p>
           </>
         }
       />
