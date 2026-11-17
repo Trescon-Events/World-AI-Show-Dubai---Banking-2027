@@ -5,7 +5,7 @@ import { ButtonV3, GradientText, V3_BASE } from "./SharedV3";
 export function HeroSectionV3() {
   return (
     <section
-      className="hero-bg relative min-h-[820px] -mt-[102px] grid place-items-center overflow-hidden text-center max-[980px]:min-h-[760px] max-sm:-mt-[71px] max-sm:min-h-[720px]"
+      className="hero-bg relative min-h-[835px] -mt-[102px] grid place-items-center overflow-hidden text-center max-[980px]:min-h-[780px] max-sm:-mt-[71px] max-sm:min-h-[740px]"
       id="home"
     >
       {/* Background Video Layer */}
@@ -32,7 +32,7 @@ export function HeroSectionV3() {
       />
 
       {/* Hero Content */}
-      <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] relative z-10 mx-auto pt-[185px] lg:pt-[200px] pb-16 max-sm:pt-[145px] max-sm:pb-12 flex flex-col items-center">
+      <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] relative z-10 mx-auto pt-[220px] lg:pt-[246px] pb-16 max-sm:pt-[175px] max-sm:pb-12 flex flex-col items-center">
         {/* Hero Event Logo Lockup */}
         <img
           data-aos="fade-down"
@@ -41,7 +41,7 @@ export function HeroSectionV3() {
           alt="World AI Show | Banking, Financial Services & Insurance · 24 March 2027 · Dubai, UAE · Middle East"
           width={430}
           height={174}
-          className="w-[min(330px,84vw)] sm:w-[390px] lg:w-[430px] h-auto object-contain mx-auto mb-7 select-none"
+          className="w-[min(330px,84vw)] sm:w-[390px] lg:w-[430px] h-auto object-contain mx-auto mb-6 select-none"
         />
 
         {/* Hero Title */}
