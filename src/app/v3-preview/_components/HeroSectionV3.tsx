@@ -32,15 +32,17 @@ export function HeroSectionV3() {
       />
 
       {/* Hero Content */}
-      <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] relative z-10 mx-auto pt-[220px] lg:pt-[240px] pb-16 max-sm:pt-[175px] max-sm:pb-12 flex flex-col items-center">
-        {/* Kicker */}
-        <p
+      <div className="w-[min(1172px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] relative z-10 mx-auto pt-[185px] lg:pt-[200px] pb-16 max-sm:pt-[145px] max-sm:pb-12 flex flex-col items-center">
+        {/* Hero Event Logo Lockup */}
+        <img
           data-aos="fade-down"
           data-aos-delay="50"
-          className="text-white/95 font-sans text-[14px] sm:text-[17px] lg:text-[19px] uppercase tracking-[0.14em] font-bold mb-5"
-        >
-          World AI Show | BFSI
-        </p>
+          src="/banking/images/v3-preview/wais-27-bfsi.svg"
+          alt="World AI Show | Banking, Financial Services & Insurance · 24 March 2027 · Dubai, UAE · Middle East"
+          width={430}
+          height={174}
+          className="w-[min(330px,84vw)] sm:w-[390px] lg:w-[430px] h-auto object-contain mx-auto mb-7 select-none"
+        />
 
         {/* Hero Title */}
         <h1
@@ -58,59 +60,16 @@ export function HeroSectionV3() {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="max-w-[850px] mx-auto text-[#F7F9FC] text-[clamp(15px,1.25vw,17px)] font-normal leading-[1.62] text-center mb-8"
+          className="max-w-[850px] mx-auto text-[#F7F9FC] text-[clamp(15px,1.25vw,17px)] font-normal leading-[1.62] text-center mb-2"
         >
           A dedicated executive decision forum convening 300–400 C-suite banking, insurance, risk, and regulatory leaders across the UAE, GCC, and selected African markets to shape architecture, fraud defence, and procurement.
         </p>
 
-        <div
-          data-aos="fade-in"
-          data-aos-delay="250"
-          className="w-full max-w-[780px] border-t border-[#0069B8]/48 mt-1"
-        />
-
-        {/* Event Meta Footer */}
-        <div
-          data-aos="fade-up"
-          data-aos-delay="300"
-          className="grid grid-cols-[max-content_max-content_max-content] justify-center items-center gap-6 w-full max-w-[820px] mx-auto mt-7 text-center max-[980px]:grid-cols-1 max-sm:gap-3 max-sm:mt-5"
-        >
-          {/* Column 1: Dates */}
-          <div className="pr-6 border-r border-white/28 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-[980px]:pb-3.5 max-[980px]:border-b max-[980px]:border-white/22 max-sm:w-full">
-            <strong className="block font-display text-[34px] font-semibold text-white leading-none max-sm:text-[26px]">
-              <GradientText tone="teal">24</GradientText>
-            </strong>
-            <span className="block mt-2 text-[12.5px] font-bold text-white/80 uppercase tracking-[0.1em] max-sm:text-[12px] max-sm:mt-1.5">
-              MARCH 2027
-            </span>
-          </div>
-
-          {/* Column 2: Venue */}
-          <div className="pr-6 border-r border-white/28 text-center max-[980px]:border-r-0 max-[980px]:pr-0 max-[980px]:pb-3.5 max-[980px]:border-b max-[980px]:border-white/22 max-sm:w-full">
-            <strong className="block font-display text-[34px] font-semibold text-white leading-none max-sm:text-[26px]">
-              Dubai, <GradientText tone="teal">UAE</GradientText>
-            </strong>
-            <span className="block mt-2 text-[12.5px] font-bold text-white/80 uppercase tracking-[0.1em] max-sm:text-[12px] max-sm:mt-1.5">
-              DAY 1 · MARCH DUBAI CLUSTER
-            </span>
-          </div>
-
-          {/* Column 3: Duration */}
-          <div className="text-center max-sm:w-full">
-            <strong className="block font-display text-[34px] font-semibold text-white leading-none max-sm:text-[26px]">
-              1-<GradientText tone="teal">Day</GradientText>
-            </strong>
-            <span className="block mt-2 text-[12.5px] font-bold text-white/80 uppercase tracking-[0.1em] max-sm:text-[12px] max-sm:mt-1.5">
-              EXECUTIVE DECISION FORUM
-            </span>
-          </div>
-        </div>
-
         {/* Hero CTA Actions */}
         <div
           data-aos="fade-up"
-          data-aos-delay="400"
-          className="flex justify-center flex-wrap gap-3.5 mt-9 max-sm:flex-col max-sm:items-center max-sm:gap-3.5 max-sm:w-full max-sm:max-w-[340px]"
+          data-aos-delay="300"
+          className="flex justify-center flex-wrap gap-3.5 mt-7 max-sm:flex-col max-sm:items-center max-sm:gap-3.5 max-sm:w-full max-sm:max-w-[340px]"
         >
           <ButtonV3 href={`${V3_BASE}/attend/sponsor/`} showArrow={true}>
             Explore Commercial Sponsorship
