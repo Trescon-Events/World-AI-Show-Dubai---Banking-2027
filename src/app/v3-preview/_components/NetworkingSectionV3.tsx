@@ -34,21 +34,21 @@ const buyingUnitConstituencies = [
 const thrivingEnvironmentItems = [
   {
     num: "01",
-    title: "1-on-1 Matchmaking Lounges (50+ Qualified Bilateral Meetings)",
+    title: "1-on-1 Matchmaking Lounges",
     desc: "50+ pre-scheduled 1-on-1 bilateral commercial meetings in dedicated VIP matchmaking lounges, connecting buy-side banking and insurance budget holders directly with vetted AI solution providers.",
     image: "/banking/images/environment/matchmaking-lounges.jpg",
   },
   {
     num: "02",
-    title: "Closed-Door CXO Boardrooms (3 Sessions · 20 Pre-Qualified Buyers Each)",
+    title: "Closed-Door CXO Boardrooms",
     desc: "Three curated 60-minute private boardroom sessions — Auditing Financial AI, Financial Crime Arms Race, and Enterprise AI Procurement — each hosting 20 pre-qualified buy-side CXOs under Chatham House Rule.",
     image: "/banking/images/environment/boardroom-discussions.jpg",
   },
   {
     num: "03",
-    title: "Interactive Experience Labs (7 Hands-On Floor Simulations)",
+    title: "Interactive Experience Labs",
     desc: "Seven live floor simulations including the Financial Crime Investigation Lab, Explain My Loan Decision Lab, Autonomous Payment Challenge, AI Accountability Hearing, Insurance Claim Triage, Control Room & Procurement Clinic.",
-    image: "/banking/images/environment/executive-roundtables.jpg",
+    image: "/banking/images/v3-preview/experience-labs.jpg",
   },
   {
     num: "04",
