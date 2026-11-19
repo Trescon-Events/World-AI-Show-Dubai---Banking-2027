@@ -411,10 +411,10 @@ function SpeakerCallToStageV3() {
           <div className="relative overflow-hidden border border-[#0069B8]/25 rounded-[22px] shadow-[0_18px_40px_rgba(8,18,30,0.12)]">
             <div className="absolute inset-0 bg-gradient-to-t from-[#08121E]/35 via-transparent to-transparent pointer-events-none z-1" />
             <img
-              src="/banking/images/agenda/accelerating-malaysia-audience.webp"
-              alt="Speaker presenting on stage at World AI Show Dubai"
-              className="w-full h-[360px] md:h-[480px] filter saturate-[0.96] brightness-[0.96]"
-              style={{ objectFit: "cover", objectPosition: "top" }}
+              src="/banking/images/v3-preview/call-for-speakers.jpg"
+              alt="Executive panel speakers on stage at World AI Show Dubai"
+              className="w-full h-[360px] md:h-[480px] filter saturate-[0.98] brightness-[0.98]"
+              style={{ objectFit: "cover", objectPosition: "center" }}
               loading="lazy"
             />
           </div>
