@@ -5,7 +5,7 @@ import { ButtonV3, GradientText, V3_BASE } from "./SharedV3";
 export function HeroSectionV3() {
   return (
     <section
-      className="hero-bg relative min-h-[835px] -mt-[102px] grid place-items-center overflow-hidden text-center max-[980px]:min-h-[780px] max-sm:-mt-[71px] max-sm:min-h-[740px]"
+      className="hero-bg relative min-h-[880px] -mt-[102px] grid place-items-center overflow-hidden text-center max-[980px]:min-h-[820px] max-sm:-mt-[71px] max-sm:min-h-[780px]"
       id="home"
     >
       {/* Background Video Layer */}
@@ -37,11 +37,11 @@ export function HeroSectionV3() {
         <img
           data-aos="fade-down"
           data-aos-delay="50"
-          src="/banking/images/v3-preview/wais-27-bfsi.svg"
-          alt="World AI Show | Banking, Financial Services & Insurance · 24 March 2027 · Dubai, UAE · Middle East"
-          width={430}
-          height={174}
-          className="w-[min(330px,84vw)] sm:w-[390px] lg:w-[430px] h-auto object-contain mx-auto mb-6 select-none"
+          src="/banking/images/v3-preview/wais-27-bfsi-dubai-w.svg"
+          alt="World AI Show | Banking, Financial Services & Insurance · 50th Global Edition · UAE"
+          width={420}
+          height={186}
+          className="w-[min(320px,82vw)] sm:w-[380px] lg:w-[420px] h-auto object-contain mx-auto mb-6 select-none"
         />
 
         {/* Hero Title */}
@@ -60,16 +60,49 @@ export function HeroSectionV3() {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="max-w-[850px] mx-auto text-[#F7F9FC] text-[clamp(15px,1.25vw,17px)] font-normal leading-[1.62] text-center mb-2"
+          className="max-w-[850px] mx-auto text-[#F7F9FC] text-[clamp(15px,1.25vw,17px)] font-normal leading-[1.62] text-center mb-6"
         >
           A dedicated executive decision forum convening 300–400 C-suite banking, insurance, risk, and regulatory leaders across the UAE, GCC, and selected African markets to shape architecture, fraud defence, and procurement.
         </p>
 
+        <div
+          data-aos="fade-in"
+          data-aos-delay="250"
+          className="w-full max-w-[540px] border-t border-[#0069B8]/48"
+        />
+
+        {/* 2-Column Date & Venue Strip */}
+        <div
+          data-aos="fade-up"
+          data-aos-delay="280"
+          className="grid grid-cols-[max-content_max-content] justify-center items-center gap-8 mx-auto mt-6 text-center max-sm:grid-cols-1 max-sm:gap-3.5 max-sm:mt-5 max-sm:w-full max-sm:max-w-[280px]"
+        >
+          {/* Column 1: Date */}
+          <div className="pr-8 border-r border-white/28 text-center max-sm:border-r-0 max-sm:pr-0 max-sm:pb-3.5 max-sm:border-b max-sm:border-white/22">
+            <span className="block mb-1.5 text-[11.5px] font-bold text-white/75 uppercase tracking-[0.14em]">
+              Date
+            </span>
+            <strong className="block font-display text-[26px] sm:text-[30px] font-semibold text-white leading-none">
+              <GradientText tone="teal">24</GradientText> March 2027
+            </strong>
+          </div>
+
+          {/* Column 2: Venue */}
+          <div className="text-center">
+            <span className="block mb-1.5 text-[11.5px] font-bold text-white/75 uppercase tracking-[0.14em]">
+              Venue
+            </span>
+            <strong className="block font-display text-[26px] sm:text-[30px] font-semibold text-white leading-none">
+              Dubai, <GradientText tone="teal">UAE</GradientText>
+            </strong>
+          </div>
+        </div>
+
         {/* Hero CTA Actions */}
         <div
           data-aos="fade-up"
-          data-aos-delay="300"
-          className="flex justify-center flex-wrap gap-3.5 mt-7 max-sm:flex-col max-sm:items-center max-sm:gap-3.5 max-sm:w-full max-sm:max-w-[340px]"
+          data-aos-delay="340"
+          className="flex justify-center flex-wrap gap-3.5 mt-8 max-sm:flex-col max-sm:items-center max-sm:gap-3.5 max-sm:w-full max-sm:max-w-[340px]"
         >
           <ButtonV3 href={`${V3_BASE}/attend/sponsor/`} showArrow={true}>
             Explore Commercial Sponsorship
