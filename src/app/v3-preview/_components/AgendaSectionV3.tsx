@@ -13,6 +13,7 @@ export interface ThemeItemV3 {
   video?: string;
   image: string;
   imagePos: string;
+  mirror?: boolean;
 }
 
 export const themeItemsV3: ThemeItemV3[] = [
@@ -57,6 +58,7 @@ export const themeItemsV3: ThemeItemV3[] = [
     video: "/banking/videos/agenda/agentic-servicing.mp4",
     image: "/banking/videos/agenda/agentic-servicing-poster.webp",
     imagePos: "object-center",
+    mirror: true,
   },
   {
     index: "04",
@@ -82,7 +84,8 @@ export const themeItemsV3: ThemeItemV3[] = [
       "Automated motor, health, and life First Notice of Loss (FNOL) intake via computer vision and IDP, medical and repair claims fraud detection, Straight-Through Processing (STP) triage, and dynamic actuarial risk pricing.",
     clinicalFormat:
       "Workshop B: Insurance Operations & Claims Simulation Demo",
-    image: "/banking/images/v3-preview/insurance-claims-poster.jpg",
+    video: "/banking/videos/v3-preview/insurance-claims.mp4",
+    image: "/banking/videos/v3-preview/insurance-claims-poster.webp",
     imagePos: "object-center",
   },
   {
@@ -95,7 +98,8 @@ export const themeItemsV3: ThemeItemV3[] = [
       "Agentic commerce payment permissioning, real-time Aani instant payment and AlTareq open-finance API security, sovereign cloud data residency, hybrid compute orchestration, and core mainframe decoupling.",
     clinicalFormat:
       "Future Payments Plenary & Autonomous Payment Challenge Lab",
-    image: "/banking/images/v3-preview/future-payments-poster.jpg",
+    video: "/banking/videos/v3-preview/autonomous-banking.mp4",
+    image: "/banking/videos/v3-preview/autonomous-banking-poster.webp",
     imagePos: "object-center",
   },
 ];
@@ -190,26 +194,28 @@ function AgendaPillarCard({
       }`}
     >
       <div className="agenda-pillar-media relative w-full h-[204px] max-sm:h-[184px] overflow-hidden bg-[#08121E] border-b border-[#0069B8]/18">
-        {theme.video ? (
-          <video
-            ref={videoRef}
-            src={theme.video}
-            poster={theme.image}
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            aria-label={theme.label}
-            className={`w-full h-full object-cover ${theme.imagePos} transition-transform duration-500 ease-out group-hover:scale-[1.04]`}
-          />
-        ) : (
-          <img
-            src={theme.image}
-            alt={theme.label}
-            loading="lazy"
-            className={`w-full h-full object-cover ${theme.imagePos} transition-transform duration-500 ease-out group-hover:scale-[1.04]`}
-          />
-        )}
+        <div className={`w-full h-full ${theme.mirror ? "-scale-x-100" : ""}`}>
+          {theme.video ? (
+            <video
+              ref={videoRef}
+              src={theme.video}
+              poster={theme.image}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={theme.label}
+              className={`w-full h-full object-cover ${theme.imagePos} transition-transform duration-500 ease-out group-hover:scale-[1.04]`}
+            />
+          ) : (
+            <img
+              src={theme.image}
+              alt={theme.label}
+              loading="lazy"
+              className={`w-full h-full object-cover ${theme.imagePos} transition-transform duration-500 ease-out group-hover:scale-[1.04]`}
+            />
+          )}
+        </div>
 
         {/* Orange Numbered Pill (01–06 per Component C3 spec; no video play badge) */}
         <span className="absolute top-4 left-4 z-10 inline-flex items-center justify-center px-3 py-1 rounded-full bg-[#F15928] text-white font-mono text-[12px] font-bold tracking-[0.08em] shadow-[0_6px_16px_rgba(241,89,40,0.4)]">
