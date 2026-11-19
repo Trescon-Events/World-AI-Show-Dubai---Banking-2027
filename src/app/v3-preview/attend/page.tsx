@@ -62,7 +62,7 @@ const gatewayCards: CardItem[] = [
   },
   {
     title: "Strict Buy-Side Qualification (80%+)",
-    text: "Complimentary Delegate Passes are reserved by invitation and qualification for bank and insurance CEOs, CIOs, CTOs, CDAIOs, CROs, CCOs, MLROs, and Regulators.",
+    text: "Delegate Passes are reserved by invitation and qualification for bank and insurance CEOs, CIOs, CTOs, CDAIOs, CROs, CCOs, MLROs, and Regulators.",
     icon: "/banking/images/Attend/gateway/speaker-materials-and-insights.svg",
   },
   {
@@ -437,10 +437,10 @@ export function AttendOverviewSectionV3() {
                   Door 1 · Buy-Side Institutional Ratio 80%+
                 </span>
                 <h3 className="font-heading text-[#08121E] font-bold text-[24px] leading-[1.25] mb-3">
-                  Delegate Pass — complimentary by invitation &amp; qualification
+                  Delegate Pass — by invitation &amp; qualification
                 </h3>
                 <p className="text-[#334155] text-[15.5px] leading-[1.6] mb-5">
-                  Complimentary Delegate Passes are reserved by invitation and qualification for senior buy-side banking, insurance, wealth, risk, compliance, and regulatory decision-makers.
+                  Delegate Passes are reserved by invitation and qualification for senior buy-side banking, insurance, wealth, risk, compliance, and regulatory decision-makers.
                 </p>
                 <ul className="space-y-2.5 mb-8 text-[#334155] text-[14.5px] list-none p-0">
                   <li className="flex items-start gap-2.5">
@@ -534,7 +534,7 @@ export function AttendDelegateSectionV3() {
             Delegate Pass for Invited <GradientText tone="teal">Banking, Insurance &amp; Regulatory Leaders.</GradientText>
           </h1>
           <p className="max-w-[760px] mt-[24px] mb-0 text-white/88 text-[19px] leading-normal max-sm:text-base">
-            Complimentary Delegate Passes are reserved by invitation and qualification (80%+ buy-side institutional ratio) for senior C-suite leaders across commercial and Islamic banks, insurers, wealth and asset managers, and financial regulators.
+            Delegate Passes are reserved by invitation and qualification (80%+ buy-side institutional ratio) for senior C-suite leaders across commercial and Islamic banks, insurers, wealth and asset managers, and financial regulators.
           </p>
           <div className="flex gap-3.5 mt-9 max-sm:flex-col max-sm:items-start max-sm:gap-4">
             <ArrowButtonV3 href="#delegate-qualification">Buy Tickets</ArrowButtonV3>
@@ -593,10 +593,10 @@ export function AttendDelegateSectionV3() {
                   Door 1 · Buy-Side 80%+
                 </span>
                 <h3 className="font-heading text-[#08121E] font-semibold text-[22px] leading-[1.3] mb-3 transition-colors duration-300 group-hover:text-[#0069B8]">
-                  Delegate Pass — complimentary by invitation &amp; qualification
+                  Delegate Pass — by invitation &amp; qualification
                 </h3>
                 <p className="text-[#334155] text-[16px] leading-[1.6] mb-6">
-                  Complimentary Delegate Passes are reserved by invitation and qualification for senior buy-side C-suite leaders across commercial and Islamic banks, insurers, wealth and asset managers, and financial regulators holding active deployment mandates.
+                  Delegate Passes are reserved by invitation and qualification for senior buy-side C-suite leaders across commercial and Islamic banks, insurers, wealth and asset managers, and financial regulators holding active deployment mandates.
                 </p>
               </div>
               <div className="relative z-10">
@@ -604,7 +604,7 @@ export function AttendDelegateSectionV3() {
                   href={`${V3_BASE}/general-enquiry/`}
                   className="bb-btn-primary inline-flex items-center justify-center gap-2.5 h-[50px] px-7 font-bold text-[15px]"
                 >
-                  Buy Tickets
+                  Apply for Delegate Pass
                   <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
@@ -627,10 +627,10 @@ export function AttendDelegateSectionV3() {
               </div>
               <div className="relative z-10">
                 <a
-                  href={`${V3_BASE}/attend/#pass-matrix`}
+                  href={`${V3_BASE}/general-enquiry/`}
                   className="bb-btn-outline-light inline-flex items-center justify-center gap-2.5 h-[50px] px-7 font-bold text-[15px]"
                 >
-                  Explore Business Pass Access
+                  Buy Tickets
                   <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
