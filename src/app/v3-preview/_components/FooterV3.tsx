@@ -21,7 +21,7 @@ export function FooterV3() {
               className="w-[220px] max-w-full h-auto object-contain object-left mb-4 select-none"
             />
             <p className="max-w-[430px] m-0 mt-2 text-[#F7F9FC]/80 text-[16px] leading-[1.6]">
-              A dedicated executive decision forum convening 300–400 C-suite banking, insurance, risk, and regulatory leaders across the UAE, GCC, and selected African markets to shape architecture, fraud defence, and procurement.
+              A dedicated executive decision forum convening C-suite banking, insurance, risk, and regulatory leaders across the UAE, GCC, and selected African markets to shape architecture, fraud defence, and procurement.
             </p>
           </div>
 

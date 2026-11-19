@@ -190,7 +190,7 @@ export function NetworkingSectionV3() {
               <GradientText tone="blue">Regulated Financial Buyers &amp; Providers</GradientText>
             </h2>
             <p className="mt-5 mb-0 text-[#334155] text-[clamp(16px,1.5vw,19px)] leading-[1.45]">
-              Convene with 300–400 pre-qualified C-suite banking, insurance, risk, compliance, and regulatory decision-makers across the UAE, GCC, and selected African markets under a governed 80%+ buy-side institutional ratio.
+              Convene with pre-qualified C-suite banking, insurance, risk, compliance, and regulatory decision-makers across the UAE, GCC, and selected African markets under a governed 80%+ buy-side institutional ratio.
             </p>
           </div>
 
