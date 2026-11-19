@@ -459,7 +459,7 @@ export function AttendOverviewSectionV3() {
               </div>
               <div>
                 <ArrowButtonV3 href={`${V3_BASE}/attend/delegate/`} variant="solid">
-                  Buy Tickets
+                  Apply for Delegate Pass
                 </ArrowButtonV3>
               </div>
             </div>
@@ -493,7 +493,7 @@ export function AttendOverviewSectionV3() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <ArrowButtonV3 href={`${V3_BASE}/general-enquiry/`} variant="outline">
-                  Enquire for Business Pass
+                  Buy Tickets
                 </ArrowButtonV3>
                 <ArrowButtonV3 href={`${V3_BASE}/attend/sponsor/`} variant="solid">
                   Explore Sponsorships
