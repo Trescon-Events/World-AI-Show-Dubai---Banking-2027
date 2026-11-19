@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { GradientText, V3_BASE } from "./SharedV3";
+import { GradientText } from "./SharedV3";
 
 const buyingUnitConstituencies = [
   {
@@ -179,7 +179,7 @@ function ThrivingEnvironmentShowcase() {
 export function NetworkingSectionV3() {
   return (
     <section
-      className="relative py-[104px] bg-[#F7F9FC] overflow-x-clip max-sm:py-[72px]"
+      className="relative pt-[104px] pb-0 bg-[#F7F9FC] overflow-x-clip max-sm:pt-[72px] max-sm:pb-0"
       id="networking"
     >
       <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
@@ -222,79 +222,6 @@ export function NetworkingSectionV3() {
 
       {/* Sticky Scroll 4-Slide Feature */}
       <ThrivingEnvironmentShowcase />
-
-      {/* Two-Door Attendance Model */}
-      <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
-        <div className="mt-24 pt-16 border-t border-[#0069B8]/20">
-          <div className="text-center mb-10">
-            <h3 className="text-[#08121E] font-semibold text-[clamp(26px,3vw,40px)] leading-[1.2] tracking-[-0.01em]">
-              Two-Door <GradientText tone="blue">Institutional Attendance Model</GradientText>
-            </h3>
-          </div>
-
-          <div className="grid grid-cols-2 gap-6 max-[980px]:grid-cols-1">
-            {/* Door 1: Delegate Pass */}
-            <div
-              data-aos="fade-right"
-              data-aos-delay="100"
-              className="group relative flex flex-col justify-between p-8 rounded-[22px] border border-[#0069B8]/22 border-t-4 border-t-[#F15928] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:border-[#0069B8]"
-            >
-              <div className="relative z-10">
-                <span className="inline-block text-[11.5px] font-mono font-bold uppercase tracking-[0.1em] text-[#F15928] mb-2">
-                  Door 1 · Buy-Side 80%+
-                </span>
-                <h4 className="text-[#08121E] font-semibold text-[22px] leading-[1.3] mb-3 transition-colors duration-300 group-hover:text-[#0069B8]">
-                  Delegate Pass — complimentary by invitation &amp; qualification
-                </h4>
-                <p className="text-[#334155] text-[16px] leading-[1.6] mb-6">
-                  Complimentary Delegate Passes are reserved by invitation and qualification for senior buy-side C-suite leaders across commercial and Islamic banks, insurers, wealth and asset managers, and financial regulators holding active deployment mandates.
-                </p>
-              </div>
-              <div className="relative z-10">
-                <a
-                  href={`${V3_BASE}/attend/delegate/`}
-                  className="bb-btn-primary inline-flex items-center justify-center gap-2.5 h-[50px] px-7 font-bold text-[15px]"
-                >
-                  Buy Tickets
-                  <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            {/* Door 2: Business Pass */}
-            <div
-              data-aos="fade-left"
-              data-aos-delay="200"
-              className="group relative flex flex-col justify-between p-8 rounded-[22px] border border-[#0069B8]/22 border-t-4 border-t-[#0069B8] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:border-[#0069B8]"
-            >
-              <div className="relative z-10">
-                <span className="inline-block text-[11.5px] font-mono font-bold uppercase tracking-[0.1em] text-[#0069B8] mb-2">
-                  Door 2 · Strictly Capped Quota
-                </span>
-                <h4 className="text-[#08121E] font-semibold text-[22px] leading-[1.3] mb-3 transition-colors duration-300 group-hover:text-[#0069B8]">
-                  Business Pass — paid commercial vendor access with strictly capped quota
-                </h4>
-                <p className="text-[#334155] text-[16px] leading-[1.6] mb-6">
-                  Paid Business Passes provide commercial access for specialist technology providers, cloud platforms, software vendors, and consultancies, with allocations strictly capped to preserve the 80%+ institutional buy-side ratio.
-                </p>
-              </div>
-              <div className="relative z-10">
-                <a
-                  href={`${V3_BASE}/attend/`}
-                  className="bb-btn-outline-light inline-flex items-center justify-center gap-2.5 h-[50px] px-7 font-bold text-[15px]"
-                >
-                  Explore Business Pass Access
-                  <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
