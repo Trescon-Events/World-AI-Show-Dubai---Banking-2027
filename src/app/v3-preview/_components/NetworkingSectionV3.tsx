@@ -48,7 +48,7 @@ const thrivingEnvironmentItems = [
     num: "03",
     title: "Interactive Experience Labs",
     desc: "Seven live floor simulations including the Financial Crime Investigation Lab, Explain My Loan Decision Lab, Autonomous Payment Challenge, AI Accountability Hearing, Insurance Claim Triage, Control Room & Procurement Clinic.",
-    image: "/banking/images/v3-preview/experience-labs.jpg",
+    image: "/banking/images/v3-preview/experience-labs.jpg?v=2",
   },
   {
     num: "04",
