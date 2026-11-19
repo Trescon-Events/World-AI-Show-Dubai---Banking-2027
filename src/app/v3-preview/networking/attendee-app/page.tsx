@@ -16,7 +16,7 @@ const badgeFeatures = [
   { label: "1-Day Agenda", icon: "/banking/icons/attendee-app/calendar-lines-pen.webp" },
   { label: "Bilateral Meetings", icon: "/banking/icons/attendee-app/network-user.webp" },
   { label: "Faculty", icon: "/banking/icons/attendee-app/wais-speaker-icon-matched.webp" },
-  { label: "9-Tier Sponsors", icon: "/banking/icons/attendee-app/money-check.webp" },
+  { label: "7-Tier Sponsors", icon: "/banking/icons/attendee-app/money-check.webp" },
   { label: "Concourse", icon: "/banking/icons/attendee-app/exhibitor.webp" },
   { label: "Badge Scan", icon: "/banking/icons/attendee-app/qr-scan.webp" },
   { label: "Consented Directory", icon: "/banking/icons/attendee-app/personal-finance.webp" },

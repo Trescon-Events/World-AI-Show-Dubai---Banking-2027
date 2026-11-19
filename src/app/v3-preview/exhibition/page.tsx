@@ -16,12 +16,12 @@ export const metadata: Metadata = {
 const footprintsV3 = [
   {
     size: "9 sqm Built Stands",
-    title: "9 sqm Built Stands (Powered By, Diamond, Platinum & Gold)",
+    title: "9 sqm Built Stands (Headline, Platinum & Gold)",
     desc: "Flagship 9 sqm built stands paired with 15-minute plenary speaking positions and priority enterprise branding across the concourse.",
   },
   {
     size: "4 sqm Turnkey Stands",
-    title: "4 sqm Built Stands (Silver, Bronze & Exhibitors)",
+    title: "4 sqm Built Stands (Silver & Concourse Exhibitors)",
     desc: "Standardised 4 sqm turnkey built stands engineered for live banking, risk, and insurance software demonstrations and badge-scan lead capture.",
   },
   {

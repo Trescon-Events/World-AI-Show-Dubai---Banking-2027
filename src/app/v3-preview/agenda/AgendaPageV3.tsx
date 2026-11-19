@@ -591,7 +591,7 @@ function FinalCtaBlockV3() {
           <GradientText>the decisions get made.</GradientText>
         </h2>
         <p>
-          Buy tickets, enquire about our 9-tier commercial sponsorship inventory, or apply to join the Dubai BFSI faculty.
+          Buy tickets, enquire about our 7-tier commercial sponsorship inventory, or apply to join the Dubai BFSI faculty.
         </p>
         <div className={styles.actions}>
           <a className={`${styles.button} ${styles.solid} group`} href={`${V3_BASE}/attend/delegate/`}>
@@ -884,9 +884,9 @@ export function AgendaThemesV3() {
         <div className={styles.container}>
           <div className={styles.brochureCta}>
             <div>
-              <h3>Request the Revamped 9-Tier Commercial Partnership Prospectus.</h3>
+              <h3>Request the 7-Tier Commercial Partnership Prospectus.</h3>
               <p>
-                Explore 15-minute plenary keynotes, 75-minute clinical workshops, 60-minute CXO boardrooms (20 buyers), standardised 9 sqm &amp; 4 sqm built stands, and 2 sqm Start Up pods.
+                Explore 15-minute plenary speaking slots, 75-minute clinical workshops, 60-minute CXO boardrooms (20 delegates), standardised 9 sqm &amp; 4 sqm built stands, and 2 sqm Start Up pods.
               </p>
             </div>
             <a

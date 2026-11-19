@@ -8,7 +8,7 @@ import { AttendStatsV3 } from "./AttendStatsV3";
 export const metadata: Metadata = {
   title: "Attend | World AI Show | BFSI | Dubai 2027 (V3 Preview)",
   description:
-    "How to attend World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE). Explore complimentary Delegate Pass qualification, Business Pass access, and our revamped 9-tier Commercial Sponsorship inventory.",
+    "How to attend World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE). Explore Delegate Pass qualification, Business Pass access, and our 7-tier Commercial Sponsorship inventory.",
   robots: { index: false, follow: false },
 };
 
@@ -84,8 +84,8 @@ const gatewayCards: CardItem[] = [
 
 const sponsorBenefits: CardItem[] = [
   {
-    title: "Revamped 9-Tier Commercial Inventory",
-    text: "Tailored market-entry tiers spanning Powered By, Diamond, Platinum, Gold, Boardroom Partner, Silver, Bronze, Concourse Exhibitor, and Start Up Pod.",
+    title: "7-Tier Commercial Inventory",
+    text: "Tailored market-entry tiers spanning Headline Sponsor, Platinum, Gold, Boardroom Partner, Silver, Concourse Exhibitor, and Start Up Pod.",
     icon: "/banking/images/Attend/sponsor/exclusive-sponsorship-branding.webp",
   },
   {
@@ -100,7 +100,7 @@ const sponsorBenefits: CardItem[] = [
   },
   {
     title: "Standardised 9 sqm, 4 sqm & 2 sqm Stands",
-    text: "Showcase production platforms across 9 sqm built stands (Powered By–Gold), 4 sqm built stands (Silver–Exhibitor), and 2 sqm Start Up innovation pods.",
+    text: "Showcase production platforms across 9 sqm built stands (Headline–Gold), 4 sqm built stands (Silver & Concourse Exhibitor), and 2 sqm Start Up pods.",
     icon: "/banking/images/Attend/sponsor/product-showcase-floor.webp",
   },
   {
@@ -487,7 +487,7 @@ export function AttendOverviewSectionV3() {
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#009EAD] font-bold">✓</span>
-                    <span>Upgrade pathway available across our revamped 9-tier Commercial Sponsorship inventory</span>
+                    <span>Upgrade pathway available across our 7-tier Commercial Sponsorship inventory</span>
                   </li>
                 </ul>
               </div>
@@ -644,51 +644,41 @@ export function AttendDelegateSectionV3() {
   );
 }
 
-const nineCommercialTiers = [
+const sevenCommercialTiers = [
   {
-    tier: "Tier 01",
-    name: "Powered By",
-    desc: "Exclusive Headline Partner · 15-min Plenary Keynote + Panel Seat, 60-min CXO Boardroom (20 Pre-Qualified Buyers), 9 sqm Built Stand",
+    tier: "TIER 1 · EXCLUSIVE HEADLINE PARTNER",
+    name: "Headline Sponsor",
+    desc: "Exclusive category title · 15-minute plenary speaking slot, 60-minute closed-door CXO boardroom (20 delegates), 9 sqm built stand, dedicated email and WhatsApp blasts, video interview, and two podcast slots.",
   },
   {
-    tier: "Tier 02",
-    name: "Diamond Sponsor",
-    desc: "15-min Plenary Keynote, 60-min CXO Boardroom (20 Pre-Qualified Buyers), 9 sqm Built Stand, 3× Branding",
-  },
-  {
-    tier: "Tier 03",
+    tier: "TIER 2 · EXECUTIVE THOUGHT LEADERSHIP",
     name: "Platinum Sponsor",
-    desc: "15-min Plenary Keynote + Panel Seat, 9 sqm Built Stand, 2× Branding",
+    desc: "15-minute plenary speaking slot paired with a plenary panel seat, 9 sqm built stand, dedicated email blast, podcast slot, Industry Report inclusion, and multi-channel branding.",
   },
   {
-    tier: "Tier 04",
+    tier: "TIER 3 · PLENARY & CONCOURSE SHOWCASE",
     name: "Gold Sponsor",
-    desc: "15-min Plenary Keynote, 9 sqm Built Stand, 50-Account Target Wishlist",
+    desc: "15-minute plenary speaking slot paired with a 9 sqm built stand, shared EDM and press release inclusion, venue screen commercial, and post-event report branding.",
   },
   {
-    tier: "Tier 05",
+    tier: "TIER 4 · CHATHAM HOUSE RULE CONVENING",
     name: "Boardroom Partner",
-    desc: "Exclusive 60-min Closed-Door CXO Boardroom for 20 Pre-Qualified Buyers under Chatham House Rule",
+    desc: "Exclusive 60-minute closed-door CXO boardroom for 20 pre-qualified banking, insurance, and risk leaders under the Chatham House Rule, backed by venue screen and post-event report visibility.",
   },
   {
-    tier: "Tier 06",
+    tier: "TIER 5 · BRAND & SHOWCASE PRESENCE",
     name: "Silver Sponsor",
-    desc: "Plenary Panel Speaking Seat + 4 sqm Built Stand",
+    desc: "Standardised 4 sqm built stand in the concourse showcase paired with shared press release coverage and branding across the event website, infopacks, and on-site materials.",
   },
   {
-    tier: "Tier 07",
-    name: "Bronze Sponsor",
-    desc: "4 sqm Built Stand + WebApp Badge Scan & UAE PDPL Consented Directory",
-  },
-  {
-    tier: "Tier 08",
+    tier: "TIER 6 · TURNKEY CONCOURSE SHOWCASE",
     name: "Concourse Exhibitor",
-    desc: "4 sqm Turnkey Showcase Stand in the high-traffic concourse arena",
+    desc: "Standardised 4 sqm built stand positioned in the high-traffic networking concourse with website, infopack, social media, and on-site brand visibility.",
   },
   {
-    tier: "Tier 09",
+    tier: "TIER 7 · EMERGING FINTECH & INSURTECH",
     name: "Start Up Pod",
-    desc: "2 sqm Turnkey Innovation Pod for emerging Fintech, Insurtech & AI Innovators",
+    desc: "Dedicated 2 sqm turnkey showcase pod engineered for emerging fintech, insurtech, and AI innovators, complete with website, infopack, and on-site branding.",
   },
 ];
 
@@ -719,10 +709,10 @@ export function AttendSponsorSectionV3() {
         <div className="relative z-10 max-w-[860px]">
           <h1 className="font-heading m-0 text-white font-bold leading-[1.06] tracking-[-0.02em] text-[clamp(40px,5.2vw,64px)] max-sm:text-[36px]">
             Commercial Sponsorship Prospectus:{" "}
-            <GradientText tone="teal">Revamped 9-Tier Inventory.</GradientText>
+            <GradientText tone="teal">7-Tier Inventory.</GradientText>
           </h1>
           <p className="max-w-[760px] mt-[24px] mb-0 text-white/88 text-[19px] leading-normal">
-            Engage 300–400 pre-qualified C-suite decision-makers across 25+ UAE banks and insurers and 15+ GCC and African financial groups through 15-minute keynotes, 60-minute CXO boardrooms (20 buyers), 75-minute workshops, and 9 sqm, 4 sqm &amp; 2 sqm stands.
+            Engage pre-qualified C-suite decision-makers across 25+ UAE banks and insurers and 15+ GCC and African financial groups through 15-minute speaking slots, 60-minute CXO boardrooms (20 delegates), 75-minute workshops, and 9 sqm, 4 sqm &amp; 2 sqm stands.
           </p>
           <div className="flex gap-3.5 mt-9 max-sm:flex-col max-sm:items-start max-sm:gap-4">
             <ArrowButtonV3 href={`${V3_BASE}/sponsorship-enquiry/`}>
@@ -737,7 +727,7 @@ export function AttendSponsorSectionV3() {
           <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
             <div>
               <p className="m-0 mb-[14px] text-[#0069B8] text-[12px] font-bold tracking-[0.14em] uppercase select-none">
-                9-Tier Commercial Inventory · Powered By to Start Up Pod
+                7-Tier Commercial Inventory · Headline Sponsor to Start Up Pod
               </p>
               <h2 className="font-heading m-0 text-[#08121E] font-bold leading-[1.1] tracking-[-0.02em] text-[clamp(30px,3.6vw,46px)] max-sm:text-[28px]">
                 Put Your Enterprise Solution Inside{" "}
@@ -752,24 +742,17 @@ export function AttendSponsorSectionV3() {
             </div>
           </div>
 
-          {/* 3x3 Grid of Commercial Sponsorship Tiers */}
-          <div className="grid grid-cols-3 gap-5 max-[980px]:grid-cols-2 max-sm:grid-cols-1">
-            {nineCommercialTiers.map((item, idx) => (
+          {/* 7-Tier Grid of Commercial Sponsorship Tiers */}
+          <div className="flex flex-wrap justify-center gap-5">
+            {sevenCommercialTiers.map((item) => (
               <article
-                key={item.tier}
-                className="group relative flex flex-col justify-between p-6 border border-[#0069B8]/22 border-t-4 border-t-[#0069B8] rounded-[16px] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#0069B8] hover:border-t-[#F15928] hover:shadow-[0_18px_40px_rgba(8,18,30,0.11)]"
+                key={item.name}
+                className="group relative w-[calc((100%-40px)/3)] max-[980px]:w-[calc((100%-20px)/2)] max-sm:w-full flex flex-col justify-between p-6 border border-[#0069B8]/22 border-t-4 border-t-[#0069B8] rounded-[16px] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#0069B8] hover:border-t-[#F15928] hover:shadow-[0_18px_40px_rgba(8,18,30,0.11)]"
               >
                 <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="inline-block px-2.5 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-[0.08em] text-[#0069B8] bg-[#0069B8]/10 group-hover:text-white group-hover:bg-[#F15928] transition-colors duration-300">
-                      {item.tier}
-                    </span>
-                    {idx === 0 && (
-                      <span className="text-[10.5px] font-mono font-bold uppercase tracking-[0.08em] text-[#F15928]">
-                        Exclusive
-                      </span>
-                    )}
-                  </div>
+                  <span className="inline-block text-[10.5px] font-bold uppercase tracking-[0.1em] text-[#0069B8] group-hover:text-[#F15928] transition-colors duration-300 mb-2.5">
+                    {item.tier}
+                  </span>
                   <h3 className="font-heading m-0 mb-2 text-[#08121E] font-bold text-[19px] leading-snug group-hover:text-[#0069B8] transition-colors duration-200">
                     {item.name}
                   </h3>

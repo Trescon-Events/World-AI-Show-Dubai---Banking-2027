@@ -7,7 +7,7 @@ import { SponsorsGrid } from "../../partners/SponsorsGrid";
 export const metadata: Metadata = {
   title: "Partners & Sponsors | World AI Show | BFSI | Dubai 2027 (V3 Preview)",
   description:
-    "Explore the revamped 9-Tier Commercial Partnership Showcase for World AI Show | BFSI | Dubai 2027: Powered By, Diamond, Platinum, Gold, Boardroom Partner, Silver, Bronze, Concourse Exhibitor, and Start Up Pod.",
+    "Explore the 7-Tier Commercial Partnership Showcase for World AI Show | BFSI | Dubai 2027: Headline Sponsor, Platinum, Gold, Boardroom Partner, Silver, Concourse Exhibitor, and Start Up Pod.",
   robots: { index: false, follow: false },
 };
 

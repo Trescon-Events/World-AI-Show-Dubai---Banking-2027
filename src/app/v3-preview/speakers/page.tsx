@@ -150,7 +150,7 @@ export default function SpeakersPageV3() {
                 </h2>
 
                 <p className="m-0 mt-4 text-white/80 text-[15.5px] leading-[1.65]">
-                  Explore our revamped 9-tier commercial inventory spanning 15-minute plenary keynotes, 60-minute CXO boardrooms (20 buyers), 75-minute workshops, and 9 sqm, 4 sqm &amp; 2 sqm stands.
+                  Explore our 7-tier commercial inventory spanning 15-minute plenary speaking slots, 60-minute CXO boardrooms (20 delegates), 75-minute workshops, and 9 sqm, 4 sqm &amp; 2 sqm stands.
                 </p>
               </div>
 

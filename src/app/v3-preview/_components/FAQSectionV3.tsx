@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "What sponsorship tiers, stand sizes, and interactive labs are available?",
-    a: "Our revamped 9-tier commercial inventory spans Powered By, Diamond, Platinum, Gold, Boardroom Partner, Silver, Bronze, Concourse Exhibitor, and Start Up Pod packages. Formats feature 15-minute plenary keynotes, 75-minute clinical workshops, 60-minute CXO boardrooms (20 delegates), standardised 9 sqm built stands, 4 sqm built stands, and 2 sqm Start Up pods, alongside 7 Interactive Experience Labs on the concourse floor.",
+    a: "Our 7-tier commercial inventory spans Headline Sponsor, Platinum, Gold, Boardroom Partner, Silver, Concourse Exhibitor, and Start Up Pod packages. Formats feature 15-minute plenary speaking slots, 75-minute clinical workshops, 60-minute CXO boardrooms (20 delegates), standardised 9 sqm built stands, 4 sqm built stands, and 2 sqm Start Up pods, alongside 7 Interactive Experience Labs on the concourse floor.",
   },
   {
     q: "What is the Closed-Door CXO Boardroom format?",
