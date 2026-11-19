@@ -588,7 +588,7 @@ function FinalCtaBlockV3() {
       <div className={styles.ctaBox}>
         <h2>
           Be in the room where{" "}
-          <GradientText>2027 BFSI AI architecture &amp; procurement get finalised.</GradientText>
+          <GradientText>the decisions get made.</GradientText>
         </h2>
         <p>
           Buy tickets, enquire about our 9-tier commercial sponsorship inventory, or apply to join the Dubai BFSI faculty.

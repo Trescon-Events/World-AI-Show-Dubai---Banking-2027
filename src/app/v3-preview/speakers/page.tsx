@@ -94,12 +94,12 @@ export default function SpeakersPageV3() {
                 <h2 className="font-heading m-0 text-white font-bold leading-[1.12] tracking-[-0.02em] text-[clamp(26px,3.1vw,36px)]">
                   Be in the room where{" "}
                   <GradientText tone="teal">
-                    2027 BFSI AI architecture gets finalised
+                    the decisions get made.
                   </GradientText>
                 </h2>
 
                 <p className="m-0 mt-4 text-white/80 text-[15.5px] leading-[1.65]">
-                  Complimentary Delegate Pass — by invitation and qualification (80%+ buy-side institutional ratio) for senior banking, insurance, and regulatory executives.
+                  Delegate Pass — by invitation and qualification (80%+ buy-side institutional ratio) for senior banking, insurance, and regulatory executives.
                 </p>
               </div>
 

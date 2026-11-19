@@ -280,7 +280,7 @@ export default function NetworkingPageV3() {
         <div className="w-[min(860px,calc(100%-48px))] max-sm:w-[calc(100%-32px)] mx-auto relative overflow-hidden p-12 border border-white/15 border-t-4 border-t-[#F15928] rounded-[24px] bg-white text-center shadow-[0_24px_62px_rgba(8,18,30,0.24)] max-sm:p-8">
           <h2 className="font-heading font-bold text-[#08121E] leading-tight tracking-[-0.02em] text-[clamp(28px,3.6vw,40px)] m-0">
             Be in the room where{" "}
-            <GradientText tone="blue">2027 BFSI AI architecture gets decided.</GradientText>
+            <GradientText tone="blue">the decisions get made.</GradientText>
           </h2>
           <p className="m-0 mt-4 text-[#334155] text-[15.5px] leading-relaxed max-w-[600px] mx-auto">
             Buy tickets or enquire about commercial sponsorship for World AI Show | BFSI | Dubai 2027 (24 March 2027 · Dubai, UAE).
