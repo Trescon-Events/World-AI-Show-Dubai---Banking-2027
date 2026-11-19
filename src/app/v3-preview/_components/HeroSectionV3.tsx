@@ -37,7 +37,7 @@ export function HeroSectionV3() {
         <img
           data-aos="fade-down"
           data-aos-delay="50"
-          src="/banking/images/v3-preview/wais-27-bfsi-dubai-w.svg"
+          src="/banking/images/v3-preview/wais-27-bfsi-dubai-w1.svg"
           alt="World AI Show | Banking, Financial Services & Insurance · 50th Global Edition · UAE"
           width={420}
           height={186}
