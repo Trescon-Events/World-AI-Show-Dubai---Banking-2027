@@ -37,11 +37,11 @@ export function HeroSectionV3() {
         <img
           data-aos="fade-down"
           data-aos-delay="50"
-          src="/banking/images/v3-preview/wais-27-bfsi-dubai-w1.svg"
-          alt="World AI Show | Banking, Financial Services & Insurance · 50th Global Edition · UAE"
-          width={420}
-          height={186}
-          className="w-[min(320px,82vw)] sm:w-[380px] lg:w-[420px] h-auto object-contain mx-auto mb-6 select-none"
+          src="/banking/images/v3-preview/wais-27-bfsi-dubai-w1.svg?v=2"
+          alt="World AI Show | Banking, Financial Services & Insurance · Dubai 2027"
+          width={400}
+          height={138}
+          className="w-[min(300px,80vw)] sm:w-[360px] lg:w-[400px] h-auto object-contain mx-auto mb-6 select-none"
         />
 
         {/* Hero Title */}

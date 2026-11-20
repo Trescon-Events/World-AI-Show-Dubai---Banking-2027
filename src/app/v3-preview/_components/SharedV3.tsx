@@ -38,11 +38,11 @@ export function LogoV3({
 }) {
   const src =
     variant === "white"
-      ? "/banking/images/v3-preview/wais-27-bfsi-dubai-w1.svg"
-      : "/banking/images/v3-preview/wais-27-bfsi-dubai-b1.svg";
+      ? "/banking/images/v3-preview/wais-27-bfsi-dubai-w1.svg?v=2"
+      : "/banking/images/v3-preview/wais-27-bfsi-dubai-b1.svg?v=2";
   return (
     <a
-      className={`flex items-center w-[176px] h-[62px] max-sm:h-[52px] hover:opacity-90 transition-opacity duration-200 ${className}`}
+      className={`flex items-center w-[176px] h-[60px] max-sm:h-[50px] hover:opacity-90 transition-opacity duration-200 ${className}`}
       href={`${V3_BASE}/`}
       aria-label="World AI Show | BFSI | Dubai 2027"
     >
@@ -50,7 +50,7 @@ export function LogoV3({
         src={src}
         alt="World AI Show | BFSI | Dubai 2027"
         width={176}
-        height={62}
+        height={60}
         className="w-full h-full object-contain object-left"
       />
     </a>

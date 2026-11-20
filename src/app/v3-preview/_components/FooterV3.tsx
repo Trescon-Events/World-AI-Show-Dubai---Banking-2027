@@ -14,10 +14,10 @@ export function FooterV3() {
           {/* Col 1: Brand block */}
           <div className="flex flex-col">
             <img
-              src="/banking/images/v3-preview/wais-27-bfsi-dubai-w1.svg"
+              src="/banking/images/v3-preview/wais-27-bfsi-dubai-w1.svg?v=2"
               alt="World AI Show | BFSI | Dubai 2027"
               width={220}
-              height={97}
+              height={76}
               className="w-[220px] max-w-full h-auto object-contain object-left mb-4 select-none"
             />
             <p className="max-w-[430px] m-0 mt-2 text-[#F7F9FC]/80 text-[16px] leading-[1.6]">
