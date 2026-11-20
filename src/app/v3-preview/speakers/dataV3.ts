@@ -1,0 +1,133 @@
+export interface SpeakerV3 {
+  id: string;
+  name: string;
+  designation: string;
+  company: string;
+  organization: string;
+  country: string;
+  image: string;
+  bio?: string;
+}
+
+export const speakersV3: SpeakerV3[] = [
+  {
+    id: "v3-1",
+    name: "Hosam Arab",
+    designation: "Co-founder and CEO",
+    company: "Tabby · UAE",
+    organization: "Tabby",
+    country: "UAE",
+    image: "/banking/images/v3-preview/speakers/hosam-arab.webp",
+    bio: "Hosam is the CEO and Co-founder of Tabby, a shopping and financial services app designed to create financial freedom.",
+  },
+  {
+    id: "v3-2",
+    name: "Anthony Millet",
+    designation: "Managing Partner & Co-Heads Antler Capital",
+    company: "Antler · United Arab Emirates",
+    organization: "Antler",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/anthony-millet.webp",
+    bio: "",
+  },
+  {
+    id: "v3-3",
+    name: "Jurgen Heppe",
+    designation: "Head Financial Sponsor Coverage, MENA",
+    company: "Standard Bank · United Arab Emirates",
+    organization: "Standard Bank",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/jurgen-heppe.webp",
+    bio: "Jurgen is the Head Financial Sponsor Coverage, MENA at Standard Bank, having worked within the Standard Bank Group’s Corporate and Investment Banking division for the past 16 years in Client Coverage roles. He has over 28 years of investment banking experience in New York, London, and Dubai. Prior to Standard Bank, he was with Deutsche Bank, Lehman Brothers, and Bank of America Merrill Lynch. Jurgen graduated from London Business School with a Master in Finance degree.",
+  },
+  {
+    id: "v3-4",
+    name: "Rashid Basheer Rahim Karuppamveettil",
+    designation: "Head - Digital Channels",
+    company: "Al Ansari Exchange · United Arab Emirates",
+    organization: "Al Ansari Exchange",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/rashid-basheer.webp",
+    bio: "Rashid Basheer is a digital financial services leader driving customer-led innovation across payments and remittances.",
+  },
+  {
+    id: "v3-5",
+    name: "Jayesh Patel",
+    designation: "CEO",
+    company: "Wio Bank · United Arab Emirates",
+    organization: "Wio Bank",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/jayesh-patel.webp",
+    bio: "Jayesh Patel is a fintech and digital banking leader with over 18 years of experience in financial services, technology, and business strategy. As CEO of Wio Bank, he is driving the evolution of platform banking through digital innovation, embedded finance, and Banking-as-a-Service solutions. Previously, he played a pivotal role in building and launching Liv., Emirates NBD’s digital bank, and held senior leadership positions in retail and innovation strategy.",
+  },
+  {
+    id: "v3-6",
+    name: "Thomas Cherian",
+    designation: "Chief Technology and Services Officer",
+    company: "Commercial Bank of Dubai (CBD) · United Arab Emirates",
+    organization: "Commercial Bank of Dubai (CBD)",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/thomas-cherian.webp",
+    bio: "Thomas Cherian is Chief Technology and Services Officer at Commercial Bank of Dubai (CBD), where he leads the Bank’s technology, operations, contact centre, infrastructure services, and data management functions. With more than two decades of international banking and technology experience, Thomas has held senior leadership positions at Citi, Bank of America, Bank of Singapore, and Mashreq, leading large-scale transformation programmes across multiple markets. He holds a Bachelor’s degree in Electronics from Cochin University of Science and Technology.",
+  },
+  {
+    id: "v3-7",
+    name: "Courtney Fitzsimmons",
+    designation: "Chief Compliance Officer",
+    company: "MultiBank Group · United Arab Emirates",
+    organization: "MultiBank Group",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/courtney-fitzsimmons.webp",
+    bio: "Courtney Fitzsimmons is a senior financial services executive and regulatory specialist with over 18 years of experience across global markets, including Equities, FX, CFDs, and digital assets. Holding an MBA and CAMS/RM credentials, she has led regulatory engagements, licensing, cross-border market entry, and multi-jurisdictional expansion across international firms, aligning commercial strategy with governance, risk, and financial crime controls.",
+  },
+  {
+    id: "v3-8",
+    name: "Rohit Garg",
+    designation: "Group Head of Retail Products and RBWM Chief Digital Officer",
+    company: "Emirates NBD Bank PJSC · United Arab Emirates",
+    organization: "Emirates NBD Bank PJSC",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/rohit-garg.webp",
+    bio: "Rohit Garg is the Group Head of Retail Products and RBWM Chief Digital Officer at Emirates NBD. He has over 25 years of experience across Standard Chartered, Barclays, and Mashreq in Asia, the Middle East, and Africa spanning Corporate Banking, Wealth Management, Business Banking, and SME Banking. He conceptualised, launched, and scaled the first Digital SME Bank in the region and is an alumnus of the Wharton School.",
+  },
+  {
+    id: "v3-9",
+    name: "Ahmad Fannoon",
+    designation: "Unit Manager - The Innovation Hub",
+    company: "Ajman Bank · United Arab Emirates",
+    organization: "Ajman Bank",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/ahmad-fannoon.webp",
+    bio: "Ahmad Fannoon leads The Innovation Hub at Ajman Bank, bringing two decades of experience across banking, healthcare, and research. His work spans innovation strategy, business transformation, AI-enabled banking, and embedded finance, with a focus on translating emerging technologies and new business models into practical customer and business value.",
+  },
+  {
+    id: "v3-10",
+    name: "Sartaj Singh",
+    designation: "Chief Technology Officer",
+    company: "Equiti Group · United Arab Emirates",
+    organization: "Equiti Group",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/sartaj-singh.webp",
+    bio: "Sartaj Singh is the Chief Technology Officer of Equiti Group, leading the organisation’s global technology strategy and digital transformation. With extensive experience across fintech, financial services, and large-scale technology platforms, he previously served as Vice President of Engineering at GoTo Group. Since joining Equiti in 2023, Sartaj has been instrumental in transforming the Group’s technology infrastructure, building scalable platforms, and advancing its AI, data, and automation capabilities.",
+  },
+  {
+    id: "v3-11",
+    name: "Max (Maximilian) Crown",
+    designation: "Co-Founder & Board Director",
+    company: "MoonPay · United Arab Emirates",
+    organization: "MoonPay",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/max-crown.webp",
+    bio: "Max Crown is the Co-Founder & Board Director at MoonPay, and President and Chief Executive Officer of the TON Foundation supporting The Open Network blockchain. He co-founded MoonPay, where he previously served as Chief Financial Officer and Chief Operating Officer and remains a member of the board.",
+  },
+  {
+    id: "v3-12",
+    name: "Dr. Anas Najdawi",
+    designation: "Director, Dubai Campus | Associate Professor of Digital Business",
+    company: "Abu Dhabi University · United Arab Emirates",
+    organization: "Abu Dhabi University",
+    country: "United Arab Emirates",
+    image: "/banking/images/v3-preview/speakers/dr-anas-najdawi.webp",
+    bio: "Dr. Anas Najdawi is an academic leader, digital business expert, and international technology commentator with over 15 years of experience in higher education leadership, digital transformation, and emerging technologies.",
+  },
+];

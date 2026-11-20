@@ -2,26 +2,19 @@
 
 import { type ReactNode } from "react";
 import { GradientText, V3_BASE } from "./SharedV3";
-import { SpeakerCard } from "../../speakers/SpeakerCard";
-import { speakers as fallbackSpeakers } from "../../speakers/data";
+import { SpeakerCardV3 } from "../speakers/SpeakerCardV3";
+import { speakersV3 } from "../speakers/dataV3";
 
 export function SpeakersSectionV3({
   heading = (
     <>
-      Past Faculty at <GradientText tone="white-orange">World AI Show</GradientText>
+      Featured Speakers at <GradientText tone="white-orange">World AI Show</GradientText>
     </>
   ),
 }: {
   heading?: ReactNode;
 } = {}) {
-  const displaySpeakers = fallbackSpeakers.slice(0, 8).map((speaker) => ({
-    id: speaker.id,
-    name: speaker.name,
-    designation: speaker.designation,
-    company: speaker.company,
-    image: speaker.image,
-    bio: speaker.bio || "",
-  }));
+  const displaySpeakers = speakersV3;
 
   return (
     <section
@@ -37,7 +30,7 @@ export function SpeakersSectionV3({
 
         <div className="speaker-grid grid grid-cols-4 gap-6 max-[1080px]:grid-cols-3 max-[768px]:grid-cols-2 max-sm:grid-cols-1">
           {displaySpeakers.map((speaker, index) => (
-            <SpeakerCard
+            <SpeakerCardV3
               key={speaker.id}
               name={speaker.name}
               role={speaker.designation}

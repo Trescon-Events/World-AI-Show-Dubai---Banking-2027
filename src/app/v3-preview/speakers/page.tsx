@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { HeaderV3 } from "../_components/HeaderV3";
 import { FooterV3 } from "../_components/FooterV3";
 import { GradientText, V3_BASE } from "../_components/SharedV3";
-import { SpeakersList } from "../../speakers/SpeakersList";
+import { SpeakersListV3 } from "./SpeakersListV3";
 
 export const metadata: Metadata = {
   title: "Speakers Hub | World AI Show | BFSI | Dubai 2027 (V3 Preview)",
@@ -37,7 +37,7 @@ export default function SpeakersPageV3() {
       </section>
 
       {/* 4-Column Responsive Grid + Real-Time Search */}
-      <SpeakersList />
+      <SpeakersListV3 />
 
       {/* Dual Executive CTA Section */}
       <section

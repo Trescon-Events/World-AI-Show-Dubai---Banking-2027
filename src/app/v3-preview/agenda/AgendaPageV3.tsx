@@ -941,14 +941,7 @@ export function AgendaCallForSpeakersV3() {
         </div>
       </section>
       <SpeakerCallToStageV3 />
-      <SpeakersSectionV3
-        heading={
-          <>
-            A Look Back at{" "}
-            <GradientText tone="white-orange">Past World AI Show Speakers</GradientText>
-          </>
-        }
-      />
+      <SpeakersSectionV3 />
     </>
   );
 }
