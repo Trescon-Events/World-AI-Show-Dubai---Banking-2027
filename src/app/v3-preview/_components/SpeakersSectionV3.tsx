@@ -8,7 +8,7 @@ import { speakersV3 } from "../speakers/dataV3";
 export function SpeakersSectionV3({
   heading = (
     <>
-      Featured Speakers at <GradientText tone="white-orange">World AI Show</GradientText>
+      Past Speakers at <GradientText tone="white-orange">Trescon Managed Events</GradientText>
     </>
   ),
 }: {

@@ -26,7 +26,7 @@ export function SpeakersListV3() {
         {/* Search Controls */}
         <div className="mb-10 flex flex-wrap items-center justify-between gap-4 border-b border-[#0069B8]/20 pb-6">
           <h2 className="font-heading font-bold text-[#08121E] leading-tight tracking-[-0.02em] text-[clamp(28px,3.6vw,42px)] m-0">
-            Featured <GradientText tone="blue">Speakers</GradientText>
+            Past Speakers at <GradientText tone="blue">Trescon Managed Events</GradientText>
           </h2>
 
           {/* Search by name, designation, or company */}
