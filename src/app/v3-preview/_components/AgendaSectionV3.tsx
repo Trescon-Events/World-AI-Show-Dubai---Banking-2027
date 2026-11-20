@@ -262,10 +262,10 @@ function AgendaPillarCard({
 export function AgendaSectionV3({
   title = (
     <>
-      Focused on Six Core <GradientText tone="blue">Operational Mandates</GradientText>
+      Event <GradientText tone="blue">Pillars</GradientText>
     </>
   ),
-  description = null,
+  description = "Focused on Six Core Operational Mandates",
   showSixBlocks = false,
 }: {
   title?: ReactNode;
@@ -283,7 +283,9 @@ export function AgendaSectionV3({
       <div className="w-[min(1172px,calc(100%-48px))] mx-auto max-sm:w-[calc(100%-32px)]">
         <h2
           data-aos="fade-up"
-          className="text-center font-semibold text-[#08121E] leading-[1.2] tracking-[-0.01em] text-[clamp(30px,3.8vw,48px)] mb-[44px]"
+          className={`text-center font-semibold text-[#08121E] leading-[1.2] tracking-[-0.01em] text-[clamp(30px,3.8vw,48px)] ${
+            description ? "mb-3.5" : "mb-[44px]"
+          }`}
         >
           {title}
         </h2>
@@ -291,7 +293,7 @@ export function AgendaSectionV3({
           <p
             data-aos="fade-up"
             data-aos-delay="100"
-            className="max-w-[920px] mx-auto -mt-6 text-center text-[#334155] text-[clamp(16px,1.5vw,19px)] leading-[1.45] mb-[44px]"
+            className="max-w-[920px] mx-auto text-center text-[#334155] font-medium text-[clamp(17px,1.5vw,20px)] leading-[1.45] mb-[44px]"
           >
             {description}
           </p>
