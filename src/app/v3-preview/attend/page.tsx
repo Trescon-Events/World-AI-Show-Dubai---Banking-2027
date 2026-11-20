@@ -742,21 +742,25 @@ export function AttendSponsorSectionV3() {
             </div>
           </div>
 
-          {/* 7-Tier Grid of Commercial Sponsorship Tiers */}
-          <div className="flex flex-wrap justify-center gap-5">
-            {sevenCommercialTiers.map((item) => (
+          {/* 7-Tier Grid of Commercial Sponsorship Tiers (Row 1: 4 cards, Row 2: 3 centered cards, all equal size) */}
+          <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-8 sm:auto-rows-fr gap-5">
+            {sevenCommercialTiers.map((item, idx) => (
               <article
                 key={item.name}
-                className="group relative w-[calc((100%-40px)/3)] max-[980px]:w-[calc((100%-20px)/2)] max-sm:w-full flex flex-col justify-between p-6 border border-[#0069B8]/22 border-t-4 border-t-[#0069B8] rounded-[16px] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#0069B8] hover:border-t-[#F15928] hover:shadow-[0_18px_40px_rgba(8,18,30,0.11)]"
+                className={`group relative h-full flex flex-col justify-between sm:col-span-2 lg:col-span-2 ${
+                  idx === 4 ? "lg:col-start-2" : ""
+                } ${
+                  idx === 6 ? "sm:col-start-2 lg:col-start-auto" : ""
+                } p-6 border border-[#0069B8]/22 border-t-4 border-t-[#0069B8] rounded-[16px] bg-white shadow-[0_12px_32px_rgba(8,18,30,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#0069B8] hover:border-t-[#F15928] hover:shadow-[0_18px_40px_rgba(8,18,30,0.11)]`}
               >
                 <div>
                   <span className="inline-block text-[10.5px] font-bold uppercase tracking-[0.1em] text-[#0069B8] group-hover:text-[#F15928] transition-colors duration-300 mb-2.5">
                     {item.tier}
                   </span>
-                  <h3 className="font-heading m-0 mb-2 text-[#08121E] font-bold text-[19px] leading-snug group-hover:text-[#0069B8] transition-colors duration-200">
+                  <h3 className="font-heading m-0 mb-2 text-[#08121E] font-bold text-[18.5px] leading-snug group-hover:text-[#0069B8] transition-colors duration-200">
                     {item.name}
                   </h3>
-                  <p className="m-0 text-[#334155] text-[14.5px] leading-[1.6]">
+                  <p className="m-0 text-[#334155] text-[14px] leading-[1.6]">
                     {item.desc}
                   </p>
                 </div>

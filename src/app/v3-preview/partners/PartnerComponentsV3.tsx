@@ -87,19 +87,23 @@ export function PartnerShowcaseV3() {
             </h3>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6">
-            {partnerTiersV3.map((item) => (
+          <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-8 sm:auto-rows-fr gap-5">
+            {partnerTiersV3.map((item, idx) => (
               <article
                 key={item.name}
-                className="group relative w-[calc((100%-48px)/3)] max-[1024px]:w-[calc((100%-24px)/2)] max-sm:w-full p-7 border border-[#0069B8]/52 border-t-4 border-t-[#009EAD] rounded-[18px] bg-[#0D1B2E] shadow-[0_18px_40px_rgba(8,18,30,0.28)] transition-all duration-300 hover:-translate-y-1 hover:border-[#F15928] hover:border-t-[#F15928]"
+                className={`group relative h-full flex flex-col sm:col-span-2 lg:col-span-2 ${
+                  idx === 4 ? "lg:col-start-2" : ""
+                } ${
+                  idx === 6 ? "sm:col-start-2 lg:col-start-auto" : ""
+                } p-6 border border-[#0069B8]/52 border-t-4 border-t-[#009EAD] rounded-[18px] bg-[#0D1B2E] shadow-[0_18px_40px_rgba(8,18,30,0.28)] transition-all duration-300 hover:-translate-y-1 hover:border-[#F15928] hover:border-t-[#F15928]`}
               >
-                <span className="inline-block text-[11px] font-bold uppercase tracking-[0.12em] text-[#009EAD] mb-3">
+                <span className="inline-block text-[10.5px] font-bold uppercase tracking-[0.1em] text-[#009EAD] mb-2.5">
                   {item.tier}
                 </span>
-                <h4 className="font-heading m-0 mb-2.5 text-white font-bold text-[19px] leading-snug">
+                <h4 className="font-heading m-0 mb-2 text-white font-bold text-[18.5px] leading-snug">
                   {item.name}
                 </h4>
-                <p className="m-0 text-white/75 text-[14.5px] leading-relaxed">
+                <p className="m-0 text-white/75 text-[14px] leading-relaxed">
                   {item.deliverables}
                 </p>
               </article>
